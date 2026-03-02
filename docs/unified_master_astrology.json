@@ -1,0 +1,322 @@
+{
+  "unified_master_json": {
+    "title": "Complete Unified Astrological Methodology, Calculation, Delineation, Strength Weighting, and Synthesis Reference",
+    "version": "1.0.0",
+    "compiled_at": "2026-02-14T00:00:00Z",
+    "source_synthesis": {
+      "merged_inputs": [
+        "master_astrological_reference",
+        "astrology_calculations_collection",
+        "astrology_calculations"
+      ],
+      "normalization_notes": [
+        "Removed duplicated concepts by preserving the most explicit formula and retaining alternates in variant fields.",
+        "Grouped formulas into deterministic computational stages from input capture to final interpretation.",
+        "Preserved both Western tropical and Vedic sidereal branches and made conversion points explicit.",
+        "Added weighting model unifying qualitative delineation and quantitative strength scores.",
+        "Added machine-friendly schema sections for downstream parsers, scoring engines, and report generation."
+      ]
+    },
+    "canonical_workflow": {
+      "stage_1_input_capture": {
+        "required_fields": [
+          "birth_date",
+          "birth_time_local",
+          "birth_timezone",
+          "birth_latitude",
+          "birth_longitude",
+          "daylight_saving_flag",
+          "calendar_type"
+        ],
+        "optional_fields": [
+          "gender",
+          "name",
+          "rectification_notes",
+          "event_dataset_for_mundane_correlation"
+        ],
+        "quality_checks": [
+          "Validate coordinates are numeric and in valid terrestrial bounds.",
+          "Normalize clock time to ISO timestamp with zone.",
+          "Resolve DST transitions explicitly for ambiguous timestamps.",
+          "Record uncertainty window in minutes for rectification-sensitive analyses."
+        ]
+      },
+      "stage_2_time_normalization": {
+        "pipeline": [
+          {
+            "step": "Zone time to LMT",
+            "formula": "LMT = Zone_Time ± 4m × (Birth_Longitude − Standard_Meridian)",
+            "notes": "East/west sign handled by longitude convention; retain seconds precision."
+          },
+          {
+            "step": "Compute local sidereal time",
+            "method": "Lahiri table sequence",
+            "substeps": [
+              "Get sidereal time at 12:00 noon LMT for reference year and base meridian.",
+              "Apply year correction.",
+              "Apply place correction.",
+              "Compute time interval from local noon.",
+              "Apply acceleration correction.",
+              "Subtract interval for AM births, add for PM births."
+            ]
+          },
+          {
+            "step": "Select zodiac frame",
+            "branching": {
+              "tropical": "Use sayana longitudes directly.",
+              "sidereal": "Apply ayanamsha: Nirayana = Sayana − Ayanamsha (mod 360)."
+            }
+          }
+        ]
+      },
+      "stage_3_ephemeris_and_coordinate_generation": {
+        "outputs": [
+          "planetary_longitudes",
+          "planetary_latitudes",
+          "declinations",
+          "right_ascensions",
+          "true_node_and_mean_node_if_enabled"
+        ],
+        "ayanamsha": {
+          "default": "Lahiri",
+          "approximation": "23°15'00\" + (year − 1956) × 50.2388475\"",
+          "policy": "Prefer table-based or astronomical library values over linear approximation for production."
+        }
+      },
+      "stage_4_angle_and_house_computation": {
+        "angles": {
+          "ascendant": "tan(ASC) = sin(RAMC) / (cos(RAMC) × cos(ε) − tan(φ) × sin(ε))",
+          "midheaven": "tan(MC) = tan(RAMC) / cos(ε)",
+          "variables": {
+            "RAMC": "LST × 15°",
+            "ε": "obliquity",
+            "φ": "latitude"
+          }
+        },
+        "house_systems": {
+          "placidus": "Trisect diurnal/nocturnal semi-arcs using iterative cusp solving.",
+          "koch": "Birthplace method using MC degree semi-arc trisection.",
+          "equal": "Cusp_n = ASC + (n−1) × 30°",
+          "whole_sign": "House 1 is full sign containing ASC degree.",
+          "sripathi_porphyry": "Trisect ecliptic arcs between angular points."
+        },
+        "robustness_rules": [
+          "Use iterative numerical solver with convergence threshold ≤ 1 arcsecond for quadrant systems.",
+          "Fallback to tabular interpolation if solver fails at extreme latitudes.",
+          "Document house-system dependency in all delineation outputs."
+        ]
+      },
+      "stage_5_divisional_and_specialized_vedic_construction": {
+        "core": [
+          "Rasi (D1)",
+          "Navamsa (D9)",
+          "Dasamsa (D10)",
+          "Saptavarga/Shadvarga as configured"
+        ],
+        "derived_flags": [
+          "vargottama",
+          "pushkara_zones",
+          "avastha_classes",
+          "argala_patterns",
+          "arudha_lagna",
+          "chara_karaka_assignments"
+        ]
+      },
+      "stage_6_period_systems_and_timing": {
+        "vimshottari": {
+          "cycle_years": 120,
+          "balance_formula": "Balance = (13°20' − Moon_remainder_in_nakshatra) / 13°20' × Lord_Years",
+          "lords_years": {
+            "Ketu": 7,
+            "Venus": 20,
+            "Sun": 6,
+            "Moon": 10,
+            "Mars": 7,
+            "Rahu": 18,
+            "Jupiter": 16,
+            "Saturn": 19,
+            "Mercury": 17
+          }
+        },
+        "yogini": {
+          "cycle_years": 36,
+          "lords_years": {
+            "Mangala": 1,
+            "Pingala": 2,
+            "Dhanya": 3,
+            "Bhramari": 4,
+            "Bhadrika": 5,
+            "Ulka": 6,
+            "Siddha": 7,
+            "Sankata": 8
+          }
+        },
+        "western_timing": {
+          "secondary_progressions": "1 day after birth = 1 year",
+          "solar_arc": "All points advanced by directed solar motion (~0.9856°/year to ~1°/year)",
+          "primary_directions": "Optional high-precision branch"
+        }
+      },
+      "stage_7_strength_scoring_and_weighting": {
+        "scoring_framework": {
+          "total_score_scale": "0-100 per planet, 0-100 per house, 0-100 per theme",
+          "planet_strength": {
+            "formula": "P_strength = 0.35*Shadbala_norm + 0.20*Dignity_norm + 0.15*House_placement_norm + 0.10*Ashtakavarga_support + 0.10*Aspect_quality + 0.10*Motion_state",
+            "component_details": {
+              "Shadbala_norm": "Normalize rupas to configured threshold for each graha.",
+              "Dignity_norm": "Exaltation, own sign, moolatrikona, friend, neutral, enemy, debility mapped to 0-100.",
+              "House_placement_norm": "Angular/succedent/cadent and functional lordship weighting.",
+              "Ashtakavarga_support": "Bindu support in sign/house with threshold bands.",
+              "Aspect_quality": "Benefic vs malefic net aspect matrix.",
+              "Motion_state": "Retrograde, combust, stationary, direct speed class adjustment."
+            }
+          },
+          "house_strength": {
+            "formula": "H_strength = 0.30*Cusp_lord_strength + 0.20*Occupant_strength_sum + 0.15*Ashtakavarga_house_points + 0.15*Argala_support + 0.10*Divisional_confirmation + 0.10*Transit_trigger_index"
+          },
+          "theme_synthesis": {
+            "formula": "Theme_score = Σ(significator_weight_i × significator_score_i)",
+            "default_themes": [
+              "health",
+              "career",
+              "relationships",
+              "finance",
+              "spirituality",
+              "public_life",
+              "risk_and_crisis"
+            ]
+          }
+        },
+        "confidence_model": {
+          "inputs": [
+            "birth_time_uncertainty",
+            "system_agreement_index",
+            "orb_sensitivity",
+            "event_backtest_fit"
+          ],
+          "output": "confidence_band: low|medium|high"
+        }
+      },
+      "stage_8_delineation_engine": {
+        "rule_layers": [
+          "Base significations (planet, sign, house)",
+          "Condition modifiers (dignity, avastha, combustion, retrogression)",
+          "Relational modifiers (aspects, conjunctions, dispositorship)",
+          "Temporal modifiers (dasha, transit, progression, return)",
+          "Validation modifiers (cross-check D9/D10 and event resonance)"
+        ],
+        "narrative_protocol": [
+          "Start with highest-strength themes.",
+          "Annotate benefic and challenging pathways for each theme.",
+          "Attach time windows from period systems and transit triggers.",
+          "State uncertainty and alternate outcomes if scores are close.",
+          "Provide practical recommendations tied to strongest remedial/strategic levers."
+        ]
+      },
+      "stage_9_mundane_and_eclipse_activation_module": {
+        "rules": {
+          "primary_orb": "1°",
+          "extended_orb": "up to 2.5° for Uranus/Neptune tracking",
+          "dominance_rule": "If a slow planet remains within configured orb for prolonged interval, elevate eclipse-lord theme weight by +20% to +40%"
+        },
+        "documented_case_2000": {
+          "dominant_eclipse": "1999-07-28 partial lunar eclipse",
+          "dominant_lord": "Neptune",
+          "inference": "Prolonged Neptune activation associated with covert, diffuse, ideologically charged collective events.",
+          "paired_market_data": "S&P 500 entries preserved as event-linked contextual series, not deterministic causal proof."
+        }
+      },
+      "stage_10_output_packaging": {
+        "required_outputs": [
+          "machine_json",
+          "human_readable_report",
+          "score_tables",
+          "timing_calendar",
+          "confidence_and_limitations"
+        ],
+        "json_contract": {
+          "top_keys": [
+            "metadata",
+            "inputs",
+            "computed_positions",
+            "angles_and_houses",
+            "strength_scores",
+            "periods_and_timing",
+            "delineation",
+            "mundane_correlations",
+            "audit_trail"
+          ]
+        }
+      }
+    },
+    "comprehensive_formula_registry": {
+      "time": [
+        "LMT = Zone_Time ± 4m × (Birth_Longitude − Standard_Meridian)",
+        "LST via Lahiri tabular sequence",
+        "Ayanamsha(Lahiri approx) = 23°15'00\" + (year − 1956) × 50.2388475\""
+      ],
+      "angles": [
+        "tan(ASC) = sin(RAMC)/(cos(RAMC)×cos(ε) − tan(φ)×sin(ε))",
+        "tan(MC) = tan(RAMC)/cos(ε)",
+        "Vertex auxiliary formula where used"
+      ],
+      "houses": [
+        "Placidus iterative semi-arc trisection",
+        "Koch MC semi-arc timing",
+        "Equal and Whole Sign direct construction",
+        "Porphyry/Sripathi angular arc trisection"
+      ],
+      "periods": [
+        "Vimshottari major/sub-period derivation",
+        "Yogini dasha mapping",
+        "Secondary progression and solar arc rules"
+      ],
+      "strength": [
+        "Shadbala sixfold composition",
+        "Ashtakavarga bindu totals",
+        "Vargottama and Pushkara boosts",
+        "Argala and Arudha contextual modifiers"
+      ]
+    },
+    "unified_keyword_index": [
+      "Sidereal Time",
+      "Lahiri Ayanamsha",
+      "Precession of Equinoxes",
+      "Nirayana",
+      "Sayana",
+      "Ascendant",
+      "Midheaven",
+      "Vimshottari Dasha",
+      "Shadbala",
+      "Jaimini Chara Karakas",
+      "Arudha Lagna",
+      "Argala",
+      "Avastha",
+      "Sudarshana Chakra",
+      "Secondary Progressions",
+      "Solar Arc",
+      "Primary Directions",
+      "Solar Return",
+      "Annual Profections",
+      "Firdaria",
+      "Eclipse Activation",
+      "Neptune Eclipse Lord",
+      "Fixed Grand Cross",
+      "Mundane Correlation"
+    ],
+    "implementation_guidance": {
+      "engineering": [
+        "Use high-precision ephemeris library (Swiss Ephemeris or equivalent) for production.",
+        "Store every intermediate value (with units) to enable auditability.",
+        "Implement deterministic rounding policy at final rendering only.",
+        "Keep formula versioning so reports can be reproduced exactly later."
+      ],
+      "interpretation_ethics": [
+        "Treat correlations as interpretive, not deterministic proof.",
+        "Avoid fatalistic language in person-level readings.",
+        "State uncertainty explicitly when birth-time quality is low.",
+        "Separate symbolic inference from empirical market/economic claims."
+      ]
+    }
+  }
+}
