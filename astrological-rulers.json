@@ -1,0 +1,667 @@
+{
+  "system": "Astrological Rulers - Traditional and Modern",
+  "description": "Comparison of traditional rulerships (based on Chaldean order and classical planets) versus modern rulerships (including outer planets discovered after the classical era)",
+  "schema_version": "1.0",
+  "sources": [
+    "12 houses Astrology.pdf by Sue Ward (2002)",
+    "General astrological knowledge for modern rulers"
+  ],
+  "notes": {
+    "traditional_system": "Based on geocentric model with seven classical planets, Chaldean order, and solar/lunar centrality",
+    "modern_system": "Developed after discovery of Uranus (1781), Neptune (1846), and Pluto (1930)",
+    "historical_context": "Traditional system developed when astrology was integrated with hermetic philosophy and divine symbolism",
+    "controversy": "The '12 houses Astrology' document strongly criticizes the modern practice of assigning outer planets to houses based on sign rulerships"
+  },
+  "sign_planetary_rulers": {
+    "traditional": {
+      "aries": "Mars",
+      "taurus": "Venus",
+      "gemini": "Mercury",
+      "cancer": "Moon",
+      "leo": "Sun",
+      "virgo": "Mercury",
+      "libra": "Venus",
+      "scorpio": "Mars",
+      "sagittarius": "Jupiter",
+      "capricorn": "Saturn",
+      "aquarius": "Saturn",
+      "pisces": "Jupiter"
+    },
+    "modern": {
+      "aries": "Mars",
+      "taurus": "Venus",
+      "gemini": "Mercury",
+      "cancer": "Moon",
+      "leo": "Sun",
+      "virgo": "Mercury",
+      "libra": "Venus",
+      "scorpio": [
+        "Mars",
+        "Pluto"
+      ],
+      "sagittarius": "Jupiter",
+      "capricorn": "Saturn",
+      "aquarius": [
+        "Saturn",
+        "Uranus"
+      ],
+      "pisces": [
+        "Jupiter",
+        "Neptune"
+      ]
+    }
+  },
+  "house_planetary_rulers": {
+    "traditional_chaldean": {
+      "1st_house": {
+        "planet": "Saturn",
+        "sign": "Aries",
+        "notes": "From Chaldean order (Saturn, Jupiter, Mars, Sun, Venus, Mercury, Moon) repeating every 7 houses"
+      },
+      "2nd_house": {
+        "planet": "Jupiter",
+        "sign": "Taurus"
+      },
+      "3rd_house": {
+        "planet": "Mars",
+        "sign": "Gemini"
+      },
+      "4th_house": {
+        "planet": "Sun",
+        "sign": "Cancer",
+        "notes": "Center of structure; luminaries are central"
+      },
+      "5th_house": {
+        "planet": "Venus",
+        "sign": "Leo"
+      },
+      "6th_house": {
+        "planet": "Mercury",
+        "sign": "Virgo"
+      },
+      "7th_house": {
+        "planet": "Moon",
+        "sign": "Libra"
+      },
+      "8th_house": {
+        "planet": "Saturn",
+        "sign": "Scorpio",
+        "notes": "Cycle repeats: Saturn again"
+      },
+      "9th_house": {
+        "planet": "Jupiter",
+        "sign": "Sagittarius"
+      },
+      "10th_house": {
+        "planet": "Mars",
+        "sign": "Capricorn"
+      },
+      "11th_house": {
+        "planet": "Sun",
+        "sign": "Aquarius"
+      },
+      "12th_house": {
+        "planet": "Venus",
+        "sign": "Pisces"
+      }
+    },
+    "traditional_joys": {
+      "1st_house": {
+        "joy": "Mercury",
+        "reason": "Association with head, brain, and tongue"
+      },
+      "3rd_house": {
+        "joy": "Moon",
+        "reason": "House of the Goddess; moveability"
+      },
+      "5th_house": {
+        "joy": "Venus",
+        "reason": "Pleasure, children, creativity"
+      },
+      "6th_house": {
+        "joy": "Mars",
+        "reason": "Unfortunate house; servitude and toil"
+      },
+      "9th_house": {
+        "joy": "Sun",
+        "reason": "House of the Sun God; religion, knowledge"
+      },
+      "11th_house": {
+        "joy": "Jupiter",
+        "reason": "Fortunate house; hope, friends, assistance"
+      },
+      "12th_house": {
+        "joy": "Saturn",
+        "reason": "Where it can do most mischief; unfortunate house"
+      }
+    },
+    "modern_derived": {
+      "description": "Modern system derived from sign-house consignification (criticized in traditional text)",
+      "1st_house": {
+        "planet": "Mars",
+        "derived_from": "Aries = 1st sign, Mars rules Aries"
+      },
+      "2nd_house": {
+        "planet": "Venus",
+        "derived_from": "Taurus = 2nd sign, Venus rules Taurus"
+      },
+      "3rd_house": {
+        "planet": "Mercury",
+        "derived_from": "Gemini = 3rd sign, Mercury rules Gemini"
+      },
+      "4th_house": {
+        "planet": "Moon",
+        "derived_from": "Cancer = 4th sign, Moon rules Cancer"
+      },
+      "5th_house": {
+        "planet": "Sun",
+        "derived_from": "Leo = 5th sign, Sun rules Leo"
+      },
+      "6th_house": {
+        "planet": "Mercury",
+        "derived_from": "Virgo = 6th sign, Mercury rules Virgo"
+      },
+      "7th_house": {
+        "planet": "Venus",
+        "derived_from": "Libra = 7th sign, Venus rules Libra"
+      },
+      "8th_house": {
+        "planet": [
+          "Mars",
+          "Pluto"
+        ],
+        "derived_from": "Scorpio = 8th sign, Mars/Pluto rules Scorpio",
+        "critique_from_text": "Incorrect association leads to 8th house being associated with sexual activity because Scorpio rules sexual organs"
+      },
+      "9th_house": {
+        "planet": "Jupiter",
+        "derived_from": "Sagittarius = 9th sign, Jupiter rules Sagittarius"
+      },
+      "10th_house": {
+        "planet": "Saturn",
+        "derived_from": "Capricorn = 10th sign, Saturn rules Capricorn"
+      },
+      "11th_house": {
+        "planet": [
+          "Saturn",
+          "Uranus"
+        ],
+        "derived_from": "Aquarius = 11th sign, Saturn/Uranus rules Aquarius"
+      },
+      "12th_house": {
+        "planet": [
+          "Jupiter",
+          "Neptune"
+        ],
+        "derived_from": "Pisces = 12th sign, Jupiter/Neptune rules Pisces"
+      }
+    }
+  },
+  "luminaries_special_role": {
+    "description": "Sun and Moon are central to all structure, signification and rulerships in traditional system",
+    "sun": {
+      "role": "Representative of God, creator of houses and tropical zodiac",
+      "seasonal_nature_changes": {
+        "spring": "Hot and moist (Aries, Taurus, Gemini)",
+        "summer": "Hot and dry (Cancer, Leo, Virgo)",
+        "autumn": "Cold and dry (Libra, Scorpio, Sagittarius)",
+        "winter": "Cold and moist (Capricorn, Aquarius, Pisces)"
+      }
+    },
+    "moon": {
+      "role": "Expresses similar temperature changes through four phases",
+      "traditional_association": "Rules 7th house in Chaldean order"
+    }
+  },
+  "planetary_natures": {
+    "sun": "Hot and dry",
+    "moon": "Cold and moist",
+    "mercury": "Variable (takes nature of what it aspects)",
+    "venus": "Cold and moist",
+    "mars": "Hot and dry",
+    "jupiter": "Hot and moist",
+    "saturn": "Cold and dry",
+    "uranus": "Hot and dry (modern attribution)",
+    "neptune": "Cold and moist (modern attribution)",
+    "pluto": "Hot and dry (modern attribution)"
+  },
+  "elemental_associations": {
+    "fire": {
+      "signs": [
+        "aries",
+        "leo",
+        "sagittarius"
+      ],
+      "nature": "Hot and dry",
+      "planets": [
+        "sun",
+        "mars",
+        "jupiter",
+        "pluto"
+      ]
+    },
+    "earth": {
+      "signs": [
+        "taurus",
+        "virgo",
+        "capricorn"
+      ],
+      "nature": "Cold and dry",
+      "planets": [
+        "saturn"
+      ]
+    },
+    "air": {
+      "signs": [
+        "gemini",
+        "libra",
+        "aquarius"
+      ],
+      "nature": "Hot and moist",
+      "planets": [
+        "mercury",
+        "venus",
+        "uranus"
+      ]
+    },
+    "water": {
+      "signs": [
+        "cancer",
+        "scorpio",
+        "pisces"
+      ],
+      "nature": "Cold and moist",
+      "planets": [
+        "moon",
+        "neptune"
+      ]
+    }
+  },
+  "key_differences": {
+    "traditional_vs_modern": [
+      {
+        "issue": "Parental houses",
+        "traditional": "4th house = father, 10th house = mother",
+        "modern": "Often reversed: 4th house = mother, 10th house = father",
+        "traditional_argument": "Signs do not rule houses, so we don't need to feel uncomfortable about 4th sign (Cancer, feminine) ruling father or 10th sign (Capricorn, masculine) ruling mother"
+      },
+      {
+        "issue": "Source of signification",
+        "traditional": "Houses obtain signification from Sun's apparent orbit around Earth",
+        "modern": "Often derived from sign-house consignification"
+      },
+      {
+        "issue": "Outer planets",
+        "traditional": "Excluded from Chaldean order and joys",
+        "modern": "Integrated as rulers of Scorpio, Aquarius, Pisces"
+      },
+      {
+        "issue": "Example of incorrect modern signification",
+        "traditional_critique": "Using Venus for money (because said to be natural ruler of 2nd house) or Jupiter for foreign matters (9th house) is incorrect"
+      }
+    ]
+  },
+  "practical_application": {
+    "traditional_approach": "Use Chaldean order and planetary joys for house significators, not sign-based rulerships",
+    "modern_approach": "Use sign rulers extended to house rulerships",
+    "recommendation_from_text": "Remove incorrect assignments (Mars as natural ruler of 1st house, etc.) to avoid choosing wrong significator in chart judgements"
+  },
+  "example_interpretations": {
+    "8th_house": {
+      "traditional_signification": "Death, partner's money, danger, fear, inheritance",
+      "modern_misattribution": "Sexual activity (because Scorpio rules sexual organs and is 8th sign)",
+      "text_correction": "8th house is associated with sexual organs but does not rule sexual activity, any more than 12th house rules walking because it is associated with feet"
+    },
+    "4th_house": {
+      "traditional": "End of all things, father, land, immovable possessions",
+      "modern_confusion": "Often assigned as mother due to Cancer (feminine sign) association"
+    }
+  },
+  "historical_background": {
+    "chaldean_order_basis": "Based on apparent distance from Earth in geocentric model: Saturn (farthest), Jupiter, Mars, Sun, Venus, Mercury, Moon (closest)",
+    "hermetic_roots": "Astrology as sacred language of divination, way to understand Divine Mind",
+    "consignification_origin": "Attempt to seek order in universe, connected with instituting tropical zodiac",
+    "modern_shifts": "19th-20th century incorporation of new planetary discoveries into existing framework"
+  },
+  "expanded_reference": {
+    "terminology": {
+      "rulership": "Planetary governance over a zodiac sign in a given astrological framework.",
+      "house_signification": "Topics and life domains associated with a house independent of sign ownership.",
+      "consignification": "Modern pedagogical mapping that aligns signs to houses by ordinal position (Aries/1st, Taurus/2nd, etc.).",
+      "planetary_joy": "A traditional doctrine assigning each classical planet a house where its expression is considered especially characteristic.",
+      "chaldean_order": "Classical planetary order by apparent geocentric distance/speed cycle: Saturn, Jupiter, Mars, Sun, Venus, Mercury, Moon."
+    },
+    "traditional_framework_summary": {
+      "core_principles": [
+        "Uses seven visible planets and luminaries (Sun, Moon) as essential structuring agents.",
+        "Treats houses as meaning-bearing places derived from astronomical and symbolic logic, not from signs ruling houses.",
+        "Employs Chaldean sequence and planetary joys to choose significators in delineation.",
+        "Separates sign rulership doctrine from house topic doctrine in chart judgement."
+      ],
+      "house_signification_examples": {
+        "4th_house": [
+          "father",
+          "land",
+          "end of matters",
+          "immovable property"
+        ],
+        "8th_house": [
+          "death",
+          "fear",
+          "inheritance",
+          "partner resources"
+        ],
+        "10th_house": [
+          "actions",
+          "reputation",
+          "authority",
+          "mother (in cited traditional framing)"
+        ]
+      }
+    },
+    "modern_framework_summary": {
+      "core_principles": [
+        "Retains classical rulers while adding Uranus, Neptune, and Pluto as co-rulers or primary rulers for selected signs.",
+        "Often derives house affinity through sign-house ordinal mapping.",
+        "Uses psychological and transformational themes more prominently in interpretive language."
+      ],
+      "common_sign_extensions": {
+        "scorpio": [
+          "Mars",
+          "Pluto"
+        ],
+        "aquarius": [
+          "Saturn",
+          "Uranus"
+        ],
+        "pisces": [
+          "Jupiter",
+          "Neptune"
+        ]
+      }
+    },
+    "outer_planet_context": {
+      "discoveries": [
+        {
+          "planet": "Uranus",
+          "year": 1781,
+          "impact_summary": "Introduced revision pressure on Aquarius rulership frameworks."
+        },
+        {
+          "planet": "Neptune",
+          "year": 1846,
+          "impact_summary": "Expanded Pisces symbolism in modern schools."
+        },
+        {
+          "planet": "Pluto",
+          "year": 1930,
+          "impact_summary": "Reframed Scorpio themes with depth/transformation language in modern practice."
+        }
+      ],
+      "traditional_response": "Traditional systems generally keep outer planets outside foundational house-ruler and Chaldean doctrines."
+    },
+    "comparison_matrix": [
+      {
+        "topic": "Primary symbolic architecture",
+        "traditional": "Geocentric, hermetic, seven-planet doctrine",
+        "modern": "Hybrid classical + post-discovery outer-planet schema"
+      },
+      {
+        "topic": "House ruler derivation",
+        "traditional": "Chaldean order and joys; not sign-derived",
+        "modern": "Commonly sign-house consignification derived"
+      },
+      {
+        "topic": "Luminary status",
+        "traditional": "Sun/Moon central and structurally formative",
+        "modern": "Still important but often integrated alongside outer-planet narratives"
+      },
+      {
+        "topic": "8th house interpretive emphasis",
+        "traditional": "Mortality, fear, inheritance, partner money",
+        "modern": "Frequently expanded toward sexuality/psychological transformation"
+      }
+    ],
+    "interpretive_cautions": {
+      "selection_errors_warned_in_text": [
+        "Choosing Venus as default money significator solely from 2nd-house natural ruler mapping.",
+        "Choosing Jupiter as default foreign-travel significator solely from 9th-house natural ruler mapping.",
+        "Treating house topics as interchangeable with body-part associations via sign analogy."
+      ],
+      "method_note": "The cited traditional perspective argues that conflating sign rulership and house signification produces analytical category errors."
+    },
+    "data_usage_guidance": {
+      "for_traditional_analysis": [
+        "Use house topics from house doctrine first.",
+        "Then evaluate house lord, occupants, condition, and relevant planetary joys.",
+        "Avoid importing sign-house natural ruler shortcuts as primary significators."
+      ],
+      "for_modern_analysis": [
+        "Use modern co-ruler sets where the school requires them.",
+        "Document whether classical or outer co-ruler is prioritized to keep readings reproducible.",
+        "Declare if sign-house consignification is being applied as interpretive overlay."
+      ]
+    },
+    "synthesized_views": {
+      "sign_rulership_crosswalk": [
+        {
+          "sign": "Aries",
+          "traditional_primary": "Mars",
+          "modern_primary": "Mars",
+          "modern_co_rulers": [],
+          "agreement": "full"
+        },
+        {
+          "sign": "Taurus",
+          "traditional_primary": "Venus",
+          "modern_primary": "Venus",
+          "modern_co_rulers": [],
+          "agreement": "full"
+        },
+        {
+          "sign": "Gemini",
+          "traditional_primary": "Mercury",
+          "modern_primary": "Mercury",
+          "modern_co_rulers": [],
+          "agreement": "full"
+        },
+        {
+          "sign": "Cancer",
+          "traditional_primary": "Moon",
+          "modern_primary": "Moon",
+          "modern_co_rulers": [],
+          "agreement": "full"
+        },
+        {
+          "sign": "Leo",
+          "traditional_primary": "Sun",
+          "modern_primary": "Sun",
+          "modern_co_rulers": [],
+          "agreement": "full"
+        },
+        {
+          "sign": "Virgo",
+          "traditional_primary": "Mercury",
+          "modern_primary": "Mercury",
+          "modern_co_rulers": [],
+          "agreement": "full"
+        },
+        {
+          "sign": "Libra",
+          "traditional_primary": "Venus",
+          "modern_primary": "Venus",
+          "modern_co_rulers": [],
+          "agreement": "full"
+        },
+        {
+          "sign": "Scorpio",
+          "traditional_primary": "Mars",
+          "modern_primary": "Mars",
+          "modern_co_rulers": [
+            "Pluto"
+          ],
+          "agreement": "partial"
+        },
+        {
+          "sign": "Sagittarius",
+          "traditional_primary": "Jupiter",
+          "modern_primary": "Jupiter",
+          "modern_co_rulers": [],
+          "agreement": "full"
+        },
+        {
+          "sign": "Capricorn",
+          "traditional_primary": "Saturn",
+          "modern_primary": "Saturn",
+          "modern_co_rulers": [],
+          "agreement": "full"
+        },
+        {
+          "sign": "Aquarius",
+          "traditional_primary": "Saturn",
+          "modern_primary": "Saturn",
+          "modern_co_rulers": [
+            "Uranus"
+          ],
+          "agreement": "partial"
+        },
+        {
+          "sign": "Pisces",
+          "traditional_primary": "Jupiter",
+          "modern_primary": "Jupiter",
+          "modern_co_rulers": [
+            "Neptune"
+          ],
+          "agreement": "partial"
+        }
+      ],
+      "house_ruler_method_comparison": [
+        {
+          "house": "1st_house",
+          "traditional_chaldean_planet": "Saturn",
+          "modern_derived_planet": "Mars",
+          "method_delta": "Chaldean cycle assigns Saturn; sign-house derivation assigns Mars from Aries."
+        },
+        {
+          "house": "4th_house",
+          "traditional_chaldean_planet": "Sun",
+          "modern_derived_planet": "Moon",
+          "method_delta": "Traditional assigns luminary via Chaldean cadence; modern mapping uses Cancer -> Moon analogy."
+        },
+        {
+          "house": "8th_house",
+          "traditional_chaldean_planet": "Saturn",
+          "modern_derived_planet": [
+            "Mars",
+            "Pluto"
+          ],
+          "method_delta": "Traditional repeats Saturn in 8th; modern maps Scorpio and may import Pluto co-rulership."
+        },
+        {
+          "house": "10th_house",
+          "traditional_chaldean_planet": "Mars",
+          "modern_derived_planet": "Saturn",
+          "method_delta": "Traditional sequence gives Mars to 10th; modern derives Saturn from Capricorn as 10th sign."
+        },
+        {
+          "house": "12th_house",
+          "traditional_chaldean_planet": "Venus",
+          "modern_derived_planet": [
+            "Jupiter",
+            "Neptune"
+          ],
+          "method_delta": "Traditional sequence gives Venus; modern assigns Piscean rulers through ordinal derivation."
+        }
+      ],
+      "agreement_summary": {
+        "sign_level": {
+          "full_agreement_count": 9,
+          "partial_agreement_count": 3,
+          "full_agreement_signs": [
+            "Aries",
+            "Taurus",
+            "Gemini",
+            "Cancer",
+            "Leo",
+            "Virgo",
+            "Libra",
+            "Sagittarius",
+            "Capricorn"
+          ],
+          "partial_agreement_signs": [
+            "Scorpio",
+            "Aquarius",
+            "Pisces"
+          ]
+        },
+        "house_level": {
+          "methodological_note": "Traditional Chaldean and modern sign-house derivation are structurally different systems and do not yield stable one-to-one agreement.",
+          "expected_outcome": "Frequent ruler divergence is normal when comparing methods."
+        }
+      },
+      "interpretive_synthesis": {
+        "core_tension": "The principal disagreement is not only which planets rule what, but whether houses should inherit sign rulers at all.",
+        "traditional_priority": [
+          "Separate sign doctrine from house doctrine.",
+          "Use house significations and house-specific techniques first.",
+          "Treat modern natural-ruler shortcuts as potentially misleading in strict traditional practice."
+        ],
+        "modern_priority": [
+          "Preserve symbolic continuity by aligning sign and house ordinality.",
+          "Integrate outer-planet symbolism where school tradition supports it.",
+          "Use natural-ruler correspondences as pedagogical and interpretive shorthand."
+        ],
+        "compatibility_protocol": [
+          "Declare analysis mode at the start (traditional, modern, or hybrid).",
+          "If hybrid, state precedence rules (e.g., classical primary, outer as modifiers).",
+          "Document which significator selection rule generated each judgment."
+        ]
+      },
+      "machine_readable_indexes": {
+        "planets_by_system": {
+          "traditional_classical_set": [
+            "Sun",
+            "Moon",
+            "Mercury",
+            "Venus",
+            "Mars",
+            "Jupiter",
+            "Saturn"
+          ],
+          "modern_extended_set": [
+            "Sun",
+            "Moon",
+            "Mercury",
+            "Venus",
+            "Mars",
+            "Jupiter",
+            "Saturn",
+            "Uranus",
+            "Neptune",
+            "Pluto"
+          ]
+        },
+        "outer_planet_adoption": {
+          "uranus": {
+            "modern_signs": [
+              "Aquarius"
+            ],
+            "traditional_signs": []
+          },
+          "neptune": {
+            "modern_signs": [
+              "Pisces"
+            ],
+            "traditional_signs": []
+          },
+          "pluto": {
+            "modern_signs": [
+              "Scorpio"
+            ],
+            "traditional_signs": []
+          }
+        }
+      }
+    }
+  }
+}
