@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="318pt" height="357pt" viewBox="0 0 318 357" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<g id="#000000ff">
+<path fill="#000000" opacity="1.00" d="M 0.00 0.00 L 318.00 0.00 L 318.00 357.00 L 0.00 357.00 Z" />
+<path fill="#000000" opacity="1.00" d="M 7.00 7.00 L 311.00 7.00 L 311.00 350.00 L 7.00 350.00 Z" />
+</g>
+<g id="#ffffffff">
+<path fill="none" stroke="#ffffff" stroke-width="2.5" d="M 7.00 7.00 L 311.00 7.00 L 311.00 350.00 L 7.00 350.00 Z" />
+<circle cx="159" cy="118" r="34" fill="none" stroke="#ffffff" stroke-width="4" />
+<path fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" d="M 159 76 L 159 38 M 147 50 L 159 38 L 171 50" />
+<path fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" d="M 159 152 L 159 203 M 141 189 L 177 189" />
+<path fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" d="M 111 248 L 207 248" />
+<path fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" d="M 111 278 L 207 278" />
+</g>
+<g fill="#ffffff" font-family="Arial, sans-serif" text-anchor="middle">
+<text x="159" y="226" font-size="22">VULKANUS</text>
+<text x="159" y="268" font-size="17">CONJUNCT 7th HC</text>
+<text x="159" y="300" font-size="16">1 15' 58&quot; A SYNASTRY</text>
+</g>
+</svg>
