@@ -1,0 +1,337 @@
+{
+  "master_astrological_reference": {
+    "title": "Complete Unified Astrological Master Reference – Maximum Detail & Long-Form Synthesis",
+    "compilation_timestamp": "2026-02-13T18:50:00-05:00",
+    "description": "Exhaustive, self-contained consolidation of astrological chart construction, astronomical/astrological calculations, house systems, strength-weighting methods, predictive timing systems, eclipse activation logic, and integrated synthesis workflow into one normalized machine-readable JSON.",
+    "global_keywords": [
+      "Sidereal Time",
+      "Lahiri Ayanamsha",
+      "Precession of Equinoxes",
+      "Nirayana",
+      "Sayana",
+      "Ascendant (Lagna)",
+      "Midheaven (MC)",
+      "Vimshottari Dasha",
+      "Shadbala",
+      "Jaimini Chara Karakas",
+      "Arudha Lagna",
+      "Argala",
+      "Avasthas",
+      "Sudarshana Chakra",
+      "Secondary Progressions",
+      "Solar Arc Directions",
+      "Primary Directions",
+      "Solar Return",
+      "Annual Profections",
+      "Firdaria",
+      "Eclipse Activation",
+      "Neptune as Eclipse Lord",
+      "Fixed Grand Cross",
+      "Uranus Disaster Point",
+      "Kuala Lumpur al-Qaeda Summit",
+      "USS Cole Bombing"
+    ],
+    "sections": {
+      "foundational_material": {
+        "source_text": {
+          "full_title": "A Book on Mathematical Astrology",
+          "author": "Y.K. Bansal",
+          "publisher": "Bharatiya Prachya Evam Sanatan Vigyan Sansthan",
+          "purpose": "Structured course material for Jyotisha Praveena / NOTISHA PRAVEEN certification of the Indian Council of Astrological Sciences.",
+          "coverage_topics": [
+            "Astronomical terminology and celestial geometry",
+            "Time conversion and sidereal time",
+            "Ayanamsha and Sayana/Nirayana conversion",
+            "Sunrise/Sunset and interpolation",
+            "Horoscope casting (modern and traditional)",
+            "Planetary longitudes and ephemeris usage",
+            "Bhavas and varga computations",
+            "Vimshottari dasha and sub-period logic"
+          ]
+        }
+      },
+      "core_astronomical_concepts": {
+        "sidereal_time": {
+          "definition": "Time measured relative to fixed stars; a sidereal day is approximately 23h 56m 4s.",
+          "lahiri_table_method": {
+            "steps": [
+              "Take sidereal time at 12h noon LMT for reference year at 82°30'E.",
+              "Apply year precession correction.",
+              "Apply place correction to convert to local reference.",
+              "Convert birth civil time to Local Mean Time (LMT).",
+              "Compute absolute interval from local noon.",
+              "Apply acceleration correction for sidereal gain.",
+              "Subtract interval for AM births and add for PM births to get final LST."
+            ],
+            "example": "Delhi, 25 Oct 2002, 09:30 IST => Local Sidereal Time ≈ 11:22:22"
+          }
+        },
+        "ayanamsha": {
+          "definition": "Precessional offset between tropical vernal point and sidereal zero point.",
+          "lahiri_approximation": "ayanamsha_deg ≈ 23°15'00\" + (year - 1956) × 50.2388475 arcseconds",
+          "value_for_2000": "~23°54'",
+          "conversion_rule": "nirayana_longitude = sayana_longitude - ayanamsha; add 360° if negative"
+        },
+        "precession_of_equinoxes": {
+          "mean_rate_modern": "~50.29 arcseconds/year",
+          "full_cycle": "~25,772 years",
+          "dynamical_cause": "Lunisolar torque acting on Earth’s equatorial bulge produces axial precession."
+        }
+      },
+      "chart_creation_pipeline": {
+        "input_requirements": [
+          "Birth date",
+          "Birth time (clock time + zone + DST status)",
+          "Birth latitude/longitude",
+          "Coordinate reference (WGS84 or equivalent)",
+          "Selected zodiac (tropical/sidereal)",
+          "Ayanamsha model if sidereal",
+          "House system",
+          "Ephemeris source and version"
+        ],
+        "pipeline_steps": [
+          {
+            "step": 1,
+            "name": "Normalize time",
+            "details": "Convert civil time to UTC, then to LMT if using table-based sidereal workflows."
+          },
+          {
+            "step": 2,
+            "name": "Compute sidereal context",
+            "details": "Compute Greenwich sidereal time and local sidereal time or use Lahiri table method."
+          },
+          {
+            "step": 3,
+            "name": "Compute angles",
+            "details": "Derive RAMC from LST and compute ASC/MC by spherical trigonometric formulas."
+          },
+          {
+            "step": 4,
+            "name": "Compute planetary positions",
+            "details": "Read geocentric longitudes/latitudes/speeds from ephemeris at birth moment."
+          },
+          {
+            "step": 5,
+            "name": "Apply zodiac frame",
+            "details": "For sidereal charts subtract ayanamsha from tropical longitudes and normalize 0°-360°."
+          },
+          {
+            "step": 6,
+            "name": "Generate houses",
+            "details": "Create cusps with selected house system (Placidus/Koch/Equal/Whole Sign/Sripathi)."
+          },
+          {
+            "step": 7,
+            "name": "Derive divisional and auxiliary charts",
+            "details": "Compute Varga set (e.g., D9/Navamsha) and optional Jaimini/Arudha structures."
+          },
+          {
+            "step": 8,
+            "name": "Compute strengths and yogas",
+            "details": "Run Shadbala, Ashtakavarga, dignities, avasthas, aspects, and condition-specific yogas."
+          },
+          {
+            "step": 9,
+            "name": "Compute timing layers",
+            "details": "Compute Vimshottari and/or Yogini periods, transits, progressions, directions, returns."
+          },
+          {
+            "step": 10,
+            "name": "Synthesize delineation",
+            "details": "Combine static natal promise + dynamic timing + weighted significance into final narrative."
+          }
+        ]
+      },
+      "formulas_catalog": {
+        "time_and_coordinate": [
+          {
+            "name": "Local Mean Time",
+            "expression": "LMT = Zone_Time ± 4 minutes × (Birth_Longitude - Standard_Meridian)"
+          },
+          {
+            "name": "Ascendant (tropical)",
+            "expression": "tan(ASC) = sin(RAMC) / (cos(RAMC) × cos(epsilon) - tan(phi) × sin(epsilon))"
+          },
+          {
+            "name": "Midheaven",
+            "expression": "tan(MC) = tan(RAMC) / cos(epsilon)"
+          }
+        ],
+        "house_systems": [
+          {
+            "system": "Placidus",
+            "method": "Time-based trisection of diurnal/nocturnal semi-arcs"
+          },
+          {
+            "system": "Koch",
+            "method": "Semi-arc method based on MC timing"
+          },
+          {
+            "system": "Equal",
+            "method": "Each cusp = ASC + n×30°"
+          },
+          {
+            "system": "Whole Sign",
+            "method": "Entire sign containing ASC degree is House 1"
+          },
+          {
+            "system": "Sripathi",
+            "method": "Porphyry-like angular arc trisection"
+          }
+        ],
+        "vedic_predictive": [
+          {
+            "name": "Vimshottari balance at birth",
+            "expression": "balance = (13°20' - moon_remainder_in_nakshatra)/13°20' × dasha_lord_years",
+            "cycle_years": 120
+          },
+          {
+            "name": "Yogini dasha",
+            "cycle_years": 36,
+            "sequence": [
+              "Mangala(1)",
+              "Pingala(2)",
+              "Dhanya(3)",
+              "Bhramari(4)",
+              "Bhadrika(5)",
+              "Ulka(6)",
+              "Siddha(7)",
+              "Sankata(8)"
+            ]
+          },
+          {
+            "name": "Jaimini Chara Karakas",
+            "method": "Rank planets by descending longitude (most schools exclude nodes)."
+          }
+        ],
+        "western_predictive": [
+          {
+            "name": "Secondary progressions",
+            "principle": "1 day after birth corresponds to 1 year of life"
+          },
+          {
+            "name": "Solar arc directions",
+            "principle": "Apply same directed arc (usually Sun arc) to all planets/angles"
+          },
+          {
+            "name": "Solar return",
+            "principle": "Annual chart at exact Sun return to natal longitude"
+          },
+          {
+            "name": "Annual profections",
+            "principle": "Advance house lord by one sign per year from natal ascendant"
+          },
+          {
+            "name": "Firdaria",
+            "principle": "Time-lord periods by sect-based sequence"
+          }
+        ]
+      },
+      "strength_weighting_and_scoring": {
+        "shadbala_framework": {
+          "components": [
+            "Sthana Bala",
+            "Dig Bala",
+            "Kala Bala",
+            "Cheshta Bala",
+            "Naisargika Bala",
+            "Drik Bala"
+          ],
+          "unit": "Rupa (60 shashtiamsa)",
+          "output": "Per-planet and aggregate weighted strength profile"
+        },
+        "extended_weight_model": {
+          "objective": "Unify multi-school indicators into a single scalar + vector interpretation model.",
+          "base_weights": {
+            "dignity_and_sign_condition": 0.18,
+            "house_placement": 0.12,
+            "aspectual_condition": 0.14,
+            "shadbala": 0.16,
+            "avastha_condition": 0.08,
+            "ashtakavarga_support": 0.08,
+            "varga_reinforcement": 0.10,
+            "functional_lordship_relevance": 0.09,
+            "timing_activation": 0.05
+          },
+          "normalization": "All sub-scores normalized to [0,1], weighted sum normalized to 100.",
+          "confidence_adjustment": "Reduce final certainty when conflicting high-magnitude indicators coexist."
+        },
+        "conflict_resolution_rules": [
+          "If dignity is strong but heavily afflicted, reduce net expression strength and increase volatility flag.",
+          "If natal promise is weak but timing activation is extreme, classify as temporary surge event.",
+          "If multiple independent systems converge (e.g., dasha + transit + progression), boost event probability tier."
+        ]
+      },
+      "delineation_and_synthesis_methodology": {
+        "natal_core": [
+          "Ascendant and ruler condition",
+          "Luminaries by sign/house/aspect",
+          "Angular houses and angular rulers",
+          "Yogas and structural patterns",
+          "Karakas and arudhas (if Jaimini layer used)"
+        ],
+        "contextual_layers": [
+          "Health and vitality",
+          "Career/public status",
+          "Relationships",
+          "Resources and wealth",
+          "Spiritual/psychological trajectory"
+        ],
+        "timing_merge_protocol": [
+          "Identify baseline life themes from natal chart.",
+          "Overlay dasha/firdaria/profections for period rulership.",
+          "Add transits/progressions/directions for trigger windows.",
+          "Prioritize windows where at least three methods converge within orb/time tolerance.",
+          "Generate narrative with probability tiers: low/moderate/high/critical activation."
+        ]
+      },
+      "eclipse_activation_reference_2000": {
+        "active_eclipses_count": 20,
+        "eclipses_in_2000": 6,
+        "dominant_activation": {
+          "eclipse": "1999-07-28 Partial Lunar Eclipse",
+          "dominant_lord": "Neptune",
+          "rule_notes": [
+            "Primary orb: 1°",
+            "Extended orb observations up to 2.5° for Uranus/Neptune",
+            "Neptune remained near the 1999 eclipse degree through much of 2000"
+          ],
+          "interpretive_signatures": {
+            "Neptune": [
+              "deception",
+              "hidden networks",
+              "ideological diffusion",
+              "collective illusion"
+            ],
+            "Uranus": [
+              "sudden disruptions",
+              "shock events",
+              "radical breaks"
+            ]
+          }
+        },
+        "example_correlates": [
+          "Kuala Lumpur summit (Jan 2000)",
+          "USS Cole bombing (Oct 2000)",
+          "Broader precursor dynamics later associated with 9/11 planning narratives"
+        ]
+      },
+      "data_quality_and_governance": {
+        "validation_rules": [
+          "Use ISO-8601 timestamps",
+          "Normalize longitudes to [0,360)",
+          "Store sign-degree both as absolute and sign-format fields",
+          "Record ephemeris source and version",
+          "Record ayanamsha model and value at event time"
+        ],
+        "audit_fields": [
+          "source_document",
+          "extraction_method",
+          "computation_engine",
+          "version",
+          "last_verified_utc"
+        ]
+      }
+    }
+  }
+}
