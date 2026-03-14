@@ -1,0 +1,738 @@
+{
+  "astrological_framework": {
+    "version": "1.0",
+    "source": "Ingested content from pages 1-11",
+    "description": "A comprehensive astrological delineation and interpretation framework, expanded for natal, relational, predictive, health, and vocational analysis. Structured for easy reference and application.",
+    "sections": {
+      "1_zodiac_signs_overview": {
+        "description": "Delineation of 12 signs with symbols, keywords, houses, bodies, elements, qualities, polarities, rulers, shadows, compatibilities, and vocational/health ties.",
+        "signs": [
+          {
+            "name": "Aries",
+            "symbol": "Ram",
+            "keyword": "Self",
+            "house": 1,
+            "body": "Head, Face",
+            "element": "Fire",
+            "quality": "Cardinal",
+            "day_night": "Day",
+            "ruling_planet": "Mars",
+            "shadow": "Impulsivity leading to burnout",
+            "compatibility": "Air signs for balanced drive",
+            "vocational": "Leadership roles (1st House, Mars-ruled)",
+            "health": "Headaches from stress—channel energy via exercise"
+          },
+          {
+            "name": "Taurus",
+            "symbol": "Bull",
+            "keyword": "Possessions",
+            "house": 2,
+            "body": "Neck, Throat",
+            "element": "Earth",
+            "quality": "Fixed",
+            "day_night": "Night",
+            "ruling_planet": "Venus",
+            "shadow": "Stubborn resistance to change",
+            "compatibility": "Water for emotional grounding",
+            "vocational": "Finance/arts (2nd House, Venus)",
+            "health": "Throat issues from overindulgence—focus on sensual balance"
+          },
+          {
+            "name": "Gemini",
+            "symbol": "Twins",
+            "keyword": "Communication",
+            "house": 3,
+            "body": "Lungs, Arms",
+            "element": "Air",
+            "quality": "Mutable",
+            "day_night": "Day",
+            "ruling_planet": "Mercury",
+            "shadow": "Scattered indecision",
+            "compatibility": "Fire for focused ideas",
+            "vocational": "Media/writing (3rd House, Mercury)",
+            "health": "Respiratory strain—practice mindful breathing"
+          },
+          {
+            "name": "Cancer",
+            "symbol": "Crab",
+            "keyword": "Home",
+            "house": 4,
+            "body": "Breasts, Digestion",
+            "element": "Water",
+            "quality": "Cardinal",
+            "day_night": "Night",
+            "ruling_planet": "Moon",
+            "shadow": "Mood-driven withdrawal",
+            "compatibility": "Earth for stability",
+            "vocational": "Family/caregiving (4th House, Moon)",
+            "health": "Digestive woes from emotional eating—nurture inner self"
+          },
+          {
+            "name": "Leo",
+            "symbol": "Lion",
+            "keyword": "Pleasure",
+            "house": 5,
+            "body": "Heart, Back",
+            "element": "Fire",
+            "quality": "Fixed",
+            "day_night": "Day",
+            "ruling_planet": "Sun",
+            "shadow": "Dramatic ego clashes",
+            "compatibility": "Air for collaborative shine",
+            "vocational": "Entertainment/performance (5th House, Sun)",
+            "health": "Heart/back tension—affirm self-worth daily"
+          },
+          {
+            "name": "Virgo",
+            "symbol": "Virgin",
+            "keyword": "Health",
+            "house": 6,
+            "body": "Stomach, Intestines",
+            "element": "Earth",
+            "quality": "Mutable",
+            "day_night": "Night",
+            "ruling_planet": "Mercury",
+            "shadow": "Critical perfectionism",
+            "compatibility": "Water for compassionate service",
+            "vocational": "Health/admin (6th House, Mercury)",
+            "health": "Gut imbalances—prioritize routine wellness"
+          },
+          {
+            "name": "Libra",
+            "symbol": "Scales",
+            "keyword": "Partner",
+            "house": 7,
+            "body": "Kidneys",
+            "element": "Air",
+            "quality": "Cardinal",
+            "day_night": "Day",
+            "ruling_planet": "Venus",
+            "shadow": "Indecisive people-pleasing",
+            "compatibility": "Fire for passionate equity",
+            "vocational": "Law/partnerships (7th House, Venus)",
+            "health": "Kidney strain from imbalance—seek relational fairness"
+          },
+          {
+            "name": "Scorpio",
+            "symbol": "Scorpion",
+            "keyword": "Sex",
+            "house": 8,
+            "body": "Sex Organs",
+            "element": "Water",
+            "quality": "Fixed",
+            "day_night": "Night",
+            "ruling_planet": "Mars/Pluto",
+            "shadow": "Vengeful secrecy",
+            "compatibility": "Earth for regenerative stability",
+            "vocational": "Investigation/psychology (8th House, Mars/Pluto)",
+            "health": "Reproductive issues—release control through therapy"
+          },
+          {
+            "name": "Sagittarius",
+            "symbol": "Archer",
+            "keyword": "Philosophy",
+            "house": 9,
+            "body": "Hips, Thighs",
+            "element": "Fire",
+            "quality": "Mutable",
+            "day_night": "Day",
+            "ruling_planet": "Jupiter",
+            "shadow": "Reckless over-optimism",
+            "compatibility": "Air for exploratory dialogues",
+            "vocational": "Travel/education (9th House, Jupiter)",
+            "health": "Hip/thigh injuries—embrace ethical expansion"
+          },
+          {
+            "name": "Capricorn",
+            "symbol": "Sea Goat",
+            "keyword": "Social Status",
+            "house": 10,
+            "body": "Skin, Teeth, Bones",
+            "element": "Earth",
+            "quality": "Cardinal",
+            "day_night": "Night",
+            "ruling_planet": "Saturn",
+            "shadow": "Rigid pessimism",
+            "compatibility": "Water for enduring empathy",
+            "vocational": "Management/authority (10th House, Saturn)",
+            "health": "Bone/skin ailments—honor perseverance with rest"
+          },
+          {
+            "name": "Aquarius",
+            "symbol": "Water Bearer",
+            "keyword": "Friends",
+            "house": 11,
+            "body": "Ankles",
+            "element": "Air",
+            "quality": "Fixed",
+            "day_night": "Day",
+            "ruling_planet": "Saturn/Uranus",
+            "shadow": "Aloof detachment",
+            "compatibility": "Fire for collective action",
+            "vocational": "Tech/groups (11th House, Saturn/Uranus)",
+            "health": "Ankle circulation—innovate social connections"
+          },
+          {
+            "name": "Pisces",
+            "symbol": "Fish",
+            "keyword": "Unconscious",
+            "house": 12,
+            "body": "Feet",
+            "element": "Water",
+            "quality": "Mutable",
+            "day_night": "Night",
+            "ruling_planet": "Jupiter/Neptune",
+            "shadow": "Escapist boundaries",
+            "compatibility": "Earth for practical intuition",
+            "vocational": "Arts/healing (12th House, Jupiter/Neptune)",
+            "health": "Foot/feet vulnerabilities—ground spirituality in routine"
+          }
+        ],
+        "guidelines": {
+          "elemental_interpretation": "Fire: Action/inspiration; Earth: Practicality; Air: Intellect/connection; Water: Emotions/intuition.",
+          "quality_interpretation": "Cardinal: Initiates; Fixed: Stabilizes; Mutable: Adapts.",
+          "compatibility_scoring": "Same element: Strong rapport (4/4); Adjacent: Supportive; Opposite: Magnetic tension."
+        }
+      },
+      "2_planetary_delineations": {
+        "description": "Detailed profiles of 10 planets/luminaries, including themes, rulerships, orbits, genders, dignities, shadows, and daily applications.",
+        "planets": [
+          {
+            "name": "Sun",
+            "type": "Luminary",
+            "theme": "Self, personality, ego, vitality, creativity, authority, male figures",
+            "rulerships": {
+              "signs": [
+                "Leo"
+              ],
+              "houses": [
+                5
+              ]
+            },
+            "energy": "Masculine, forceful",
+            "orbit": "~1 year (1 month per sign)",
+            "dignities": {
+              "exaltation": "Aries",
+              "detriment": "Aquarius",
+              "fall": "Libra"
+            },
+            "shadow": "Arrogance",
+            "daily_application": "Morning routines boost energy; rules gold/yellow for vitality rituals",
+            "interpretation": "Represents core identity; strengthened in natural house (5th) for leadership."
+          },
+          {
+            "name": "Moon",
+            "type": "Luminary",
+            "theme": "Emotions, instincts, nurturing, family, female figures, fertility",
+            "rulerships": {
+              "signs": [
+                "Cancer"
+              ],
+              "houses": [
+                4
+              ]
+            },
+            "energy": "Feminine, fluid",
+            "orbit": "~28 days (2.5 days per sign)",
+            "dignities": {
+              "exaltation": "Taurus",
+              "detriment": "Capricorn",
+              "fall": "Scorpio"
+            },
+            "shadow": "Clinginess",
+            "daily_application": "Lunar cycles guide mood—full moon for release",
+            "interpretation": "Governs soul and reactions; retrograde internalizes feelings."
+          },
+          {
+            "name": "Mercury",
+            "type": "Planet",
+            "theme": "Communication, intellect, learning, short trips, siblings",
+            "rulerships": {
+              "signs": [
+                "Gemini",
+                "Virgo"
+              ],
+              "houses": [
+                3,
+                6
+              ]
+            },
+            "energy": "Neutral (adapts to sign)",
+            "orbit": "~88 days (never >28° from Sun)",
+            "dignities": {
+              "exaltation": "Virgo",
+              "detriment": [
+                "Sagittarius",
+                "Pisces"
+              ],
+              "fall": "Pisces"
+            },
+            "shadow": "Gossip",
+            "daily_application": "Journaling sharpens wit; rules quicksilver for adaptability",
+            "interpretation": "Prompts quick thinking; retrograde challenges expression."
+          },
+          {
+            "name": "Venus",
+            "type": "Planet",
+            "theme": "Love, romance, beauty, possessions, arts, harmony",
+            "rulerships": {
+              "signs": [
+                "Taurus",
+                "Libra"
+              ],
+              "houses": [
+                2,
+                7
+              ]
+            },
+            "energy": "Feminine",
+            "orbit": "~225 days (never >47° from Sun)",
+            "dignities": {
+              "exaltation": "Pisces",
+              "detriment": [
+                "Aries",
+                "Scorpio"
+              ],
+              "fall": "Aries"
+            },
+            "shadow": "Vanity",
+            "daily_application": "Aesthetic pleasures (art/music) foster harmony",
+            "interpretation": "Enhances attraction; benevolent for relationships."
+          },
+          {
+            "name": "Mars",
+            "type": "Planet",
+            "theme": "Action, passion, ambition, sexuality, courage, conflict",
+            "rulerships": {
+              "signs": [
+                "Aries",
+                "Scorpio"
+              ],
+              "houses": [
+                1,
+                8
+              ]
+            },
+            "energy": "Masculine",
+            "orbit": "~2 years",
+            "dignities": {
+              "exaltation": "Capricorn",
+              "detriment": [
+                "Libra",
+                "Taurus"
+              ],
+              "fall": "Cancer"
+            },
+            "shadow": "Rage",
+            "daily_application": "Physical outlets prevent frustration",
+            "interpretation": "Drives determination; constructive or destructive based on use."
+          },
+          {
+            "name": "Jupiter",
+            "type": "Planet",
+            "theme": "Luck, philosophy, expansion, travel, ethics, prosperity",
+            "rulerships": {
+              "signs": [
+                "Sagittarius",
+                "Pisces"
+              ],
+              "houses": [
+                9,
+                12
+              ]
+            },
+            "energy": "Masculine",
+            "orbit": "~12 years (1 sign/year)",
+            "dignities": {
+              "exaltation": "Cancer",
+              "detriment": [
+                "Gemini",
+                "Virgo"
+              ],
+              "fall": "Capricorn"
+            },
+            "shadow": "Extravagance",
+            "daily_application": "Gratitude practices attract fortune",
+            "interpretation": "Benevolent guide; risks laziness at worst."
+          },
+          {
+            "name": "Saturn",
+            "type": "Planet",
+            "theme": "Discipline, limits, karma, structure, aging, responsibility",
+            "rulerships": {
+              "signs": [
+                "Capricorn",
+                "Aquarius"
+              ],
+              "houses": [
+                10,
+                11
+              ]
+            },
+            "energy": "Masculine",
+            "orbit": "28-30 years",
+            "dignities": {
+              "exaltation": "Libra",
+              "detriment": [
+                "Cancer",
+                "Leo"
+              ],
+              "fall": "Aries"
+            },
+            "shadow": "Fear",
+            "daily_application": "Time management builds karma",
+            "interpretation": "Taskmaster teaching perseverance."
+          },
+          {
+            "name": "Uranus",
+            "type": "Planet",
+            "theme": "Rebellion, innovation, technology, originality, sudden change",
+            "rulerships": {
+              "signs": [
+                "Aquarius"
+              ],
+              "houses": [
+                11
+              ]
+            },
+            "energy": "Masculine, unpredictable",
+            "orbit": "~84 years",
+            "dignities": {
+              "exaltation": "Scorpio",
+              "detriment": "Leo",
+              "fall": "Taurus"
+            },
+            "shadow": "Chaos",
+            "daily_application": "Tech breaks spark originality",
+            "interpretation": "Generational disruptor; encourages expanded consciousness."
+          },
+          {
+            "name": "Neptune",
+            "type": "Planet",
+            "theme": "Spirituality, dreams, intuition, illusion, compassion",
+            "rulerships": {
+              "signs": [
+                "Pisces"
+              ],
+              "houses": [
+                12
+              ]
+            },
+            "energy": "Feminine, ethereal",
+            "orbit": "~165 years",
+            "dignities": {
+              "exaltation": "Leo",
+              "detriment": "Virgo",
+              "fall": "Virgo"
+            },
+            "shadow": "Deception",
+            "daily_application": "Meditation clarifies dreams",
+            "interpretation": "Dissolves boundaries; risks confusion."
+          },
+          {
+            "name": "Pluto",
+            "type": "Planet",
+            "theme": "Transformation, power, secrets, rebirth, psychology",
+            "rulerships": {
+              "signs": [
+                "Scorpio"
+              ],
+              "houses": [
+                8
+              ]
+            },
+            "energy": "Masculine, intense",
+            "orbit": "~248 years",
+            "dignities": {
+              "exaltation": "Leo",
+              "detriment": [
+                "Taurus",
+                "Libra"
+              ],
+              "fall": "Libra"
+            },
+            "shadow": "Manipulation",
+            "daily_application": "Shadow work uncovers strength",
+            "interpretation": "Unearths depths for evolution."
+          }
+        ],
+        "general_rules": {
+          "inner_planets": "Moon, Mercury, Venus, Mars—influence personal/inner self.",
+          "social_planets": "Jupiter, Saturn—shape societal roles.",
+          "outer_planets": "Uranus, Neptune, Pluto—generational/external experiences.",
+          "benevolent": [
+            "Jupiter",
+            "Venus",
+            "Sun",
+            "Moon",
+            "Mercury"
+          ],
+          "challenging": [
+            "Saturn",
+            "Mars",
+            "Uranus",
+            "Neptune",
+            "Pluto"
+          ],
+          "dignities": "Strongest in ruling/exaltation signs; weakened in detriment/fall. Accidental dignity in natural house.",
+          "motion": "Stationary/direct: Focused/strong; Retrograde: Diffused/introspective."
+        }
+      },
+      "3_houses_and_application": {
+        "description": "Life areas ruled by houses, with angular/succedent/cadent types.",
+        "houses": [
+          {
+            "number": 1,
+            "theme": "Self",
+            "type": "Angular",
+            "natural_sign": "Aries"
+          },
+          {
+            "number": 2,
+            "theme": "Possessions",
+            "type": "Succedent",
+            "natural_sign": "Taurus"
+          },
+          {
+            "number": 3,
+            "theme": "Communication",
+            "type": "Cadent",
+            "natural_sign": "Gemini"
+          },
+          {
+            "number": 4,
+            "theme": "Home",
+            "type": "Angular",
+            "natural_sign": "Cancer"
+          },
+          {
+            "number": 5,
+            "theme": "Pleasure",
+            "type": "Succedent",
+            "natural_sign": "Leo"
+          },
+          {
+            "number": 6,
+            "theme": "Health",
+            "type": "Cadent",
+            "natural_sign": "Virgo"
+          },
+          {
+            "number": 7,
+            "theme": "Partner",
+            "type": "Angular",
+            "natural_sign": "Libra"
+          },
+          {
+            "number": 8,
+            "theme": "Sex",
+            "type": "Succedent",
+            "natural_sign": "Scorpio"
+          },
+          {
+            "number": 9,
+            "theme": "Philosophy",
+            "type": "Cadent",
+            "natural_sign": "Sagittarius"
+          },
+          {
+            "number": 10,
+            "theme": "Social Status",
+            "type": "Angular",
+            "natural_sign": "Capricorn"
+          },
+          {
+            "number": 11,
+            "theme": "Friends",
+            "type": "Succedent",
+            "natural_sign": "Aquarius"
+          },
+          {
+            "number": 12,
+            "theme": "Unconscious",
+            "type": "Cadent",
+            "natural_sign": "Pisces"
+          }
+        ],
+        "guidelines": {
+          "angular": "Dynamic action areas",
+          "succedent": "Resource building",
+          "cadent": "Adaptive learning",
+          "ascendant_ruler": "Key influence (e.g., Mercury for Virgo rising emphasizes communication/health)"
+        },
+        "process": "Blend planet in sign/house with dignity/motion for themes (e.g., Venus in Taurus 2nd: Stable financial harmony)."
+      },
+      "4_motion_types": {
+        "description": "Planetary movements and their interpretive impacts.",
+        "types": {
+          "stationary": "Highly-focused, significant energy; imminent direct/retrograde.",
+          "direct": "Considerable, forward influence.",
+          "retrograde": "Diffused, unfocused; appears backward, garbles messages for introspection."
+        },
+        "eclipses": "Moon/Sun alignments = karmic resets (e.g., Solar Eclipse in Leo: Self-rebirth)."
+      },
+      "5_aspects_and_synthesis": {
+        "description": "How planets interact; includes major aspects and synthesis rules.",
+        "aspect_types": [
+          {
+            "name": "Conjunction",
+            "angle": "0°",
+            "interpretation": "Fusion/intensification; strong in dignity (e.g., Sun-Jupiter in Leo: Expansive leadership)."
+          },
+          {
+            "name": "Sextile",
+            "angle": "60°",
+            "interpretation": "Opportunity/harmony; complementary elements (e.g., Moon-Venus: Emotional security)."
+          },
+          {
+            "name": "Square",
+            "angle": "90°",
+            "interpretation": "Tension/challenge; builds resilience (e.g., Mars-Saturn: Disciplined ambition)."
+          },
+          {
+            "name": "Trine",
+            "angle": "120°",
+            "interpretation": "Ease/talent; same-element flow (e.g., Mercury-Uranus: Innovative ideas)."
+          },
+          {
+            "name": "Opposition",
+            "angle": "180°",
+            "interpretation": "Polarity/balance; mirrors detriment (e.g., Venus-Pluto: Intense relational power)."
+          },
+          {
+            "name": "Quincunx",
+            "angle": "150°",
+            "interpretation": "Awkward adjustments; requires adaptation (e.g., Mercury-Neptune: Creative confusion)."
+          }
+        ],
+        "synthesis_rules": {
+          "elemental": "Harmonize elements/qualities (e.g., Fire-Air dynamic).",
+          "house_overlaps": "Link areas (e.g., 9th-5th: Creative philosophy).",
+          "stellium": "3+ planets in sign/house = intensified theme.",
+          "overall_themes": "Dominant energies by element/type; free will applies influences."
+        }
+      },
+      "6_planetary_groups": {
+        "inner": [
+          "Moon",
+          "Mercury",
+          "Venus",
+          "Mars"
+        ],
+        "social": [
+          "Jupiter",
+          "Saturn"
+        ],
+        "outer": [
+          "Uranus",
+          "Neptune",
+          "Pluto"
+        ],
+        "luminaries": [
+          "Sun",
+          "Moon"
+        ]
+      },
+      "7_compatibility_relational": {
+        "description": "Synastry and composite for relationships.",
+        "factors": {
+          "element_harmony": "Same: Natural flow; Opposite: Magnetic tension.",
+          "quality_dynamics": "Cardinal: Initiate; Fixed: Sustain; Mutable: Adapt.",
+          "rulership_matches": "Shared rulers enhance (e.g., Venus signs: Refined harmony)."
+        },
+        "synastry_examples": [
+          {
+            "aspects": "Sun-Moon Conjunction/Trine",
+            "interpretation": "Soulmate vibe—ego complements emotions."
+          },
+          {
+            "aspects": "Venus-Mars Sextile/Trine",
+            "interpretation": "Romantic chemistry; dignity boosts endurance."
+          },
+          {
+            "aspects": "Venus-Saturn Square",
+            "interpretation": "Tests commitment; builds lasting bonds."
+          },
+          {
+            "aspects": "Moon-Pluto Opposition",
+            "interpretation": "Intense transformations; power to loyalty."
+          }
+        ],
+        "house_themes": {
+          "7th": "One-on-one bonds",
+          "5th": "Romance",
+          "8th": "Intimacy",
+          "4th": "Family"
+        },
+        "composite": "Midpoint chart (e.g., composite Sun Taurus 2nd: Stable sharing).",
+        "shadow": "Tense aspects as growth (e.g., Saturn square Venus: Mature love)."
+      },
+      "8_predictive_transits": {
+        "description": "Timing via transits, progressions, and returns.",
+        "transit_speeds": [
+          {
+            "group": "Inner",
+            "speed": "Days-weeks to ~2 yrs",
+            "role": "Daily/personal events",
+            "example": "Mercury retrograde 3rd House: Review communications."
+          },
+          {
+            "group": "Social",
+            "speed": "1–30 yrs",
+            "role": "Growth/structure",
+            "example": "Jupiter 9th House: Luck in philosophy."
+          },
+          {
+            "group": "Outer",
+            "speed": "84–248 yrs",
+            "role": "Generational shifts",
+            "example": "Pluto square Sun: Transform identity."
+          }
+        ],
+        "progressions": {
+          "secondary": "1 day/year (e.g., Moon sign change ~2.5 yrs: Emotional cycles).",
+          "solar_arcs": "Equal advancement for angles (e.g., MC to Jupiter: Career expansion)."
+        },
+        "returns": {
+          "saturn": "~29 yrs (Capricorn/Aquarius): Maturity tests.",
+          "jupiter": "~12 yrs: Opportunities."
+        },
+        "process": "Activate natal positions; layer with solar returns."
+      },
+      "9_health_vocational": {
+        "description": "Applications for well-being and career.",
+        "health": {
+          "ties": "Signs/houses to body (e.g., Virgo 6th Mercury retrograde: Digestive stress—herbal remedies).",
+          "planetary": "Uranus: Sudden ailments; Neptune: Psychosomatic."
+        },
+        "vocational": {
+          "midheaven": "Sign + 10th planets + 6th/2nd (e.g., Capricorn MC Saturn dignity: Authoritative career; Jupiter aspect: Prosperous).",
+          "interpretation": "Aquarius MC Uranus trine: Innovative tech; square Moon: Emotional detachment warning."
+        }
+      },
+      "10_workbook": {
+        "description": "Step-by-step for chart analysis.",
+        "steps": [
+          "1. Gather placements (e.g., Sun Leo 15° 5th, direct).",
+          "2. Element balance (e.g., 4 Fire: Passionate, ground with Water).",
+          "3. Dignity check (e.g., Venus Taurus exaltation: Financial charm).",
+          "4. Aspects map (e.g., Grand Trine Air: Easy intellect).",
+          "5. Synthesis: 'Leo Sun trine Jupiter expands creativity, squared Mars for challenges—pursue leadership.'",
+          "6. Advice: Transits/compat (e.g., Pluto square: Transform shadows)."
+        ],
+        "sample_reading": {
+          "chart": "Sun Leo 5th, Moon Cancer 4th, Venus Libra 7th, Mars Aries 1st square Saturn Capricorn 10th",
+          "personality": "Regal vitality nurtures home, harmonizes partnerships.",
+          "challenges": "Drive tests career structure—build resilience.",
+          "relations": "Fiery self attracts balance; trines ease intimacy.",
+          "prediction": "Jupiter 9th 2025: Philosophical growth via travel.",
+          "health_voc": "Heart focus; leadership with family ties."
+        }
+      },
+      "general_ethical_notes": {
+        "free_will": "Energies influence, not dictate—empower growth.",
+        "application": "For natal/relational/predictive use; outer planets generational."
+      }
+    }
+  }
+}
