@@ -1,0 +1,45 @@
+{
+  "meta_data": {
+    "version": "6.0",
+    "analytic_mode": "Verbose/Karmic/Technical",
+    "frameworks_active":,
+    "fate_calculus_enabled": true
+  },
+  "astrological_formulas": {
+    "angles": {
+      "mc": "ARCTAN ( TAN (RAMC) / COS e )",
+      "asc": "ARCCOT (- ( (TAN f * SIN e) + (SIN RAMC * COS e) ) / COS RAMC)"
+    },
+    "midpoints": "A = B/C (Focal point A in hard aspect to halfsum of B and C)",
+    "harmonic_modulus": "Modulus 2^n (H-1, H-2, H-4, H-8, H-16, H-32, H-64)",
+    "cuspal_interlinks": {
+      "involvement": "Nakshatra Lord of planet appears in Cuspal position",
+      "commitment": "Sub Lord of planet appears in Cuspal position",
+      "culmination": "Sub-Sub Lord (SSL) declares final fruitfulness"
+    }
+  },
+  "delineations": {
+    "planetary_archetypes": {
+      "sun": { "keywords":, "soul_essence": "", "harmonic_resonance": "", "paternal_karma": "" },
+      "moon": { "keywords":, "reigning_need": "", "maternal_imprint": "", "subconscious_security": "" },
+      "saturn": { "keywords":, "threshold_of_pain": "", "karmic_debt": "", "dharmic_mastery": "" },
+      "vakri_grahas": { "status": "Retrograde", "role": "Cosmic Accountant", "processing": "Inward" }
+    },
+    "the_moirai_fates": {
+      "klotho_97": { "archetype": "The Spinner", "function": "Spun Thread / Ignition" },
+      "lachesis_120": { "archetype": "The Allotter", "function": "Measured Length / Duration" },
+      "atropos_273": { "archetype": "The Cutter", "function": "Final Cut / Inevitable End" }
+    },
+    "primordial_destiny_markers": {
+      "ananke_1212": "Compelling Necessity / Unbending Force",
+      "moira_638": "The Allotted Share / Social Rank",
+      "karma_3811": "Action-Reaction Balance / Cosmic Debt",
+      "tyche_258": "Fortune / Chance Windfalls",
+      "destinn_6583": "Chosen Path / Dharmic Intersection"
+    },
+    "fixed_star_lasers": { "intensity": "Laser-beam astral energy", "conjunctions": }
+  },
+  "adversity_index": {
+    "trishamsha_d30": { "purpose": "Assess miseries, inherited weakness, and shad ripu" }
+  }
+}
