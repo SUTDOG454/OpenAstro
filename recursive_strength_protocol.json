@@ -1,0 +1,16 @@
+{
+  "recursive_strength_protocol": {
+    "chain_order": ["NATAL", "PROGRESSED", "SOLAR_RETURN", "TRANSIT", "URANIAN"],
+    "modifier_matrix": {
+      "essential_dignity_weight": 1.25,
+      "accidental_dignity_weight": 1.15,
+      "aspect_precision_weight": 1.5,
+      "nodal_alignment_multiplier": 2.0
+    },
+    "calculation_rules": {
+      "rule_1": "Natal strength is the absolute cap for manifestation potential.",
+      "rule_2": "If a cumulative score drops below 3.0, the event is 'Inert'.",
+      "rule_3": "Exact Midpoint alignments (within 0°30') provide a +2.0 Flat Bonus."
+    }
+  }
+}
