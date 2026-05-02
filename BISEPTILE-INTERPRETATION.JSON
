@@ -1,0 +1,861 @@
+{
+  "aspect_family": "biseptile",
+  "aspect_type": "minor_fated",
+  "orb_degrees": 102.86,
+  "orb_tolerance": "1 degree maximum",
+  "sacred_geometry": {
+    "division": "2/7 of circle",
+    "symbolism": "double seventh, layered destiny",
+    "element": "complex fate, evolving spiritual purpose"
+  },
+  "core_themes": [
+    "multi-layered destiny",
+    "evolving karmic purpose",
+    "spiritual recognition over time",
+    "mysterious unfolding",
+    "destined complexity"
+  ],
+  "relationship_to_septile": "More complex and subtle than septile; fated nature may not be immediately obvious but reveals itself gradually",
+  "interpretations": [
+    {
+      "aspect": "Sun biseptile North Node",
+      "orb": 102.86,
+      "bodies": {
+        "planet1": {
+          "name": "Sun",
+          "represents": "core identity, conscious self, life purpose, ego"
+        },
+        "planet2": {
+          "name": "North Node",
+          "represents": "destiny path, soul evolution, karmic direction, future growth"
+        }
+      },
+      "synastry_meaning": {
+        "title": "Gradually Revealed Identity-Destiny Link",
+        "core_dynamic": "Sun person's core identity is karmically connected to North Node person's life path, but this connection unfolds mysteriously over time rather than being immediately apparent.",
+        "mutual_effects": {
+          "sun_person": "Gradually discovers their authentic self-expression serves North Node person's evolutionary journey in unexpected ways",
+          "north_node_person": "Slowly recognizes Sun person as key figure in fulfilling destiny, though initially may not understand why they're drawn together"
+        },
+        "manifestations": [
+          "Meeting feels significant but purpose unclear at first",
+          "Over months/years, realize you've been helping each other evolve all along",
+          "Sun person's mere presence subtly guides North Node person toward destiny",
+          "Synchronicities and 'meant to be' moments accumulate gradually",
+          "Unconscious spiritual alignment that becomes conscious over time",
+          "Looking back, the fated nature is obvious; in the moment, it's mysterious"
+        ],
+        "timing_and_unfolding": {
+          "initial_phase": "May feel like ordinary attraction or friendship without obvious destiny markers",
+          "middle_phase": "Strange coincidences, unexplained pull toward each other, sense of 'why can't I walk away?'",
+          "mature_phase": "Clear recognition that you were meant to meet for soul evolution purposes",
+          "long_term": "Understanding of specific karmic contract or spiritual purpose becomes crystallized"
+        },
+        "creative_potential": "Excellent for life partnerships where purpose unfolds gradually - marriage, business, creative collaboration that deepens over decades.",
+        "challenges": "Patience required. Biseptile doesn't give immediate answers about why you're together. Must trust mysterious process.",
+        "soul_purpose": "You're fated to help each other evolve into authentic identity and fulfill life purpose, but the specific how and why reveals itself slowly through lived experience rather than instant recognition."
+      },
+      "keywords": [
+        "gradual destiny",
+        "evolving purpose",
+        "mysterious unfolding",
+        "patient karma",
+        "slow revelation",
+        "accumulated synchronicity"
+      ],
+      "temporal_quality": "This aspect operates on LONG TIME SCALES. Understanding may take years to fully emerge."
+    },
+    {
+      "aspect": "Mars binovile Isis",
+      "orb": 80,
+      "bodies": {
+        "planet1": {
+          "name": "Mars",
+          "represents": "action, desire, drive, sexuality, assertion, warrior energy"
+        },
+        "planet2": {
+          "name": "Isis (Asteroid 42)",
+          "represents": "healing, restoration, soul retrieval, making whole, resurrection"
+        }
+      },
+      "synastry_meaning": {
+        "title": "Action as Fated Healing Catalyst",
+        "core_dynamic": "Mars person's desires and actions serve a mysterious, spiritually-ordained purpose in facilitating Isis person's healing and restoration work. The connection between passion and healing unfolds over time.",
+        "mutual_effects": {
+          "mars_person": "Gradually discovers their assertiveness, sexuality, or drive mysteriously catalyzes healing in Isis person - often in ways they don't consciously intend",
+          "isis_person": "Slowly recognizes Mars person's energy as fated medicine - their passion, anger, or desire breaks through blockages and enables soul retrieval"
+        },
+        "manifestations": [
+          "Mars person's passionate actions trigger unexpected healing responses",
+          "Sexual or assertive energy becomes vehicle for psychological restoration",
+          "Conflicts or confrontations mysteriously lead to breakthroughs",
+          "Over time, pattern emerges: Mars person's fire enables Isis person's water to flow",
+          "Healing happens through active engagement rather than passive reception",
+          "Looking back, realize 'fights' were actually healing ceremonies"
+        ],
+        "healing_mechanics": {
+          "phase_1": "Mars energy initially feels challenging or activating to Isis person",
+          "phase_2": "Activation reveals frozen or fragmented parts needing attention",
+          "phase_3": "Mars person's continued passion provides energy for integration",
+          "phase_4": "Recognition that the challenge WAS the medicine"
+        },
+        "creative_potential": "Powerful for healing partnerships involving body work, sexuality therapy, trauma release through movement, or any modality combining action with restoration.",
+        "challenges": "Mars energy can feel aggressive or overwhelming. Isis person must learn to metabolize intensity as medicine rather than threat.",
+        "soul_purpose": "You're fated to discover that healing doesn't only happen through gentleness - sometimes passionate action, even conflict, is the catalyst for making fragmented souls whole again."
+      },
+      "keywords": [
+        "active healing",
+        "passionate restoration",
+        "fated catalyst",
+        "challenging medicine",
+        "embodied wholeness",
+        "warrior healer"
+      ],
+      "WARNING": "The bi-novile (80°) is EXTREMELY rare and subtle. Most astrology software doesn't calculate this. When present, it indicates highly specialized spiritual purpose."
+    }
+  ],
+  "general_guidance": {
+    "activation": "Biseptile aspects activate gradually over time. The fated nature becomes clearer through accumulated experience rather than instant recognition.",
+    "development": "Requires patience and trust in mysterious process. May take years to understand why you were brought together.",
+    "shadow": "Can create frustration when you feel drawn together but don't understand why. Must resist premature interpretation.",
+    "integration": "Best approached with spiritual patience, journaling synchronicities, and trusting that meaning will emerge in its own time.",
+    "time_scale": "Think in terms of YEARS, not months. These are slow-burn destiny aspects."
+  },
+  "orb_precision_note": "Biseptile requires very tight orbs (under 1°) to be significant. Wider orbs dilute the fated quality considerably."
+}
+6. TRISEPTILE-INTERPRETATION.JSON
+{
+  "aspect_family": "triseptile",
+  "aspect_type": "minor_fated",
+  "orb_degrees": 154.29,
+  "orb_tolerance": "1 degree maximum",
+  "sacred_geometry": {
+    "division": "3/7 of circle",
+    "symbolism": "triple seventh, most mystical septile variant",
+    "element": "otherworldly destiny, spiritual mystery, divine orchestration"
+  },
+  "core_themes": [
+    "otherworldly connection",
+    "mystical purpose",
+    "transcendent destiny",
+    "divine orchestration",
+    "spiritual mystery",
+    "soul recognition beyond logic"
+  ],
+  "relationship_to_septile": "Most subtle and mystical of septile family; operates on deeply spiritual, almost supernatural level",
+  "metaphysical_note": "The triseptile is considered the most 'otherworldly' minor aspect, suggesting connections that transcend the material plane entirely.",
+  "interpretations": [
+    {
+      "aspect": "Neptune triseptile Descendant",
+      "orb": 154.29,
+      "bodies": {
+        "planet1": {
+          "name": "Neptune",
+          "represents": "spirituality, dissolution, dreams, transcendence, divine love, illusion, cosmic consciousness"
+        },
+        "planet2": {
+          "name": "Descendant",
+          "represents": "partnership axis, relationship needs, what we seek in others, projected self"
+        }
+      },
+      "synastry_meaning": {
+        "title": "Mystically Ordained Spiritual Partnership",
+        "core_dynamic": "Neptune person's spiritual essence is mysteriously, almost supernaturally aligned with Descendant person's soul-level partnership needs. This feels like a connection from beyond this lifetime.",
+        "mutual_effects": {
+          "neptune_person": "Feels mysteriously called to embody idealized spiritual qualities for Descendant person - almost like channeling divine love through human relationship",
+          "descendant_person": "Experiences Neptune person as answer to prayers they didn't know they were praying - the spiritual partner their soul has always sought"
+        },
+        "manifestations": [
+          "Meeting feels like divine intervention or angelic orchestration",
+          "Dreams or visions of each other before meeting in physical reality",
+          "Sense of 'I've loved you across lifetimes' even if you don't believe in reincarnation",
+          "Relationship feels like it exists on multiple dimensions simultaneously",
+          "Physical presence together creates altered states or spiritual openings",
+          "Synchronicities so improbable they feel supernatural",
+          "Sense that your connection serves purposes beyond your personal happiness"
+        ],
+        "spiritual_dimensions": {
+          "soul_recognition": "May feel you've known each other eternally, even upon first meeting",
+          "karmic_clearing": "Relationship may facilitate release of soul contracts from other lifetimes",
+          "channeling_quality": "Together you may access spiritual information or creative inspiration from non-physical sources",
+          "dreamtime_connection": "Shared dreams, astral encounters, or psychic communication",
+          "divine_purpose": "Sense that higher powers or spiritual guides orchestrated your meeting"
+        },
+        "creative_potential": "Exceptional for partnerships involving spiritual teaching, mystical arts, healing work, channeling, or any endeavor requiring access to non-ordinary reality.",
+        "challenges": {
+          "idealization_risk": "Neptune's dissolving quality can create unrealistic expectations - seeing each other as saviors rather than humans",
+          "boundary_dissolution": "May struggle to maintain healthy boundaries; feeling like you're the same soul in two bodies",
+          "disillusionment_danger": "If idealizations aren't grounded, painful awakening when reality asserts itself",
+          "addiction_to_connection": "The spiritual high of being together can become escapist or prevent real-world engagement",
+          "martyrdom_patterns": "One or both may sacrifice excessively, believing suffering proves spiritual love"
+        },
+        "grounding_practices": [
+          "Regular reality checks with trusted friends outside the relationship",
+          "Maintaining separate spiritual practices and identities",
+          "Conscious awareness of projection and reclaiming of it",
+          "Setting clear practical boundaries even while honoring mystical connection",
+          "Therapy or spiritual counseling to distinguish mystical union from codependence"
+        ],
+        "soul_purpose": "You're meant to experience divine love through human relationship, learning that the transcendent can incarnate in partnership. Your union serves as portal between spiritual and material realms, but requires conscious grounding to avoid dissolution."
+      },
+      "keywords": [
+        "divine partnership",
+        "mystical union",
+        "soul recognition",
+        "otherworldly love",
+        "spiritual portal",
+        "transcendent bond",
+        "fated idealization"
+      ],
+      "reality_check": "This is one of the most spiritually intense synastry aspects possible. It can be profoundly beautiful OR dangerously escapist. Discernment is essential."
+    },
+    {
+      "aspect": "Moon triseptile North Node",
+      "orb": 154.29,
+      "bodies": {
+        "planet1": {
+          "name": "Moon",
+          "represents": "emotions, nurturing, inner world, unconscious patterns, feeling nature, soul needs"
+        },
+        "planet2": {
+          "name": "North Node",
+          "represents": "destiny path, soul evolution, karmic direction, where we're growing toward"
+        }
+      },
+      "synastry_meaning": {
+        "title": "Emotionally Fated Soul Evolution",
+        "core_dynamic": "Moon person's emotional nature is mysteriously, spiritually aligned with North Node person's destined evolutionary path. Feelings themselves are compass pointing toward destiny.",
+        "mutual_effects": {
+          "moon_person": "Instinctively knows how to nurture North Node person's soul growth, often without conscious awareness of what they're doing",
+          "north_node_person": "Feels emotionally safe and seen in ways that facilitate movement toward destiny - Moon person's presence enables evolution"
+        },
+        "manifestations": [
+          "Moon person's moods and feelings mysteriously align with what North Node person needs for growth",
+          "Emotional safety provided allows North Node person to risk evolution",
+          "Nurturing happens in ways that specifically serve destiny rather than comfort",
+          "Past-life feeling of 'you've always been my emotional anchor'",
+          "Moon person intuitively provides exactly what North Node person needs, when needed",
+          "Relationship feels like coming home to a soul family you forgot you had"
+        ],
+        "spiritual_mechanics": {
+          "unconscious_guidance": "Moon person doesn't consciously plan their nurturing - it flows from soul-level knowing",
+          "evolutionary_container": "The emotional bond itself creates safe space for risky growth",
+          "feeling_as_compass": "North Node person's emotions IN the relationship point toward destiny",
+          "karmic_familiarity": "Sense of 'we've done this before' - soul-level recognition of ancient nurturing bond"
+        },
+        "creative_potential": "Beautiful for long-term partnerships involving caregiving, emotional healing, family creation, or any work requiring deep feeling intelligence in service of evolution.",
+        "challenges": {
+          "comfort_vs_growth": "Moon's instinct is to soothe; North Node requires challenge. Must balance nurturing with necessary discomfort of growth",
+          "emotional_enmeshment": "Risk of Moon person's feelings becoming North Node person's feelings - loss of differentiation",
+          "past_life_patterns": "If you've been together before, may unconsciously recreate old dynamics rather than evolving new ones",
+          "maternal_transference": "North Node person may project mother archetype onto Moon person, complicating adult relationship"
+        },
+        "soul_purpose": "You're fated to show each other that emotional safety and evolutionary growth aren't opposed - true nurturing enables transformation. Your bond helps both of you evolve toward destiny through feeling, not just thinking."
+      },
+      "keywords": [
+        "emotional destiny",
+        "nurturing evolution",
+        "soul-safe growth",
+        "mystical mothering",
+        "feeling compass",
+        "karmic care"
+      ]
+    },
+    {
+      "aspect": "Descendant triseptile Isis",
+      "orb": 154.29,
+      "bodies": {
+        "planet1": {
+          "name": "Descendant",
+          "represents": "partnership needs, relationship axis, what we seek in others"
+        },
+        "planet2": {
+          "name": "Isis (Asteroid 42)",
+          "represents": "healing, restoration, soul retrieval, making whole, resurrection magic"
+        }
+      },
+      "synastry_meaning": {
+        "title": "Partnership as Mystical Restoration",
+        "core_dynamic": "Descendant person's partnership needs are mysteriously, divinely aligned with Isis person's capacity for soul-level healing and restoration. Relationship itself is sacred medicine.",
+        "mutual_effects": {
+          "descendant_person": "Experiences partnership as vehicle for becoming whole - not just companionship but actual soul restoration",
+          "isis_person": "Finds their healing gifts activated and amplified in partnership context - the relationship itself is their temple"
+        },
+        "manifestations": [
+          "Partnership feels like it was divinely ordained for healing purposes",
+          "What was broken or fragmented in both people mysteriously becomes whole together",
+          "Relationship resurrects parts of self that were lost or killed",
+          "Ancient sense of 'we're completing something left unfinished'",
+          "The bond itself has healing properties - presence together is medicine",
+          "May experience literal miracles of healing when together"
+        ],
+        "healing_dimensions": {
+          "soul_retrieval": "Lost or dissociated parts of self return in safety of relationship",
+          "ancestral_healing": "Partnership may heal family line wounds, not just personal ones",
+          "resurrection_magic": "What was thought dead in either person comes back to life",
+          "wholeness_transmission": "Isis person's presence literally makes Descendant person whole",
+          "sacred_container": "Relationship functions as healing temple or sacred vessel"
+        },
+        "creative_potential": "Exceptional for partnerships involving healing professions, spiritual work, therapeutic arts, or any endeavor requiring deep restoration and wholeness.",
+        "challenges": {
+          "healer_patient_dynamic": "Risk of unequal power dynamics if one is always 'healing' the other",
+          "codependent_healing": "May become addicted to feeling whole together, unable to feel complete separately",
+          "martyrdom": "Isis person may over-give, sacrificing own wholeness to restore partner",
+          "unfinished_business": "If there's past-life karma, may need to complete old patterns before new healing can occur"
+        },
+        "soul_purpose": "You're mystically fated to make each other whole through the sacred vessel of partnership. Your union is not just romantic - it's restorative, healing ancient wounds and retrieving lost soul fragments. This is priestess-level work."
+      },
+      "keywords": [
+        "sacred partnership",
+        "mystical restoration",
+        "healing union",
+        "wholeness bond",
+        "resurrection love",
+        "temple relationship"
+      ]
+    }
+  ],
+  "general_guidance": {
+    "activation": "Triseptile aspects carry otherworldly, mystical quality from the beginning. The connection feels supernatural or divinely orchestrated.",
+    "development": "These aspects don't develop over time so much as they REVEAL themselves - the mystical nature becomes more conscious and understood.",
+    "shadow": "Extreme risk of idealization, escapism, and confusing mystical experience with actual compatibility. Requires rigorous grounding.",
+    "integration": "Must be held with both spiritual reverence AND psychological realism. These are powerful but can be dangerously intoxicating.",
+    "spiritual_practice": "Regular grounding, reality checks, maintaining separate spiritual practices, and therapeutic support are essential."
+  },
+  "metaphysical_warning": "Triseptile aspects can activate psychic abilities, past-life memories, and non-ordinary states of consciousness. This is beautiful but also destabilizing. Approach with respect and preparation.",
+  "orb_precision_critical": "Triseptile MUST be within 1° to carry full mystical impact. Even 1.5° orb significantly dilutes the otherworldly quality."
+}
+7. NOVILE-INTERPRETATION.JSON
+{
+  "aspect_family": "novile",
+  "aspect_type": "minor_completion",
+  "orb_degrees": 40,
+  "orb_tolerance": "1 degree maximum",
+  "sacred_geometry": {
+    "division": 9,
+    "symbolism": "completion, fulfillment, spiritual maturity, divine closure",
+    "element": "ninth ray, wisdom of completion, karmic resolution"
+  },
+  "core_themes": [
+    "spiritual completion",
+    "fulfilled destiny",
+    "karmic closure",
+    "wise maturity",
+    "divine satisfaction",
+    "wholeness achieved"
+  ],
+  "numerological_significance": {
+    "nine_qualities": "The number nine represents completion of a cycle before return to unity (10 = 1+0 = 1)",
+    "hermit_archetype": "In Tarot, 9 is The Hermit - wisdom achieved through completion of journey",
+    "pregnancy_metaphor": "9 months of gestation before birth - full development before manifestation",
+    "selfless_service": "Nine energy is about giving back after receiving full development"
+  },
+  "interpretations": [
+    {
+      "aspect": "Venus novile Jupiter",
+      "orb": 40,
+      "bodies": {
+        "planet1": {
+          "name": "Venus",
+          "represents": "love, beauty, values, affection, harmony, relationships"
+        },
+        "planet2": {
+          "name": "Jupiter",
+          "represents": "expansion, wisdom, faith, generosity, higher meaning, blessing"
+        }
+      },
+      "synastry_meaning": {
+        "title": "Spiritually Fulfilled Blessed Love",
+        "core_dynamic": "Venus person's love and Jupiter person's wisdom meet at a point of spiritual completion and divine fulfillment. The relationship feels like the answer to a long spiritual quest.",
+        "mutual_effects": {
+          "venus_person": "Experiences love as spiritually meaningful and complete - this is the mature love they've been developing toward",
+          "jupiter_person": "Finds philosophical and spiritual fulfillment through affection and beauty - wisdom becomes embodied"
+        },
+        "manifestations": [
+          "Relationship feels like the culmination of long preparation",
+          "Sense of 'this is what I was becoming ready for'",
+          "Love that carries wisdom and spiritual maturity",
+          "Quiet satisfaction and deep fulfillment rather than fireworks",
+          "Shared values that feel like completion of individual spiritual journeys",
+          "Generosity and beauty flow naturally without effort",
+          "Teaching or guiding others about mature love comes naturally"
+        ],
+        "completion_qualities": {
+          "karmic_resolution": "Feels like you've been preparing for this love across lifetimes and now you're ready",
+          "spiritual_maturity": "The relationship reflects spiritual growth both people have achieved",
+          "divine_timing": "Meeting at exactly right moment when both are spiritually prepared",
+          "fulfilled_seeking": "The search for meaningful love is complete - this is it",
+          "wisdom_embodied": "Philosophical understanding of love becomes lived experience"
+        },
+        "creative_potential": "Perfect for partnerships involving spiritual teaching, mentoring others about relationships, or creating art/philosophy about mature love. You've learned the lessons and can now share them.",
+        "challenges": "The completion quality can create complacency - 'we've arrived' can prevent continued growth. Must remember even fulfillment requires tending.",
+        "soul_purpose": "You're meant to embody and teach mature, spiritually fulfilled love. Your relationship demonstrates that the quest for meaningful connection CAN be completed - and here's what it looks like."
+      },
+      "keywords": [
+        "fulfilled love",
+        "spiritual completion",
+        "mature affection",
+        "wise relationship",
+        "divine satisfaction",
+        "blessed union",
+        "karmic resolution"
+      ],
+      "temporal_note": "Novile often indicates meeting AFTER both people have done significant spiritual work individually. The timing is part of the completion."
+    },
+    {
+      "aspect": "Chiron novile Ceres",
+      "orb": 40,
+      "bodies": {
+        "planet1": {
+          "name": "Chiron",
+          "represents": "core wound, wounded healer, unhealable hurt, teaching through pain"
+        },
+        "planet2": {
+          "name": "Ceres",
+          "represents": "nurturing, mothering, cycles of loss and return, agricultural wisdom"
+        }
+      },
+      "synastry_meaning": {
+        "title": "Completed Healing Through Sacred Nurturing",
+        "core_dynamic": "Chiron person's wound and Ceres person's nurturing capacity meet at a point of spiritual completion. The wound isn't healed, but it's COMPLETE - integrated as source of wisdom and teaching.",
+        "mutual_effects": {
+          "chiron_person": "Experiences their wound as spiritually complete - no longer seeking cure but embodying the teaching of it",
+          "ceres_person": "Finds their nurturing capacity fulfilled through witnessing and honoring Chiron person's integrated wound"
+        },
+        "manifestations": [
+          "Ceres person provides EXACTLY the nurturing that allows Chiron person to accept rather than heal wound",
+          "Sense of 'you're the mother I needed all along to accept my pain'",
+          "Wound becomes teacher and gift rather than curse",
+          "Nurturing doesn't try to fix but rather witnesses and honors",
+          "Cycles of grief and return are accepted as natural rather than resisted",
+          "Together you create space where pain is sacred, not shameful"
+        ],
+        "completion_mechanics": {
+          "acceptance_over_cure": "The wound reaches completion not through healing but through full acceptance",
+          "witness_fulfillment": "Ceres person's presence allows Chiron person to finally stop seeking and rest in wound",
+          "sacred_pain": "Suffering becomes spiritually meaningful rather than meaningless",
+          "teaching_readiness": "Both are ready to guide others through similar journeys",
+          "karmic_debt_paid": "Feeling of 'I've suffered enough, the lesson is learned'"
+        },
+        "creative_potential": "Exceptional for partnerships involving hospice work, grief counseling, trauma therapy, or any healing modality that honors pain as teacher rather than enemy.",
+        "challenges": "Completion can feel like giving up on healing. Must distinguish between spiritual acceptance and premature resignation.",
+        "soul_purpose": "You're fated to show each other (and teach others) that some wounds are meant to be integrated, not healed. The completion comes through acceptance and making meaning from pain."
+      },
+      "keywords": [
+        "integrated wounding",
+        "completed suffering",
+        "sacred pain",
+        "mature grief",
+        "fulfilled witnessing",
+        "accepted hurt",
+        "wise scarring"
+      ]
+    }
+  ],
+  "general_guidance": {
+    "activation": "Novile aspects feel like arriving home after a long journey. There's quiet fulfillment rather than excitement.",
+    "development": "These aspects don't really develop - they represent ALREADY DEVELOPED capacity. The work was done before meeting.",
+    "shadow": "Risk of spiritual smugness or completion becoming stagnation. Must remember fulfillment isn't the same as perfection.",
+    "integration": "Best honored through teaching others, giving back, service from place of wisdom rather than wounding.",
+    "lifecycle_note": "Novile often appears in relationships that form in middle age or later, after significant life experience and spiritual growth."
+  },
+  "philosophical_note": "The novile asks: What does it feel like when seeking ends? When you've arrived? When completion is achieved? This aspect answers: It feels quiet, satisfied, wise, and ready to serve."
+}
+8. MIDPOINT-FORMULAS.JSON
+{
+  "structure_type": "midpoint_pictures",
+  "notation_explanation": "PLANET1=PLANET2/PLANET3 means PLANET1 sits at the exact midpoint between PLANET2 and PLANET3",
+  "orb_tolerance": "1-2 degrees maximum for midpoint formulas",
+  "interpretation_method": "PLANET1 becomes the focal point, manifestation, or living embodiment of the blended energies of PLANET2 and PLANET3",
+  "categories": [
+    {
+      "category_name": "IDENTITY_AND_DESTINY_FORMULAS",
+      "description": "Midpoints involving Sun (identity), Ascendant (self-image), or major destiny points",
+      "formulas": [
+        {
+          "formula": "Sun = Pluto/Juno",
+          "bodies": {
+            "focal_point": {
+              "name": "Sun",
+              "role": "becomes the embodiment of"
+            },
+            "midpoint_planets": {
+              "planet1": {
+                "name": "Pluto",
+                "represents": "transformation, power, death/rebirth, shadow, intensity"
+              },
+              "planet2": {
+                "name": "Juno (Asteroid 3)",
+                "represents": "commitment, marriage, partnership contracts, loyalty challenges"
+              }
+            }
+          },
+          "synastry_meaning": {
+            "title": "Identity as Catalyst for Transformative Commitment",
+            "core_dynamic": "The Sun person's very identity, their core being, becomes the living focal point for themes of power, transformation, and committed partnership. They ARE the embodiment of 'transformation through commitment.'",
+            "sun_person_experience": "I feel like my entire purpose in this relationship is to facilitate deep change and lasting commitment. My identity itself is the catalyst.",
+            "partner_experience": "Sun person embodies everything intense and transformative about committed partnership. Their presence forces us to confront power dynamics and shadow material in our bond.",
+            "manifestations": [
+              "Sun person's authentic self-expression triggers deep transformation in partnership",
+              "Core identity becomes inseparable from themes of power and commitment",
+              "Relationship cannot be casual - Sun person's presence demands depth",
+              "Sun person feels they exist to help partner transform through commitment",
+              "Power struggles in partnership are actually about Sun person's identity",
+              "The relationship's transformative intensity IS the Sun person"
+            ],
+            "life_purpose_implication": "Sun person's life purpose involves teaching or embodying transformative, committed relationships. They are here to show what deep partnership looks like.",
+            "challenges": [
+              "Sun person may feel consumed by relationship intensity",
+              "Identity can become overly merged with partnership themes",
+              "Power struggles may feel like attacks on core self",
+              "Difficulty separating 'who I am' from 'what this relationship requires'"
+            ],
+            "integration_path": "Sun person must learn to embody transformative commitment WITHOUT losing individual identity. They are the vessel, not the sacrifice.",
+            "soul_purpose": "To demonstrate that identity and committed partnership can alchemically merge - showing others what it means to be transformed through relationship while remaining authentically oneself."
+          },
+          "keywords": [
+            "identity-as-transformation",
+            "self-as-commitment-catalyst",
+            "embodied-partnership-power",
+            "core-self-as-depth-agent"
+          ]
+        },
+        {
+          "formula": "Sun = Mars/Neptune",
+          "bodies": {
+            "focal_point": {
+              "name": "Sun",
+              "role": "becomes the embodiment of"
+            },
+            "midpoint_planets": {
+              "planet1": {
+                "name": "Mars",
+                "represents": "action, desire, drive, assertion, sexuality, warrior energy"
+              },
+              "planet2": {
+                "name": "Neptune",
+                "represents": "spirituality, dissolution, dreams, illusion, transcendence, confusion"
+              }
+            }
+          },
+          "synastry_meaning": {
+            "title": "Identity Torn Between Action and Transcendence",
+            "core_dynamic": "Sun person's core identity sits at the crossroads of assertive action (Mars) and spiritual dissolution (Neptune). They embody the tension between doing and being, fighting and surrendering.",
+            "sun_person_experience": "I feel pulled between taking decisive action and letting go into spiritual flow. My identity itself is this sacred confusion.",
+            "partner_experience": "Sun person is simultaneously inspiring in their spiritual vision and frustrating in their lack of clear direction. They embody beautiful uncertainty.",
+            "manifestations": [
+              "Sun person's life purpose involves integrating warrior and mystic",
+              "May be drawn to spiritual warriorship, sacred activism, or inspired action",
+              "Identity feels unclear - am I aggressive or passive? Assertive or surrendered?",
+              "Creative inspiration (Neptune) requires action (Mars) to manifest through Sun person",
+              "Relationship involves learning to act from inspiration vs. ego drive"
+            ],
+            "positive_expression": [
+              "Inspired action - movements that come from divine guidance",
+              "Spiritual activism - fighting for transcendent causes",
+              "Sacred sexuality - Mars desire elevated through Neptune spirituality",
+              "Artistic drive - using will to manifest visions",
+              "Compassionate assertion - fighting for the vulnerable"
+            ],
+            "negative_expression": [
+              "Confused action - not knowing when to push vs. surrender",
+              "Passive-aggressive behavior - Mars hidden under Neptune fog",
+              "Martyrdom - sacrificing self (Mars) for spiritual ideals (Neptune)",
+              "Escapist addiction - using substances/fantasy to avoid necessary action",
+              "Spiritual bypassing - using Neptune to avoid Mars confrontation"
+            ],
+            "integration_path": "Sun person must learn that spirituality and action aren't opposed. True inspired action comes from surrendered will - 'Thy will be done' through decisive movement.",
+            "soul_purpose": "To embody and teach the integration of divine inspiration with human action. Show that warriors can be mystics and mystics can be warriors."
+          },
+          "keywords": [
+            "inspired-action",
+            "sacred-warrior",
+            "confused-drive",
+            "spiritual-assertion",
+            "embodied-transcendence"
+          ]
+        },
+        {
+          "formula": "Sun = Jupiter/Neptune",
+          "bodies": {
+            "focal_point": {
+              "name": "Sun",
+              "role": "becomes the embodiment of"
+            },
+            "midpoint_planets": {
+              "planet1": {
+                "name": "Jupiter",
+                "represents": "expansion, faith, optimism, wisdom, generosity, higher meaning"
+              },
+              "planet2": {
+                "name": "Neptune",
+                "represents": "spirituality, idealization, dreams, transcendence, divine love"
+              }
+            }
+          },
+          "synastry_meaning": {
+            "title": "Identity as Living Spiritual Vision",
+            "core_dynamic": "Sun person embodies the fusion of faith (Jupiter) and transcendence (Neptune). Their identity IS a living spiritual vision - they are the prophet, the dreamer, the one who sees divine possibilities.",
+            "sun_person_experience": "I exist to inspire others toward highest spiritual potential. My very presence is meant to remind people of divine love and infinite possibility.",
+            "partner_experience": "Sun person feels like a spiritual teacher or guide sent to expand my consciousness and faith. They embody everything I believe about divine love.",
+            "manifestations": [
+              "Sun person naturally inspires spiritual seeking in others",
+              "Identity feels inseparable from faith, vision, and idealism",
+              "Life purpose involves teaching, guiding, or expanding consciousness",
+              "May be seen as guru, prophet, or spiritual authority",
+              "Relationship becomes vehicle for shared spiritual growth"
+            ],
+            "positive_expression": [
+              "Inspiring spiritual teacher who helps others see divine potential",
+              "Generous visionary who expands what's possible",
+              "Faith-filled optimist who maintains hope even in darkness",
+              "Creative artist channeling divine inspiration",
+              "Philanthropist serving transcendent causes"
+            ],
+            "negative_expression": [
+              "Spiritual inflation - believing you ARE divine rather than channel for it",
+              "Messianic complex - savior fantasies and guru trips",
+              "Over-idealization - expecting perfection from self and others",
+              "Boundary dissolution - inability to distinguish self from universe",
+              "Escapist spirituality - using transcendence to avoid real-world responsibility"
+            ],
+            "integration_path": "Sun person must ground expansive spiritual vision in humble service. They are meant to be transparent vessel for divine love, not the source of it.",
+            "soul_purpose": "To embody and radiate spiritual possibility, showing others what divine love and infinite faith look like when incarnated in human form - while remaining grounded and humble."
+          },
+          "keywords": [
+            "embodied-divinity",
+            "spiritual-identity",
+            "visionary-self",
+            "faith-incarnate",
+            "idealized-being"
+          ],
+          "WARNING": "This is one of the most spiritually inflating midpoint pictures. Requires extraordinary humility to embody healthily."
+        }
+      ]
+    },
+    {
+      "category_name": "EMOTIONAL_AND_NURTURING_FORMULAS",
+      "description": "Midpoints involving Moon (emotions, inner world, nurturing)",
+      "formulas": [
+        {
+          "formula": "Moon = Neptune/Vertex",
+          "bodies": {
+            "focal_point": {
+              "name": "Moon",
+              "role": "becomes the embodiment of"
+            },
+            "midpoint_planets": {
+              "planet1": {
+                "name": "Neptune",
+                "represents": "spirituality, dissolution, dreams, transcendence, idealization"
+              },
+              "planet2": {
+                "name": "Vertex",
+                "represents": "fated encounters, destiny point, unavoidable meetings"
+              }
+            }
+          },
+          "synastry_meaning": {
+            "title": "Emotions as Fated Spiritual Portal",
+            "core_dynamic": "Moon person's emotional nature becomes the living vessel through which fated spiritual encounters manifest. Their feelings ARE the destiny portal.",
+            "moon_person_experience": "My emotions and nurturing capacity feel like they serve a mystical, fated purpose beyond personal comfort. I feel things that are spiritually significant.",
+            "partner_experience": "Moon person's emotional presence triggers fated, spiritually significant experiences in me. Their feelings seem to come from another dimension.",
+            "manifestations": [
+              "Emotional encounters feel divinely orchestrated",
+              "Moon person's feelings predict or reveal fated events",
+              "Nurturing has transcendent, healing quality beyond normal care",
+              "Meeting itself felt emotionally and spiritually destined",
+              "Moon person's moods seem to channel collective or cosmic currents"
+            ],
+            "spiritual_mechanics": "Moon person's emotional body is unusually permeable to spiritual/fated energies. They FEEL destiny unfolding through their emotional responses.",
+            "challenges": [
+              "Difficulty distinguishing personal emotions from psychic/collective ones",
+              "Emotional overwhelm from channeling too much spiritual energy",
+              "Idealizing the relationship as 'soulmate' and missing red flags",
+              "Confusion about whether feelings are guidance or just feelings"
+            ],
+            "integration_path": "Moon person must learn to honor their emotions as spiritual information while also maintaining grounding and boundaries.",
+            "soul_purpose": "To demonstrate that emotions and intuition can be direct lines to destiny and divine guidance - feelings are sacred messengers."
+          },
+          "keywords": [
+            "fated-feelings",
+            "emotional-destiny",
+            "psychic-nurturing",
+            "spiritual-sensitivity",
+            "destined-care"
+          ]
+        },
+        {
+          "formula": "Moon = Mars/Eros",
+          "bodies": {
+            "focal_point": {
+              "name": "Moon",
+              "role": "becomes the embodiment of"
+            },
+            "midpoint_planets": {
+              "planet1": {
+                "name": "Mars",
+                "represents": "action, desire, drive, assertion, sexuality"
+              },
+              "planet2": {
+                "name": "Eros (Asteroid 433)",
+                "represents": "passionate desire, erotic love, primal attraction"
+              }
+            }
+          },
+          "synastry_meaning": {
+            "title": "Emotional Nature as Sexual-Passionate Catalyst",
+            "core_dynamic": "Moon person's emotions, nurturing, and inner world become the living embodiment of passionate desire and sexual energy. Their feelings ARE erotic.",
+            "moon_person_experience": "My emotional responses and need for security are inseparable from sexual passion. Nurturing and desire are the same energy for me.",
+            "partner_experience": "Moon person's emotional presence is incredibly sexually activating. Their care and vulnerability IS seductive.",
+            "manifestations": [
+              "Emotional intimacy and sexual intimacy are completely fused",
+              "Moon person's nurturing has powerfully erotic quality",
+              "Feelings themselves are experienced as desire and passion",
+              "Sexual connection requires deep emotional safety",
+              "Vulnerability IS the aphrodisiac"
+            ],
+            "positive_expression": [
+              "Sacred sexuality where emotion and passion fully integrate",
+              "Deep emotional safety enables full erotic expression",
+              "Nurturing that includes healthy sexual energy",
+              "Passion grounded in genuine care and feeling"
+            ],
+            "negative_expression": [
+              "Emotional manipulation through sexuality",
+              "Sexual addiction masked as emotional need",
+              "Inability to separate care from sexual desire",
+              "Overwhelming intensity in intimate relationships"
+            ],
+            "integration_path": "Moon person must honor that their emotional and erotic natures are fused while maintaining clear consent and boundaries.",
+            "soul_purpose": "To embody and teach integration of emotional vulnerability with passionate desire - showing that true eroticism requires feeling."
+          },
+          "keywords": [
+            "emotional-eroticism",
+            "nurturing-passion",
+            "feeling-desire",
+            "vulnerable-sexuality",
+            "care-as-seduction"
+          ]
+        }
+      ]
+    },
+    {
+      "category_name": "HEALING_AND_WHOLENESS_FORMULAS",
+      "description": "Midpoints involving Chiron, Isis, Ceres, or other healing archetypes",
+      "formulas": [
+        {
+          "formula": "Chiron = North Node/Lilith",
+          "bodies": {
+            "focal_point": {
+              "name": "Chiron",
+              "role": "becomes the embodiment of"
+            },
+            "midpoint_planets": {
+              "planet1": {
+                "name": "North Node",
+                "represents": "destiny path, soul evolution, karmic direction"
+              },
+              "planet2": {
+                "name": "Lilith (Black Moon)",
+                "represents": "wild feminine, authentic rage, rejected shadow, sexual autonomy"
+              }
+            }
+          },
+          "synastry_meaning": {
+            "title": "Wound as Gateway to Destined Wildness",
+            "core_dynamic": "Chiron person's core wound sits at the exact midpoint of destiny (North Node) and wild authenticity (Lilith). Their pain IS the path to evolution and liberation.",
+            "chiron_person_experience": "My deepest wound is somehow the key to both my destiny AND my wildest, most authentic self. Healing requires becoming untamed.",
+            "partner_experience": "Chiron person's vulnerability and wounding trigger my own evolutionary journey toward authenticity and liberation from convention.",
+            "manifestations": [
+              "Wound can only heal through radical authenticity and wildness",
+              "Destiny path requires embracing rejected, shamed parts of self",
+              "Chiron person teaches that pain can liberate rather than limit",
+              "Relationship involves mutual permission to be untamed and wounded",
+              "Evolution happens through honoring rage and shadow"
+            ],
+            "healing_path": "The wound doesn't heal through conformity or niceness - it transforms through fierce, authentic self-expression and rejection of shame.",
+            "challenges": [
+              "Society punishes both woundedness and wildness - Chiron person feels doubly outcast",
+              "Temptation to tame self to be acceptable rather than heal through authenticity",
+              "Rage and pain can become destructive if not channeled consciously"
+            ],
+            "integration_path": "Chiron person must claim their wound AND their wildness as sources of power and destiny - not despite each other but THROUGH each other.",
+            "soul_purpose": "To demonstrate that healing sometimes requires becoming more wild, not more civilized. Your wound is your liberation."
+          },
+          "keywords": [
+            "wounded-wildness",
+            "destined-authenticity",
+            "healing-through-rage",
+            "liberated-pain",
+            "evolution-via-shadow"
+          ]
+        },
+        {
+          "formula": "Isis = Venus/Mars",
+          "bodies": {
+            "focal_point": {
+              "name": "Isis (Asteroid 42)",
+              "role": "becomes the embodiment of"
+            },
+            "midpoint_planets": {
+              "planet1": {
+                "name": "Venus",
+                "represents": "love, beauty, affection, values, harmony"
+              },
+              "planet2": {
+                "name": "Mars",
+                "represents": "desire, action, sexuality, drive, assertion"
+              }
+            }
+          },
+          "synastry_meaning": {
+            "title": "Healing Through Integration of Love and Desire",
+            "core_dynamic": "Isis person's capacity for soul restoration sits at the fusion point of love (Venus) and desire (Mars). They heal by uniting affection with passion.",
+            "isis_person_experience": "My healing work involves helping people (and myself) integrate love and sexuality, beauty and desire, Venus and Mars energies.",
+            "partner_experience": "Isis person has unique gift for making me whole by showing me how love and passion aren't separate but one integrated energy.",
+            "manifestations": [
+              "Sexual healing - restoring healthy relationship to desire",
+              "Romantic restoration - helping wounded hearts love again",
+              "Integration of masculine/feminine energies within self",
+              "Healing the split between 'nice love' and 'dirty sex'",
+              "Resurrection of passion in relationships deadened by safety"
+            ],
+            "healing_modality": "Isis person heals by demonstrating/facilitating integration of seemingly opposite energies - showing that Venus and Mars strengthen each other.",
+            "challenges": [
+              "May be projected upon as sexual healer in unhealthy ways",
+              "Own love/desire integration must be solid before helping others",
+              "Risk of using sexuality as healing before appropriate"
+            ],
+            "integration_path": "Isis person must first heal their OWN Venus/Mars split, then can guide others to wholeness through embodied integration.",
+            "soul_purpose": "To resurrect and restore healthy integration of love and desire in individuals and couples - healing the Madonna/whore split."
+          },
+          "keywords": [
+            "integrated-eros-agape",
+            "healed-sexuality",
+            "restored-passion",
+            "unified-love-desire",
+            "wholeness-through-union"
+          ]
+        }
+      ]
+    }
+  ],
+  "general_interpretation_principles": {
+    "focal_planet_role": "The focal planet (PLANET1 in the formula) becomes the LIVING EMBODIMENT, the manifestation point, the physical expression of the blended midpoint energies.",
+    "midpoint_blend": "The two midpoint planets represent energies that are being FUSED, INTEGRATED, or held in CREATIVE TENSION through the focal planet.",
+    "synastry_application": "When this appears in relationship astrology, the person whose planet is the FOCAL POINT carries the embodied integration for both people.",
+    "life_purpose_indicator": "Midpoint formulas often reveal core life purpose or soul mission - especially when multiple formulas focus on same planet.",
+    "orb_strictness": "Midpoints require VERY tight orbs (1-2° max) to be significant. Wider orbs dilute the effect considerably.",
+    "multiple_midpoints": "When one planet sits at MANY midpoints simultaneously (as in the Lachesis example), it becomes a NEXUS POINT - a singularity of fate."
+  },
+  "interpretation_method": {
+    "step_1": "Identify which planet is the FOCAL POINT (the one sitting AT the midpoint)",
+    "step_2": "Understand what the two MIDPOINT PLANETS represent separately",
+    "step_3": "Envision how those two energies BLEND or create TENSION",
+    "step_4": "Recognize that the FOCAL PLANET must EMBODY or MANIFEST this blend",
+    "step_5": "In synastry, the focal planet person plays that embodiment ROLE in the relationship",
+    "step_6": "Consider challenges of holding such complex integration in one point",
+    "step_7": "Identify soul purpose or life mission implied by the formula"
+  }
+}
