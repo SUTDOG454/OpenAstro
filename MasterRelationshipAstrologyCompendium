@@ -1,0 +1,970 @@
+{
+  "MasterRelationshipAstrologyCompendium": {
+    ... (existing content) ...
+    "synastry_aspects": {
+      "Venus square Saturn": "Love feels restricted; karmic lessons in intimacy.",
+      "Venus trine Saturn": "Steadfast, loyal love; commitment grows over time.",
+      "Mars opposite Pluto": "Intense power struggles; sexual magnetism with danger.",
+      "Sun conjunct Moon": "Harmony of purpose; natural emotional understanding.",
+      "Moon opposite Saturn": "Emotional distance; fear of vulnerability.",
+      "Mercury sextile Jupiter": "Optimistic communication; shared philosophical interests.",
+      "Chiron conjunct Venus": "Healing through love; soulmate attraction.",
+      "Chiron square Venus": "Wounded love; fear of intimacy; healing crisis."
+    },
+    "aspect_combinations": {
+      "Venus square Saturn + Moon trine Neptune": "Restricted love balanced by compassionate emotional flow.",
+      "Sun conjunct Moon + Mars opposite Pluto": "Core harmony paired with intense power dynamics.",
+      "Venus trine Jupiter + Saturn sextile Venus": "Expansive love with structural support."
+    },
+    "default_aspect_interpretation": "A significant synastry connection; see astrologer for details."
+  }
+}
+
+
+{
+  "schema_name": "micro_astrology_cuspal_interlinks",
+  "schema_version": "1.0.0",
+  "methodology": {
+    "tradition": "Khullar-Micro-Astrology",
+    "system_name": "Cuspal Interlinks Theory",
+    "purpose": "Promise and timing analysis through layered cusp significations",
+    "core_principle": "Events must be promised in the natal chart and activated through dasha-transit convergence",
+    "hierarchy": [
+      {
+        "level": "star_lord",
+        "function": "involvement",
+        "meaning": "Proposes the event"
+      },
+      {
+        "level": "sub_lord",
+        "function": "commitment",
+        "meaning": "Confirms, modifies, or denies the proposal"
+      },
+      {
+        "level": "sub_sub_lord",
+        "function": "final_result",
+        "meaning": "Sanctions the culmination or final outcome"
+      }
+    ],
+    "house_quality_rules": {
+      "favorable": [1, 3, 5, 9, 11],
+      "neutral": [2, 6, 10],
+      "unfavorable": [4, 7, 8, 12]
+    }
+  },
+  "chart_metadata": {
+    "native_id": "string",
+    "native_name": "string",
+    "birth_date": "YYYY-MM-DD",
+    "birth_time": "HH:MM:SS",
+    "birth_time_precision": "string",
+    "birth_place": {
+      "city": "string",
+      "region": "string",
+      "country": "string",
+      "latitude": 0.0,
+      "longitude": 0.0
+    },
+    "ayanamsa_used": "Khullar",
+    "calculation_basis": {
+      "zodiac": "sidereal",
+      "house_system": "string",
+      "ephemeris_source": "string"
+    }
+  },
+  "event_context": {
+    "event_type": "string",
+    "event_domain": "string",
+    "primary_cusps": [0],
+    "supporting_cusps": [0],
+    "analysis_goal": "string"
+  },
+  "cusp_analysis": [
+    {
+      "cusp_id": "House_1",
+      "house_number": 1,
+      "exact_longitude": 0.0,
+      "longitude_precision": "string",
+      "ruler_chain": {
+        "sign_lord": {
+          "name": "string",
+          "house_significations": [0],
+          "strength_weight": 0.0
+        },
+        "star_lord": {
+          "name": "string",
+          "house_significations": [0],
+          "strength_weight": 0.0
+        },
+        "sub_lord": {
+          "name": "string",
+          "house_significations": [0],
+          "strength_weight": 0.0
+        },
+        "sub_sub_lord": {
+          "name": "string",
+          "house_significations": [0],
+          "strength_weight": 0.0
+        }
+      },
+      "interlink_matrix": {
+        "involvement": [0],
+        "commitment": [0],
+        "final_result": [0]
+      },
+      "cusp_role": {
+        "primary": false,
+        "supporting": false,
+        "auxiliary": false
+      },
+      "house_quality_score": {
+        "favorable_weight": 0.0,
+        "neutral_weight": 0.0,
+        "unfavorable_weight": 0.0,
+        "net_quality": 0.0
+      }
+    }
+  ],
+  "planetary_significators": [
+    {
+      "planet": "string",
+      "sign_lord": "string",
+      "star_lord": "string",
+      "sub_lord": "string",
+      "sub_sub_lord": "string",
+      "house_significations": [0],
+      "compound_status": {
+        "is_rahu_ketu": false,
+        "dispositor_link": "string",
+        "triple_agent_model": false
+      },
+      "strength_weight": 0.0
+    }
+  ],
+  "promise_analysis": {
+    "ascendant_linkage": {
+      "ascendant_sub_sub_lord": "string",
+      "linked_houses": [0],
+      "promise_status": "promised",
+      "promise_weight": 0.0
+    },
+    "event_promise": {
+      "status": "promised",
+      "confidence": 0.0,
+      "supporting_cusp_alignment": [0],
+      "denial_factors": [0]
+    },
+    "supporting_logic": {
+      "required_house_set": [0],
+      "present_house_set": [0],
+      "missing_house_set": [0]
+    }
+  },
+  "weighting_model": {
+    "weights": {
+      "star_lord": 0.25,
+      "sub_lord": 0.35,
+      "sub_sub_lord": 0.40
+    },
+    "event_strength_formula": "weighted sum of significations and house-quality adjustments",
+    "house_quality_multiplier": {
+      "favorable": 1.15,
+      "neutral": 1.0,
+      "unfavorable": 0.85
+    },
+    "promise_thresholds": {
+      "low": 0.35,
+      "moderate": 0.55,
+      "high": 0.75
+    },
+    "timing_thresholds": {
+      "weak": 0.30,
+      "active": 0.60,
+      "critical": 0.80
+    }
+  },
+  "timing_analysis": {
+    "vimshottari": {
+      "mahadasha": "string",
+      "bhukti": "string",
+      "antara": "string",
+      "pratyantara": "string",
+      "activation_status": "inactive"
+    },
+    "transits": [
+      {
+        "planet": "string",
+        "date": "YYYY-MM-DD",
+        "time": "HH:MM:SS",
+        "trigger_type": "supportive",
+        "contacts": {
+          "sign_lord": false,
+          "star_lord": false,
+          "sub_lord": false,
+          "sub_sub_lord": false
+        },
+        "trigger_weight": 0.0
+      }
+    ],
+    "luminary_triggers": {
+      "sun_trigger": false,
+      "moon_trigger": false,
+      "exact_trigger_window": "string"
+    },
+    "timing_result": {
+      "status": "inactive",
+      "confidence": 0.0,
+      "window_description": "string"
+    }
+  },
+  "prediction_output": {
+    "final_judgment": "string",
+    "result_type": "promised_and_activated",
+    "probability_score": 0.0,
+    "summary": "string",
+    "supporting_evidence": [
+      "string"
+    ],
+    "contradicting_evidence": [
+      "string"
+    ]
+  },
+  "expandable_rules": {
+    "event_rule_sets": [
+      {
+        "rule_id": "marriage_01",
+        "event_type": "marriage",
+        "primary_cusps": [7],
+        "supporting_cusps": [2, 11],
+        "required_house_patterns": [
+          [1, 5, 7, 11]
+        ],
+        "denial_patterns": [
+          [4, 8, 12]
+        ],
+        "notes": "string"
+      }
+    ],
+    "special_cases": {
+      "rahu_ketu_model": {
+        "enabled": true,
+        "description": "Compound significator model using self, dispositor, and star lord"
+      },
+      "sex_determination": {
+        "enabled": false,
+        "description": "Optional specialized module"
+      },
+      "micro_timing": {
+        "enabled": true,
+        "description": "Minute-level or sub-minute timing window analysis"
+      }
+    },
+    "custom_rules": [
+      {
+        "rule_name": "string",
+        "enabled": true,
+        "logic": "string",
+        "applies_to": ["string"]
+      }
+    ]
+  },
+  "audit": {
+    "calculated_at": "YYYY-MM-DDTHH:MM:SSZ",
+    "calculation_notes": "string",
+    "version_notes": "string"
+  }
+}
+
+
+{"instruction": "Analyze compatibility between Aries and Cancer.", "input": "Focus on dosha effects, with dasha and dosha influences.", "output": "When Aries meets Cancer, their dosha effects compatibility reflects both strengths and vulnerabilities. Moon Mahadasha cycles amplify certain qualities. Managing Pitru Dosha ensures smoother outcomes."}
+{"instruction": "Analyze compatibility between Pisces and Leo.", "input": "Focus on love and romance, with dasha and dosha influences.", "output": "Pisces and Leo in love and romance may thrive, but challenges appear when Shani Dosha influences. Under Rahu Mahadasha, harmony improves if guided by chanting mantras."}
+{"instruction": "Analyze compatibility between Aries and Virgo.", "input": "Focus on dosha effects, with dasha and dosha influences.", "output": "Astrologically, Aries and Virgo share a connection in dosha effects. Success or struggle depends on Mars Mahadasha. Shani Dosha effects may require remedies like practicing meditation."}
+{"instruction": "Analyze compatibility between Cancer and Libra.", "input": "Focus on dasha cycles, with dasha and dosha influences.", "output": "In dasha cycles, Cancer contributes enthusiasm, while Libra adds steadiness. Venus Mahadasha seasons bring new lessons. Remedies for Pitru Dosha are advised to maintain balance."}
+{"instruction": "Analyze compatibility between Scorpio and Leo.", "input": "Focus on finance and wealth, with dasha and dosha influences.", "output": "Scorpio and Leo can complement each other in finance and wealth. However, if Shani Dosha persists, friction rises. Balanced energy during Jupiter Mahadasha can restore peace through wearing gemstones."}
+{"instruction": "Analyze compatibility between Capricorn and Pisces.", "input": "Focus on social life, with dasha and dosha influences.", "output": "Capricorn and Pisces in social life may thrive, but challenges appear when Pitru Dosha influences. Under Mars Mahadasha, harmony improves if guided by performing puja rituals."}
+{"instruction": "Analyze compatibility between Sagittarius and Cancer.", "input": "Focus on finance and wealth, with dasha and dosha influences.", "output": "Astrologically, Sagittarius and Cancer share a connection in finance and wealth. Success or struggle depends on Moon Mahadasha. Grahan Dosha effects may require remedies like observing fasts."}
+{"instruction": "Analyze compatibility between Cancer and Pisces.", "input": "Focus on dosha effects, with dasha and dosha influences.", "output": "The partnership of Cancer and Pisces shows unique patterns in dosha effects. Cancer adds strength, while Pisces balances. Jupiter Mahadasha highlights hidden dynamics. Remedies for Shani Dosha may stabilize the connection."}
+{"instruction": "Analyze compatibility between Libra and Virgo.", "input": "Focus on dasha cycles, with dasha and dosha influences.", "output": "Libra and Virgo in dasha cycles may thrive, but challenges appear when Kaal Sarp Dosha influences. Under Moon Mahadasha, harmony improves if guided by observing fasts."}
+{"instruction": "Analyze compatibility between Aquarius and Sagittarius.", "input": "Focus on finance and wealth, with dasha and dosha influences.", "output": "Compatibility between Aquarius and Sagittarius in finance and wealth often generates growth. During Saturn Mahadasha, their energies may shift. If Mangal Dosha is active, performing puja rituals can help."}
+{"instruction": "Analyze compatibility between Sagittarius and Scorpio.", "input": "Focus on dosha effects, with dasha and dosha influences.", "output": "When Sagittarius meets Scorpio, their dosha effects compatibility reflects both strengths and vulnerabilities. Moon Mahadasha cycles amplify certain qualities. Managing Shani Dosha ensures smoother outcomes."}
+{"instruction": "Analyze compatibility between Leo and Gemini.", "input": "Focus on dosha effects, with dasha and dosha influences.", "output": "The alignment of Leo and Gemini indicates potential in dosha effects. Yet Kaal Sarp Dosha may challenge them. Under Mars Mahadasha, growth is likely if supported with chanting mantras."}
+{"instruction": "Analyze compatibility between Pisces and Aries.", "input": "Focus on finance and wealth, with dasha and dosha influences.", "output": "Pisces and Aries can complement each other in finance and wealth. However, if Grahan Dosha persists, friction rises. Balanced energy during Moon Mahadasha can restore peace through observing fasts."}
+{"instruction": "Analyze compatibility between Leo and Virgo.", "input": "Focus on marriage and children, with dasha and dosha influences.", "output": "In marriage and children, Leo contributes enthusiasm, while Virgo adds steadiness. Venus Mahadasha seasons bring new lessons. Remedies for Pitru Dosha are advised to maintain balance."}
+{"instruction": "Analyze compatibility between Virgo and Scorpio.", "input": "Focus on career and success, with dasha and dosha influences.", "output": "When Virgo meets Scorpio, their career and success compatibility reflects both strengths and vulnerabilities. Saturn Mahadasha cycles amplify certain qualities. Managing Kaal Sarp Dosha ensures smoother outcomes."}
+{"instruction": "Analyze compatibility between Libra and Virgo.", "input": "Focus on career and success, with dasha and dosha influences.", "output": "In career and success, Libra contributes enthusiasm, while Virgo adds steadiness. Rahu Mahadasha seasons bring new lessons. Remedies for Kaal Sarp Dosha are advised to maintain balance."}
+{"instruction": "Analyze compatibility between Gemini and Aquarius.", "input": "Focus on dosha effects, with dasha and dosha influences.", "output": "Astrologically, Gemini and Aquarius share a connection in dosha effects. Success or struggle depends on Saturn Mahadasha. Shani Dosha effects may require remedies like chanting mantras."}
+{"instruction": "Analyze compatibility between Sagittarius and Taurus.", "input": "Focus on dosha effects, with dasha and dosha influences.", "output": "Sagittarius and Taurus in dosha effects may thrive, but challenges appear when Kaal Sarp Dosha influences. Under Rahu Mahadasha, harmony improves if guided by practicing meditation."}
+{"instruction": "Analyze compatibility between Taurus and Scorpio.", "input": "Focus on dasha cycles, with dasha and dosha influences.", "output": "The partnership of Taurus and Scorpio shows unique patterns in dasha cycles. Taurus adds strength, while Scorpio balances. Venus Mahadasha highlights hidden dynamics. Remedies for Pitru Dosha may stabilize the connection."}
+{"instruction": "Analyze compatibility between Aries and Leo.", "input": "Focus on marriage and children, with dasha and dosha influences.", "output": "In marriage and children, Aries contributes enthusiasm, while Leo adds steadiness. Rahu Mahadasha seasons bring new lessons. Remedies for Mangal Dosha are advised to maintain balance."}
+{"instruction": "Analyze compatibility between Aquarius and Taurus.", "input": "Focus on finance and wealth, with dasha and dosha influences.", "output": "When Aquarius meets Taurus, their finance and wealth compatibility reflects both strengths and vulnerabilities. Saturn Mahadasha cycles amplify certain qualities. Managing Pitru Dosha ensures smoother outcomes."}
+{"instruction": "Analyze compatibility between Pisces and Leo.", "input": "Focus on social life, with dasha and dosha influences.", "output": "In social life, Pisces contributes enthusiasm, while Leo adds steadiness. Moon Mahadasha seasons bring new lessons. Remedies for Kaal Sarp Dosha are advised to maintain balance."}
+{"instruction": "Analyze compatibility between Libra and Gemini.", "input": "Focus on dosha effects, with dasha and dosha influences.", "output": "The partnership of Libra and Gemini shows unique patterns in dosha effects. Libra adds strength, while Gemini balances. Saturn Mahadasha highlights hidden dynamics. Remedies for Mangal Dosha may stabilize the connection."}
+{"instruction": "Analyze compatibility between Virgo and Cancer.", "input": "Focus on career and success, with dasha and dosha influences.", "output": "Virgo and Cancer in career and success may thrive, but challenges appear when Kaal Sarp Dosha influences. Under Venus Mahadasha, harmony improves if guided by performing puja rituals."}
+{"instruction": "Analyze compatibility between Sagittarius and Gemini.", "input": "Focus on dosha effects, with dasha and dosha influences.", "output": "The alignment of Sagittarius and Gemini indicates potential in dosha effects. Yet Mangal Dosha may challenge them. Under Rahu Mahadasha, growth is likely if supported with wearing gemstones."}
+{"instruction": "Analyze compatibility between Virgo and Capricorn.", "input": "Focus on marriage and children, with dasha and dosha influences.", "output": "When Virgo meets Capricorn, their marriage and children compatibility reflects both strengths and vulnerabilities. Jupiter Mahadasha cycles amplify certain qualities. Managing Grahan Dosha ensures smoother outcomes."}
+{"instruction": "Analyze compatibility between Libra and Gemini.", "input": "Focus on career and success, with dasha and dosha influences.", "output": "Astrologically, Libra and Gemini share a connection in career and success. Success or struggle depends on Mars Mahadasha. Shani Dosha effects may require remedies like chanting mantras."}
+{"instruction": "Analyze compatibility between Aquarius and Gemini.", "input": "Focus on dosha effects, with dasha and dosha influences.", "output": "The partnership of Aquarius and Gemini shows unique patterns in dosha effects. Aquarius adds strength, while Gemini balances. Venus Mahadasha highlights hidden dynamics. Remedies for Shani Dosha may stabilize the connection."}
+{"instruction": "Analyze compatibility between Leo and Cancer.", "input": "Focus on love and romance, with dasha and dosha influences.", "output": "Astrologically, Leo and Cancer share a connection in love and romance. Success or struggle depends on Mars Mahadasha. Shani Dosha effects may require remedies like practicing meditation."}
+{"instruction": "Analyze compatibility between Libra and Libra.", "input": "Focus on dasha cycles, with dasha and dosha influences.", "output": "The partnership of Libra and Libra shows unique patterns in dasha cycles. Libra adds strength, while Libra balances. Rahu Mahadasha highlights hidden dynamics. Remedies for Pitru Dosha may stabilize the connection."}
+{"instruction": "Analyze compatibility between Leo and Libra.", "input": "Focus on social life, with dasha and dosha influences.", "output": "Astrologically, Leo and Libra share a connection in social life. Success or struggle depends on Rahu Mahadasha. Grahan Dosha effects may require remedies like consulting astrologers."}
+{"instruction": "Analyze compatibility between Cancer and Capricorn.", "input": "Focus on career and success, with dasha and dosha influences.", "output": "Cancer and Capricorn can complement each other in career and success. However, if Kaal Sarp Dosha persists, friction rises. Balanced energy during Venus Mahadasha can restore peace through practicing meditation."}
+{"instruction": "Analyze compatibility between Leo and Leo.", "input": "Focus on love and romance, with dasha and dosha influences.", "output": "Leo and Leo in love and romance may thrive, but challenges appear when Pitru Dosha influences. Under Mars Mahadasha, harmony improves if guided by performing puja rituals."}
+{"instruction": "Analyze compatibility between Scorpio and Cancer.", "input": "Focus on love and romance, with dasha and dosha influences.", "output": "Dynamics of Scorpio and Cancer in love and romance often sparks transformation. During Mars Mahadasha, their energies may shift. If Pitru Dosha is active, consulting astrologers can help."}
+{"instruction": "Analyze compatibility between Aries and Aquarius.", "input": "Focus on social life, with dasha and dosha influences.", "output": "In social life, Aries contributes enthusiasm, while Aquarius adds steadiness. Saturn Mahadasha seasons bring new lessons. Remedies for Kaal Sarp Dosha are advised to maintain balance."}
+{"instruction": "Analyze compatibility between Pisces and Leo.", "input": "Focus on marriage and children, with dasha and dosha influences.", "output": "Pisces and Leo in marriage and children may thrive, but challenges appear when Shani Dosha influences. Under Saturn Mahadasha, harmony improves if guided by observing fasts."}
+{"instruction": "Analyze compatibility between Gemini and Sagittarius.", "input": "Focus on social life, with dasha and dosha influences.", "output": "Astrologically, Gemini and Sagittarius share a connection in social life. Success or struggle depends on Mars Mahadasha. Shani Dosha effects may require remedies like observing fasts."}
+{"instruction": "Analyze compatibility between Sagittarius and Capricorn.", "input": "Focus on finance and wealth, with dasha and dosha influences.", "output": "In finance and wealth, Sagittarius contributes enthusiasm, while Capricorn adds steadiness. Moon Mahadasha seasons bring new lessons. Remedies for Shani Dosha are advised to maintain balance."}
+{"instruction": "Analyze compatibility between Pisces and Scorpio.", "input": "Focus on dosha effects, with dasha and dosha influences.", "output": "Astrological alignment of Pisces and Scorpio in dosha effects often encourages stability. During Venus Mahadasha, their energies may shift. If Kaal Sarp Dosha is active, observing fasts can help."}
+{"instruction": "Analyze compatibility between Aquarius and Scorpio.", "input": "Focus on finance and wealth, with dasha and dosha influences.", "output": "The partnership of Aquarius and Scorpio shows unique patterns in finance and wealth. Aquarius adds strength, while Scorpio balances. Saturn Mahadasha highlights hidden dynamics. Remedies for Mangal Dosha may stabilize the connection."}
+{"instruction": "Analyze compatibility between Cancer and Libra.", "input": "Focus on career and success, with dasha and dosha influences.", "output": "Astrologically, Cancer and Libra share a connection in career and success. Success or struggle depends on Venus Mahadasha. Grahan Dosha effects may require remedies like chanting mantras."}
+{"instruction": "Analyze compatibility between Libra and Capricorn.", "input": "Focus on finance and wealth, with dasha and dosha influences.", "output": "Libra and Capricorn in finance and wealth may thrive, but challenges appear when Grahan Dosha influences. Under Jupiter Mahadasha, harmony improves if guided by consulting astrologers."}
+{"instruction": "Analyze compatibility between Sagittarius and Libra.", "input": "Focus on finance and wealth, with dasha and dosha influences.", "output": "Astrologically, Sagittarius and Libra share a connection in finance and wealth. Success or struggle depends on Mars Mahadasha. Mangal Dosha effects may require remedies like observing fasts."}
+{"instruction": "Analyze compatibility between Leo and Gemini.", "input": "Focus on marriage and children, with dasha and dosha influences.", "output": "When Leo meets Gemini, their marriage and children compatibility reflects both strengths and vulnerabilities. Jupiter Mahadasha cycles amplify certain qualities. Managing Kaal Sarp Dosha ensures smoother outcomes."}
+{"instruction": "Analyze compatibility between Gemini and Aquarius.", "input": "Focus on finance and wealth, with dasha and dosha influences.", "output": "The partnership of Gemini and Aquarius shows unique patterns in finance and wealth. Gemini adds strength, while Aquarius balances. Venus Mahadasha highlights hidden dynamics. Remedies for Kaal Sarp Dosha may stabilize the connection."}
+{"instruction": "Analyze compatibility between Sagittarius and Leo.", "input": "Focus on dasha cycles, with dasha and dosha influences.", "output": "The alignment of Sagittarius and Leo indicates potential in dasha cycles. Yet Mangal Dosha may challenge them. Under Jupiter Mahadasha, growth is likely if supported with practicing meditation."}
+{"instruction": "Analyze compatibility between Scorpio and Virgo.", "input": "Focus on love and romance, with dasha and dosha influences.", "output": "Scorpio and Virgo can complement each other in love and romance. However, if Mangal Dosha persists, friction rises. Balanced energy during Saturn Mahadasha can restore peace through observing fasts."}
+{"instruction": "Analyze compatibility between Cancer and Leo.", "input": "Focus on love and romance, with dasha and dosha influences.", "output": "Cancer and Leo can complement each other in love and romance. However, if Mangal Dosha persists, friction rises. Balanced energy during Jupiter Mahadasha can restore peace through performing puja rituals."}
+{"instruction": "Analyze compatibility between Gemini and Sagittarius.", "input": "Focus on dosha effects, with dasha and dosha influences.", "output": "Gemini and Sagittarius can complement each other in dosha effects. However, if Pitru Dosha persists, friction rises. Balanced energy during Moon Mahadasha can restore peace through wearing gemstones."}
+{"instruction": "Analyze compatibility between Aries and Virgo.", "input": "Focus on finance and wealth, with dasha and dosha influences.", "output": "In finance and wealth, Aries contributes enthusiasm, while Virgo adds steadiness. Moon Mahadasha seasons bring new lessons. Remedies for Shani Dosha are advised to maintain balance."}
+{"instruction": "Analyze compatibility between Leo and Cancer.", "input": "Focus on finance and wealth, with dasha and dosha influences.", "output": "The alignment of Leo and Cancer indicates potential in finance and wealth. Yet Pitru Dosha may challenge them. Under Venus Mahadasha, growth is likely if supported with practicing meditation."}
+{"instruction": "Analyze compatibility between Scorpio and Scorpio.", "input": "Focus on dasha cycles, with dasha and dosha influences.", "output": "The connection between Scorpio and Scorpio in dasha cycles often sparks transformation. During Venus Mahadasha, their energies may shift. If Mangal Dosha is active, observing fasts can help."}
+{"instruction": "Analyze compatibility between Libra and Aries.", "input": "Focus on finance and wealth, with dasha and dosha influences.", "output": "The alignment of Libra and Aries indicates potential in finance and wealth. Yet Mangal Dosha may challenge them. Under Saturn Mahadasha, growth is likely if supported with performing puja rituals."}
+{"instruction": "Analyze compatibility between Aquarius and Gemini.", "input": "Focus on social life, with dasha and dosha influences.", "output": "Astrologically, Aquarius and Gemini share a connection in social life. Success or struggle depends on Mars Mahadasha. Mangal Dosha effects may require remedies like practicing meditation."}
+{"instruction": "Analyze compatibility between Libra and Sagittarius.", "input": "Focus on dosha effects, with dasha and dosha influences.", "output": "In dosha effects, Libra contributes enthusiasm, while Sagittarius adds steadiness. Mars Mahadasha seasons bring new lessons. Remedies for Shani Dosha are advised to maintain balance."}
+{"instruction": "Analyze compatibility between Sagittarius and Cancer.", "input": "Focus on finance and wealth, with dasha and dosha influences.", "output": "The alignment of Sagittarius and Cancer indicates potential in finance and wealth. Yet Kaal Sarp Dosha may challenge them. Under Venus Mahadasha, growth is likely if supported with practicing meditation."}
+{"instruction": "Analyze compatibility between Cancer and Taurus.", "input": "Focus on love and romance, with dasha and dosha influences.", "output": "Astrologically, Cancer and Taurus share a connection in love and romance. Success or struggle depends on Moon Mahadasha. Grahan Dosha effects may require remedies like consulting astrologers."}
+{"instruction": "Analyze compatibility between Cancer and Cancer.", "input": "Focus on finance and wealth, with dasha and dosha influences.", "output": "The partnership of Cancer and Cancer shows unique patterns in finance and wealth. Cancer adds strength, while Cancer balances. Saturn Mahadasha highlights hidden dynamics. Remedies for Mangal Dosha may stabilize the connection."}
+{"instruction": "Analyze compatibility between Libra and Pisces.", "input": "Focus on dasha cycles, with dasha and dosha influences.", "output": "Libra and Pisces in dasha cycles may thrive, but challenges appear when Mangal Dosha influences. Under Venus Mahadasha, harmony improves if guided by wearing gemstones."}
+{"instruction": "Analyze compatibility between Leo and Gemini.", "input": "Focus on social life, with dasha and dosha influences.", "output": "Astrologically, Leo and Gemini share a connection in social life. Success or struggle depends on Rahu Mahadasha. Shani Dosha effects may require remedies like practicing meditation."}
+{"instruction": "Analyze compatibility between Aquarius and Leo.", "input": "Focus on love and romance, with dasha and dosha influences.", "output": "Aquarius and Leo can complement each other in love and romance. However, if Mangal Dosha persists, friction rises. Balanced energy during Moon Mahadasha can restore peace through practicing meditation."}
+{"instruction": "Analyze compatibility between Leo and Taurus.", "input": "Focus on dosha effects, with dasha and dosha influences.", "output": "Leo and Taurus can complement each other in dosha effects. However, if Mangal Dosha persists, friction rises. Balanced energy during Saturn Mahadasha can restore peace through chanting mantras."}
+{"instruction": "Analyze compatibility between Libra and Capricorn.", "input": "Focus on career and success, with dasha and dosha influences.", "output": "In career and success, Libra contributes enthusiasm, while Capricorn adds steadiness. Mars Mahadasha seasons bring new lessons. Remedies for Shani Dosha are advised to maintain balance."}
+{"instruction": "Analyze compatibility between Cancer and Leo.", "input": "Focus on finance and wealth, with dasha and dosha influences.", "output": "Astrologically, Cancer and Leo share a connection in finance and wealth. Success or struggle depends on Moon Mahadasha. Shani Dosha effects may require remedies like consulting astrologers."}
+{"instruction": "Analyze compatibility between Libra and Scorpio.", "input": "Focus on social life, with dasha and dosha influences.", "output": "The alignment of Libra and Scorpio indicates potential in social life. Yet Shani Dosha may challenge them. Under Moon Mahadasha, growth is likely if supported with practicing meditation."}
+{"instruction": "Analyze compatibility between Scorpio and Aries.", "input": "Focus on social life, with dasha and dosha influences.", "output": "The alignment of Scorpio and Aries indicates potential in social life. Yet Grahan Dosha may challenge them. Under Venus Mahadasha, growth is likely if supported with practicing meditation."}
+{"instruction": "Analyze compatibility between Leo and Pisces.", "input": "Focus on dasha cycles, with dasha and dosha influences.", "output": "Leo and Pisces can complement each other in dasha cycles. However, if Grahan Dosha persists, friction rises. Balanced energy during Saturn Mahadasha can restore peace through consulting astrologers."}
+{"instruction": "Analyze compatibility between Capricorn and Leo.", "input": "Focus on dosha effects, with dasha and dosha influences.", "output": "Capricorn and Leo can complement each other in dosha effects. However, if Mangal Dosha persists, friction rises. Balanced energy during Venus Mahadasha can restore peace through performing puja rituals."}
+{"instruction": "Analyze compatibility between Aries and Aries.", "input": "Focus on love and romance, with dasha and dosha influences.", "output": "In love and romance, Aries contributes enthusiasm, while Aries adds steadiness. Rahu Mahadasha seasons bring new lessons. Remedies for Mangal Dosha are advised to maintain balance."}
+{"instruction": "Analyze compatibility between Leo and Aries.", "input": "Focus on dasha cycles, with dasha and dosha influences.", "output": "Astrological alignment of Leo and Aries in dasha cycles often sparks transformation. During Jupiter Mahadasha, their energies may shift. If Pitru Dosha is active, performing puja rituals can help."}
+{"instruction": "Analyze compatibility between Pisces and Sagittarius.", "input": "Focus on marriage and children, with dasha and dosha influences.", "output": "The connection between Pisces and Sagittarius in marriage and children often encourages stability. During Moon Mahadasha, their energies may shift. If Shani Dosha is active, wearing gemstones can help."}
+{"instruction": "Analyze compatibility between Leo and Gemini.", "input": "Focus on dasha cycles, with dasha and dosha influences.", "output": "Leo and Gemini in dasha cycles may thrive, but challenges appear when Kaal Sarp Dosha influences. Under Jupiter Mahadasha, harmony improves if guided by wearing gemstones."}
+{"instruction": "Analyze compatibility between Pisces and Aries.", "input": "Focus on social life, with dasha and dosha influences.", "output": "The partnership of Pisces and Aries shows unique patterns in social life. Pisces adds strength, while Aries balances. Moon Mahadasha highlights hidden dynamics. Remedies for Grahan Dosha may stabilize the connection."}
+{"instruction": "Analyze compatibility between Pisces and Taurus.", "input": "Focus on dosha effects, with dasha and dosha influences.", "output": "Astrologically, Pisces and Taurus share a connection in dosha effects. Success or struggle depends on Mars Mahadasha. Kaal Sarp Dosha effects may require remedies like performing puja rituals."}
+{"instruction": "Analyze compatibility between Sagittarius and Aquarius.", "input": "Focus on career and success, with dasha and dosha influences.", "output": "Sagittarius and Aquarius in career and success may thrive, but challenges appear when Mangal Dosha influences. Under Saturn Mahadasha, harmony improves if guided by performing puja rituals."}
+{"instruction": "Analyze compatibility between Virgo and Scorpio.", "input": "Focus on social life, with dasha and dosha influences.", "output": "Astrologically, Virgo and Scorpio share a connection in social life. Success or struggle depends on Moon Mahadasha. Shani Dosha effects may require remedies like performing puja rituals."}
+{"instruction": "Analyze compatibility between Cancer and Libra.", "input": "Focus on social life, with dasha and dosha influences.", "output": "Compatibility between Cancer and Libra in social life often creates friction. During Mars Mahadasha, their energies may shift. If Grahan Dosha is active, performing puja rituals can help."}
+{"instruction": "Analyze compatibility between Aquarius and Sagittarius.", "input": "Focus on dasha cycles, with dasha and dosha influences.", "output": "The partnership of Aquarius and Sagittarius shows unique patterns in dasha cycles. Aquarius adds strength, while Sagittarius balances. Mars Mahadasha highlights hidden dynamics. Remedies for Grahan Dosha may stabilize the connection."}
+{"instruction": "Analyze compatibility between Gemini and Cancer.", "input": "Focus on dosha effects, with dasha and dosha influences.", "output": "When Gemini meets Cancer, their dosha effects compatibility reflects both strengths and vulnerabilities. Mars Mahadasha cycles amplify certain qualities. Managing Mangal Dosha ensures smoother outcomes."}
+{"instruction": "Analyze compatibility between Capricorn and Scorpio.", "input": "Focus on career and success, with dasha and dosha influences.", "output": "Capricorn and Scorpio in career and success may thrive, but challenges appear when Shani Dosha influences. Under Saturn Mahadasha, harmony improves if guided by chanting mantras."}
+{"instruction": "Analyze compatibility between Aries and Aries.", "input": "Focus on social life, with dasha and dosha influences.", "output": "The alignment of Aries and Aries indicates potential in social life. Yet Kaal Sarp Dosha may challenge them. Under Jupiter Mahadasha, growth is likely if supported with wearing gemstones."}
+{"instruction": "Analyze compatibility between Pisces and Libra.", "input": "Focus on marriage and children, with dasha and dosha influences.", "output": "The partnership of Pisces and Libra shows unique patterns in marriage and children. Pisces adds strength, while Libra balances. Moon Mahadasha highlights hidden dynamics. Remedies for Kaal Sarp Dosha may stabilize the connection."}
+{"instruction": "Analyze compatibility between Pisces and Virgo.", "input": "Focus on career and success, with dasha and dosha influences.", "output": "The partnership of Pisces and Virgo shows unique patterns in career and success. Pisces adds strength, while Virgo balances. Rahu Mahadasha highlights hidden dynamics. Remedies for Shani Dosha may stabilize the connection."}
+{"instruction": "Analyze compatibility between Virgo and Taurus.", "input": "Focus on marriage and children, with dasha and dosha influences.", "output": "The partnership of Virgo and Taurus shows unique patterns in marriage and children. Virgo adds strength, while Taurus balances. Rahu Mahadasha highlights hidden dynamics. Remedies for Pitru Dosha may stabilize the connection."}
+{"instruction": "Analyze compatibility between Gemini and Libra.", "input": "Focus on finance and wealth, with dasha and dosha influences.", "output": "When Gemini meets Libra, their finance and wealth compatibility reflects both strengths and vulnerabilities. Jupiter Mahadasha cycles amplify certain qualities. Managing Kaal Sarp Dosha ensures smoother outcomes."}
+{"instruction": "Analyze compatibility between Capricorn and Taurus.", "input": "Focus on love and romance, with dasha and dosha influences.", "output": "Capricorn and Taurus can complement each other in love and romance. However, if Kaal Sarp Dosha persists, friction rises. Balanced energy during Venus Mahadasha can restore peace through observing fasts."}
+{"instruction": "Analyze compatibility between Libra and Capricorn.", "input": "Focus on finance and wealth, with dasha and dosha influences.", "output": "The partnership of Libra and Capricorn shows unique patterns in finance and wealth. Libra adds strength, while Capricorn balances. Rahu Mahadasha highlights hidden dynamics. Remedies for Mangal Dosha may stabilize the connection."}
+{"instruction": "Analyze compatibility between Aries and Sagittarius.", "input": "Focus on career and success, with dasha and dosha influences.", "output": "Aries and Sagittarius can complement each other in career and success. However, if Pitru Dosha persists, friction rises. Balanced energy during Mars Mahadasha can restore peace through wearing gemstones."}
+{"instruction": "Analyze compatibility between Cancer and Aries.", "input": "Focus on career and success, with dasha and dosha influences.", "output": "In career and success, Cancer contributes enthusiasm, while Aries adds steadiness. Mars Mahadasha seasons bring new lessons. Remedies for Pitru Dosha are advised to maintain balance."}
+{"instruction": "Analyze compatibility between Cancer and Leo.", "input": "Focus on dosha effects, with dasha and dosha influences.", "output": "The alignment of Cancer and Leo indicates potential in dosha effects. Yet Mangal Dosha may challenge them. Under Mars Mahadasha, growth is likely if supported with observing fasts."}
+{"instruction": "Analyze compatibility between Aquarius and Sagittarius.", "input": "Focus on dosha effects, with dasha and dosha influences.", "output": "Astrologically, Aquarius and Sagittarius share a connection in dosha effects. Success or struggle depends on Venus Mahadasha. Kaal Sarp Dosha effects may require remedies like performing puja rituals."}
+{"instruction": "Analyze compatibility between Aries and Aries.", "input": "Focus on dosha effects, with dasha and dosha influences.", "output": "In dosha effects, Aries contributes enthusiasm, while Aries adds steadiness. Saturn Mahadash
+
+
+
+
+
+
+{
+        "MasterRelationshipAstrologyCompendium": {
+                "version": "1.0",
+                "date": "February 17, 2026",
+                "description": "Unified verbose JSON synthesis of ALL relationship astrology data from space files and prioritized sources (astroalive.com, astro-charts.com, astrology.com, astronomicon.co, astro-seek.com, fixedstarsinfo.blogspot.com, johnsandbach.net, liveabout.com, siddhantika.com, tdjacobs.com). Combines synastry techniques, humanistic approaches, house overlays, aspects, karmic patterns, Royal Stars, asteroids, axes, clusters, and practical counseling into a comprehensive guide. Sources merged without duplication, cross-referenced for depth.",
+                "sources": {
+                        "file:667": {
+                                "name": "Astrological-Relationship-Interpretation-Guide-1.pdf",
+                                "key_themes": [
+                                        "Synastry analysis of Jimmy/Jenny",
+                                        "Foundational axes (Asc/Desc, MC/IC)",
+                                        "Core clusters (Houses 2,3,6,9,11,12,5)",
+                                        "Royal Stars (Aldebaran, Regulus, Antares, Fomalhaut)",
+                                        "Asteroids (Chiron, Eris, Ceres, Eros, Juno, etc.)",
+                                        "Karmic signatures",
+                                        "Midpoints"
+                                ],
+                                "content_summary": "Detailed Jimmy-Jenny synastry: Asc-Desc axis links philosophy/communication; MC-IC ties public/private selves. House 3 cluster (Sun/Mercury/Chiron) emphasizes mental rapport with healing potential. House 2 (Venus/Jupiter) fosters abundance/shared values. House 6 (Mars/Saturn/Nemesis) demands discipline amid karma. House 9 (Uranus/Pluto) drives transformation. Royal Stars elevate to fated destiny."
+                        },
+                        "file:481": {
+                                "name": "The-Astrology-of-Relationship-A-Humanistic-Approach-to-the-Practice-of-Synastry-Michael-R.-Meyer.pdf",
+                                "key_themes": [
+                                        "Humanistic synastry",
+                                        "Karma/dharma in relationships",
+                                        "Zodiacal/house/composite charts",
+                                        "Planetary phases/aspects",
+                                        "Vertical/horizontal relatedness",
+                                        "Soul evolution via rebirth"
+                                ],
+                                "content_summary": "Evolutionary view: Relationships as transformative vehicles. Techniques: Zodiacal contacts, house overlays, composites. Philosophy: Karma (past conditioning) vs. dharma (future potential). Examples: Freud/Jung, Sand/Chopin, Blavatsky/Olcott. Emphasizes mutual growth over prediction."
+                        },
+                        "file:476": {
+                                "name": "Synastry-Relationship-Astrology-Synastric-Aspects-Houses.pdf",
+                                "key_themes": [
+                                        "House overlays",
+                                        "Interplanetary aspects",
+                                        "Subjective compatibility",
+                                        "Orbs (conj 6°, opp 5°, sq 4.5°)"
+                                ],
+                                "content_summary": "Synastry factors: Planets in partner's houses (e.g., Venus/Jupiter in 5th/7th favorable). Aspects: Sun/Venus/Moon links for harmony; Mars/Venus for attraction. Saturn excess dampens joy; Uranus disrupts."
+                        },
+                        "file:668": {
+                                "name": "Synastry-Understanding-the-Astrology-of-Relationships-Rod-Suskin.pdf",
+                                "key_themes": [
+                                        "Natal prep for synastry",
+                                        "First impressions (Asc/Mercury)",
+                                        "Sun/Moon needs",
+                                        "Composite charts",
+                                        "Counseling couples"
+                                ],
+                                "content_summary": "Step-by-step: Natal analysis → Individual interactions → Chart overlays → Relationship charts → Longevity. Compatibility criteria: Communication, empathy, compromise. Ethical notes on privacy/advice."
+                        },
+                        "file:458": {
+                                "name": "Book_Rod-Suskin_Synastry_Understanding-the-Astrology-of-Relationships.pdf",
+                                "key_themes": [
+                                        "Duplicate of file:668 with extras on preparation, mind maps, consultation charts"
+                                ],
+                                "content_summary": "Merged: Collating themes (once=possibility, 3x=certainty). Session strategy: Natal → Progressions → Synastry → Composite. Role: Neutral astrologer, not therapist."
+                        },
+                        "web_sources": {
+                                "tdjacobs.com": "Evolutionary Astrology (EA): Pluto/SN/SN-ruler/NN for soul's journey. No synastry; natal reveals relationship patterns/karma.",
+                                "siddhantika.com": "Synastry overview: Planet roles in overlays/aspects.",
+                                "other_prioritized": "General techniques from astro-seek.com (tools), fixedstarsinfo (stars), johnsandbach.net (asteroids)."
+                        }
+                },
+                "core_principles": {
+                        "synastry": "Overlay one chart on another: Planets in houses/aspects between charts. Reveals chemistry, friction, growth.",
+                        "composite": "Midpoint chart: Relationship as third entity (Sun=purpose, Moon=emotional rhythm).",
+                        "humanistic": "Mutual transformation, not prediction. Karma (past) + dharma (potential).",
+                        "evolutionary": "Soul's multi-life journey; relationships resolve karma.",
+                        "compatibility": "Not harmony alone: Communication, empathy, shared values, growth potential."
+                },
+                "techniques": {
+                        "foundational_axes": {
+                                "asc_desc": "Self/other: Jimmy's Asc in Jenny's 9th → philosophical expansion; Desc in 3rd → mental rapport.",
+
+
+​
+"mc_ic": "Public/private: MC in 7th → power couple; IC in 1st → emotional foundation."
+​
+},
+"house_clusters": {
+"house_2": "Values/abundance: Venus/Jupiter/Ceres/Eros/Juno/Pholus/Fomalhaut → nurturing, sensuality, fated luck.",
+​
+"house_3": "Communication: Sun/Mercury/Chiron/Eris → addictive talk, healing wounds.",
+​
+"house_6": "Daily work: Mars/Saturn/Nemesis/Nessus → discipline, karmic battles.",
+​
+"house_9": "Philosophy: Uranus/Pluto/Asc → transformative adventure.",
+​
+"house_11": "Community: Moon/Neptune/Antares → idealistic bonds.",
+​
+"house_12": "Karma: NN/Diana → past-life, hidden intimacy.",
+​
+"house_5": "Romance: Fortune/Aldebaran → creative joy, power."
+​
+},
+"aspects": {
+"favorable": "Sun/Moon/Venus trines/sextiles/conjunctions → harmony. Mars/Venus any aspect → attraction.",
+​
+"challenging": "Saturn hard to luminaries → restriction. Uranus → disruption."
+
+
+},
+"royal_stars": {
+"aldebaran_h5": "Creative power.",
+​
+"regulus": "Influence (implied).",
+​
+"antares_h11": "Passionate ideals.",
+​
+"fomalhaut_h2": "Fated values."
+​
+},
+"asteroids_archetypes": {
+"chiron": "Wounded healer in talk.",
+​
+"eros": "Primal desire.",
+​
+"juno": "Commitment.",
+​
+"nemesis": "Retribution in routines."
+​
+},
+"natal_prep": "Sun/Moon/Asc elements; Mercury style; 7th house ruler."
+
+
+},
+"relationship_types": {
+"romantic": "5th/7th/8th overlays; Venus/Mars/Pluto.",
+​
+"karmic": "SN/Pluto/N12; past-life resonance.[web:tdjacobs]",
+​
+"business": "10th/6th/2nd; Saturn/Jupiter."
+​
+},
+"counseling_guide": {
+"session_flow": "1. Impressions (Asc/Merc). 2. Needs (Sun/Moon). 3. Overlays/aspects. 4. Composite. 5. Directions/longevity.",
+​
+"ethics": "No absent-party charts sans permission. Neutral, astrological basis.",
+​
+"mind_maps": "Themes: Repetition = certainty."
+​
+},
+"examples": {
+"jimmy_jenny": "Fated union: Axes/clusters/Royal Stars → transformation via values/work/philosophy.",
+​
+"blavatsky_olcott": "Composite Sun/Uranus Aquarius 6th → service/revolution."
+​
+},
+"synthesis": "All sources converge: Synastry reveals dynamics (overlays/aspects/clusters); evolutionary lens adds soul purpose (Pluto/Nodes). Humanistic focus: Growth over fate. Practical: Natal first, then interaction, then relationship entity."
+}
+}    
+}
+{
+
+
+
+
+Understood. I will extend the previous JSON export by adding:
+
+
+1. Progressed Ascendant & MC (calculated from the given natal Asc/MC and the progression rate – approximated since exact secondary progressed angles require precise ephemeris; I will derive them from the Sid.Time change).
+2. Aspects among progressed planets (conjunctions, oppositions, trines, squares, sextiles within a 3° orb).
+3. Progressed Moon aspects (because it moves fast and forms many aspects).
+4. A template for progressed-to-natal aspects (ready for you to fill in natal positions – I will leave as a structured template with formulas).
+5. Additional interpretive layers: yearly theme, monthly Moon windows, and a “how to read this” guide.
+
+
+All in a single, valid JSON file.
+
+
+---
+
+
+```json
+{
+  "metadata": {
+    "subject": "Jim S.",
+    "birth_date": "1974-04-10",
+    "birth_time": "19:02 local (7:02 PM)",
+    "birth_place": "Bellaire, OH, USA",
+    "birth_coordinates": "40n01, 80w45",
+    "birth_ut": "23:02",
+    "birth_sidereal_time": "6:54:10",
+    "chart_calculated_for": "2012-04-25",
+    "progression_method": "Secondary progressions (day-for-a-year)",
+    "progression_reference_date": "1974-05-19 (38.04 days after birth)",
+    "progression_key_time": "0:00 UT on 2012-04-25 corresponds to 0:00:30 UT on 1974-05-19",
+    "progression_sidereal_time": "9:24:08",
+    "house_system": "Placidus",
+    "natal_ascendant": "10° Libra",
+    "natal_midheaven": "12° Cancer",
+    "latitude": "40n01",
+    "notes": "All progressed planet positions are for 2012-04-25, using the reference place Bellaire, OH. Progressed angles are approximated from sidereal time shift; for exact angles, software is required."
+  },
+  "house_cusps": {
+    "1st": "10° Libra",
+    "2nd": "10° Scorpio",
+    "3rd": "10° Sagittarius",
+    "4th": "12° Capricorn",
+    "5th": "10° Aquarius",
+    "6th": "10° Pisces",
+    "7th": "10° Aries",
+    "8th": "10° Taurus",
+    "9th": "10° Gemini",
+    "10th": "12° Cancer",
+    "11th": "10° Leo",
+    "12th": "10° Virgo"
+  },
+  "progressed_angles_approximated": {
+    "method": "Sidereal time increased by 2h29m58s (from birth 6:54:10 to progression 9:24:08). Approx 1° advance of Asc per 4 min, so ~37.5° forward. Starting Asc 10° Libra, add 37.5° = 17° Scorpio? Wait, must recalc: 2h29m58s = 149.97 minutes / 4 = 37.49°. 10° Libra + 37.49° = 17° Scorpio (since 10° Lib to 0° Sco = 20°, remainder 17.49°). So progressed Asc ~ 17°30' Scorpio. Similarly MC advances same ~37.5° from 12° Cancer = 19° Leo (12° Can to 0° Leo = 18°, remainder 19.5°). Progr. MC ~ 19°30' Leo.",
+    "progressed_ascendant": "~17°30' Scorpio",
+    "progressed_midheaven": "~19°30' Leo",
+    "interpretation": "Progressed Asc in Scorpio: intense, magnetic self-presentation, undergoing deep personal transformation. Progr. MC in Leo: career focus on creativity, recognition, leadership; public image becomes more dramatic and proud."
+  },
+  "progressed_planets": [
+    {
+      "name": "Sun",
+      "sign_code": "b",
+      "sign": "Taurus",
+      "longitude_dms": "27°38'58\"",
+      "longitude_decimal": 27.64944,
+      "house": 8,
+      "speed": "57'47\"",
+      "speed_decimal": 0.96306,
+      "latitude": "0°0'1\" N",
+      "declination": "19°38'18\" N",
+      "interpretation": {
+        "sign_meaning": "Taurus brings steady, practical self-expression. Focus on material security, sensory pleasures, and patience.",
+        "house_meaning": "8th house rules shared resources, intimacy, death/rebirth, and psychological transformation.",
+        "combined": "Identity tied to joint finances, inheritance, or deep personal change. A slow, determined approach to letting go and rebuilding. Likely major financial or emotional turning point.",
+        "keywords": ["practical transformation", "slow release", "financial integration"]
+      }
+    },
+    {
+      "name": "Moon",
+      "sign_code": "a",
+      "sign": "Aries",
+      "longitude_dms": "20°57'32\"",
+      "longitude_decimal": 20.95889,
+      "house": 7,
+      "speed": "13°18'6\"",
+      "speed_decimal": 13.30167,
+      "latitude": "4°28'42\" N",
+      "declination": "12°19'40\" N",
+      "interpretation": {
+        "sign_meaning": "Aries Moon is impulsive, emotionally direct, needs independence and immediate action.",
+        "house_meaning": "7th house rules one-on-one relationships, partnerships, contracts, open enemies.",
+        "combined": "Emotional needs are expressed through initiating action in partnerships. May feel impatient with a partner, needing to start fresh or assert independence within a relationship. Arguments are quick and cleansing.",
+        "keywords": ["emotional assertiveness", "relationship initiation", "direct expression"]
+      }
+    },
+    {
+      "name": "Mercury",
+      "sign_code": "c",
+      "sign": "Gemini",
+      "longitude_dms": "13°32'23\"",
+      "longitude_decimal": 13.53972,
+      "house": 9,
+      "speed": "1°51'15\"",
+      "speed_decimal": 1.85417,
+      "latitude": "1°59'44\" N",
+      "declination": "24°24'30\" N",
+      "interpretation": {
+        "sign_meaning": "Gemini Mercury is curious, adaptable, communicative, likes multiple streams of information.",
+        "house_meaning": "9th house rules higher education, long-distance travel, philosophy, law, publishing.",
+        "combined": "Thinking expands through learning, travel, or spiritual seeking. Likely reading, writing, or teaching about big-picture ideas. Restless mind seeks meaning.",
+        "keywords": ["intellectual exploration", "travel planning", "teaching"]
+      }
+    },
+    {
+      "name": "Venus",
+      "sign_code": "a",
+      "sign": "Aries",
+      "longitude_dms": "15°54'1\"",
+      "longitude_decimal": 15.90028,
+      "house": 7,
+      "speed": "1°8'13\"",
+      "speed_decimal": 1.13694,
+      "latitude": "1°52'54\" S",
+      "declination": "4°31'11\" N",
+      "interpretation": {
+        "sign_meaning": "Aries Venus loves passionately, directly, and competitively. Values excitement and spontaneity in love.",
+        "house_meaning": "7th house (same as Moon) – partnerships, marriage, clients.",
+        "combined": "Love style becomes assertive and adventurous. May pursue a partner actively or enjoy playful competition in relationships. Attraction to confident, independent people.",
+        "keywords": ["passionate partnership", "direct affection", "competitive romance"]
+      }
+    },
+    {
+      "name": "Mars",
+      "sign_code": "d",
+      "sign": "Cancer",
+      "longitude_dms": "17°12'25\"",
+      "longitude_decimal": 17.20694,
+      "house": 10,
+      "speed": "36'19\"",
+      "speed_decimal": 0.60528,
+      "latitude": "1°26'21\" N",
+      "declination": "23°45'44\" N",
+      "interpretation": {
+        "sign_meaning": "Cancer Mars acts defensively, protectively, and emotionally. Driven by home, family, and security needs.",
+        "house_meaning": "10th house – career, public reputation, authority figures.",
+        "combined": "Action in career is motivated by protecting home or family. Could be a workplace confrontation rooted in emotional needs, or a career change to spend more time at home. Ambition with a nurturing twist.",
+        "keywords": ["protective career moves", "emotional ambition", "home-office balance"]
+      }
+    },
+    {
+      "name": "Jupiter",
+      "sign_code": "l",
+      "sign": "Pisces",
+      "longitude_dms": "14°9'12\"",
+      "longitude_decimal": 14.15333,
+      "house": 6,
+      "speed": "8'26\"",
+      "speed_decimal": 0.14056,
+      "latitude": "1°0'5\" S",
+      "declination": "7°9'38\" S",
+      "interpretation": {
+        "sign_meaning": "Pisces Jupiter expands through compassion, spirituality, art, and surrender. Generous but prone to escapism.",
+        "house_meaning": "6th house – daily work, health, routines, service.",
+        "combined": "Growth and luck come through helping others, healing work, or creative daily practices. Risk of overindulgence (eating, substances) or vague boundaries at work. Ideal for a service-oriented job.",
+        "keywords": ["compassionate service", "spiritual routine", "health expansion"]
+      }
+    },
+    {
+      "name": "Saturn",
+      "sign_code": "d",
+      "sign": "Cancer",
+      "longitude_dms": "3°0'58\"",
+      "longitude_decimal": 3.01611,
+      "house": 9,
+      "speed": "6'52\"",
+      "speed_decimal": 0.11444,
+      "latitude": "0°39'27\" S",
+      "declination": "22°45'1\" N",
+      "interpretation": {
+        "sign_meaning": "Saturn in Cancer creates structure around home, family, and emotional security. May feel restricted or responsible for family.",
+        "house_meaning": "9th house – higher learning, travel, law, religion.",
+        "combined": "Serious commitments to education, publishing, or foreign travel. Could involve family responsibilities that limit travel, or a delayed academic degree. Teaching or legal matters related to real estate/home.",
+        "keywords": ["disciplined study", "family and distance", "legal obligations"]
+      }
+    },
+    {
+      "name": "Uranus",
+      "sign_code": "g",
+      "sign": "Libra",
+      "longitude_dms": "24°26'51\"",
+      "longitude_decimal": 24.4475,
+      "house": 1,
+      "speed": "-2'1\" (retrograde)",
+      "speed_decimal": -0.03361,
+      "latitude": "0°35'59\" N",
+      "declination": "8°55'7\" S",
+      "interpretation": {
+        "sign_meaning": "Uranus in Libra brings sudden changes, rebellion, or innovation in relationships, justice, and aesthetics.",
+        "house_meaning": "1st house – self, appearance, personal identity.",
+        "combined": "Unexpected shifts in self-image or how one presents to the world. May suddenly change hairstyle, clothing, or relationship status. Feels unpredictable to others and oneself. Desire for freedom in partnerships.",
+        "keywords": ["identity revolution", "unexpected self-change", "relationship freedom"]
+      }
+    },
+    {
+      "name": "Neptune",
+      "sign_code": "i",
+      "sign": "Sagittarius",
+      "longitude_dms": "8°32'39\"",
+      "longitude_decimal": 8.54417,
+      "house": 2,
+      "speed": "-1'35\" (retrograde)",
+      "speed_decimal": -0.02639,
+      "latitude": "1°38'15\" N",
+      "declination": "20°6'50\" S",
+      "interpretation": {
+        "sign_meaning": "Neptune in Sagittarius dissolves rigid beliefs, inspires spiritual travel, and confuses meaning.",
+        "house_meaning": "2nd house – finances, values, possessions, self-worth.",
+        "combined": "Financial confusion or idealistic spending on travel, education, or charity. May have unrealistic expectations about income. Alternatively, a spiritual or artistic approach to earning money. Values become hazy.",
+        "keywords": ["foggy finances", "idealistic values", "sacrificial giving"]
+      }
+    },
+    {
+      "name": "Pluto",
+      "sign_code": "g",
+      "sign": "Libra",
+      "longitude_dms": "4°15'0\"",
+      "longitude_decimal": 4.25,
+      "house": 12,
+      "speed": "-50\" (retrograde)",
+      "speed_decimal": -0.01389,
+      "latitude": "16°59'9\" N",
+      "declination": "13°52'35\" N",
+      "interpretation": {
+        "sign_meaning": "Pluto in Libra transforms relationships, justice systems, and social balance through power struggles.",
+        "house_meaning": "12th house – unconscious, secrets, solitude, losses, institutions.",
+        "combined": "Deep psychological transformation occurring in private or through therapy. Hidden power dynamics in relationships (especially partnerships) are surfacing. Letting go of control issues in isolation. Powerful dreams.",
+        "keywords": ["subconscious power", "hidden relationship shifts", "therapeutic release"]
+      }
+    }
+  ],
+  "additional_points": [
+    {
+      "name": "Mean Node",
+      "sign_code": "i",
+      "sign": "Sagittarius",
+      "longitude": "20°37'1\"",
+      "house": 2,
+      "interpretation": "Collective karmic direction involves expanding beliefs and travel, but in the 2nd house, finding value through philosophical growth."
+    },
+    {
+      "name": "True Node",
+      "sign_code": "i",
+      "sign": "Sagittarius",
+      "longitude": "19°32'47\"",
+      "house": 2,
+      "interpretation": "Similar to Mean Node, with a slightly tighter focus on authentic truth-seeking around self-worth."
+    },
+    {
+      "name": "Chiron",
+      "sign_code": "a",
+      "sign": "Aries",
+      "longitude": "22°31'11\"",
+      "house": 7,
+      "interpretation": "Wound around independence in relationships. Healing comes through assertive self-expression within partnerships."
+    },
+    {
+      "name": "Part of Fortune",
+      "sign_code": "g",
+      "sign": "Libra",
+      "longitude": "3°47'26\"",
+      "house": 12,
+      "interpretation": "Good fortune found through solitude, spiritual practice, or behind-the-scenes work. Also through diplomatic balance."
+    },
+    {
+      "name": "Vertex",
+      "sign_code": "c",
+      "sign": "Gemini",
+      "longitude": "22°26'42\"",
+      "house": 9,
+      "interpretation": "Fated encounters related to travel, higher education, or communication. Important meetings around 22° Gemini."
+    },
+    {
+      "name": "Lilith",
+      "sign_code": "k",
+      "sign": "Aquarius",
+      "longitude": "0°40'23\"",
+      "house": 4,
+      "interpretation": "Repressed wildness around home and family. Desires for radical independence and non-conformity in domestic life."
+    },
+    {
+      "name": "Ceres",
+      "sign_code": "l",
+      "sign": "Pisces",
+      "longitude": "8°22'6\"",
+      "house": 6,
+      "interpretation": "Nurturing through surrender, art, or healing. Caregiving in daily work or health routines."
+    },
+    {
+      "name": "Pallas",
+      "sign_code": "k",
+      "sign": "Aquarius",
+      "longitude": "10°57'47\"",
+      "house": 4,
+      "interpretation": "Strategic wisdom applied to home, family, or real estate. Innovating domestic patterns."
+    },
+    {
+      "name": "Juno",
+      "sign_code": "l",
+      "sign": "Pisces",
+      "longitude": "7°36'48\"",
+      "house": 6,
+      "interpretation": "Commitment in relationships expressed through selfless service or creative collaboration at work."
+    },
+    {
+      "name": "Vesta",
+      "sign_code": "g",
+      "sign": "Libra",
+      "longitude": "3°34'2\"",
+      "house": 12,
+      "interpretation": "Sacred focus on solitude, inner balance, and maintaining peace behind the scenes."
+    }
+  ],
+  "aspects_among_progressed_planets": {
+    "orb_used": "3° for major aspects, 2° for minor",
+    "aspects": [
+      {
+        "planet1": "Moon (20.9589° Aries)",
+        "planet2": "Venus (15.9003° Aries)",
+        "aspect": "conjunction",
+        "orb": 5.0586,
+        "note": "Beyond 3° orb but close – emotional and loving drives merge; impulses in relationships."
+      },
+      {
+        "planet1": "Mercury (13.5397° Gemini)",
+        "planet2": "Mars (17.2069° Cancer)",
+        "aspect": "square (Gemini-Cancer is 90°, but need exact: 13.54 Gem vs 17.21 Can = difference ~33.67°, not square. Recalc: 13.54 Gem = 73.54° absolute, 17.21 Can = 107.21°, diff 33.67°, no aspect.)"
+      },
+      {
+        "planet1": "Jupiter (14.1533° Pisces)",
+        "planet2": "Saturn (3.0161° Cancer)",
+        "aspect": "trine (Pisces-Cancer 120°): 14.15 Pisces = 344.15°, 3.016 Cancer = 93.016°, diff 108.87°, orb ~11°, too wide."
+      },
+      {
+        "planet1": "Uranus (24.4475° Libra)",
+        "planet2": "Neptune (8.5442° Sagittarius)",
+        "aspect": "square (Libra-Sag 90°): 24.4475 Lib = 204.4475°, 8.5442 Sag = 248.5442°, diff 44.0967°, not 90."
+      },
+      {
+        "planet1": "Pluto (4.25° Libra)",
+        "planet2": "Part of Fortune (3.7906° Libra)",
+        "aspect": "conjunction",
+        "orb": 0.4594,
+        "interpretation": "Power and transformation aligned with fortune; deep change brings luck."
+      },
+      {
+        "planet1": "Pluto (4.25° Libra)",
+        "planet2": "Vesta (3.5672° Libra)",
+        "aspect": "conjunction",
+        "orb": 0.6828,
+        "interpretation": "Sacred devotion to transformation; focused inner work on relationships."
+      },
+      {
+        "planet1": "Sun (27.6494° Taurus)",
+        "planet2": "Uranus (24.4475° Libra)",
+        "aspect": "opposition (Taurus-Libra 180°): 27.65 Tau = 57.65°, 24.45 Lib = 204.45°, diff 146.8°, not 180. Actually 204.45 - 57.65 = 146.8, close to 150° (quincunx). Or 360-146.8=213.2. Not a major."
+      },
+      {
+        "planet1": "Moon (20.9589° Aries)",
+        "planet2": "Chiron (22.5197° Aries)",
+        "aspect": "conjunction",
+        "orb": 1.5608,
+        "interpretation": "Emotional wound around independence activated; healing through direct feeling."
+      },
+      {
+        "planet1": "Venus (15.9003° Aries)",
+        "planet2": "Chiron (22.5197° Aries)",
+        "aspect": "conjunction",
+        "orb": 6.6194,
+        "interpretation": "Wider orb, but love and wound merge – relationships trigger healing."
+      }
+    ],
+    "note": "Only exact aspects within 3° are rare here. The closest is Pluto conj Part of Fortune and Vesta. Moon conj Chiron within 1.56° is strong. Other planets are spread across signs."
+  },
+  "progressed_moon_aspects_to_progressed_planets": {
+    "Moon_position": "20.9589° Aries",
+    "aspects": [
+      { "to": "Venus at 15.9003° Aries", "aspect": "conjunction", "orb": 5.06, "active": false },
+      { "to": "Chiron at 22.5197° Aries", "aspect": "conjunction", "orb": 1.56, "active": true, "interpretation": "Moon-Chiron: emotional healing crisis; old partnership wounds surface for release." },
+      { "to": "Uranus at 24.4475° Libra", "aspect": "opposition", "orb": 3.4886, "active": true, "interpretation": "Moon opposite Uranus: sudden emotional upsets in relationships; need for freedom clashes with need for security." }
+    ]
+  },
+  "progressed_to_natal_aspects_template": {
+    "status": "missing_natal_positions",
+    "message": "Natal planet positions (with signs and degrees) are required to compute aspects from progressed planets to natal. Below is a template you can fill with actual natal longitudes (decimal degrees). Once provided, each aspect will be calculated with orbs and interpretations.",
+    "natal_data_placeholder": {
+      "natal_Sun": "? deg ? sign",
+      "natal_Moon": "?",
+      "natal_Mercury": "?",
+      "natal_Venus": "?",
+      "natal_Mars": "?",
+      "natal_Jupiter": "?",
+      "natal_Saturn": "?",
+      "natal_Uranus": "?",
+      "natal_Neptune": "?",
+      "natal_Pluto": "?",
+      "natal_Ascendant": "10° Libra (given)",
+      "natal_MC": "12° Cancer (given)"
+    },
+    "example_calculation": "If natal Sun were at 15° Aries, progressed Moon at 20.96° Aries would be conjunct (5.96° orb), etc."
+  },
+  "interpretive_summary": {
+    "overall_theme": "A period of relationship-driven personal change (Uranus in 1st, Moon and Venus in 7th) combined with career action (Mars in 10th) and deep psychological/financial transformation (Sun in 8th).",
+    "key_challenges": "Neptune fog around money, Saturnine delays in higher learning, Pluto in 12th dredging up hidden power struggles.",
+    "key_opportunities": "Jupiter in 6th for healing work, Uranus on Asc for authentic self-reinvention, Mars in 10th for protective career leadership.",
+    "emotional_weather": "Direct, impatient, but liberating (Aries Moon 7th).",
+    "likely_external_events": "Sudden change in personal appearance or relationship status, a career move involving home/family, financial restructuring (loan, inheritance), spiritual or artistic income source emerging.",
+    "yearly_progression_theme_2012": "Progressed Sun entering 8th house and progressed Uranus entering 1st house marks a year of identity revolution through shared resources and intimacy. Relationships are the mirror for self-discovery.",
+    "progression_lunar_windows": "Around April 25 2012, the progressed Moon at 20° Aries conjoins Chiron and opposes Uranus – a 2-3 day window of emotional intensity, sudden relationship insights, and healing confrontations."
+  },
+  "usage_guide": {
+    "how_to_read_this_JSON": "Each progressed planet includes its exact longitude (decimal and DMS), house (based on natal Placidus cusps), and a three-part interpretation (sign, house, combined). The 'aspects_among_progressed_planets' section lists close angular relationships between the progressed positions themselves. The 'progressed_moon_aspects' highlights the fast-moving Moon's triggers. To complete the chart, supply natal planet positions – then all progressed-to-natal aspects can be generated automatically.",
+    "next_steps": "Provide a list of natal planet longitudes (e.g., 'Sun 20° Aries 15', 'Moon 5° Taurus 40', etc.) and I will output a new JSON with a full aspect grid, including orbs and interpretation for each progressed-to-natal aspect. You can also request transits for the same date."
+  }
+}
+```
+
+
+---
+
+
+If you send the natal positions (even as a photo or typed list), I will:
+
+
+· Recompute all progressed-to-natal aspects
+· Add them into the JSON as a new section
+· Provide a human-readable report summarizing the most important activations (e.g., “Progressed Sun conjunct natal Pluto in 8th house – major financial/psychological turning point”)
