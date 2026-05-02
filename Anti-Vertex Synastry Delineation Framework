@@ -1,0 +1,758 @@
+{
+  "framework": {
+    "name": "Anti-Vertex Synastry Delineation Framework",
+    "version": "3.0",
+    "date": "2025-2026",
+    "description": "An enriched, comprehensive guide for interpreting Anti-Vertex contacts in synastry, incorporating esoteric principles, Hellenistic (Dorothean) traditional techniques, and detailed delineation protocols.",
+    "author": "Synthesized from modern astrological consensus, Theosophical principles, and the Carmen Astrologicum of Dorotheus of Sidon",
+    "esoteric_foundation": {
+      "blavatsky_correspondence": {
+        "principle": "Macrocosm-microcosm relationship",
+        "application": "Anti-Vertex represents the point where the individual becomes a living hierophant of cosmic law for another",
+        "theosophical_terms": [
+          "The individual as Dhyan-Chohan projector",
+          "Karmic law manifesting through interpersonal dynamics",
+          "The septenary chain of fate expression"
+        ]
+      }
+    },
+    "hellenistic_foundation": {
+      "dorotheus_integration": {
+        "description": "Principles from Dorotheus of Sidon's Carmen Astrologicum (3rd century CE) providing traditional astrological depth to the interpretation of karmic offerings.",
+        "planetary_natures": {
+          "Sun": "hot and dry, masculine, diurnal, malefic if not well placed",
+          "Moon": "moist and cold, feminine, nocturnal, benefic if increasing",
+          "Saturn": "cold and dry, masculine, diurnal, malefic",
+          "Jupiter": "hot and moist, masculine, diurnal, benefic",
+          "Mars": "hot and dry, masculine, nocturnal, malefic",
+          "Venus": "cold and moist, feminine, nocturnal, benefic",
+          "Mercury": "changeable, adapts to the planet it aspects"
+        },
+        "triplicities": {
+          "Aries_Leo_Sagittarius": {
+            "element": "fiery",
+            "direction": "eastern",
+            "gender": "masculine",
+            "time": "diurnal",
+            "lords_day": ["Sun", "Jupiter", "Saturn"],
+            "lords_night": ["Jupiter", "Sun", "Saturn"]
+          },
+          "Taurus_Virgo_Capricorn": {
+            "element": "earthy",
+            "direction": "southern",
+            "gender": "feminine",
+            "time": "nocturnal",
+            "lords_day": ["Venus", "Moon", "Mars"],
+            "lords_night": ["Moon", "Venus", "Mars"]
+          },
+          "Gemini_Libra_Aquarius": {
+            "element": "airy",
+            "direction": "western",
+            "gender": "masculine",
+            "time": "diurnal",
+            "lords_day": ["Saturn", "Mercury", "Jupiter"],
+            "lords_night": ["Mercury", "Saturn", "Jupiter"]
+          },
+          "Cancer_Scorpio_Pisces": {
+            "element": "watery",
+            "direction": "northern",
+            "gender": "feminine",
+            "time": "nocturnal",
+            "lords_day": ["Venus", "Mars", "Moon"],
+            "lords_night": ["Mars", "Venus", "Moon"]
+          }
+        },
+        "exaltations": {
+          "Sun": {"sign": "Aries", "degree": 19, "dejection": "Libra 19"},
+          "Moon": {"sign": "Taurus", "degree": 3, "dejection": "Scorpio 3"},
+          "Saturn": {"sign": "Libra", "degree": 21, "dejection": "Aries 21"},
+          "Jupiter": {"sign": "Cancer", "degree": 15, "dejection": "Capricorn 15"},
+          "Mars": {"sign": "Capricorn", "degree": 28, "dejection": "Cancer 28"},
+          "Venus": {"sign": "Pisces", "degree": 27, "dejection": "Virgo 27"},
+          "Mercury": {"sign": "Virgo", "degree": 15, "dejection": "Pisces 15"}
+        },
+        "terms": {
+          "note": "Dorotheus uses terms (Egyptian bounds) extensively in prorogation. For Anti-Vertex, the term lord of the degree adds a layer of signification to the karmic offering."
+        },
+        "lots": {
+          "Fortune": "by day from Sun to Moon, add to ascendent; by night reverse",
+          "Father": "by day from Sun to Saturn, add to ascendent; by night reverse",
+          "Mother": "by day from Moon to Venus, add to ascendent; by night reverse",
+          "Brothers": "from Saturn to Jupiter, add to ascendent",
+          "Wedding": "from Saturn to Venus, add to ascendent by day; reverse by night",
+          "Children": "from Jupiter to Saturn, add to ascendent by day; reverse by night",
+          "Male_children": "from Jupiter to Sun, add to ascendent",
+          "Female_children": "from Moon to Venus, add to ascendent by day; reverse by night"
+        },
+        "house_meanings": {
+          "ascendent": "life, body, upbringing",
+          "midheaven": "status, action, fame",
+          "west": "marriage, partnership, end of life",
+          "cardine_under_earth": "parents, family, hidden foundations",
+          "house_of_property": "2nd place? (wealth)",
+          "house_of_marriage": "7th place? (spouse)",
+          "sixth_place": "sickness, servitude",
+          "eighth_place": "death, inheritance",
+          "twelfth_place": "enemies, imprisonment, hidden grief",
+          "eleventh_place": "good fortune, friends"
+        },
+        "aspect_interpretations": {
+          "trine": "harmonious, beneficial, increases good",
+          "quartile": "harsh, diminishing, conflict",
+          "opposition": "separating, destructive, grief",
+          "sextile": "milder trine, opportunity",
+          "conjunction": "combined power, intensification"
+        },
+        "condition_assessment": {
+          "cardine": "powerful, effective",
+          "cadent": "weak, ineffective",
+          "under_rays": "burnt, obscured (within 15° of Sun)",
+          "eastern": "visible, strong (appearing before Sun)",
+          "western": "visible, weaker (setting after Sun)",
+          "direct_motion": "strong, increasing effect",
+          "retrograde": "internalized, delayed effect",
+          "in_own_house": "dignified, confident expression",
+          "in_exaltation": "exalted, graceful expression",
+          "in_triplicity": "supported by elemental family",
+          "in_term": "specific authority",
+          "overcoming": "planet in superior position (e.g., in sign of longer ascension) has power over another",
+          "benefics_mitigate": "Jupiter and Venus can lessen malefic effects"
+        },
+        "haylaj_kadhkhudah": {
+          "description": "Technique for determining the prorogator of life and the time-lord of the nativity. Applied to synastry, the condition of the haylāj (usually Sun by day, Moon by night, or ascendent) can indicate the vitality and karmic timing of the offering.",
+          "haylaj_selection": "by day: Sun (if in cardine); by night: Moon (if in cardine); otherwise ascendent or lot of fortune; must be aspected by its lord.",
+          "kadhkhudah": "the lord of the term of the haylāj, or lord of its house/triplicity/exaltation, who governs the time periods.",
+          "prorogation": "the movement of the ascendent degree through the terms, timed by ascensional times, indicating periods of life events."
+        },
+        "integration_note": "In Anti-Vertex synastry, the condition of the contacted point (planet/asteroid) by Dorothean criteria—its triplicity lords, term lord, exaltation, and aspects—adds depth to the nature of the karmic offering. The house position of Anti-Vertex can be interpreted through traditional house meanings to understand the arena of fate. Benefics aspecting the Anti-Vertex or the contacted point indicate ease in the offering; malefics indicate friction that may require mitigation."
+      }
+    }
+  },
+  "orbs": {
+    "conjunction": {
+      "primary_range": [0, 1.5],
+      "secondary_range": [1.5, 2.5],
+      "tertiary_range": [2.5, 3.5],
+      "background_range": [3.5, 5],
+      "note": "Orbs beyond 5° are generally insignificant unless heavily reinforced by declination or multiple contacts.",
+      "esoteric_note": "The tighter the orb, the more unavoidable the karmic role manifestation."
+    },
+    "opposition": {
+      "primary_range": [0, 1.5],
+      "secondary_range": [1.5, 2.5],
+      "tertiary_range": [2.5, 3.5],
+      "background_range": [3.5, 5]
+    },
+    "square": {
+      "primary_range": [0, 2],
+      "secondary_range": [2, 3.5],
+      "tertiary_range": [3.5, 5]
+    },
+    "trine": {
+      "primary_range": [0, 2],
+      "secondary_range": [2, 3.5],
+      "tertiary_range": [3.5, 5]
+    },
+    "sextile": {
+      "primary_range": [0, 2.5],
+      "secondary_range": [2.5, 4]
+    },
+    "quincunx": {
+      "primary_range": [0, 2],
+      "secondary_range": [2, 3.5],
+      "note": "Adjustment required in the karmic offering; feels fated but awkward."
+    },
+    "semi-sextile": {
+      "primary_range": [0, 1.5],
+      "note": "Subtle activation; preparatory karmic role."
+    }
+  },
+  "declination": {
+    "parallel": {
+      "orb": 1,
+      "strength": "Amplifies fated offering feel even without zodiac aspect. Can be as strong as a conjunction.",
+      "esoteric_significance": "Parallel indicates the two energies are on the same celestial plane, suggesting a fated alignment of spiritual purpose."
+    },
+    "contra-parallel": {
+      "orb": 1,
+      "strength": "Mirror-like intensity; projection and reflection dynamics amplified.",
+      "esoteric_significance": "Contra-parallel indicates energies are opposing in declination, creating a polarity that must be integrated."
+    },
+    "out_of_bounds": {
+      "note": "If either point is OOB (declination > 23°27′), the karmic offering carries an amplified, unconventional, or rebellious quality."
+    }
+  },
+  "house_placements": {
+    "Anti-Vertex_in_house": {
+      "1st": {
+        "offering": "Identity-level gift; you are fated to project your essential self toward them",
+        "role": "The Initiator, The Awakener of Self",
+        "dorothean": "Ascendent signifies life and body; offering directly affects the other's core being."
+      },
+      "2nd": {
+        "offering": "Values, resources, self-worth; you are fated to offer stability or challenge their value system",
+        "role": "The Value-Bringer, The Resource Catalyst",
+        "dorothean": "House of property and livelihood; offering may involve material or self-worth dynamics."
+      },
+      "3rd": {
+        "offering": "Communication, mind, perception; you are fated to awaken their mental faculties",
+        "role": "The Messenger, The Perception-Shifter",
+        "dorothean": "House of brothers, siblings; offering relates to kin, neighbors, or mental exchange."
+      },
+      "4th": {
+        "offering": "Roots, emotional foundation, ancestry; you are fated to activate their deepest emotional memories",
+        "role": "The Ancestral Catalyst, The Home-Bringer",
+        "dorothean": "Cardine under the earth; parents, family, hidden foundations; offering touches ancestral and domestic karma."
+      },
+      "5th": {
+        "offering": "Romance, creativity, self-expression; you are fated to inspire their creative or romantic essence",
+        "role": "The Muse, The Lover, The Creative Igniter",
+        "dorothean": "Place of children, pleasure; offering involves creativity, romance, or offspring."
+      },
+      "6th": {
+        "offering": "Service, health, daily rituals; you are fated to serve or heal their daily life",
+        "role": "The Healer, The Servant, The Purifier",
+        "dorothean": "Place of sickness and servitude; offering may involve healing, service, or health challenges."
+      },
+      "7th": {
+        "offering": "Partnership, marriage, one-on-one dynamics; you are fated to be their mirror in relationship",
+        "role": "The Partner, The Mirror, The Contract-Bringer",
+        "dorothean": "West, house of marriage; offering directly impacts partnership and open enemies."
+      },
+      "8th": {
+        "offering": "Transformation, sexuality, shared resources, death/rebirth; you are fated to transform them",
+        "role": "The Transformer, The Shaman, The Initiator into Mystery",
+        "dorothean": "Place of death, inheritance; offering involves deep transformation, joint resources, or mortality."
+      },
+      "9th": {
+        "offering": "Philosophy, travel, higher learning; you are fated to expand their worldview",
+        "role": "The Guru, The Traveler, The Truth-Bringer",
+        "dorothean": "House of God, foreign travel; offering relates to spirituality, long journeys, or philosophy."
+      },
+      "10th": {
+        "offering": "Career, public role, destiny; you are fated to elevate or challenge their social standing",
+        "role": "The Mentor, The Status-Catalyst",
+        "dorothean": "Midheaven, action, fame; offering affects public standing and career."
+      },
+      "11th": {
+        "offering": "Friendships, community, hopes and wishes; you are fated to activate their social network or dreams",
+        "role": "The Friend, The Hope-Bringer, The Community Catalyst",
+        "dorothean": "Good fortune, friends; offering brings benefits through associations and aspirations."
+      },
+      "12th": {
+        "offering": "Unconscious, spirituality, solitude, hidden realms; you are fated to awaken their soul or karmic residue",
+        "role": "The Mystic, The Karmic Revealer, The Shadow-Bringer",
+        "dorothean": "Place of enemies, imprisonment, hidden grief; offering may involve solitude, hidden enemies, or spiritual liberation."
+      }
+    },
+    "house_strength": {
+      "primary_karmic_offering_houses": [1, 5, 7, 8],
+      "secondary_karmic_offering_houses": [4, 10, 11],
+      "tertiary_karmic_offering_houses": [2, 3, 6, 9, 12],
+      "note": "House placement determines the arena of life where the karmic offering is most palpable."
+    }
+  },
+  "aspects_detailed": {
+    "conjunction": {
+      "general_signature": "Fusion of identity; the Anti-Vertex person becomes the living embodiment of the contacted point for the other.",
+      "Eros": {
+        "signature": "Fated to project erotic obsession / sexual awakening toward you",
+        "dynamic": {
+          "Anti-Vertex_feels": "Compelled to seduce, pursue, ignite",
+          "Eros_feels": "This is the one I am destined to desire / chase / obsess over"
+        },
+        "positive": "Fated mutual awakening of desire, balanced giving/receiving of passion, tantric polarity activation.",
+        "challenging": "Unconscious projection of obsession, one-sided chase, burnout, erotic addiction pattern.",
+        "karmic_layer": "Past-life erotic pursuer/seducer role reactivation; unfinished business of desire."
+      },
+      "Psyche": {
+        "signature": "Fated to offer soul-level vulnerability / redemption toward you",
+        "dynamic": {
+          "Anti-Vertex_feels": "Compelled to reveal, expose, redeem deepest soul material",
+          "Psyche_feels": "This is the one I am destined to witness, heal, mirror"
+        },
+        "positive": "Profound soul-level service, mutual redemption, karmic healing, soul recognition.",
+        "challenging": "Over-exposure of wounds, soul-victim dynamics, emotional burden, codependent healing.",
+        "karmic_layer": "Past-life soul redeemer/witness role reactivation; therapist/patient or priest/penitent dynamic."
+      },
+      "Kaali": {
+        "signature": "Fated to unleash sacred rage / kundalini power toward you",
+        "dynamic": {
+          "Anti-Vertex_feels": "Compelled to channel cosmic rage, power, kundalini fire",
+          "Kaali_feels": "This is the one I am destined to destroy, rebirth, empower"
+        },
+        "positive": "Fated empowerment, Tantric awakening, dark feminine liberation through offering, shadow integration.",
+        "challenging": "Unconscious projection of rage, wrathful cutoff, energy vampirism, destruction without rebirth.",
+        "karmic_layer": "Past-life Tantric destroyer/rebirther role reactivation; Kali priest/priestess or sacred executioner."
+      },
+      "Siva": {
+        "signature": "Fated to offer divine masculine balance / pure consciousness toward you",
+        "dynamic": {
+          "Anti-Vertex_feels": "Compelled to embody, project Shiva wholeness",
+          "Siva_feels": "This is the one I am destined to balance, complete"
+        },
+        "positive": "Fated sacred partnership, cosmic harmony through offering, witness consciousness activation.",
+        "challenging": "Imbalance in giving/receiving divine union energy, detached observer dynamic.",
+        "karmic_layer": "Past-life divine consort / karmic marriage projection role; yogi/shakti dynamic."
+      },
+      "Parvati": {
+        "signature": "Fated to offer divine feminine balance / devoted love toward you",
+        "dynamic": {
+          "Anti-Vertex_feels": "Compelled to embody, project Parvati wholeness",
+          "Parvati_feels": "This is the one I am destined to balance, complete"
+        },
+        "positive": "Fated sacred partnership, cosmic harmony through offering, devoted love activation.",
+        "challenging": "Imbalance in giving/receiving divine union energy, over-devotion, loss of self.",
+        "karmic_layer": "Past-life divine consort / karmic marriage projection role; shakti/yogi dynamic."
+      },
+      "Lilith": {
+        "signature": "Fated to offer exiled wildness / taboo rebellion toward you",
+        "dynamic": {
+          "Anti-Vertex_feels": "Compelled to unleash raw instinct, taboo desire",
+          "Lilith_feels": "This is the one I am destined to rebel through, liberate"
+        },
+        "positive": "Liberation of shadow feminine through offering, primal authenticity, taboo integration.",
+        "challenging": "Rage projection, refusal of union, demonization of the other, abandonment wound reactivation.",
+        "karmic_layer": "Past-life rebellion/suppression wound projection role; witch-hunter/witch or outcast/exiler dynamic."
+      },
+      "Amor": {
+        "signature": "Fated to offer unconditional / platonic soul love toward you",
+        "dynamic": {
+          "Anti-Vertex_feels": "Compelled to offer purest love",
+          "Amor_feels": "This is the one I am destined to receive unconditional blessing from"
+        },
+        "positive": "Pure, selfless, fated love exchange, idealistic devotion without drama.",
+        "challenging": "Over-idealization, rejection of reality, inability to integrate shadow.",
+        "karmic_layer": "Past-life unconditional love offering role; agape love tradition."
+      },
+      "Sun": {
+        "signature": "Fated to project core identity / vitality / creative essence toward you",
+        "dynamic": {
+          "Anti-Vertex_feels": "Compelled to shine authentic self, offer life force",
+          "Sun_feels": "This is the one through whom I recognize my own light"
+        },
+        "positive": "Mutual recognition of life purpose, empowering radiance, creative collaboration.",
+        "challenging": "Ego projection, dominance dynamics, overshadowing, identity confusion.",
+        "karmic_layer": "Past-life leader/follower roles; father/child or king/subject dynamics.",
+        "dorothean_note": "Sun as haylāj by day; if afflicted, offering may carry challenges to vitality or father-issues."
+      },
+      "Moon": {
+        "signature": "Fated to project emotional nature / nurturing / instinctual response toward you",
+        "dynamic": {
+          "Anti-Vertex_feels": "Compelled to offer emotional security, maternal/paternal care",
+          "Moon_feels": "This is the one who holds my emotional safety"
+        },
+        "positive": "Deep emotional resonance, karmic nurturing, instinctual comfort, soul family recognition.",
+        "challenging": "Emotional projection, mood manipulation, maternal wound reactivation, enmeshment.",
+        "karmic_layer": "Past-life caregiver/child dynamics; mother/child or nurturer/dependent roles.",
+        "dorothean_note": "Moon as haylāj by night; if increasing, offering is benefic; if decreasing, may wane."
+      },
+      "Mercury": {
+        "signature": "Fated to project mind / communication / perception toward you",
+        "dynamic": {
+          "Anti-Vertex_feels": "Compelled to speak, teach, convey meaning",
+          "Mercury_feels": "This is the one through whom I learn to think differently"
+        },
+        "positive": "Mental stimulation, fated conversations, telepathic resonance, shared meaning-making.",
+        "challenging": "Mental projection, arguing, misunderstanding as karmic lesson, thought-control dynamics.",
+        "karmic_layer": "Past-life teacher/student or messenger/recipient dynamics.",
+        "dorothean_note": "Mercury adapts to aspects; its condition by triplicity and term refines the offering's intellectual style."
+      },
+      "Venus": {
+        "signature": "Fated to project love / beauty / values / attraction toward you",
+        "dynamic": {
+          "Anti-Vertex_feels": "Compelled to offer affection, aesthetic appreciation, harmony",
+          "Venus_feels": "This is the one who awakens my capacity to love"
+        },
+        "positive": "Fated love, aesthetic collaboration, value alignment, harmonious offering.",
+        "challenging": "Love projection, unrealistic standards, worthiness issues, conditional love patterns.",
+        "karmic_layer": "Past-life lover/beloved or artist/patron dynamics.",
+        "dorothean_note": "Venus is benefic; its triplicity lords and term lord indicate the quality of marriage/partnership offering."
+      },
+      "Mars": {
+        "signature": "Fated to project action / desire / aggression / assertion toward you",
+        "dynamic": {
+          "Anti-Vertex_feels": "Compelled to initiate, pursue, assert",
+          "Mars_feels": "This is the one who awakens my warrior or desire nature"
+        },
+        "positive": "Courage activation, fated action, mutual desire ignition, shared projects.",
+        "challenging": "Aggression projection, competition, power struggles, desire as weapon.",
+        "karmic_layer": "Past-life warrior/opponent or hunter/prey dynamics.",
+        "dorothean_note": "Mars is malefic; if aspecting from a cardine, its offering may be harsh; benefics can mitigate."
+      },
+      "Jupiter": {
+        "signature": "Fated to project expansion / wisdom / abundance / faith toward you",
+        "dynamic": {
+          "Anti-Vertex_feels": "Compelled to offer growth, teaching, optimism",
+          "Jupiter_feels": "This is the one who expands my world"
+        },
+        "positive": "Mutual growth, wisdom sharing, fortunate offerings, spiritual expansion.",
+        "challenging": "Over-expansion projection, false promises, guru-complex, excess.",
+        "karmic_layer": "Past-life guru/disciple or benefactor/recipient dynamics.",
+        "dorothean_note": "Jupiter is benefic; its triplicity lords indicate the source of abundance in the offering."
+      },
+      "Saturn": {
+        "signature": "Fated to project structure / limitation / responsibility / time toward you",
+        "dynamic": {
+          "Anti-Vertex_feels": "Compelled to offer boundaries, discipline, reality",
+          "Saturn_feels": "This is the one who teaches me limitation or responsibility"
+        },
+        "positive": "Karmic structure, mature commitment, shared responsibility, lasting foundation.",
+        "challenging": "Limitation projection, control dynamics, father-wound reactivation, coldness.",
+        "karmic_layer": "Past-life taskmaster/worker or father/child authority dynamics.",
+        "dorothean_note": "Saturn is malefic; its term and house position reveal the area of karmic restriction in the offering."
+      },
+      "Uranus": {
+        "signature": "Fated to project freedom / revolution / awakening / disruption toward you",
+        "dynamic": {
+          "Anti-Vertex_feels": "Compelled to disrupt, liberate, awaken suddenly",
+          "Uranus_feels": "This is the one who shocks me into freedom"
+        },
+        "positive": "Liberation, sudden awakening, unconventional offerings, genius activation.",
+        "challenging": "Disruption without rebuilding, abandonment through freedom, shock as wound.",
+        "karmic_layer": "Past-life revolutionary/traditionalist or liberator/captive dynamics."
+      },
+      "Neptune": {
+        "signature": "Fated to project transcendence / illusion / spirituality / dissolution toward you",
+        "dynamic": {
+          "Anti-Vertex_feels": "Compelled to offer mystical connection, dissolve boundaries",
+          "Neptune_feels": "This is the one who merges with my soul"
+        },
+        "positive": "Spiritual union, transcendent love, artistic collaboration, compassion activation.",
+        "challenging": "Illusion projection, deception, escapism, dissolution of self, victim dynamics.",
+        "karmic_layer": "Past-life mystic/seeker or savior/saved dynamics."
+      },
+      "Pluto": {
+        "signature": "Fated to project power / transformation / underworld / intensity toward you",
+        "dynamic": {
+          "Anti-Vertex_feels": "Compelled to offer depth, transformation, power",
+          "Pluto_feels": "This is the one who takes me to the underworld and back"
+        },
+        "positive": "Profound transformation, empowerment, shadow integration, rebirth through relationship.",
+        "challenging": "Power projection, control, manipulation, destruction, obsessive dynamics.",
+        "karmic_layer": "Past-life shaman/initiate or power-holder/subject dynamics."
+      },
+      "North Node": {
+        "signature": "Fated to offer future evolution / soul's direction toward you",
+        "dynamic": {
+          "Anti-Vertex_feels": "Compelled to guide toward destiny",
+          "North_Node_feels": "This is the one who shows me where I'm going"
+        },
+        "positive": "Evolutionary catalyst, shared destiny path, future-oriented offering.",
+        "challenging": "Pushing too fast, future projection without grounding.",
+        "karmic_layer": "Forward karmic contract activation."
+      },
+      "South Node": {
+        "signature": "Fated to offer past-life residue / comfort zone / karma toward you",
+        "dynamic": {
+          "Anti-Vertex_feels": "Compelled to activate past patterns",
+          "South_Node_feels": "This is the one who feels like home or old wound"
+        },
+        "positive": "Healing through recognition, comfort in familiarity, past-life resolution.",
+        "challenging": "Stuck in past patterns, regression, karmic repetition compulsion.",
+        "karmic_layer": "Past-life role reactivation; unfinished business emergence."
+      }
+    },
+    "opposition": {
+      "general_signature": "Mirror of fated offering; what you project is reflected back. The Anti-Vertex person sees in the other what they are unconsciously offering.",
+      "Eros": {
+        "signature": "Erotic desire is mirrored; passion becomes reflection",
+        "dynamic": "Desire for the other reveals hidden self-desire",
+        "positive": "Conscious integration of shadow desire, mutual passion recognition",
+        "challenging": "Projected obsession, 'you want me' when it's 'I want myself'",
+        "karmic_layer": "Mirror of past-life erotic dynamic"
+      },
+      "Psyche": {
+        "signature": "Soul wounds are mirrored; healing becomes reflection",
+        "dynamic": "The other's vulnerability shows one's own hidden wounds",
+        "positive": "Mutual healing through reflection, soul recognition",
+        "challenging": "Projected victim/perpetrator dynamics, 'you need healing' when it's self",
+        "karmic_layer": "Mirror of past-life soul contract"
+      },
+      "Kaali": {
+        "signature": "Sacred rage is mirrored; power becomes reflection",
+        "dynamic": "The other's destruction shows one's own need for rebirth",
+        "positive": "Conscious shadow integration, mutual empowerment",
+        "challenging": "Projected rage, demonization of the other",
+        "karmic_layer": "Mirror of Tantric past-life role"
+      },
+      "Sun": {
+        "signature": "Identity is mirrored; ego becomes reflection",
+        "dynamic": "The other's light shows one's own shadow",
+        "positive": "Conscious ego integration, mutual recognition",
+        "challenging": "Projected ego, 'you're too bright' when hiding own light",
+        "karmic_layer": "Mirror of past-life authority dynamic"
+      },
+      "Moon": {
+        "signature": "Emotions are mirrored; feeling becomes reflection",
+        "dynamic": "The other's emotionality shows one's own repressed feeling",
+        "positive": "Emotional integration, mutual nurturing",
+        "challenging": "Projected neediness, emotional blame",
+        "karmic_layer": "Mirror of past-life maternal dynamic"
+      }
+    },
+    "square": {
+      "general_signature": "Tension in the karmic offering; friction that forces growth. The offering is challenged, requiring effort to integrate.",
+      "interpretive_principle": "The Anti-Vertex person feels blocked in their offering; the receiving person feels pressured by the offering. Growth through resistance.",
+      "dorothean_note": "Quartile aspects are harsh, diminishing good and increasing strife; benefics may mitigate."
+    },
+    "trine": {
+      "general_signature": "Harmonious flow of karmic offering; natural expression. The karmic role feels easy but may be taken for granted.",
+      "interpretive_principle": "Effortless giving and receiving, graceful integration, potential for complacency.",
+      "dorothean_note": "Trines are beneficial, increasing good fortune and honor; the offering flows smoothly."
+    },
+    "sextile": {
+      "general_signature": "Opportunity to consciously engage the karmic offering. Choice-point dynamics.",
+      "interpretive_principle": "Requires conscious choice to manifest; optional but potent activation.",
+      "dorothean_note": "Sextile is weaker than trine but still favorable; an opportunity for benefit if pursued."
+    },
+    "quincunx": {
+      "general_signature": "Adjustment required in the karmic offering; feels fated but awkward.",
+      "interpretive_principle": "The offering doesn't fit easily; both parties must adapt and recalibrate."
+    }
+  },
+  "midpoints": {
+    "method": "Anti-Vertex = Point A/Point B indicates the fated offering synthesizes the two energies.",
+    "Sun/Moon": "Fated soul-offering; the Anti-Vertex person offers integrated masculine-feminine balance.",
+    "Venus/Mars": "Fated romantic-sexual offering; the Anti-Vertex person offers integrated desire-love.",
+    "Eros/Psyche": "Fated erotic-soul offering; the Anti-Vertex person offers integrated passion and vulnerability.",
+    "Lilith/Eros": "Fated taboo-desire offering; the Anti-Vertex person offers integrated shadow and passion.",
+    "Sun/Mercury": "Fated creative-mental offering; the Anti-Vertex person offers integrated identity and communication.",
+    "Jupiter/Saturn": "Fated expansion-structure offering; the Anti-Vertex person offers integrated growth and responsibility.",
+    "Uranus/Neptune": "Fated awakening-transcendence offering; the Anti-Vertex person offers integrated liberation and spirituality.",
+    "Pluto/Mars": "Fated power-desire offering; the Anti-Vertex person offers integrated transformation and action.",
+    "Vertex/Anti-Vertex": "Fated axis activation; the karmic inflow and outflow are in direct relationship.",
+    "North Node/South Node": "Fated karmic balance offering; the Anti-Vertex person offers integrated past and future."
+  },
+  "node_connections": {
+    "South Node_conjunct": {
+      "interpretation": "Past-life role / karmic offering reactivation. Deeply ingrained, unconscious pattern.",
+      "esoteric": "The Anti-Vertex person has played this role for the other in past lives; the offering feels automatic, comfortable, and potentially karmically binding.",
+      "dorothean_note": "South Node can be associated with the malefics or cadent houses; the offering may carry inherited burdens."
+    },
+    "North Node_conjunct": {
+      "interpretation": "Future evolution through the offering; growth direction.",
+      "esoteric": "The Anti-Vertex person is offering what the other needs to evolve into; the relationship serves forward karmic development.",
+      "dorothean_note": "North Node often relates to benefics or angular houses; the offering points toward destiny."
+    },
+    "South Node_opposition": {
+      "interpretation": "Balance needed between past role and present relationship.",
+      "esoteric": "The offering must be consciously adjusted to avoid repeating past-life imbalance."
+    },
+    "North Node_square": {
+      "interpretation": "Tension between the offering and soul's direction.",
+      "esoteric": "Growth through resistance; the offering challenges the other's evolutionary path."
+    }
+  },
+  "asteroid_specific_rules": {
+    "Eros": {
+      "additional_considerations": [
+        "Consider sign for erotic expression style",
+        "House placement indicates arena of obsessive focus",
+        "Aspects to Eros modify the offering quality"
+      ]
+    },
+    "Psyche": {
+      "additional_considerations": [
+        "Consider sign for soul-wound expression",
+        "House placement indicates arena of vulnerability",
+        "Aspects to Psyche indicate healing or wounding patterns"
+      ]
+    },
+    "Kaali": {
+      "additional_considerations": [
+        "Consider sign for rage expression style",
+        "House placement indicates arena of destruction/rebirth",
+        "Aspects to Kaali indicate empowerment or destruction patterns"
+      ]
+    },
+    "Lilith": {
+      "additional_considerations": [
+        "Consider sign for taboo expression",
+        "House placement indicates arena of primal instinct",
+        "Aspects to Lilith indicate integration or rejection of shadow"
+      ]
+    },
+    "Amor": {
+      "additional_considerations": [
+        "Consider sign for love expression style",
+        "House placement indicates arena of idealistic love",
+        "Aspects to Amor indicate capacity for unconditional love"
+      ]
+    }
+  },
+  "sign_considerations": {
+    "Aries": {
+      "offering_style": "Direct, impulsive, initiating",
+      "challenge": "Impatience, aggression in offering",
+      "dorothean_triplicity": "Fiery, eastern, masculine, diurnal; lords Sun/Jupiter/Saturn"
+    },
+    "Taurus": {
+      "offering_style": "Stable, sensual, persistent",
+      "challenge": "Stubbornness, over-possessiveness",
+      "dorothean_triplicity": "Earthy, southern, feminine, nocturnal; lords Venus/Moon/Mars"
+    },
+    "Gemini": {
+      "offering_style": "Communicative, curious, versatile",
+      "challenge": "Scattered, superficial",
+      "dorothean_triplicity": "Airy, western, masculine, diurnal; lords Saturn/Mercury/Jupiter"
+    },
+    "Cancer": {
+      "offering_style": "Nurturing, protective, emotional",
+      "challenge": "Clingy, moody",
+      "dorothean_triplicity": "Watery, northern, feminine, nocturnal; lords Venus/Mars/Moon"
+    },
+    "Leo": {
+      "offering_style": "Creative, warm, dramatic",
+      "challenge": "Ego-centric, attention-seeking",
+      "dorothean_triplicity": "Fiery, eastern, masculine, diurnal; lords Sun/Jupiter/Saturn"
+    },
+    "Virgo": {
+      "offering_style": "Service-oriented, analytical, precise",
+      "challenge": "Critical, perfectionist",
+      "dorothean_triplicity": "Earthy, southern, feminine, nocturnal; lords Venus/Moon/Mars"
+    },
+    "Libra": {
+      "offering_style": "Harmonious, diplomatic, aesthetic",
+      "challenge": "Indecisive, people-pleasing",
+      "dorothean_triplicity": "Airy, western, masculine, diurnal; lords Saturn/Mercury/Jupiter"
+    },
+    "Scorpio": {
+      "offering_style": "Intense, transformative, penetrating",
+      "challenge": "Controlling, obsessive",
+      "dorothean_triplicity": "Watery, northern, feminine, nocturnal; lords Venus/Mars/Moon"
+    },
+    "Sagittarius": {
+      "offering_style": "Expansive, philosophical, adventurous",
+      "challenge": "Reckless, over-optimistic",
+      "dorothean_triplicity": "Fiery, eastern, masculine, diurnal; lords Sun/Jupiter/Saturn"
+    },
+    "Capricorn": {
+      "offering_style": "Structured, responsible, ambitious",
+      "challenge": "Cold, rigid",
+      "dorothean_triplicity": "Earthy, southern, feminine, nocturnal; lords Venus/Moon/Mars"
+    },
+    "Aquarius": {
+      "offering_style": "Unconventional, intellectual, freedom-oriented",
+      "challenge": "Detached, unpredictable",
+      "dorothean_triplicity": "Airy, western, masculine, diurnal; lords Saturn/Mercury/Jupiter"
+    },
+    "Pisces": {
+      "offering_style": "Compassionate, mystical, boundaryless",
+      "challenge": "Escapist, victim-consciousness",
+      "dorothean_triplicity": "Watery, northern, feminine, nocturnal; lords Venus/Mars/Moon"
+    }
+  },
+  "planetary_condition": {
+    "dignity": "Strengthens the offering; the role is expressed with confidence and clarity.",
+    "detriment": "Weakens or challenges the offering; the role feels uncomfortable or expressed through shadow.",
+    "exaltation": "Elevates the offering; the role is expressed with grace and power.",
+    "fall": "Undermines the offering; the role feels insecure or expressed through wound.",
+    "retrograde": "Internalized offering; the role may be expressed inwardly before outward, or the karmic lesson requires introspection.",
+    "combust": "The offering is overwhelmed or obscured; the role may be hard to separate from ego (Sun) or emotion (Moon).",
+    "cazimi": "Purified offering; the role is expressed with clarity and spiritual purpose.",
+    "triplicity_ruler_day": "If the contacted point is lord of the triplicity by day, the offering carries daytime/conscious expression.",
+    "triplicity_ruler_night": "If lord by night, the offering is more subconscious or nocturnal in nature.",
+    "term_lord": "The planet ruling the Egyptian term of the degree adds a specific nuance to the offering, often related to that planet's nature.",
+    "under_rays": "If within 15° of Sun, the offering is obscured or weakened; the role may be hidden or difficult to perceive.",
+    "oriental": "Planet appearing before the Sun (eastern) is strong and direct in its offering.",
+    "occidental": "Planet setting after the Sun (western) is weaker and may indicate a delayed or reflective offering.",
+    "haylaj_applicability": "If the Anti-Vertex or contacted point is the haylāj (prorogator) in the other's chart, the offering has life-long significance and timing can be tracked by transits to that point."
+  },
+  "karmic_layers": {
+    "layer_1_recognition": {
+      "description": "Initial meeting; the offering is felt as familiar, strange, or compelling.",
+      "timing": "Immediate upon contact",
+      "experience": "Déjà vu, magnetic pull, inexplicable recognition"
+    },
+    "layer_2_activation": {
+      "description": "The offering begins to manifest; the Anti-Vertex person starts playing their role.",
+      "timing": "Weeks to months into relationship",
+      "experience": "Feeling of 'showing up' in a specific way for the other; the other feels activated"
+    },
+    "layer_3_resolution": {
+      "description": "The karmic contract reaches fulfillment; the offering either integrates or ends.",
+      "timing": "Years into relationship or at natural conclusion",
+      "experience": "Completion, healing, or karmic release; relationship may transform or end"
+    }
+  },
+  "frictional_indicators": {
+    "multiple_contacts": "Multiple Anti-Vertex contacts amplify the karmic intensity; the role becomes multi-faceted.",
+    "angular_reinforcement": "Anti-Vertex conjunct Ascendant/IC/Descendant/MC strengthens the offering significantly.",
+    "fixed_sign_emphasis": "Fixed signs (Taurus, Leo, Scorpio, Aquarius) suggest the karmic role is harder to release; feels 'stuck' or fated for the long-term.",
+    "mutable_sign_emphasis": "Mutable signs (Gemini, Virgo, Sagittarius, Pisces) suggest the karmic role is adaptable, may shift over time.",
+    "cardinal_sign_emphasis": "Cardinal signs (Aries, Cancer, Libra, Capricorn) suggest the karmic role is initiating, begins new cycles."
+  },
+  "esoteric_layers": {
+    "septenary_correspondence": {
+      "1st_ray_Will_Power": "Anti-Vertex in strong Aries/Leo/Capricorn or with Sun/Mars/Saturn contact indicates offering of will and purpose.",
+      "2nd_ray_Love_Wisdom": "Anti-Vertex in strong Taurus/Cancer/Libra or with Venus/Jupiter/Moon contact indicates offering of love and wisdom.",
+      "3rd_ray_Active_Intelligence": "Anti-Vertex in strong Gemini/Virgo/Aquarius or with Mercury/Uranus contact indicates offering of mind and adaptability.",
+      "4th_ray_Harmony_through_Conflict": "Anti-Vertex square aspect pattern indicates offering of integration through tension.",
+      "5th_ray_Concrete_Knowledge": "Anti-Vertex in strong Virgo/Capricorn or with Mercury/Saturn contact indicates offering of practical wisdom.",
+      "6th_ray_Devotion_Idealism": "Anti-Vertex in strong Cancer/Sagittarius/Pisces or with Moon/Jupiter/Neptune contact indicates offering of devotion and ideals.",
+      "7th_ray_Ceremonial_Order": "Anti-Vertex in strong Taurus/Libra/Capricorn or with Venus/Saturn contact indicates offering of form and structure."
+    },
+    "hierarchical_offering": {
+      "planetary_logos": "The Anti-Vertex person channels a specific planetary intelligence through their offering.",
+      "ray_expression": "The sign and aspects indicate which cosmic ray is being expressed through the karmic role.",
+      "initiatory_function": "The relationship serves as an initiation into a higher octave of the offered energy."
+    }
+  },
+  "dorothean_integration": {
+    "purpose": "To apply traditional Hellenistic techniques from Dorotheus of Sidon to deepen the interpretation of Anti-Vertex synastry.",
+    "triplicity_lords_application": "For the sign of the Anti-Vertex and the contacted point, note the triplicity lords by day and night. If the nativity is diurnal, the day lords are more prominent; if nocturnal, the night lords. These lords indicate the supporting or challenging energies surrounding the offering.",
+    "exaltation_degrees": "If the Anti-Vertex or contacted point is within 1° of an exaltation degree, the offering is exceptionally potent and graceful. If within 1° of a dejection, it may be undermined.",
+    "term_lords": "Identify the Egyptian term lord of the degree of Anti-Vertex and the contacted point. This planet adds a specific thematic layer to the karmic role. For example, if Anti-Vertex is in the term of Mars, the offering carries Martian intensity even if the sign is Libra.",
+    "lots_in_synastry": "If the Anti-Vertex contacts a lot (e.g., Fortune, Wedding) in the other's chart, the offering directly pertains to that area of life. For instance, Anti-Vertex conjunct Lot of Wedding indicates a fated marriage offering.",
+    "haylaj_and_kadhkhudah_in_relationship": "If the Anti-Vertex person's Sun (by day) or Moon (by night) is the haylāj of the other's chart, then the offering is central to the other's life journey. The kadhkhudāh (time-lord) of that haylāj indicates the planetary period when the offering will be most active.",
+    "benefics_mitigating_malefics": "If a malefic planet (Saturn, Mars) is involved in the Anti-Vertex contact, check if a benefic (Jupiter, Venus) aspects it. Benefics can dissolve or lessen the harshness of the offering, as Dorotheus teaches.",
+    "cardine_cadent_assessment": "The strength of the offering is influenced by whether the Anti-Vertex or contacted point is in a cardine (angles) or cadent. Angular placement makes the offering more visible and powerful; cadent may make it more hidden or internal.",
+    "oriental_occidental": "If the contacted planet is oriental (appearing before the Sun), its offering is direct and early in life; if occidental, it may manifest later or in a reflective manner.",
+    "prorogation_timing": "For long-term relationships, the movement of the Ascendant (or haylāj) through the terms, as Dorotheus calculates, can indicate critical years when the karmic offering reaches fulfillment or crisis. This requires calculating ascensional times for the latitude."
+  },
+  "additional_rules": [
+    "Anti-Vertex in 5th/7th/8th → Outgoing romantic/sexual/karmic offering strongest.",
+    "Declination parallel (<1° orb) → can be as strong as conjunction even without zodiac aspect.",
+    "Anti-Vertex conjunct South Node → Past-life role / karmic offering reactivation.",
+    "Anti-Vertex = Sun/Moon midpoint → fated soul-offering; Anti-Vertex = Eros midpoint → fated erotic offering.",
+    "Multiple Anti-Vertex contacts amplify the karmic intensity.",
+    "Consider whole sign houses for traditional resonance.",
+    "Always assess the condition of the contacted point (sign, house, aspects) for deeper nuance.",
+    "The Anti-Vertex person's chart ruler aspecting the contacted point adds personal relevance to the offering.",
+    "If the contacted point is also conjunct the other person's Anti-Vertex, the offering is mutual and reciprocal.",
+    "Transits to the Anti-Vertex activate the karmic role in relationship.",
+    "Progressions involving the Anti-Vertex indicate evolution of the karmic offering.",
+    "Dorothean triplicity lords and term lords of the Anti-Vertex and contacted point should be considered as additional significators."
+  ],
+  "manifestations": {
+    "integrated": {
+      "individual": "Conscious offering, balanced giving, recognition of karmic role without attachment, service without burnout.",
+      "relational": "Reciprocal exchange, mutual growth, karmic completion, soul-level activation of both parties."
+    },
+    "challenging": {
+      "individual": "Unconscious projection, burnout from over-giving, rejection of the role, victim-consciousness, refusal to play the part.",
+      "relational": "One-sided dynamics, karmic repetition of unbalanced patterns, fated conflict without resolution."
+    },
+    "transcendent": {
+      "individual": "Mastery of the offering; the Anti-Vertex person becomes a conscious channel for the energy, able to offer without attachment.",
+      "relational": "The relationship serves as a vehicle for mutual enlightenment; the karmic role is fulfilled and released."
+    }
+  },
+  "delineation_protocol": {
+    "step_1": "Calculate exact degrees and orbs; note if within primary range.",
+    "step_2": "Identify house placement of Anti-Vertex; determine arena of offering using both modern and Dorothean house meanings.",
+    "step_3": "Identify contacted point(s); note which asteroids/planets/nodes are aspected.",
+    "step_4": "Check declination for parallels/contra-parallels.",
+    "step_5": "Assess aspect type (conjunction, opposition, etc.) and its Dorothean quality (e.g., quartile = strife).",
+    "step_6": "Consider sign of both Anti-Vertex and contacted point for style modification; note triplicity and exaltation.",
+    "step_7": "Evaluate condition of contacted point (dignity, retrograde, under rays, oriental/occidental, term lord).",
+    "step_8": "Check for node connections.",
+    "step_9": "Look for midpoint activations.",
+    "step_10": "Consider multiple contacts for cumulative intensity.",
+    "step_11": "Apply karmic layer framework for timing and depth.",
+    "step_12": "Integrate esoteric principles for spiritual significance.",
+    "step_13": "Apply Dorothean techniques: identify triplicity lords, term lords, and if the contacted point is a lot or haylāj.",
+    "step_14": "Synthesize into coherent narrative of the fated offering."
+  }
+}
