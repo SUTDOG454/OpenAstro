@@ -1,0 +1,4997 @@
+{
+  "book": {
+    "title": "Microscopy of Transiting Planets Simplified",
+    "volume": 2,
+    "author": {
+      "name": "Baldev Bhatia",
+      "title": "Consultant (Astrology-Numerology)",
+      "experience_years": 45,
+      "date_written": "February 27, 2015"
+    },
+    "description": "A comprehensive guide on planetary transits in astrology, covering the effects of planets on individuals at given moments, their movement from one sign to another, and their influence on different houses and zodiac signs.",
+    "main_themes": [
+      "Planetary transits and their significance",
+      "Effects of transiting planets on natal charts",
+      "Placement of planets in different houses and signs",
+      "Remedies for planetary afflictions",
+      "Natal planetary aspects",
+      "Transit calendars and timing"
+    ],
+    "publisher_info": {
+      "previous_volumes": [
+        "Microscopy of Astrology - Partridge India Pvt Ltd",
+        "Microscopy of Numerology - Partridge India Pvt Ltd",
+        "Microscopy of Remedies - Partridge India Pvt Ltd",
+        "Microscopy of Happy Living - Partridge India Pvt Ltd",
+        "Microscopy of Transiting Planets Vol-1 - Notion Press Pvt Ltd"
+      ],
+      "upcoming_volumes": [
+        "Microscopy of Transiting Planets Vol-3",
+        "Microscopy of Transiting Planets Vol-4",
+        "Microscopy of Transiting Planets Vol-5 (under process)"
+      ]
+    }
+  },
+  "introduction": {
+    "key_concepts": {
+      "planetary_transits": "Movement of planets from one sign to another and from one constellation to another",
+      "natal_aspects": "Interplanetary links and relationships between planets calculated by precise degree measurements",
+      "transit_effects": "When planets form aspects to natal planets, they trigger events in an individual's life",
+      "important_transits": [
+        "Jupiter and Saturn (long-lasting effects)",
+        "Moon and Mercury (quick changes)",
+        "Dragon's Head and Dragon's Tail (long duration effects)"
+      ]
+    },
+    "aspect_types": {
+      "conjunction": "Planets placed together",
+      "opposition": "Planets opposing each other",
+      "square": "90-degree angle between planets",
+      "trine": "120-degree angle between planets"
+    }
+  },
+  "planets": {
+    "sun": {
+      "general_characteristics": {
+        "represents": [
+          "Father",
+          "Soul",
+          "Power",
+          "Authority",
+          "Individuality",
+          "Government"
+        ],
+        "friends": ["Moon", "Mars", "Jupiter"],
+        "enemies": ["Venus", "Saturn"],
+        "exalted_house": 10,
+        "debilitated_house": 4,
+        "own_houses": [1, 8],
+        "favorable_houses": [1, 2, 3, 5, 6, 7, 9, 10, 11, 12],
+        "unfavorable_houses": [4, 8]
+      },
+      "placements_in_houses": {
+        "1st_house": {
+          "effects": [
+            "Righteous-minded",
+            "Healthy",
+            "Intelligent",
+            "Good morals",
+            "Political success",
+            "Stately appearance",
+            "Humanitarian instincts"
+          ],
+          "negative_traits": [
+            "Lazy in work",
+            "Bilious",
+            "Eye disease",
+            "Careless of reputation"
+          ]
+        },
+        "2nd_house": {
+          "effects": [
+            "Good earnings",
+            "Bright speech",
+            "Well-educated",
+            "Scientific"
+          ],
+          "negative_traits": [
+            "Diseased face",
+            "Losses from prosecution",
+            "Inclined to waste",
+            "Stammering",
+            "Stubborn temper"
+          ]
+        },
+        "3rd_house": {
+          "effects": [
+            "Courageous",
+            "Liberal",
+            "Adventurous",
+            "Famous",
+            "Intelligent",
+            "Wealthy",
+            "Successful"
+          ]
+        },
+        "4th_house": {
+          "effects": [
+            "Keen-minded",
+            "Sensitive",
+            "Good reputation",
+            "Success after middle age"
+          ],
+          "negative_traits": [
+            "Mental worry",
+            "Defective organs",
+            "Hatred of relations",
+            "Weak constitution",
+            "Unhappy"
+          ]
+        },
+        "5th_house": {
+          "effects": [
+            "Intelligent",
+            "Lover of fine arts",
+            "Tactful in decision"
+          ],
+          "negative_traits": [
+            "Poor",
+            "Few children",
+            "Paternal danger",
+            "Corpulent"
+          ]
+        },
+        "6th_house": {
+          "effects": [
+            "Good administrative ability",
+            "Bold and successful",
+            "War-like",
+            "Wealthy",
+            "Terror to enemies",
+            "Executive ability"
+          ],
+          "negative_traits": [
+            "Defer of customs",
+            "Licentious",
+            "Colic troubles"
+          ]
+        },
+        "7th_house": {
+          "effects": [
+            "Fond of traveling",
+            "Wealth through female agency"
+          ],
+          "negative_traits": [
+            "Late marriage and troubled",
+            "Loose morals",
+            "Irreligious",
+            "Hatred by fair sex",
+            "Submissive to wife",
+            "Wife's character questionable"
+          ]
+        },
+        "8th_house": {
+          "effects": [
+            "Charitable",
+            "Lucky and successful",
+            "Devoted",
+            "Dutiful sons",
+            "Self-acquired property",
+            "Philosophical",
+            "Learned in esoteric subjects"
+          ],
+          "negative_traits": [
+            "Ordinary health",
+            "Little patrimony",
+            "Glandular disease"
+          ]
+        },
+        "9th_house": {
+          "effects": [
+            "Charitable",
+            "Lucky and successful",
+            "Devoted",
+            "Philosophical",
+            "Learned in occult subjects",
+            "Ambitious and enterprising"
+          ]
+        },
+        "10th_house": {
+          "effects": [
+            "Bold",
+            "Courageous",
+            "Famous",
+            "Clever in acquiring wealth",
+            "Healthy",
+            "Learned",
+            "High position",
+            "Successful military or political career"
+          ]
+        },
+        "11th_house": {
+          "effects": [
+            "Learned",
+            "Wealthy",
+            "Stately",
+            "Persevering",
+            "Success without much effort",
+            "Famous",
+            "Great success and position"
+          ],
+          "negative_traits": [
+            "Many enemies"
+          ]
+        },
+        "12th_house": {
+          "effects": [
+            "Ceremonial minded",
+            "Lover of esoteric knowledge"
+          ],
+          "negative_traits": [
+            "Sinful",
+            "Poor",
+            "Fallen",
+            "Thieving nature",
+            "Unsuccessful",
+            "Adulterous",
+            "No happiness from children"
+          ]
+        }
+      },
+      "placements_in_signs": {
+        "aries": [
+          "Active",
+          "Intelligent",
+          "Famous",
+          "Traveller",
+          "Wealthy",
+          "Ambitious",
+          "Impulsive",
+          "Pioneering"
+        ],
+        "taurus": [
+          "Clever",
+          "Reflective",
+          "Musician",
+          "Self-confident",
+          "Tactful",
+          "Original",
+          "Sociable"
+        ],
+        "gemini": [
+          "Learned",
+          "Scholarly",
+          "Polite",
+          "Wealthy",
+          "Critical",
+          "Good conversationalist",
+          "Reserved"
+        ],
+        "cancer": [
+          "Harsh",
+          "Indolent",
+          "Wealthy",
+          "Unhappy",
+          "Independent",
+          "Expert astrologer"
+        ],
+        "leo": [
+          "Stubborn",
+          "Fixed views",
+          "Strong",
+          "Cruel",
+          "Independent",
+          "Organizing capacity",
+          "Generous",
+          "Famous"
+        ],
+        "virgo": [
+          "Linguist",
+          "Poet",
+          "Mathematician",
+          "Artistic",
+          "Good memory",
+          "Learned in religious lore",
+          "Reserved"
+        ],
+        "libra": [
+          "Popular",
+          "Tactless",
+          "Drunkard",
+          "Loose morals",
+          "Arrogant",
+          "Frank",
+          "Pompous"
+        ],
+        "scorpio": [
+          "Adventurous",
+          "Bold",
+          "Reckless",
+          "Cruel",
+          "Stubborn",
+          "Surgical skill",
+          "Military ability"
+        ],
+        "sagittarius": [
+          "Short-tempered",
+          "Reliable",
+          "Rich",
+          "Obstinate",
+          "Respected",
+          "Happy",
+          "Religious",
+          "Musician"
+        ],
+        "capricorn": [
+          "Mean-minded",
+          "Stubborn",
+          "Miserly",
+          "Unhappy",
+          "Active",
+          "Obliging",
+          "Witty",
+          "Prudent"
+        ],
+        "aquarius": [
+          "Poor",
+          "Unhappy",
+          "Unlucky",
+          "Unsuccessful",
+          "Rare faculties",
+          "Self-esteem"
+        ],
+        "pisces": [
+          "Pearl merchant",
+          "Peaceful",
+          "Wealthy",
+          "Religious",
+          "Prodigal",
+          "Loved by women"
+        ]
+      },
+      "transit_effects_from_moon": {
+        "1st_house": {
+          "effects": [
+            "Difficulties at workplace",
+            "Temporary change in place possible",
+            "Bad reputation likely",
+            "Money delays",
+            "Disagreements with spouse",
+            "Mental tension",
+            "Health problems",
+            "Accident prone period"
+          ],
+          "remedies": [
+            "Watch your tongue",
+            "Don't be stubborn",
+            "Get adequate rest",
+            "Control temper"
+          ]
+        },
+        "2nd_house": {
+          "effects": [
+            "Loss in business",
+            "Strained relations with superiors",
+            "Financial tightness",
+            "Disturbed relations with spouse's family",
+            "Mental anxiety",
+            "Eye troubles",
+            "Headaches"
+          ],
+          "remedies": [
+            "Do not take or give loans",
+            "Control irritability",
+            "Avoid wasteful expenditure"
+          ]
+        },
+        "3rd_house": {
+          "effects": [
+            "Good feeling and support",
+            "Professional success",
+            "Recognition from employers",
+            "Victory over enemies",
+            "Good money flow",
+            "Social respect",
+            "Family harmony",
+            "Good health",
+            "Fruitful travels"
+          ],
+          "nature": "Very favorable period"
+        },
+        "4th_house": {
+          "effects": [
+            "Status problems at workplace",
+            "Work pressure and stress",
+            "Fluctuating finances",
+            "Domestic troubles",
+            "Strained relations with mother",
+            "Mental disturbance",
+            "Chest and breathing issues"
+          ],
+          "remedies": [
+            "Avoid real estate dealings",
+            "Be patient with family"
+          ]
+        },
+        "5th_house": {
+          "effects": [
+            "Possible false charges",
+            "Dishonor from superiors",
+            "Enemies have upper hand",
+            "Mental depression",
+            "Strained relations with children",
+            "Loss of respect",
+            "Heart problems possible",
+            "Tiresome journeys"
+          ],
+          "remedies": [
+            "Avoid tricky situations",
+            "Stay away from corruption",
+            "Avoid arguments with siblings"
+          ]
+        },
+        "6th_house": {
+          "effects": [
+            "Victory over enemies",
+            "Work completion and appreciation",
+            "Financial gains",
+            "Happy family life",
+            "Good health",
+            "Success and happiness",
+            "Fruitful journeys"
+          ],
+          "nature": "Very beneficial period"
+        },
+        "7th_house": {
+          "effects": [
+            "Opposition from superiors",
+            "Disgrace and humiliation possible",
+            "Slow progress",
+            "Strained spouse relations",
+            "Family quarrels",
+            "Health problems",
+            "Fatigue and injuries risk"
+          ],
+          "remedies": [
+            "Avoid quarrels",
+            "Keep away from litigations",
+            "Watch diet carefully"
+          ]
+        },
+        "8th_house": {
+          "effects": [
+            "Undertakings beneath dignity",
+            "Opposition from superiors",
+            "Financial losses",
+            "Domestic troubles",
+            "Health issues",
+            "Fear of death",
+            "Accident prone",
+            "Worrisome travels"
+          ],
+          "remedies": [
+            "Avoid risky investments",
+            "Drive carefully",
+            "Avoid physical risks"
+          ]
+        },
+        "9th_house": {
+          "effects": [
+            "Unhappiness from superiors",
+            "False charges possible",
+            "Financial difficulties",
+            "Disturbed family life",
+            "Confrontation with father/guru",
+            "Eye infections",
+            "Throat troubles"
+          ],
+          "positive_aspect": "Good for religious activities",
+          "remedies": [
+            "Avoid taxing yourself",
+            "Control negative thoughts"
+          ]
+        },
+        "10th_house": {
+          "effects": [
+            "Excellent work progress",
+            "Appreciation from seniors",
+            "Promotion or increment possible",
+            "Financial gains",
+            "Good social life",
+            "Excellent health",
+            "Successful travels"
+          ],
+          "nature": "Very favorable period"
+        },
+        "11th_house": {
+          "effects": [
+            "Raise in standard at workplace",
+            "Unexpected benefits",
+            "Excellent monetary gains",
+            "Happy family life",
+            "Good social prestige",
+            "Religious inclinations",
+            "Sound health",
+            "Successful travels"
+          ],
+          "nature": "Excellent period overall"
+        },
+        "12th_house": {
+          "effects": [
+            "Tough time with bosses",
+            "Unappreciated efforts",
+            "Financial losses",
+            "Unhappy domestic life",
+            "Health problems",
+            "Mental affliction",
+            "Long trips but unfavorable"
+          ],
+          "remedies": [
+            "Control emotions",
+            "Rest adequately",
+            "Avoid risky activities"
+          ]
+        }
+      },
+      "remedies_by_house": {
+        "1st_house": {
+          "benefic_effects": [
+            "Fond of religious buildings",
+            "Permanent livelihood from government",
+            "Honest money multiplies"
+          ],
+          "malefic_effects": [
+            "Father's early death",
+            "Wife's illness if daytime sex",
+            "Death of sons with Mars in 5th"
+          ],
+          "remedies": [
+            "Marry before 24th year",
+            "Don't have sex during daytime",
+            "Install hand pump in ancestral house",
+            "Construct dark room on left side",
+            "Avoid jiggery (GUR)"
+          ]
+        },
+        "2nd_house": {
+          "benefic_effects": [
+            "Self-dependent",
+            "Skilled in handiwork",
+            "Helpful to family"
+          ],
+          "malefic_effects": [
+            "Affects wife, wealth adversely",
+            "Property disputes",
+            "Critical condition with Moon in 12th"
+          ],
+          "remedies": [
+            "Donate coconut, mustard oil, almonds",
+            "Avoid disputes over wealth",
+            "Don't accept donations (rice, silver, milk)"
+          ]
+        },
+        "3rd_house": {
+          "benefic_effects": [
+            "Rich and self-dependent",
+            "Blessed with divine grace",
+            "Interested in astrology"
+          ],
+          "malefic_effects": [
+            "Daylight robbery if Moon inauspicious",
+            "Poor forefathers if 9th afflicted"
+          ],
+          "remedies": [
+            "Keep mother happy",
+            "Serve others with rice or milk",
+            "Practice good conduct"
+          ]
+        },
+        "4th_house": {
+          "benefic_effects": [
+            "Wise and kind",
+            "Good administrator",
+            "Constant income",
+            "Great riches for offspring"
+          ],
+          "malefic_effects": [
+            "Greedy, inclined to theft",
+            "Night blindness with Saturn in 7th",
+            "Impotence in certain combinations"
+          ],
+          "remedies": [
+            "Distribute alms to needy",
+            "Avoid iron and wood business",
+            "Trade in gold, silver, cloth"
+          ]
+        },
+        "5th_house": {
+          "benefic_effects": [
+            "Progress of family and children",
+            "King's life with certain placements",
+            "Government honors"
+          ],
+          "malefic_effects": [
+            "Wife's death in marriages",
+            "Sons die with Saturn in 3rd"
+          ],
+          "remedies": [
+            "Don't delay having children",
+            "Build kitchen in east",
+            "Drop mustard oil on ground for 43 days"
+          ]
+        },
+        "6th_house": {
+          "benefic_effects": [
+            "Lucky",
+            "Beautiful spouse",
+            "Government benefits"
+          ],
+          "malefic_effects": [
+            "Son's and maternal family troubles",
+            "Health issues",
+            "Sons die with Mars in 10th"
+          ],
+          "remedies": [
+            "Follow ancestral customs",
+            "Avoid underground furnaces",
+            "Sprinkle milk on kitchen fire",
+            "Keep Gangajal in house",
+            "Offer wheat/gur to monkeys"
+          ]
+        },
+        "7th_house": {
+          "benefic_effects": [
+            "Ministerial position with certain placements",
+            "Unending income sources"
+          ],
+          "malefic_effects": [
+            "Family deaths together",
+            "Tuberculosis and asthma",
+            "Leprosy with certain combinations"
+          ],
+          "remedies": [
+            "Reduce salt intake",
+            "Take sweet with water before work",
+            "Offer chapati to kitchen fire",
+            "Serve black cow",
+            "Apply saffron tilak"
+          ]
+        },
+        "8th_house": {
+          "benefic_effects": [
+            "Government favors from age 22",
+            "Truthful and saintly",
+            "King-like status"
+          ],
+          "malefic_effects": [
+            "Economic crisis with Mercury in 2nd",
+            "Short-tempered",
+            "Ill health"
+          ],
+          "remedies": [
+            "Never keep white cloth in house",
+            "Avoid south-facing house",
+            "Eat sweet and drink water before new work",
+            "Throw copper in burning pyre",
+            "Throw jaggery in running water"
+          ]
+        },
+        "9th_house": {
+          "benefic_effects": [
+            "Lucky and good-natured",
+            "Good family life",
+            "Fortune after 34 with Mercury in 5th"
+          ],
+          "malefic_effects": [
+            "Evil and troubled by brothers",
+            "Government disfavor"
+          ],
+          "remedies": [
+            "Never accept silver gifts",
+            "Donate silver frequently",
+            "Use ancestral brass utensils",
+            "Avoid extreme emotions"
+          ]
+        },
+        "10th_house": {
+          "benefic_effects": [
+            "Government job and comforts",
+            "Good health",
+            "Financially strong"
+          ],
+          "malefic_effects": [
+            "Father dies if Sun in 4th",
+            "Short life with Moon in 5th",
+            "No government benefits if 4th empty"
+          ],
+          "remedies": [
+            "Never wear blue or black",
+            "Throw copper coin in river for 43 years",
+            "Abstain from liquor and meat"
+          ]
+        },
+        "11th_house": {
+          "benefic_effects": [
+            "Three sons if vegetarian",
+            "Head of house",
+            "Government benefits"
+          ],
+          "malefic_effects": [
+            "Short life with Moon in 5th and no aspects"
+          ],
+          "remedies": [
+            "Abstain from meat and wine",
+            "Keep almonds/radishes near bed for children"
+          ]
+        },
+        "12th_house": {
+          "benefic_effects": [
+            "Earn wealth after 24 with Ketu in 2nd",
+            "Steady income with Venus and Mercury"
+          ],
+          "malefic_effects": [
+            "Depression",
+            "Financial loss from machinery",
+            "Government punishment",
+            "Sleep problems"
+          ],
+          "remedies": [
+            "Have courtyard in house",
+            "Be religious and truthful",
+            "Keep Chakki in house",
+            "Forgive enemies"
+          ]
+        }
+      }
+    },
+    "moon": {
+      "general_characteristics": {
+        "represents": [
+          "Mother",
+          "Mind",
+          "Emotions",
+          "Personality",
+          "Water",
+          "Navigation",
+          "Agriculture"
+        ],
+        "rules": "Impregnation, conception, birth",
+        "friends": ["Sun", "Mars", "Jupiter"],
+        "enemies": ["Rahu", "Ketu"],
+        "neutral": "Saturn",
+        "exalted_sign": "Taurus (2nd house)",
+        "debilitated_sign": "Scorpio (8th house)",
+        "favorable_houses": [1, 2, 3, 4, 5, 7, 9],
+        "unfavorable_houses": [6, 8, 10, 11, 12],
+        "cycles": {
+          "1st_cycle": "24th year",
+          "2nd_cycle": "49th year",
+          "3rd_cycle": "94th year"
+        },
+        "effects_appear_in_years": [16, 51, 86]
+      },
+      "placements_in_houses": {
+        "1st_house": [
+          "Fanciful and romantic",
+          "Moderate eater",
+          "Attractive appearance",
+          "Inclined to corpulence",
+          "Much travelling",
+          "Capricious",
+          "Licentious",
+          "Sociable",
+          "Educated",
+          "Loved by opposite sex"
+        ],
+        "2nd_house": [
+          "Wealthy",
+          "Handsome",
+          "Generous",
+          "Highly intelligent",
+          "Charming",
+          "Poetical",
+          "Sweet speech",
+          "Persuasive"
+        ],
+        "3rd_house": [
+          "Sickly",
+          "Mild",
+          "Lean",
+          "Many brothers",
+          "Educated",
+          "Famous",
+          "Intelligent",
+          "Miserly",
+          "Active-minded"
+        ],
+        "4th_house": [
+          "Sickly mother",
+          "Quarrels",
+          "Unhappy home life",
+          "Danger to father",
+          "Domestic quarrels",
+          "Uncomfortable",
+          "Coarse",
+          "Brutal"
+        ],
+        "5th_house": [
+          "Subtle",
+          "Handsome wife",
+          "Shrewd",
+          "Many daughters",
+          "Intelligent",
+          "Gains through quadrupeds",
+          "High political office"
+        ],
+        "6th_house": [
+          "Submissive to opposite sex",
+          "Indolent",
+          "Short-tempered",
+          "Intelligent",
+          "Lazy",
+          "Slender body",
+          "Poor",
+          "Stomach troubles",
+          "Many foes"
+        ],
+        "7th_house": [
+          "Passionate",
+          "Fond of women",
+          "Handsome wife",
+          "Mother short-lived",
+          "Good family",
+          "Social",
+          "Successful",
+          "Jealous"
+        ],
+        "8th_house": [
+          "Unhealthy",
+          "Legacy",
+          "Capricious",
+          "Mother short-lived",
+          "Few children",
+          "Bilious",
+          "Bad sight",
+          "Kidney disease",
+          "Unsteady"
+        ],
+        "9th_house": [
+          "Popular",
+          "Educated",
+          "Intelligent",
+          "Well read",
+          "Wealthy",
+          "Active",
+          "Religious",
+          "Agricultural success",
+          "Good reputation"
+        ],
+        "10th_house": [
+          "Persuasive",
+          "Passionate",
+          "Charitable",
+          "Bold",
+          "Ambitious",
+          "Great position",
+          "Active",
+          "Popular",
+          "Wealthy",
+          "Long life"
+        ],
+        "11th_house": [
+          "Many children",
+          "Powerful",
+          "Philanthropic",
+          "Literary and artistic taste",
+          "Influential",
+          "Charitable",
+          "Great position",
+          "Easy success"
+        ],
+        "12th_house": [
+          "Obstructed",
+          "Deformed",
+          "Narrow-minded",
+          "Cruel",
+          "Unhappy",
+          "Obscure",
+          "Miserable"
+        ]
+      },
+      "placements_in_signs": {
+        "aries": [
+          "Round eyes",
+          "Impulsive",
+          "Fond of travel",
+          "Quick to decide",
+          "Haughty",
+          "Ambitious",
+          "Restless",
+          "Versatile"
+        ],
+        "taurus": [
+          "Liberal",
+          "Powerful",
+          "Happy",
+          "Intelligent",
+          "Handsome",
+          "Beautiful gait",
+          "Patient",
+          "Respected",
+          "Passionate"
+        ],
+        "gemini": [
+          "Well read",
+          "Creative",
+          "Learned in scriptures",
+          "Persuasive",
+          "Powerful speaker",
+          "Clever",
+          "Witty",
+          "Subtle"
+        ],
+        "cancer": [
+          "Wise",
+          "Powerful",
+          "Charming",
+          "Wealthy",
+          "Kind",
+          "Sensitive",
+          "Impetuous",
+          "Scientist",
+          "Prudent"
+        ],
+        "leo": [
+          "Bold",
+          "Irritable",
+          "Repugnant to women",
+          "Colic troubles",
+          "Liberal",
+          "Generous",
+          "Steady",
+          "Aristocratic",
+          "Proud"
+        ],
+        "virgo": [
+          "Lovely complexion",
+          "Modest",
+          "Charming",
+          "Principled",
+          "Affluent",
+          "Honest",
+          "Virtuous",
+          "Intelligent",
+          "Astrologer",
+          "Skilled in arts"
+        ],
+        "libra": [
+          "Reverence for learned",
+          "Tall",
+          "Thin",
+          "Intelligent",
+          "Wealthy",
+          "Business-like",
+          "Love for arts",
+          "Clever",
+          "Just"
+        ],
+        "scorpio": [
+          "Broad eyes",
+          "Wide chest",
+          "Brown complexion",
+          "Straightforward",
+          "Frank",
+          "Cruel",
+          "Wealthy",
+          "Impetuous",
+          "Obstinate"
+        ],
+        "sagittarius": [
+          "Broad face",
+          "Large teeth",
+          "Skilled in fine arts",
+          "Deep intellect",
+          "Good speech",
+          "Upright",
+          "Many children",
+          "Benefactor",
+          "Author"
+        ],
+        "capricorn": [
+          "Attached to family",
+          "Virtuous",
+          "Quick in perception",
+          "Clever",
+          "Active",
+          "Crafty",
+          "Strategic",
+          "Liberal",
+          "Merciless"
+        ],
+        "aquarius": [
+          "Fair-looking",
+          "Well-formed body",
+          "Tall",
+          "Sensual",
+          "Pure-minded",
+          "Artistic",
+          "Diplomatic",
+          "Emotional",
+          "Mystical"
+        ],
+        "pisces": [
+          "Fixed",
+          "Perfect build",
+          "Long nose",
+          "Handsome",
+          "Learned",
+          "Steady",
+          "Good reputation",
+          "Adventurous",
+          "Spiritually inclined"
+        ]
+      },
+      "transit_effects_from_moon": {
+        "1st_house": {
+          "effects": [
+            "Smooth work flow",
+            "Good progress",
+            "Recognition and appreciation",
+            "Financial goals achieved",
+            "Good married life",
+            "Great time with friends",
+            "Excellent health",
+            "Fruitful travels"
+          ],
+          "nature": "Very positive"
+        },
+        "2nd_house": {
+          "effects": [
+            "Obstacles at workplace",
+            "Unhappy bosses",
+            "Uncooperative co-workers",
+            "Physical and mental fatigue",
+            "More expenses than income",
+            "Disagreements with spouse",
+            "Eye problems",
+            "Troublesome travel"
+          ],
+          "nature": "Challenging"
+        },
+        "3rd_house": {
+          "effects": [
+            "Success in profession",
+            "Desired goals achieved",
+            "Appreciation and rewards",
+            "Financial recovery",
+            "Happy marital life",
+            "Good relations with siblings",
+            "Best food enjoyed",
+            "Energetic and fit"
+          ],
+          "nature": "Excellent"
+        },
+        "4th_house": {
+          "effects": [
+            "Slow work progress",
+            "Expenses soar",
+            "Investment losses",
+            "Sore relations with relatives",
+            "Mother's side troubles",
+            "Restlessness and fear",
+            "Stomach and chest problems",
+            "Accident prone"
+          ],
+          "nature": "Difficult"
+        },
+        "5th_house": {
+          "effects": [
+            "Low intellect",
+            "Poor work quality",
+            "Lost respect at workplace",
+            "Unprofitable deals",
+            "Bad investments",
+            "Lack of romance",
+            "Gloomy period",
+            "Indigestion and depression"
+          ],
+          "nature": "Unfavorable"
+        },
+        "6th_house": {
+          "effects": [
+            "Victory over enemies",
+            "Successful work completion",
+            "Recognition and rewards",
+            "Financial gains",
+            "Good returns on investments",
+            "Cordial family relations",
+            "Good social life",
+            "Excellent health"
+          ],
+          "nature": "Very favorable"
+        },
+        "7th_house": {
+          "effects": [
+            "Success in undertakings",
+            "Foreign dealings favorable",
+            "Recognition from employers",
+            "Upper hand over enemies",
+            "Good monetary gains",
+            "Happy conjugal life",
+            "Good social life",
+            "Good health"
+          ],
+          "nature": "Positive"
+        },
+        "8th_house": {
+          "effects": [
+            "Many obstacles at work",
+            "Increased enemies",
+            "Money delays",
+            "Investment losses",
+            "Quarrels at home",
+            "Poor social life",
+            "Digestive troubles",
+            "Accident prone"
+          ],
+          "nature": "Very challenging"
+        },
+        "9th_house": {
+          "effects": [
+            "Slow progress",
+            "Boss intimidation",
+            "Hard work yields no results",
+            "Money flow bad",
+            "Disagreements with father",
+            "Conjugal bliss lacking",
+            "Stomach disorders",
+            "Tiresome travel"
+          ],
+          "nature": "Difficult"
+        },
+        "10th_house": {
+          "effects": [
+            "Desirable work results",
+            "Boss appreciation",
+            "Promotion or honor possible",
+            "Money comes when needed",
+            "Good investments returns",
+            "Good family life",
+            "Conjugal bliss",
+            "Good health"
+          ],
+          "nature": "Very good"
+        },
+        "11th_house": {
+          "effects": [
+            "Good work progress",
+            "Boss respect and rewards",
+            "Excellent financial gains",
+            "Old dues recovered",
+            "Very social life",
+            "Delicious food",
+            "Happiness and delight",
+            "Fruitful travel"
+          ],
+          "nature": "Excellent"
+        },
+        "12th_house": {
+          "effects": [
+            "Slow and sluggish progress",
+            "Unfavorable seniors",
+            "Insufficient income",
+            "Good food lacking",
+            "Jealousy and lethargy",
+            "Poor travel results",
+            "Mental tension",
+            "Financial struggles"
+          ],
+          "nature": "Challenging"
+        }
+      },
+      "remedies_by_house": {
+        "1st_house": {
+          "benefic": "Self-dependent, helpful to family",
+          "malefic": "Moon sacrifices friendly planets",
+          "remedies": [
+            "Do not marry between 24-27 years",
+            "Keep away from green color",
+            "Offer water to Banyan tree",
+            "Use copper nails on bed corners",
+            "Throw coins in river for children",
+            "Keep silver plate in house",
+            "Use silver pots for milk/water"
+          ]
+        },
+        "2nd_house": {
+          "benefic": "Brothers ensured, male offspring, good education",
+          "malefic": "Ketu in 12th causes eclipse",
+          "remedies": [
+            "Avoid temple in house for sons",
+            "Use silver, rice, non-cemented floor",
+            "Offer green clothes for 43 days",
+            "Place silver in house foundation"
+          ]
+        },
+        "3rd_house": {
+          "benefic": "Long life, great wealth",
+          "malefic": "Father's condition deteriorates with education",
+          "remedies": [
+            "Donate Sun/Moon items after births",
+            "Don't use daughter's money",
+            "Serve guests with milk/water",
+            "Worship Goddess Durga"
+          ]
+        },
+        "4th_house": {
+          "benefic": "Reputed, honored, rich",
+          "malefic": "Selling milk brings adverse effects",
+          "remedies": [
+            "Don't sell milk for profit",
+            "Don't burn milk for Khoya",
+            "Serve others with water/milk freely",
+            "Avoid adultery"
+          ]
+        },
+        "5th_house": {
+          "benefic": "Five sons if Ketu well placed",
+          "malefic": "Destroyed if greedy",
+          "remedies": [
+            "Control tongue",
+            "Avoid greed",
+            "Don't be deceitful",
+            "Act on advice before harming",
+            "Public service enhances income"
+          ]
+        },
+        "6th_house": {
+          "benefic": "Revives dying person",
+          "malefic": "Suicidal tendencies possible",
+          "remedies": [
+            "Serve milk to father",
+            "No milk at night",
+            "Don't donate milk",
+            "Dig wells in hospitals/cremation grounds only"
+          ]
+        },
+        "7th_house": {
+          "benefic": "Rise in luck after marriage",
+          "malefic": "Wife dies in subsequent marriages",
+          "remedies": [
+            "Avoid marriage in 24th year",
+            "Keep mother happy",
+            "Never sell milk/water",
+            "Wife brings silver and rice equal to weight"
+          ]
+        },
+        "8th_house": {
+          "benefic": "Worldly comforts, divine help",
+          "malefic": "Short maternal family life",
+          "remedies": [
+            "Follow ancestral customs",
+            "No underground furnaces",
+            "Sprinkle milk on kitchen fire",
+            "Keep Gangajal in house",
+            "Offer wheat/gur to monkeys"
+          ]
+        },
+        "9th_house": {
+          "benefic": "Famous, rich, religious",
+          "malefic": "Atheistic if malefic",
+          "remedies": [
+            "Go to temple daily",
+            "Abstain from alcohol",
+            "Offer rice in running water"
+          ]
+        },
+        "10th_house": {
+          "benefic": "Long life of 90 years",
+          "malefic": "Sad and impoverished",
+          "remedies": [
+            "Visit religious places",
+            "Store natural water for 15 years",
+            "Avoid milk at night",
+            "No milch animals",
+            "Abstain from wine, meat, adultery"
+          ]
+        },
+        "11th_house": {
+          "benefic": "Lucky if vegetarian",
+          "malefic": "Short life if Moon in 5th",
+          "remedies": [
+            "Abstain from meat/wine",
+            "Keep almonds/radishes near bed",
+            "Donate to religious places"
+          ]
+        },
+        "12th_house": {
+          "benefic": "Long life if Ketu in 2nd",
+          "malefic": "Government troubles",
+          "remedies": [
+            "Wear gold in ears",
+            "Drink milk with hot gold dipped",
+            "Keep Chakki in house",
+            "Forgive enemies"
+          ]
+        }
+      }
+    },
+    "mars": {
+      "general_characteristics": {
+        "nature": "Dry, red, fiery planet, masculine",
+        "represents": [
+          "Sex",
+          "Brothers",
+          "Land",
+          "Property",
+          "Animal instincts",
+          "Energy",
+          "Courage"
+        ],
+        "friends": ["Sun", "Moon", "Jupiter"],
+        "enemies": ["Mercury", "Ketu"],
+        "neutral": ["Rahu", "Saturn"],
+        "own_houses": [1, 8],
+        "exalted_house": 10,
+        "debilitated_house": 4,
+        "benefic_houses": [1, 2, 3, 5, 6, 7, 9, 10, 11, 12],
+        "malefic_houses": [4, 8],
+        "cycles": {
+          "1st": "28-33 years",
+          "2nd": "63-68 years",
+          "3rd": "98-103 years"
+        }
+      },
+      "placements_in_houses": {
+        "1st_house": [
+          "Hot constitution",
+          "Scars in body",
+          "Big navel",
+          "Reddish complexion",
+          "Active",
+          "Adventurous",
+          "Powerful",
+          "Low-minded"
+        ],
+        "2nd_house": [
+          "Quarrelsome",
+          "Extravagant",
+          "Harsh speech",
+          "Short-tempered",
+          "Wasteful",
+          "Sharp-tongued",
+          "Broken education",
+          "Large patrimony"
+        ],
+        "3rd_house": [
+          "Pioneering",
+          "Few brothers",
+          "Weak sex-morals",
+          "Courageous",
+          "Intelligent",
+          "Reckless",
+          "Adventurous",
+          "Unpopular"
+        ],
+        "4th_house": [
+          "Sickly mother",
+          "Quarrels",
+          "Unhappy home life",
+          "Domestic quarrels",
+          "Uncomfortable",
+          "Coarse",
+          "Brutal",
+          "Tyrannical"
+        ],
+        "5th_house": [
+          "Unpopular",
+          "No issues",
+          "Ambitious",
+          "Intelligent",
+          "Persevering",
+          "Unhappy",
+          "Bold",
+          "Decisive"
+        ],
+        "6th_house": [
+          "Successful",
+          "Good lands",
+          "Rich",
+          "Victory over enemies",
+          "Intelligent",
+          "Political success",
+          "Powerful"
+        ],
+        "7th_house": [
+          "Two wives",
+          "Friction with wife",
+          "Unsuccessful",
+          "Intelligent",
+          "Stubborn",
+          "Passionate",
+          "Tension in married life"
+        ],
+        "8th_house": [
+          "Short life",
+          "Few children",
+          "Danger to maternal uncles",
+          "Widower later",
+          "Bad sight",
+          "Extra marital relations"
+        ],
+        "9th_house": [
+          "Unkind",
+          "Worldly",
+          "Successful trader",
+          "Sickly father",
+          "Dependent life",
+          "Self-seeking",
+          "Stubborn",
+          "Logical"
+        ],
+        "10th_house": [
+          "Founder of institutions",
+          "Energetic",
+          "Wealthy",
+          "Active",
+          "Healthy",
+          "Famous",
+          "Self-made",
+          "Successful",
+          "Decisive"
+        ],
+        "11th_house": [
+          "Learned",
+          "Educated",
+          "Wealthy",
+          "Influential",
+          "Crafty",
+          "Happy",
+          "Commanding"
+        ],
+        "12th_house": [
+          "Unsuccessful",
+          "Poor",
+          "Rotten body",
+          "Unpopular",
+          "Suffering",
+          "Dishonest",
+          "Deformed eyes"
+        ]
+      },
+      "placements_in_signs": {
+        "aries": [
+          "Organizing capacity",
+          "Commanding",
+          "Rich",
+          "Social",
+          "Mathematician",
+          "Active",
+          "Powerful",
+          "Combative"
+        ],
+        "taurus": [
+          "Influenced by women",
+          "Timid",
+          "Stubborn",
+          "Sensual",
+          "Tyrannical",
+          "Rash",
+          "Emotional"
+        ],
+        "gemini": [
+          "Loving family",
+          "Scientific",
+          "Well built",
+          "Ambitious",
+          "Quick",
+          "Ingenious",
+          "Fearless",
+          "Detective"
+        ],
+        "cancer": [
+          "Intelligent",
+          "Wealthy",
+          "Perverted",
+          "Medical proficiency",
+          "Fickle-minded",
+          "Bold",
+          "Speculative"
+        ],
+        "leo": [
+          "Occultism tendency",
+          "Love for parents",
+          "Independent thinking",
+          "Liberal",
+          "Victorious",
+          "Generous",
+          "Noble"
+        ],
+        "virgo": [
+          "Irritable",
+          "Explosive",
+          "Digestive troubles",
+          "No marital harmony",
+          "Revengeful",
+          "Scientific enterprises"
+        ],
+        "libra": [
+          "Tall",
+          "Symmetrical body",
+          "Fair complexion",
+          "Ambitious",
+          "Self-confident",
+          "Business-like",
+          "Gentle"
+        ],
+        "scorpio": [
+          "Medium stature",
+          "Clever",
+          "Diplomatic",
+          "Tenacious memory",
+          "Aggressive",
+          "Proud",
+          "Haughty"
+        ],
+        "sagittarius": [
+          "Gentlemanly",
+          "Many foes",
+          "Famous minister",
+          "Open and frank",
+          "Conservative",
+          "Good citizen"
+        ],
+        "capricorn": [
+          "Rich",
+          "High political position",
+          "Many sons",
+          "Brave",
+          "Generous",
+          "Industrious",
+          "Successful"
+        ],
+        "aquarius": [
+          "Unhappy",
+          "Poor",
+          "Independent",
+          "Impulsive",
+          "Controversial",
+          "Well-versed in dialects"
+        ],
+        "pisces": [
+          "Fair complexion",
+          "Love troubles",
+          "Few children",
+          "Passionate",
+          "Restless",
+          "Faithful"
+        ]
+      },
+      "transit_effects_from_moon": {
+        "1st_house": {
+          "effects": [
+            "Business/profession difficulties",
+            "Hard to finish projects on time",
+            "Arguments with seniors",
+            "Position change possible",
+            "Financial losses",
+            "Away from family",
+            "Health problems",
+            "Depression and bewilderment"
+          ],
+          "nature": "Challenging"
+        },
+        "2nd_house": {
+          "effects": [
+            "Financial loss period",
+            "Theft possible",
+            "Workplace unpleasantness",
+            "Low work phase",
+            "Position loss risk",
+            "Jealousy develops",
+            "Quarrels with family",
+            "Government wrath possible"
+          ],
+          "nature": "Very difficult"
+        },
+        "3rd_house": {
+          "effects": [
+            "Financial gains",
+            "Acquire ornaments",
+            "Smooth work",
+            "Success in endeavors",
+            "Promotion likely",
+            "Self-confidence boost",
+            "Good health",
+            "Enemies defeated"
+          ],
+          "nature": "Very favorable"
+        },
+        "4th_house": {
+          "effects": [
+            "Difficult with enemies",
+            "New enemies from circle",
+            "Cruel behavior",
+            "Fever and chest discomfort",
+            "Blood and stomach diseases",
+            "Mental worry",
+            "Land/property issues",
+            "Strained relationships"
+          ],
+          "nature": "Challenging"
+        },
+        "5th_house": {
+          "effects": [
+            "Expenses out of control",
+            "Children's sickness",
+            "Enemy harassment",
+            "Lacklustre and weak",
+            "Diseases requiring diagnosis",
+            "Food habit problems",
+            "Behavioral changes",
+            "Loss of glory possible"
+          ],
+          "nature": "Difficult"
+        },
+        "6th_house": {
+          "effects": [
+            "Wealth from many sources",
+            "Promotion and salary raise",
+            "Business profits",
+            "Success in undertakings",
+            "Financial security",
+            "Victory over enemies",
+            "Court case favors",
+            "Good health"
+          ],
+          "nature": "Excellent"
+        },
+        "7th_house": {
+          "effects": [
+            "Mental worry",
+            "Health problems",
+            "Spouse health issues",
+            "Deep anxiety",
+            "New noble enemies",
+            "Spouse quarrels",
+            "Financial losses",
+            "Competition troubles"
+          ],
+          "nature": "Challenging"
+        },
+        "8th_house": {
+          "effects": [
+            "Physical danger",
+            "Life-risking situations",
+            "Disease avoidance needed",
+            "Financial decline",
+            "Loan-free living advised",
+            "Extra work effort needed",
+            "Foreign trips likely",
+            "Family separation"
+          ],
+          "nature": "Very difficult"
+        },
+        "9th_house": {
+          "effects": [
+            "Minor to major ailments",
+            "Dehydration and weakness",
+            "Muscle pain",
+            "Mental worry",
+            "Foreign painful living",
+            "Financial losses",
+            "Uncomfortable work environment",
+            "Religious activity urges"
+          ],
+          "nature": "Challenging"
+        },
+        "10th_house": {
+          "effects": [
+            "Lots of workplace trouble",
+            "Success at end",
+            "Better performance",
+            "Place hopping for work",
+            "Prestige rise",
+            "Good books entry",
+            "New friends",
+            "Health attention needed"
+          ],
+          "nature": "Mixed, improving"
+        },
+        "11th_house": {
+          "effects": [
+            "Renewed vigor",
+            "Courage and confidence",
+            "Success in assignments",
+            "Promotion or increment",
+            "Income from many sources",
+            "Property investment good",
+            "Happy domestic life",
+            "Excellent health"
+          ],
+          "nature": "Very favorable"
+        },
+        "12th_house": {
+          "effects": [
+            "Work disenchantment",
+            "Superior displeasure",
+            "Financial difficulties",
+            "Domestic unsmooth",
+            "Social life unhappy",
+            "Health problems",
+            "Mental agony",
+            "Unfavorable travel"
+          ],
+          "nature": "Difficult"
+        }
+      },
+      "remedies_by_house": {
+        "1st_house": {
+          "effects": "Good natured, truthful, richer after 28",
+          "remedies": [
+            "Avoid free gifts",
+            "Avoid evil deeds and lies",
+            "Avoid saints and Faqirs",
+            "Avoid ivory items"
+          ]
+        },
+        "2nd_house": {
+          "effects": "Eldest issue, wealth from in-laws",
+          "remedies": [
+            "Business with Moon (cloth)",
+            "In-laws provide drinking water facilities",
+            "Keep deer skin"
+          ]
+        },
+        "3rd_house": {
+          "effects": "Benefits others, humbleness rewards",
+          "remedies": [
+            "Be soft-hearted, avoid arrogance",
+            "Be good to brothers",
+            "Keep ivory articles",
+            "Wear silver ring on left hand"
+          ]
+        },
+        "4th_house": {
+          "effects": "Burns Moon properties, affects mother/wife",
+          "remedies": [
+            "Offer sweet milk to Banyan roots",
+            "Place empty sugar bags on roof",
+            "Keep square silver piece",
+            "Avoid black/disabled persons"
+          ]
+        },
+        "5th_house": {
+          "effects": "Sons bring wealth and fame",
+          "remedies": [
+            "Maintain good moral character",
+            "Keep water under bed at night",
+            "Offer Shraddha to ancestors",
+            "Plant Neem tree"
+          ]
+        },
+        "6th_house": {
+          "effects": "Courageous, powerful, justice lover",
+          "remedies": [
+            "Distribute salt for male birth",
+            "Brothers offer gifts",
+            "Male children avoid gold",
+            "Adopt Saturn remedies"
+          ]
+        },
+        "7th_house": {
+          "effects": "Ambitions fulfilled, wealth increases",
+          "remedies": [
+            "Place solid silver in house",
+            "Offer sweets to daughters/widows",
+            "Build and destroy small walls"
+          ]
+        },
+        "8th_house": {
+          "effects": "Adversely affects younger brothers",
+          "remedies": [
+            "Get widow blessings, wear silver",
+            "Offer sweet bread to dogs",
+            "Eat in kitchen",
+            "Build dark room",
+            "Offer rice, jaggery, gram pulse"
+          ]
+        },
+        "9th_house": {
+          "effects": "Jupiter friend helps, brother's wife fortunate",
+          "remedies": [
+            "Obey elder brother",
+            "Serve brother's wife",
+            "Follow traditional customs",
+            "Offer rice, milk, jaggery"
+          ]
+        },
+        "10th_house": {
+          "effects": "Best position, exalted, family prospers",
+          "remedies": [
+            "Don't sell ancestral property/gold",
+            "Keep pet deer",
+            "Don't overflow milk on fire",
+            "Help one-eyed/childless persons"
+          ]
+        },
+        "11th_house": {
+          "effects": "Good results, courageous trader",
+          "remedies": [
+            "Never sell ancestral property",
+            "Keep Sindoor/honey in earthen pot"
+          ]
+        },
+        "12th_house": {
+          "effects": "Jupiter gives good results",
+          "remedies": [
+            "Take honey first thing morning",
+            "Eat/offer sweets for wealth"
+          ]
+        }
+      }
+    },
+    "jupiter": {
+      "general_characteristics": {
+        "nature": "Fiery, noble, benevolent, masculine, expansive, optimistic",
+        "represents": [
+          "Higher mind attributes",
+          "Education",
+          "Law",
+          "Religion",
+          "Philosophy",
+          "Banking",
+          "Wealth",
+          "Children"
+        ],
+        "friends": ["Sun", "Mars", "Moon"],
+        "enemies": ["Mercury", "Venus"],
+        "neutral": ["Rahu", "Ketu", "Saturn"],
+        "day": "Thursday",
+        "color": "Yellow",
+        "karaka_houses": [2, 5, 9],
+        "exalted_house": 4,
+        "debilitated_house": 10,
+        "benefic_houses": [1, 5, 8, 9, 12],
+        "malefic_houses": [6, 7, 10],
+        "transit_cycle": "Approximately 12 years",
+        "major_transits": "Every 3 years conjunct/square/opposite natal point"
+      },
+      "placements_in_houses": {
+        "1st_house": [
+          "Magnetic personality",
+          "Good grammarian",
+          "Majestic appearance",
+          "Highly educated",
+          "Many children",
+          "Learned",
+          "Long-lived",
+          "Respected by rulers",
+          "Political success"
+        ],
+        "2nd_house": [
+          "Wealthy",
+          "Intelligent",
+          "Dignified",
+          "Attractive",
+          "Happy",
+          "Fluent speaker",
+          "Aristocratic",
+          "Good wife and family",
+          "Eloquent"
+        ],
+        "3rd_house": [
+          "Famous",
+          "Many brothers",
+          "Devoted to family",
+          "Obliging",
+          "Polite",
+          "Good agriculturist",
+          "Good success",
+          "Energetic",
+          "Bold"
+        ],
+        "4th_house": [
+          "Good conveyances",
+          "Educated",
+          "Happy",
+          "Intelligent",
+          "Wealthy",
+          "Founder of charities",
+          "Good inheritance",
+          "Well read",
+          "Contented"
+        ],
+        "5th_house": [
+          "Broad eyes",
+          "Handsome",
+          "Statesmanly ability",
+          "Good insight",
+          "High position",
+          "Intelligent",
+          "Skilful in trade",
+          "Pure-hearted",
+          "Leader"
+        ],
+        "6th_house": [
+          "Obscure",
+          "Unlucky",
+          "Troubled",
+          "Many cousins",
+          "Dyspeptic",
+          "Witty",
+          "Unsuccessful",
+          "Intelligent"
+        ],
+        "7th_house": [
+          "Educated",
+          "Proud",
+          "Good wife",
+          "Diplomatic",
+          "Speculative mind",
+          "Success in agriculture",
+          "Virtuous wife",
+          "Pilgrimage to distant places"
+        ],
+        "8th_house": [
+          "Unhappy",
+          "Earnings by undignified means",
+          "Obscure",
+          "Long life",
+          "Mean",
+          "Degraded",
+          "Colic pains",
+          "Dirty habits"
+        ],
+        "9th_house": [
+          "Charitable",
+          "Many children",
+          "Devoted",
+          "Religious",
+          "Merciful",
+          "Pure",
+          "Conservative",
+          "Generous",
+          "Long-lived father",
+          "Famous"
+        ],
+        "10th_house": [
+          "Virtuous",
+          "Learned",
+          "Clever in wealth acquisition",
+          "Determined",
+          "Principled",
+          "Accumulated wealth",
+          "Founder of institutions",
+          "Non-violent",
+          "Ambitious"
+        ],
+        "11th_house": [
+          "Lover of music",
+          "Very wealthy",
+          "Statesmanly ability",
+          "Good deeds",
+          "God-fearing",
+          "Charitable",
+          "Influential",
+          "Many friends",
+          "Philanthropic"
+        ],
+        "12th_house": [
+          "Sadistic",
+          "Poor",
+          "Few children",
+          "Unsteady character",
+          "Unlucky",
+          "Lascivious",
+          "Later life asceticism",
+          "Artistic taste",
+          "Pious in after-life"
+        ]
+      },
+      "placements_in_signs": {
+        "aries": [
+          "Love of grandeur",
+          "Powerful",
+          "Wealthy",
+          "Prudent",
+          "Many children",
+          "Generous",
+          "Sympathetic",
+          "Happy marriage",
+          "High position"
+        ],
+        "taurus": [
+          "Stately",
+          "Elegant",
+          "Liberal",
+          "Dutiful sons",
+          "Just",
+          "Well read",
+          "Creative ability",
+          "Healthy",
+          "Happy marriage"
+        ],
+        "gemini": [
+          "Oratorical ability",
+          "Tall",
+          "Well-built",
+          "Benevolent",
+          "Scholarly",
+          "Diplomatic",
+          "Linguist or poet",
+          "Elegant"
+        ],
+        "cancer": [
+          "Well read",
+          "Dignified",
+          "Wealthy",
+          "Comfortable",
+          "Intelligent",
+          "Mathematician",
+          "Faithful"
+        ],
+        "leo": [
+          "Commanding appearance",
+          "Tall",
+          "Great",
+          "Ambitious",
+          "Active",
+          "Happy",
+          "Wise",
+          "Generous",
+          "Broad-minded",
+          "Literary"
+        ],
+        "virgo": [
+          "Middle stature",
+          "Ambitious",
+          "Selfish",
+          "Stoical",
+          "Affectionate",
+          "Fortunate",
+          "Stingy",
+          "Learned"
+        ],
+        "libra": [
+          "Handsome",
+          "Free",
+          "Open-minded",
+          "Hasty",
+          "Just",
+          "Courteous",
+          "Strong",
+          "Religious",
+          "Unassuming"
+        ],
+        "scorpio": [
+          "Tall",
+          "Stooping",
+          "Elegant manners",
+          "Serious",
+          "Well built",
+          "Selfish",
+          "Weak constitution",
+          "Passionate",
+          "Proud"
+        ],
+        "sagittarius": [
+          "Pretty",
+          "Wealthy",
+          "Influential",
+          "Handsome",
+          "Noble",
+          "Charitable",
+          "Executive ability",
+          "Artistic",
+          "Open-minded"
+        ],
+        "aquarius": [
+          "Learned",
+          "Not rich",
+          "Controversial",
+          "Philosophical",
+          "Popular",
+          "Compassionate",
+          "Humanitarian",
+          "Melancholic",
+          "Meditative"
+        ],
+        "pisces": [
+          "Good inheritance",
+          "Stout",
+          "Medium height",
+          "Enterprising",
+          "Political diplomacy",
+          "High position"
+        ]
+      },
+      "transit_effects_from_moon": {
+        "1st_house": {
+          "effects": [
+            "Unemployment difficulties",
+            "Tough time at work",
+            "Bosses against you",
+            "Disgrace and position loss",
+            "Hard work doubled",
+            "Financial tightness",
+            "Low spirits",
+            "Domestic life at low ebb",
+            "Mental agony and depression"
+          ],
+          "nature": "Very challenging"
+        },
+        "2nd_house": {
+          "effects": [
+            "Wealth of 40 years in 24",
+            "Wealth grows with children",
+            "Enemies frightened",
+            "Work appreciation",
+            "Financial rewards",
+            "Investment gains",
+            "Debt clearance",
+            "Happy family relations",
+            "Excellent health"
+          ],
+          "nature": "Very favorable"
+        },
+        "3rd_house": {
+          "effects": [
+            "Opposition from employer",
+            "Work obstacles",
+            "Financial difficulties",
+            "Speculation losses",
+            "Spouse health worries",
+            "Family disputes",
+            "Humiliation possible",
+            "Health needs care",
+            "Unprofitable journeys"
+          ],
+          "nature": "Challenging"
+        },
+        "4th_house": {
+          "effects": [
+            "Hard work needed",
+            "No recognition",
+            "Over-demanding bosses",
+            "Money not when needed",
+            "Spouse relations disturbed",
+            "Mental worries",
+            "Mother's health poor",
+            "Lack of concentration",
+            "Unhappiness prevails"
+          ],
+          "nature": "Worrisome"
+        },
+        "5th_house": {
+          "effects": [
+            "Work with enthusiasm",
+            "Desired results achieved",
+            "Superior appreciation",
+            "Trade profits",
+            "Good money flow",
+            "Good study period",
+            "Conjugal happiness",
+            "Mental and physical peak",
+            "Fruitful travels"
+          ],
+          "nature": "Very good"
+        },
+        "6th_house": {
+          "effects": [
+            "Theft and fire risk",
+            "Superiors unfavorable",
+            "Work advancement postponed",
+            "Status quo maintenance",
+            "Home troubles",
+            "Spouse strain",
+            "Judiciary avoided",
+            "Health extra attention",
+            "Travel problems"
+          ],
+          "nature": "Troublesome"
+        },
+        "7th_house": {
+          "effects": [
+            "Obstacle overcoming",
+            "Inner direction good",
+            "Boss favorability",
+            "Smooth work flow",
+            "New partnerships",
+            "Financial rewards",
+            "Foreign trip success",
+            "Conjugal bliss",
+            "Good health and vigor"
+          ],
+          "nature": "Very good"
+        },
+        "8th_house": {
+          "effects": [
+            "Disappointment period",
+            "Workplace arguments",
+            "Reputation loss risk",
+            "Legal action possible",
+            "Financial close watch",
+            "Theft likely",
+            "Spouse strain",
+            "Health constant problems",
+            "Tiresome travel"
+          ],
+          "nature": "Disappointing"
+        },
+        "9th_house": {
+          "effects": [
+            "Professional growth",
+            "Financial growth",
+            "Promotion and increment",
+            "Profitable investments",
+            "Property buying good",
+            "Business profit jump",
+            "Home peace",
+            "Social honor",
+            "Religious inclinations"
+          ],
+          "nature": "Excellent"
+        },
+        "10th_house": {
+          "effects": [
+            "Employers unhappy",
+            "Humiliation faced",
+            "Position and honor loss",
+            "Far transfer possible",
+            "Financial close watch",
+            "Risky investments avoided",
+            "Disturbed thoughts",
+            "Spouse/children strain",
+            "Eye/throat troubles"
+          ],
+          "nature": "Bad"
+        },
+        "11th_house": {
+          "effects": [
+            "Work desired results",
+            "Appreciation and honor",
+            "Promotion expected",
+            "Trade gains",
+            "Good investment returns",
+            "Enemy defeat",
+            "Property acquisition",
+            "Social respect",
+            "Excellent health"
+          ],
+          "nature": "Very good"
+        },
+        "12th_house": {
+          "effects": [
+            "Difficult work time",
+            "Employer disfavor",
+            "Status quo maintenance",
+            "Foreign land forced",
+            "Risky investments avoided",
+            "Home humiliation",
+            "Children strain",
+            "Mental/physical health watching",
+            "Long travel but troublesome"
+          ],
+          "nature": "Rough weather"
+        }
+      },
+      "remedies_by_house": {
+        "1st_house": {
+          "effects": "Rich even without education",
+          "remedies": [
+            "Marry before 24",
+            "Offer Mercury/Venus/Saturn things",
+            "Serve cows",
+            "Help untouchables",
+            "Don't buy Saturn machinery if Saturn in 9th"
+          ]
+        },
+        "2nd_house": {
+          "effects": "Venus and Jupiter affect adversely",
+          "remedies": [
+            "Charity ensures prosperity",
+            "Offer milk to snakes",
+            "Fill road pits"
+          ]
+        },
+        "3rd_house": {
+          "effects": "Learned and rich",
+          "remedies": [
+            "Worship Goddess Durga",
+            "Offer sweets to small girls",
+            "Avoid sycophants"
+          ]
+        },
+        "4th_house": {
+          "effects": "Wise, good administrator",
+          "remedies": [
+            "No temple in house",
+            "Serve elders",
+            "Offer milk to snake",
+            "Never bare body"
+          ]
+        },
+        "5th_house": {
+          "effects": "Sons bring prosperity",
+          "remedies": [
+            "Don't accept donations",
+            "Serve priests and sadhus"
+          ]
+        },
+        "6th_house": {
+          "effects": "Pious if benefic",
+          "remedies": [
+            "Offer Jupiter things in temple",
+            "Feed cocks",
+            "Offer clothes to priest"
+          ]
+        },
+        "7th_house": {
+          "effects": "Rise after marriage",
+          "remedies": [
+            "Worship Lord Shiva",
+            "No god idols in house",
+            "Keep gold in yellow cloth",
+            "Avoid yellow sadhus"
+          ]
+        },
+        "8th_house": {
+          "effects": "All worldly comforts",
+          "remedies": [
+            "Offer wheat/barley/coconut in water",
+            "Plant pipal in cremation ground",
+            "Offer ghee/potatoes/camphor"
+          ]
+        },
+        "9th_house": {
+          "effects": "Famous, rich, religious",
+          "remedies": [
+            "Go to temple daily",
+            "Abstain from alcohol",
+            "Offer rice in water"
+          ]
+        },
+        "10th_house": {
+          "effects": "Saturn qualities needed",
+          "remedies": [
+            "Clean nose before work",
+            "Throw copper coins for 43 days",
+            "Offer almonds",
+            "No temple with idols",
+            "Apply saffron tilak"
+          ]
+        },
+        "11th_house": {
+          "effects": "Affects enemies' things",
+          "remedies": [
+            "Always keep gold",
+            "Wear copper bangle",
+            "Water pipal tree"
+          ]
+        },
+        "12th_house": {
+          "effects": "Good conduct brings happiness",
+          "remedies": [
+            "Avoid false evidence",
+            "Serve sadhus/pipal",
+            "Keep water/Saunf at bedside"
+          ]
+        }
+      }
+    },
+    "saturn": {
+      "general_characteristics": {
+        "nature": "Cold, dry, binding, secretive, defensive",
+        "represents": [
+          "Longevity",
+          "Discipline",
+          "Karma",
+          "Delays",
+          "Obstacles",
+          "Hard work",
+          "Responsibility"
+        ],
+        "friends": ["Venus", "Mercury", "Rahu"],
+        "enemies": ["Sun", "Moon", "Mars"],
+        "neutral": ["Jupiter", "Ketu"],
+        "day": "Saturday",
+        "exalted_house": 7,
+        "debilitated_house": 1,
+        "favorable_houses": [2, 3, 7, 8, 9, 10, 11, 12],
+        "unfavorable_houses": [1, 4, 5, 6],
+        "sade_sati": "Seven and half year cycle",
+        "daiya": "Two and half year effect"
+      },
+      "sade_sati": {
+        "definition": "When Saturn transits through 12th, 1st and 2nd house from natal Moon",
+        "duration": "7.5 years",
+        "daiya_definition": "When Saturn transits over 4th and 8th house from natal Moon",
+        "daiya_duration": "2.5 years",
+        "effects": [
+          "Affects health",
+          "Affects mental peace",
+          "Affects finance"
+        ],
+        "occurrences": "Three times in lifetime",
+        "first_sade_sati": "Affects education and parents",
+        "second_sade_sati": "Affects profession, finance, family",
+        "third_sade_sati": "Affects health primarily",
+        "general_remedy": "Iron ring from horseshoe or boat nail",
+        "gemstone": "Blue Sapphire (Neelam) after consultation"
+      },
+      "placements_in_houses": {
+        "1st_house": [
+          "Foreign customs",
+          "Perverted mind",
+          "Evil-natured",
+          "Tyrannical",
+          "Strong-minded",
+          "Cunning",
+          "Thrifty",
+          "Passionate",
+          "Deformed",
+          "Sickly"
+        ],
+        "2nd_house": [
+          "More than one marriage",
+          "Diseased face",
+          "Unpopular",
+          "Broken education",
+          "Weak sight",
+          "Harsh speech",
+          "Stammering",
+          "Addicted to wine"
+        ],
+        "3rd_house": [
+          "Intelligent",
+          "Wealthy",
+          "Wicked",
+          "Loss of brothers",
+          "Polite",
+          "Adventurous",
+          "Bold",
+          "Cruel",
+          "Courageous",
+          "Agriculturist"
+        ],
+        "4th_house": [
+          "Danger to mother",
+          "Unhappy",
+          "Sudden losses",
+          "Colic pains",
+          "Narrow-minded",
+          "Crafty",
+          "Good thinker",
+          "Success in foreign countries",
+          "Licentious"
+        ],
+        "5th_house": [
+          "Narrow-minded",
+          "Mediocre life",
+          "No children",
+          "Perverted views",
+          "Government displeasure",
+          "Troubled life",
+          "Clear-minded"
+        ],
+        "6th_house": [
+          "Obstinate",
+          "Sickly",
+          "Deaf",
+          "Few children",
+          "Quarrelsome",
+          "Sex diseases",
+          "Clever",
+          "Active",
+          "Indebted"
+        ],
+        "7th_house": [
+          "More than one wife",
+          "Enterprising",
+          "Sickly",
+          "Diplomatic",
+          "Stable marriage",
+          "Political success",
+          "Travelling",
+          "Foreign honours"
+        ],
+        "8th_house": [
+          "Seeking disappointments",
+          "Big belly",
+          "Few issues",
+          "Corpulent",
+          "Drinking",
+          "Colic pains",
+          "Defective sight",
+          "Clever",
+          "Long life"
+        ],
+        "9th_house": [
+          "Legal success",
+          "Founder of charities",
+          "Miserly",
+          "Thrifty",
+          "Scientific",
+          "Irreligious",
+          "Logical",
+          "Ceremonial-minded"
+        ],
+        "10th_house": [
+          "Visits to sacred places",
+          "Great worker",
+          "Bilious",
+          "Good farmer",
+          "Sudden elevations",
+          "Foreign residence",
+          "Later life ascetic"
+        ],
+        "11th_house": [
+          "Learned",
+          "Feared and respected",
+          "Very wealthy",
+          "Landed property",
+          "Broken education",
+          "Political success",
+          "Influential"
+        ],
+        "12th_house": [
+          "Deformed",
+          "Squint eyes",
+          "Losses in trade",
+          "Learned in occult",
+          "Poor",
+          "Spendthrift",
+          "Many enemies",
+          "Unpopular",
+          "Yoga attracted"
+        ]
+      },
+      "placements_in_signs": {
+        "aries": [
+          "Idiotic",
+          "Wanderer",
+          "Insincere",
+          "Peevish",
+          "Cruel",
+          "Fraudulent",
+          "Immoral",
+          "Quarrelsome",
+          "Perverse"
+        ],
+        "taurus": [
+          "Dark complexion",
+          "Deceitful",
+          "Successful",
+          "Powerful",
+          "Unorthodox",
+          "Clever",
+          "Cool",
+          "Many wives",
+          "Worried"
+        ],
+        "gemini": [
+          "Wandering",
+          "Miserable",
+          "Untidy",
+          "Original",
+          "Subtle",
+          "Strategic",
+          "Few children",
+          "Logical",
+          "Desperado"
+        ],
+        "cancer": [
+          "Poor",
+          "Weak teeth",
+          "Pleasure-seeking",
+          "Few sons",
+          "Slow",
+          "Dull",
+          "Cunning",
+          "Rich",
+          "Stubborn"
+        ],
+        "leo": [
+          "Middle stature",
+          "Severe",
+          "Obstinate",
+          "Few sons",
+          "Stubborn",
+          "Unfortunate",
+          "Hard worker",
+          "Good writer",
+          "Evil-minded"
+        ],
+        "virgo": [
+          "Dark complexion",
+          "Malicious",
+          "Poor",
+          "Quarrelsome",
+          "Narrow-minded",
+          "Rude",
+          "Conservative",
+          "Public life taste",
+          "Weak health"
+        ],
+        "libra": [
+          "Famous",
+          "Founder of institutions",
+          "Rich",
+          "Tall",
+          "Fair",
+          "Tactful",
+          "Powerful",
+          "Sound judgment",
+          "Charitable"
+        ],
+        "scorpio": [
+          "Rash",
+          "Indifferent",
+          "Hard-hearted",
+          "Adventurous",
+          "Self-conceited",
+          "Reserved",
+          "Violent",
+          "Unhappy",
+          "Wasteful"
+        ],
+        "sagittarius": [
+          "Pushing",
+          "Artful",
+          "Cunning",
+          "Famous",
+          "Peaceful",
+          "Faithful",
+          "Pretentious",
+          "Generous",
+          "Courteous"
+        ],
+        "capricorn": [
+          "Intelligent",
+          "Domestic harmony",
+          "Selfish",
+          "Covetous",
+          "Intellectual",
+          "Learned",
+          "Reflective",
+          "Prudent",
+          "Melancholy"
+        ],
+        "aquarius": [
+          "Practical",
+          "Able",
+          "Diplomatic",
+          "Ingenious",
+          "Conceited",
+          "Prudent",
+          "Happy",
+          "Reflective",
+          "Philosophical"
+        ],
+        "pisces": [
+          "Clever",
+          "Gifted",
+          "Polite",
+          "Happy",
+          "Good wife",
+          "Trustworthy",
+          "Scheming",
+          "Wealthy",
+          "Helpful"
+        ]
+      },
+      "transit_effects_from_moon": {
+        "1st_house": {
+          "effects": [
+            "Peak of seven-and-half cycle",
+            "Tough professional time",
+            "Target difficulties",
+            "Enemy deception",
+            "Far transfer possible",
+            "Financial bad shape",
+            "Home problems",
+            "Spouse/children misunderstandings",
+            "Mental/physical agony"
+          ],
+          "nature": "Very bad"
+        },
+        "2nd_house": {
+          "effects": [
+            "Peak over, some relief",
+            "Slow work progress",
+            "Expense control needed",
+            "Spouse/children not cordial",
+            "Family disputes",
+            "Unnecessary quarrels",
+            "Health watching needed",
+            "Weakness and tiredness",
+            "Tiresome travel"
+          ],
+          "nature": "Pin pricks remain"
+        },
+        "3rd_house": {
+          "effects": [
+            "Renewed vigor",
+            "Best communication skills",
+            "Success in assignments",
+            "Promotion or increment",
+            "Better opportunities",
+            "Many income sources",
+            "Property investment good",
+            "Happy domestic life",
+            "Excellent health"
+          ],
+          "nature": "Happy times"
+        },
+        "4th_house": {
+          "effects": [
+            "Work disenchantment",
+            "Superior displeasure",
+            "Transfer possible",
+            "Financial careful watching",
+            "Expense control",
+            "Domestic unsmooth",
+            "Illegal affairs avoided",
+            "Social life unhappy",
+            "Health/spouse care needed"
+          ],
+          "nature": "Not smooth"
+        },
+        "5th_house": {
+          "effects": [
+            "Careful profession handling",
+            "Financial caution",
+            "Job/reputation risk",
+            "Risky investments avoided",
+            "Despondency and grief",
+            "Opposite sex issues",
+            "Litigation with relatives",
+            "Heart/eye/urinary issues",
+            "Travel likely but unfavorable"
+          ],
+          "nature": "Taxing"
+        },
+        "6th_house": {
+          "effects": [
+            "Unfinished projects completed",
+            "New projects initiated",
+            "Appreciation gained",
+            "Energetic well-being",
+            "Debt settlement",
+            "Smooth money inflow",
+            "Property buying favorable",
+            "Enemy defeat",
+            "Great socializing time"
+          ],
+          "nature": "Very good"
+        },
+        "7th_house": {
+          "effects": [
+            "Life low point",
+            "Enemy upper hand",
+            "Income may suffer",
+            "Loan avoided",
+            "Hard work needed",
+            "Partnership deception risk",
+            "Job loss avoided",
+            "Litigation avoided",
+            "Foreign land possible"
+          ],
+          "nature": "Very challenging"
+        },
+        "8th_house": {
+          "effects": [
+            "Highly disturbing",
+            "Workplace tough time",
+            "Disgrace/job loss risk",
+            "Jail risk from vices",
+            "Money insufficient",
+            "Romance at premium",
+            "Spouse break possible",
+            "Social clashes",
+            "Serious health troubles"
+          ],
+          "nature": "Disturbing"
+        },
+        "9th_house": {
+          "effects": [
+            "Hard work with frustration",
+            "Far transfer likely",
+            "Enemy upper hand",
+            "Boss unfavorable",
+            "Wasteful expenditure",
+            "Income insufficient",
+            "Home disturbances",
+            "Elder relations spoiled",
+            "Father's side relative death"
+          ],
+          "nature": "Frustrating"
+        },
+        "10th_house": {
+          "effects": [
+            "Professional suffering",
+            "Work not smooth",
+            "Boss differences",
+            "Job change forced",
+            "Enemy upper hand",
+            "Income inadequate",
+            "Marriage/love disputes",
+            "Mother's relations spoiled",
+            "Health problems"
+          ],
+          "nature": "Suffering"
+        },
+        "11th_house": {
+          "effects": [
+            "Jolly good transit",
+            "Family improvement",
+            "Business pursuits success",
+            "Smooth work flow",
+            "Promotion likely",
+            "Salary jump significant",
+            "Many income sources",
+            "Property acquisition",
+            "Great social time"
+          ],
+          "nature": "Excellent"
+        },
+        "12th_house": {
+          "effects": [
+            "Seven-and-half started",
+            "Boss unfavorable",
+            "Competitor threats",
+            "Position loss possible",
+            "Unnecessary expenses",
+            "Income insufficient",
+            "Home disputes",
+            "Love life beating",
+            "Health/spouse/children issues"
+          ],
+          "nature": "Beginning of difficult period"
+        }
+      },
+      "remedies_by_house": {
+        "1st_house": {
+          "effects": "Good results if planets favorable",
+          "remedies": [
+            "Abstain from alcohol/non-veg",
+            "Bury Surma for promotion",
+            "Serve monkeys",
+            "Offer milk to Banyan roots"
+          ]
+        },
+        "2nd_house": {
+          "effects": "Wise, kind, just",
+          "remedies": [
+            "Go barefoot to temple 43 days",
+            "Put curd/milk tilak",
+            "Offer milk to snake"
+          ]
+        },
+        "3rd_house": {
+          "effects": "Good results, healthy",
+          "remedies": [
+            "Serve three dogs",
+            "Distribute eye medicines",
+            "Keep dark room in house"
+          ]
+        },
+        "4th_house": {
+          "effects": "Devoted to parents",
+          "remedies": [
+            "Offer milk to snake/crow/buffalo",
+            "Pour milk in well",
+            "Pour rum in running water"
+          ]
+        },
+        "5th_house": {
+          "effects": "Proud, son suffers",
+          "remedies": [
+            "Distribute salty things on birthday",
+            "Offer almonds in temple",
+            "Heat gold in milk before drinking"
+          ]
+        },
+        "6th_house": {
+          "effects": "Work at night beneficial",
+          "remedies": [
+            "Serve black dog",
+            "Offer coconut/almonds in water",
+            "Serve snakes"
+          ]
+        },
+        "7th_house": {
+          "effects": "Greedy, wife controlled",
+          "remedies": [
+            "Bury flute with sugar",
+            "Serve black cow",
+            "Wash private parts with curd",
+            "Western wall should be mud"
+          ]
+        },
+        "8th_house": {
+          "effects": "Long life, short father's life",
+          "remedies": [
+            "Keep square silver piece",
+            "Put milk in bath water",
+            "Sit on stone/wood while bathing"
+          ]
+        },
+        "9th_house": {
+          "effects": "Three houses, tour operator",
+          "remedies": [
+            "Offer rice/almonds in water",
+            "Jupiter/Moon work gives results"
+          ]
+        },
+        "10th_house": {
+          "effects": "Good results, ambitious",
+          "remedies": [
+            "Go to temple",
+            "Abstain from meat/wine/eggs",
+            "Offer food to blind people"
+          ]
+        },
+        "11th_house": {
+          "effects": "Fate decided at 48",
+          "remedies": [
+            "Place water vessel, drop oil/wine 43 days",
+            "Abstain from drinking",
+            "Maintain good character"
+          ]
+        },
+        "12th_house": {
+          "effects": "Good results, no enemies",
+          "remedies": [
+            "Tie almonds in black cloth in iron pot",
+            "Keep in dark room"
+          ]
+        }
+      }
+    },
+    "mercury": {
+      "general_characteristics": {
+        "nature": "Variable, vacillating, convertible, neutral, dualistic",
+        "represents": [
+          "Mentality",
+          "Intelligence",
+          "Analytical power",
+          "Central nervous system",
+          "Communication",
+          "Business"
+        ],
+        "friends": ["Sun", "Venus", "Rahu"],
+        "enemies": ["Mars", "Saturn", "Ketu"],
+        "neutral": "Jupiter and Moon",
+        "color": "Green",
+        "enemy": "Moon",
+        "pukka_ghar": "7th house",
+        "exalted_house": 6,
+        "debilitated_house": 12,
+        "malefic_houses": [3, 8, 9, 10, 11, 12],
+        "benefic_houses": [1, 2, 4, 5, 6, 7]
+      },
+      "placements_in_houses": {
+        "1st_house": [
+          "Cheerful",
+          "Humorous",
+          "Well read",
+          "Clever",
+          "Many enemies",
+          "Learned",
+          "Occult studies",
+          "Witty",
+          "Influential",
+          "Intellectual",
+          "Long-lived"
+        ],
+        "2nd_house": [
+          "Learned in religious lore",
+          "Sweet speech",
+          "Good conversationalist",
+          "Humorous",
+          "Clever",
+          "Many children",
+          "Determined",
+          "Fine manners",
+          "Wealthy",
+          "Thrifty"
+        ],
+        "3rd_house": [
+          "Daughter",
+          "Happy mother",
+          "Clever",
+          "Cruel",
+          "Loved by fair sex",
+          "Tactful",
+          "Diplomatic",
+          "Discretion",
+          "Bold",
+          "Sensible"
+        ],
+        "4th_house": [
+          "Learned",
+          "Agriculturist",
+          "Good mother",
+          "Unhappy",
+          "Conjuring tricks",
+          "Obliging",
+          "Cultured",
+          "Affectionate",
+          "Popular",
+          "Literary activities"
+        ],
+        "5th_house": [
+          "Showy",
+          "Learned",
+          "Quarrelsome",
+          "Danger to maternal uncles",
+          "Parents sickly",
+          "Administrative capacity",
+          "Ministerial office",
+          "Scholar",
+          "Vain",
+          "Combative"
+        ],
+        "6th_house": [
+          "Respected",
+          "Interrupted education",
+          "Subordinate officer",
+          "Executive capacity",
+          "Quarrelsome",
+          "Showy",
+          "Losses in money",
+          "Peevish",
+          "Foot troubles"
+        ],
+        "7th_house": [
+          "Diplomatic",
+          "Literary ability",
+          "Early marriage",
+          "Handsome wife",
+          "Breaks in education",
+          "Learned in astrology",
+          "Success in trade",
+          "Successful",
+          "Religious",
+          "Charitable"
+        ],
+        "8th_house": [
+          "Long life",
+          "Landed estate",
+          "Easy access to desires",
+          "Grief through domestics",
+          "Obliging",
+          "Few issues",
+          "Many lands",
+          "Famous",
+          "Respected",
+          "Ill-health"
+        ],
+        "9th_house": [
+          "Highly educated",
+          "Musician",
+          "Many children",
+          "Obliging",
+          "Licentious",
+          "Philosophical",
+          "Literature lover",
+          "Creative mind",
+          "Scientific-minded",
+          "Popular"
+        ],
+        "10th_house": [
+          "Determined",
+          "Fortunate",
+          "Enjoyments in life",
+          "Intelligent",
+          "Bad sight",
+          "Active",
+          "Cheerful",
+          "Charitable",
+          "Able",
+          "Philanthropic"
+        ],
+        "11th_house": [
+          "Wealthy",
+          "Happy",
+          "Mathematical faculty",
+          "Good astrologer",
+          "Many friends",
+          "Logical and scientific",
+          "Success in trade"
+        ],
+        "12th_house": [
+          "Philosophical",
+          "Intelligent",
+          "Worried",
+          "Adulterous",
+          "Obliging",
+          "Capricious",
+          "Wayward",
+          "Gifted",
+          "Despondent",
+          "Few children"
+        ]
+      },
+      "placements_in_signs": {
+        "aries": [
+          "Evil-minded",
+          "Middle stature",
+          "Obstinate",
+          "Clever",
+          "Social",
+          "Materialistic",
+          "Unscrupulous",
+          "Wavering mind",
+          "Greedy"
+        ],
+        "taurus": [
+          "High position",
+          "Well built",
+          "Clever",
+          "Logical",
+          "Mental harmony",
+          "Many children",
+          "Liberal",
+          "Wealthy",
+          "Showy"
+        ],
+        "gemini": [
+          "Physical labour inclination",
+          "Boastful",
+          "Sweet speech",
+          "Tall",
+          "Active",
+          "Cultured",
+          "Tactful",
+          "Musician",
+          "Studious"
+        ],
+        "cancer": [
+          "Witty",
+          "Music lover",
+          "Disliked by relations",
+          "Low stature",
+          "Speculative",
+          "Diplomatic",
+          "Flexible",
+          "Restless",
+          "Religious"
+        ],
+        "leo": [
+          "Few children",
+          "Wanderer",
+          "Idiotic",
+          "Proud",
+          "Indolent",
+          "Not fond of women",
+          "Boastful",
+          "Orator",
+          "Good memory"
+        ],
+        "virgo": [
+          "Learned",
+          "Virtuous",
+          "Liberal",
+          "Fearless",
+          "Ingenious",
+          "Handsome",
+          "Refined",
+          "Subtle",
+          "Eloquent"
+        ],
+        "libra": [
+          "Fair complexion",
+          "Sanguine",
+          "Excesses inclination",
+          "Perceptive",
+          "Material tendencies",
+          "Frugal",
+          "Agreeable",
+          "Philosophical",
+          "Sociable"
+        ],
+        "scorpio": [
+          "Short",
+          "Curly hair",
+          "Indulgence incentive",
+          "Generative organ diseases",
+          "Crafty",
+          "Malicious",
+          "Selfish",
+          "Subtle",
+          "Indiscreet"
+        ],
+        "sagittarius": [
+          "Scientific taste",
+          "Respected by society",
+          "Tall",
+          "Well built",
+          "Learned",
+          "Rash",
+          "Vigorous",
+          "Diplomatic",
+          "Just"
+        ],
+        "capricorn": [
+          "Selfless",
+          "Business tendencies",
+          "Economical",
+          "Debtor",
+          "Low stature",
+          "Cunning",
+          "Inventive",
+          "Active",
+          "Suspicious"
+        ],
+        "aquarius": [
+          "Middle stature",
+          "Licentious",
+          "Proud",
+          "Quarrelsome",
+          "Frank",
+          "Sociable",
+          "Rapid strides",
+          "Famous",
+          "Scholar"
+        ],
+        "pisces": [
+          "Dependent",
+          "Serves others",
+          "Dexterous",
+          "Peevish",
+          "Indolent",
+          "Petty-minded",
+          "Respects gods and Brahmins"
+        ]
+      },
+      "transit_effects_from_moon": {
+        "1st_house": {
+          "effects": [
+            "Serve someone unwillingly",
+            "Face oppression",
+            "Befriend bad personalities",
+            "Loss of self-worth",
+            "Lawsuits avoided",
+            "Bad company avoided",
+            "Foreign residence obstacles",
+            "Auspicious work obstacles",
+            "Deception susceptibility"
+          ],
+          "nature": "Negative"
+        },
+        "2nd_house": {
+          "effects": [
+            "Pecuniary gain",
+            "Success in learning",
+            "Good people company",
+            "Exotic culinary delights",
+            "Relative/friend loss possible",
+            "Sufferings for some",
+            "Bad name in society",
+            "Enemy more harmful"
+          ],
+          "nature": "Mixed"
+        },
+        "3rd_house": {
+          "effects": [
+            "Rough phase with superiors",
+            "Employer arguments avoided",
+            "Known enemies careful",
+            "New worthy friends",
+            "Money extra attention",
+            "Wealth loss avoided",
+            "Depression suffered",
+            "Mental stress",
+            "Unexpected hassles"
+          ],
+          "nature": "Rough with superiors"
+        },
+        "4th_house": {
+          "effects": [
+            "Progress in all aspects",
+            "Personal contentment",
+            "Undertakings success",
+            "Status heightened",
+            "Financial gains",
+            "Property attainment",
+            "Spouse gains",
+            "New family member",
+            "Mother proud"
+          ],
+          "nature": "Progress signified"
+        },
+        "5th_house": {
+          "effects": [
+            "Troubled personal life",
+            "Family arguments avoided",
+            "Friend opinionated issues",
+            "Loved ones careful handling",
+            "Heat stroke susceptibility",
+            "Body heat suffered",
+            "Mental agitation",
+            "Work difficulties",
+            "Student distraction avoided"
+          ],
+          "nature": "Troubled"
+        },
+        "6th_house": {
+          "effects": [
+            "Success and stability",
+            "Plans accomplished",
+            "Work progress",
+            "Endeavor success",
+            "Society popularity",
+            "Status heightened",
+            "Mental peace",
+            "Enemy worries",
+            "Finance careful"
+          ],
+          "nature": "Mixed bag"
+        },
+        "7th_house": {
+          "effects": [
+            "Mentally/physically trying",
+            "Illness indicated",
+            "Stomach disorders",
+            "Untimely eating avoided",
+            "Mental perplexity rise",
+            "Family misunderstanding",
+            "Spouse/children careful",
+            "Humiliation avoided",
+            "Endeavor hassles"
+          ],
+          "nature": "Trying time"
+        },
+        "8th_house": {
+          "effects": [
+            "Wealth and success",
+            "Work success",
+            "Financial stability",
+            "Financial venture gains",
+            "Social status rise",
+            "Comfortable lifestyle",
+            "Children happiness",
+            "Newborn happiness",
+            "Health attention"
+          ],
+          "nature": "Wealth signified"
+        },
+        "9th_house": {
+          "effects": [
+            "Disease sufferings",
+            "Work obstruction",
+            "Respect position intact",
+            "Action regret avoided",
+            "Mental hassles",
+            "Enemy beware",
+            "Religion argument avoided",
+            "Labour more demanded",
+            "Interest lack"
+          ],
+          "nature": "Troubled"
+        },
+        "10th_house": {
+          "effects": [
+            "Contentment and good times",
+            "Work success",
+            "Interesting meet",
+            "Gain possibility",
+            "Financial good time",
+            "Society status rise",
+            "Social welfare involved",
+            "Enemy defeated",
+            "Life calmness"
+          ],
+          "nature": "Contentment"
+        },
+        "11th_house": {
+          "effects": [
+            "Achievement and gain",
+            "Financial gains",
+            "Source gains higher",
+            "Endeavor profits",
+            "Professional success",
+            "Work prosperity",
+            "Respect commanded",
+            "Opposite sex company",
+            "Pleasant nature"
+          ],
+          "nature": "Achievement"
+        },
+        "12th_house": {
+          "effects": [
+            "Expenses denoted",
+            "More spending expected",
+            "Litigation loss",
+            "Extra hard work",
+            "Enemy beware",
+            "Honor held",
+            "Mentally disturbed",
+            "Worries restlessness",
+            "Sickness feeling"
+          ],
+          "nature": "Expenses"
+        }
+      },
+      "remedies_by_house": {
+        "1st_house": {
+          "effects": "Kind, diplomatic, long life",
+          "remedies": [
+            "Keep away from green/sisters-in-law",
+            "Avoid meat/eggs/liquor",
+            "Sitting business better"
+          ]
+        },
+        "2nd_house": {
+          "effects": "Intelligent, self-centered",
+          "remedies": [
+            "Abstain from eggs/meat/liquor",
+            "Sister-in-law association harmful",
+            "No sheep/goat/parrots"
+          ]
+        },
+        "3rd_house": {
+          "effects": "Not good, inimical to Mars",
+          "remedies": [
+            "Clean teeth with alum",
+            "Feed birds, donate goat",
+            "No south facing house",
+            "Distribute asthma medicines"
+          ]
+        },
+        "4th_house": {
+          "effects": "Fortunate, dear to mother",
+          "remedies": [
+            "Wear silver chain for peace",
+            "Golden chain for wealth",
+            "Put kesar tilak 43 days",
+            "Serve monkeys with jaggery"
+          ]
+        },
+        "5th_house": {
+          "effects": "Happy, wealthy, wise",
+          "remedies": [
+            "Wear copper coin in white thread",
+            "Serve cows for wife happiness",
+            "Gomukhi house auspicious",
+            "Shermukhi house disastrous"
+          ]
+        },
+        "6th_house": {
+          "effects": "Exalted, self-made",
+          "remedies": [
+            "Bury Ganga water in land",
+            "Wife wears silver ring left hand",
+            "Start work with girl/flowers"
+          ]
+        },
+        "7th_house": {
+          "effects": "Beneficial for others",
+          "remedies": [
+            "Avoid business partnership",
+            "Avoid speculation",
+            "No spoilt character sister-in-law"
+          ]
+        },
+        "8th_house": {
+          "effects": "Very bad results",
+          "remedies": [
+            "Bury honey pot in cremation ground",
+            "Keep milk/rain water on roof",
+            "Put ring in daughter's nose"
+          ]
+        },
+        "9th_house": {
+          "effects": "Bad results, Jupiter enmity",
+          "remedies": [
+            "Avoid green color",
+            "Get nose pierced",
+            "Offer mushroom in pot",
+            "Don't accept tabeez"
+          ]
+        },
+        "10th_house": {
+          "effects": "Government favor, good livelihood",
+          "remedies": [
+            "No eggs/meat/liquor",
+            "Offer rice/milk in religious places"
+          ]
+        },
+        "11th_house": {
+          "effects": "Bad results, Jupiter enmity",
+          "remedies": [
+            "Wear copper coin in white/silver",
+            "No widowed sister at home",
+            "Avoid green/emerald",
+            "No sadhoo tabeez"
+          ]
+        },
+        "12th_house": {
+          "effects": "Destroys sleep, many troubles",
+          "remedies": [
+            "Throw new pitcher in river",
+            "Wear stainless steel ring",
+            "Put kesar tilak, visit worship places",
+            "Take advice before new work"
+          ]
+        }
+      }
+    },
+    "venus": {
+      "general_characteristics": {
+        "nature": "Feminine planet, goddess of love",
+        "represents": [
+          "Love",
+          "Marriage",
+          "Beauty",
+          "Worldly comforts",
+          "Husband (in female chart)",
+          "Wife (in male chart)",
+          "Art",
+          "Luxury"
+        ],
+        "friends": ["Saturn", "Mercury", "Ketu"],
+        "enemies": ["Sun", "Moon", "Rahu"],
+        "own_houses": [2, 7],
+        "exalted_house": 12,
+        "benefic_houses": [2, 3, 4, 7, 12],
+        "malefic_houses": [1, 6, 9],
+        "transit_duration": "About a month per sign"
+      },
+      "placements_in_houses": {
+        "1st_house": [
+          "Expert mathematician",
+          "Very fortunate",
+          "Ambitious",
+          "Bold",
+          "Long life",
+          "Pioneering",
+          "Fond of wife",
+          "Skilled in sexual science",
+          "Successful",
+          "Leader of people"
+        ],
+        "2nd_house": [
+          "Large family",
+          "Happy",
+          "Luxurious meals",
+          "Handsome",
+          "Charming wife",
+          "Witty",
+          "Brilliant",
+          "Polite",
+          "Educated",
+          "Wealthy"
+        ],
+        "3rd_house": [
+          "Lover of fine arts",
+          "Prosperity to mother",
+          "Wealthy",
+          "Miserly",
+          "Obliging",
+          "Well placed",
+          "Travelling",
+          "Original"
+        ],
+        "4th_house": [
+          "Intelligent",
+          "Happy",
+          "Affectionate",
+          "Learned",
+          "Agriculturist",
+          "Educated",
+          "Peaceful life",
+          "Famous",
+          "Literary",
+          "Successful"
+        ],
+        "5th_house": [
+          "Clever",
+          "Intelligent",
+          "Statesmanly ability",
+          "Good counsel",
+          "Commander",
+          "Educated",
+          "Sociable",
+          "Kind-hearted",
+          "Many daughters"
+        ],
+        "6th_house": [
+          "Licentious",
+          "Loose habits",
+          "Anger",
+          "Low minded",
+          "Well informed",
+          "Destruction to enemies",
+          "Fond of other women"
+        ],
+        "7th_house": [
+          "Passionate",
+          "Unhealthy habits",
+          "Happy marriage",
+          "Sensual",
+          "Sex pleasure inclined"
+        ],
+        "8th_house": [
+          "Danger to mother",
+          "Happy",
+          "Bad habits",
+          "Short-lived",
+          "Famous",
+          "Unexpected legacies",
+          "Trouble in mind",
+          "Love disappointment",
+          "Pious later"
+        ],
+        "9th_house": [
+          "Selfish",
+          "Religious",
+          "Respect for preceptors",
+          "Able",
+          "Successful",
+          "Commander",
+          "Fine arts lover",
+          "Generous"
+        ],
+        "10th_house": [
+          "Respect for divine/parents",
+          "Carriage",
+          "Broken education",
+          "Successful lawyer",
+          "Popular",
+          "Social",
+          "Moderate eater"
+        ],
+        "11th_house": [
+          "Influential",
+          "Learned",
+          "Wealthy",
+          "Good conveyances",
+          "Successful",
+          "Many friends",
+          "Much popularity"
+        ],
+        "12th_house": [
+          "Mean-minded",
+          "Fond of low women",
+          "Miserly",
+          "Obscure",
+          "Licentious",
+          "Unprincipled",
+          "Weak eyes",
+          "Sexual pleasures",
+          "Clever",
+          "Unhappy love"
+        ]
+      },
+      "placements_in_signs": {
+        "aries": [
+          "Extravagant",
+          "Active",
+          "Mutable",
+          "Artistic",
+          "Dreamy",
+          "Fine arts proficient",
+          "Licentious",
+          "Fickle-minded",
+          "Easy going"
+        ],
+        "taurus": [
+          "Well built",
+          "Handsome",
+          "Pleasing",
+          "Independent",
+          "Sensual",
+          "Nature love",
+          "Pleasure fond",
+          "Elegant",
+          "Dancing/music taste"
+        ],
+        "gemini": [
+          "Rich",
+          "Gentle",
+          "Kind",
+          "Generous",
+          "Eloquent",
+          "Proud",
+          "Respected",
+          "Fine arts love",
+          "Good logician"
+        ],
+        "cancer": [
+          "Melancholy",
+          "Emotional",
+          "Timid",
+          "More than one wife",
+          "Haughty",
+          "Inconsistent",
+          "Unhappy",
+          "Many children",
+          "Learned"
+        ],
+        "leo": [
+          "Money through women",
+          "Pretty wife",
+          "Wayward",
+          "Conceited",
+          "Passionate",
+          "Fair complexion",
+          "Licentious",
+          "Fair sex attracted"
+        ],
+        "virgo": [
+          "Petty-minded",
+          "Licentious",
+          "Unscrupulous",
+          "Unhappy",
+          "Illicit love",
+          "Agile",
+          "Loquacious",
+          "Rich",
+          "Learned"
+        ],
+        "libra": [
+          "Statesman",
+          "Poet",
+          "Intelligent",
+          "Generous",
+          "Philosophical",
+          "Handsome",
+          "Matrimonial felicity",
+          "Passionate",
+          "Intuitive"
+        ],
+        "scorpio": [
+          "Broad features",
+          "Quarrelsome",
+          "Medium height",
+          "Independent",
+          "Artistic",
+          "Unjust",
+          "Proud",
+          "Love disappointed"
+        ],
+        "sagittarius": [
+          "Medium height",
+          "Powerful",
+          "Wealthy",
+          "Respected",
+          "Generous",
+          "Frank",
+          "Happy domestic",
+          "High position",
+          "Philosophical"
+        ],
+        "capricorn": [
+          "Low class women fond",
+          "Imprudent",
+          "Ambitious",
+          "Unprincipled",
+          "Licentious",
+          "Boastful",
+          "Subtle",
+          "Learned",
+          "Weak body"
+        ],
+        "aquarius": [
+          "Liked by all",
+          "Middle stature",
+          "Handsome",
+          "Affable",
+          "Persuasive",
+          "Witty",
+          "Timid",
+          "Chaste",
+          "Helpful"
+        ],
+        "pisces": [
+          "Witty",
+          "Tactful",
+          "Learned",
+          "Popular",
+          "Just",
+          "Ingenious",
+          "Modest",
+          "Refined",
+          "Powerful",
+          "Pleasure seeking"
+        ]
+      },
+      "transit_effects_from_moon": {
+        "1st_house": {
+          "effects": [
+            "Material/sensual comfort",
+            "Perfect match finding",
+            "New family member",
+            "Opposite sex company",
+            "Status heightened",
+            "Exotic food enjoyment",
+            "Material acquisition",
+            "Economic improvement",
+            "Student success"
+          ],
+          "nature": "Comfort signified"
+        },
+        "2nd_house": {
+          "effects": [
+            "Pecuniary gain",
+            "Great spouse time",
+            "Baby expected",
+            "Family prosperity",
+            "Financial comfort",
+            "Attire/gems acquired",
+            "Art/music interest",
+            "Authority favor",
+            "Health fine"
+          ],
+          "nature": "Gain denoted"
+        },
+        "3rd_house": {
+          "effects": [
+            "Happiness/contentment",
+            "Financial upward move",
+            "Professional good period",
+            "Position rise",
+            "Venture profits",
+            "Fears overcome",
+            "Friends widened",
+            "Enemy defeat",
+            "Religion rise"
+          ],
+          "nature": "Happiness"
+        },
+        "4th_house": {
+          "effects": [
+            "Financial growth",
+            "Prosperity rise",
+            "Agricultural profit",
+            "Quality home time",
+            "Food/attire/perfumes",
+            "Social happenings",
+            "Long conversations",
+            "Material comfort priority",
+            "Energetic feeling"
+          ],
+          "nature": "Growth"
+        },
+        "5th_house": {
+          "effects": [
+            "Entertaining time",
+            "Financial increase",
+            "Government exam success",
+            "Promotion expected",
+            "Society position rise",
+            "Friends/elders good",
+            "Smooth relationships",
+            "Sensuous times",
+            "New family member"
+          ],
+          "nature": "Entertainment"
+        },
+        "6th_house": {
+          "effects": [
+            "Trying times",
+            "Endeavor troubles",
+            "Compromise with enemies",
+            "Wife/children arguments",
+            "Long travel avoided",
+            "Accident susceptibility",
+            "Health extra attention",
+            "Society honor risk",
+            "Workplace humiliation"
+          ],
+          "nature": "Trying"
+        },
+        "7th_house": {
+          "effects": [
+            "Women trouble",
+            "Wife ill health",
+            "Gynaecological diseases",
+            "Mental agitation",
+            "Wicked friends realized",
+            "Distress/anger suffered",
+            "Venereal diseases",
+            "Professional unconducive",
+            "Authority honor"
+          ],
+          "nature": "Troublesome"
+        },
+        "8th_house": {
+          "effects": [
+            "Good times",
+            "Physical comforts",
+            "Previous miseries overcome",
+            "Property/house acquisition",
+            "Good match expected",
+            "Fortune brought",
+            "Pleasant women company",
+            "Health good",
+            "Student progressive"
+          ],
+          "nature": "Good"
+        },
+        "9th_house": {
+          "effects": [
+            "New wardrobe onset",
+            "Material comfort/happiness",
+            "Financial gain",
+            "Jewellery indulgence",
+            "Business profits",
+            "Education success",
+            "Auspicious home deeds",
+            "Marriage decision",
+            "Long journey"
+          ],
+          "nature": "Comfort"
+        },
+        "10th_house": {
+          "effects": [
+            "Mental anguish/agitation",
+            "Physical health suffers",
+            "Finance extra careful",
+            "Loans avoided",
+            "Enemy beware",
+            "Society defamation",
+            "Relative caution",
+            "Spouse arguments",
+            "Authority trouble"
+          ],
+          "nature": "Anguish"
+        },
+        "11th_house": {
+          "effects": [
+            "Financial security",
+            "Debt relief",
+            "Economic problem solutions",
+            "Endeavor success",
+            "Popularity increase",
+            "Reputation upward",
+            "Material comfort concentration",
+            "House ownership",
+            "Status prestige rise"
+          ],
+          "nature": "Security"
+        },
+        "12th_house": {
+          "effects": [
+            "Mixed results",
+            "Financial gain",
+            "Unforeseen losses",
+            "Foreign trip expenditure",
+            "Conjugal bliss",
+            "Sensual pleasure",
+            "Friends cooperative",
+            "Sharp weapons avoided",
+            "Agricultural care"
+          ],
+          "nature": "Mixed"
+        }
+      },
+      "remedies_by_house": {
+        "1st_house": {
+          "effects": "Handsome, amorous",
+          "remedies": [
+            "Don't marry at 25",
+            "Act on others' advice",
+            "Serve black cow",
+            "Avoid daytime sex",
+            "Bathe with curd",
+            "Intake cow urine"
+          ]
+        },
+        "2nd_house": {
+          "effects": "Evil towards others harmful",
+          "remedies": [
+            "Intake Mars things for son",
+            "Feed yellow potatoes to cows",
+            "Offer cow ghee in temple",
+            "Avoid adultery"
+          ]
+        },
+        "3rd_house": {
+          "effects": "Charming, loved by all",
+          "remedies": [
+            "Respect wife",
+            "Avoid other women flirting"
+          ]
+        },
+        "4th_house": {
+          "effects": "Two wives possible",
+          "remedies": [
+            "Change wife name, remarry",
+            "Throw rice/silver/milk in water",
+            "Keep roof clean",
+            "Drop Jupiter things in river"
+          ]
+        },
+        "5th_house": {
+          "effects": "Flirt, amorous",
+          "remedies": [
+            "Don't marry against parents",
+            "Serve cows/mother-like women",
+            "Avoid other women",
+            "Wife wash with curd/milk"
+          ]
+        },
+        "6th_house": {
+          "effects": "Debilitated",
+          "remedies": [
+            "Wife puts gold clips",
+            "Spouse not barefoot",
+            "Wash private with red medicine"
+          ]
+        },
+        "7th_house": {
+          "effects": "Very good results",
+          "remedies": [
+            "No white cow domestication",
+            "Serve red cows",
+            "Donate Jawar equal weight",
+            "Throw blue flowers 43 days"
+          ]
+        },
+        "8th_house": {
+          "effects": "Rotten and poisonous",
+          "remedies": [
+            "Don't accept daan",
+            "Bow in worship places",
+            "Throw copper/blue in gutter 10 days",
+            "Wash private with curd"
+          ]
+        },
+        "9th_house": {
+          "effects": "Not good results",
+          "remedies": [
+            "Bury silver/honey in foundation",
+            "Wear red silver bangles",
+            "Bury silver under Neem 43 days"
+          ]
+        },
+        "10th_house": {
+          "effects": "Greedy, spouse controlled",
+          "remedies": [
+            "Wash private with curd",
+            "Western wall mud",
+            "Abstain wine/non-veg",
+            "Donate black cow when ill"
+          ]
+        },
+        "11th_house": {
+          "effects": "Jupiter/Saturn influenced",
+          "remedies": [
+            "Mercury remedies useful",
+            "Give oil Saturday",
+            "Drink milk with hot gold"
+          ]
+        },
+        "12th_house": {
+          "effects": "Exalted, very beneficial",
+          "remedies": [
+            "Bury blue flowers sunset",
+            "Wife gives charity",
+            "Domesticate/donate cows",
+            "Offer love/respect to wife"
+          ]
+        }
+      }
+    },
+    "rahu": {
+      "general_characteristics": {
+        "nature": "Dragon's Head, shadowy planet, serpent's head",
+        "description": "Unlike other planets, not observable with shape or mass",
+        "movement": "Interrelated with Ketu, always opposite",
+        "significance": "Greater influence in Kaliyug",
+        "friends": ["Saturn", "Mercury", "Ketu"],
+        "enemies": ["Sun", "Mars", "Venus"],
+        "neutral": ["Jupiter", "Moon"],
+        "exalted_houses": [3, 6],
+        "debilitated_houses": [8, 9, 11],
+        "pukka_ghar": 12,
+        "highly_auspicious_houses": [3, 4, 6],
+        "color": "Black and white"
+      },
+      "placements_in_houses": {
+        "1st_house": [
+          "Obliging",
+          "Sympathetic",
+          "Abortion",
+          "Courageous",
+          "Sickly wife or husband"
+        ],
+        "2nd_house": [
+          "Poor if afflicted",
+          "More than one wife",
+          "Dark complexion",
+          "Diseased face",
+          "Peevish",
+          "Luxurious dinners"
+        ],
+        "3rd_house": [
+          "Few children",
+          "Wealthy",
+          "Bold",
+          "Adventurous",
+          "Courageous",
+          "Good gymnast",
+          "Many relations"
+        ],
+        "4th_house": [
+          "Liaison with women of easy virtue",
+          "Subordinate",
+          "Proficient in European languages"
+        ],
+        "5th_house": [
+          "Childless",
+          "Flatulent",
+          "Tyrannical",
+          "Polite",
+          "Narrow-minded",
+          "Hard-hearted"
+        ],
+        "6th_house": [
+          "Enjoyment",
+          "Venereal complaints",
+          "No enemies",
+          "Many cousins"
+        ],
+        "7th_house": [
+          "Wife menstrual disorders",
+          "Widow/divorcee connection",
+          "Diabetes",
+          "Luxurious food",
+          "Unhappy"
+        ],
+        "8th_house": [
+          "Vicious",
+          "Degraded",
+          "Quarrelsome",
+          "Narrow-minded",
+          "Immoral",
+          "Adulterous"
+        ],
+        "9th_house": [
+          "Puppet in wife's hands",
+          "Impolite",
+          "Uncharitable",
+          "Emaciated waist",
+          "Loose morals"
+        ],
+        "10th_house": [
+          "Intimacy with widows",
+          "Taste in poetry/literature",
+          "Good artist",
+          "Traveller",
+          "Learned"
+        ],
+        "11th_house": [
+          "Wealthy",
+          "Influential among lower castes",
+          "Many children",
+          "Good agriculturist"
+        ],
+        "12th_house": [
+          "Deformed",
+          "Few children",
+          "Defective sight",
+          "Many losses",
+          "Saintly"
+        ]
+      },
+      "transit_effects_from_moon": {
+        "1st_house": {
+          "effects": [
+            "Negative life effects",
+            "Financial resource loss",
+            "Money wastage",
+            "Enemy trouble",
+            "Humiliation faced",
+            "Unseen problems",
+            "Ill-willed person beware",
+            "Black magic avoided",
+            "Unknown ailment"
+          ],
+          "nature": "Negative"
+        },
+        "2nd_house": {
+          "effects": [
+            "Troubled financially/physically/socially",
+            "Expenditure watch",
+            "Theft beware",
+            "Health/food care",
+            "Stomach disorders",
+            "Litigation avoided",
+            "Spouse rough phase",
+            "Society scandal damage",
+            "Image damage"
+          ],
+          "nature": "Troubled"
+        },
+        "3rd_house": {
+          "effects": [
+            "Money from sources",
+            "Enemy financial benefits",
+            "Salary raise",
+            "Trade profit",
+            "Work progress",
+            "Learning efficiency",
+            "Health fine",
+            "Social good time",
+            "Taste buds satisfied"
+          ],
+          "nature": "Good times"
+        },
+        "4th_house": {
+          "effects": [
+            "Troubled time",
+            "Property loss",
+            "Residence change",
+            "Litigation avoided",
+            "Disease susceptibility",
+            "Spouse/children care",
+            "Travel accident",
+            "Vehicle/valuables loss",
+            "Enemy beware"
+          ],
+          "nature": "Troubled"
+        },
+        "5th_house": {
+          "effects": [
+            "Children grief",
+            "Financial loss period",
+            "Unnecessary purchases",
+            "Parents/spouse health concern",
+            "Children worry",
+            "Son affliction period",
+            "Ailments serious",
+            "Mental agony",
+            "Wrong decisions"
+          ],
+          "nature": "Grief"
+        },
+        "6th_house": {
+          "effects": [
+            "Various source wealth",
+            "Smooth work sailing",
+            "Trade/business profit",
+            "Agricultural gain",
+            "Opponent monetary gain",
+            "Maternal uncle benefit",
+            "Ailment cure possible",
+            "Society respect",
+            "Material comfort"
+          ],
+          "nature": "Wealth"
+        },
+        "7th_house": {
+          "effects": [
+            "Fatigue and worry",
+            "Property litigation avoided",
+            "Trade loss/progress",
+            "Spouse arguments",
+            "Friends/relatives peace",
+            "Society relationship avoided",
+            "Humiliation avoided",
+            "Health attention",
+            "Distant place trouble"
+          ],
+          "nature": "Worry"
+        },
+        "8th_house": {
+          "effects": [
+            "Physical ailments",
+            "Reproductive organ diseases",
+            "Smallpox risk",
+            "STDs possible",
+            "Mental anxiety",
+            "Life risk avoided",
+            "Maraca period caution",
+            "Health priority",
+            "False charges"
+          ],
+          "nature": "Ailments"
+        },
+        "9th_house": {
+          "effects": [
+            "Wealth loss",
+            "Malicious activities",
+            "Lottery investment",
+            "Speculation losses",
+            "Poverty embrace",
+            "Religious code break",
+            "Black magic practice",
+            "Professional bumpy ride",
+            "Bad company"
+          ],
+          "nature": "Loss"
+        },
+        "10th_house": {
+          "effects": [
+            "Mixed results",
+            "Great first half",
+            "Negative second half",
+            "Work appreciation",
+            "Family happiness",
+            "Distinction gain",
+            "New opportunities",
+            "Parents health attention",
+            "Financial watch"
+          ],
+          "nature": "Mixed"
+        },
+        "11th_house": {
+          "effects": [
+            "Good times",
+            "Financial favorable",
+            "Communication harmony",
+            "Support present",
+            "Landed property",
+            "Ambition accomplishment",
+            "Big investment project",
+            "Children marriage",
+            "Spiritual guru meeting"
+          ],
+          "nature": "Good"
+        },
+        "12th_house": {
+          "effects": [
+            "Bumpy time",
+            "Business/professional loss",
+            "Task completion difficulty",
+            "Work courage shaken",
+            "Indebtedness embrace",
+            "Property loss",
+            "Actions harmonize",
+            "Intentions harmonize",
+            "Relationships improve"
+          ],
+          "nature": "Trouble"
+        }
+      },
+      "remedies_by_house": {
+        "1st_house": {
+          "effects": "King of planets position",
+          "remedies": [
+            "Offer 400gm lead in water",
+            "Wear silver in neck",
+            "Mix barley in milk 1:4 ratio",
+            "Offer coconut in water"
+          ]
+        },
+        "2nd_house": {
+          "effects": "Money/prestige/king life",
+          "remedies": [
+            "Keep solid silver ball",
+            "Wear Jupiter things",
+            "Keep cordial mother relations",
+            "No electric from in-laws"
+          ]
+        },
+        "3rd_house": {
+          "effects": "Pukka ghar, benefic",
+          "remedies": [
+            "Never keep ivory in house"
+          ]
+        },
+        "4th_house": {
+          "effects": "Moon enemy",
+          "remedies": [
+            "Wear silver",
+            "Offer 400gm coriander/almonds in water"
+          ]
+        },
+        "5th_house": {
+          "effects": "Abortions if malefic",
+          "remedies": [
+            "Keep silver elephant",
+            "Abstain wine/non-veg/adultery",
+            "Remarry wife"
+          ]
+        },
+        "6th_house": {
+          "effects": "Exalted, very good",
+          "remedies": [
+            "Keep black dog",
+            "Keep lead nail",
+            "Never harm brothers/sisters"
+          ]
+        },
+        "7th_house": {
+          "effects": "Rich but wife suffers",
+          "remedies": [
+            "Never marry before 21",
+            "Offer six coconuts in river"
+          ]
+        },
+        "8th_house": {
+          "effects": "Malefic effect",
+          "remedies": [
+            "Keep square silver piece",
+            "Keep Saunf under pillow",
+            "No electricity/power work"
+          ]
+        },
+        "9th_house": {
+          "effects": "Jupiter influenced",
+          "remedies": [
+            "Use saffron Tilak daily",
+            "Wear gold",
+            "Keep dog for progeny",
+            "Good in-law relations"
+          ]
+        },
+        "10th_house": {
+          "effects": "Depends on Saturn",
+          "remedies": [
+            "Use blue/black cap",
+            "Cover head",
+            "Offer 4kg khand",
+            "Feed blind people"
+          ]
+        },
+        "11th_house": {
+          "effects": "Saturn/Jupiter influenced",
+          "remedies": [
+            "Wear iron, silver glass",
+            "No electric gifts",
+            "No blue sapphire/ivory/elephant toys"
+          ]
+        },
+        "12th_house": {
+          "effects": "Mental troubles, insomnia",
+          "remedies": [
+            "Take meals in kitchen",
+            "Keep Saunf/khand under pillow"
+          ]
+        }
+      }
+    },
+    "ketu": {
+      "general_characteristics": {
+        "nature": "Dragon's Tail, shadowy planet, serpent's tail",
+        "represents": [
+          "Son",
+          "Grandson",
+          "Ear",
+          "Spine",
+          "Bed",
+          "Spirituality"
+        ],
+        "pukka_ghar": 6,
+        "exalted_houses": [5, 9, 12],
+        "debilitated_houses": [6, 8],
+        "friends": ["Venus", "Rahu"],
+        "enemies": ["Moon", "Mars"],
+        "time": "Dawn",
+        "day": "Sunday",
+        "colors": ["Black", "White"],
+        "age": 42,
+        "bed_significance": "Bed from in-laws auspicious for sons"
+      },
+      "placements_in_houses": {
+        "1st_house": [
+          "Emaciated figure",
+          "Weak constitution",
+          "Much perspiration",
+          "Weak-hearted",
+          "Slender",
+          "Piles",
+          "Sexual indulgence",
+          "Diplomatic"
+        ],
+        "2nd_house": [
+          "Bad speaker",
+          "Quiet",
+          "Quick in perception",
+          "Peevish",
+          "Hard-hearted",
+          "Thrifty",
+          "Economical"
+        ],
+        "3rd_house": [
+          "Adventurous",
+          "Strong",
+          "Artistic",
+          "Wealthy",
+          "Popular"
+        ],
+        "4th_house": [
+          "Quarrelsome",
+          "Licentious",
+          "Weak",
+          "Fear of poisons"
+        ],
+        "5th_house": [
+          "Liberal",
+          "Loss of children",
+          "Sinful",
+          "Immoral if afflicted"
+        ],
+        "6th_house": [
+          "Fond of adultery",
+          "Good conversationalist",
+          "Licentious",
+          "Venereal complaints",
+          "Learned"
+        ],
+        "7th_house": [
+          "Passionate",
+          "Sinful",
+          "Connections with widows",
+          "Sickly wife"
+        ],
+        "8th_house": [
+          "Senseless",
+          "Obscure",
+          "Dull",
+          "Sanguine complexion",
+          "Piles troubles"
+        ],
+        "9th_house": [
+          "Short-sighted",
+          "Sinful",
+          "Untruthful",
+          "Thrifty",
+          "Many children",
+          "Good wife"
+        ],
+        "10th_house": [
+          "Fertile brain",
+          "Happy",
+          "Religious",
+          "Pilgrimages",
+          "Fond of scriptures"
+        ],
+        "11th_house": [
+          "Humorous",
+          "Witty",
+          "Licentious",
+          "Intelligent",
+          "Wealthy"
+        ],
+        "12th_house": [
+          "Capricious",
+          "Unsettled mind",
+          "Foreign residence",
+          "Much travelling",
+          "Licentious",
+          "Spiritual knowledge"
+        ]
+      },
+      "transit_effects_from_moon": {
+        "1st_house": {
+          "effects": [
+            "Obsessive desires",
+            "High suspicion levels",
+            "Financial difficulties",
+            "Expenses soar",
+            "Loans avoided",
+            "Defamation activities",
+            "Health setbacks",
+            "Mental agitation",
+            "Family fights"
+          ],
+          "nature": "Challenging"
+        },
+        "2nd_house": {
+          "effects": [
+            "Wealth loss",
+            "Theft in house",
+            "Loans avoided",
+            "Physical/mental ailments",
+            "Eye care needed",
+            "Fire accidents avoided",
+            "Spouse conflict",
+            "Waning moon worse",
+            "Business extra attention"
+          ],
+          "nature": "Loss signified"
+        },
+        "3rd_house": {
+          "effects": [
+            "Happiness/gains",
+            "Progress/prosperity",
+            "Work successful completion",
+            "Influence ability",
+            "Colleague cooperation",
+            "Waning business careful",
+            "Name/fame/respect",
+            "Academic excellence",
+            "Northeastern travel"
+          ],
+          "nature": "Good times"
+        },
+        "4th_house": {
+          "effects": [
+            "Troubled times",
+            "Work extra effort",
+            "Not smooth financially",
+            "Heavy loans avoided",
+            "Property disputes avoided",
+            "Health attention",
+            "Heat avoided",
+            "Restlessness constantly",
+            "Bad company avoided"
+          ],
+          "nature": "Troubled"
+        },
+        "5th_house": {
+          "effects": [
+            "Ups and downs",
+            "Money unusual gain",
+            "Excessive expenditure",
+            "Children mental agony",
+            "Waxing children worry",
+            "Family death possible",
+            "Relative tricky situations",
+            "Family enemies",
+            "Mental anguish deep"
+          ],
+          "nature": "Significant ups/downs"
+        },
+        "6th_house": {
+          "effects": [
+            "Good times",
+            "Business progress",
+            "Business improvement",
+            "Agricultural profit",
+            "Cattle profit",
+            "Financially sound",
+            "Money lending gains",
+            "Opponent defeat",
+            "Opponent gain"
+          ],
+          "nature": "Good"
+        },
+        "7th_house": {
+          "effects": [
+            "Personal sufferings",
+            "Health utmost care",
+            "Stomach diseases",
+            "Lacklustre fatigued",
+            "Mentally sick",
+            "Useless expenses",
+            "Borrowing avoided",
+            "Agricultural theft",
+            "Spouse conduct maintained"
+          ],
+          "nature": "Suffering"
+        },
+        "8th_house": {
+          "effects": [
+            "Physical suffering",
+            "Health utmost care",
+            "Life risking avoided",
+            "Reproductive diseases",
+            "Small pox risk",
+            "STDs possible",
+            "Mental anxiety",
+            "Residence grief",
+            "Waxing good time"
+          ],
+          "nature": "Physical suffering"
+        },
+        "9th_house": {
+          "effects": [
+            "Physical complications",
+            "Mental qualms",
+            "Lottery investment",
+            "Speculation losses",
+            "Poverty embrace",
+            "Illicit activities",
+            "Religion unacceptable",
+            "Waning trade loss",
+            "Professional bumpy"
+          ],
+          "nature": "Complications"
+        },
+        "10th_house": {
+          "effects": [
+            "Mixed results",
+            "Moon waxing dependent",
+            "Income rise",
+            "Depraved people help",
+            "Work field progress",
+            "Waning money loss",
+            "Material loss",
+            "Wrong company",
+            "Enemy increase"
+          ],
+          "nature": "Mixed"
+        },
+        "11th_house": {
+          "effects": [
+            "Vital energetic period",
+            "Wealth attainment",
+            "Property acquisition",
+            "Ambition accomplishment",
+            "Big investment",
+            "Money sudden gain",
+            "Marriage age children",
+            "Spiritual guru",
+            "Exotic dairy food"
+          ],
+          "nature": "Vital/energetic"
+        },
+        "12th_house": {
+          "effects": [
+            "Bumpy time",
+            "Health extra attention",
+            "Bile diseases",
+            "Piles development",
+            "Spouse health concern",
+            "Conjugal life suffer",
+            "Finance care",
+            "Expenditure eye",
+            "Litigation imprisonment"
+          ],
+          "nature": "Bumpy"
+        }
+      },
+      "remedies_by_house": {
+        "1st_house": {
+          "effects": "Laborious, rich, happy",
+          "remedies": [
+            "Feed jaggery to monkeys",
+            "Apply saffron Tilak",
+            "Donate black/white blanket if offspring troubled"
+          ]
+        },
+        "2nd_house": {
+          "effects": "Paternal property if benefic",
+          "remedies": [
+            "Apply turmeric/saffron tilak",
+            "Don't be loose character",
+            "Visit temples, bow head"
+          ]
+        },
+        "3rd_house": {
+          "effects": "Children good, God-fearing",
+          "remedies": [
+            "Use saffron tilak",
+            "Wear gold",
+            "Offer jaggery/rice in water"
+          ]
+        },
+        "4th_house": {
+          "effects": "God-fearing, lucky for father",
+          "remedies": [
+            "Keep dog",
+            "Wear silver for peace",
+            "Offer yellow things in water"
+          ]
+        },
+        "5th_house": {
+          "effects": "Five sons if well placed",
+          "remedies": [
+            "Donate milk/sugar",
+            "Use Jupiter remedies"
+          ]
+        },
+        "6th_house": {
+          "effects": "Debilitated, Pucca house",
+          "remedies": [
+            "Wear golden ring left hand",
+            "Drink saffron milk, wear gold ear",
+            "Heat gold rod, dip in milk",
+            "Keep dog"
+          ]
+        },
+        "7th_house": {
+          "effects": "Greedy if benefic",
+          "remedies": [
+            "Never false promise/pride/abuse",
+            "Use saffron Tilak",
+            "Use Jupiter remedies if serious"
+          ]
+        },
+        "8th_house": {
+          "effects": "Wife health problems",
+          "remedies": [
+            "Keep dog",
+            "Donate black/white blanket",
+            "Worship Lord Ganesha",
+            "Wear gold in ear",
+            "Use saffron tilak"
+          ]
+        },
+        "9th_house": {
+          "effects": "Exalted, obedient, lucky",
+          "remedies": [
+            "Keep dog",
+            "Establish gold brick in house",
+            "Wear gold in ear",
+            "Respect father-in-law"
+          ]
+        },
+        "10th_house": {
+          "effects": "Depends on Saturn",
+          "remedies": [
+            "Keep silver honey pot",
+            "Keep dog after 48",
+            "Avoid adultery",
+            "Use Moon/Jupiter remedies"
+          ]
+        },
+        "11th_house": {
+          "effects": "Very good, gives wealth",
+          "remedies": [
+            "Keep black dog",
+            "Wear onyx/emerald"
+          ]
+        },
+        "12th_house": {
+          "effects": "Exalted, wealthy",
+          "remedies": [
+            "Worship Lord Ganesha",
+            "Don't have loose character",
+            "Keep dog",
+            "Saunf/khand under pillow"
+          ]
+        }
+      }
+    }
+  },
+  "chapter_index": {
+    "chapters": [
+      {
+        "number": 1,
+        "title": "Placement of Planets in Different Houses - Sun"
+      },
+      {
+        "number": 2,
+        "title": "Placement of Planets in Different Signs - Sun"
+      },
+      {
+        "number": 3,
+        "title": "Transiting Sun from Moon"
+      },
+      {
+        "number": 4,
+        "title": "Sun Remedies"
+      },
+      {
+        "number": 5,
+        "title": "Moon in Different Houses"
+      },
+      {
+        "number": 6,
+        "title": "Moon in Different Signs"
+      },
+      {
+        "number": 7,
+        "title": "Transiting Moon from Moon"
+      },
+      {
+        "number": 8,
+        "title": "Moon Remedies"
+      },
+      {
+        "number": 9,
+        "title": "Mars in Different Houses"
+      },
+      {
+        "number": 10,
+        "title": "Mars in Different Signs"
+      },
+      {
+        "number": 11,
+        "title": "Transiting Mars from Moon"
+      },
+      {
+        "number": 12,
+        "title": "Mars Remedies"
+      },
+      {
+        "number": 13,
+        "title": "Jupiter in Different Houses"
+      },
+      {
+        "number": 14,
+        "title": "Jupiter in Different Signs"
+      },
+      {
+        "number": 15,
+        "title": "Transiting Jupiter from Moon"
+      },
+      {
+        "number": 16,
+        "title": "Jupiter Remedies"
+      },
+      {
+        "number": 17,
+        "title": "Saturn in Different Houses"
+      },
+      {
+        "number": 18,
+        "title": "Saturn in Different Signs"
+      },
+      {
+        "number": 19,
+        "title": "Transiting Saturn from Moon"
+      },
+      {
+        "number": 20,
+        "title": "Saturn Remedies"
+      },
+      {
+        "number": 21,
+        "title": "Saturn Seven and Half Cycle (Sade-Sati)"
+      },
+      {
+        "number": 22,
+        "title": "Mercury in Different Houses"
+      },
+      {
+        "number": 23,
+        "title": "Mercury in Different Signs"
+      },
+      {
+        "number": 24,
+        "title": "Transiting Mercury from Moon"
+      },
+      {
+        "number": 25,
+        "title": "Mercury Remedies"
+      },
+      {
+        "number": 26,
+        "title": "Venus in Different Houses"
+      },
+      {
+        "number": 27,
+        "title": "Venus in Different Signs"
+      },
+      {
+        "number": 28,
+        "title": "Transiting Venus from Moon"
+      },
+      {
+        "number": 29,
+        "title": "Venus Remedies"
+      },
+      {
+        "number": 30,
+        "title": "Dragon Head (Rahu) in Houses"
+      },
+      {
+        "number": 31,
+        "title": "Dragon Head (Rahu) from Moon"
+      },
+      {
+        "number": 32,
+        "title": "Dragon Head (Rahu) Remedies"
+      },
+      {
+        "number": 33,
+        "title": "Dragon Tail (Ketu) from Houses"
+      },
+      {
+        "number": 34,
+        "title": "Transiting Dragon Tail (Ketu)"
+      },
+      {
+        "number": 35,
+        "title": "Dragon Tail (Ketu) Remedies"
+      },
+      {
+        "number": 36,
+        "title": "Other Publications"
+      }
+    ]
+  },
+  "key_concepts": {
+    "transits": "Movement of planets from one sign to another affecting natal positions",
+    "natal_chart": "Birth chart showing planet positions at time of birth",
+    "aspects": "Angular relationships between planets (conjunction, opposition, square, trine)",
+    "houses": "12 divisions of the zodiac representing life areas",
+    "signs": "12 zodiac signs through which planets transit",
+    "remedies": "Astrological solutions to mitigate negative planetary effects",
+    "benefic": "Favorable planetary influence",
+    "malefic": "Unfavorable planetary influence",
+    "exaltation": "Planet at its strongest position",
+    "debilitation": "Planet at its weakest position"
+  }
+}
