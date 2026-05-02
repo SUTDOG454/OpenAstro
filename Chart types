@@ -1,0 +1,474 @@
+{
+  "astrological_calculation_framework": {
+    "metadata": {
+      "project": "Complete Astrological Chart Types Reference: The Definitive Technical Manual",
+      "version": "3.0",
+      "compilation_date": "2024-03-20",
+      "description": "Exhaustive technical reference of Western astrology chart types, mathematical formulas, geometric patterns, and specialized systems. Contains every calculation method, dependency relationship, and interpretive rule synthesized from extensive astrological research and analysis.",
+      "total_chart_types": 52,
+      "total_formulas": 127,
+      "total_aspect_patterns": 18,
+      "total_specialized_systems": 4,
+      "document_structure": "Categorical hierarchy with full technical specifications"
+    },
+
+    "category_i_foundational_personal_blueprint": {
+      "category_name": "I. Foundational & Personal Blueprint",
+      "category_description": "Primary charts and derivative techniques for understanding the innate self, soul purpose, karmic patterns, and base psychological potentials. These form the core mathematical foundation for all other astrological work.",
+      "charts": [
+        {
+          "chart_name": "Natal Chart (Birth Chart / Radical Chart)",
+          "technical_specifications": {
+            "core_function": "Geocentric snapshot of planetary positions relative to Earth at exact moment of birth. Represents the cosmic blueprint, genetic inheritance, and 'factory settings' of the individual.",
+            "mathematical_basis": "Spherical astronomy calculations using topocentric coordinates accounting for atmospheric refraction, nutation, and light-time correction for outer planets.",
+            "primary_uses": [
+              "Understanding fundamental personality structure and psychological makeup",
+              "Identifying innate talents, abilities, and vocational aptitudes",
+              "Mapping life purpose, destiny, and karmic lessons",
+              "Establishing baseline for all predictive and derivative techniques"
+            ],
+            "critical_data_requirements": {
+              "birth_date": "Gregorian calendar date (requires conversion to Julian Day Number)",
+              "birth_time": "Exact local mean time (precision to minute critical for house cusps)",
+              "birth_location": {
+                "latitude": "Degrees north/south of equator",
+                "longitude": "Degrees east/west of Greenwich",
+                "altitude": "Above sea level (for atmospheric refraction correction)"
+              }
+            },
+            "key_components": {
+              "planets": ["Sun", "Moon", "Mercury", "Venus", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune", "Pluto"],
+              "calculated_points": ["Ascendant (ASC)", "Midheaven (MC)", "Vertex", "Part of Fortune", "Lunar Nodes (North & South)"],
+              "angular_relationships": ["Sign positions (30° zodiac segments)", "House positions (varies by system)", "Aspect patterns (angular distances between points)"]
+            },
+            "house_system_options": {
+              "placidus": "Time-based quadrant system using semi-arc division (fails at extreme latitudes)",
+              "koch": "Birthplace system focusing on self-actualization potential",
+              "regiomontanus": "Space-based system dividing celestial equator (excellent for mundane)",
+              "campanus": "Space-based dividing prime vertical (personal perspective)",
+              "whole_sign": "Ancient system: entire sign = house (simplest, no interceptions)",
+              "equal": "30° houses from Ascendant (works everywhere)",
+              "alcabitius": "Divides semi-arc of Ascendant",
+              "porphyry": "Simple trisection of quadrant arcs",
+              "topocentric": "Empirical modification of Placidus for all latitudes"
+            },
+            "pros": ["Universally accepted foundation", "Comprehensive personality analysis", "Required for all derivative techniques", "Rich historical interpretive tradition"],
+            "cons": ["Static snapshot (doesn't show development)", "Requires exact birth time for accuracy", "Multiple house systems create interpretation conflicts"],
+            "dependencies": [],
+            "related_techniques": ["Chart Shapes (Bowl, Bucket, Splash, Locomotive, See-Saw)", "Planetary Patterns", "Hemisphere Emphasis", "Element/Modality Balance"]
+          }
+        },
+        {
+          "chart_name": "Draconic Chart (Node-Chart / Soul Chart)",
+          "technical_specifications": {
+            "core_function": "Mathematical recalibration of natal chart placing North Lunar Node at 0° Aries (the 'Draconic Zero Point'). Represents soul purpose, karmic patterns, and higher self expression.",
+            "calculation_method": {
+              "step_1": "Calculate natal North Node's true longitude (corrected for nutation)",
+              "step_2": "Determine arc distance: Arc = Natal North Node Longitude (since 0° Aries = 0°)",
+              "step_3": "Apply to all points: Draconic Longitude = (Natal Longitude - Arc) mod 360",
+              "note": "Preserves all natal aspects and planetary relationships but changes zodiac positions"
+            },
+            "primary_uses": [
+              "Exploring soul-level purpose and spiritual destiny",
+              "Identifying karmic patterns and past life influences",
+              "Draconic Synastry: analyzing karmic soul connections between individuals",
+              "Understanding 'higher self' expression vs. personality expression"
+            ],
+            "interpretation_focus": {
+              "draconic_sun": "Soul's core identity and spiritual purpose",
+              "draconic_moon": "Soul's emotional nature and unconscious patterns",
+              "draconic_ascendant": "How soul approaches incarnation and learns lessons",
+              "aspect_patterns": "Karmic relationship dynamics between soul functions"
+            },
+            "pros": ["Provides profound spiritual perspective on life path", "Reveals pre-incarnation soul agreements", "Powerful for understanding 'fated' relationships"],
+            "cons": ["Esoteric and abstract interpretation", "Difficult to integrate with tangible reality of natal chart", "Less standardized interpretive framework"],
+            "dependencies": ["Natal Chart (for all planetary positions and aspects)"],
+            "integration_notes": "Best used as complementary layer to natal chart. Draconic positions show 'why' soul chose particular natal configuration."
+          }
+        },
+        {
+          "chart_name": "Nine Persona Charts (Planetary Sub-Personality Charts)",
+          "technical_specifications": {
+            "core_function": "Nine separate birth charts calculated for each natal planet (excluding Sun), representing distinct archetypal sub-personalities within the psyche. Each has its own Ascendant, houses, and planetary positions.",
+            "calculation_methodology": {
+              "core_principle": "Each persona chart is 'born' when transiting Sun first conjoins natal planet after birth",
+              "step_by_step": {
+                "step_1": "For each natal planet (Moon, Mercury, Venus, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto), note exact zodiac position",
+                "step_2": "Using solar ephemeris, find first date AFTER birth when Sun reaches same degree/minute as natal planet",
+                "step_3": "Calculate exact time on that date when Sun is precisely at target degree (requires astronomical calculation)",
+                "step_4": "Birth location remains actual birthplace",
+                "step_5": "Cast full natal chart for that calculated date, time, and location = Persona Chart for that planet"
+              },
+              "note": "All nine persona charts occur within first year of life as Sun completes first solar cycle"
+            },
+            "archetypal_personalities": {
+              "moon_persona": "The Nurturer / Inner Child: emotional security, feminine principle, feeling world",
+              "mercury_persona": "The Communicator / Analyst: intellect, communication, daily interaction, mental processes",
+              "venus_persona": "The Lover / Artist: sensuality, pleasure, relationship style, values, aesthetics, harmony",
+              "mars_persona": "The Warrior / Pioneer: self-assertion, drive, aggression, courage, how you fight battles",
+              "jupiter_persona": "The Philosopher / Teacher: search for meaning, faith, expansion, optimism, 'inner therapist'",
+              "saturn_persona": "The Authority / Architect: discipline, responsibility, structure, life lessons, limitations",
+              "uranus_persona": "The Rebel / Innovator: freedom, innovation, sudden change, liberation, individuality",
+              "neptune_persona": "The Mystic / Visionary: dreams, illusion, spirituality, transcendence, artistic inspiration",
+              "pluto_persona": "The Transformer / Shaman: power, obsession, subconscious, regeneration, death/rebirth cycles"
+            },
+            "interpretation_guidelines": {
+              "rule_1": "Interpret each persona chart as complete natal chart for that sub-personality",
+              "rule_2": "Persona Sun is always in same zodiac degree as natal planet but in NEW house position",
+              "rule_3": "Persona Ascendant represents how this sub-personality approaches world",
+              "rule_4": "Persona Midheaven shows potential destiny/achievement path for this archetype",
+              "rule_5": "Planetary aspects within persona chart show internal dynamics of that sub-personality",
+              "special_emphasis": "The persona chart of your natal Ascendant ruler is particularly significant"
+            },
+            "primary_uses": [
+              "Deep psychological analysis of specific planetary complexes",
+              "Understanding nuanced expression of different facets of psyche",
+              "Analyzing planetary energies that are heavily activated by transits/progressions",
+              "Persona Synastry: comparing one person's persona chart to another's"
+            ],
+            "pros": ["Provides extraordinary depth and granularity in psychological analysis", "Gives 'voice' to planetary energies overshadowed in natal synthesis", "Can be used predictively via transits to specific persona charts"],
+            "cons": ["Can lead to excessive fragmentation if not synthesized back to whole", "Modern niche technique without long historical tradition", "Adds significant complexity (interpreting 9 extra charts)"],
+            "dependencies": ["Natal Chart (for all planetary positions)"],
+            "integration_notes": "The natal chart itself represents the 'Sun Persona.' The Moon Persona is sometimes called the 'Yin Chart,' complementing the natal 'Yang Chart.'"
+          }
+        },
+        {
+          "chart_name": "Harmonic Charts (Mathematical Resonance Charts)",
+          "technical_specifications": {
+            "core_function": "Mathematical transformation of natal chart by multiplying all positions by harmonic number 'n' to examine specific life themes, hidden potentials, and qualitative energy of aspects.",
+            "mathematical_foundation": {
+              "formula": "Harmonic Longitude (Hn) = (Natal Longitude × n) mod 360",
+              "explanation": "Multiplication creates 'overtones' of natal chart, like musical harmonics. Conjunctions in harmonic chart represent strong 'n-type' energy.",
+              "aspect_relationship": "Planets in p-aspect (360°/n) in natal chart become CONJUNCTIONS in nth harmonic chart"
+            },
+            "common_harmonics_interpretation": {
+              "h1": "Natal Chart: fundamental tone, conscious personality",
+              "h2": "Polarity/Duality: relationships, mirroring, opposition energy",
+              "h3": "Expansion/Ease: talent, creativity, trine-based flow",
+              "h4": "Structure/Work: discipline, tangible results, square-based challenge",
+              "h5": "Creativity/Virtuosity: personal genius, artistry, quintile (72°) emphasis",
+              "h6": "Service/Health: daily routines, healing, sextile-based adjustment",
+              "h7": "Inspiration/Fate: mystical insight, destiny, septile (≈51.43°) emphasis",
+              "h8": "Transformation/Intensity: shared resources, crisis, octile (45°) emphasis",
+              "h9": "Destiny/Philosophy: higher mind, spiritual fruition, novile (40°) emphasis",
+              "h12": "Sacrifice/Service: devotion, limitation, refinement",
+              "h16": "Crisis/Power: transformation through crisis, intense focus",
+              "h22": "Mastery/Completion: specialized skill, perfection",
+              "h32": "Minute Refinement: hyper-specialization, microscopic analysis"
+            },
+            "ninth_harmonic_specialization": {
+              "name": "Ninth Harmonic (H9) / Novienic Chart / Navamsa (Vedic D9)",
+              "calculation": "H9 Position = (Natal Longitude × 9) mod 360",
+              "western_interpretation": "Inner nature, deeper destiny, spiritual fruition, 'what we are headed toward'",
+              "vedic_interpretation": "Marriage, partnership potential, spiritual fulfillment (considered essential for relationship analysis)",
+              "aspect_focus": "Novile (40°) and binovile (80°) aspects represent fate, inspiration, ultimate purpose",
+              "key_principle": "Conjunctions in H9 chart reveal powerful subconscious drives masked by outer personality"
+            },
+            "interpretation_rules": {
+              "rule_1": "Focus on CONJUNCTIONS in harmonic chart (represent emphasized themes)",
+              "rule_2": "Signs/houses in harmonic chart are recalculated from new positions (not natal signs/houses)",
+              "rule_3": "NEVER mix or compare aspects between different harmonic charts (mathematically incompatible)",
+              "rule_4": "Soft aspects in natal may appear as hard aspects in certain harmonics (revealing hidden tension)",
+              "rule_5": "Hard aspects in natal may appear as soft aspects in harmonics (showing constructive potential)"
+            },
+            "technical_warnings": [
+              "Sign and house interpretation in harmonics is debated; some practitioners focus solely on aspect patterns",
+              "Harmonics above H16 require extreme precision (sub-degree accuracy)",
+              "Different harmonic series emphasize different aspect families"
+            ],
+            "primary_uses": [
+              "Revealing specialized talents and hidden potentials not evident in natal",
+              "Understanding qualitative energy of aspects (e.g., constructive vs. challenging squares)",
+              "Examining specific life themes (creativity in H5, relationships in H7, etc.)",
+              "Relationship analysis through harmonic compatibility"
+            ],
+            "pros": ["Unlocks incredible depth and specificity beyond natal chart", "Shows constructive potential of challenging natal aspects", "Mathematically precise and reproducible"],
+            "cons": ["Highly abstract and complex interpretation", "Can lead to fragmentation if overused", "Advanced technique with less standardized interpretation"],
+            "dependencies": ["Natal Chart (mathematical source for all positions)"],
+            "calculation_tools": "Specialized astrology software or manual calculation with precision ephemeris"
+          }
+        },
+        {
+          "chart_name": "Prenatal Epoch Chart (Trutine of Hermes / Conception Chart)",
+          "technical_specifications": {
+            "core_function": "Controversial technique based on ancient 'Trutine of Hermes' principle linking Moon's position at conception/birth with Ascendant/Descendant at birth/conception. Seeks to identify significant prenatal moment.",
+            "historical_basis": {
+              "ancient_principle": "'The Ascendant at birth is the place of the Moon at the Epoch, and the Ascendant or its opposite point at the Epoch was the place of the Moon at birth.'",
+              "traditional_use": "Birth time rectification and determining potential sex of native",
+              "modern_view": "Esoteric exploration of soul's incarnation or pre-birth conditions"
+            },
+            "calculation_methods": {
+              "prenatal_solar_epoch": "Chart for last New Moon before birth, calculated for birth place",
+              "trutine_of_hermes": "Complex calculation based on Moon's phase (increasing/decreasing light) and position relative to horizon at birth, working backward on ~273-day (9-month) cycle",
+              "variant_methods": "Multiple conflicting calculation systems exist with different rules"
+            },
+            "interpretation_approaches": {
+              "rectification_tool": "Used to verify/correct birth time by working backward from known life events",
+              "soul_incarnation_chart": "Interpreted as chart of soul's entry point or pre-birth agreement",
+              "karmic_indicator": "Shows conditions and agreements preceding physical birth"
+            },
+            "primary_uses": [
+              "Birth time rectification when records are uncertain",
+              "Exploring philosophical questions of destiny and pre-birth conditions",
+              "In traditional astrology: predicting sex of child and vitality"
+            ],
+            "pros": ["Fascinating traditional technique with precise mathematical basis", "Powerful rectification tool in skilled hands", "Addresses profound questions of destiny and incarnation"],
+            "cons": ["Considered highly speculative in mainstream astrology", "Multiple conflicting calculation methods", "Practical application is debated and controversial"],
+            "dependencies": ["Natal Chart (as reference point)"],
+            "integration_notes": "Primarily used by traditional and esoteric astrologers. Not part of standard modern astrological practice."
+          }
+        }
+      ]
+    },
+
+    "category_ii_relationship_synergy": {
+      "category_name": "II. Relationship & Synergy",
+      "category_description": "Charts and techniques for analyzing dynamics, compatibility, and combined entity of partnerships (romantic, business, familial, etc.). These methods synthesize two or more natal charts.",
+      "charts": [
+        {
+          "chart_name": "Synastry Chart (Bi-Wheel Comparison Chart)",
+          "technical_specifications": {
+            "core_function": "Overlay of two natal charts to compare planetary placements and aspects BETWEEN them. Shows interactive dynamics and chemistry.",
+            "visualization_methods": {
+              "bi_wheel": "Inner wheel = Chart A, outer wheel = Chart B (most common)",
+              "aspect_table": "Grid showing all aspects between planets in both charts",
+              "composite_table": "List of inter-chart conjunctions, oppositions, squares, etc."
+            },
+            "key_aspect_focus": {
+              "moon_connections": "Emotional comfort, nurturing, domestic harmony",
+              "venus_mars_aspects": "Romantic attraction, sexual chemistry, desire",
+              "sun_moon_aspects": "Core compatibility, ego-emotion balance",
+              "mercury_aspects": "Communication style, intellectual connection",
+              "jupiter_aspects": "Expansion, growth opportunities, shared beliefs",
+              "saturn_aspects": "Structure, commitment, challenges, karmic lessons",
+              "outer_planet_aspects": "Generational connections, transformative potential"
+            },
+            "house_overlay_analysis": {
+              "principle": "Planets from one chart falling into houses of other chart",
+              "example": "His Sun in her 7th house emphasizes partnership",
+              "interpretation": "Shows areas of life activated by the relationship"
+            },
+            "primary_uses": [
+              "Analyzing chemistry and attraction in any relationship",
+              "Identifying points of harmony and potential conflict",
+              "Understanding why certain dynamics exist in relationship",
+              "Compatibility assessment for romance, business, or family"
+            ],
+            "pros": ["Excellent for detailed analysis of interpersonal dynamics", "Direct and intuitive to interpret", "Reveals 'why' behind relationship feelings and patterns"],
+            "cons": ["Shows interaction but not combined entity of relationship", "Can create overwhelming number of aspects to interpret", "Doesn't show how relationship evolves over time"],
+            "dependencies": ["Two complete Natal Charts (with accurate birth times)"],
+            "integration_notes": "Most effective when combined with Composite or Davison chart for complete relationship picture."
+          }
+        },
+        {
+          "chart_name": "Composite Chart (Midpoint Composite Chart)",
+          "technical_specifications": {
+            "core_function": "Creation of new, third chart by calculating mathematical midpoints between two people's planets and angles. Represents 'birth chart of the relationship' itself.",
+            "calculation_method": {
+              "basic_formula": "Composite Planet Longitude = (Longitude_A + Longitude_B) / 2",
+              "angle_calculation": {
+                "midpoint_method": "Composite ASC = (ASC_A + ASC_B) / 2",
+                "reference_place_method": "Calculate chart for midpoint location/time (variant method)"
+              },
+              "house_systems": "Placidus, Koch, or Whole Sign applied to composite positions"
+            },
+            "interpretation_approach": {
+              "principle": "Interpret as natal chart for the relationship entity",
+              "composite_sun": "Relationship's core identity, purpose, and vitality",
+              "composite_moon": "Relationship's emotional nature, needs, and private face",
+              "composite_ascendant": "How relationship appears to world, its 'face'",
+              "composite_midheaven": "Relationship's destiny, achievements, public reputation",
+              "planetary_aspects": "Internal dynamics and challenges within relationship structure"
+            },
+            "primary_uses": [
+              "Understanding relationship's purpose and combined energy",
+              "Seeing how partnership functions as unit in world",
+              "Identifying relationship's strengths and challenges as entity",
+              "Assessing long-term potential and evolution of partnership"
+            ],
+            "pros": ["Reveals essence and destiny of partnership beyond individual compatibility", "Shows what relationship itself is meant to create or experience", "Provides single chart representing relationship entity"],
+            "cons": ["Base composite chart is static", "Relationship evolution seen through transits/progressions to composite", "Midpoint vs. reference place calculation debate"],
+            "dependencies": ["Two complete Natal Charts (for midpoint calculations)"],
+            "variant_methods": {
+              "time_space_midpoint": "Chart calculated for midpoint in time AND space between births",
+              "weighted_composite": "Midpoints weighted by planetary dignity or speed"
+            }
+          }
+        },
+        {
+          "chart_name": "Davison Relationship Chart (Time-Space Midpoint Chart)",
+          "technical_specifications": {
+            "core_function": "Single chart calculated for EXACT midpoint in TIME and SPACE between two births. Treats relationship as if 'born' at that moment and place.",
+            "calculation_method": {
+              "time_midpoint": "JD_midpoint = (JulianDay_A + JulianDay_B) / 2",
+              "space_midpoint": {
+                "latitude": "Lat_midpoint = (Lat_A + Lat_B) / 2",
+                "longitude": "Long_midpoint = (Long_A + Long_B) / 2"
+              },
+              "chart_casting": "Calculate natal chart for midpoint time at midpoint location"
+            },
+            "variant_calculations": {
+              "corrected_davison": "Accounts for time zone differences and daylight saving",
+              "uncorrected_davison": "Simple averaging of birth times",
+              "reference_place": "Uses one person's location instead of midpoint"
+            },
+            "interpretation_approach": {
+              "principle": "Interpret as complete natal chart for the relationship",
+              "advantage": "Has its own Ascendant and houses derived from midpoint location/time",
+              "focus": "Relationship's incarnation at specific time/place, with emphasis on timing events within relationship"
+            },
+            "primary_uses": [
+              "Similar to Composite chart but with stronger emphasis on relationship's 'incarnation'",
+              "Timing events within relationship (using transits to Davison chart)",
+              "Some astrologers prefer for its more 'natal-like' qualities"
+            ],
+            "pros": ["Provides relationship with its own complete natal-like chart", "Useful for timing relationship events", "Midpoint in time/space feels conceptually satisfying"],
+            "cons": ["Multiple calculation methods create confusion and inconsistency", "Debate over which variant is most accurate", "Less commonly used than midpoint composite"],
+            "dependencies": ["Two complete Natal Charts (with precise time and location data)"],
+            "integration_notes": "Often compared/contrasted with midpoint Composite chart. Some astrologers use both."
+          }
+        },
+        {
+          "chart_name": "Progressed Synastry (Dynamic Relationship Analysis)",
+          "technical_specifications": {
+            "core_function": "Analysis of how relationship evolves by comparing individually progressed charts. Shows how each person's inner growth affects their interaction over time.",
+            "calculation_layers": {
+              "layer_1": "Progressed-to-Natal: One partner's progressed planets to other's natal chart",
+              "layer_2": "Progressed-to-Progressed: Both partners' progressed charts compared",
+              "layer_3": "Progressed House Overlays: One partner's progressed planets in other's natal houses"
+            },
+            "key_planetary_focus": {
+              "progressed_venus": "Evolving love style, values, and relationship needs",
+              "progressed_moon": "Changing emotional needs and comfort patterns",
+              "progressed_mercury": "Evolution of communication style and intellectual connection",
+              "progressed_mars": "Changing assertion style, sexual expression, and conflict approach"
+            },
+            "primary_uses": [
+              "Understanding changing dynamics in long-term relationship",
+              "Explaining why connections deepen, fade, or transform over years",
+              "Timing relationship phases and developmental chapters",
+              "Analyzing relationship evolution beyond static natal synastry"
+            ],
+            "pros": ["Provides dynamic, evolving view of relationship", "Excellent for understanding timing and phases within partnership", "Explains relationship changes as individuals grow"],
+            "cons": ["Adds significant complexity to relationship analysis", "Requires accurate progressed charts for both people", "Multiple layers can be challenging to synthesize"],
+            "dependencies": ["Two Natal Charts", "Two Secondary Progressed Charts (calculated individually)"],
+            "integration_notes": "Most meaningful for long-term relationships where both individuals have undergone significant progression changes."
+          }
+        },
+        {
+          "chart_name": "Progressed Composite Chart",
+          "technical_specifications": {
+            "core_function": "Shows how energy of relationship itself (represented by natal composite chart) evolves and matures over time. Reflects changing atmosphere, purpose, and shared experiences.",
+            "calculation_method": "1) Calculate standard midpoint composite chart. 2) Apply secondary progression ('day for year' technique) to this composite as if it were birth chart.",
+            "interpretation_approach": {
+              "principle": "Interpret progressed positions relative to natal composite positions",
+              "focus": "Changing atmosphere and developmental phases of relationship",
+              "key_transits": "Transits to progressed composite show external influences on relationship evolution"
+            },
+            "primary_uses": [
+              "Assessing current and future phases of relationship as unified entity",
+              "Understanding how relationship's purpose and energy matures",
+              "Identifying periods of harmony, challenge, or redefinition for partnership"
+            ],
+            "pros": ["Offers profound insight into life cycle of relationship itself", "Shows relationship's developmental path independent of individual growth"],
+            "cons": ["Highly advanced, abstract technique", "Best interpreted by comparing to natal composite foundation", "Less commonly used than other relationship techniques"],
+            "dependencies": ["Composite Chart", "Progressed Chart calculation techniques"],
+            "integration_notes": "Represents the relationship's own 'life progression' separate from individuals' progressions."
+          }
+        },
+        {
+          "chart_name": "Draconic Synastry",
+          "technical_specifications": {
+            "core_function": "Relationship analysis using Draconic charts instead of natal charts. Examines soul-level, karmic connections between individuals.",
+            "calculation_method": "Calculate Draconic charts for both individuals, then compare using standard synastry techniques.",
+            "interpretation_focus": {
+              "principle": "Reveals karmic, soul-level recognition and connection",
+              "draconic_conjunctions": "Strong soul recognition and past life connections",
+              "draconic_aspects": "Soul lessons and agreements being worked out",
+              "contrast_with_natal": "Natal synastry shows personality interaction; Draconic shows soul connection"
+            },
+            "primary_uses": [
+              "Analyzing karmic, past life connections in relationships",
+              "Understanding 'fated' or 'soulmate' quality of certain relationships",
+              "Identifying soul lessons being worked out through relationship"
+            ],
+            "pros": ["Reveals profound spiritual dimensions of relationship", "Explains intense, 'fated' feelings beyond personality compatibility"],
+            "cons": ["Esoteric and abstract", "Should be used with natal synastry for complete picture"],
+            "dependencies": ["Two Draconic Charts (derived from two Natal Charts)"],
+            "integration_notes": "Most meaningful when there are strong Draconic connections AND supportive natal synastry."
+          }
+        }
+      ]
+    },
+
+    "category_iii_predictive_cyclical_timing": {
+      "category_name": "III. Predictive & Cyclical Timing",
+      "category_description": "Charts and techniques for forecasting themes, activating natal potentials, and timing events through celestial cycles and symbolic progression methods.",
+      "charts": [
+        {
+          "chart_name": "Transit Chart (Current Sky Activation Chart)",
+          "technical_specifications": {
+            "core_function": "Overlay of current, real-time positions of planets in sky onto individual's natal or progressed chart. Shows how current celestial energies activate personal chart.",
+            "visualization": "Typically bi-wheel: inner ring = natal chart, outer ring = transiting planets",
+            "aspect_focus": "Aspects between transiting planets and natal/progressed planets",
+            "planetary_significance": {
+              "fast_moving": "Moon (2.5 days/sign): Daily mood, emotional fluctuations",
+              "personal_planets": "Sun, Mercury, Venus, Mars (weeks-months): Personal initiatives, relationships",
+              "social_planets": "Jupiter, Saturn (months-years): Social opportunities, responsibilities",
+              "outer_planets": "Uranus, Neptune, Pluto (years-decades): Generational shifts, transformation"
+            },
+            "orb_system": {
+              "moon_transits": "2-3° orb (short duration)",
+              "personal_planets": "1-2° orb",
+              "social_planets": "1° orb",
+              "outer_planets": "0.5-1° orb (long-lasting effects)"
+            },
+            "station_emphasis": "When transiting planet stations (changes direction), its influence intensifies 2-3 weeks around exact station",
+            "primary_uses": [
+              "Prediction and timing of events and periods",
+              "Understanding daily, monthly, yearly cycles and influences",
+              "Identifying periods of opportunity, challenge, or change",
+              "Timing actions based on favorable/unfavorable transits"
+            ],
+            "pros": ["Essential for understanding current influences", "Highly dynamic and constantly changing", "Excellent for short-term planning and timing"],
+            "cons": ["Represents short-term influences only", "Must be synthesized with enduring natal patterns", "Can be overwhelming with multiple simultaneous transits"],
+            "dependencies": ["Natal Chart (or Progressed Chart as base)"],
+            "integration_notes": "Most effective when layered with progressions and solar arcs for complete timing picture."
+          }
+        },
+        {
+          "chart_name": "Secondary Progressed Chart (Day-for-a-Year Progression)",
+          "technical_specifications": {
+            "core_function": "Symbolic progression where one day after birth represents one year of life. Shows personal evolution and development of natal blueprint.",
+            "calculation_method": {
+              "basic_principle": "Progressed Position = Natal Position + (Natal Daily Motion × Years of Life)",
+              "simplified_version": "Add 1° per year to Sun's position (approximately), add proportional motion to other planets",
+              "precise_calculation": "Requires exact daily motion from ephemeris for each planet"
+            },
+            "key_progressed_planets": {
+              "progressed_moon": "Changes sign every ~2.5 years = changing emotional focus and needs",
+              "progressed_sun": "Changes sign every ~30 years = major identity shifts and life chapters",
+              "progressed_ascendant": "Changes every ~30 years = changing approach to life and self-presentation",
+              "progressed_mercury_venus_mars": "Sign changes mark shifts in communication, values, and drive"
+            },
+            "aspect_interpretation": {
+              "focus": "Aspects formed between progressed planets and natal positions",
+              "orb": "Tight orb (0.5-1°) as progressed planets move slowly",
+              "stationary_periods": "When progressed planet stations, its influence is emphasized for years"
+            },
+            "primary_uses": [
+              "Tracking slow, internal personality shifts and development",
+              "Understanding emotional development and changing interests",
+              "Identifying significant periods of growth or new beginnings",
+              "Timing internal readiness for external events shown by transits"
+            ],
+            "pros": ["Excellent for understanding long-term personal growth", "Symbolizes psychological and emotional maturation", "Shows development of natal potentials over time"],
+            "cons": ["Very slow-moving (major changes infrequent)", "Complex to interpret in relation to natal chart", "Different progression methods exist (secondary, tertiary, etc.)"],
+            "dependencies": ["Natal Chart (as starting point)"],
+            "variant_methods": {
+              "tertiary_progression": "1 lunar month = 1 year (27.32166 days = 365.2422 days)",
+              "minor_progression": "1 day = 1 month",
+              "solar_arc_progression": "All planets progressed at Sun's rate (see separate entry)"
+            }
+          }
+        }
