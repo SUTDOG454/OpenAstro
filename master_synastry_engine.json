@@ -1,0 +1,3405 @@
+{
+  "master_synastry_engine": {
+    "metadata": {
+      "version": "v13-expanded",
+      "layers": 13,
+      "description": "Fully expanded Master Synastry Engine dataset with 100+ sample synastry pairs.",
+      "generated_on": "2026-03-26T22:16:48.992760"
+    },
+    "users": [
+      {
+        "user_id": "f7bee999-911c-4663-a61f-bd796b276b3b",
+        "username": "user_1",
+        "charts": [
+          {
+            "chart_id": "d13c9eb2-ddbd-45d5-918a-d1a51720fd16",
+            "birth_data": {
+              "datetime": "1990-01-01T12:00:00",
+              "latitude": 34.3384,
+              "longitude": 48.5523
+            },
+            "planet_positions": {
+              "Sun": 5.35,
+              "Moon": 22.28,
+              "Mercury": 7.41,
+              "Venus": 17.73,
+              "Mars": 26.25,
+              "Jupiter": 18.94,
+              "Saturn": 22.35,
+              "Uranus": 28.43,
+              "Neptune": 4.57,
+              "Pluto": 2.16
+            },
+            "midpoints": {
+              "Sun-Moon": 13.82,
+              "Sun-Mercury": 6.38,
+              "Sun-Venus": 11.54,
+              "Sun-Mars": 15.8,
+              "Moon-Mercury": 14.85,
+              "Moon-Venus": 20.01,
+              "Moon-Mars": 24.27,
+              "Mercury-Venus": 12.57,
+              "Mercury-Mars": 16.83,
+              "Venus-Mars": 21.99
+            },
+            "aspects": {
+              "Sun-Moon": "opposition",
+              "Sun-Mercury": "square",
+              "Sun-Venus": "opposition",
+              "Sun-Mars": "square",
+              "Moon-Mercury": "conjunction",
+              "Moon-Venus": "trine",
+              "Moon-Mars": "sextile",
+              "Mercury-Venus": "conjunction",
+              "Mercury-Mars": "trine",
+              "Venus-Mars": "sextile"
+            },
+            "archetype_probs": [
+              0.21,
+              0.35,
+              0.35,
+              0.1
+            ],
+            "embeddings": [
+              -0.19,
+              -0.03,
+              -0.06,
+              -0.07,
+              0.13,
+              -0.18,
+              0.12,
+              -0.01
+            ]
+          },
+          {
+            "chart_id": "1b867fc1-5099-4c43-a6b4-946bbf11e3e2",
+            "birth_data": {
+              "datetime": "1990-01-01T12:00:00",
+              "latitude": -81.0921,
+              "longitude": 7.3633
+            },
+            "planet_positions": {
+              "Sun": 19.65,
+              "Moon": 28.78,
+              "Mercury": 3.03,
+              "Venus": 10.77,
+              "Mars": 16.62,
+              "Jupiter": 25.6,
+              "Saturn": 5.64,
+              "Uranus": 10.3,
+              "Neptune": 9.86,
+              "Pluto": 27.74
+            },
+            "midpoints": {
+              "Sun-Moon": 24.21,
+              "Sun-Mercury": 11.34,
+              "Sun-Venus": 15.21,
+              "Sun-Mars": 18.13,
+              "Moon-Mercury": 15.91,
+              "Moon-Venus": 19.77,
+              "Moon-Mars": 22.7,
+              "Mercury-Venus": 6.9,
+              "Mercury-Mars": 9.83,
+              "Venus-Mars": 13.7
+            },
+            "aspects": {
+              "Sun-Moon": "conjunction",
+              "Sun-Mercury": "square",
+              "Sun-Venus": "conjunction",
+              "Sun-Mars": "trine",
+              "Moon-Mercury": "sextile",
+              "Moon-Venus": "conjunction",
+              "Moon-Mars": "trine",
+              "Mercury-Venus": "sextile",
+              "Mercury-Mars": "conjunction",
+              "Venus-Mars": "conjunction"
+            },
+            "archetype_probs": [
+              0.3,
+              0.36,
+              0.07,
+              0.27
+            ],
+            "embeddings": [
+              0.14,
+              -0.14,
+              -0.02,
+              0.15,
+              0.16,
+              -0.15,
+              -0.03,
+              -0.1
+            ]
+          }
+        ]
+      },
+      {
+        "user_id": "6ab15756-f488-43d8-a3ac-facbdf66e9f4",
+        "username": "user_2",
+        "charts": [
+          {
+            "chart_id": "990207e4-3433-4378-8b6c-e8242763284c",
+            "birth_data": {
+              "datetime": "1990-01-01T12:00:00",
+              "latitude": -82.7358,
+              "longitude": 88.8386
+            },
+            "planet_positions": {
+              "Sun": 24.78,
+              "Moon": 23.03,
+              "Mercury": 25.92,
+              "Venus": 13.84,
+              "Mars": 14.91,
+              "Jupiter": 19.13,
+              "Saturn": 21.92,
+              "Uranus": 23.09,
+              "Neptune": 26.84,
+              "Pluto": 26.79
+            },
+            "midpoints": {
+              "Sun-Moon": 23.91,
+              "Sun-Mercury": 25.35,
+              "Sun-Venus": 19.31,
+              "Sun-Mars": 19.84,
+              "Moon-Mercury": 24.48,
+              "Moon-Venus": 18.44,
+              "Moon-Mars": 18.97,
+              "Mercury-Venus": 19.88,
+              "Mercury-Mars": 20.41,
+              "Venus-Mars": 14.38
+            },
+            "aspects": {
+              "Sun-Moon": "opposition",
+              "Sun-Mercury": "opposition",
+              "Sun-Venus": "trine",
+              "Sun-Mars": "opposition",
+              "Moon-Mercury": "conjunction",
+              "Moon-Venus": "trine",
+              "Moon-Mars": "conjunction",
+              "Mercury-Venus": "opposition",
+              "Mercury-Mars": "opposition",
+              "Venus-Mars": "opposition"
+            },
+            "archetype_probs": [
+              0.06,
+              0.2,
+              0.23,
+              0.51
+            ],
+            "embeddings": [
+              0.18,
+              -0.0,
+              0.04,
+              -0.03,
+              0.15,
+              0.07,
+              0.04,
+              -0.18
+            ]
+          },
+          {
+            "chart_id": "f308b0c3-d369-40ab-8ba9-e6299334d39b",
+            "birth_data": {
+              "datetime": "1990-01-01T12:00:00",
+              "latitude": -79.8667,
+              "longitude": -91.111
+            },
+            "planet_positions": {
+              "Sun": 12.74,
+              "Moon": 17.66,
+              "Mercury": 26.52,
+              "Venus": 19.7,
+              "Mars": 5.2,
+              "Jupiter": 0.38,
+              "Saturn": 7.88,
+              "Uranus": 10.77,
+              "Neptune": 4.76,
+              "Pluto": 25.96
+            },
+            "midpoints": {
+              "Sun-Moon": 15.2,
+              "Sun-Mercury": 19.63,
+              "Sun-Venus": 16.22,
+              "Sun-Mars": 8.97,
+              "Moon-Mercury": 22.09,
+              "Moon-Venus": 18.68,
+              "Moon-Mars": 11.43,
+              "Mercury-Venus": 23.11,
+              "Mercury-Mars": 15.86,
+              "Venus-Mars": 12.45
+            },
+            "aspects": {
+              "Sun-Moon": "conjunction",
+              "Sun-Mercury": "sextile",
+              "Sun-Venus": "trine",
+              "Sun-Mars": "conjunction",
+              "Moon-Mercury": "trine",
+              "Moon-Venus": "conjunction",
+              "Moon-Mars": "square",
+              "Mercury-Venus": "sextile",
+              "Mercury-Mars": "opposition",
+              "Venus-Mars": "sextile"
+            },
+            "archetype_probs": [
+              0.35,
+              0.38,
+              0.26,
+              0.01
+            ],
+            "embeddings": [
+              -0.15,
+              -0.11,
+              -0.03,
+              0.13,
+              0.06,
+              -0.04,
+              0.04,
+              -0.12
+            ]
+          }
+        ]
+      },
+      {
+        "user_id": "e09a9e5f-f04e-4d7f-9993-a473d47f5e9a",
+        "username": "user_3",
+        "charts": [
+          {
+            "chart_id": "406651b6-6128-4cfa-82f2-481c4118cd09",
+            "birth_data": {
+              "datetime": "1990-01-01T12:00:00",
+              "latitude": -74.6931,
+              "longitude": 0.3526
+            },
+            "planet_positions": {
+              "Sun": 2.3,
+              "Moon": 0.85,
+              "Mercury": 4.14,
+              "Venus": 12.75,
+              "Mars": 12.56,
+              "Jupiter": 17.38,
+              "Saturn": 28.99,
+              "Uranus": 26.64,
+              "Neptune": 5.18,
+              "Pluto": 15.52
+            },
+            "midpoints": {
+              "Sun-Moon": 1.57,
+              "Sun-Mercury": 3.22,
+              "Sun-Venus": 7.53,
+              "Sun-Mars": 7.43,
+              "Moon-Mercury": 2.49,
+              "Moon-Venus": 6.8,
+              "Moon-Mars": 6.71,
+              "Mercury-Venus": 8.45,
+              "Mercury-Mars": 8.35,
+              "Venus-Mars": 12.66
+            },
+            "aspects": {
+              "Sun-Moon": "conjunction",
+              "Sun-Mercury": "conjunction",
+              "Sun-Venus": "opposition",
+              "Sun-Mars": "opposition",
+              "Moon-Mercury": "conjunction",
+              "Moon-Venus": "trine",
+              "Moon-Mars": "trine",
+              "Mercury-Venus": "trine",
+              "Mercury-Mars": "trine",
+              "Venus-Mars": "conjunction"
+            },
+            "archetype_probs": [
+              0.25,
+              0.31,
+              0.22,
+              0.22
+            ],
+            "embeddings": [
+              0.1,
+              -0.06,
+              -0.12,
+              -0.13,
+              0.14,
+              -0.07,
+              0.17,
+              -0.1
+            ]
+          },
+          {
+            "chart_id": "602ac8ab-60cc-49ef-b66f-d0c76874658a",
+            "birth_data": {
+              "datetime": "1990-01-01T12:00:00",
+              "latitude": -43.3606,
+              "longitude": 5.998
+            },
+            "planet_positions": {
+              "Sun": 19.25,
+              "Moon": 17.36,
+              "Mercury": 5.04,
+              "Venus": 1.65,
+              "Mars": 27.55,
+              "Jupiter": 11.62,
+              "Saturn": 28.16,
+              "Uranus": 21.76,
+              "Neptune": 11.95,
+              "Pluto": 28.8
+            },
+            "midpoints": {
+              "Sun-Moon": 18.3,
+              "Sun-Mercury": 12.14,
+              "Sun-Venus": 10.45,
+              "Sun-Mars": 23.4,
+              "Moon-Mercury": 11.2,
+              "Moon-Venus": 9.5,
+              "Moon-Mars": 22.45,
+              "Mercury-Venus": 3.34,
+              "Mercury-Mars": 16.3,
+              "Venus-Mars": 14.6
+            },
+            "aspects": {
+              "Sun-Moon": "sextile",
+              "Sun-Mercury": "opposition",
+              "Sun-Venus": "opposition",
+              "Sun-Mars": "conjunction",
+              "Moon-Mercury": "conjunction",
+              "Moon-Venus": "conjunction",
+              "Moon-Mars": "opposition",
+              "Mercury-Venus": "sextile",
+              "Mercury-Mars": "opposition",
+              "Venus-Mars": "conjunction"
+            },
+            "archetype_probs": [
+              0.4,
+              0.13,
+              0.4,
+              0.07
+            ],
+            "embeddings": [
+              0.12,
+              -0.06,
+              -0.02,
+              0.04,
+              0.14,
+              -0.02,
+              -0.15,
+              -0.07
+            ]
+          }
+        ]
+      },
+      {
+        "user_id": "9610cc37-e8a2-4a31-a3cf-563fcefd2829",
+        "username": "user_4",
+        "charts": [
+          {
+            "chart_id": "29f9f59f-f86d-4a3f-a017-088ca343aec4",
+            "birth_data": {
+              "datetime": "1990-01-01T12:00:00",
+              "latitude": 53.5175,
+              "longitude": 85.4377
+            },
+            "planet_positions": {
+              "Sun": 22.58,
+              "Moon": 0.91,
+              "Mercury": 3.35,
+              "Venus": 27.26,
+              "Mars": 15.79,
+              "Jupiter": 5.52,
+              "Saturn": 19.75,
+              "Uranus": 22.63,
+              "Neptune": 2.17,
+              "Pluto": 23.56
+            },
+            "midpoints": {
+              "Sun-Moon": 11.74,
+              "Sun-Mercury": 12.96,
+              "Sun-Venus": 24.92,
+              "Sun-Mars": 19.18,
+              "Moon-Mercury": 2.13,
+              "Moon-Venus": 14.09,
+              "Moon-Mars": 8.35,
+              "Mercury-Venus": 15.31,
+              "Mercury-Mars": 9.57,
+              "Venus-Mars": 21.52
+            },
+            "aspects": {
+              "Sun-Moon": "trine",
+              "Sun-Mercury": "sextile",
+              "Sun-Venus": "square",
+              "Sun-Mars": "conjunction",
+              "Moon-Mercury": "conjunction",
+              "Moon-Venus": "opposition",
+              "Moon-Mars": "conjunction",
+              "Mercury-Venus": "conjunction",
+              "Mercury-Mars": "conjunction",
+              "Venus-Mars": "square"
+            },
+            "archetype_probs": [
+              0.09,
+              0.11,
+              0.44,
+              0.37
+            ],
+            "embeddings": [
+              -0.05,
+              -0.13,
+              -0.0,
+              -0.07,
+              -0.15,
+              0.03,
+              -0.04,
+              -0.13
+            ]
+          },
+          {
+            "chart_id": "21fa345b-175f-423b-9e59-546b3db08a05",
+            "birth_data": {
+              "datetime": "1990-01-01T12:00:00",
+              "latitude": 54.5365,
+              "longitude": 160.979
+            },
+            "planet_positions": {
+              "Sun": 27.45,
+              "Moon": 28.69,
+              "Mercury": 28.73,
+              "Venus": 21.28,
+              "Mars": 24.29,
+              "Jupiter": 21.08,
+              "Saturn": 16.74,
+              "Uranus": 11.94,
+              "Neptune": 1.35,
+              "Pluto": 16.83
+            },
+            "midpoints": {
+              "Sun-Moon": 28.07,
+              "Sun-Mercury": 28.09,
+              "Sun-Venus": 24.37,
+              "Sun-Mars": 25.87,
+              "Moon-Mercury": 28.71,
+              "Moon-Venus": 24.98,
+              "Moon-Mars": 26.49,
+              "Mercury-Venus": 25.01,
+              "Mercury-Mars": 26.51,
+              "Venus-Mars": 22.79
+            },
+            "aspects": {
+              "Sun-Moon": "conjunction",
+              "Sun-Mercury": "conjunction",
+              "Sun-Venus": "square",
+              "Sun-Mars": "sextile",
+              "Moon-Mercury": "sextile",
+              "Moon-Venus": "sextile",
+              "Moon-Mars": "square",
+              "Mercury-Venus": "opposition",
+              "Mercury-Mars": "opposition",
+              "Venus-Mars": "conjunction"
+            },
+            "archetype_probs": [
+              0.4,
+              0.03,
+              0.25,
+              0.32
+            ],
+            "embeddings": [
+              0.16,
+              0.09,
+              0.18,
+              -0.04,
+              0.09,
+              0.14,
+              -0.03,
+              0.12
+            ]
+          }
+        ]
+      },
+      {
+        "user_id": "722c79c8-e9d3-46d2-941c-b621f3eca4a3",
+        "username": "user_5",
+        "charts": [
+          {
+            "chart_id": "5f2ddc56-ff0c-4fc2-bf96-403c55387534",
+            "birth_data": {
+              "datetime": "1990-01-01T12:00:00",
+              "latitude": 80.4047,
+              "longitude": -105.3264
+            },
+            "planet_positions": {
+              "Sun": 27.66,
+              "Moon": 9.24,
+              "Mercury": 7.15,
+              "Venus": 5.69,
+              "Mars": 9.45,
+              "Jupiter": 15.36,
+              "Saturn": 28.66,
+              "Uranus": 28.45,
+              "Neptune": 0.52,
+              "Pluto": 0.68
+            },
+            "midpoints": {
+              "Sun-Moon": 18.45,
+              "Sun-Mercury": 17.41,
+              "Sun-Venus": 16.68,
+              "Sun-Mars": 18.55,
+              "Moon-Mercury": 8.2,
+              "Moon-Venus": 7.46,
+              "Moon-Mars": 9.34,
+              "Mercury-Venus": 6.42,
+              "Mercury-Mars": 8.3,
+              "Venus-Mars": 7.57
+            },
+            "aspects": {
+              "Sun-Moon": "opposition",
+              "Sun-Mercury": "opposition",
+              "Sun-Venus": "square",
+              "Sun-Mars": "sextile",
+              "Moon-Mercury": "opposition",
+              "Moon-Venus": "square",
+              "Moon-Mars": "conjunction",
+              "Mercury-Venus": "conjunction",
+              "Mercury-Mars": "opposition",
+              "Venus-Mars": "conjunction"
+            },
+            "archetype_probs": [
+              0.44,
+              0.04,
+              0.36,
+              0.16
+            ],
+            "embeddings": [
+              0.06,
+              -0.11,
+              0.18,
+              0.12,
+              -0.01,
+              -0.11,
+              -0.17,
+              -0.09
+            ]
+          },
+          {
+            "chart_id": "6d0298da-878c-45cb-9adb-2d9f921a80e3",
+            "birth_data": {
+              "datetime": "1990-01-01T12:00:00",
+              "latitude": 83.1833,
+              "longitude": 138.2893
+            },
+            "planet_positions": {
+              "Sun": 21.52,
+              "Moon": 22.54,
+              "Mercury": 12.35,
+              "Venus": 18.44,
+              "Mars": 27.06,
+              "Jupiter": 23.54,
+              "Saturn": 2.68,
+              "Uranus": 15.82,
+              "Neptune": 11.93,
+              "Pluto": 11.69
+            },
+            "midpoints": {
+              "Sun-Moon": 22.03,
+              "Sun-Mercury": 16.93,
+              "Sun-Venus": 19.98,
+              "Sun-Mars": 24.29,
+              "Moon-Mercury": 17.45,
+              "Moon-Venus": 20.49,
+              "Moon-Mars": 24.8,
+              "Mercury-Venus": 15.39,
+              "Mercury-Mars": 19.7,
+              "Venus-Mars": 22.75
+            },
+            "aspects": {
+              "Sun-Moon": "square",
+              "Sun-Mercury": "sextile",
+              "Sun-Venus": "square",
+              "Sun-Mars": "square",
+              "Moon-Mercury": "square",
+              "Moon-Venus": "sextile",
+              "Moon-Mars": "sextile",
+              "Mercury-Venus": "square",
+              "Mercury-Mars": "conjunction",
+              "Venus-Mars": "square"
+            },
+            "archetype_probs": [
+              0.36,
+              0.33,
+              0.09,
+              0.22
+            ],
+            "embeddings": [
+              0.19,
+              0.17,
+              0.09,
+              -0.04,
+              0.02,
+              0.02,
+              0.1,
+              -0.18
+            ]
+          }
+        ]
+      },
+      {
+        "user_id": "c51f4c28-6f7e-44bf-8027-1566581aa9d5",
+        "username": "user_6",
+        "charts": [
+          {
+            "chart_id": "528cc895-a567-4f6c-88cc-1868fcaaf42c",
+            "birth_data": {
+              "datetime": "1990-01-01T12:00:00",
+              "latitude": -62.3709,
+              "longitude": 132.1527
+            },
+            "planet_positions": {
+              "Sun": 12.23,
+              "Moon": 8.22,
+              "Mercury": 20.14,
+              "Venus": 17.48,
+              "Mars": 20.38,
+              "Jupiter": 9.8,
+              "Saturn": 30.0,
+              "Uranus": 5.62,
+              "Neptune": 11.7,
+              "Pluto": 6.73
+            },
+            "midpoints": {
+              "Sun-Moon": 10.23,
+              "Sun-Mercury": 16.19,
+              "Sun-Venus": 14.86,
+              "Sun-Mars": 16.3,
+              "Moon-Mercury": 14.18,
+              "Moon-Venus": 12.85,
+              "Moon-Mars": 14.3,
+              "Mercury-Venus": 18.81,
+              "Mercury-Mars": 20.26,
+              "Venus-Mars": 18.93
+            },
+            "aspects": {
+              "Sun-Moon": "conjunction",
+              "Sun-Mercury": "trine",
+              "Sun-Venus": "sextile",
+              "Sun-Mars": "trine",
+              "Moon-Mercury": "opposition",
+              "Moon-Venus": "sextile",
+              "Moon-Mars": "conjunction",
+              "Mercury-Venus": "conjunction",
+              "Mercury-Mars": "trine",
+              "Venus-Mars": "trine"
+            },
+            "archetype_probs": [
+              0.17,
+              0.32,
+              0.41,
+              0.1
+            ],
+            "embeddings": [
+              0.09,
+              0.12,
+              0.07,
+              -0.09,
+              0.12,
+              0.16,
+              0.13,
+              0.17
+            ]
+          },
+          {
+            "chart_id": "d59cdb51-1e83-467d-b013-5e36523cd839",
+            "birth_data": {
+              "datetime": "1990-01-01T12:00:00",
+              "latitude": 39.5002,
+              "longitude": -15.1069
+            },
+            "planet_positions": {
+              "Sun": 14.8,
+              "Moon": 3.59,
+              "Mercury": 13.41,
+              "Venus": 11.0,
+              "Mars": 6.0,
+              "Jupiter": 29.61,
+              "Saturn": 4.64,
+              "Uranus": 18.6,
+              "Neptune": 18.14,
+              "Pluto": 13.81
+            },
+            "midpoints": {
+              "Sun-Moon": 9.2,
+              "Sun-Mercury": 14.11,
+              "Sun-Venus": 12.9,
+              "Sun-Mars": 10.4,
+              "Moon-Mercury": 8.5,
+              "Moon-Venus": 7.29,
+              "Moon-Mars": 4.79,
+              "Mercury-Venus": 12.21,
+              "Mercury-Mars": 9.71,
+              "Venus-Mars": 8.5
+            },
+            "aspects": {
+              "Sun-Moon": "sextile",
+              "Sun-Mercury": "square",
+              "Sun-Venus": "sextile",
+              "Sun-Mars": "square",
+              "Moon-Mercury": "trine",
+              "Moon-Venus": "square",
+              "Moon-Mars": "sextile",
+              "Mercury-Venus": "sextile",
+              "Mercury-Mars": "opposition",
+              "Venus-Mars": "sextile"
+            },
+            "archetype_probs": [
+              0.02,
+              0.39,
+              0.44,
+              0.16
+            ],
+            "embeddings": [
+              -0.17,
+              -0.02,
+              0.12,
+              -0.03,
+              0.0,
+              0.02,
+              -0.04,
+              0.11
+            ]
+          }
+        ]
+      },
+      {
+        "user_id": "eca393ec-19e7-474d-8e50-57340f07aa98",
+        "username": "user_7",
+        "charts": [
+          {
+            "chart_id": "f479b056-e5fa-4ff8-b210-c3a3d5259d11",
+            "birth_data": {
+              "datetime": "1990-01-01T12:00:00",
+              "latitude": -58.2556,
+              "longitude": -96.8599
+            },
+            "planet_positions": {
+              "Sun": 8.43,
+              "Moon": 25.87,
+              "Mercury": 29.7,
+              "Venus": 3.67,
+              "Mars": 10.1,
+              "Jupiter": 12.72,
+              "Saturn": 21.41,
+              "Uranus": 25.4,
+              "Neptune": 15.26,
+              "Pluto": 7.36
+            },
+            "midpoints": {
+              "Sun-Moon": 17.15,
+              "Sun-Mercury": 19.06,
+              "Sun-Venus": 6.05,
+              "Sun-Mars": 9.27,
+              "Moon-Mercury": 27.79,
+              "Moon-Venus": 14.77,
+              "Moon-Mars": 17.98,
+              "Mercury-Venus": 16.68,
+              "Mercury-Mars": 19.9,
+              "Venus-Mars": 6.88
+            },
+            "aspects": {
+              "Sun-Moon": "trine",
+              "Sun-Mercury": "conjunction",
+              "Sun-Venus": "trine",
+              "Sun-Mars": "conjunction",
+              "Moon-Mercury": "square",
+              "Moon-Venus": "conjunction",
+              "Moon-Mars": "trine",
+              "Mercury-Venus": "trine",
+              "Mercury-Mars": "opposition",
+              "Venus-Mars": "trine"
+            },
+            "archetype_probs": [
+              0.29,
+              0.05,
+              0.44,
+              0.23
+            ],
+            "embeddings": [
+              -0.03,
+              0.09,
+              0.13,
+              0.04,
+              -0.11,
+              -0.04,
+              -0.11,
+              0.03
+            ]
+          },
+          {
+            "chart_id": "4394e09f-5558-4e59-b256-1606a83ef32d",
+            "birth_data": {
+              "datetime": "1990-01-01T12:00:00",
+              "latitude": -77.5143,
+              "longitude": -2.5651
+            },
+            "planet_positions": {
+              "Sun": 3.26,
+              "Moon": 10.65,
+              "Mercury": 27.53,
+              "Venus": 21.17,
+              "Mars": 5.79,
+              "Jupiter": 29.4,
+              "Saturn": 9.72,
+              "Uranus": 23.1,
+              "Neptune": 0.69,
+              "Pluto": 0.44
+            },
+            "midpoints": {
+              "Sun-Moon": 6.96,
+              "Sun-Mercury": 15.39,
+              "Sun-Venus": 12.21,
+              "Sun-Mars": 4.53,
+              "Moon-Mercury": 19.09,
+              "Moon-Venus": 15.91,
+              "Moon-Mars": 8.22,
+              "Mercury-Venus": 24.35,
+              "Mercury-Mars": 16.66,
+              "Venus-Mars": 13.48
+            },
+            "aspects": {
+              "Sun-Moon": "square",
+              "Sun-Mercury": "sextile",
+              "Sun-Venus": "opposition",
+              "Sun-Mars": "sextile",
+              "Moon-Mercury": "conjunction",
+              "Moon-Venus": "trine",
+              "Moon-Mars": "conjunction",
+              "Mercury-Venus": "conjunction",
+              "Mercury-Mars": "opposition",
+              "Venus-Mars": "square"
+            },
+            "archetype_probs": [
+              0.16,
+              0.25,
+              0.34,
+              0.25
+            ],
+            "embeddings": [
+              -0.04,
+              0.06,
+              -0.02,
+              -0.04,
+              0.13,
+              -0.07,
+              0.2,
+              0.18
+            ]
+          }
+        ]
+      },
+      {
+        "user_id": "864c0f8b-547a-4659-9cf8-f244c3d294ca",
+        "username": "user_8",
+        "charts": [
+          {
+            "chart_id": "0e0cbc95-41de-4ac5-8fcd-964439462bde",
+            "birth_data": {
+              "datetime": "1990-01-01T12:00:00",
+              "latitude": 44.1734,
+              "longitude": -58.482
+            },
+            "planet_positions": {
+              "Sun": 24.13,
+              "Moon": 26.05,
+              "Mercury": 22.72,
+              "Venus": 2.99,
+              "Mars": 28.47,
+              "Jupiter": 15.34,
+              "Saturn": 0.25,
+              "Uranus": 6.63,
+              "Neptune": 5.87,
+              "Pluto": 4.04
+            },
+            "midpoints": {
+              "Sun-Moon": 25.09,
+              "Sun-Mercury": 23.42,
+              "Sun-Venus": 13.56,
+              "Sun-Mars": 26.3,
+              "Moon-Mercury": 24.38,
+              "Moon-Venus": 14.52,
+              "Moon-Mars": 27.26,
+              "Mercury-Venus": 12.86,
+              "Mercury-Mars": 25.59,
+              "Venus-Mars": 15.73
+            },
+            "aspects": {
+              "Sun-Moon": "conjunction",
+              "Sun-Mercury": "trine",
+              "Sun-Venus": "sextile",
+              "Sun-Mars": "sextile",
+              "Moon-Mercury": "conjunction",
+              "Moon-Venus": "conjunction",
+              "Moon-Mars": "trine",
+              "Mercury-Venus": "opposition",
+              "Mercury-Mars": "opposition",
+              "Venus-Mars": "trine"
+            },
+            "archetype_probs": [
+              0.44,
+              0.08,
+              0.11,
+              0.38
+            ],
+            "embeddings": [
+              -0.03,
+              -0.08,
+              0.05,
+              0.02,
+              -0.07,
+              0.16,
+              0.2,
+              0.13
+            ]
+          },
+          {
+            "chart_id": "187cdc95-2fa4-410e-a268-8646c56c187b",
+            "birth_data": {
+              "datetime": "1990-01-01T12:00:00",
+              "latitude": -72.4216,
+              "longitude": 172.195
+            },
+            "planet_positions": {
+              "Sun": 15.58,
+              "Moon": 27.95,
+              "Mercury": 20.09,
+              "Venus": 23.93,
+              "Mars": 13.57,
+              "Jupiter": 1.27,
+              "Saturn": 8.72,
+              "Uranus": 11.53,
+              "Neptune": 15.46,
+              "Pluto": 14.64
+            },
+            "midpoints": {
+              "Sun-Moon": 21.77,
+              "Sun-Mercury": 17.84,
+              "Sun-Venus": 19.75,
+              "Sun-Mars": 14.57,
+              "Moon-Mercury": 24.02,
+              "Moon-Venus": 25.94,
+              "Moon-Mars": 20.76,
+              "Mercury-Venus": 22.01,
+              "Mercury-Mars": 16.83,
+              "Venus-Mars": 18.75
+            },
+            "aspects": {
+              "Sun-Moon": "trine",
+              "Sun-Mercury": "square",
+              "Sun-Venus": "trine",
+              "Sun-Mars": "sextile",
+              "Moon-Mercury": "trine",
+              "Moon-Venus": "trine",
+              "Moon-Mars": "square",
+              "Mercury-Venus": "trine",
+              "Mercury-Mars": "sextile",
+              "Venus-Mars": "conjunction"
+            },
+            "archetype_probs": [
+              0.56,
+              0.02,
+              0.07,
+              0.35
+            ],
+            "embeddings": [
+              -0.16,
+              -0.19,
+              0.11,
+              0.03,
+              -0.19,
+              0.15,
+              0.04,
+              -0.16
+            ]
+          }
+        ]
+      },
+      {
+        "user_id": "adb16b90-68c4-492b-9884-69dffc1b40fe",
+        "username": "user_9",
+        "charts": [
+          {
+            "chart_id": "394827f2-bfa7-431e-af61-84ff3298c7d1",
+            "birth_data": {
+              "datetime": "1990-01-01T12:00:00",
+              "latitude": 78.1097,
+              "longitude": 71.043
+            },
+            "planet_positions": {
+              "Sun": 16.37,
+              "Moon": 28.59,
+              "Mercury": 11.81,
+              "Venus": 19.84,
+              "Mars": 5.35,
+              "Jupiter": 22.64,
+              "Saturn": 28.01,
+              "Uranus": 27.32,
+              "Neptune": 12.01,
+              "Pluto": 19.73
+            },
+            "midpoints": {
+              "Sun-Moon": 22.48,
+              "Sun-Mercury": 14.09,
+              "Sun-Venus": 18.11,
+              "Sun-Mars": 10.86,
+              "Moon-Mercury": 20.2,
+              "Moon-Venus": 24.21,
+              "Moon-Mars": 16.97,
+              "Mercury-Venus": 15.82,
+              "Mercury-Mars": 8.58,
+              "Venus-Mars": 12.59
+            },
+            "aspects": {
+              "Sun-Moon": "square",
+              "Sun-Mercury": "trine",
+              "Sun-Venus": "opposition",
+              "Sun-Mars": "trine",
+              "Moon-Mercury": "trine",
+              "Moon-Venus": "trine",
+              "Moon-Mars": "square",
+              "Mercury-Venus": "square",
+              "Mercury-Mars": "square",
+              "Venus-Mars": "trine"
+            },
+            "archetype_probs": [
+              0.04,
+              0.22,
+              0.49,
+              0.25
+            ],
+            "embeddings": [
+              -0.11,
+              0.08,
+              -0.1,
+              0.01,
+              -0.1,
+              0.11,
+              -0.06,
+              -0.13
+            ]
+          },
+          {
+            "chart_id": "f13fea0c-1043-4646-98a9-94e5ce936349",
+            "birth_data": {
+              "datetime": "1990-01-01T12:00:00",
+              "latitude": -46.5668,
+              "longitude": 110.7522
+            },
+            "planet_positions": {
+              "Sun": 8.39,
+              "Moon": 5.19,
+              "Mercury": 22.28,
+              "Venus": 2.91,
+              "Mars": 24.91,
+              "Jupiter": 10.82,
+              "Saturn": 19.45,
+              "Uranus": 26.07,
+              "Neptune": 1.78,
+              "Pluto": 19.39
+            },
+            "midpoints": {
+              "Sun-Moon": 6.79,
+              "Sun-Mercury": 15.34,
+              "Sun-Venus": 5.65,
+              "Sun-Mars": 16.65,
+              "Moon-Mercury": 13.74,
+              "Moon-Venus": 4.05,
+              "Moon-Mars": 15.05,
+              "Mercury-Venus": 12.6,
+              "Mercury-Mars": 23.59,
+              "Venus-Mars": 13.91
+            },
+            "aspects": {
+              "Sun-Moon": "sextile",
+              "Sun-Mercury": "sextile",
+              "Sun-Venus": "trine",
+              "Sun-Mars": "opposition",
+              "Moon-Mercury": "conjunction",
+              "Moon-Venus": "square",
+              "Moon-Mars": "trine",
+              "Mercury-Venus": "trine",
+              "Mercury-Mars": "conjunction",
+              "Venus-Mars": "trine"
+            },
+            "archetype_probs": [
+              0.35,
+              0.33,
+              0.13,
+              0.19
+            ],
+            "embeddings": [
+              0.07,
+              0.06,
+              -0.07,
+              -0.0,
+              -0.17,
+              0.1,
+              -0.13,
+              0.17
+            ]
+          }
+        ]
+      },
+      {
+        "user_id": "6be4afbb-b491-4646-8e28-3c798f1dd461",
+        "username": "user_10",
+        "charts": [
+          {
+            "chart_id": "b26e13fd-0095-448c-baf2-544d84e186eb",
+            "birth_data": {
+              "datetime": "1990-01-01T12:00:00",
+              "latitude": 81.4457,
+              "longitude": 94.2504
+            },
+            "planet_positions": {
+              "Sun": 2.76,
+              "Moon": 27.35,
+              "Mercury": 0.96,
+              "Venus": 25.3,
+              "Mars": 28.28,
+              "Jupiter": 1.12,
+              "Saturn": 18.02,
+              "Uranus": 6.9,
+              "Neptune": 29.19,
+              "Pluto": 2.06
+            },
+            "midpoints": {
+              "Sun-Moon": 15.05,
+              "Sun-Mercury": 1.86,
+              "Sun-Venus": 14.03,
+              "Sun-Mars": 15.52,
+              "Moon-Mercury": 14.16,
+              "Moon-Venus": 26.33,
+              "Moon-Mars": 27.82,
+              "Mercury-Venus": 13.13,
+              "Mercury-Mars": 14.62,
+              "Venus-Mars": 26.79
+            },
+            "aspects": {
+              "Sun-Moon": "square",
+              "Sun-Mercury": "trine",
+              "Sun-Venus": "sextile",
+              "Sun-Mars": "sextile",
+              "Moon-Mercury": "opposition",
+              "Moon-Venus": "trine",
+              "Moon-Mars": "square",
+              "Mercury-Venus": "conjunction",
+              "Mercury-Mars": "opposition",
+              "Venus-Mars": "conjunction"
+            },
+            "archetype_probs": [
+              0.35,
+              0.6,
+              0.03,
+              0.03
+            ],
+            "embeddings": [
+              0.02,
+              0.16,
+              -0.02,
+              0.07,
+              0.2,
+              -0.18,
+              0.16,
+              0.11
+            ]
+          },
+          {
+            "chart_id": "2266cd77-bda1-4830-8dee-d0def895a9af",
+            "birth_data": {
+              "datetime": "1990-01-01T12:00:00",
+              "latitude": 65.4312,
+              "longitude": 146.2907
+            },
+            "planet_positions": {
+              "Sun": 14.67,
+              "Moon": 1.15,
+              "Mercury": 6.51,
+              "Venus": 15.4,
+              "Mars": 20.68,
+              "Jupiter": 13.33,
+              "Saturn": 11.76,
+              "Uranus": 15.08,
+              "Neptune": 1.33,
+              "Pluto": 25.67
+            },
+            "midpoints": {
+              "Sun-Moon": 7.91,
+              "Sun-Mercury": 10.59,
+              "Sun-Venus": 15.04,
+              "Sun-Mars": 17.68,
+              "Moon-Mercury": 3.83,
+              "Moon-Venus": 8.28,
+              "Moon-Mars": 10.91,
+              "Mercury-Venus": 10.96,
+              "Mercury-Mars": 13.59,
+              "Venus-Mars": 18.04
+            },
+            "aspects": {
+              "Sun-Moon": "conjunction",
+              "Sun-Mercury": "opposition",
+              "Sun-Venus": "sextile",
+              "Sun-Mars": "sextile",
+              "Moon-Mercury": "conjunction",
+              "Moon-Venus": "trine",
+              "Moon-Mars": "trine",
+              "Mercury-Venus": "opposition",
+              "Mercury-Mars": "opposition",
+              "Venus-Mars": "square"
+            },
+            "archetype_probs": [
+              0.18,
+              0.24,
+              0.25,
+              0.34
+            ],
+            "embeddings": [
+              -0.17,
+              0.01,
+              0.16,
+              0.0,
+              0.06,
+              0.07,
+              -0.14,
+              0.04
+            ]
+          }
+        ]
+      }
+    ],
+    "synastry_pairs": [
+      {
+        "pair_id": "a4b9ddb3-b667-4ef9-83ba-098daa89dd39",
+        "chartA_id": "406651b6-6128-4cfa-82f2-481c4118cd09",
+        "chartB_id": "1b867fc1-5099-4c43-a6b4-946bbf11e3e2",
+        "planet_pair_rules": [],
+        "predictive_scoring": {
+          "compatibility_score": 0.45,
+          "archetype_probs": [
+            0.42,
+            0.27,
+            0.12,
+            0.19
+          ],
+          "alerts": [],
+          "midpoints": {
+            "Sun-Moon": 14.74,
+            "Sun-Mercury": 11.82,
+            "Sun-Venus": 4.93,
+            "Sun-Mars": 6.79,
+            "Moon-Mercury": 25.23,
+            "Moon-Venus": 18.34,
+            "Moon-Mars": 20.2,
+            "Mercury-Venus": 15.42,
+            "Mercury-Mars": 17.28,
+            "Venus-Mars": 10.39
+          },
+          "aspects": {
+            "Sun-Moon": "conjunction",
+            "Sun-Mercury": "square",
+            "Sun-Venus": "trine",
+            "Sun-Mars": "sextile",
+            "Moon-Mercury": "conjunction",
+            "Moon-Venus": "trine",
+            "Moon-Mars": "square",
+            "Mercury-Venus": "opposition",
+            "Mercury-Mars": "trine",
+            "Venus-Mars": "square"
+          }
+        },
+        "monte_carlo_simulation": {
+          "high_compatibility": 955,
+          "moderate_compatibility": 42,
+          "low_compatibility": 3
+        },
+        "transit_forecast": {
+          "2026-03-26": [
+            "Sun conjunct Venus",
+            "Mars square Venus"
+          ],
+          "2026-03-27": [
+            "Sun conjunct Venus",
+            "Mars square Venus"
+          ],
+          "2026-03-28": [
+            "Sun conjunct Venus",
+            "Sun trine Moon"
+          ],
+          "2026-03-29": [
+            "Mars square Venus",
+            "Sun trine Moon"
+          ],
+          "2026-03-30": [
+            "Sun trine Moon"
+          ],
+          "2026-03-31": [
+            "Sun trine Moon",
+            "Moon opposition Mars"
+          ],
+          "2026-04-01": [
+            "Mars square Venus"
+          ],
+          "2026-04-02": [
+            "Sun trine Moon"
+          ],
+          "2026-04-03": [
+            "Mars square Venus",
+            "Sun trine Moon"
+          ],
+          "2026-04-04": [
+            "Sun trine Moon"
+          ],
+          "2026-04-05": [
+            "Sun conjunct Venus",
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-06": [
+            "Moon opposition Mars"
+          ],
+          "2026-04-07": [
+            "Mars square Venus",
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-08": [
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-09": [
+            "Venus sextile Jupiter",
+            "Moon opposition Mars"
+          ],
+          "2026-04-10": [
+            "Sun trine Moon"
+          ],
+          "2026-04-11": [
+            "Sun trine Moon"
+          ],
+          "2026-04-12": [
+            "Sun conjunct Venus"
+          ],
+          "2026-04-13": [
+            "Sun conjunct Venus"
+          ],
+          "2026-04-14": [
+            "Mars square Venus",
+            "Sun conjunct Venus"
+          ],
+          "2026-04-15": [
+            "Mars square Venus",
+            "Sun trine Moon"
+          ],
+          "2026-04-16": [
+            "Sun trine Moon",
+            "Mars square Venus"
+          ],
+          "2026-04-17": [
+            "Venus sextile Jupiter",
+            "Mars square Venus"
+          ],
+          "2026-04-18": [
+            "Sun conjunct Venus"
+          ],
+          "2026-04-19": [
+            "Moon opposition Mars",
+            "Mars square Venus"
+          ],
+          "2026-04-20": [
+            "Sun trine Moon"
+          ],
+          "2026-04-21": [
+            "Mars square Venus"
+          ],
+          "2026-04-22": [
+            "Mars square Venus",
+            "Sun conjunct Venus"
+          ],
+          "2026-04-23": [
+            "Venus sextile Jupiter",
+            "Mars square Venus"
+          ],
+          "2026-04-24": [
+            "Venus sextile Jupiter",
+            "Sun trine Moon"
+          ]
+        },
+        "coaching_guidance": [
+          "Favorable energy between Sun-Moon: encourage collaboration.",
+          "Favorable energy between Sun-Venus: encourage collaboration.",
+          "Favorable energy between Sun-Mars: encourage collaboration.",
+          "Favorable energy between Moon-Mercury: encourage collaboration.",
+          "Favorable energy between Moon-Venus: encourage collaboration.",
+          "Favorable energy between Mercury-Mars: encourage collaboration.",
+          "2026-03-26: Tense transit \u2014 avoid major decisions.",
+          "2026-03-27: Tense transit \u2014 avoid major decisions.",
+          "2026-03-28: Favorable transit \u2014 ideal for relationship growth.",
+          "2026-03-29: Tense transit \u2014 avoid major decisions."
+        ]
+      },
+      {
+        "pair_id": "593ce453-aba1-4dad-a5ea-9afbe9fffb55",
+        "chartA_id": "d13c9eb2-ddbd-45d5-918a-d1a51720fd16",
+        "chartB_id": "5f2ddc56-ff0c-4fc2-bf96-403c55387534",
+        "planet_pair_rules": [],
+        "predictive_scoring": {
+          "compatibility_score": 0.53,
+          "archetype_probs": [
+            0.34,
+            0.3,
+            0.19,
+            0.17
+          ],
+          "alerts": [],
+          "midpoints": {
+            "Sun-Moon": 13.19,
+            "Sun-Mercury": 3.15,
+            "Sun-Venus": 14.82,
+            "Sun-Mars": 2.09,
+            "Moon-Mercury": 13.6,
+            "Moon-Venus": 25.27,
+            "Moon-Mars": 12.54,
+            "Mercury-Venus": 15.22,
+            "Mercury-Mars": 2.5,
+            "Venus-Mars": 14.17
+          },
+          "aspects": {
+            "Sun-Moon": "trine",
+            "Sun-Mercury": "conjunction",
+            "Sun-Venus": "sextile",
+            "Sun-Mars": "conjunction",
+            "Moon-Mercury": "conjunction",
+            "Moon-Venus": "square",
+            "Moon-Mars": "conjunction",
+            "Mercury-Venus": "sextile",
+            "Mercury-Mars": "square",
+            "Venus-Mars": "trine"
+          }
+        },
+        "monte_carlo_simulation": {
+          "high_compatibility": 647,
+          "moderate_compatibility": 160,
+          "low_compatibility": 193
+        },
+        "transit_forecast": {
+          "2026-03-26": [
+            "Venus sextile Jupiter"
+          ],
+          "2026-03-27": [
+            "Sun conjunct Venus"
+          ],
+          "2026-03-28": [
+            "Mars square Venus",
+            "Sun trine Moon"
+          ],
+          "2026-03-29": [
+            "Mars square Venus"
+          ],
+          "2026-03-30": [
+            "Mars square Venus",
+            "Sun conjunct Venus"
+          ],
+          "2026-03-31": [
+            "Moon opposition Mars",
+            "Sun trine Moon"
+          ],
+          "2026-04-01": [
+            "Sun trine Moon"
+          ],
+          "2026-04-02": [
+            "Moon opposition Mars"
+          ],
+          "2026-04-03": [
+            "Sun conjunct Venus",
+            "Sun trine Moon"
+          ],
+          "2026-04-04": [
+            "Sun conjunct Venus"
+          ],
+          "2026-04-05": [
+            "Sun trine Moon"
+          ],
+          "2026-04-06": [
+            "Venus sextile Jupiter",
+            "Mars square Venus"
+          ],
+          "2026-04-07": [
+            "Moon opposition Mars",
+            "Mars square Venus"
+          ],
+          "2026-04-08": [
+            "Moon opposition Mars"
+          ],
+          "2026-04-09": [
+            "Mars square Venus",
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-10": [
+            "Sun trine Moon"
+          ],
+          "2026-04-11": [
+            "Moon opposition Mars"
+          ],
+          "2026-04-12": [
+            "Sun conjunct Venus"
+          ],
+          "2026-04-13": [
+            "Sun trine Moon",
+            "Sun conjunct Venus"
+          ],
+          "2026-04-14": [
+            "Sun conjunct Venus"
+          ],
+          "2026-04-15": [
+            "Sun conjunct Venus",
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-16": [
+            "Sun conjunct Venus"
+          ],
+          "2026-04-17": [
+            "Sun conjunct Venus",
+            "Mars square Venus"
+          ],
+          "2026-04-18": [
+            "Sun trine Moon"
+          ],
+          "2026-04-19": [
+            "Mars square Venus",
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-20": [
+            "Moon opposition Mars",
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-21": [
+            "Sun trine Moon"
+          ],
+          "2026-04-22": [
+            "Sun conjunct Venus",
+            "Mars square Venus"
+          ],
+          "2026-04-23": [
+            "Sun conjunct Venus",
+            "Moon opposition Mars"
+          ],
+          "2026-04-24": [
+            "Sun conjunct Venus",
+            "Moon opposition Mars"
+          ]
+        },
+        "coaching_guidance": [
+          "Favorable energy between Sun-Moon: encourage collaboration.",
+          "Favorable energy between Sun-Mercury: encourage collaboration.",
+          "Favorable energy between Sun-Venus: encourage collaboration.",
+          "Favorable energy between Sun-Mars: encourage collaboration.",
+          "Favorable energy between Moon-Mercury: encourage collaboration.",
+          "Favorable energy between Moon-Mars: encourage collaboration.",
+          "Favorable energy between Mercury-Venus: encourage collaboration.",
+          "Favorable energy between Venus-Mars: encourage collaboration.",
+          "2026-03-26: Favorable transit \u2014 ideal for relationship growth.",
+          "2026-03-28: Tense transit \u2014 avoid major decisions."
+        ]
+      },
+      {
+        "pair_id": "8f1a38a8-34b1-4f0b-8bb8-d7dcef3360f3",
+        "chartA_id": "4394e09f-5558-4e59-b256-1606a83ef32d",
+        "chartB_id": "602ac8ab-60cc-49ef-b66f-d0c76874658a",
+        "planet_pair_rules": [],
+        "predictive_scoring": {
+          "compatibility_score": 0.19,
+          "archetype_probs": [
+            0.14,
+            0.3,
+            0.22,
+            0.34
+          ],
+          "alerts": [
+            "Low overall compatibility predicted"
+          ],
+          "midpoints": {
+            "Sun-Moon": 13.22,
+            "Sun-Mercury": 13.91,
+            "Sun-Venus": 4.71,
+            "Sun-Mars": 13.74,
+            "Moon-Mercury": 25.66,
+            "Moon-Venus": 16.45,
+            "Moon-Mars": 25.48,
+            "Mercury-Venus": 17.14,
+            "Mercury-Mars": 26.17,
+            "Venus-Mars": 16.97
+          },
+          "aspects": {
+            "Sun-Moon": "trine",
+            "Sun-Mercury": "square",
+            "Sun-Venus": "conjunction",
+            "Sun-Mars": "conjunction",
+            "Moon-Mercury": "trine",
+            "Moon-Venus": "opposition",
+            "Moon-Mars": "sextile",
+            "Mercury-Venus": "conjunction",
+            "Mercury-Mars": "opposition",
+            "Venus-Mars": "sextile"
+          }
+        },
+        "monte_carlo_simulation": {
+          "high_compatibility": 697,
+          "moderate_compatibility": 292,
+          "low_compatibility": 11
+        },
+        "transit_forecast": {
+          "2026-03-26": [
+            "Mars square Venus",
+            "Moon opposition Mars"
+          ],
+          "2026-03-27": [
+            "Moon opposition Mars",
+            "Sun conjunct Venus"
+          ],
+          "2026-03-28": [
+            "Venus sextile Jupiter",
+            "Sun conjunct Venus"
+          ],
+          "2026-03-29": [
+            "Venus sextile Jupiter"
+          ],
+          "2026-03-30": [
+            "Sun conjunct Venus"
+          ],
+          "2026-03-31": [
+            "Sun conjunct Venus",
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-01": [
+            "Venus sextile Jupiter",
+            "Sun trine Moon"
+          ],
+          "2026-04-02": [
+            "Venus sextile Jupiter",
+            "Sun conjunct Venus"
+          ],
+          "2026-04-03": [
+            "Venus sextile Jupiter",
+            "Sun trine Moon"
+          ],
+          "2026-04-04": [
+            "Venus sextile Jupiter",
+            "Sun conjunct Venus"
+          ],
+          "2026-04-05": [
+            "Sun conjunct Venus"
+          ],
+          "2026-04-06": [
+            "Sun trine Moon"
+          ],
+          "2026-04-07": [
+            "Mars square Venus"
+          ],
+          "2026-04-08": [
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-09": [
+            "Venus sextile Jupiter",
+            "Moon opposition Mars"
+          ],
+          "2026-04-10": [
+            "Sun trine Moon"
+          ],
+          "2026-04-11": [
+            "Mars square Venus",
+            "Sun conjunct Venus"
+          ],
+          "2026-04-12": [
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-13": [
+            "Venus sextile Jupiter",
+            "Mars square Venus"
+          ],
+          "2026-04-14": [
+            "Mars square Venus"
+          ],
+          "2026-04-15": [
+            "Sun trine Moon",
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-16": [
+            "Sun trine Moon",
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-17": [
+            "Sun trine Moon",
+            "Moon opposition Mars"
+          ],
+          "2026-04-18": [
+            "Moon opposition Mars"
+          ],
+          "2026-04-19": [
+            "Mars square Venus",
+            "Sun trine Moon"
+          ],
+          "2026-04-20": [
+            "Sun conjunct Venus",
+            "Sun trine Moon"
+          ],
+          "2026-04-21": [
+            "Sun conjunct Venus",
+            "Moon opposition Mars"
+          ],
+          "2026-04-22": [
+            "Mars square Venus"
+          ],
+          "2026-04-23": [
+            "Moon opposition Mars"
+          ],
+          "2026-04-24": [
+            "Venus sextile Jupiter"
+          ]
+        },
+        "coaching_guidance": [
+          "Favorable energy between Sun-Moon: encourage collaboration.",
+          "Favorable energy between Sun-Venus: encourage collaboration.",
+          "Favorable energy between Sun-Mars: encourage collaboration.",
+          "Favorable energy between Moon-Mercury: encourage collaboration.",
+          "Favorable energy between Moon-Mars: encourage collaboration.",
+          "Favorable energy between Mercury-Venus: encourage collaboration.",
+          "Favorable energy between Venus-Mars: encourage collaboration.",
+          "Low overall compatibility predicted",
+          "2026-03-26: Tense transit \u2014 avoid major decisions.",
+          "2026-03-27: Tense transit \u2014 avoid major decisions."
+        ]
+      },
+      {
+        "pair_id": "40f935e9-9c0d-4a49-bba2-cfa59d21af84",
+        "chartA_id": "4394e09f-5558-4e59-b256-1606a83ef32d",
+        "chartB_id": "602ac8ab-60cc-49ef-b66f-d0c76874658a",
+        "planet_pair_rules": [],
+        "predictive_scoring": {
+          "compatibility_score": 1.0,
+          "archetype_probs": [
+            0.35,
+            0.21,
+            0.34,
+            0.09
+          ],
+          "alerts": [],
+          "midpoints": {
+            "Sun-Moon": 8.87,
+            "Sun-Mercury": 15.44,
+            "Sun-Venus": 10.16,
+            "Sun-Mars": 6.39,
+            "Moon-Mercury": 15.86,
+            "Moon-Venus": 10.59,
+            "Moon-Mars": 6.81,
+            "Mercury-Venus": 17.16,
+            "Mercury-Mars": 13.38,
+            "Venus-Mars": 8.11
+          },
+          "aspects": {
+            "Sun-Moon": "sextile",
+            "Sun-Mercury": "trine",
+            "Sun-Venus": "sextile",
+            "Sun-Mars": "conjunction",
+            "Moon-Mercury": "trine",
+            "Moon-Venus": "trine",
+            "Moon-Mars": "square",
+            "Mercury-Venus": "square",
+            "Mercury-Mars": "trine",
+            "Venus-Mars": "trine"
+          }
+        },
+        "monte_carlo_simulation": {
+          "high_compatibility": 236,
+          "moderate_compatibility": 413,
+          "low_compatibility": 351
+        },
+        "transit_forecast": {
+          "2026-03-26": [
+            "Sun conjunct Venus",
+            "Sun trine Moon"
+          ],
+          "2026-03-27": [
+            "Venus sextile Jupiter"
+          ],
+          "2026-03-28": [
+            "Moon opposition Mars",
+            "Mars square Venus"
+          ],
+          "2026-03-29": [
+            "Sun conjunct Venus",
+            "Sun trine Moon"
+          ],
+          "2026-03-30": [
+            "Moon opposition Mars"
+          ],
+          "2026-03-31": [
+            "Mars square Venus"
+          ],
+          "2026-04-01": [
+            "Venus sextile Jupiter",
+            "Sun conjunct Venus"
+          ],
+          "2026-04-02": [
+            "Moon opposition Mars",
+            "Mars square Venus"
+          ],
+          "2026-04-03": [
+            "Moon opposition Mars",
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-04": [
+            "Moon opposition Mars",
+            "Sun conjunct Venus"
+          ],
+          "2026-04-05": [
+            "Moon opposition Mars"
+          ],
+          "2026-04-06": [
+            "Mars square Venus",
+            "Moon opposition Mars"
+          ],
+          "2026-04-07": [
+            "Moon opposition Mars",
+            "Sun conjunct Venus"
+          ],
+          "2026-04-08": [
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-09": [
+            "Venus sextile Jupiter",
+            "Mars square Venus"
+          ],
+          "2026-04-10": [
+            "Sun trine Moon",
+            "Moon opposition Mars"
+          ],
+          "2026-04-11": [
+            "Sun conjunct Venus"
+          ],
+          "2026-04-12": [
+            "Moon opposition Mars"
+          ],
+          "2026-04-13": [
+            "Moon opposition Mars"
+          ],
+          "2026-04-14": [
+            "Moon opposition Mars",
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-15": [
+            "Mars square Venus",
+            "Sun trine Moon"
+          ],
+          "2026-04-16": [
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-17": [
+            "Mars square Venus"
+          ],
+          "2026-04-18": [
+            "Mars square Venus",
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-19": [
+            "Mars square Venus"
+          ],
+          "2026-04-20": [
+            "Sun conjunct Venus",
+            "Mars square Venus"
+          ],
+          "2026-04-21": [
+            "Mars square Venus"
+          ],
+          "2026-04-22": [
+            "Sun conjunct Venus"
+          ],
+          "2026-04-23": [
+            "Moon opposition Mars"
+          ],
+          "2026-04-24": [
+            "Mars square Venus",
+            "Sun trine Moon"
+          ]
+        },
+        "coaching_guidance": [
+          "Favorable energy between Sun-Moon: encourage collaboration.",
+          "Favorable energy between Sun-Mercury: encourage collaboration.",
+          "Favorable energy between Sun-Venus: encourage collaboration.",
+          "Favorable energy between Sun-Mars: encourage collaboration.",
+          "Favorable energy between Moon-Mercury: encourage collaboration.",
+          "Favorable energy between Moon-Venus: encourage collaboration.",
+          "Favorable energy between Mercury-Mars: encourage collaboration.",
+          "Favorable energy between Venus-Mars: encourage collaboration.",
+          "2026-03-26: Favorable transit \u2014 ideal for relationship growth.",
+          "2026-03-27: Favorable transit \u2014 ideal for relationship growth."
+        ]
+      },
+      {
+        "pair_id": "b26f6797-35d9-48b1-b027-949a52c5d21e",
+        "chartA_id": "602ac8ab-60cc-49ef-b66f-d0c76874658a",
+        "chartB_id": "394827f2-bfa7-431e-af61-84ff3298c7d1",
+        "planet_pair_rules": [],
+        "predictive_scoring": {
+          "compatibility_score": 0.95,
+          "archetype_probs": [
+            0.04,
+            0.18,
+            0.46,
+            0.33
+          ],
+          "alerts": [],
+          "midpoints": {
+            "Sun-Moon": 11.81,
+            "Sun-Mercury": 13.08,
+            "Sun-Venus": 9.41,
+            "Sun-Mars": 10.75,
+            "Moon-Mercury": 17.71,
+            "Moon-Venus": 14.04,
+            "Moon-Mars": 15.38,
+            "Mercury-Venus": 15.31,
+            "Mercury-Mars": 16.65,
+            "Venus-Mars": 12.98
+          },
+          "aspects": {
+            "Sun-Moon": "sextile",
+            "Sun-Mercury": "trine",
+            "Sun-Venus": "sextile",
+            "Sun-Mars": "sextile",
+            "Moon-Mercury": "sextile",
+            "Moon-Venus": "square",
+            "Moon-Mars": "conjunction",
+            "Mercury-Venus": "trine",
+            "Mercury-Mars": "square",
+            "Venus-Mars": "sextile"
+          }
+        },
+        "monte_carlo_simulation": {
+          "high_compatibility": 887,
+          "moderate_compatibility": 81,
+          "low_compatibility": 32
+        },
+        "transit_forecast": {
+          "2026-03-26": [
+            "Sun conjunct Venus"
+          ],
+          "2026-03-27": [
+            "Mars square Venus"
+          ],
+          "2026-03-28": [
+            "Sun trine Moon",
+            "Venus sextile Jupiter"
+          ],
+          "2026-03-29": [
+            "Mars square Venus",
+            "Moon opposition Mars"
+          ],
+          "2026-03-30": [
+            "Venus sextile Jupiter"
+          ],
+          "2026-03-31": [
+            "Venus sextile Jupiter",
+            "Moon opposition Mars"
+          ],
+          "2026-04-01": [
+            "Moon opposition Mars",
+            "Mars square Venus"
+          ],
+          "2026-04-02": [
+            "Sun conjunct Venus",
+            "Mars square Venus"
+          ],
+          "2026-04-03": [
+            "Moon opposition Mars",
+            "Sun conjunct Venus"
+          ],
+          "2026-04-04": [
+            "Mars square Venus",
+            "Sun conjunct Venus"
+          ],
+          "2026-04-05": [
+            "Sun conjunct Venus",
+            "Moon opposition Mars"
+          ],
+          "2026-04-06": [
+            "Sun trine Moon",
+            "Moon opposition Mars"
+          ],
+          "2026-04-07": [
+            "Venus sextile Jupiter",
+            "Moon opposition Mars"
+          ],
+          "2026-04-08": [
+            "Mars square Venus",
+            "Moon opposition Mars"
+          ],
+          "2026-04-09": [
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-10": [
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-11": [
+            "Sun conjunct Venus",
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-12": [
+            "Moon opposition Mars"
+          ],
+          "2026-04-13": [
+            "Sun trine Moon",
+            "Mars square Venus"
+          ],
+          "2026-04-14": [
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-15": [
+            "Sun conjunct Venus",
+            "Moon opposition Mars"
+          ],
+          "2026-04-16": [
+            "Sun conjunct Venus",
+            "Moon opposition Mars"
+          ],
+          "2026-04-17": [
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-18": [
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-19": [
+            "Moon opposition Mars"
+          ],
+          "2026-04-20": [
+            "Sun trine Moon",
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-21": [
+            "Moon opposition Mars",
+            "Sun conjunct Venus"
+          ],
+          "2026-04-22": [
+            "Sun trine Moon"
+          ],
+          "2026-04-23": [
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-24": [
+            "Sun conjunct Venus"
+          ]
+        },
+        "coaching_guidance": [
+          "Favorable energy between Sun-Moon: encourage collaboration.",
+          "Favorable energy between Sun-Mercury: encourage collaboration.",
+          "Favorable energy between Sun-Venus: encourage collaboration.",
+          "Favorable energy between Sun-Mars: encourage collaboration.",
+          "Favorable energy between Moon-Mercury: encourage collaboration.",
+          "Favorable energy between Moon-Mars: encourage collaboration.",
+          "Favorable energy between Mercury-Venus: encourage collaboration.",
+          "Favorable energy between Venus-Mars: encourage collaboration.",
+          "2026-03-27: Tense transit \u2014 avoid major decisions.",
+          "2026-03-28: Favorable transit \u2014 ideal for relationship growth."
+        ]
+      },
+      {
+        "pair_id": "e08bfe6c-b5f3-4d5d-8490-f47cf05bf519",
+        "chartA_id": "4394e09f-5558-4e59-b256-1606a83ef32d",
+        "chartB_id": "990207e4-3433-4378-8b6c-e8242763284c",
+        "planet_pair_rules": [],
+        "predictive_scoring": {
+          "compatibility_score": 0.2,
+          "archetype_probs": [
+            0.16,
+            0.26,
+            0.51,
+            0.07
+          ],
+          "alerts": [
+            "Low overall compatibility predicted"
+          ],
+          "midpoints": {
+            "Sun-Moon": 8.48,
+            "Sun-Mercury": 9.88,
+            "Sun-Venus": 17.78,
+            "Sun-Mars": 18.63,
+            "Moon-Mercury": 10.5,
+            "Moon-Venus": 18.39,
+            "Moon-Mars": 19.25,
+            "Mercury-Venus": 19.79,
+            "Mercury-Mars": 20.64,
+            "Venus-Mars": 28.54
+          },
+          "aspects": {
+            "Sun-Moon": "opposition",
+            "Sun-Mercury": "sextile",
+            "Sun-Venus": "square",
+            "Sun-Mars": "square",
+            "Moon-Mercury": "square",
+            "Moon-Venus": "conjunction",
+            "Moon-Mars": "opposition",
+            "Mercury-Venus": "sextile",
+            "Mercury-Mars": "sextile",
+            "Venus-Mars": "square"
+          }
+        },
+        "monte_carlo_simulation": {
+          "high_compatibility": 449,
+          "moderate_compatibility": 281,
+          "low_compatibility": 270
+        },
+        "transit_forecast": {
+          "2026-03-26": [
+            "Sun conjunct Venus"
+          ],
+          "2026-03-27": [
+            "Moon opposition Mars"
+          ],
+          "2026-03-28": [
+            "Mars square Venus",
+            "Moon opposition Mars"
+          ],
+          "2026-03-29": [
+            "Moon opposition Mars",
+            "Sun trine Moon"
+          ],
+          "2026-03-30": [
+            "Venus sextile Jupiter"
+          ],
+          "2026-03-31": [
+            "Mars square Venus"
+          ],
+          "2026-04-01": [
+            "Moon opposition Mars",
+            "Sun conjunct Venus"
+          ],
+          "2026-04-02": [
+            "Sun trine Moon",
+            "Mars square Venus"
+          ],
+          "2026-04-03": [
+            "Venus sextile Jupiter",
+            "Sun trine Moon"
+          ],
+          "2026-04-04": [
+            "Sun conjunct Venus",
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-05": [
+            "Mars square Venus"
+          ],
+          "2026-04-06": [
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-07": [
+            "Sun conjunct Venus",
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-08": [
+            "Mars square Venus"
+          ],
+          "2026-04-09": [
+            "Sun trine Moon"
+          ],
+          "2026-04-10": [
+            "Moon opposition Mars"
+          ],
+          "2026-04-11": [
+            "Sun trine Moon",
+            "Mars square Venus"
+          ],
+          "2026-04-12": [
+            "Mars square Venus"
+          ],
+          "2026-04-13": [
+            "Mars square Venus"
+          ],
+          "2026-04-14": [
+            "Moon opposition Mars",
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-15": [
+            "Sun trine Moon",
+            "Mars square Venus"
+          ],
+          "2026-04-16": [
+            "Mars square Venus",
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-17": [
+            "Sun trine Moon",
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-18": [
+            "Mars square Venus",
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-19": [
+            "Moon opposition Mars"
+          ],
+          "2026-04-20": [
+            "Mars square Venus",
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-21": [
+            "Sun conjunct Venus",
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-22": [
+            "Sun conjunct Venus"
+          ],
+          "2026-04-23": [
+            "Mars square Venus",
+            "Sun trine Moon"
+          ],
+          "2026-04-24": [
+            "Mars square Venus",
+            "Sun conjunct Venus"
+          ]
+        },
+        "coaching_guidance": [
+          "Favorable energy between Sun-Mercury: encourage collaboration.",
+          "Favorable energy between Moon-Venus: encourage collaboration.",
+          "Favorable energy between Mercury-Venus: encourage collaboration.",
+          "Favorable energy between Mercury-Mars: encourage collaboration.",
+          "Low overall compatibility predicted",
+          "2026-03-27: Tense transit \u2014 avoid major decisions.",
+          "2026-03-28: Tense transit \u2014 avoid major decisions.",
+          "2026-03-29: Tense transit \u2014 avoid major decisions.",
+          "2026-03-29: Favorable transit \u2014 ideal for relationship growth.",
+          "2026-03-30: Favorable transit \u2014 ideal for relationship growth."
+        ]
+      },
+      {
+        "pair_id": "74051ba4-8deb-4a68-837f-3bdcf3e9a592",
+        "chartA_id": "2266cd77-bda1-4830-8dee-d0def895a9af",
+        "chartB_id": "1b867fc1-5099-4c43-a6b4-946bbf11e3e2",
+        "planet_pair_rules": [],
+        "predictive_scoring": {
+          "compatibility_score": 0.42,
+          "archetype_probs": [
+            0.58,
+            0.04,
+            0.32,
+            0.07
+          ],
+          "alerts": [],
+          "midpoints": {
+            "Sun-Moon": 27.04,
+            "Sun-Mercury": 24.86,
+            "Sun-Venus": 19.73,
+            "Sun-Mars": 19.95,
+            "Moon-Mercury": 23.87,
+            "Moon-Venus": 18.74,
+            "Moon-Mars": 18.96,
+            "Mercury-Venus": 16.56,
+            "Mercury-Mars": 16.78,
+            "Venus-Mars": 11.65
+          },
+          "aspects": {
+            "Sun-Moon": "conjunction",
+            "Sun-Mercury": "sextile",
+            "Sun-Venus": "conjunction",
+            "Sun-Mars": "square",
+            "Moon-Mercury": "opposition",
+            "Moon-Venus": "conjunction",
+            "Moon-Mars": "square",
+            "Mercury-Venus": "opposition",
+            "Mercury-Mars": "sextile",
+            "Venus-Mars": "trine"
+          }
+        },
+        "monte_carlo_simulation": {
+          "high_compatibility": 869,
+          "moderate_compatibility": 122,
+          "low_compatibility": 9
+        },
+        "transit_forecast": {
+          "2026-03-26": [
+            "Mars square Venus"
+          ],
+          "2026-03-27": [
+            "Venus sextile Jupiter",
+            "Moon opposition Mars"
+          ],
+          "2026-03-28": [
+            "Sun trine Moon"
+          ],
+          "2026-03-29": [
+            "Sun conjunct Venus",
+            "Mars square Venus"
+          ],
+          "2026-03-30": [
+            "Sun trine Moon",
+            "Moon opposition Mars"
+          ],
+          "2026-03-31": [
+            "Mars square Venus",
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-01": [
+            "Sun trine Moon",
+            "Sun conjunct Venus"
+          ],
+          "2026-04-02": [
+            "Mars square Venus",
+            "Sun trine Moon"
+          ],
+          "2026-04-03": [
+            "Venus sextile Jupiter",
+            "Mars square Venus"
+          ],
+          "2026-04-04": [
+            "Moon opposition Mars"
+          ],
+          "2026-04-05": [
+            "Sun trine Moon",
+            "Mars square Venus"
+          ],
+          "2026-04-06": [
+            "Mars square Venus",
+            "Moon opposition Mars"
+          ],
+          "2026-04-07": [
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-08": [
+            "Sun trine Moon",
+            "Sun conjunct Venus"
+          ],
+          "2026-04-09": [
+            "Sun trine Moon"
+          ],
+          "2026-04-10": [
+            "Moon opposition Mars"
+          ],
+          "2026-04-11": [
+            "Moon opposition Mars",
+            "Mars square Venus"
+          ],
+          "2026-04-12": [
+            "Venus sextile Jupiter",
+            "Sun conjunct Venus"
+          ],
+          "2026-04-13": [
+            "Mars square Venus"
+          ],
+          "2026-04-14": [
+            "Sun trine Moon"
+          ],
+          "2026-04-15": [
+            "Venus sextile Jupiter",
+            "Sun trine Moon"
+          ],
+          "2026-04-16": [
+            "Moon opposition Mars",
+            "Mars square Venus"
+          ],
+          "2026-04-17": [
+            "Venus sextile Jupiter",
+            "Mars square Venus"
+          ],
+          "2026-04-18": [
+            "Sun conjunct Venus"
+          ],
+          "2026-04-19": [
+            "Sun conjunct Venus"
+          ],
+          "2026-04-20": [
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-21": [
+            "Sun conjunct Venus"
+          ],
+          "2026-04-22": [
+            "Sun conjunct Venus"
+          ],
+          "2026-04-23": [
+            "Sun conjunct Venus",
+            "Mars square Venus"
+          ],
+          "2026-04-24": [
+            "Sun trine Moon",
+            "Venus sextile Jupiter"
+          ]
+        },
+        "coaching_guidance": [
+          "Favorable energy between Sun-Moon: encourage collaboration.",
+          "Favorable energy between Sun-Mercury: encourage collaboration.",
+          "Favorable energy between Sun-Venus: encourage collaboration.",
+          "Favorable energy between Moon-Venus: encourage collaboration.",
+          "Favorable energy between Mercury-Mars: encourage collaboration.",
+          "Favorable energy between Venus-Mars: encourage collaboration.",
+          "2026-03-26: Tense transit \u2014 avoid major decisions.",
+          "2026-03-27: Tense transit \u2014 avoid major decisions.",
+          "2026-03-27: Favorable transit \u2014 ideal for relationship growth.",
+          "2026-03-28: Favorable transit \u2014 ideal for relationship growth."
+        ]
+      },
+      {
+        "pair_id": "83937030-40f6-44bd-8a1e-bb981fc843bd",
+        "chartA_id": "f308b0c3-d369-40ab-8ba9-e6299334d39b",
+        "chartB_id": "406651b6-6128-4cfa-82f2-481c4118cd09",
+        "planet_pair_rules": [],
+        "predictive_scoring": {
+          "compatibility_score": 0.09,
+          "archetype_probs": [
+            0.04,
+            0.5,
+            0.25,
+            0.2
+          ],
+          "alerts": [
+            "Low overall compatibility predicted"
+          ],
+          "midpoints": {
+            "Sun-Moon": 23.65,
+            "Sun-Mercury": 14.29,
+            "Sun-Venus": 15.81,
+            "Sun-Mars": 12.59,
+            "Moon-Mercury": 20.34,
+            "Moon-Venus": 21.87,
+            "Moon-Mars": 18.64,
+            "Mercury-Venus": 12.5,
+            "Mercury-Mars": 9.28,
+            "Venus-Mars": 10.8
+          },
+          "aspects": {
+            "Sun-Moon": "trine",
+            "Sun-Mercury": "trine",
+            "Sun-Venus": "conjunction",
+            "Sun-Mars": "trine",
+            "Moon-Mercury": "trine",
+            "Moon-Venus": "trine",
+            "Moon-Mars": "square",
+            "Mercury-Venus": "trine",
+            "Mercury-Mars": "opposition",
+            "Venus-Mars": "conjunction"
+          }
+        },
+        "monte_carlo_simulation": {
+          "high_compatibility": 456,
+          "moderate_compatibility": 94,
+          "low_compatibility": 450
+        },
+        "transit_forecast": {
+          "2026-03-26": [
+            "Venus sextile Jupiter",
+            "Mars square Venus"
+          ],
+          "2026-03-27": [
+            "Venus sextile Jupiter",
+            "Mars square Venus"
+          ],
+          "2026-03-28": [
+            "Sun trine Moon",
+            "Mars square Venus"
+          ],
+          "2026-03-29": [
+            "Mars square Venus",
+            "Sun conjunct Venus"
+          ],
+          "2026-03-30": [
+            "Sun conjunct Venus",
+            "Moon opposition Mars"
+          ],
+          "2026-03-31": [
+            "Sun trine Moon",
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-01": [
+            "Venus sextile Jupiter",
+            "Sun trine Moon"
+          ],
+          "2026-04-02": [
+            "Mars square Venus",
+            "Moon opposition Mars"
+          ],
+          "2026-04-03": [
+            "Sun conjunct Venus"
+          ],
+          "2026-04-04": [
+            "Sun conjunct Venus"
+          ],
+          "2026-04-05": [
+            "Moon opposition Mars"
+          ],
+          "2026-04-06": [
+            "Sun trine Moon"
+          ],
+          "2026-04-07": [
+            "Moon opposition Mars"
+          ],
+          "2026-04-08": [
+            "Moon opposition Mars"
+          ],
+          "2026-04-09": [
+            "Sun trine Moon",
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-10": [
+            "Sun trine Moon"
+          ],
+          "2026-04-11": [
+            "Mars square Venus"
+          ],
+          "2026-04-12": [
+            "Mars square Venus"
+          ],
+          "2026-04-13": [
+            "Sun trine Moon"
+          ],
+          "2026-04-14": [
+            "Sun conjunct Venus",
+            "Moon opposition Mars"
+          ],
+          "2026-04-15": [
+            "Sun conjunct Venus",
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-16": [
+            "Mars square Venus"
+          ],
+          "2026-04-17": [
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-18": [
+            "Sun conjunct Venus",
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-19": [
+            "Moon opposition Mars",
+            "Sun trine Moon"
+          ],
+          "2026-04-20": [
+            "Moon opposition Mars",
+            "Sun trine Moon"
+          ],
+          "2026-04-21": [
+            "Sun trine Moon"
+          ],
+          "2026-04-22": [
+            "Sun conjunct Venus"
+          ],
+          "2026-04-23": [
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-24": [
+            "Venus sextile Jupiter"
+          ]
+        },
+        "coaching_guidance": [
+          "Favorable energy between Sun-Moon: encourage collaboration.",
+          "Favorable energy between Sun-Mercury: encourage collaboration.",
+          "Favorable energy between Sun-Venus: encourage collaboration.",
+          "Favorable energy between Sun-Mars: encourage collaboration.",
+          "Favorable energy between Moon-Mercury: encourage collaboration.",
+          "Favorable energy between Moon-Venus: encourage collaboration.",
+          "Favorable energy between Mercury-Venus: encourage collaboration.",
+          "Favorable energy between Venus-Mars: encourage collaboration.",
+          "Low overall compatibility predicted",
+          "2026-03-26: Tense transit \u2014 avoid major decisions."
+        ]
+      },
+      {
+        "pair_id": "88128526-d39f-4a5f-989b-c83d6dfb1131",
+        "chartA_id": "1b867fc1-5099-4c43-a6b4-946bbf11e3e2",
+        "chartB_id": "2266cd77-bda1-4830-8dee-d0def895a9af",
+        "planet_pair_rules": [],
+        "predictive_scoring": {
+          "compatibility_score": 0.64,
+          "archetype_probs": [
+            0.3,
+            0.31,
+            0.09,
+            0.3
+          ],
+          "alerts": [],
+          "midpoints": {
+            "Sun-Moon": 13.12,
+            "Sun-Mercury": 16.36,
+            "Sun-Venus": 22.01,
+            "Sun-Mars": 10.14,
+            "Moon-Mercury": 10.32,
+            "Moon-Venus": 15.96,
+            "Moon-Mars": 4.11,
+            "Mercury-Venus": 19.21,
+            "Mercury-Mars": 7.35,
+            "Venus-Mars": 12.99
+          },
+          "aspects": {
+            "Sun-Moon": "sextile",
+            "Sun-Mercury": "sextile",
+            "Sun-Venus": "conjunction",
+            "Sun-Mars": "opposition",
+            "Moon-Mercury": "trine",
+            "Moon-Venus": "square",
+            "Moon-Mars": "conjunction",
+            "Mercury-Venus": "conjunction",
+            "Mercury-Mars": "conjunction",
+            "Venus-Mars": "trine"
+          }
+        },
+        "monte_carlo_simulation": {
+          "high_compatibility": 617,
+          "moderate_compatibility": 141,
+          "low_compatibility": 242
+        },
+        "transit_forecast": {
+          "2026-03-26": [
+            "Venus sextile Jupiter"
+          ],
+          "2026-03-27": [
+            "Sun conjunct Venus",
+            "Mars square Venus"
+          ],
+          "2026-03-28": [
+            "Moon opposition Mars"
+          ],
+          "2026-03-29": [
+            "Sun conjunct Venus"
+          ],
+          "2026-03-30": [
+            "Sun conjunct Venus",
+            "Sun trine Moon"
+          ],
+          "2026-03-31": [
+            "Sun conjunct Venus"
+          ],
+          "2026-04-01": [
+            "Sun conjunct Venus"
+          ],
+          "2026-04-02": [
+            "Sun conjunct Venus"
+          ],
+          "2026-04-03": [
+            "Sun trine Moon"
+          ],
+          "2026-04-04": [
+            "Sun conjunct Venus"
+          ],
+          "2026-04-05": [
+            "Sun conjunct Venus",
+            "Moon opposition Mars"
+          ],
+          "2026-04-06": [
+            "Mars square Venus",
+            "Moon opposition Mars"
+          ],
+          "2026-04-07": [
+            "Mars square Venus",
+            "Sun conjunct Venus"
+          ],
+          "2026-04-08": [
+            "Moon opposition Mars",
+            "Sun conjunct Venus"
+          ],
+          "2026-04-09": [
+            "Sun conjunct Venus"
+          ],
+          "2026-04-10": [
+            "Mars square Venus"
+          ],
+          "2026-04-11": [
+            "Sun trine Moon"
+          ],
+          "2026-04-12": [
+            "Sun trine Moon"
+          ],
+          "2026-04-13": [
+            "Sun trine Moon",
+            "Sun conjunct Venus"
+          ],
+          "2026-04-14": [
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-15": [
+            "Moon opposition Mars"
+          ],
+          "2026-04-16": [
+            "Sun conjunct Venus",
+            "Mars square Venus"
+          ],
+          "2026-04-17": [
+            "Moon opposition Mars",
+            "Mars square Venus"
+          ],
+          "2026-04-18": [
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-19": [
+            "Sun trine Moon",
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-20": [
+            "Mars square Venus",
+            "Sun trine Moon"
+          ],
+          "2026-04-21": [
+            "Sun conjunct Venus",
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-22": [
+            "Venus sextile Jupiter",
+            "Sun trine Moon"
+          ],
+          "2026-04-23": [
+            "Moon opposition Mars",
+            "Mars square Venus"
+          ],
+          "2026-04-24": [
+            "Mars square Venus",
+            "Moon opposition Mars"
+          ]
+        },
+        "coaching_guidance": [
+          "Favorable energy between Sun-Moon: encourage collaboration.",
+          "Favorable energy between Sun-Mercury: encourage collaboration.",
+          "Favorable energy between Sun-Venus: encourage collaboration.",
+          "Favorable energy between Moon-Mercury: encourage collaboration.",
+          "Favorable energy between Moon-Mars: encourage collaboration.",
+          "Favorable energy between Mercury-Venus: encourage collaboration.",
+          "Favorable energy between Mercury-Mars: encourage collaboration.",
+          "Favorable energy between Venus-Mars: encourage collaboration.",
+          "2026-03-26: Favorable transit \u2014 ideal for relationship growth.",
+          "2026-03-27: Tense transit \u2014 avoid major decisions."
+        ]
+      },
+      {
+        "pair_id": "4b6f9d7d-0d4a-4cb9-9846-94a455d367bd",
+        "chartA_id": "394827f2-bfa7-431e-af61-84ff3298c7d1",
+        "chartB_id": "29f9f59f-f86d-4a3f-a017-088ca343aec4",
+        "planet_pair_rules": [],
+        "predictive_scoring": {
+          "compatibility_score": 0.06,
+          "archetype_probs": [
+            0.44,
+            0.3,
+            0.02,
+            0.24
+          ],
+          "alerts": [
+            "Low overall compatibility predicted"
+          ],
+          "midpoints": {
+            "Sun-Moon": 17.68,
+            "Sun-Mercury": 19.05,
+            "Sun-Venus": 19.86,
+            "Sun-Mars": 17.3,
+            "Moon-Mercury": 25.36,
+            "Moon-Venus": 26.16,
+            "Moon-Mars": 23.6,
+            "Mercury-Venus": 27.53,
+            "Mercury-Mars": 24.98,
+            "Venus-Mars": 25.77
+          },
+          "aspects": {
+            "Sun-Moon": "sextile",
+            "Sun-Mercury": "conjunction",
+            "Sun-Venus": "square",
+            "Sun-Mars": "conjunction",
+            "Moon-Mercury": "conjunction",
+            "Moon-Venus": "sextile",
+            "Moon-Mars": "conjunction",
+            "Mercury-Venus": "conjunction",
+            "Mercury-Mars": "sextile",
+            "Venus-Mars": "sextile"
+          }
+        },
+        "monte_carlo_simulation": {
+          "high_compatibility": 554,
+          "moderate_compatibility": 259,
+          "low_compatibility": 187
+        },
+        "transit_forecast": {
+          "2026-03-26": [
+            "Moon opposition Mars",
+            "Sun conjunct Venus"
+          ],
+          "2026-03-27": [
+            "Sun conjunct Venus"
+          ],
+          "2026-03-28": [
+            "Moon opposition Mars"
+          ],
+          "2026-03-29": [
+            "Mars square Venus"
+          ],
+          "2026-03-30": [
+            "Sun trine Moon",
+            "Venus sextile Jupiter"
+          ],
+          "2026-03-31": [
+            "Moon opposition Mars",
+            "Sun conjunct Venus"
+          ],
+          "2026-04-01": [
+            "Mars square Venus",
+            "Sun trine Moon"
+          ],
+          "2026-04-02": [
+            "Sun trine Moon",
+            "Sun conjunct Venus"
+          ],
+          "2026-04-03": [
+            "Mars square Venus",
+            "Sun conjunct Venus"
+          ],
+          "2026-04-04": [
+            "Sun trine Moon"
+          ],
+          "2026-04-05": [
+            "Sun trine Moon"
+          ],
+          "2026-04-06": [
+            "Sun conjunct Venus"
+          ],
+          "2026-04-07": [
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-08": [
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-09": [
+            "Moon opposition Mars"
+          ],
+          "2026-04-10": [
+            "Venus sextile Jupiter",
+            "Moon opposition Mars"
+          ],
+          "2026-04-11": [
+            "Sun trine Moon"
+          ],
+          "2026-04-12": [
+            "Sun trine Moon"
+          ],
+          "2026-04-13": [
+            "Sun trine Moon"
+          ],
+          "2026-04-14": [
+            "Mars square Venus",
+            "Moon opposition Mars"
+          ],
+          "2026-04-15": [
+            "Sun trine Moon"
+          ],
+          "2026-04-16": [
+            "Moon opposition Mars"
+          ],
+          "2026-04-17": [
+            "Sun trine Moon"
+          ],
+          "2026-04-18": [
+            "Mars square Venus",
+            "Moon opposition Mars"
+          ],
+          "2026-04-19": [
+            "Venus sextile Jupiter",
+            "Moon opposition Mars"
+          ],
+          "2026-04-20": [
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-21": [
+            "Mars square Venus",
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-22": [
+            "Venus sextile Jupiter",
+            "Moon opposition Mars"
+          ],
+          "2026-04-23": [
+            "Sun trine Moon"
+          ],
+          "2026-04-24": [
+            "Sun trine Moon"
+          ]
+        },
+        "coaching_guidance": [
+          "Favorable energy between Sun-Moon: encourage collaboration.",
+          "Favorable energy between Sun-Mercury: encourage collaboration.",
+          "Favorable energy between Sun-Mars: encourage collaboration.",
+          "Favorable energy between Moon-Mercury: encourage collaboration.",
+          "Favorable energy between Moon-Venus: encourage collaboration.",
+          "Favorable energy between Moon-Mars: encourage collaboration.",
+          "Favorable energy between Mercury-Venus: encourage collaboration.",
+          "Favorable energy between Mercury-Mars: encourage collaboration.",
+          "Favorable energy between Venus-Mars: encourage collaboration.",
+          "Low overall compatibility predicted"
+        ]
+      },
+      {
+        "pair_id": "818c7657-ad7f-43bf-bc13-90768deaeda1",
+        "chartA_id": "f479b056-e5fa-4ff8-b210-c3a3d5259d11",
+        "chartB_id": "4394e09f-5558-4e59-b256-1606a83ef32d",
+        "planet_pair_rules": [],
+        "predictive_scoring": {
+          "compatibility_score": 0.7,
+          "archetype_probs": [
+            0.27,
+            0.25,
+            0.22,
+            0.26
+          ],
+          "alerts": [],
+          "midpoints": {
+            "Sun-Moon": 21.8,
+            "Sun-Mercury": 12.88,
+            "Sun-Venus": 20.45,
+            "Sun-Mars": 20.51,
+            "Moon-Mercury": 16.7,
+            "Moon-Venus": 24.27,
+            "Moon-Mars": 24.33,
+            "Mercury-Venus": 15.35,
+            "Mercury-Mars": 15.41,
+            "Venus-Mars": 22.98
+          },
+          "aspects": {
+            "Sun-Moon": "square",
+            "Sun-Mercury": "square",
+            "Sun-Venus": "square",
+            "Sun-Mars": "square",
+            "Moon-Mercury": "opposition",
+            "Moon-Venus": "square",
+            "Moon-Mars": "opposition",
+            "Mercury-Venus": "trine",
+            "Mercury-Mars": "trine",
+            "Venus-Mars": "conjunction"
+          }
+        },
+        "monte_carlo_simulation": {
+          "high_compatibility": 133,
+          "moderate_compatibility": 528,
+          "low_compatibility": 339
+        },
+        "transit_forecast": {
+          "2026-03-26": [
+            "Sun trine Moon",
+            "Venus sextile Jupiter"
+          ],
+          "2026-03-27": [
+            "Mars square Venus"
+          ],
+          "2026-03-28": [
+            "Sun conjunct Venus",
+            "Venus sextile Jupiter"
+          ],
+          "2026-03-29": [
+            "Sun conjunct Venus"
+          ],
+          "2026-03-30": [
+            "Sun conjunct Venus",
+            "Sun trine Moon"
+          ],
+          "2026-03-31": [
+            "Mars square Venus"
+          ],
+          "2026-04-01": [
+            "Sun trine Moon"
+          ],
+          "2026-04-02": [
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-03": [
+            "Venus sextile Jupiter",
+            "Mars square Venus"
+          ],
+          "2026-04-04": [
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-05": [
+            "Mars square Venus",
+            "Moon opposition Mars"
+          ],
+          "2026-04-06": [
+            "Moon opposition Mars",
+            "Mars square Venus"
+          ],
+          "2026-04-07": [
+            "Venus sextile Jupiter",
+            "Sun conjunct Venus"
+          ],
+          "2026-04-08": [
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-09": [
+            "Sun trine Moon"
+          ],
+          "2026-04-10": [
+            "Sun trine Moon",
+            "Mars square Venus"
+          ],
+          "2026-04-11": [
+            "Mars square Venus"
+          ],
+          "2026-04-12": [
+            "Sun trine Moon"
+          ],
+          "2026-04-13": [
+            "Sun conjunct Venus"
+          ],
+          "2026-04-14": [
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-15": [
+            "Moon opposition Mars"
+          ],
+          "2026-04-16": [
+            "Mars square Venus",
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-17": [
+            "Mars square Venus"
+          ],
+          "2026-04-18": [
+            "Sun conjunct Venus"
+          ],
+          "2026-04-19": [
+            "Sun trine Moon"
+          ],
+          "2026-04-20": [
+            "Sun trine Moon"
+          ],
+          "2026-04-21": [
+            "Mars square Venus"
+          ],
+          "2026-04-22": [
+            "Sun conjunct Venus"
+          ],
+          "2026-04-23": [
+            "Sun trine Moon",
+            "Mars square Venus"
+          ],
+          "2026-04-24": [
+            "Sun trine Moon"
+          ]
+        },
+        "coaching_guidance": [
+          "Favorable energy between Mercury-Venus: encourage collaboration.",
+          "Favorable energy between Mercury-Mars: encourage collaboration.",
+          "Favorable energy between Venus-Mars: encourage collaboration.",
+          "2026-03-26: Favorable transit \u2014 ideal for relationship growth.",
+          "2026-03-27: Tense transit \u2014 avoid major decisions.",
+          "2026-03-28: Favorable transit \u2014 ideal for relationship growth.",
+          "2026-03-30: Favorable transit \u2014 ideal for relationship growth.",
+          "2026-03-31: Tense transit \u2014 avoid major decisions.",
+          "2026-04-01: Favorable transit \u2014 ideal for relationship growth.",
+          "2026-04-02: Favorable transit \u2014 ideal for relationship growth."
+        ]
+      },
+      {
+        "pair_id": "dba7569a-36f5-413c-8e7e-fe95413a89f8",
+        "chartA_id": "1b867fc1-5099-4c43-a6b4-946bbf11e3e2",
+        "chartB_id": "602ac8ab-60cc-49ef-b66f-d0c76874658a",
+        "planet_pair_rules": [],
+        "predictive_scoring": {
+          "compatibility_score": 0.54,
+          "archetype_probs": [
+            0.28,
+            0.34,
+            0.1,
+            0.29
+          ],
+          "alerts": [],
+          "midpoints": {
+            "Sun-Moon": 16.77,
+            "Sun-Mercury": 17.47,
+            "Sun-Venus": 17.2,
+            "Sun-Mars": 12.96,
+            "Moon-Mercury": 21.62,
+            "Moon-Venus": 21.35,
+            "Moon-Mars": 17.12,
+            "Mercury-Venus": 22.05,
+            "Mercury-Mars": 17.82,
+            "Venus-Mars": 17.55
+          },
+          "aspects": {
+            "Sun-Moon": "trine",
+            "Sun-Mercury": "sextile",
+            "Sun-Venus": "square",
+            "Sun-Mars": "conjunction",
+            "Moon-Mercury": "opposition",
+            "Moon-Venus": "square",
+            "Moon-Mars": "opposition",
+            "Mercury-Venus": "square",
+            "Mercury-Mars": "trine",
+            "Venus-Mars": "conjunction"
+          }
+        },
+        "monte_carlo_simulation": {
+          "high_compatibility": 618,
+          "moderate_compatibility": 298,
+          "low_compatibility": 84
+        },
+        "transit_forecast": {
+          "2026-03-26": [
+            "Sun trine Moon"
+          ],
+          "2026-03-27": [
+            "Mars square Venus",
+            "Sun trine Moon"
+          ],
+          "2026-03-28": [
+            "Moon opposition Mars"
+          ],
+          "2026-03-29": [
+            "Sun conjunct Venus"
+          ],
+          "2026-03-30": [
+            "Moon opposition Mars",
+            "Sun trine Moon"
+          ],
+          "2026-03-31": [
+            "Sun conjunct Venus"
+          ],
+          "2026-04-01": [
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-02": [
+            "Mars square Venus",
+            "Moon opposition Mars"
+          ],
+          "2026-04-03": [
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-04": [
+            "Mars square Venus"
+          ],
+          "2026-04-05": [
+            "Sun trine Moon",
+            "Sun conjunct Venus"
+          ],
+          "2026-04-06": [
+            "Sun conjunct Venus",
+            "Moon opposition Mars"
+          ],
+          "2026-04-07": [
+            "Sun trine Moon"
+          ],
+          "2026-04-08": [
+            "Venus sextile Jupiter",
+            "Sun trine Moon"
+          ],
+          "2026-04-09": [
+            "Sun trine Moon",
+            "Sun conjunct Venus"
+          ],
+          "2026-04-10": [
+            "Venus sextile Jupiter",
+            "Mars square Venus"
+          ],
+          "2026-04-11": [
+            "Sun conjunct Venus",
+            "Sun trine Moon"
+          ],
+          "2026-04-12": [
+            "Mars square Venus"
+          ],
+          "2026-04-13": [
+            "Moon opposition Mars",
+            "Sun conjunct Venus"
+          ],
+          "2026-04-14": [
+            "Sun trine Moon",
+            "Mars square Venus"
+          ],
+          "2026-04-15": [
+            "Mars square Venus"
+          ],
+          "2026-04-16": [
+            "Sun conjunct Venus"
+          ],
+          "2026-04-17": [
+            "Moon opposition Mars",
+            "Mars square Venus"
+          ],
+          "2026-04-18": [
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-19": [
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-20": [
+            "Venus sextile Jupiter",
+            "Mars square Venus"
+          ],
+          "2026-04-21": [
+            "Mars square Venus"
+          ],
+          "2026-04-22": [
+            "Moon opposition Mars",
+            "Sun trine Moon"
+          ],
+          "2026-04-23": [
+            "Mars square Venus",
+            "Sun trine Moon"
+          ],
+          "2026-04-24": [
+            "Venus sextile Jupiter"
+          ]
+        },
+        "coaching_guidance": [
+          "Favorable energy between Sun-Moon: encourage collaboration.",
+          "Favorable energy between Sun-Mercury: encourage collaboration.",
+          "Favorable energy between Sun-Mars: encourage collaboration.",
+          "Favorable energy between Mercury-Mars: encourage collaboration.",
+          "Favorable energy between Venus-Mars: encourage collaboration.",
+          "2026-03-26: Favorable transit \u2014 ideal for relationship growth.",
+          "2026-03-27: Tense transit \u2014 avoid major decisions.",
+          "2026-03-27: Favorable transit \u2014 ideal for relationship growth.",
+          "2026-03-28: Tense transit \u2014 avoid major decisions.",
+          "2026-03-30: Tense transit \u2014 avoid major decisions."
+        ]
+      },
+      {
+        "pair_id": "8c337efc-b54a-49e4-858c-2283efbf9a84",
+        "chartA_id": "29f9f59f-f86d-4a3f-a017-088ca343aec4",
+        "chartB_id": "f308b0c3-d369-40ab-8ba9-e6299334d39b",
+        "planet_pair_rules": [],
+        "predictive_scoring": {
+          "compatibility_score": 0.49,
+          "archetype_probs": [
+            0.35,
+            0.33,
+            0.28,
+            0.05
+          ],
+          "alerts": [],
+          "midpoints": {
+            "Sun-Moon": 6.9,
+            "Sun-Mercury": 5.1,
+            "Sun-Venus": 9.1,
+            "Sun-Mars": 11.41,
+            "Moon-Mercury": 2.83,
+            "Moon-Venus": 6.83,
+            "Moon-Mars": 9.14,
+            "Mercury-Venus": 5.03,
+            "Mercury-Mars": 7.34,
+            "Venus-Mars": 11.34
+          },
+          "aspects": {
+            "Sun-Moon": "opposition",
+            "Sun-Mercury": "square",
+            "Sun-Venus": "opposition",
+            "Sun-Mars": "opposition",
+            "Moon-Mercury": "conjunction",
+            "Moon-Venus": "sextile",
+            "Moon-Mars": "square",
+            "Mercury-Venus": "trine",
+            "Mercury-Mars": "square",
+            "Venus-Mars": "trine"
+          }
+        },
+        "monte_carlo_simulation": {
+          "high_compatibility": 937,
+          "moderate_compatibility": 2,
+          "low_compatibility": 61
+        },
+        "transit_forecast": {
+          "2026-03-26": [
+            "Sun conjunct Venus"
+          ],
+          "2026-03-27": [
+            "Sun trine Moon"
+          ],
+          "2026-03-28": [
+            "Venus sextile Jupiter",
+            "Sun conjunct Venus"
+          ],
+          "2026-03-29": [
+            "Sun trine Moon",
+            "Sun conjunct Venus"
+          ],
+          "2026-03-30": [
+            "Mars square Venus"
+          ],
+          "2026-03-31": [
+            "Moon opposition Mars"
+          ],
+          "2026-04-01": [
+            "Sun trine Moon"
+          ],
+          "2026-04-02": [
+            "Sun trine Moon"
+          ],
+          "2026-04-03": [
+            "Moon opposition Mars",
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-04": [
+            "Sun conjunct Venus",
+            "Moon opposition Mars"
+          ],
+          "2026-04-05": [
+            "Sun conjunct Venus",
+            "Mars square Venus"
+          ],
+          "2026-04-06": [
+            "Mars square Venus"
+          ],
+          "2026-04-07": [
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-08": [
+            "Sun trine Moon"
+          ],
+          "2026-04-09": [
+            "Sun trine Moon"
+          ],
+          "2026-04-10": [
+            "Mars square Venus"
+          ],
+          "2026-04-11": [
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-12": [
+            "Venus sextile Jupiter",
+            "Sun conjunct Venus"
+          ],
+          "2026-04-13": [
+            "Sun trine Moon",
+            "Moon opposition Mars"
+          ],
+          "2026-04-14": [
+            "Venus sextile Jupiter",
+            "Moon opposition Mars"
+          ],
+          "2026-04-15": [
+            "Moon opposition Mars",
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-16": [
+            "Sun conjunct Venus",
+            "Venus sextile Jupiter"
+          ],
+          "2026-04-17": [
+            "Sun trine Moon",
+            "Sun conjunct Venus"
+          ],
+          "2026-04-18": [
+            "Sun conjunct Venus"
+          ],
+          "2026-04-19": [
+            "Mars square Venus",
+            "Sun conjunct Venus"
+          ],
+          "2026-04-20": [
+            "Sun trine Moon"
+          ],
+          "2026-04-21": [
+            "Venus sextile Jupiter",
+            "Sun trine Moon"
+          ],
+          "2026-04-22": [
+            "Mars square Venus",
+            "Moon opposition Mars"
+          ],
+          "2026-04-23": [
+            "Moon opposition Mars",
+            "Sun conjunct Venus"
+          ],
+          "2026-04-24": [
+            "Moon opposition Mars",
+            "Sun conjunct Venus"
+          ]
+        },
+        "coaching_guidance": [
+          "Favorable energy between Moon-Mercury: encourage collaboration.",
+          "Favorable energy between Moon-Venus: encourage collaboration.",
+  
