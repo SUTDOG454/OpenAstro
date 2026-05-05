@@ -1,0 +1,294 @@
+{
+  "additions": {
+    "aspect_doctrine_detailed": {
+      "applying_vs_separating": {
+        "description": "The distinction between applying (moving toward an exact aspect) and separating (moving away from an exact aspect) is crucial in Hellenistic and horary astrology. Applying aspects are more powerful and indicate future developments; separating aspects indicate past events.",
+        "ranges": {
+          "sunaphe_engagement": "When a faster planet applies to a slower planet within 3° (13° for the Moon), it is called an 'engagement' (sunaphe). This intensifies the relationship.",
+          "kollesis_adherence": "When two planets apply to a conjunction within 3° (13° for the Moon), it is called 'adherence' (kollesis).",
+          "sunodos_assembly": "A conjunction within 3° to 15° (but not within 3°) is called an 'assembly' (sunodos). This is a milder form of conjunction."
+        },
+        "interpretation": "Applying aspects signify events that are yet to occur; separating aspects signify events that have already taken place. In natal astrology, separating aspects often indicate talents or traits that are inherent from birth, while applying aspects indicate potentials that will unfold."
+      },
+      "right_left_aspects": {
+        "description": "Aspect on the right side (to signs earlier in zodiacal order) are called 'dexter' (right) and are stronger; aspects on the left side (to signs later in order) are called 'sinister' (left) and are weaker. This distinction applies to sextile, square, and trine.",
+        "rule": "The planet casting a ray to its right (counter‑clockwise) overcomes the planet on its left. The overcoming planet has greater influence.",
+        "example": "If Jupiter at 10° Taurus squares Mars at 10° Leo (right‑side square for Jupiter, left‑side for Mars), Jupiter overcomes Mars and dominates the interaction."
+      },
+      "overcoming_kathuperteresis": {
+        "description": "Overcoming (kathuperteresis) is a condition where one planet is in a superior position and thus 'overcomes' another. It is determined by right‑side aspects (as above) and by being 'upon the tenth' (epidekateia).",
+        "upon_the_tenth": "A planet is 'upon the tenth' relative to another when it is in the 10th sign from that planet (i.e., a superior square). This gives the planet domination, for good or ill.",
+        "interpretation": "If a benefic overcomes, it confers positive outcomes; if a malefic overcomes, it brings difficulty. The overcoming planet's condition (dignity, sect) modifies the result."
+      },
+      "aversion": {
+        "description": "Aversion (apostrophe) occurs when two signs have no aspectual relationship (i.e., they are not in sextile, square, trine, or opposition). Planets in averse signs cannot 'see' each other and thus have no direct influence.",
+        "significance": "In horary, if two significators are in aversion, the matter cannot be accomplished. In natal, planets in aversion may indicate areas of life that are disconnected or require effort to integrate."
+      }
+    },
+    "sect_detailed": {
+      "rejoicing_conditions": {
+        "description": "A planet 'rejoices' when it is in its proper sect and in the appropriate hemisphere (diurnal planets above horizon, nocturnal planets below). This adds additional strength.",
+        "day_planets": "Sun, Jupiter, Saturn prefer to be above the horizon in a day chart, below the horizon in a night chart.",
+        "night_planets": "Moon, Venus, Mars prefer to be above the horizon in a night chart, below the horizon in a day chart.",
+        "mercury": "Mercury rejoices when it is a morning star (east of the Sun) in a day chart, or an evening star (west of the Sun) in a night chart."
+      },
+      "sect_in_houses": {
+        "description": "The house placement interacts with sect: planets in houses that match their preferred hemisphere gain accidental dignity. For example, Jupiter in the 10th house (above horizon) in a day chart is strongly dignified."
+      },
+      "benefic_malefic_by_sect": {
+        "day_chart": {
+          "primary_benefic": "Jupiter (most positive)",
+          "secondary_benefic": "Venus (positive but less)",
+          "primary_malefic": "Mars (most harmful)",
+          "secondary_malefic": "Saturn (harmful but less)"
+        },
+        "night_chart": {
+          "primary_benefic": "Venus (most positive)",
+          "secondary_benefic": "Jupiter (positive but less)",
+          "primary_malefic": "Saturn (most harmful)",
+          "secondary_malefic": "Mars (harmful but less)"
+        }
+      }
+    },
+    "planetary_conditions": {
+      "hayiz_hayyiz": {
+        "description": "A medieval condition derived from sect and hemisphere, meaning a planet is 'in its hayyiz' if it is in its proper sect and also in its proper hemisphere. It gives the planet additional strength and is considered a form of accidental dignity.",
+        "calculation": "A planet is in hayyiz if (a) it is a diurnal planet in a day chart and above the horizon, or a nocturnal planet in a night chart and above the horizon, or (b) it is a diurnal planet in a night chart and below the horizon, or a nocturnal planet in a day chart and below the horizon. Essentially, the planet must be in the hemisphere that matches its sect (above for diurnal, below for nocturnal)."
+      },
+      "mutual_reception_detailed": {
+        "description": "Mutual reception occurs when two planets are in each other's dignities (domicile, exaltation, triplicity, term, or face). They support each other and can mitigate afflictions.",
+        "types": {
+          "by_domicile": "Planet A in domicile of Planet B, and Planet B in domicile of Planet A. Strongest form.",
+          "by_exaltation": "Planet A in exaltation of Planet B, and vice versa. Very strong.",
+          "by_triplicity": "Planet A in triplicity of Planet B, and vice versa. Moderate.",
+          "by_term": "Planet A in term of Planet B, and vice versa. Weak but notable.",
+          "by_face": "Planet A in face of Planet B, and vice versa. Weakest."
+        },
+        "interpretation": "Mutual reception creates a bond of cooperation. Even if the aspect between them is a square or opposition, the reception softens the difficulty and allows them to work together."
+      },
+      "exaltation_depression_chariot": {
+        "description": "A planet in its own exaltation is like a king on a throne; in its depression (fall) it is like a king in exile. A planet in its own terms or bounds is like a manager in a small domain.",
+        "chariot_condition": "A planet is said to be 'in its chariot' if it is in its own domicile, exaltation, or bounds, and also not under the beams. This condition gives it maximum strength and ability to act."
+      },
+      "cazimi_combust": {
+        "cazimi": "Within 17 minutes of the Sun (some say 1°). The planet is 'in the heart of the Sun' and receives immense power, purity, and favor.",
+        "combust": "Within 8° of the Sun but not cazimi. The planet is weakened, hidden, its voice burned up.",
+        "under_beams": "Within 15° of the Sun but not combust. The planet is hidden but not entirely powerless; it may act secretly."
+      }
+    },
+    "thema_mundi": {
+      "description": "The birth chart of the cosmos, used as a teaching tool to explain the domicile rulerships and the joys of the planets. It has Cancer rising, with the Moon in Cancer, Sun in Leo, Mercury in Virgo, Venus in Libra, Mars in Scorpio, Jupiter in Sagittarius, Saturn in Capricorn.",
+      "rationale": {
+        "cancer_rising": "Because at the time of creation, the summer solstice point (0° Cancer) was rising, symbolizing the beginning of life and light.",
+        "moon_in_cancer": "The Moon rules Cancer, so it is at home.",
+        "sun_in_leo": "The Sun rules Leo, so it is at home.",
+        "mercury_in_virgo": "Mercury rules Virgo, so it is at home.",
+        "venus_in_libra": "Venus rules Libra, so it is at home.",
+        "mars_in_scorpio": "Mars rules Scorpio, so it is at home.",
+        "jupiter_in_sagittarius": "Jupiter rules Sagittarius, so it is at home.",
+        "saturn_in_capricorn": "Saturn rules Capricorn, so it is at home."
+      },
+      "use_in_delineation": "By comparing any nativity to the Thema Mundi, one can see which planets are 'at home' and which are 'in exile.' The more planets in their own domiciles, the closer the native approaches the ideal divine pattern."
+    },
+    "time_lord_systems_more": {
+      "decennials": {
+        "description": "A Persian‑Arabic system dividing life into 10‑year periods ruled by the planets in a fixed order (Sun, Venus, Mercury, Moon, Saturn, Jupiter, Mars, then repeating). The first decennial starts from the Sun at birth (or from the Ascendant?).",
+        "order": "Sun (10 years), Venus (8), Mercury (13), Moon (9), Saturn (11), Jupiter (12), Mars (7). Total 70 years, then repeat.",
+        "interpretation": "Each decennial activates the themes of that planet in the life. The planet's condition in the natal chart indicates the quality of the period."
+      },
+      "firdaria_detailed": {
+        "description": "A Persian system with a sequence of planetary periods of varying lengths, depending on sect (day or night chart). The order and lengths are fixed.",
+        "day_chart_order": "Sun (10 years), Venus (8), Mercury (13), Moon (9), Saturn (11), Jupiter (12), Mars (7). Then repeat with Sun again? Actually the sequence continues after 70 years with the same order but the planet's sub‑periods are also calculated.",
+        "night_chart_order": "Moon (9 years), Saturn (11), Jupiter (12), Mars (7), Sun (10), Venus (8), Mercury (13).",
+        "sub_periods": "Within each major period, there are sub‑periods of the planets in the same order, proportionally smaller.",
+        "interpretation": "The firdaria periods are powerful indicators of major life themes, often more reliable than transits for long‑term trends."
+      },
+      "solar_return_detailed": {
+        "description": "A chart cast for the exact moment the Sun returns to its natal position each year. It indicates the themes of the upcoming year.",
+        "house_placement": "The house of the Solar Return Sun shows the area of focus for the year. The Ascendant of the Solar Return sets the tone.",
+        "comparison_with_natal": "Planets in the Solar Return making aspects to natal planets indicate specific events. Especially important: the Solar Return Moon, Midheaven, and the ruler of the Solar Return Ascendant.",
+        "example_tycho_brahe": "In his last Solar Return, the 4th house (end of life) was rising, and Saturn was conjunct his natal Fortune."
+      },
+      "lunar_return": {
+        "description": "A chart cast for the exact moment the Moon returns to its natal position each month (approx. 27.3 days). Indicates emotional themes and short‑term cycles.",
+        "use": "Especially useful in horary and for timing monthly developments. The Lunar Return Moon's aspects indicate the quality of the month."
+      },
+      "planetary_returns": {
+        "jupiter_return": "Every 12 years, marks a period of expansion and opportunity. The house and sign of the return Jupiter indicate where growth will occur.",
+        "saturn_return": "Already covered, but detailed: the first Saturn return (28‑30) marks full adulthood; the second (58‑60) marks elderhood and legacy; the third (88‑90) marks completion.",
+        "uranus_return": "Every 84 years, too long for most lives. Uranus opposition (age 40‑42) is more significant.",
+        "neptune_return": "Every 165 years, rarely experienced. Neptune square (age 40‑42) and opposition (age 80‑84) are significant.",
+        "pluto_return": "For nations, e.g., USA Pluto return 2022‑2024."
+      }
+    },
+    "fixed_stars_natures": {
+      "description": "Each fixed star has a nature that is a combination of planetary qualities. These natures modify the star's effect.",
+      "combinations": [
+        { "star": "Regulus", "nature": "Mars/Jupiter", "effect": "Royal, ambitious, but violent if afflicted." },
+        { "star": "Spica", "nature": "Venus/Mercury", "effect": "Artistic, wealthy, fortunate." },
+        { "star": "Algol", "nature": "Saturn/Jupiter", "effect": "Violent, beheading, horror, but also transformative power." },
+        { "star": "Antares", "nature": "Mars/Jupiter", "effect": "Courageous, warlike, danger of violence." },
+        { "star": "Aldebaran", "nature": "Mars", "effect": "Military action, fraught with danger." },
+        { "star": "Sirius", "nature": "Jupiter/Mars", "effect": "Honor, renown, but also heat and dryness." },
+        { "star": "Pleiades", "nature": "Moon/Mars", "effect": "Sorrow, accidents to eyes, weeping." },
+        { "star": "Praesepe", "nature": "Moon/Mars", "effect": "Blindness, brutality, disgrace." },
+        { "star": "Vega", "nature": "Venus/Mercury", "effect": "Artistic genius, idealism, sudden fame." },
+        { "star": "Achernar", "nature": "Jupiter", "effect": "Success in religion, danger from water." },
+        { "star": "Fomalhaut", "nature": "Venus/Mercury", "effect": "Magical arts, transcendental success, loneliness." }
+      ]
+    },
+    "historical_charts_more": [
+      {
+        "id": "Johannes_Kepler",
+        "natal_configuration": "December 27, 1571, 2:30 PM, Weil der Stadt, Germany. Ascendant 19° Taurus, Sun 5° Capricorn, Moon 22° Gemini, Mercury 23° Capricorn, Venus 13° Aquarius, Mars 19° Virgo, Jupiter 7° Gemini, Saturn 28° Capricorn.",
+        "fate_event": "Astronomer, discovered laws of planetary motion. Cast horoscopes, predicted Wallenstein's death.",
+        "astrological_commentary": "Sun, Mercury, Saturn in Capricorn – disciplined, methodical mind, interest in structure and laws. Moon in Gemini in 9th house (philosophy, travel) – love of learning and travel. Jupiter in Gemini – expansive intellect. Mars in Virgo – precise, analytical. Saturn conjunct Sun – life of hard work and recognition."
+      },
+      {
+        "id": "Galileo_Galilei",
+        "natal_configuration": "February 15, 1564, 3:00 PM, Pisa, Italy. Ascendant 12° Cancer, Sun 26° Aquarius, Moon 24° Virgo, Mercury 6° Pisces, Venus 12° Aries, Mars 23° Aries, Jupiter 17° Taurus, Saturn 28° Sagittarius.",
+        "fate_event": "Astronomer, physicist, faced Inquisition. Discovered moons of Jupiter, supported heliocentrism.",
+        "astrological_commentary": "Sun in Aquarius – innovative, revolutionary. Moon in Virgo in 4th house – roots in careful observation. Mercury in Pisces – imaginative, but square Saturn – difficulties with authority. Mars in Aries in 10th house – bold public stance, conflict. Jupiter in Taurus – patience, persistence."
+      },
+      {
+        "id": "Isaac_Newton",
+        "natal_configuration": "December 25, 1642 (Julian), 2:00 AM, Woolsthorpe, England. Ascendant 15° Libra, Sun 4° Capricorn, Moon 22° Taurus, Mercury 18° Sagittarius, Venus 9° Capricorn, Mars 0° Aquarius, Jupiter 17° Sagittarius, Saturn 4° Cancer.",
+        "fate_event": "Physicist, mathematician, discovered gravity, laws of motion. Also studied alchemy and astrology.",
+        "astrological_commentary": "Sun in Capricorn trine Mars in Aquarius – disciplined, scientific, innovative. Moon in Taurus – stable, grounded. Mercury in Sagittarius – philosophical, wide‑ranging mind. Saturn in Cancer in 8th house – deep interest in hidden matters (alchemy, occult). Jupiter in Sagittarius – expansive vision."
+      },
+      {
+        "id": "Albert_Einstein",
+        "natal_configuration": "March 14, 1879, 11:30 AM, Ulm, Germany. Ascendant 16° Cancer, Sun 23° Pisces, Moon 4° Libra, Mercury 6° Aries, Venus 4° Taurus, Mars 7° Virgo, Jupiter 0° Aquarius, Saturn 10° Aries.",
+        "fate_event": "Physicist, developed theory of relativity. Nobel Prize 1921.",
+        "astrological_commentary": "Sun in Pisces – visionary, intuitive. Moon in Libra in 10th house – public image of fairness, diplomacy. Mercury in Aries – quick, original ideas. Venus in Taurus – love of music, sensual pleasures. Mars in Virgo – meticulous analysis. Jupiter in Aquarius – revolutionary thinking, humanitarian. Saturn in Aries – disciplined pioneer."
+      }
+    ],
+    "mundane_astrology_detailed": {
+      "great_conjunctions": {
+        "description": "The Jupiter‑Saturn conjunction occurs every 20 years and marks major historical shifts. The shift from one triplicity to another (every 240 years) is even more significant. The shift from one element (earth, air, fire, water) to another (every 800 years) is epochal.",
+        "recent_conjunctions": [
+          { "year": 2000, "sign": "Taurus (May) and Gemini (December)", "significance": "Transition from Earth to Air triplicity? Actually the 2000 conjunctions were in Taurus (May) and Gemini (Dec), not a triplicity shift." },
+          { "year": 2020, "sign": "0° Aquarius", "significance": "Beginning of the Air triplicity cycle (2020‑2220). Marks the rise of digital age, social networks, decentralized power." }
+        ],
+        "historical_examples": [
+          { "year": "7 BCE", "significance": "Jupiter‑Saturn conjunction in Pisces, possibly the Star of Bethlehem." },
+          { "year": "1345", "significance": "Conjunction in Aquarius (with Mars) linked to Black Death." },
+          { "year": "1524", "significance": "All seven planets in Pisces, causing panic about floods, led to Peasants' Revolt." },
+          { "year": "1588", "significance": "Jupiter‑Saturn in Pisces, predicted Spanish Armada and other events." }
+        ]
+      },
+      "ingress_charts": {
+        "aries_ingress": "The Sun's entry into Aries (around March 20) marks the astrological new year. Charts cast for this moment are used to predict global trends for the year.",
+        "capricorn_ingress": "Used in some traditions for political forecasts."
+      },
+      "eclipse_paths": {
+        "description": "The path of a solar eclipse indicates the regions that will be most affected. The duration of the eclipse in hours corresponds to years of effect.",
+        "example_9/11": "Eclipse July 1, 2000, path over Middle East, Europe, and North America. It was conjunct Mars in Cancer, in the 9th house of foreign affairs for the USA Sibly chart. Effect lasted 2 years 10 months – September 2001 fell within that window."
+      },
+      "comets_in_mundane": {
+        "interpretation": "Comets are omens of major change, often violent. Their color, direction, and zodiacal position indicate the nature of the event.",
+        "historical": [
+          { "comet": "Halley's 1066", "event": "Norman Conquest, depicted in Bayeux Tapestry." },
+          { "comet": "Halley's 1456", "event": "Turkish invasion of Europe, Pope Callistus III ordered prayers." },
+          { "comet": "Great Comet 1680", "event": "Wars and revolutions, Newton studied it." },
+          { "comet": "Comet 1811", "event": "Napoleon's Russian campaign." }
+        ]
+      }
+    },
+    "nodes_detailed": {
+      "description": "The Moon's nodes are points where the Moon crosses the ecliptic. The North Node (Rahu) is associated with increase, destiny, and the dragon's head; the South Node (Ketu) with decrease, past karma, and the dragon's tail.",
+      "effects": {
+        "north_node": "When with benefics, it increases their good effects; with malefics, it exacerbates their harm.",
+        "south_node": "When with benefics, it diminishes their good; with malefics, it lessens their harm."
+      },
+      "eclipse_omen": "An eclipse near the nodes indicates a major event, especially if it falls on a sensitive point in a national chart.",
+      "in_natal": {
+        "conjunction_with_sun": "Fated identity, often a life path involving leadership or public role.",
+        "conjunction_with_moon": "Fated emotions, strong karmic ties to family, frequent changes in residence.",
+        "conjunction_with_mercury": "Fated communication, interest in astrology or prophecy.",
+        "conjunction_with_venus": "Fated relationships, unusual love affairs.",
+        "conjunction_with_mars": "Fated aggression, accidents, or surgical operations.",
+        "conjunction_with_jupiter": "Fated expansion, luck in foreign lands.",
+        "conjunction_with_saturn": "Fated limitations, karmic debts, delay and discipline."
+      }
+    },
+    "antiscia": {
+      "description": "Antiscia are points of reflection across the solstice axis (0° Cancer–0° Capricorn). Signs that are equidistant from the solstices have a sympathetic relationship. Planets in antiscia act as if they were in a mild conjunction.",
+      "pairs": [
+        "Gemini ↔ Cancer",
+        "Taurus ↔ Leo",
+        "Aries ↔ Virgo",
+        "Pisces ↔ Libra",
+        "Aquarius ↔ Scorpio",
+        "Capricorn ↔ Sagittarius"
+      ],
+      "contra_antiscia": "Reflection across the equinox axis (0° Aries–0° Libra). Pairs are the same as antiscia but with opposite signs? Actually contra‑antiscia are the opposite points: Aries ↔ Pisces, Taurus ↔ Aquarius, Gemini ↔ Capricorn, Cancer ↔ Sagittarius, Leo ↔ Scorpio, Virgo ↔ Libra.",
+      "interpretation": "Planets in antiscia are in a sort of 'shadow' conjunction. They share a bond even if they are not in standard aspect. This is often used in horary to indicate hidden connections."
+    },
+    "chariot_condition": {
+      "description": "A planet is said to be 'in its chariot' when it is in its own domicile, exaltation, or bounds, and also not under the beams. This gives it maximum power and ability to act effectively.",
+      "source": "Antiochus, Porphyry, Rhetorius",
+      "significance": "Such a planet can overcome afflictions and is a strong indicator of success in its areas of rule."
+    },
+    "lots_more": {
+      "description": "Additional lots from various Hellenistic sources (Valens, Dorotheus, Rhetorius).",
+      "lots": [
+        {
+          "name": "Lot of Father",
+          "formula": "Asc + Sun – Saturn",
+          "interpretation": "Indicates the father's condition, legacy, and relationship with the father."
+        },
+        {
+          "name": "Lot of Mother",
+          "formula": "Asc + Moon – Venus",
+          "interpretation": "Indicates the mother's condition and relationship with the mother."
+        },
+        {
+          "name": "Lot of Brothers",
+          "formula": "Asc + Jupiter – Saturn",
+          "interpretation": "Indicates siblings, their number and condition."
+        },
+        {
+          "name": "Lot of Children",
+          "formula": "Asc + Jupiter – Venus",
+          "interpretation": "Indicates children, their number and condition."
+        },
+        {
+          "name": "Lot of Marriage",
+          "formula": "Asc + Venus – Jupiter (for men) or Asc + Mars – Venus (for women)",
+          "interpretation": "Indicates the nature of marriage and the spouse."
+        },
+        {
+          "name": "Lot of Friends",
+          "formula": "Asc + Moon – Mercury",
+          "interpretation": "Indicates friendships, allies, and social networks."
+        },
+        {
+          "name": "Lot of Enemies",
+          "formula": "Asc + Saturn – Mars",
+          "interpretation": "Indicates open enemies, rivals, and conflicts."
+        },
+        {
+          "name": "Lot of Travel",
+          "formula": "Asc + Mercury – Moon",
+          "interpretation": "Indicates journeys, living abroad, foreign connections."
+        }
+      ]
+    },
+    "progression_techniques": {
+      "secondary_progressions_detailed": {
+        "description": "One day after birth equals one year of life. The progressed Sun moves about 1° per year; the progressed Moon moves about 13° per month.",
+        "key_aspects": {
+          "progressed_sun_conjunct_natal_sun": "Around age 29, 58, etc. – identity renewal, similar to Saturn Return.",
+          "progressed_moon_conjunct_natal_moon": "Every 27.3 years? Actually the progressed Moon returns to its natal position about every 27 years (the 'lunar return' of progressions). This marks emotional cycles.",
+          "progressed_venus_conjunct_natal_mars": "Romantic or assertive turning point."
+        }
+      },
+      "primary_directions_detailed": {
+        "description": "A ancient technique using the movement of the celestial sphere. The Ascendant and Midheaven move forward about 1° every 4 minutes of time, which equates to about 1° per year of life. Directing a planet to an angle or another planet indicates events.",
+        "formula": "The arc = RA of promissor – RA of significator (for conjunctions with angles). For aspects, the directed point is moved until it forms an aspect with a natal planet.",
+        "example": "Wallenstein: progressed Midheaven square to natal Mars indicated violent death."
+      }
+    }
+  }
+}
