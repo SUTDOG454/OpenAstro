@@ -1,0 +1,10 @@
+{
+  "master_method": {
+    "name": "Unified Astrological Master Method",
+    "version": "1.1",
+    "mode": "merged_continuation",
+    "source_modules": [
+      { ... }
+    ]
+  }
+}
