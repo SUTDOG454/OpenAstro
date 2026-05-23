@@ -1,0 +1,23 @@
+{
+  "chiron_compendium_unified": {
+    "metadata": {
+      "title": "The Complete Astrological Knowledge Base – Unified with Chiron Compendium",
+      "version": "4.0",
+      "date": "2025-03-31",
+      "description": "A master synthesis of Chiron astrology, Jungian archetypes, sexual archetypes (Vivian Robson), deity asteroids, fixed stars, centaurs, TNOs, uranian planets, houses, signs, and advanced relationship techniques. Designed as a comprehensive reference for astrological research, software integration, and human interpretation.",
+      "sources": [
+        "Chiron in House, Sign, Aspect files",
+        "Magi Astrology rubric",
+        "Jessica Davidson, Melanie Reinhart, Barbara Hand Clow",
+        "Tom Jacobs (evolutionary astrology)",
+        "Alice Bailey (esoteric astrology, seven rays)",
+        "Vivian E. Robson (An Astrology Guide to Your Sex Life)",
+        "Empress Atlantis Deity Asteroid List",
+        "Uranian/Hamburg School",
+        "Centaur and TNO research",
+        "Fixed star catalogs"
+      ]
+    },
+    "ontology": { ...truncated for brevity... }
+  }
+}
