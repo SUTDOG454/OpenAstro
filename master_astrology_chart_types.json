@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "title": "Master Astrology Chart Types",
+    "version": "3.0",
+    "description": "Unified, verbose reference for all major Western and Vedic astrology chart types, including relationship, forecasting, karmic, and Davison family charts. Interaction schema normalized across all objects.",
+    "interaction_schema_key": {
+      "derived_from": "Direct computational inputs used to produce this chart.",
+      "feeds_into": "Charts that take this chart as a primary input for further derivation or timing.",
+      "overlays_with": "Charts commonly combined, biwheeled, or read in tandem with this one.",
+      "timing_with": "Timing layers (transits, progressions, Solar Arc, returns, etc.) standardly applied to this base.",
+      "supports": "Charts this chart conceptually refines, validates, or adds nuance to.",
+      "alternative_to": "Charts that serve a functionally similar role via a different construction method."
+    }
+  },
+
+  "chart_types": [
+    ... (truncated for brevity; the full JSON is being uploaded)
+  ]
+}
