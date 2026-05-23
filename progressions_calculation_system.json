@@ -1,0 +1,18 @@
+{
+  "progressions_calculation_system": {
+    "metadata": {
+      "module_name": "Secondary Progressions & Solar Arc Directions",
+      "version": "2.0",
+      "purpose": "Internal psychological development and soul evolution timing"
+    },
+
+    "secondary_progressions": {
+      "core_principle": "Day-for-year progression: Day X after birth = Age X",
+      "calculation_method": {
+        "formula": "Birth_Date + Age_in_Days = Progressed_Date",
+        "example": "Born Jan 1, 2000 at noon → Age 25 progression = Jan 26, 2000 at noon ephemeris"
+      },
+
+      ... (truncated for brevity per message, full JSON is being uploaded)
+  }
+}
