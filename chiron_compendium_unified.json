@@ -18,6 +18,28 @@
         "Fixed star catalogs"
       ]
     },
-    "ontology": { ...truncated for brevity... }
+    "ontology": {
+      "description": "Hierarchical relationships between astrological entities.",
+      "classes": [
+        {"class": "CelestialBody", "subclasses": ["Planet", "DwarfPlanet", "Asteroid", "Centaur", "TNO", "FixedStar", "HypotheticalPlanet"]},
+        {"class": "Planet", "subclasses": ["PersonalPlanet", "SocialPlanet", "TranspersonalPlanet", "UranianPlanet"]},
+        {"class": "Point", "subclasses": ["SensitivePoint", "ArabicPart", "LunarNode", "Vertex", "Midpoint"]},
+        {"class": "Division", "subclasses": ["Sign", "House", "Decan", "Duad", "Nakshatra"]},
+        {"class": "Relationship", "subclasses": ["Aspect", "AspectPattern", "Transit", "Progression", "SynastryLink"]},
+        {"class": "Timing", "subclasses": ["LunarPhase", "Eclipse", "SarosCycle", "CinderellaTime"]}
+      ],
+      "relationships": [
+        {"subject": "Planet", "predicate": "occupies", "object": "Sign"},
+        {"subject": "Planet", "predicate": "rules", "object": "Sign"},
+        {"subject": "House", "predicate": "cusp", "object": "Sign"},
+        {"subject": "Planet", "predicate": "forms", "object": "Aspect"},
+        {"subject": "Aspect", "predicate": "occurs between", "object": "Planet"},
+        {"subject": "Transit", "predicate": "activates", "object": "NatalPlanet"},
+        {"subject": "Progression", "predicate": "unfolds", "object": "NatalChart"},
+        {"subject": "FixedStar", "predicate": "conjunct", "object": "Planet"},
+        {"subject": "UranianPlanet", "predicate": "represents", "object": "CollectiveArchetype"}
+      ]
+    },
+    ... (truncated for brevity; full JSON module is being uploaded)
   }
 }
