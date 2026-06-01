@@ -1,0 +1,158 @@
+{
+  "karmic_system": {
+    "version": "1.1",
+    "glossary": {
+      "version": "1.0",
+      "metadata": {
+        "author": "Manus AI",
+        "date": "2026-06-01",
+        "description": "Comprehensive glossary of karmic astrology terms, symbols, and abbreviations."
+      },
+      "symbols": [
+        {
+          "glyph": "\u260a",
+          "name": "North Node",
+          "abbreviation": "NN",
+          "vedic_name": "Rahu",
+          "karmic_meaning": "The soul's evolutionary direction; unfamiliar territory representing the growth needed in this lifetime."
+        },
+        {
+          "glyph": "\u260b",
+          "name": "South Node",
+          "abbreviation": "SN",
+          "vedic_name": "Ketu",
+          "karmic_meaning": "Accumulated past-life experiences and habits; the 'comfort zone' that can become a trap if over-relied upon."
+        },
+        {
+          "glyph": "\u2644",
+          "name": "Saturn",
+          "abbreviation": "Sat",
+          "karmic_meaning": "The Lord of Karma; represents structural lessons, boundaries, and the areas of life where discipline leads to mastery."
+        },
+        {
+          "glyph": "\u2647",
+          "name": "Pluto",
+          "abbreviation": "Pl",
+          "karmic_meaning": "In Evolutionary Astrology, represents the Soul itself and its deepest unconscious desires for transformation."
+        },
+        {
+          "glyph": "\u211e",
+          "name": "Retrograde",
+          "abbreviation": "Rx",
+          "karmic_meaning": "Internalized planetary energy; indicates past-life themes requiring deep internal revision or resolution."
+        }
+      ],
+      "terms": [
+        {
+          "term": "Dharma",
+          "definition": "The path of right action and spiritual purpose; often associated with the North Node's direction.",
+          "context": "Karmic/Vedic"
+        },
+        {
+          "term": "Karmic Debt",
+          "definition": "Unresolved energy or actions from previous incarnations that manifest as specific challenges or 'blocks' in the current life.",
+          "context": "Karmic"
+        },
+        {
+          "term": "Skipped Step",
+          "definition": "A planet squaring the Nodal Axis (forming a 90\u00b0 angle to both North and South Nodes). It represents a lesson that was bypassed in a past life and must be addressed now.",
+          "context": "Evolutionary Astrology"
+        },
+        {
+          "term": "Resolution Node",
+          "definition": "The specific Lunar Node that a planet in a 'Skipped Step' configuration must move toward to resolve the karmic tension.",
+          "context": "Evolutionary Astrology"
+        },
+        {
+          "term": "Karmic Houses",
+          "definition": "The 4th, 8th, and 12th houses, which deal with the unconscious, ancestry, and hidden soul memories.",
+          "context": "General Astrology"
+        },
+        {
+          "term": "Nodal Return",
+          "definition": "When the transiting North Node returns to its natal position (approx. every 18.6 years), signaling a major karmic checkpoint.",
+          "context": "Predictive"
+        },
+        {
+          "term": "Saturn Return",
+          "definition": "When transiting Saturn returns to its natal position (approx. every 29.5 years), marking a period of intense karmic accountability and maturation.",
+          "context": "Predictive"
+        },
+        {
+          "term": "Soul Intent",
+          "definition": "The underlying evolutionary purpose behind a specific chart configuration.",
+          "context": "Evolutionary Astrology"
+        }
+      ]
+    },
+    "methodology": {
+      "version": "1.0",
+      "frameworks": [
+        {
+          "name": "Evolutionary Astrology (EA)",
+          "pioneers": [
+            "Jeffrey Wolf Green",
+            "Steven Forrest"
+          ],
+          "core_principle": "The Soul (Pluto) chooses its evolutionary path via the Nodal Axis.",
+          "key_indicators": [
+            "Pluto",
+            "Lunar Nodes",
+            "Mars (as Soul's action agent)"
+          ]
+        },
+        {
+          "name": "Karmic Axis Framework",
+          "pioneer": [
+            "Martin Schulman"
+          ],
+          "core_principle": "The Lunar Nodes are the central axis of the chart, describing the soul's trajectory.",
+          "key_indicators": [
+            "Lunar Nodes",
+            "Retrograde Planets"
+          ]
+        }
+      ],
+      "strength_assignment": {
+        "base_weighting": {
+          "luminaries": 10,
+          "personal_planets": 8,
+          "social_planets": 5,
+          "outer_planets": 3,
+          "lunar_nodes": 12
+        },
+        "modifiers": {
+          "angular_bonus": 1.5,
+          "retrograde_internalization": 1.2,
+          "domicile_exaltation_bonus": 1.25,
+          "detriment_fall_penalty": 0.8
+        },
+        "karmic_multipliers": {
+          "nodal_conjunction": 2.5,
+          "skipped_step_square": 2.0,
+          "saturn_aspect_to_nodes": 1.8,
+          "pluto_aspect_to_nodes": 2.2
+        }
+      },
+      "calculations": [
+        {
+          "name": "Aspect Strength",
+          "formula": "Strength = (Base Weight * Modifier) / (Orb + 1)",
+          "description": "Calculates the relative impact of an aspect based on the planets involved and the precision of the angle."
+        },
+        {
+          "name": "Nodal Resolution Direction",
+          "logic": "If planet squares nodes, identify which node it last made a conjunction with (South or North) to determine the resolution path.",
+          "description": "Determines whether the soul needs to integrate the South Node's past or the North Node's future to resolve a skipped step."
+        },
+        {
+          "name": "Karmic Load Index",
+          "formula": "Load = \u03a3(Karmic Multipliers * Planet Weight) for all planets in 4th, 8th, 12th houses or retrograde.",
+          "description": "A composite score representing the overall 'karmic weight' or density of the chart."
+        }
+      ]
+    },
+    "normalization_status": "Completed",
+    "deduplicated": true
+  }
+}

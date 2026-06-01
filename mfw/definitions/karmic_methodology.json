@@ -1,0 +1,57 @@
+{
+  "karmic_methodology": {
+    "version": "1.0",
+    "frameworks": [
+      {
+        "name": "Evolutionary Astrology (EA)",
+        "pioneers": ["Jeffrey Wolf Green", "Steven Forrest"],
+        "core_principle": "The Soul (Pluto) chooses its evolutionary path via the Nodal Axis.",
+        "key_indicators": ["Pluto", "Lunar Nodes", "Mars (as Soul's action agent)"]
+      },
+      {
+        "name": "Karmic Axis Framework",
+        "pioneer": ["Martin Schulman"],
+        "core_principle": "The Lunar Nodes are the central axis of the chart, describing the soul's trajectory.",
+        "key_indicators": ["Lunar Nodes", "Retrograde Planets"]
+      }
+    ],
+    "strength_assignment": {
+      "base_weighting": {
+        "luminaries": 10,
+        "personal_planets": 8,
+        "social_planets": 5,
+        "outer_planets": 3,
+        "lunar_nodes": 12
+      },
+      "modifiers": {
+        "angular_bonus": 1.5,
+        "retrograde_internalization": 1.2,
+        "domicile_exaltation_bonus": 1.25,
+        "detriment_fall_penalty": 0.8
+      },
+      "karmic_multipliers": {
+        "nodal_conjunction": 2.5,
+        "skipped_step_square": 2.0,
+        "saturn_aspect_to_nodes": 1.8,
+        "pluto_aspect_to_nodes": 2.2
+      }
+    },
+    "calculations": [
+      {
+        "name": "Aspect Strength",
+        "formula": "Strength = (Base Weight * Modifier) / (Orb + 1)",
+        "description": "Calculates the relative impact of an aspect based on the planets involved and the precision of the angle."
+      },
+      {
+        "name": "Nodal Resolution Direction",
+        "logic": "If planet squares nodes, identify which node it last made a conjunction with (South or North) to determine the resolution path.",
+        "description": "Determines whether the soul needs to integrate the South Node's past or the North Node's future to resolve a skipped step."
+      },
+      {
+        "name": "Karmic Load Index",
+        "formula": "Load = Σ(Karmic Multipliers * Planet Weight) for all planets in 4th, 8th, 12th houses or retrograde.",
+        "description": "A composite score representing the overall 'karmic weight' or density of the chart."
+      }
+    ]
+  }
+}

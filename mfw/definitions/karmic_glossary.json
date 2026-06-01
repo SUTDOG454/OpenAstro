@@ -1,0 +1,86 @@
+{
+  "karmic_astrology_glossary": {
+    "version": "1.0",
+    "metadata": {
+      "author": "Manus AI",
+      "date": "2026-06-01",
+      "description": "Comprehensive glossary of karmic astrology terms, symbols, and abbreviations."
+    },
+    "symbols": [
+      {
+        "glyph": "☊",
+        "name": "North Node",
+        "abbreviation": "NN",
+        "vedic_name": "Rahu",
+        "karmic_meaning": "The soul's evolutionary direction; unfamiliar territory representing the growth needed in this lifetime."
+      },
+      {
+        "glyph": "☋",
+        "name": "South Node",
+        "abbreviation": "SN",
+        "vedic_name": "Ketu",
+        "karmic_meaning": "Accumulated past-life experiences and habits; the 'comfort zone' that can become a trap if over-relied upon."
+      },
+      {
+        "glyph": "♄",
+        "name": "Saturn",
+        "abbreviation": "Sat",
+        "karmic_meaning": "The Lord of Karma; represents structural lessons, boundaries, and the areas of life where discipline leads to mastery."
+      },
+      {
+        "glyph": "♇",
+        "name": "Pluto",
+        "abbreviation": "Pl",
+        "karmic_meaning": "In Evolutionary Astrology, represents the Soul itself and its deepest unconscious desires for transformation."
+      },
+      {
+        "glyph": "℞",
+        "name": "Retrograde",
+        "abbreviation": "Rx",
+        "karmic_meaning": "Internalized planetary energy; indicates past-life themes requiring deep internal revision or resolution."
+      }
+    ],
+    "terms": [
+      {
+        "term": "Dharma",
+        "definition": "The path of right action and spiritual purpose; often associated with the North Node's direction.",
+        "context": "Karmic/Vedic"
+      },
+      {
+        "term": "Karmic Debt",
+        "definition": "Unresolved energy or actions from previous incarnations that manifest as specific challenges or 'blocks' in the current life.",
+        "context": "Karmic"
+      },
+      {
+        "term": "Skipped Step",
+        "definition": "A planet squaring the Nodal Axis (forming a 90° angle to both North and South Nodes). It represents a lesson that was bypassed in a past life and must be addressed now.",
+        "context": "Evolutionary Astrology"
+      },
+      {
+        "term": "Resolution Node",
+        "definition": "The specific Lunar Node that a planet in a 'Skipped Step' configuration must move toward to resolve the karmic tension.",
+        "context": "Evolutionary Astrology"
+      },
+      {
+        "term": "Karmic Houses",
+        "definition": "The 4th, 8th, and 12th houses, which deal with the unconscious, ancestry, and hidden soul memories.",
+        "context": "General Astrology"
+      },
+      {
+        "term": "Nodal Return",
+        "definition": "When the transiting North Node returns to its natal position (approx. every 18.6 years), signaling a major karmic checkpoint.",
+        "context": "Predictive"
+      },
+      {
+        "term": "Saturn Return",
+        "definition": "When transiting Saturn returns to its natal position (approx. every 29.5 years), marking a period of intense karmic accountability and maturation.",
+        "context": "Predictive"
+      },
+      {
+        "term": "Soul Intent",
+        "definition": "The underlying evolutionary purpose behind a specific chart configuration.",
+        "context": "Evolutionary Astrology"
+      }
+    ]
+  }
+}
