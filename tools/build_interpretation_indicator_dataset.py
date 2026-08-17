@@ -10,7 +10,7 @@ import sys
 
 ROOT = Path('/home/ubuntu/openastro_worktree')
 OUT = ROOT / 'data/interpretation-indicators'
-OUT.mkdir(parents=True, exist_ok=True)
+
 sys.path.insert(0, str(ROOT / 'tools'))
 from interpretation_indicator_engine import extract_keywords, normalize_text, stable_indicator_id, unicode_symbols  # noqa: E402
 
@@ -103,86 +103,91 @@ def extract_json_block(text: str):
                 pass
     return None, 'unparseable'
 
-
-files = []
-seen_paths = set()
-for root in SOURCE_ROOTS:
-    if not root.exists():
-        continue
-    for path in root.rglob('*'):
-        if not path.is_file() or path in seen_paths:
+def main() -> None:
+    OUT.mkdir(parents=True, exist_ok=True)
+    files = []
+    seen_paths = set()
+    for root in SOURCE_ROOTS:
+        if not root.exists():
             continue
-        if any(part in EXCLUDE_PARTS for part in path.parts):
-            continue
-        if path.suffix.lower() not in {'.json', '.md', '.txt'}:
-            continue
-        seen_paths.add(path)
-        files.append(path)
+        for path in root.rglob('*'):
+            if not path.is_file() or path in seen_paths:
+                continue
+            if any(part in EXCLUDE_PARTS for part in path.parts):
+                continue
+            if path.suffix.lower() not in {'.json', '.md', '.txt'}:
+                continue
+            seen_paths.add(path)
+            files.append(path)
 
-source_inventory = []
-records = []
-for path in sorted(files):
-    sid = source_id(path)
-    raw = path.read_text(encoding='utf-8', errors='replace')
-    parsed = None
-    parser = 'text'
-    warning = None
-    if path.suffix.lower() == '.json':
-        parsed, parser = extract_json_block(raw)
-        if parsed is None:
-            warning = 'json_unparseable_or_truncated'
-    source_inventory.append({
-        'source_id': sid,
-        'source_path': str(path.relative_to(ROOT)),
-        'sha256': sha256(path),
-        'media_type': source_type(path),
-        'parser': parser,
-        'parse_warning': warning,
-        'trust_status': 'untrusted_data',
-        'rights_status': 'source_rights_pending_review',
-    })
-    if parsed is not None:
-        walk_json(parsed, [], path, sid, records)
-    else:
-        # Extract only explicit interpretation-bearing lines from malformed or prose sources.
-        for lineno, line in enumerate(raw.splitlines(), 1):
-            if re.search(r'interpret|delineat|meaning|theme|keyword|archetype|signal', line, re.I):
-                clean = re.sub(r'^\s*[#>*`-]+\s*', '', line).strip()
-                if len(clean) >= 12:
-                    add_indicator(records, sid=sid, path=path, record_type='interpretation_line', subject_path=f'line:{lineno}', raw_text=clean)
+    source_inventory = []
+    records = []
+    for path in sorted(files):
+        sid = source_id(path)
+        raw = path.read_text(encoding='utf-8', errors='replace')
+        parsed = None
+        parser = 'text'
+        warning = None
+        if path.suffix.lower() == '.json':
+            parsed, parser = extract_json_block(raw)
+            if parsed is None:
+                warning = 'json_unparseable_or_truncated'
+        source_inventory.append({
+            'source_id': sid,
+            'source_path': str(path.relative_to(ROOT)),
+            'sha256': sha256(path),
+            'media_type': source_type(path),
+            'parser': parser,
+            'parse_warning': warning,
+            'trust_status': 'untrusted_data',
+            'rights_status': 'source_rights_pending_review',
+        })
+        if parsed is not None:
+            walk_json(parsed, [], path, sid, records)
+        else:
+            # Extract only explicit interpretation-bearing lines from malformed or prose sources.
+            for lineno, line in enumerate(raw.splitlines(), 1):
+                if re.search(r'interpret|delineat|meaning|theme|keyword|archetype|signal', line, re.I):
+                    clean = re.sub(r'^\s*[#>*`-]+\s*', '', line).strip()
+                    if len(clean) >= 12:
+                        add_indicator(records, sid=sid, path=path, record_type='interpretation_line', subject_path=f'line:{lineno}', raw_text=clean)
 
-# Exact normalized content deduplication preserves all source IDs and paths.
-key_to_record = {}
-dedup_groups = []
-for record in records:
-    key = (record['record_type'], record['subject_path'], record['normalized_text'].casefold())
-    if key in key_to_record:
-        kept = key_to_record[key]
-        kept['source_ids'] = list(dict.fromkeys(kept.get('source_ids', [kept['source_id']]) + [record['source_id']]))
-        kept['source_paths'] = list(dict.fromkeys(kept.get('source_paths', [kept['source_path']]) + [record['source_path']]))
-        dedup_groups.append({'duplicate_indicator_id': record['indicator_id'], 'kept_indicator_id': kept['indicator_id'], 'status': 'exact_text_duplicate'})
-    else:
-        record['source_ids'] = [record['source_id']]
-        record['source_paths'] = [record['source_path']]
-        key_to_record[key] = record
+    # Exact normalized content deduplication preserves all source IDs and paths.
+    key_to_record = {}
+    dedup_groups = []
+    for record in records:
+        key = (record['record_type'], record['subject_path'], record['normalized_text'].casefold())
+        if key in key_to_record:
+            kept = key_to_record[key]
+            kept['source_ids'] = list(dict.fromkeys(kept.get('source_ids', [kept['source_id']]) + [record['source_id']]))
+            kept['source_paths'] = list(dict.fromkeys(kept.get('source_paths', [kept['source_path']]) + [record['source_path']]))
+            dedup_groups.append({'duplicate_indicator_id': record['indicator_id'], 'kept_indicator_id': kept['indicator_id'], 'status': 'exact_text_duplicate'})
+        else:
+            record['source_ids'] = [record['source_id']]
+            record['source_paths'] = [record['source_path']]
+            key_to_record[key] = record
 
-records = list(key_to_record.values())
-record_types = Counter(r['record_type'] for r in records)
-source_counts = Counter(r['source_id'] for r in records)
-keyword_index: dict[str, list[str]] = defaultdict(list)
-for record in records:
-    for keyword in record.get('keywords', []):
-        keyword_index[keyword].append(record['indicator_id'])
+    records = list(key_to_record.values())
+    record_types = Counter(r['record_type'] for r in records)
+    source_counts = Counter(r['source_id'] for r in records)
+    keyword_index: dict[str, list[str]] = defaultdict(list)
+    for record in records:
+        for keyword in record.get('keywords', []):
+            keyword_index[keyword].append(record['indicator_id'])
 
-layer_counts = {
-    'interpretation_text': sum(1 for r in records if r['record_type'] in {'interpretation_text', 'interpretation_field', 'interpretation_list'}),
-    'interpretation_lines': sum(1 for r in records if r['record_type'] == 'interpretation_line'),
-    'keyword_sets': sum(1 for r in records if r['record_type'] == 'interpretation_list'),
-}
+    layer_counts = {
+        'interpretation_text': sum(1 for r in records if r['record_type'] in {'interpretation_text', 'interpretation_field', 'interpretation_list'}),
+        'interpretation_lines': sum(1 for r in records if r['record_type'] == 'interpretation_line'),
+        'keyword_sets': sum(1 for r in records if r['record_type'] == 'interpretation_list'),
+    }
 
-(OUT / 'source_inventory.json').write_text(json.dumps({'schema_version': '1.0.0', 'source_count': len(source_inventory), 'sources': source_inventory}, ensure_ascii=False, indent=2) + '\n')
-(OUT / 'normalized_interpretation_indicators.json').write_text(json.dumps({'schema_version': '1.0.0', 'record_count': len(records), 'records': records}, ensure_ascii=False, indent=2) + '\n')
-(OUT / 'indicator_keyword_index.json').write_text(json.dumps({'schema_version': '1.0.0', 'keywords': {k: sorted(set(v)) for k, v in sorted(keyword_index.items())}}, ensure_ascii=False, indent=2) + '\n')
-(OUT / 'deduplication.json').write_text(json.dumps({'schema_version': '1.0.0', 'policy': 'exact normalized text and subject-path duplicates are merged; probable semantic duplicates remain separate', 'duplicate_group_count': len(dedup_groups), 'groups': dedup_groups}, ensure_ascii=False, indent=2) + '\n')
-(OUT / 'indicator_dataset_summary.json').write_text(json.dumps({'schema_version': '1.0.0', 'source_count': len(source_inventory), 'record_count': len(records), 'record_types': dict(record_types), 'layer_counts': layer_counts, 'source_record_counts_top_20': source_counts.most_common(20), 'unicode_symbol_count': len(set(symbol for r in records for symbol in r.get('unicode_symbols', []))), 'dedup_group_count': len(dedup_groups), 'status': 'source_derived_testing_dataset', 'warnings': ['Interpretive text is not empirical evidence.', 'Malformed JSON sources were preserved and line-scanned conservatively.', 'Probable semantic duplicates were not auto-merged.']}, ensure_ascii=False, indent=2) + '\n')
-print(json.dumps({'sources': len(source_inventory), 'records': len(records), 'record_types': dict(record_types), 'dedup_groups': len(dedup_groups)}, indent=2))
+    (OUT / 'source_inventory.json').write_text(json.dumps({'schema_version': '1.0.0', 'source_count': len(source_inventory), 'sources': source_inventory}, ensure_ascii=False, indent=2) + '\n')
+    (OUT / 'normalized_interpretation_indicators.json').write_text(json.dumps({'schema_version': '1.0.0', 'record_count': len(records), 'records': records}, ensure_ascii=False, indent=2) + '\n')
+    (OUT / 'indicator_keyword_index.json').write_text(json.dumps({'schema_version': '1.0.0', 'keywords': {k: sorted(set(v)) for k, v in sorted(keyword_index.items())}}, ensure_ascii=False, indent=2) + '\n')
+    (OUT / 'deduplication.json').write_text(json.dumps({'schema_version': '1.0.0', 'policy': 'exact normalized text and subject-path duplicates are merged; probable semantic duplicates remain separate', 'duplicate_group_count': len(dedup_groups), 'groups': dedup_groups}, ensure_ascii=False, indent=2) + '\n')
+    (OUT / 'indicator_dataset_summary.json').write_text(json.dumps({'schema_version': '1.0.0', 'source_count': len(source_inventory), 'record_count': len(records), 'record_types': dict(record_types), 'layer_counts': layer_counts, 'source_record_counts_top_20': source_counts.most_common(20), 'unicode_symbol_count': len(set(symbol for r in records for symbol in r.get('unicode_symbols', []))), 'dedup_group_count': len(dedup_groups), 'status': 'source_derived_testing_dataset', 'warnings': ['Interpretive text is not empirical evidence.', 'Malformed JSON sources were preserved and line-scanned conservatively.', 'Probable semantic duplicates were not auto-merged.']}, ensure_ascii=False, indent=2) + '\n')
+    print(json.dumps({'sources': len(source_inventory), 'records': len(records), 'record_types': dict(record_types), 'dedup_groups': len(dedup_groups)}, indent=2))
+
+
+if __name__ == '__main__':
+    main()

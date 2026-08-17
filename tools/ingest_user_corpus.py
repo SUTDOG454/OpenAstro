@@ -14,7 +14,7 @@ RAW = ROOT / 'data/sources/2026-08-user-uploads/raw'
 PDF_TEXT = ROOT / 'data/sources/2026-08-user-uploads/derived-pdf-text'
 REFERENCED_TASKS = ROOT / 'data/sources/2026-08-user-uploads/referenced_task_inventory.json'
 OUT = ROOT / 'data/ingested-user-corpus'
-OUT.mkdir(parents=True, exist_ok=True)
+
 
 SENSITIVE_FILES = {
     'ASTROLOGICAL_SYNTHESIS_REPORT.md',
@@ -188,7 +188,7 @@ def extract_aspect_headings(text: str, source: dict[str, Any], records: list[dic
     seen: set[str] = set()
     for line_number, line in enumerate(text.splitlines(), 1):
         clean = re.sub(r'\s+', ' ', line).strip()
-        match = re.match(r'^ASPECTS OF ([A-Z]+)(?: &| AND)([A-Z]+)$', clean)
+        match = re.match(r'^ASPECTS OF ([A-Z]+)(?:\s*&\s*|\s+AND\s+)([A-Z]+)$', clean)
         if match:
             pair = f'{match.group(1).title()}-{match.group(2).title()}'
             if pair not in seen:
@@ -294,192 +294,197 @@ def extract_csv_profile(path: Path, source: dict[str, Any], records: list[dict[s
                extensions={'row_count': len(rows), 'columns': headers, 'first_date_as_supplied': dates[0] if dates else None, 'last_date_as_supplied': dates[-1] if dates else None, 'research_dataset_status': 'unverified_candidate_not_acquired'})
     discrepancies.append({'discrepancy_id': 'ohlcv-candidate-missing-identity-and-lineage', 'source_id': source['source_id'], 'status': 'pending_review', 'detail': 'CSV has OHLCV-like columns but no instrument identifier, exchange, timezone, adjustment basis, provider, rights, or availability timestamps.'})
 
+def main() -> None:
+    OUT.mkdir(parents=True, exist_ok=True)
+    sources: list[dict[str, Any]] = []
+    records: list[dict[str, Any]] = []
+    discrepancies: list[dict[str, Any]] = []
+    quarantine: list[dict[str, Any]] = []
 
-sources: list[dict[str, Any]] = []
-records: list[dict[str, Any]] = []
-discrepancies: list[dict[str, Any]] = []
-quarantine: list[dict[str, Any]] = []
-
-for raw_path in sorted(RAW.iterdir()):
-    if not raw_path.is_file():
-        continue
-    name = raw_path.name
-    category = source_category(name)
-    source = {
-        'source_id': f'openastro:user-upload:{slug(name)}',
-        'source_path': str(raw_path.relative_to(ROOT)),
-        'filename': name,
-        'sha256': digest(raw_path),
-        'size_bytes': raw_path.stat().st_size,
-        'category': category,
-        'trust_status': 'untrusted_user_supplied_data',
-        'rights_status': 'source_rights_pending_review',
-        'flags': source_flags(name),
-        'parser': 'not_run',
-        'raw_preservation': 'staged_copy',
-    }
-    sources.append(source)
-    if name in SENSITIVE_FILES:
-        quarantine.append({
-            'source_id': source['source_id'],
-            'source_path': source['source_path'],
-            'classification': 'sensitive_adult_interpretive_content',
-            'status': 'quarantined_from_general_delineation',
-            'reason': 'Contains explicit sexual, psychological, medical, or consent-related interpretive claims that must not be generalized, diagnosed, scored, or automatically retrieved.',
-            'permitted_processing': ['raw preservation', 'provenance inventory', 'non-interpretive structural metadata'],
-            'prohibited_processing': ['general delineation', 'diagnosis', 'risk scoring', 'sexual preference inference', 'automated aspect-to-sexuality mapping', 'model training without separately approved rights and ethics review'],
-        })
-        source['parser'] = 'quarantine_metadata_only'
-        continue
-    if name in CODE_FILES:
-        text = read_text(raw_path)
-        source['parser'] = 'static_code_inspection'
-        static_code_metadata(text, source, records)
-        continue
-    if raw_path.suffix.lower() == '.csv':
-        source['parser'] = 'csv_dict_reader'
-        extract_csv_profile(raw_path, source, records, discrepancies)
-        continue
-    if raw_path.suffix.lower() == '.pdf':
-        derived = PDF_TEXT / f'{raw_path.stem}.txt'
-        if derived.exists():
-            source['parser'] = 'pdftotext_layout'
-            source['derived_text_path'] = str(derived.relative_to(ROOT))
-            text = read_text(derived)
-            if name == 'Signals.pdf':
-                extract_signal_candidates(text, source, records)
+    for raw_path in sorted(RAW.iterdir()):
+        if not raw_path.is_file():
+            continue
+        name = raw_path.name
+        category = source_category(name)
+        source = {
+            'source_id': f'openastro:user-upload:{slug(name)}',
+            'source_path': str(raw_path.relative_to(ROOT)),
+            'filename': name,
+            'sha256': digest(raw_path),
+            'size_bytes': raw_path.stat().st_size,
+            'category': category,
+            'trust_status': 'untrusted_user_supplied_data',
+            'rights_status': 'source_rights_pending_review',
+            'flags': source_flags(name),
+            'parser': 'not_run',
+            'raw_preservation': 'staged_copy',
+        }
+        sources.append(source)
+        if name in SENSITIVE_FILES:
+            quarantine.append({
+                'source_id': source['source_id'],
+                'source_path': source['source_path'],
+                'classification': 'sensitive_adult_interpretive_content',
+                'status': 'quarantined_from_general_delineation',
+                'reason': 'Contains explicit sexual, psychological, medical, or consent-related interpretive claims that must not be generalized, diagnosed, scored, or automatically retrieved.',
+                'permitted_processing': ['raw preservation', 'provenance inventory', 'non-interpretive structural metadata'],
+                'prohibited_processing': ['general delineation', 'diagnosis', 'risk scoring', 'sexual preference inference', 'automated aspect-to-sexuality mapping', 'model training without separately approved rights and ethics review'],
+            })
+            source['parser'] = 'quarantine_metadata_only'
+            continue
+        if name in CODE_FILES:
+            text = read_text(raw_path)
+            source['parser'] = 'static_code_inspection'
+            static_code_metadata(text, source, records)
+            continue
+        if raw_path.suffix.lower() == '.csv':
+            source['parser'] = 'csv_dict_reader'
+            extract_csv_profile(raw_path, source, records, discrepancies)
+            continue
+        if raw_path.suffix.lower() == '.pdf':
+            derived = PDF_TEXT / f'{raw_path.stem}.txt'
+            if derived.exists():
+                source['parser'] = 'pdftotext_layout'
+                source['derived_text_path'] = str(derived.relative_to(ROOT))
+                text = read_text(derived)
+                if name == 'Signals.pdf':
+                    extract_signal_candidates(text, source, records)
+                else:
+                    extract_heading_blocks(text, source, records, 'pdf_source_heading', ['mixed_source_reference'])
             else:
-                extract_heading_blocks(text, source, records, 'pdf_source_heading', ['mixed_source_reference'])
+                source['parser'] = 'unavailable_pdf_text'
+                discrepancies.append({'discrepancy_id': f'pdf-text-missing-{slug(name)}', 'source_id': source['source_id'], 'status': 'unavailable', 'detail': 'No derived PDF text was found.'})
+            continue
+        text = read_text(raw_path)
+        value, parser = try_json(text)
+        source['parser'] = parser
+        if name == 'Astrological_Glossary.txt':
+            extract_glossary(text, source, records)
+        elif name == 'Astrological_Aspects.txt':
+            extract_aspect_headings(text, source, records)
+            extract_heading_blocks(text, source, records, 'aspect_source_heading', ['western_historical'], max_blocks=80)
+        elif name == 'Fixed_Stars_1.txt':
+            extract_fixed_stars(text, source, records)
+        elif name == 'MasterAstrologyChartTypes.txt':
+            extract_chart_type_proposals(value, source, records, discrepancies)
+        elif name == 'AstrologyPredictionandFinancialTimingSystem.txt':
+            extract_json_framework(value, source, records, discrepancies)
+        elif name == 'esoteric_astro.txt':
+            extract_heading_blocks(text, source, records, 'esoteric_source_heading', ['esoteric', 'vedic'], max_blocks=100)
+        elif name == 'extracted_knowledge.txt':
+            extract_heading_blocks(text, source, records, 'source_knowledge_heading', ['mixed_source_reference'], max_blocks=100)
+        elif name == 'FinancialAstrologyPlanetaryCycles_DetailedExploration.txt':
+            extract_heading_blocks(text, source, records, 'financial_cycle_source_proposal', ['financial_astrology'], max_blocks=40)
+            for record in records:
+                if record['source_id'] == source['source_id']:
+                    record['status'] = 'pending_review'
+                    record['evidence_class'] = 'methodology_bound'
+                    record['limitations'] = ['Financial-cycle statements are unvalidated source proposals. They are research-only and cannot generate advice, signals, position sizing, or causal claims.']
+        elif name in PRIVATE_FILES:
+            source['parser'] = 'privacy_metadata_only'
+            discrepancies.append({'discrepancy_id': f'private-source-generalization-block-{slug(name)}', 'source_id': source['source_id'], 'status': 'pending_review', 'detail': 'Personalized birth-chart content is preserved as private source context and excluded from general corpus extraction.'})
+        elif name == 'Astrology_Nakshatra.txt':
+            discrepancies.append({'discrepancy_id': 'nakshatra-extract-sparse', 'source_id': source['source_id'], 'status': 'unavailable', 'detail': 'The supplied text contains presentation credits and page markers but no substantive Nakshatra teaching extract.'})
+        elif name == 'Chart_Interpretation_Arroyo.txt':
+            discrepancies.append({'discrepancy_id': 'arroyo-extract-near-empty', 'source_id': source['source_id'], 'status': 'unavailable', 'detail': 'The supplied text extract contains only form-feed characters and no usable interpretation content.'})
         else:
-            source['parser'] = 'unavailable_pdf_text'
-            discrepancies.append({'discrepancy_id': f'pdf-text-missing-{slug(name)}', 'source_id': source['source_id'], 'status': 'unavailable', 'detail': 'No derived PDF text was found.'})
-        continue
-    text = read_text(raw_path)
-    value, parser = try_json(text)
-    source['parser'] = parser
-    if name == 'Astrological_Glossary.txt':
-        extract_glossary(text, source, records)
-    elif name == 'Astrological_Aspects.txt':
-        extract_aspect_headings(text, source, records)
-        extract_heading_blocks(text, source, records, 'aspect_source_heading', ['western_historical'], max_blocks=80)
-    elif name == 'Fixed_Stars_1.txt':
-        extract_fixed_stars(text, source, records)
-    elif name == 'MasterAstrologyChartTypes.txt':
-        extract_chart_type_proposals(value, source, records, discrepancies)
-    elif name == 'AstrologyPredictionandFinancialTimingSystem.txt':
-        extract_json_framework(value, source, records, discrepancies)
-    elif name == 'esoteric_astro.txt':
-        extract_heading_blocks(text, source, records, 'esoteric_source_heading', ['esoteric', 'vedic'], max_blocks=100)
-    elif name == 'extracted_knowledge.txt':
-        extract_heading_blocks(text, source, records, 'source_knowledge_heading', ['mixed_source_reference'], max_blocks=100)
-    elif name == 'FinancialAstrologyPlanetaryCycles_DetailedExploration.txt':
-        extract_heading_blocks(text, source, records, 'financial_cycle_source_proposal', ['financial_astrology'], max_blocks=40)
-        for record in records:
-            if record['source_id'] == source['source_id']:
-                record['status'] = 'pending_review'
-                record['evidence_class'] = 'methodology_bound'
-                record['limitations'] = ['Financial-cycle statements are unvalidated source proposals. They are research-only and cannot generate advice, signals, position sizing, or causal claims.']
-    elif name in PRIVATE_FILES:
-        source['parser'] = 'privacy_metadata_only'
-        discrepancies.append({'discrepancy_id': f'private-source-generalization-block-{slug(name)}', 'source_id': source['source_id'], 'status': 'pending_review', 'detail': 'Personalized birth-chart content is preserved as private source context and excluded from general corpus extraction.'})
-    elif name == 'Astrology_Nakshatra.txt':
-        discrepancies.append({'discrepancy_id': 'nakshatra-extract-sparse', 'source_id': source['source_id'], 'status': 'unavailable', 'detail': 'The supplied text contains presentation credits and page markers but no substantive Nakshatra teaching extract.'})
-    elif name == 'Chart_Interpretation_Arroyo.txt':
-        discrepancies.append({'discrepancy_id': 'arroyo-extract-near-empty', 'source_id': source['source_id'], 'status': 'unavailable', 'detail': 'The supplied text extract contains only form-feed characters and no usable interpretation content.'})
-    else:
-        extract_heading_blocks(text, source, records, 'source_heading', ['mixed_source_reference'], max_blocks=60)
+            extract_heading_blocks(text, source, records, 'source_heading', ['mixed_source_reference'], max_blocks=60)
 
-referenced_task_data = json.loads(REFERENCED_TASKS.read_text())
-for task in referenced_task_data['records']:
-    sources.append({
-        'source_id': task['source_id'],
-        'source_path': 'data/sources/2026-08-user-uploads/referenced_task_inventory.json',
-        'filename': task['title'],
-        'sha256': digest(REFERENCED_TASKS),
-        'size_bytes': REFERENCED_TASKS.stat().st_size,
-        'category': 'referenced_task_context',
-        'trust_status': 'untrusted_referenced_task_context',
-        'rights_status': 'task_access_scope_owned_but_external_source_rights_not_verified',
-        'flags': ['referenced_task_context_only', task['status']],
-        'parser': 'manual_provenance_inventory',
-        'raw_preservation': 'referenced_task_inventory',
-        'limitations': task['limitations'],
-    })
+    referenced_task_data = json.loads(REFERENCED_TASKS.read_text())
+    for task in referenced_task_data['records']:
+        sources.append({
+            'source_id': task['source_id'],
+            'source_path': 'data/sources/2026-08-user-uploads/referenced_task_inventory.json',
+            'filename': task['title'],
+            'sha256': digest(REFERENCED_TASKS),
+            'size_bytes': REFERENCED_TASKS.stat().st_size,
+            'category': 'referenced_task_context',
+            'trust_status': 'untrusted_referenced_task_context',
+            'rights_status': 'task_access_scope_owned_but_external_source_rights_not_verified',
+            'flags': ['referenced_task_context_only', task['status']],
+            'parser': 'manual_provenance_inventory',
+            'raw_preservation': 'referenced_task_inventory',
+            'limitations': task['limitations'],
+        })
 
-# Exact normalized text deduplication preserves source provenance rather than deleting competing records.
-key_to_record: dict[tuple[str, str, str], dict[str, Any]] = {}
-dedup_groups: list[dict[str, Any]] = []
-for record in records:
-    key = (record['record_type'], record['subject_path'], record['normalized_text'].casefold())
-    if key in key_to_record:
-        kept = key_to_record[key]
-        kept.setdefault('source_ids', [kept['source_id']])
-        kept['source_ids'] = list(dict.fromkeys(kept['source_ids'] + [record['source_id']]))
-        dedup_groups.append({'duplicate_record_id': record['record_id'], 'kept_record_id': kept['record_id'], 'status': 'exact_normalized_duplicate'})
-    else:
-        record['source_ids'] = [record['source_id']]
-        key_to_record[key] = record
-records = list(key_to_record.values())
+    # Exact normalized text deduplication preserves source provenance rather than deleting competing records.
+    key_to_record: dict[tuple[str, str, str], dict[str, Any]] = {}
+    dedup_groups: list[dict[str, Any]] = []
+    for record in records:
+        key = (record['record_type'], record['subject_path'], record['normalized_text'].casefold())
+        if key in key_to_record:
+            kept = key_to_record[key]
+            kept.setdefault('source_ids', [kept['source_id']])
+            kept['source_ids'] = list(dict.fromkeys(kept['source_ids'] + [record['source_id']]))
+            dedup_groups.append({'duplicate_record_id': record['record_id'], 'kept_record_id': kept['record_id'], 'status': 'exact_normalized_duplicate'})
+        else:
+            record['source_ids'] = [record['source_id']]
+            key_to_record[key] = record
+    records = list(key_to_record.values())
 
-record_counts = Counter(record['record_type'] for record in records)
-source_counts = Counter(record['source_id'] for record in records)
-tradition_counts = Counter(scope for record in records for scope in record['tradition_scope'])
-validation_errors: list[str] = []
-for record in records:
-    for required in ['record_id', 'source_id', 'source_sha256', 'record_type', 'subject_path', 'normalized_text', 'tradition_scope', 'evidence_class', 'status', 'limitations']:
-        if required not in record:
-            validation_errors.append(f'{record.get("record_id", "unknown")}: missing {required}')
-known_source_ids = {source['source_id'] for source in sources}
-for record in records:
-    if record['source_id'] not in known_source_ids:
-        validation_errors.append(f'{record["record_id"]}: unknown source {record["source_id"]}')
+    record_counts = Counter(record['record_type'] for record in records)
+    source_counts = Counter(record['source_id'] for record in records)
+    tradition_counts = Counter(scope for record in records for scope in record['tradition_scope'])
+    validation_errors: list[str] = []
+    for record in records:
+        for required in ['record_id', 'source_id', 'source_sha256', 'record_type', 'subject_path', 'normalized_text', 'tradition_scope', 'evidence_class', 'status', 'limitations']:
+            if required not in record:
+                validation_errors.append(f'{record.get("record_id", "unknown")}: missing {required}')
+    known_source_ids = {source['source_id'] for source in sources}
+    for record in records:
+        if record['source_id'] not in known_source_ids:
+            validation_errors.append(f'{record["record_id"]}: unknown source {record["source_id"]}')
 
-summary = {
-    'schema_version': '1.0.0',
-    'status': 'source_ingested_with_review_boundaries',
-    'generated_at': datetime.now(timezone.utc).isoformat(),
-    'source_count': len(sources),
-    'normalized_record_count': len(records),
-    'quarantined_source_count': len(quarantine),
-    'discrepancy_count': len(discrepancies),
-    'record_type_counts': dict(record_counts),
-    'tradition_scope_counts': dict(tradition_counts),
-    'top_source_record_counts': source_counts.most_common(20),
-    'high_level_boundaries': [
-        'Uploaded code is statically inspected only and never executed.',
-        'Personalized chart material is private context and excluded from generalized corpus records.',
-        'Sensitive sexual or medical-psychological interpretive material is quarantined from general delineation and training.',
-        'Financial or market material remains methodology-bound, research-only, and ineligible as a validated signal without the existing promotion gate.',
-        'Esoteric source material is retrieval-only and cannot enter Western, Vedic, or standard calculation engines.',
-    ],
-}
-validation_report = {
-    'schema_version': '1.0.0',
-    'status': 'passed_with_review_warnings' if not validation_errors else 'failed',
-    'checks': {
-        'raw_source_directory_exists': RAW.is_dir(),
-        'referenced_task_inventory_exists': REFERENCED_TASKS.is_file(),
-        'sources_have_hashes': all(bool(source.get('sha256')) for source in sources),
-        'records_reference_known_sources': not any('unknown source' in error for error in validation_errors),
-        'record_required_fields_present': not validation_errors,
-        'code_execution_prohibited': all('do_not_execute' in source['flags'] for source in sources if source['category'] == 'untrusted_code_or_ui'),
-        'sensitive_content_quarantined': len(quarantine) == len(SENSITIVE_FILES),
-        'financial_records_not_promoted': all(record.get('status') != 'research_exploratory' for record in records if 'financial_astrology' in record['tradition_scope']),
-    },
-    'errors': validation_errors,
-    'warnings': [
-        'All source rights remain pending review unless separately documented.',
-        'No uploaded calculation code was executed or adopted.',
-        'No chart position or predictive timing value was calculated from uploaded source material.',
-        'The supplied OHLCV-like CSV is not an active research dataset because identity, rights, adjustment, timezone, and availability lineage are missing.',
-    ],
-}
+    summary = {
+        'schema_version': '1.0.0',
+        'status': 'source_ingested_with_review_boundaries',
+        'generated_at': datetime.now(timezone.utc).isoformat(),
+        'source_count': len(sources),
+        'normalized_record_count': len(records),
+        'quarantined_source_count': len(quarantine),
+        'discrepancy_count': len(discrepancies),
+        'record_type_counts': dict(record_counts),
+        'tradition_scope_counts': dict(tradition_counts),
+        'top_source_record_counts': source_counts.most_common(20),
+        'high_level_boundaries': [
+            'Uploaded code is statically inspected only and never executed.',
+            'Personalized chart material is private context and excluded from generalized corpus records.',
+            'Sensitive sexual or medical-psychological interpretive material is quarantined from general delineation and training.',
+            'Financial or market material remains methodology-bound, research-only, and ineligible as a validated signal without the existing promotion gate.',
+            'Esoteric source material is retrieval-only and cannot enter Western, Vedic, or standard calculation engines.',
+        ],
+    }
+    validation_report = {
+        'schema_version': '1.0.0',
+        'status': 'passed_with_review_warnings' if not validation_errors else 'failed',
+        'checks': {
+            'raw_source_directory_exists': RAW.is_dir(),
+            'referenced_task_inventory_exists': REFERENCED_TASKS.is_file(),
+            'sources_have_hashes': all(bool(source.get('sha256')) for source in sources),
+            'records_reference_known_sources': not any('unknown source' in error for error in validation_errors),
+            'record_required_fields_present': not validation_errors,
+            'code_execution_prohibited': all('do_not_execute' in source['flags'] for source in sources if source['category'] == 'untrusted_code_or_ui'),
+            'sensitive_content_quarantined': len(quarantine) == len(SENSITIVE_FILES),
+            'financial_records_not_promoted': all(record.get('status') != 'research_exploratory' for record in records if 'financial_astrology' in record['tradition_scope']),
+        },
+        'errors': validation_errors,
+        'warnings': [
+            'All source rights remain pending review unless separately documented.',
+            'No uploaded calculation code was executed or adopted.',
+            'No chart position or predictive timing value was calculated from uploaded source material.',
+            'The supplied OHLCV-like CSV is not an active research dataset because identity, rights, adjustment, timezone, and availability lineage are missing.',
+        ],
+    }
 
-(OUT / 'user_corpus_source_inventory.json').write_text(json.dumps({'schema_version': '1.0.0', 'sources': sources}, ensure_ascii=False, indent=2) + '\n')
-(OUT / 'normalized_user_corpus_records.json').write_text(json.dumps({'schema_version': '1.0.0', 'records': records}, ensure_ascii=False, indent=2) + '\n')
-(OUT / 'sensitive_content_quarantine.json').write_text(json.dumps({'schema_version': '1.0.0', 'records': quarantine}, ensure_ascii=False, indent=2) + '\n')
-(OUT / 'user_corpus_discrepancies.json').write_text(json.dumps({'schema_version': '1.0.0', 'records': discrepancies}, ensure_ascii=False, indent=2) + '\n')
-(OUT / 'user_corpus_deduplication.json').write_text(json.dumps({'schema_version': '1.0.0', 'policy': 'exact normalized duplicates merge source links; semantic conflicts remain separate', 'groups': dedup_groups}, ensure_ascii=False, indent=2) + '\n')
-(OUT / 'user_corpus_summary.json').write_text(json.dumps(summary, ensure_ascii=False, indent=2) + '\n')
-(OUT / 'user_corpus_validation_report.json').write_text(json.dumps(validation_report, ensure_ascii=False, indent=2) + '\n')
-print(json.dumps({'sources': len(sources), 'records': len(records), 'quarantined': len(quarantine), 'discrepancies': len(discrepancies), 'validation_status': validation_report['status']}, indent=2))
+    (OUT / 'user_corpus_source_inventory.json').write_text(json.dumps({'schema_version': '1.0.0', 'sources': sources}, ensure_ascii=False, indent=2) + '\n')
+    (OUT / 'normalized_user_corpus_records.json').write_text(json.dumps({'schema_version': '1.0.0', 'records': records}, ensure_ascii=False, indent=2) + '\n')
+    (OUT / 'sensitive_content_quarantine.json').write_text(json.dumps({'schema_version': '1.0.0', 'records': quarantine}, ensure_ascii=False, indent=2) + '\n')
+    (OUT / 'user_corpus_discrepancies.json').write_text(json.dumps({'schema_version': '1.0.0', 'records': discrepancies}, ensure_ascii=False, indent=2) + '\n')
+    (OUT / 'user_corpus_deduplication.json').write_text(json.dumps({'schema_version': '1.0.0', 'policy': 'exact normalized duplicates merge source links; semantic conflicts remain separate', 'groups': dedup_groups}, ensure_ascii=False, indent=2) + '\n')
+    (OUT / 'user_corpus_summary.json').write_text(json.dumps(summary, ensure_ascii=False, indent=2) + '\n')
+    (OUT / 'user_corpus_validation_report.json').write_text(json.dumps(validation_report, ensure_ascii=False, indent=2) + '\n')
+    print(json.dumps({'sources': len(sources), 'records': len(records), 'quarantined': len(quarantine), 'discrepancies': len(discrepancies), 'validation_status': validation_report['status']}, indent=2))
+
+
+if __name__ == '__main__':
+    main()
