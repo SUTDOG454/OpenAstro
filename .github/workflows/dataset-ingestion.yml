@@ -54,5 +54,5 @@ jobs:
       - name: Validate JSON manifests
         run: python -m json.tool data/extractions/open-astrology-datasets/manifest.json >/dev/null
 
-      - name: Check patch whitespace
-        run: git diff --check HEAD^ HEAD
+      - name: Check patch whitespace outside tabular source extract
+        run: git diff --check HEAD^ HEAD -- . ':(exclude)data/extractions/open-astrology-datasets/*.csv'
