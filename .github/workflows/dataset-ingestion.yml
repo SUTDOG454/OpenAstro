@@ -34,6 +34,8 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -53,4 +55,4 @@ jobs:
         run: python -m json.tool data/extractions/open-astrology-datasets/manifest.json >/dev/null
 
       - name: Check patch whitespace
-        run: git diff --check "${{ github.event.before }}" "${{ github.sha }}"
+        run: git diff --check HEAD^ HEAD
