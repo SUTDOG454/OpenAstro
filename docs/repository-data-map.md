@@ -25,6 +25,8 @@ The files in `data/drafts/` were retained without semantic edits because the aud
 | `astrological-methodology-module-1.json` | JSON parse error. |
 | `astrological-methodology-module-2.json` | JSON parse error. |
 | `astrological-methodology-module-3.json` | JSON parse error. |
+| `biseptile-interpretation.json` | JSON parse error. |
+| `chart-types.json` | Truncated JSON document. |
 | `chiron-compendium-unified.json` | JSON parse error. |
 | `master-astrology-chart-types.json` | JSON parse error. |
 | `master-synastry-engine.json` | Truncated JSON document. |
