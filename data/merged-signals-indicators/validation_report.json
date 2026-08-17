@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "status": "passed_with_review_gaps",
+  "checks": {
+    "json_syntax": "passed",
+    "source_count": 507,
+    "merged_record_count": 582,
+    "conflict_groups": 15,
+    "provenance_references": "passed",
+    "no_source_code_executed": true
+  },
+  "warnings": [
+    "Conflicting semantic indicator definitions remain pending review.",
+    "Financial and company-research indicators are non-advisory research configurations."
+  ]
+}

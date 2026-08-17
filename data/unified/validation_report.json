@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "status": "passed_with_review_gaps",
+  "checks": {
+    "canonical_chart_type_count": 38,
+    "chart_contract_count": 38,
+    "formula_count": 13,
+    "signal_count": 522,
+    "indicator_count": 60,
+    "all_chart_contracts_have_required_fields": true,
+    "source_code_not_executed": true,
+    "canonical_registry_not_forked": true,
+    "json_outputs_written": true
+  },
+  "warnings": [
+    {
+      "id": "invalid-local-draft-json",
+      "status": "unavailable",
+      "details": "Multiple draft JSON files are malformed or truncated; raw files are preserved and not silently repaired."
+    },
+    {
+      "id": "financial-observations-not-acquired",
+      "status": "unavailable",
+      "details": "No live market data acquisition was requested for a specific ticker or date window."
+    },
+    {
+      "id": "content-gap-target-missing",
+      "status": "unavailable",
+      "details": "No target domain or competitor set was supplied."
+    },
+    {
+      "id": "firdaria-zodiacal-releasing-primary-direction",
+      "status": "not_implemented",
+      "details": "Methodology contracts are registered, but no deterministic adapters are claimed."
+    },
+    {
+      "id": "semantic-tradition-approval",
+      "status": "pending_review",
+      "details": "Strength, compatibility, financial, relationship, and event scores remain methodology-bound."
+    }
+  ]
+}

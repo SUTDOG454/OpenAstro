@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "id": "duplicate:economic-04-economic-08",
+      "status": "exact_duplicate",
+      "source_ids": [
+        "attached-framework-04",
+        "attached-framework-08"
+      ],
+      "resolution": "preserve_both; no deletion"
+    },
+    {
+      "id": "conflict:economic-field-names",
+      "status": "conflicted",
+      "source_ids": [
+        "attached-framework-04",
+        "attached-framework-05",
+        "attached-framework-06",
+        "attached-framework-07",
+        "attached-framework-08"
+      ],
+      "details": [
+        "violations versus complianceViolations",
+        "surprisePercent versus earningsSurprisePercent",
+        "instOwnershipPct versus institutionalOwnershipPct"
+      ],
+      "resolution": "pending_review; retain under extensions"
+    },
+    {
+      "id": "parse:sensitive-json",
+      "status": "pending_review",
+      "source_ids": [
+        "attached-framework-11"
+      ],
+      "details": "Invalid JSON caused by an unescaped quotation mark in the notes field.",
+      "resolution": "preserve raw; do not repair silently"
+    },
+    {
+      "id": "claim:production-ready",
+      "status": "pending_review",
+      "source_ids": [
+        "attached-framework-03",
+        "attached-framework-06"
+      ],
+      "details": "Production-ready status is asserted but not independently evidenced.",
+      "resolution": "retain as source assertion only"
+    }
+  ]
+}

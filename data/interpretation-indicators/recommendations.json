@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "recommendations": [
+    {
+      "id": "auto-add-indicator-schema",
+      "status": "auto_applied",
+      "safe": true,
+      "reason": "Adds a reversible schema and validator for interpretation indicators."
+    },
+    {
+      "id": "auto-add-keyword-index",
+      "status": "auto_applied",
+      "safe": true,
+      "reason": "Adds retrieval index without changing source meaning."
+    },
+    {
+      "id": "auto-add-unicode-symbol-registry",
+      "status": "auto_applied",
+      "safe": true,
+      "reason": "Can be generated from canonical aliases and source-observed symbols."
+    },
+    {
+      "id": "auto-add-provenance-links",
+      "status": "auto_applied",
+      "safe": true,
+      "reason": "Every extracted record carries source ID, path, and content hash."
+    },
+    {
+      "id": "semantic-tradition-review",
+      "status": "pending_review",
+      "safe": false,
+      "reason": "Combining Western, Hellenistic, Vedic, Magi, Uranian, financial, and user-defined meanings would be semantic drift."
+    },
+    {
+      "id": "repair-malformed-json",
+      "status": "pending_review",
+      "safe": false,
+      "reason": "Repair can alter source content; preserve raw and require bounded review."
+    },
+    {
+      "id": "implement-unavailable-calculations",
+      "status": "pending_review",
+      "safe": false,
+      "reason": "Requires explicit rules, engine settings, dependencies, and regression fixtures."
+    }
+  ]
+}

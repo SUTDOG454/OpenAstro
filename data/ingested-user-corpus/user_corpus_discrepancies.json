@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "discrepancy_id": "nakshatra-extract-sparse",
+      "source_id": "openastro:user-upload:astrology-nakshatra-txt",
+      "status": "unavailable",
+      "detail": "The supplied text contains presentation credits and page markers but no substantive Nakshatra teaching extract."
+    },
+    {
+      "discrepancy_id": "arroyo-extract-near-empty",
+      "source_id": "openastro:user-upload:chart-interpretation-arroyo-txt",
+      "status": "unavailable",
+      "detail": "The supplied text extract contains only form-feed characters and no usable interpretation content."
+    },
+    {
+      "discrepancy_id": "ohlcv-candidate-missing-identity-and-lineage",
+      "source_id": "openastro:user-upload:historicaldata-1785490203238-csv",
+      "status": "pending_review",
+      "detail": "CSV has OHLCV-like columns but no instrument identifier, exchange, timezone, adjustment basis, provider, rights, or availability timestamps."
+    },
+    {
+      "discrepancy_id": "private-source-generalization-block-astrodash-4m7y4aef-manus-md",
+      "source_id": "openastro:user-upload:astrodash-4m7y4aef-manus-md",
+      "status": "pending_review",
+      "detail": "Personalized birth-chart content is preserved as private source context and excluded from general corpus extraction."
+    }
+  ]
+}

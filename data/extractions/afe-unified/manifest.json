@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0.0",
+  "package": "afe-unified-attachment-ingestion",
+  "generated_at": "2026-08-17",
+  "status": "implemented_with_review_gaps",
+  "sources": [
+    {
+      "source_id": "afe-unified-system-v7",
+      "path": "raw/afe-unified-system-v7.txt",
+      "sha256": "4b0514af1e2076119ea6eb011c804bd1c7d9be42065fbf8e611ebaf98c08accb",
+      "classes": ["architecture", "data_ingestion", "astrological_engines", "omti", "ml", "deployment", "testing"],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "user_provided_pending_review"
+    },
+    {
+      "source_id": "afe-arabic-parts-transit-strength-v7",
+      "path": "raw/afe-arabic-parts-transit-strength-v7.txt",
+      "sha256": "bbaf8ee567d20d3f4cf66256f5b8e1e25c1253dde9bcedf0bf81754b1e2fabf8",
+      "classes": ["arabic_parts", "transit_strength", "house_affinity", "methodology", "ui", "reporting"],
+      "status": "source_preserved_and_partially_implemented",
+      "execution": "only_reimplemented_modules_executed",
+      "rights_status": "user_provided_pending_review"
+    },
+    {
+      "source_id": "afe-midpoint-resource-v7-a",
+      "path": "raw/afe-midpoint-resource-v7-a.txt",
+      "sha256": "9db6aaee68ea6a4d09a1f1a0fad8559d40723a55515195581eaea6baf717aaf8",
+      "classes": ["midpoint_resource", "loader", "activation", "ui", "reporting"],
+      "status": "source_preserved_and_partially_implemented",
+      "execution": "only_reimplemented_modules_executed",
+      "rights_status": "user_provided_pending_review"
+    },
+    {
+      "source_id": "afe-midpoint-resource-v7-b",
+      "path": "raw/afe-midpoint-resource-v7-b.txt",
+      "sha256": "9db6aaee68ea6a4d09a1f1a0fad8559d40723a55515195581eaea6baf717aaf8",
+      "classes": ["midpoint_resource", "duplicate_of:afe-midpoint-resource-v7-a"],
+      "status": "exact_duplicate_preserved",
+      "execution": "not_executed",
+      "rights_status": "user_provided_pending_review"
+    }
+  ],
+  "implemented": [
+    "tools/afe_arabic_parts.py",
+    "tools/afe_transit_strength.py",
+    "tools/afe_midpoint_resource.py",
+    "data/resources/midpoints_resource.sample.json",
+    "tests/test_afe_integrations.py"
+  ],
+  "limitations": [
+    "The complete midpoint resource JSON referenced by the attachments was not attached; only the printed sample interpretations were used in the sample fixture.",
+    "Transit speed values are source-derived placeholder modifiers pending real ephemeris inputs.",
+    "Interpretive rules and scores are methodology-bound and are not validated financial forecasts or causal claims.",
+    "The AFE document's production-ready status is treated as an unverified source assertion.",
+    "No external code from the attachments was executed; implementations were written independently from explicit contracts."
+  ]
+}

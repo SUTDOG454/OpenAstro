@@ -1,0 +1,1250 @@
+{
+  "metadata": {
+    "systemName": "Economic & Market Timing System",
+    "version": "5.0.0-normalized",
+    "status": "production-ready",
+    "timestamp": "2025-07-01T00:00:00.000Z",
+    "description": "Complete integrated decision-support system combining macroeconomics, technical analysis, industrial organization, market research, company fundamentals, executive profiling, Sq9 timing, aquaculture economics, pricing, sustainability, competitive strategy, and innovation theory."
+  },
+  "canonicalRules": {
+    "normalization": "All scores must be normalized to 0-1 unless explicitly stated otherwise.",
+    "aggregation": "Each module computes a subscore first; OMTI is computed only from weighted subscores.",
+    "evidence": "A signal becomes authoritative only when supported by multiple independent inputs or repeated confirmation within the same module.",
+    "naming": "Each module has one canonical id, one canonical display name, and one canonical scoring block.",
+    "clamp": "clamp(value, minVal, maxVal) = max(minVal, min(maxVal, value))",
+    "normalize": "normalize(value, min, max) = clamp((value - min) / (max - min), 0, 1)"
+  },
+  "config": {
+    "globalDefaults": {
+      "hurdleRate": 0.06,
+      "riskFreeRate": 0.03,
+      "targetInflationMin": 0.01,
+      "targetInflationMax": 0.03,
+      "targetGDP": 0.025,
+      "maxGearing": 1.2,
+      "maxFixedCostRatio": 0.6
+    },
+    "cache": {
+      "enabled": true,
+      "redisUrl": "redis://localhost:6379",
+      "defaultTTL": 3600,
+      "companyTTL": 86400
+    },
+    "api": {
+      "rateLimit": 100,
+      "rateWindow": 60
+    }
+  },
+  "definitions": {
+    "economicTerms": [
+      {
+        "term": "Discounted benefits",
+        "definition": "Future benefits from a project reduced to equivalent present values."
+      },
+      {
+        "term": "Discounted costs",
+        "definition": "Future costs of a project reduced to equivalent present values."
+      },
+      {
+        "term": "Discounted realisable value",
+        "definition": "The sum, reduced back to its equivalent present value, that could be realised by a business selling out at the end of its planning period."
+      },
+      {
+        "term": "Discounted value of future profits",
+        "definition": "Sum of profits during the firm's planning period with future profits reduced below their actual future values; a dollar available now is worth more than a dollar in the future."
+      },
+      {
+        "term": "Equity",
+        "definition": "The proportion of a firm's assets or capital belonging to the owner(s) of a business."
+      },
+      {
+        "term": "Internal rate of return (IRR)",
+        "definition": "Indicates the percentage rate of return on funds employed by a business or a project; takes into account the time-pattern of returns."
+      },
+      {
+        "term": "Market transaction costs",
+        "definition": "Costs involved in arranging market exchanges, including search, contracts, agency costs, etc."
+      },
+      {
+        "term": "Nominal rate of interest",
+        "definition": "The rate of interest payable, not adjusted for price inflation; tends to rise with inflation."
+      },
+      {
+        "term": "Present discounted value",
+        "definition": "The sum of money that, invested now, would accumulate with interest to a stated future sum."
+      },
+      {
+        "term": "Real rate of interest",
+        "definition": "The rate of interest reduced for price inflation; the greater the inflation, the larger the reduction."
+      },
+      {
+        "term": "Spillovers (externalities)",
+        "definition": "Side-effects of business activities for which no economic payment or costs are involved; can be favourable or unfavourable."
+      },
+      {
+        "term": "Opportunity cost",
+        "definition": "The economic benefit forgone by not choosing the best alternative to the choice actually made."
+      },
+      {
+        "term": "Economic cost",
+        "definition": "Actual costs plus opportunity costs."
+      },
+      {
+        "term": "Minimum efficient scale (MES)",
+        "definition": "The scale at which a business obtains its minimum cost per unit produced."
+      },
+      {
+        "term": "Economies of scale",
+        "definition": "Decreasing costs per unit of production as output increases, up to a point."
+      },
+      {
+        "term": "Economies of scope",
+        "definition": "Cost advantages from producing multiple products together."
+      },
+      {
+        "term": "Economies of specialisation",
+        "definition": "Advantages from focusing on a specific stage or product line."
+      },
+      {
+        "term": "Gearing ratio (debt-equity)",
+        "definition": "The ratio of a firm's debt to its equity; higher ratio indicates higher financial risk."
+      },
+      {
+        "term": "Learning-by-doing",
+        "definition": "Productivity improvements gained through experience over time."
+      }
+    ],
+    "marketingCycleAdjustments": {
+      "economicUpswing": {
+        "strategy": "Focus on premium products, luxury items, and experiential marketing campaigns; increase marketing spend, emphasize quality and brand image.",
+        "rationale": "Consumers have higher disposable incomes and are willing to spend on non-essentials."
+      },
+      "economicDownturn": {
+        "strategy": "Emphasize cost-effectiveness, discounts, value for money, and practical solutions; shift to essentials and budget-friendly alternatives.",
+        "rationale": "Consumers become price-conscious and prioritize essentials."
+      },
+      "lowInterestRates": {
+        "strategy": "Invest in expansion and marketing initiatives; leverage cheap borrowing for capital projects.",
+        "rationale": "Borrowing costs are low, encouraging investment."
+      },
+      "highInterestRates": {
+        "strategy": "Be judicious in spending, seek cost-effective financing, and focus on ROI; consider delaying non-essential projects.",
+        "rationale": "Borrowing costs are high, squeezing margins."
+      },
+      "technologicalShift": {
+        "strategy": "Leverage digital channels, data analytics, and automation; invest in e-commerce and social media presence.",
+        "rationale": "Technology drives consumer engagement and operational efficiency."
+      },
+      "globalization": {
+        "strategy": "Adapt marketing approaches to diverse economic conditions across countries; monitor international trends.",
+        "rationale": "Global economic interdependence means slowdowns in one region affect others."
+      }
+    }
+  },
+  "modules": {
+    "sq9": {
+      "id": "sq9",
+      "name": "Gann Square of Nine",
+      "kind": "vibration",
+      "status": "active",
+      "registryWeight": 0.12,
+      "levelMapping": [
+        {
+          "level": 1,
+          "degree": 0,
+          "role": "core",
+          "event": "First contact",
+          "weight": 0.15
+        },
+        {
+          "level": 9,
+          "degree": 45,
+          "role": "tension",
+          "event": "Building attraction",
+          "weight": 0.12
+        },
+        {
+          "level": 25,
+          "degree": 90,
+          "role": "peak",
+          "event": "Commitment",
+          "weight": 0.18
+        },
+        {
+          "level": 49,
+          "degree": 135,
+          "role": "challenge",
+          "event": "Tests",
+          "weight": 0.1
+        },
+        {
+          "level": 81,
+          "degree": 180,
+          "role": "opposition",
+          "event": "Crisis / break",
+          "weight": 0.14
+        },
+        {
+          "level": 121,
+          "degree": 225,
+          "role": "decline",
+          "event": "Separation risk",
+          "weight": 0.09
+        },
+        {
+          "level": 169,
+          "degree": 270,
+          "role": "bottom",
+          "event": "Renewal",
+          "weight": 0.11
+        },
+        {
+          "level": 225,
+          "degree": 315,
+          "role": "recovery",
+          "event": "Stabilization",
+          "weight": 0.11
+        }
+      ],
+      "scoringRules": {
+        "normalizeDegree": "deg % 360; if negative add 360",
+        "nearestLevel": "minimize circular distance to defined levels",
+        "confidence": "clamp(rawConfidence * (1 - distance / 45), 0, 1)",
+        "contribution": "levelWeight * confidence * registryWeight"
+      }
+    },
+    "marketResearch": {
+      "id": "market_research",
+      "name": "Market Research & Intelligence",
+      "kind": "research",
+      "status": "active",
+      "registryWeight": 0.1,
+      "weights": {
+        "consumerConfidence": 0.2,
+        "brandHealth": 0.15,
+        "competitiveIntensity": 0.2,
+        "marketAttractiveness": 0.15,
+        "productPipeline": 0.1,
+        "sentimentPolarity": 0.1,
+        "pricingPressure": 0.05,
+        "shareOfVoice": 0.05
+      },
+      "scoringRules": {
+        "consumerConfidence": "surveyResponse / 100",
+        "sentimentPolarity": "(avgSentiment + 1) / 2",
+        "pricingPressure": "normalize(avgCompetitorPrice / ourPrice, 0.5, 1.5)",
+        "marketAttractiveness": "normalize(growthRate, 0, 0.2)",
+        "shareOfVoice": "ourAdSpend / (totalAdSpend + ourAdSpend)",
+        "competitiveIntensity": "1 - normalize(herfindahlIndex, 0, 10000) * 0.5 - normalize(entryRate, 0, 0.3) * 0.5",
+        "brandHealth": "normalize(netPromoterScore, -100, 100)",
+        "productPipeline": "normalize(innovationIndex, 0, 1)"
+      }
+    },
+    "companyResearch": {
+      "id": "company_research",
+      "name": "Company Research & Fundamentals",
+      "kind": "fundamental",
+      "status": "active",
+      "registryWeight": 0.1,
+      "categories": {
+        "maturity": {
+          "weight": 0.09
+        },
+        "financial": {
+          "weight": 0.18
+        },
+        "leadership": {
+          "weight": 0.12
+        },
+        "pipeline": {
+          "weight": 0.09
+        },
+        "regulatory": {
+          "weight": 0.08
+        },
+        "insider": {
+          "weight": 0.12
+        },
+        "sentiment": {
+          "weight": 0.14
+        },
+        "astro": {
+          "weight": 0.08
+        },
+        "cLevel": {
+          "weight": 0.1
+        }
+      },
+      "scoringRules": {
+        "maturity": "normalize(companyAgeYears, 5, 50) * 0.5 + normalize(ipoYears, 3, 20) * 0.5",
+        "financial": "normalize(profitMargin, 0, 0.3) * 0.35 + normalize(1/(1+debtEquity), 0, 1) * 0.30 + normalize(cashFlowToRevenue, 0, 0.3) * 0.20 + normalize(revenueGrowth, 0, 0.2) * 0.15",
+        "leadership": "normalize(avgTenure, 2, 15)",
+        "pipeline": "normalize(patentCount, 0, 500) * 0.4 + normalize(rndRatio, 0, 0.2) * 0.6",
+        "regulatory": "1 - normalize(pendingApprovals + complianceViolations * 5, 0, 20)",
+        "insider": "normalize(netInsiderBuying, -5000000, 10000000)",
+        "sentiment": "consensusScore(analystConsensus) * 0.3 + normalize(earningsSurprisePercent, -10, 10) * 0.2 + normalize(institutionalOwnershipPct, 0.2, 0.9) * 0.2 + (1 - normalize(shortRatio, 0, 5)) * 0.3",
+        "astro": "(deriveSq9Signal(companyAgeDegrees).confidence * 0.5 + deriveSq9Signal(ipoDegrees).confidence * 0.5)",
+        "cLevel": "normalize(avgCTenure, 1, 20)"
+      }
+    },
+    "aquaculture": {
+      "id": "aquaculture",
+      "name": "Aquaculture Economics Module",
+      "kind": "industry",
+      "status": "active",
+      "irrData": {
+        "species": [
+          {
+            "name": "Pacific oysters (good site)",
+            "meanIRR": 31.1,
+            "range": "28.4-33.8"
+          },
+          {
+            "name": "Barramundi (nursery + free-ranging)",
+            "meanIRR": 19.6,
+            "range": "4.7-23.6"
+          },
+          {
+            "name": "Redclaw (15-ha farm)",
+            "meanIRR": 19.4,
+            "range": "15.7-23.0"
+          },
+          {
+            "name": "Shrimp (N. Qld, medium density)",
+            "meanIRR": 17.5,
+            "range": "-0.1-29.9"
+          },
+          {
+            "name": "Crocodiles (large grow-on)",
+            "meanIRR": 14.0,
+            "range": "12.4-15.6"
+          },
+          {
+            "name": "Barramundi (sea cages)",
+            "meanIRR": 13.6,
+            "range": "-4.8-28.6"
+          },
+          {
+            "name": "Atlantic salmon (150k smolt)",
+            "meanIRR": 12.5,
+            "range": "5.5-19.6"
+          },
+          {
+            "name": "Blue mussels",
+            "meanIRR": 12.3,
+            "range": "1.0-22.7"
+          },
+          {
+            "name": "Pacific oysters (poor site)",
+            "meanIRR": 10.8,
+            "range": "8.5-10.5"
+          },
+          {
+            "name": "Crocodiles (small grow-on)",
+            "meanIRR": 10.8,
+            "range": "9.1-12.4"
+          },
+          {
+            "name": "Marron",
+            "meanIRR": 10.3,
+            "range": "6.7-14.0"
+          },
+          {
+            "name": "Yabbies",
+            "meanIRR": 9.3,
+            "range": "2.1-26.6"
+          },
+          {
+            "name": "Crocodiles (large breeding)",
+            "meanIRR": 8.8,
+            "range": "7.4-10.2"
+          },
+          {
+            "name": "Crocodiles (small breeding)",
+            "meanIRR": 6.1,
+            "range": "4.4-7.4"
+          },
+          {
+            "name": "Rainbow trout (freshwater)",
+            "meanIRR": 5.6,
+            "range": "3.4-7.8"
+          },
+          {
+            "name": "Atlantic salmon (40k smolt)",
+            "meanIRR": 5.5,
+            "range": "-2.7-12.3"
+          },
+          {
+            "name": "Shrimp (subtropical)",
+            "meanIRR": 5.1,
+            "range": "-8.1-13.8"
+          },
+          {
+            "name": "Barramundi (freshwater cages)",
+            "meanIRR": 3.8,
+            "range": "-12.2-17.5"
+          },
+          {
+            "name": "Rainbow trout (ocean model I)",
+            "meanIRR": 0.0,
+            "range": "-15.2-12.7"
+          }
+        ],
+        "hurdleRate": 6.0,
+        "planningHorizon": 20,
+        "realRate1991": 6.0
+      },
+      "productLifecycle": {
+        "introduction": [
+          "Atlantic cod",
+          "Atlantic halibut",
+          "Sole",
+          "Haddock",
+          "Sturgeon",
+          "Wolffish",
+          "Dentex",
+          "Arctic charr",
+          "Bluefin tuna",
+          "Striped bass",
+          "Channel catfish",
+          "African catfish",
+          "Abalone",
+          "Sea urchins",
+          "Manilla clam",
+          "Freshwater crayfish"
+        ],
+        "growth": [
+          "European seabass",
+          "Sea bream",
+          "Tilapias",
+          "Turbot"
+        ],
+        "maturity": [
+          "Atlantic salmon"
+        ],
+        "stabilisation": [
+          "Rainbow trout",
+          "Brown trout",
+          "Carps",
+          "European eels",
+          "Mussels",
+          "Scallops",
+          "Oysters"
+        ],
+        "decline": []
+      },
+      "economiesOfScale": {
+        "examples": [
+          "Atlantic salmon: 150k smolt farm IRR 12.5% vs 40k smolt 5.5%",
+          "Redclaw: 15-ha farm IRR 19.4% vs 6-ha 9.3%",
+          "Crocodiles: large grow-on 14.0% vs small grow-on 10.8%"
+        ],
+        "minimumEfficientScale": "Varies by species; in land-based systems due to engineering relationships"
+      },
+      "riskManagement": {
+        "methods": [
+          "product diversification",
+          "technique diversification",
+          "flexible capital equipment",
+          "learning-by-doing",
+          "limited liability",
+          "shareholder/partner expansion",
+          "low debt-equity ratio",
+          "low fixed costs"
+        ]
+      },
+      "externalities": {
+        "negative": {
+          "shrimpMangrove": "habitat destruction, loss of fisheries, breeding grounds destruction",
+          "antibioticUse": "antimicrobial resistance, reduced natural resistance",
+          "feedWaste": "nutrient enrichment beyond threshold",
+          "speciesIntroduction": "predation/competition with natives, ecosystem disruption",
+          "riceShrimpRotation": "soil salinisation, falling rice yields"
+        },
+        "positive": {
+          "nutrientEnrichment": "Up to a point, benefits molluscs and wild fish"
+        },
+        "policyTools": [
+          "tax",
+          "quota",
+          "ban",
+          "subsidy"
+        ],
+        "socialCostBenefit": "Social NPV = Private NPV + External Benefits - External Costs"
+      },
+      "sustainabilityIndicators": {
+        "resourceDepletion": "stock change / annual offtake > 0 = sustainable",
+        "soilSalinisation": "rising EC = unsustainable",
+        "biodiversity": "declining species count = red flag",
+        "antibioticResistance": "increasing prevalence = high risk",
+        "feedConversionRatio": "lower is better; Norway salmon 3 to 1 between 1980 and 1997"
+      }
+    },
+    "pricing": {
+      "id": "pricing",
+      "name": "Pricing Strategy Module",
+      "status": "active",
+      "strategies": {
+        "costPlus": {
+          "description": "Price = AVC * (1 + markup)",
+          "markupBenchmarks": {
+            "manufacturing": 0.35,
+            "construction": 0.4,
+            "retail": 0.25,
+            "services": 0.45,
+            "foodProcessing": 0.3
+          }
+        },
+        "marginalCost": {
+          "description": "Price covers variable costs, contributes to fixed costs",
+          "useCase": "high competition, short-term"
+        },
+        "skimming": {
+          "description": "High initial price, lower later",
+          "trigger": "unique product, strong patent, inelastic demand"
+        },
+        "penetration": {
+          "description": "Low price to gain market share",
+          "trigger": "elastic demand, economies of scale, threat of imitation"
+        },
+        "peakLoad": {
+          "description": "Charge higher during peak demand",
+          "trigger": "capacity utilisation > 85%"
+        },
+        "twoPart": {
+          "description": "Fixed fee + per-unit charge",
+          "examples": [
+            "clubs",
+            "gyms",
+            "mobile phones"
+          ]
+        },
+        "blockPricing": {
+          "description": "Bundle of units sold as one package",
+          "examples": [
+            "6 soaps in a pack"
+          ]
+        },
+        "commodityBundling": {
+          "description": "Different products sold as one package",
+          "examples": [
+            "tourist packages",
+            "airline deals"
+          ]
+        },
+        "differential": {
+          "description": "Different prices for different segments",
+          "examples": [
+            "geographic",
+            "customer type",
+            "quantity",
+            "season"
+          ]
+        },
+        "perceivedValue": {
+          "description": "Based on customer perception of value",
+          "useCase": "branded consumer goods"
+        },
+        "goingRate": {
+          "description": "Match industry/competitor prices",
+          "useCase": "commodity markets"
+        },
+        "sealedBid": {
+          "description": "Quote for government contracts",
+          "useCase": "procurement"
+        },
+        "discounting": {
+          "description": "Clear inventory or respond to competition",
+          "trigger": "inventory > 90 days or competitor cut > 10%"
+        }
+      },
+      "priceDiscrimination": {
+        "firstDegree": {
+          "description": "Charge each customer maximum willingness to pay",
+          "conditions": "perfect knowledge of valuations, no arbitrage"
+        },
+        "secondDegree": {
+          "description": "Different prices based on quantity",
+          "examples": [
+            "bulk discounts",
+            "block tariffs"
+          ]
+        },
+        "thirdDegree": {
+          "description": "Different prices based on customer characteristics",
+          "examples": [
+            "student/senior discounts",
+            "geographic pricing"
+          ]
+        }
+      }
+    },
+    "industrialOrganization": {
+      "id": "industrial_organization",
+      "name": "Industrial Organization Module",
+      "status": "active",
+      "scpParadigm": {
+        "description": "Structure-Conduct-Performance paradigm: market structure affects firm conduct which affects performance.",
+        "criticism": "Endogeneity concerns: unobserved demand and supply shocks can affect both structure and performance."
+      },
+      "boundsApproach": {
+        "description": "Sutton's bounds approach identifies mechanisms that bound market outcomes across industries without full specification.",
+        "keyFindings": [
+          "When advertising or R&D are less important, lower bound on concentration falls as market size grows.",
+          "When advertising or R&D are more important, concentration is bounded below.",
+          "Intensified price competition shifts the lower bound of concentration upward."
+        ],
+        "policyImplication": "Pro-competition regulation may lead to more concentrated markets through exit or consolidation."
+      },
+      "conductParameter": {
+        "description": "Estimates a conduct parameter to measure market power.",
+        "identification": "Requires rotation of the demand curve to separate marginal cost from conduct.",
+        "criticism": "Static models may mis-measure market power; dynamic extensions handle strategic and fundamental reasons.",
+        "dynamicFactors": {
+          "fundamental": "Stock variables such as capital and resources affect future profits.",
+          "strategic": "Beliefs about rivals' responses to current actions."
+        },
+        "fullMarginalCost": "P = MC + γ·λ"
+      },
+      "productDifferentiation": {
+        "vertical": "All consumers agree on quality ranking.",
+        "horizontal": "Consumers differ in preferences.",
+        "models": {
+          "Hotelling": "Linear city with transport costs",
+          "Salop": "Circular city with free entry",
+          "Lancaster": "Characteristics approach",
+          "discreteChoice": "Berry-Levinsohn-Pakes random coefficients"
+        }
+      },
+      "innovation": {
+        "schumpeter": {
+          "keyInsight": "Capitalism is dynamic; perfect competition can reduce innovation incentives.",
+          "criticism": "Market power may foster innovation due to scale and the ability to capture rents."
+        },
+        "arrow1962": {
+          "drastic": "New technology price is below old marginal cost; monopolist remains monopolist.",
+          "nonDrastic": "Competitive firms may have stronger incentives because of the replacement effect.",
+          "result": "Competitive firms can have greater incentive to innovate."
+        },
+        "gilbertNewbery1982": {
+          "result": "Incumbents may pre-empt entry by patenting."
+        },
+        "reinganum1983": {
+          "result": "With stochastic innovation, challengers may have greater incentives than incumbents."
+        },
+        "kamienSchwartz1976": {
+          "result": "The relationship between rivalry and innovation timing can be U-shaped for large innovations."
+        },
+        "aghionEtAl2001": {
+          "description": "Step-by-step innovation; neck-and-neck versus unleveled sectors.",
+          "result": "Large innovation can produce an inverted-U relationship between competition and innovation."
+        },
+        "hashmi2013": {
+          "result": "The relationship depends on the technology gap."
+        },
+        "empiricalFindings": {
+          "linear": "Nickell and Blundell et al. find positive relationship in some settings.",
+          "nonLinear": "Other studies find inverted-U, positive, or weakly negative results.",
+          "naturalExperiments": "Holmes and Schmitz show competition can boost productivity."
+        }
+      }
+    },
+    "competitiveStrategies": {
+      "id": "competitive_strategies",
+      "name": "Competitive Strategy Module",
+      "status": "active",
+      "strategies": {
+        "costLeadership": {
+          "description": "Become the lowest-cost producer in the industry.",
+          "effectiveness": "Price-sensitive markets.",
+          "methods": [
+            "economies of scale",
+            "lean operations",
+            "efficient processes"
+          ],
+          "examples": [
+            "Walmart",
+            "Southwest Airlines"
+          ]
+        },
+        "differentiation": {
+          "description": "Offer unique products or services that create brand loyalty.",
+          "effectiveness": "Customers value distinctiveness; can charge premium prices.",
+          "methods": [
+            "strong branding",
+            "continuous innovation",
+            "superior quality"
+          ],
+          "examples": [
+            "Apple",
+            "Tesla"
+          ]
+        },
+        "marketFocus": {
+          "description": "Target a specific niche segment with tailored offerings.",
+          "effectiveness": "Niche has specific needs; can charge premium due to specialization.",
+          "methods": [
+            "customization",
+            "deep understanding of customer needs"
+          ],
+          "examples": [
+            "boutique hotels",
+            "luxury car brands"
+          ]
+        }
+      },
+      "adaptation": "Firms must align strategy with market structure."
+    },
+    "omti": {
+      "id": "omti",
+      "name": "Overall Market Timing Index",
+      "status": "active",
+      "weights": {
+        "macro": 0.14,
+        "market": 0.1,
+        "demand": 0.07,
+        "profitability": 0.14,
+        "competition": 0.07,
+        "lifecycle": 0.07,
+        "risk": 0.07,
+        "sq9": 0.04,
+        "marketResearch": 0.1,
+        "companyResearch": 0.1,
+        "aquaculture": 0.1
+      },
+      "scoringRules": {
+        "macro": "scoreGDP() + scoreInflation() + scoreInterest() + scoreUnemployment()",
+        "market": "scoreHHI() + scoreLerner() + scoreEntryBarriers()",
+        "profitability": "scoreIRRSpread() + scoreNetMargin()",
+        "competition": "scoreHHITrend() + scoreLernerTrend() + scoreEntryRate()",
+        "lifecycle": "{introduction:80, growth:100, maturity:60, decline:20, stabilisation:40}[stage]",
+        "risk": "scoreGearing() + scoreFixedCosts() + scoreVolatility()"
+      },
+      "adjustments": {
+        "companyResearch": {
+          "profitability": "clamp(profitability + (companyFinancial - 0.5) * 30, 0, 100)",
+          "risk": "clamp(risk + ((1 - companyRegulatory) * 0.6 + (1 - companyMaturity) * 0.4 - 0.5) * 25, 0, 100)",
+          "demand": "clamp(demand + (companySentiment - 0.5) * 20, 0, 100)"
+        },
+        "marketResearch": {
+          "demand": "clamp(demand + (marketConsumerConfidence - 0.5) * 15, 0, 100)",
+          "competition": "clamp(competition + (1 - marketCompetitiveIntensity - 0.5) * 15, 0, 100)"
+        },
+        "aquaculture": {
+          "profitability": "clamp(profitability + aquacultureIRRSpread * 0.5, 0, 100)",
+          "risk": "clamp(risk + (1 - aquacultureIRRRange) * 0.3, 0, 100)"
+        }
+      },
+      "recommendationMap": {
+        "80-100": "AGGRESSIVE INVESTMENT",
+        "60-79": "INVEST WITH PRUDENCE",
+        "45-59": "HOLD / CAUTION",
+        "30-44": "PREPARE EXIT",
+        "0-29": "IMMEDIATE EXIT"
+      }
+    }
+  },
+  "executiveEngine": {
+    "cLevelRoles": [
+      "CEO",
+      "CFO",
+      "COO",
+      "CTO",
+      "CMO",
+      "CIO",
+      "CHRO",
+      "General Counsel"
+    ],
+    "detectionRule": "title.toUpperCase().includes('CEO') || title.includes('Chief')",
+    "weighting": {
+      "CEO": 1.5,
+      "CFO": 1.2,
+      "defaultCLevel": 1.1,
+      "nonCLevel": 1.0
+    },
+    "cycleFormula": "clamp(((tenureYears / 15) * 0.6 + deriveSq9Signal(ageDegrees).confidence * 0.4) * weight / 1.5, 0, 1)",
+    "signalThresholds": {
+      "high": 0.7,
+      "medium": 0.4,
+      "low": 0.0
+    },
+    "aggregation": {
+      "cLevelTenureScore": "normalize(average tenure of C-level executives, 1, 20)",
+      "executiveSignal": "weighted average of individual signals"
+    }
+  },
+  "indicators": {
+    "technical": {
+      "rsi": {
+        "overbought": 70,
+        "oversold": 30,
+        "period": 14,
+        "formula": "100 - 100/(1 + avgGain/avgLoss)"
+      },
+      "macd": {
+        "fast": 12,
+        "slow": 26,
+        "signal": 9,
+        "formula": "12-day EMA - 26-day EMA"
+      },
+      "bollinger": {
+        "period": 20,
+        "stdDev": 2,
+        "formula": "SMA ± 2σ"
+      },
+      "adx": {
+        "strong": 25,
+        "weak": 20,
+        "period": 14,
+        "formula": "average directional index"
+      },
+      "volume": {
+        "confirmationThreshold": 1.5,
+        "formula": "volume / 20-day average"
+      },
+      "stochastic": {
+        "overbought": 80,
+        "oversold": 20,
+        "period": 14,
+        "formula": "(C - L14) / (H14 - L14) * 100"
+      },
+      "vwap": {
+        "formula": "sum(price * volume) / sum(volume)"
+      },
+      "atr": {
+        "period": 14,
+        "formula": "average true range"
+      },
+      "parabolicSAR": {
+        "formula": "SAR_t = SAR_{t-1} + AF * (EP - SAR_{t-1})"
+      },
+      "ichimoku": {
+        "components": [
+          "Tenkan-sen",
+          "Kijun-sen",
+          "Senkou Span A",
+          "Senkou Span B",
+          "Chikou Span"
+        ]
+      }
+    },
+    "macro": {
+      "gdp": {
+        "bullish": 0.025,
+        "bearish": 0.0,
+        "scoring": "if >= 2.5% then 25, else linear to 0"
+      },
+      "inflation": {
+        "targetMin": 0.01,
+        "targetMax": 0.03,
+        "warning": 0.04,
+        "scoring": "if 1-3% then 25, else diminishing"
+      },
+      "unemployment": {
+        "bullish": 0.05,
+        "bearish": 0.07,
+        "scoring": "if < 5% then 25, else diminishing"
+      },
+      "interest": {
+        "bullish": 0.02,
+        "bearish": 0.04,
+        "scoring": "if < 2% then 25, else diminishing"
+      },
+      "consumerSpending": {
+        "signal": "rising = bullish for consumer goods"
+      },
+      "exchangeRates": {
+        "signal": "weak local currency = export boost"
+      },
+      "inputPriceIndex": {
+        "signal": "rising = margin pressure"
+      }
+    },
+    "breadth": {
+      "percentAbove200MA": {
+        "oversold": 20,
+        "overbought": 80,
+        "signal": "< 20% = capitulation buy"
+      },
+      "percentAbove50MA": {
+        "oversold": 30,
+        "overbought": 70
+      },
+      "trin": {
+        "bullish": 0.7,
+        "bearish": 1.0,
+        "formula": "(Adv/Decl) / (AdvVol/DeclVol)"
+      },
+      "advanceDeclineLine": {
+        "divergence": "price vs AD line"
+      },
+      "newHighsVsLows": {
+        "bullish": 1.0,
+        "bearish": 0.5
+      }
+    },
+    "sentiment": {
+      "aaiiBullish": {
+        "contrarianSell": 50,
+        "contrarianBuy": 30
+      },
+      "aaiiBearish": {
+        "contrarianBuy": 40,
+        "contrarianSell": 25
+      },
+      "vix": {
+        "fear": 30,
+        "complacency": 15,
+        "formula": "implied volatility"
+      },
+      "putCallRatio": {
+        "bullish": 0.7,
+        "bearish": 1.0
+      }
+    },
+    "fundamental": {
+      "peRatio": {
+        "formula": "price / EPS",
+        "signal": "below sector average = value"
+      },
+      "pbRatio": {
+        "formula": "price / book value",
+        "signal": "< 1 = undervalued"
+      },
+      "epsRevisions": {
+        "formula": "net revisions / total",
+        "signal": "upward = growth"
+      },
+      "debtEquity": {
+        "formula": "total liabilities / equity",
+        "threshold": 1.2
+      },
+      "profitMargin": {
+        "formula": "net income / revenue",
+        "benchmark": 0.15
+      },
+      "roe": {
+        "formula": "net income / equity",
+        "quality": "> 15% = quality"
+      }
+    }
+  },
+  "benchmarks": {
+    "aquacultureIRR": {
+      "species": [
+        {
+          "name": "Pacific oysters (good site)",
+          "meanIRR": 31.1,
+          "range": "28.4-33.8"
+        },
+        {
+          "name": "Barramundi (nursery + free-ranging)",
+          "meanIRR": 19.6,
+          "range": "4.7-23.6"
+        },
+        {
+          "name": "Redclaw (15-ha farm)",
+          "meanIRR": 19.4,
+          "range": "15.7-23.0"
+        },
+        {
+          "name": "Shrimp (N. Qld)",
+          "meanIRR": 17.5,
+          "range": "-0.1-29.9"
+        },
+        {
+          "name": "Atlantic salmon (150k smolt)",
+          "meanIRR": 12.5,
+          "range": "5.5-19.6"
+        },
+        {
+          "name": "Rainbow trout (freshwater)",
+          "meanIRR": 5.6,
+          "range": "3.4-7.8"
+        }
+      ],
+      "hurdleRate": 6.0,
+      "planningHorizon": 20
+    },
+    "productLifecycle": {
+      "introduction": [
+        "Atlantic cod",
+        "Atlantic halibut",
+        "Sole",
+        "Sturgeon",
+        "Abalone",
+        "Freshwater crayfish"
+      ],
+      "growth": [
+        "European seabass",
+        "Sea bream",
+        "Tilapias",
+        "Turbot"
+      ],
+      "maturity": [
+        "Atlantic salmon"
+      ],
+      "stabilisation": [
+        "Rainbow trout",
+        "Brown trout",
+        "Carps",
+        "Mussels",
+        "Oysters"
+      ]
+    },
+    "entryBarrierScore": {
+      "components": [
+        "economiesOfScale",
+        "capitalIntensity",
+        "productDifferentiation",
+        "accessToDistribution",
+        "legalBarriers",
+        "incumbentCostAdvantage",
+        "switchingCosts"
+      ],
+      "scoring": "1-5 each, total 7-35; low <15, moderate 15-24, high >24"
+    },
+    "marketStructureTypes": {
+      "perfectCompetition": {
+        "firms": "many",
+        "products": "homogeneous",
+        "entry": "free",
+        "priceControl": "none"
+      },
+      "monopolisticCompetition": {
+        "firms": "many",
+        "products": "differentiated",
+        "entry": "free",
+        "priceControl": "some"
+      },
+      "oligopoly": {
+        "firms": "few",
+        "products": "homogeneous/differentiated",
+        "entry": "barriers",
+        "priceControl": "interdependent"
+      },
+      "monopoly": {
+        "firms": "one",
+        "products": "no close substitute",
+        "entry": "high barriers",
+        "priceControl": "full"
+      }
+    },
+    "competitiveStrategies": {
+      "costLeadership": {
+        "description": "Lowest cost producer",
+        "useCase": "price-sensitive markets"
+      },
+      "differentiation": {
+        "description": "Unique products/services",
+        "useCase": "brand loyalty, premium pricing"
+      },
+      "marketFocus": {
+        "description": "Niche segments",
+        "useCase": "customization, specialization"
+      }
+    }
+  },
+  "formulas": {
+    "macroScore": {
+      "gdp": "if gdp >= 0.025 then 25; elif gdp >= 0.01 then 50 + (gdp - 0.01) * 50 / 0.015; else max(0, 50 * (gdp + 0.01) / 0.02)",
+      "inflation": "if 0.01 <= inflation <= 0.03 then 25; elif inflation < 0.01 then 50 + inflation * 50; else max(0, 100 - (inflation - 0.03) * 15)",
+      "interest": "if rate <= 0.02 then 25; elif rate <= 0.04 then 100 - (rate - 0.02) * 25; else max(0, 50 - (rate - 0.04) * 12.5)",
+      "unemployment": "if unemp <= 0.05 then 25; elif unemp <= 0.07 then 100 - (unemp - 0.05) * 25; else max(0, 50 - (unemp - 0.07) * 12.5)"
+    },
+    "marketStructureScore": {
+      "hhi": "if hhi < 1500 then 40; elif hhi < 2000 then 30; elif hhi < 2500 then 20; elif hhi < 3000 then 10; else 5",
+      "lerner": "if lerner < 0.1 then 30; elif lerner < 0.2 then 25; elif lerner < 0.3 then 20; elif lerner < 0.4 then 15; elif lerner < 0.5 then 10; else 5",
+      "entryBarriers": "if score <= 14 then 30; elif score <= 20 then 20; elif score <= 25 then 15; elif score <= 30 then 10; else 5"
+    },
+    "profitabilityScore": {
+      "irrSpread": "if spread >= 0.05 then 50; elif spread >= 0.025 then 40; elif spread >= 0 then 30; elif spread >= -0.025 then 20; elif spread >= -0.05 then 10; else 5",
+      "netMargin": "if margin >= 0.15 then 30; elif margin >= 0.10 then 25; elif margin >= 0.05 then 20; elif margin >= 0 then 15; else 5"
+    },
+    "competitionScore": {
+      "hhiTrend": "falling -> 35; stable -> 25; rising -> 15",
+      "lernerTrend": "rising -> 35; stable -> 25; falling -> 15",
+      "entryRate": "if rate < 0.05 then 30; elif rate < 0.10 then 20; elif rate < 0.15 then 15; elif rate < 0.20 then 10; else 5"
+    },
+    "riskScore": {
+      "gearing": "if <= 0.3 then 35; elif <= 0.5 then 28; elif <= 0.7 then 21; elif <= 1.0 then 14; elif <= 1.2 then 7; else 0",
+      "fixedCosts": "if <= 0.3 then 35; elif <= 0.4 then 28; elif <= 0.5 then 21; elif <= 0.6 then 14; elif <= 0.7 then 7; else 0",
+      "volatility": "if <= 0.1 then 30; elif <= 0.2 then 24; elif <= 0.3 then 18; elif <= 0.4 then 12; elif <= 0.5 then 6; else 0"
+    },
+    "normalize": "clamp((value - min) / (max - min), 0, 1)",
+    "clamp": "max(minVal, min(maxVal, value))",
+    "npv": "sum(CF_t / (1 + r)^t for t in 1..T) - I_0",
+    "irr": "solve NPV = 0",
+    "benefitCostRatio": "PV(Benefits) / PV(Costs)",
+    "economicCost": "actualCosts + opportunityCosts",
+    "elasticity": "(Q2 - Q1) / ((Q1 + Q2) / 2) / ((P2 - P1) / ((P1 + P2) / 2))",
+    "hhi": "sum(s_i^2 for i in firms)",
+    "lernerIndex": "(P - MC) / P",
+    "conductParameter": "H = β1 + β2 + β3",
+    "price": "AVC * (1 + markup)",
+    "breakEven": "FC / (P - AVC)"
+  },
+  "integrationMatrix": {
+    "layers": [
+      "macro",
+      "market",
+      "demand",
+      "profitability",
+      "competition",
+      "lifecycle",
+      "risk",
+      "sq9",
+      "marketResearch",
+      "companyResearch",
+      "aquaculture"
+    ],
+    "weights": [
+      0.14,
+      0.1,
+      0.07,
+      0.14,
+      0.07,
+      0.07,
+      0.07,
+      0.04,
+      0.1,
+      0.1,
+      0.1
+    ],
+    "signalFlow": "Data -> Indicators -> Sub-Scores -> Adjustments -> Weighted Sum -> OMTI -> Recommendation",
+    "confidenceInterval": {
+      "method": "Monte Carlo simulation with 1000 iterations",
+      "bandwidth": 0.08
+    },
+    "alertThresholds": {
+      "critical": 30,
+      "warning": 45
+    }
+  },
+  "deployment": {
+    "docker": {
+      "services": [
+        "api",
+        "ml",
+        "execution",
+        "postgres",
+        "redis",
+        "kafka",
+        "dashboard"
+      ],
+      "ports": {
+        "api": 5001,
+        "ml": 5002,
+        "execution": 5003,
+        "dashboard": 8050,
+        "postgres": 5432,
+        "redis": 6379,
+        "kafka": 9092
+      }
+    },
+    "kubernetes": {
+      "replicas": {
+        "api": 3,
+        "ml": 2,
+        "execution": 1
+      },
+      "hpa": {
+        "minReplicas": 3,
+        "maxReplicas": 10,
+        "cpuTarget": 70
+      },
+      "secrets": "[REDACTED]",
+      "configMaps": [
+        "market-timing-config"
+      ]
+    },
+    "monitoring": {
+      "prometheus": {
+        "port": 9090,
+        "metrics": [
+          "api_requests_total",
+          "api_latency_seconds",
+          "omti_score",
+          "model_accuracy",
+          "trades_total",
+          "indicator_values",
+          "sq9_confidence"
+        ]
+      },
+      "grafana": {
+        "port": 3000,
+        "dashboards": [
+          "Market Timing Overview",
+          "OMTI Components",
+          "Trading Performance",
+          "ML Health",
+          "Executive Cycle"
+        ]
+      },
+      "alerts": {
+        "slack": "#alerts",
+        "email": "admin@example.com"
+      }
+    },
+    "logging": {
+      "level": "INFO",
+      "format": "json",
+      "outputs": [
+        "stdout",
+        "elasticsearch"
+      ]
+    }
+  },
+  "testing": {
+    "coverage": {
+      "threshold": 85
+    },
+    "types": [
+      "unit",
+      "integration",
+      "performance",
+      "regression",
+      "e2e"
+    ],
+    "tools": {
+      "unit": "pytest",
+      "coverage": "pytest-cov",
+      "performance": "pytest-benchmark",
+      "load": "locust",
+      "mocking": "responses",
+      "diff": "deepdiff"
+    }
+  },
+  "references": {
+    "sources": [
+      "Tisdell (Aquaculture Economics, 2001)",
+      "UNIT-3 (Market Structures & Pricing)",
+      "Xue (Economic Trends and Marketing, 2024)",
+      "Summer School Lecture (Industrial Organization, 2024)",
+      "Garcia, Kutlu, Sickles (Market Structures in Production Economics, 2018)",
+      "Schumpeter (Capitalism, Socialism and Democracy, 1942)",
+      "AAII, CBOE, FRED Data",
+      "Luo (Market Structures & Competitive Strategies, 2025)"
+    ],
+    "models": [
+      "LSTM for price prediction",
+      "Random Forest for fundamental classification",
+      "Reinforcement Learning (DDPG) for trade execution",
+      "Ensemble of above"
+    ],
+    "keyConcepts": [
+      "Structure-Conduct-Performance Paradigm",
+      "Bounds Approach (Sutton)",
+      "Conduct Parameter / Conjectural Variations",
+      "Product Differentiation (Vertical & Horizontal)",
+      "Price Discrimination (1st, 2nd, 3rd Degree)",
+      "Economies of Scale & Scope",
+      "Natural Experiments",
+      "Schumpeterian Innovation",
+      "Cournot, Bertrand, Stackelberg",
+      "Lerner Index, HHI",
+      "Dynamic Market Structures",
+      "Cost Leadership, Differentiation, Focus"
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.1.0",
+  "status": "review_gated_not_automatic",
+  "evidence_class": "methodology_bound",
+  "contract_source": "data/unified/research_contract.json#signal_indicator_promotion_contract",
+  "evidence_boundary": {
+    "financial_and_market_materials": "methodology_bound_research_only",
+    "default_promotion_status": "not_eligible_without_validated_experiment",
+    "promotion_rule": "Financial or market material may be registered as a scoped research signal or indicator only after a separately versioned, reproducible, leakage-safe experiment meets its pre-registered acceptance criteria and completes independent review. Promotion does not create trading advice, a causal claim, or a guaranteed forecast.",
+    "prohibited_uses": [
+      "trading instructions",
+      "position sizing",
+      "personal financial advice",
+      "guaranteed forecasts",
+      "causal claims from symbolic associations"
+    ],
+    "non_claims": [
+      "No untested association is a validated signal.",
+      "A statistically reported association is not proof of a causal mechanism.",
+      "A promoted research signal is not a buy, sell, hold, allocation, or execution instruction."
+    ]
+  },
+  "contract": {
+    "status": "review_gated_not_automatic",
+    "default_evidence_class": "methodology_bound",
+    "promotion_target": "research_exploratory_scoped_signal_or_indicator",
+    "minimum_requirements": [
+      "pre-registered experiment record and null hypothesis",
+      "resolved source rights and data lineage",
+      "frozen dataset and reproducibility hashes",
+      "completed temporal leakage audit with no unresolved critical violations",
+      "walk-forward fold logs with baselines and uncertainty",
+      "one untouched final holdout evaluation",
+      "reported negative, null, and unstable results",
+      "regime and survivorship limitations",
+      "independent human review",
+      "scoped wording that excludes causal, predictive-certainty, and advisory claims"
+    ],
+    "non_qualifying_evidence": [
+      "source prose alone",
+      "an unregistered backtest",
+      "a single favorable time window",
+      "in-sample performance",
+      "a result without a baseline",
+      "a result with unresolved availability timestamps",
+      "a result without source-rights documentation"
+    ],
+    "promotion_outcomes": {
+      "approved": "Register as research_exploratory with a defined domain, feature version, label, metrics, uncertainty, limitations, and review record. Keep prohibited uses in force.",
+      "inconclusive": "Retain as methodology_bound or pending_review and document the null, unstable, or underpowered result.",
+      "rejected": "Retain the source record and rejection rationale; do not expose it as a signal or indicator."
+    }
+  }
+}

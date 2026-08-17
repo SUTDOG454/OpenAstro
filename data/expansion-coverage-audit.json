@@ -1,0 +1,236 @@
+{
+  "status": "audit_complete_with_gaps",
+  "canonical_registry": {
+    "chart_type_count": 38,
+    "chart_types": [
+      "natal",
+      "relocated",
+      "synastry",
+      "composite",
+      "davison",
+      "transit",
+      "secondary_progression",
+      "solar_arc",
+      "solar_return",
+      "lunar_return",
+      "planetary_return",
+      "lunar_phase",
+      "draconic",
+      "harmonic",
+      "declination_parallel",
+      "electional",
+      "horary",
+      "mundane",
+      "heliocentric",
+      "topocentric",
+      "barycentric",
+      "planetocentric",
+      "sidereal",
+      "varga",
+      "divisional",
+      "arudha",
+      "persona",
+      "prenatal_syzygy",
+      "profection",
+      "firdaria",
+      "zodiacal_releasing",
+      "primary_direction",
+      "fixed_star",
+      "asteroid",
+      "midpoint",
+      "astrocartography",
+      "local_space",
+      "relocation"
+    ],
+    "calculation_catalog_ids": [
+      "antiscia",
+      "arabic_parts",
+      "aspects",
+      "asteroid",
+      "declination_aspects",
+      "fixed_star",
+      "house_cusps",
+      "midpoints",
+      "planetary_position",
+      "secondary_progression",
+      "solar_arc",
+      "transit_hotspots"
+    ],
+    "entity_families": [
+      "angles_and_sensitive_points",
+      "aspects",
+      "chart_types",
+      "coordinate_frames",
+      "dynamic_families",
+      "fixed_stars_core",
+      "house_systems",
+      "houses",
+      "major_asteroids",
+      "midpoints",
+      "nodes_apsides",
+      "planets_and_luminaries",
+      "signs",
+      "zodiac_modes"
+    ]
+  },
+  "existing_framework_files": [
+    {
+      "path": "data/frameworks/additions.json",
+      "top_keys": [
+        "additions"
+      ],
+      "bytes": 24914
+    },
+    {
+      "path": "data/frameworks/astrological-framework-v1.json",
+      "top_keys": [
+        "astrological_framework"
+      ],
+      "bytes": 23494
+    },
+    {
+      "path": "data/frameworks/master-astrological-reference.json",
+      "top_keys": [
+        "master_astrological_reference"
+      ],
+      "bytes": 12956
+    },
+    {
+      "path": "data/frameworks/unified-delineation-framework.json",
+      "top_keys": [
+        "astrological_delineation_framework"
+      ],
+      "bytes": 7672
+    },
+    {
+      "path": "data/frameworks/unified-master-astrology.json",
+      "top_keys": [
+        "unified_master_json"
+      ],
+      "bytes": 12484
+    },
+    {
+      "path": "data/drafts/astrological-methodology-module-1.json",
+      "error": "Expecting property name enclosed in double quotes: line 10 column 3 (char 298)"
+    },
+    {
+      "path": "data/drafts/astrological-methodology-module-2.json",
+      "error": "Expecting property name enclosed in double quotes: line 7 column 9 (char 162)"
+    },
+    {
+      "path": "data/drafts/astrological-methodology-module-3.json",
+      "error": "Expecting property name enclosed in double quotes: line 6 column 5 (char 286)"
+    },
+    {
+      "path": "data/drafts/biseptile-interpretation.json",
+      "error": "Extra data: line 126 column 1 (char 7364)"
+    },
+    {
+      "path": "data/drafts/chart-types.json",
+      "error": "Expecting ',' delimiter: line 475 column 1 (char 36354)"
+    },
+    {
+      "path": "data/drafts/chiron-compendium-unified.json",
+      "error": "Expecting property name enclosed in double quotes: line 43 column 5 (char 2613)"
+    },
+    {
+      "path": "data/drafts/enriched-master-dataset-framework.json",
+      "error": "Expecting value: line 5 column 25 (char 114)"
+    },
+    {
+      "path": "data/drafts/master-astrology-chart-types.json",
+      "error": "Expecting value: line 17 column 5 (char 977)"
+    },
+    {
+      "path": "data/drafts/master-relationship-astrology-compendium.json",
+      "error": "Expecting property name enclosed in double quotes: line 3 column 5 (char 51)"
+    },
+    {
+      "path": "data/drafts/master-synastry-engine.json",
+      "error": "Expecting value: line 3405 column 3 (char 99996)"
+    },
+    {
+      "path": "data/drafts/progressions-calculation-system.json",
+      "error": "Expecting property name enclosed in double quotes: line 16 column 7 (char 563)"
+    },
+    {
+      "path": "data/drafts/sun-moon-mp.json",
+      "error": "Invalid control character at: line 141 column 170 (char 99477)"
+    },
+    {
+      "path": "data/delineations/anti-vertex-synastry-delineation-framework.json",
+      "top_keys": [
+        "additional_rules",
+        "aspects_detailed",
+        "asteroid_specific_rules",
+        "declination",
+        "delineation_protocol",
+        "dorothean_integration",
+        "esoteric_layers",
+        "framework",
+        "frictional_indicators",
+        "house_placements",
+        "karmic_layers",
+        "manifestations",
+        "midpoints",
+        "node_connections",
+        "orbs",
+        "planetary_condition",
+        "sign_considerations"
+      ],
+      "bytes": 47480
+    },
+    {
+      "path": "data/delineations/microscopy-of-transiting-planets-simplified.json",
+      "top_keys": [
+        "book",
+        "chapter_index",
+        "introduction",
+        "key_concepts",
+        "planets"
+      ],
+      "bytes": 135620
+    }
+  ],
+  "merged_signal_indicator_counts": {
+    "source_artifacts": 507,
+    "semantic_records_after_exact_deduplication": 75,
+    "merged_records_total": 582,
+    "conflict_groups": 15
+  },
+  "attached_methodology_count": 5,
+  "attached_methodologies": [
+    "asto_repeated_confirmation",
+    "arabic_parts_sect_formulas",
+    "transit_strength_methodology",
+    "economic_market_timing_candidate",
+    "sensitive_sexual_archetype_interpretation"
+  ],
+  "coverage_gaps": [
+    {
+      "id": "chart-type-methodology-coverage",
+      "status": "pending_review",
+      "details": "Canonical registry lists chart types, but not every chart type has an explicit input/output/method/limitations methodology contract."
+    },
+    {
+      "id": "delineation-ontology-coverage",
+      "status": "pending_review",
+      "details": "Existing delineation JSON is tradition-rich but lacks a canonical entity/aspect/house/observation/interpretation evidence schema."
+    },
+    {
+      "id": "predictive-adapter-coverage",
+      "status": "pending_review",
+      "details": "Transit, progression, solar-arc, and return contracts exist in catalogs, but complete deterministic adapters and settings fixtures are not all present."
+    },
+    {
+      "id": "research-ml-coverage",
+      "status": "pending_review",
+      "details": "Financial-astrology datasets need hypothesis cards, temporal cutoffs, baselines, uncertainty, leakage controls, and prohibited-use metadata before use."
+    },
+    {
+      "id": "web-ux-coverage",
+      "status": "pending_review",
+      "details": "The current repository is data-and-tool oriented; provenance-aware delineation UX coverage is not audited as complete."
+    }
+  ]
+}

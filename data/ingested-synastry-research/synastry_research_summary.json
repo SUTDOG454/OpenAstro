@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "status": "source_ingested_with_research_boundaries",
+  "generated_at": "2026-08-17T08:47:24.339603+00:00",
+  "source_count": 29,
+  "record_count": 29,
+  "family_counts": {
+    "template_or_mock_methodology": 6,
+    "untrusted_scoring_code_template": 5,
+    "source_reported_statistical_output": 11,
+    "synastry_source_table": 2,
+    "small_named_synastry_cohort_candidate": 5
+  },
+  "source_reported_statistical_claim_count": 11,
+  "small_cohort_candidate_count": 5,
+  "unexecuted_code_template_count": 5,
+  "boundaries": [
+    "Templates, mocks, examples, and source-reported result tables are not empirical replication evidence.",
+    "Uploaded scoring code was statically inspected only and was not executed or adopted.",
+    "Small named-pair cohorts are research candidates only; they are not representative training or validation data.",
+    "No relationship outcome prediction, compatibility score, or personal decision support is produced by this ingestion.",
+    "No statistical claim is promoted without frozen raw inputs, provenance, pre-registration, appropriate controls, and independent review."
+  ]
+}

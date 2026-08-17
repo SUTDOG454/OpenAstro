@@ -1,0 +1,3970 @@
+{
+  "schema_version": "1.0.0",
+  "status": "expanded_with_review_gaps",
+  "dataset": {
+    "indicator_count": 3011,
+    "source_count": 133,
+    "record_types": {
+      "interpretation_text": 1938,
+      "interpretation_list": 172,
+      "interpretation_line": 859,
+      "interpretation_field": 42
+    }
+  },
+  "required_layers": {
+    "definitions": true,
+    "calculations": true,
+    "signals": true,
+    "indicators": true,
+    "methodologies": true,
+    "symbols": true,
+    "tests": true,
+    "research_controls": true,
+    "provenance": true
+  },
+  "thin_layers": [
+    {
+      "layer": "$",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "0",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "1",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "2",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "3",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "4",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "5",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "6",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "7",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "8",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "9",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "book",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "dorothean_integration",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "formula_reference",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "house_affinities",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "house_planetary_rulers",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "interpretation",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:10",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1002",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1003",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1009",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:101",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1010",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1016",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1017",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1023",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1024",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1029",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:103",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1030",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1035",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1036",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1045",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1046",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1055",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1056",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:106",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1065",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1066",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1075",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1076",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1081",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1085",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1086",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:109",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1095",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1096",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1105",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1106",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:111",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1113",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1115",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1116",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1119",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1126",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:113",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1135",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1136",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:114",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1145",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1146",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:115",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1151",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1155",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1156",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:116",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1165",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1166",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1167",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1168",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:117",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1175",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1176",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1178",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1179",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:118",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1180",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1185",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1186",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:119",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1190",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1191",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1192",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1195",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1196",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1198",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:12",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:120",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1202",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1204",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1205",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1206",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1208",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:121",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1210",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1214",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1215",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1216",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:122",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1220",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1224",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1225",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1226",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:123",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1235",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1236",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:124",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:125",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1251",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:126",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:127",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1271",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1272",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1279",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:13",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:130",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:136",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:137",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:138",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:139",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:14",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:142",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:144",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1445",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:146",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:147",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:148",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:149",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:15",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:150",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:154",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:155",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:157",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:158",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:16",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1609",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:161",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:162",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:163",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:164",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:165",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:167",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:168",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:169",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:171",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:173",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:174",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:175",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1777",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:179",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:183",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:186",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:187",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:192",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:1942",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:196",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:197",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:20",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:200",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:201",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:202",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:205",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:207",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:21",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:2108",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:211",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:213",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:215",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:216",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:218",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:219",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:220",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:221",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:224",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:225",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:2276",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:230",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:233",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:234",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:237",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:24",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:240",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:242",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:243",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:2442",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:248",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:249",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:250",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:253",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:254",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:255",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:256",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:257",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:258",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:259",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:26",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:2607",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:265",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:268",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:27",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:272",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:273",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:276",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:277",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:2771",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:278",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:28",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:280",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:282",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:283",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:284",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:285",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:287",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:29",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:291",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:292",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:2934",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:296",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:297",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:304",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:305",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:306",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:307",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:308",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:309",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:3093",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:31",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:310",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:311",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:314",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:315",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:316",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:317",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:319",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:32",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:325",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:3257",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:326",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:327",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:328",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:329",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:330",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:333",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:335",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:336",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:337",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:338",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:339",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:34",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:340",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:342",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:343",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:344",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:345",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:347",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:348",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:349",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:35",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:351",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:352",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:353",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:354",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:355",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:357",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:36",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:360",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:361",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:362",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:364",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:368",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:369",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:370",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:371",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:373",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:374",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:377",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:378",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:379",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:38",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:382",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:384",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:385",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:386",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:388",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:39",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:391",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:392",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:393",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:394",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:396",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:397",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:398",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:4",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:40",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:400",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:401",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:405",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:411",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:414",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:415",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:418",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:419",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:420",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:423",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:424",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:425",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:429",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:43",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:430",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:431",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:432",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:433",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:435",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:436",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:439",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:44",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:441",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:442",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:443",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:449",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:45",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:450",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:451",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:454",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:458",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:459",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:460",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:462",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:463",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:466",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:468",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:469",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:477",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:48",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:480",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:481",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:482",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:486",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:487",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:493",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:496",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:497",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:50",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:500",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:501",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:506",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:509",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:51",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:515",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:516",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:519",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:520",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:525",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:534",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:537",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:538",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:539",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:54",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:541",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:544",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:545",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:55",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:551",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:553",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:557",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:558",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:56",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:561",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:563",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:566",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:567",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:568",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:57",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:570",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:571",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:572",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:574",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:575",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:576",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:577",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:58",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:582",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:583",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:585",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:586",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:588",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:589",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:59",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:590",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:591",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:594",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:595",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:597",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:6",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:601",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:602",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:603",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:607",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:608",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:609",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:610",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:613",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:615",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:619",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:62",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:621",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:625",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:626",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:627",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:629",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:631",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:632",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:633",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:634",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:637",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:638",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:639",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:64",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:643",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:649",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:65",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:650",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:651",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:653",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:654",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:655",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:658",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:66",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:665",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:666",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:67",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:677",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:678",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:68",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:680",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:687",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:688",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:690",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:691",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:701",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:704",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:705",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:706",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:71",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:711",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:712",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:719",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:72",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:720",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:721",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:722",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:723",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:724",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:725",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:726",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:729",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:730",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:731",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:732",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:734",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:743",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:744",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:745",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:747",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:752",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:753",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:761",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:762",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:763",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:765",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:769",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:77",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:770",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:771",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:78",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:786",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:787",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:788",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:789",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:79",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:790",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:796",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:797",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:8",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:80",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:803",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:804",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:809",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:81",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:810",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:811",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:812",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:813",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:815",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:817",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:818",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:824",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:825",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:83",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:831",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:832",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:833",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:837",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:839",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:84",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:843",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:845",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:846",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:849",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:850",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:851",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:852",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:853",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:854",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:855",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:856",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:857",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:859",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:86",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:860",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:861",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:863",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:865",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:866",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:867",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:869",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:871",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:872",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:873",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:874",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:875",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:877",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:878",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:879",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:88",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:880",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:881",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:883",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:884",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:885",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:886",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:887",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:889",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:890",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:891",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:892",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:893",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:897",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:898",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:899",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:903",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:904",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:905",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:909",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:910",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:911",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:915",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:916",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:917",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:921",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:922",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:923",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:925",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:927",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:928",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:929",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:933",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:934",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:935",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:939",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:940",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:941",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:943",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:944",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:946",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:947",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:953",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:954",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:960",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:961",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:967",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:968",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:97",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:970",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:974",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:975",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:98",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:981",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:982",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:988",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:989",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:995",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:996",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "line:999",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "luminaries_special_role",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "master_astrological_reference",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "metadata",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "observation",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "progressed_angles_approximated",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "progressed_moon_aspects_to_progressed_planets",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "research_association",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "sources",
+      "indicator_count": 1,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    },
+    {
+      "layer": "specialized_modules",
+      "indicator_count": 2,
+      "status": "thin",
+      "recommendation": "Add a source-backed module or leave unavailable; do not fabricate interpretation text."
+    }
+  ],
+  "unavailable_or_pending_chart_methods": [
+    {
+      "chart_type": "relocated",
+      "status": "pending_review",
+      "required_inputs": [
+        "natal_chart",
+        "target_latitude",
+        "target_longitude",
+        "datetime",
+        "house_system"
+      ],
+      "recommendation": "Add a deterministic adapter and fixture only after explicit formula, settings, provenance, and failure mode are reviewed."
+    },
+    {
+      "chart_type": "composite",
+      "status": "pending_review",
+      "required_inputs": [
+        "chart_a",
+        "chart_b",
+        "midpoint_policy"
+      ],
+      "recommendation": "Add a deterministic adapter and fixture only after explicit formula, settings, provenance, and failure mode are reviewed."
+    },
+    {
+      "chart_type": "davison",
+      "status": "pending_review",
+      "required_inputs": [
+        "chart_a",
+        "chart_b",
+        "datetime_policy",
+        "location_policy"
+      ],
+      "recommendation": "Add a deterministic adapter and fixture only after explicit formula, settings, provenance, and failure mode are reviewed."
+    },
+    {
+      "chart_type": "solar_return",
+      "status": "pending_review",
+      "required_inputs": [
+        "natal_sun_longitude",
+        "target_year",
+        "location",
+        "house_system"
+      ],
+      "recommendation": "Add a deterministic adapter and fixture only after explicit formula, settings, provenance, and failure mode are reviewed."
+    },
+    {
+      "chart_type": "lunar_return",
+      "status": "pending_review",
+      "required_inputs": [
+        "natal_moon_longitude",
+        "target_window",
+        "location",
+        "house_system"
+      ],
+      "recommendation": "Add a deterministic adapter and fixture only after explicit formula, settings, provenance, and failure mode are reviewed."
+    },
+    {
+      "chart_type": "planetary_return",
+      "status": "pending_review",
+      "required_inputs": [
+        "natal_planet_longitude",
+        "planet",
+        "target_window",
+        "location"
+      ],
+      "recommendation": "Add a deterministic adapter and fixture only after explicit formula, settings, provenance, and failure mode are reviewed."
+    },
+    {
+      "chart_type": "draconic",
+      "status": "pending_review",
+      "required_inputs": [
+        "natal_chart",
+        "node_mode"
+      ],
+      "recommendation": "Add a deterministic adapter and fixture only after explicit formula, settings, provenance, and failure mode are reviewed."
+    },
+    {
+      "chart_type": "harmonic",
+      "status": "pending_review",
+      "required_inputs": [
+        "natal_chart",
+        "harmonic_number"
+      ],
+      "recommendation": "Add a deterministic adapter and fixture only after explicit formula, settings, provenance, and failure mode are reviewed."
+    },
+    {
+      "chart_type": "electional",
+      "status": "pending_review",
+      "required_inputs": [
+        "candidate_window",
+        "constraints",
+        "zodiac",
+        "house_system"
+      ],
+      "recommendation": "Add a deterministic adapter and fixture only after explicit formula, settings, provenance, and failure mode are reviewed."
+    },
+    {
+      "chart_type": "horary",
+      "status": "pending_review",
+      "required_inputs": [
+        "question_datetime",
+        "location",
+        "house_system",
+        "question_text"
+      ],
+      "recommendation": "Add a deterministic adapter and fixture only after explicit formula, settings, provenance, and failure mode are reviewed."
+    },
+    {
+      "chart_type": "mundane",
+      "status": "pending_review",
+      "required_inputs": [
+        "event_datetime",
+        "location",
+        "house_system",
+        "event_type"
+      ],
+      "recommendation": "Add a deterministic adapter and fixture only after explicit formula, settings, provenance, and failure mode are reviewed."
+    },
+    {
+      "chart_type": "heliocentric",
+      "status": "pending_review",
+      "required_inputs": [
+        "datetime",
+        "zodiac",
+        "ephemeris"
+      ],
+      "recommendation": "Add a deterministic adapter and fixture only after explicit formula, settings, provenance, and failure mode are reviewed."
+    },
+    {
+      "chart_type": "topocentric",
+      "status": "pending_review",
+      "required_inputs": [
+        "datetime",
+        "latitude",
+        "longitude",
+        "zodiac",
+        "house_system"
+      ],
+      "recommendation": "Add a deterministic adapter and fixture only after explicit formula, settings, provenance, and failure mode are reviewed."
+    },
+    {
+      "chart_type": "barycentric",
+      "status": "pending_review",
+      "required_inputs": [
+        "datetime",
+        "zodiac",
+        "ephemeris"
+      ],
+      "recommendation": "Add a deterministic adapter and fixture only after explicit formula, settings, provenance, and failure mode are reviewed."
+    },
+    {
+      "chart_type": "planetocentric",
+      "status": "pending_review",
+      "required_inputs": [
+        "datetime",
+        "origin_body",
+        "zodiac",
+        "ephemeris"
+      ],
+      "recommendation": "Add a deterministic adapter and fixture only after explicit formula, settings, provenance, and failure mode are reviewed."
+    },
+    {
+      "chart_type": "sidereal",
+      "status": "pending_review",
+      "required_inputs": [
+        "datetime",
+        "ayanamsa",
+        "zodiac",
+        "house_system"
+      ],
+      "recommendation": "Add a deterministic adapter and fixture only after explicit formula, settings, provenance, and failure mode are reviewed."
+    },
+    {
+      "chart_type": "varga",
+      "status": "pending_review",
+      "required_inputs": [
+        "natal_chart",
+        "division",
+        "tradition"
+      ],
+      "recommendation": "Add a deterministic adapter and fixture only after explicit formula, settings, provenance, and failure mode are reviewed."
+    },
+    {
+      "chart_type": "divisional",
+      "status": "pending_review",
+      "required_inputs": [
+        "natal_chart",
+        "division",
+        "tradition"
+      ],
+      "recommendation": "Add a deterministic adapter and fixture only after explicit formula, settings, provenance, and failure mode are reviewed."
+    },
+    {
+      "chart_type": "arudha",
+      "status": "pending_review",
+      "required_inputs": [
+        "natal_chart",
+        "house_rulerships",
+        "tradition"
+      ],
+      "recommendation": "Add a deterministic adapter and fixture only after explicit formula, settings, provenance, and failure mode are reviewed."
+    },
+    {
+      "chart_type": "persona",
+      "status": "pending_review",
+      "required_inputs": [
+        "natal_chart",
+        "planet",
+        "ephemeris",
+        "birth_location"
+      ],
+      "recommendation": "Add a deterministic adapter and fixture only after explicit formula, settings, provenance, and failure mode are reviewed."
+    },
+    {
+      "chart_type": "prenatal_syzygy",
+      "status": "pending_review",
+      "required_inputs": [
+        "birth_datetime",
+        "ephemeris",
+        "location"
+      ],
+      "recommendation": "Add a deterministic adapter and fixture only after explicit formula, settings, provenance, and failure mode are reviewed."
+    },
+    {
+      "chart_type": "profection",
+      "status": "pending_review",
+      "required_inputs": [
+        "natal_chart",
+        "age_years",
+        "house_system"
+      ],
+      "recommendation": "Add a deterministic adapter and fixture only after explicit formula, settings, provenance, and failure mode are reviewed."
+    },
+    {
+      "chart_type": "firdaria",
+      "status": "not_implemented",
+      "required_inputs": [
+        "birth_datetime",
+        "day_night_rule",
+        "planetary_sequence"
+      ],
+      "recommendation": "Add a deterministic adapter and fixture only after explicit formula, settings, provenance, and failure mode are reviewed."
+    },
+    {
+      "chart_type": "zodiacal_releasing",
+      "status": "not_implemented",
+      "required_inputs": [
+        "natal_lot",
+        "sect",
+        "period_lengths",
+        "birth_datetime"
+      ],
+      "recommendation": "Add a deterministic adapter and fixture only after explicit formula, settings, provenance, and failure mode are reviewed."
+    },
+    {
+      "chart_type": "primary_direction",
+      "status": "not_implemented",
+      "required_inputs": [
+        "natal_chart",
+        "target_age",
+        "promissor",
+        "significator",
+        "arc_method"
+      ],
+      "recommendation": "Add a deterministic adapter and fixture only after explicit formula, settings, provenance, and failure mode are reviewed."
+    },
+    {
+      "chart_type": "astrocartography",
+      "status": "pending_review",
+      "required_inputs": [
+        "natal_chart",
+        "geographic_grid",
+        "planet_or_point"
+      ],
+      "recommendation": "Add a deterministic adapter and fixture only after explicit formula, settings, provenance, and failure mode are reviewed."
+    },
+    {
+      "chart_type": "local_space",
+      "status": "pending_review",
+      "required_inputs": [
+        "natal_chart",
+        "location",
+        "azimuth_policy"
+      ],
+      "recommendation": "Add a deterministic adapter and fixture only after explicit formula, settings, provenance, and failure mode are reviewed."
+    },
+    {
+      "chart_type": "relocation",
+      "status": "pending_review",
+      "required_inputs": [
+        "natal_chart",
+        "target_location",
+        "house_system"
+      ],
+      "recommendation": "Add a deterministic adapter and fixture only after explicit formula, settings, provenance, and failure mode are reviewed."
+    }
+  ],
+  "gaps": [
+    {
+      "id": "interpretation-evidence-is-not-empirical",
+      "status": "methodology_boundary",
+      "details": "All extracted interpretations are source-derived testing indicators, not validated causal or predictive evidence."
+    },
+    {
+      "id": "probable-duplicates",
+      "status": "review_required",
+      "details": "Exact normalized text duplicates were merged; semantic near-duplicates remain separate."
+    },
+    {
+      "id": "missing-client-consent-context",
+      "status": "unavailable",
+      "details": "No client-specific interpretation export was promoted into a client artifact."
+    },
+    {
+      "id": "missing-ephemeris-fixtures",
+      "status": "pending_review",
+      "details": "Indicators do not imply calculated positions; deterministic fixture generation remains a separate step."
+    }
+  ]
+}

@@ -1,0 +1,326 @@
+{
+  "schema_version": "1.0.0",
+  "source_count": 11,
+  "sources": [
+    {
+      "filename": "01-house-framework.json",
+      "source_sha256": "e78025d5116d68ad38ac1ab3be0d17f7015636842f45a7c8b99420aa6e23db7f",
+      "parse_status": "parsed_json",
+      "top_level_type": "dict",
+      "top_level_keys": [
+        "astrological_framework"
+      ],
+      "metadata": {},
+      "module_ids": [],
+      "house_count": 12
+    },
+    {
+      "filename": "02-chart-synthesis.md",
+      "source_sha256": "e9a7c6069c05cd10960c72a133ef0df23bd89f09220d8713f43a0de09ce8bf05",
+      "parse_status": "non_json_or_json5",
+      "parse_warning": "Expecting value",
+      "top_level_type": "text"
+    },
+    {
+      "filename": "03-asto-framework.json",
+      "source_sha256": "5a5a6374c568f80ffea5c3e8fcb737a1e28615205e91acc8003ab2b59a07ca51",
+      "parse_status": "parsed_json",
+      "top_level_type": "dict",
+      "top_level_keys": [
+        "calculations",
+        "chart_types",
+        "delineation_rules",
+        "examples",
+        "exports",
+        "interpretation_rules",
+        "metadata",
+        "ontology",
+        "signal_model",
+        "signals",
+        "specialized_modules",
+        "strength_scoring",
+        "timing",
+        "weighting"
+      ],
+      "metadata": {
+        "framework_name": "ASTO (Astrological System & Trading Operations) Fully Expanded & Injected Framework",
+        "version": "12.0-Master+Unified",
+        "synthesis_date": "2026-07-29",
+        "system_status": "PRODUCTION_READY_FULLY_INTEGRATED",
+        "truth_criterion": "Repeated confirmation across multiple independent layers is the core logic of truth."
+      },
+      "module_ids": [],
+      "chart_type_count": 19,
+      "calculation_count": 7,
+      "signal_count": 15
+    },
+    {
+      "filename": "04-economic-market-system.json",
+      "source_sha256": "ded8928407c3c9703c990a62604f162ecebfe15e1f24b5717be49d9c6cd345c1",
+      "parse_status": "parsed_json",
+      "top_level_type": "dict",
+      "top_level_keys": [
+        "config",
+        "deployment",
+        "executiveEngine",
+        "indicators",
+        "integrationMatrix",
+        "modules",
+        "references",
+        "system",
+        "testing"
+      ],
+      "metadata": {},
+      "module_ids": [
+        "company_research",
+        "market_research",
+        "omti",
+        "sq9"
+      ]
+    },
+    {
+      "filename": "05-economic-market-expanded.json5",
+      "source_sha256": "9bf0b92ae84227f47a63088d2a0a3157a77f13a3c9aab430fa88d58b46fb1166",
+      "parse_status": "parsed_json",
+      "top_level_type": "dict",
+      "top_level_keys": [
+        "benchmarks",
+        "config",
+        "definitions",
+        "deployment",
+        "executiveEngine",
+        "formulas",
+        "indicators",
+        "integrationMatrix",
+        "modules",
+        "references",
+        "system",
+        "testing"
+      ],
+      "metadata": {},
+      "module_ids": [
+        "aquaculture",
+        "company_research",
+        "competitive_strategies",
+        "industrial_organization",
+        "market_research",
+        "omti",
+        "pricing",
+        "sq9"
+      ]
+    },
+    {
+      "filename": "06-economic-market-normalized.json",
+      "source_sha256": "d9235036ee2e143044ef58000aa56b33d259f5f995a7c2a439e81fc4762cbfd2",
+      "parse_status": "parsed_json",
+      "top_level_type": "dict",
+      "top_level_keys": [
+        "benchmarks",
+        "canonicalRules",
+        "config",
+        "definitions",
+        "deployment",
+        "executiveEngine",
+        "formulas",
+        "indicators",
+        "integrationMatrix",
+        "metadata",
+        "modules",
+        "references",
+        "testing"
+      ],
+      "metadata": {
+        "systemName": "Economic & Market Timing System",
+        "version": "5.0.0-normalized",
+        "status": "production-ready",
+        "timestamp": "2025-07-01T00:00:00.000Z",
+        "description": "Complete integrated decision-support system combining macroeconomics, technical analysis, industrial organization, market research, company fundamentals, executive profiling, Sq9 timing, aquaculture economics, pricing, sustainability, competitive strategy, and innovation theory."
+      },
+      "module_ids": [
+        "aquaculture",
+        "company_research",
+        "competitive_strategies",
+        "industrial_organization",
+        "market_research",
+        "omti",
+        "pricing",
+        "sq9"
+      ]
+    },
+    {
+      "filename": "07-economic-market-governance.json",
+      "source_sha256": "4d76a42a6a3a2268ca5a709b4fd979487146d656284a388b8732e75e89c6c8fe",
+      "parse_status": "parsed_json",
+      "top_level_type": "dict",
+      "top_level_keys": [
+        "benchmarks",
+        "config",
+        "deployment",
+        "executiveEngine",
+        "formulas",
+        "indicators",
+        "integrationMatrix",
+        "modules",
+        "references",
+        "system",
+        "testing"
+      ],
+      "metadata": {},
+      "module_ids": [
+        "company_research",
+        "market_research",
+        "omti",
+        "pricing",
+        "sq9",
+        "sustainability"
+      ]
+    },
+    {
+      "filename": "08-economic-market-compact.json",
+      "source_sha256": "7e8ca4e1f8f2761d1e920aa843b18a545c81e2147315b2155e495e82026d46d6",
+      "parse_status": "parsed_json",
+      "top_level_type": "dict",
+      "top_level_keys": [
+        "config",
+        "deployment",
+        "executiveEngine",
+        "indicators",
+        "integrationMatrix",
+        "modules",
+        "references",
+        "system",
+        "testing"
+      ],
+      "metadata": {},
+      "module_ids": [
+        "company_research",
+        "market_research",
+        "omti",
+        "sq9"
+      ]
+    },
+    {
+      "filename": "09-asteroid-keywords.json",
+      "source_sha256": "f8d2e720e63492193970cf12d39b02de1af17254410f93713ddf77d4490a7f68",
+      "parse_status": "parsed_json",
+      "top_level_type": "list",
+      "top_level_keys": []
+    },
+    {
+      "filename": "10-arabic-parts-transit.json",
+      "source_sha256": "c690973c5633c8b2cbe916507b7e2a8194bac8b439fd1b96f0106138766f9f69",
+      "parse_status": "parsed_json",
+      "top_level_type": "dict",
+      "top_level_keys": [
+        "arabic_parts",
+        "integration_guidelines",
+        "planetary_house_affinities",
+        "transit_strength"
+      ],
+      "metadata": {},
+      "module_ids": [],
+      "arabic_part_count": 10
+    },
+    {
+      "filename": "11-sensitive-sexual-archetypes.json",
+      "source_sha256": "c450798349f14c6749d32bc68d02a1bfca411b9caf212fd8dda16a088a28ada9",
+      "parse_status": "non_json_or_json5",
+      "parse_warning": "Expecting ',' delimiter",
+      "top_level_type": "text"
+    }
+  ],
+  "exact_normalized_duplicates": [
+    [
+      "04-economic-market-system.json",
+      "08-economic-market-compact.json"
+    ]
+  ],
+  "economic_framework_comparisons": [
+    {
+      "field": "globalDefaults",
+      "variants": [
+        [
+          "04-economic-market-system.json",
+          "05-economic-market-expanded.json5",
+          "06-economic-market-normalized.json",
+          "07-economic-market-governance.json",
+          "08-economic-market-compact.json"
+        ]
+      ],
+      "variant_count": 1
+    },
+    {
+      "field": "indicators",
+      "variants": [
+        [
+          "04-economic-market-system.json",
+          "08-economic-market-compact.json"
+        ],
+        [
+          "05-economic-market-expanded.json5"
+        ],
+        [
+          "06-economic-market-normalized.json"
+        ],
+        [
+          "07-economic-market-governance.json"
+        ]
+      ],
+      "variant_count": 4
+    },
+    {
+      "field": "integrationMatrix",
+      "variants": [
+        [
+          "04-economic-market-system.json",
+          "08-economic-market-compact.json"
+        ],
+        [
+          "05-economic-market-expanded.json5",
+          "06-economic-market-normalized.json"
+        ],
+        [
+          "07-economic-market-governance.json"
+        ]
+      ],
+      "variant_count": 3
+    },
+    {
+      "field": "executiveEngine",
+      "variants": [
+        [
+          "04-economic-market-system.json",
+          "08-economic-market-compact.json"
+        ],
+        [
+          "05-economic-market-expanded.json5",
+          "06-economic-market-normalized.json",
+          "07-economic-market-governance.json"
+        ]
+      ],
+      "variant_count": 2
+    }
+  ],
+  "review_findings": [
+    {
+      "status": "pending_review",
+      "issue": "Several economic files assert production-ready or active status without independently verifiable deployment evidence."
+    },
+    {
+      "status": "conflicted",
+      "issue": "Economic framework files use overlapping but non-identical field names such as violations/complianceViolations and surprisePercent/earningsSurprisePercent."
+    },
+    {
+      "status": "pending_review",
+      "issue": "The sexual-archetype file contains sensitive interpretive content and is quarantined from default retrieval."
+    },
+    {
+      "status": "pending_review",
+      "issue": "The Aries synthesis contains strong deterministic and health-adjacent language; it is retained as source prose, not canonical evidence."
+    },
+    {
+      "status": "pending_review",
+      "issue": "References named in the attachments are bibliographic labels only; no external source licenses or URLs were supplied in the attachments."
+    }
+  ]
+}

@@ -1,0 +1,1923 @@
+{
+  "schema_version": "1.1.0",
+  "classification": "source_derived_inputs_not_validated_signals",
+  "evidence_boundary": {
+    "financial_and_market_materials": "methodology_bound_research_only",
+    "default_promotion_status": "not_eligible_without_validated_experiment",
+    "promotion_rule": "Financial or market material may be registered as a scoped research signal or indicator only after a separately versioned, reproducible, leakage-safe experiment meets its pre-registered acceptance criteria and completes independent review. Promotion does not create trading advice, a causal claim, or a guaranteed forecast.",
+    "prohibited_uses": [
+      "trading instructions",
+      "position sizing",
+      "personal financial advice",
+      "guaranteed forecasts",
+      "causal claims from symbolic associations"
+    ],
+    "non_claims": [
+      "No untested association is a validated signal.",
+      "A statistically reported association is not proof of a causal mechanism.",
+      "A promoted research signal is not a buy, sell, hold, allocation, or execution instruction."
+    ]
+  },
+  "records": [
+    {
+      "record_id": "indicator:fred_macro:gdp_qoq",
+      "category": "economic_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "fred_macro",
+        "field": "gdp_qoq",
+        "provider_path": "GDPC1.value"
+      },
+      "normalized_value": {
+        "source_id": "fred_macro",
+        "field": "gdp_qoq",
+        "canonical_path": "macro.gdp_growth",
+        "quality": {
+          "source_weight": 0.95,
+          "max_age_days": 90
+        },
+        "schedule": "daily"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:fred_macro:cpi_yoy",
+      "category": "economic_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "fred_macro",
+        "field": "cpi_yoy",
+        "provider_path": "CPIAUCSL.value"
+      },
+      "normalized_value": {
+        "source_id": "fred_macro",
+        "field": "cpi_yoy",
+        "canonical_path": "macro.cpi_inflation",
+        "quality": {
+          "source_weight": 0.95,
+          "max_age_days": 90
+        },
+        "schedule": "daily"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:fred_macro:fed_funds",
+      "category": "economic_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "fred_macro",
+        "field": "fed_funds",
+        "provider_path": "FEDFUNDS.value"
+      },
+      "normalized_value": {
+        "source_id": "fred_macro",
+        "field": "fed_funds",
+        "canonical_path": "macro.fed_funds_rate",
+        "quality": {
+          "source_weight": 0.95,
+          "max_age_days": 90
+        },
+        "schedule": "daily"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:fred_macro:unemp_rate",
+      "category": "economic_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "fred_macro",
+        "field": "unemp_rate",
+        "provider_path": "UNRATE.value"
+      },
+      "normalized_value": {
+        "source_id": "fred_macro",
+        "field": "unemp_rate",
+        "canonical_path": "macro.unemployment",
+        "quality": {
+          "source_weight": 0.95,
+          "max_age_days": 90
+        },
+        "schedule": "daily"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:fred_macro:consumer_sentiment",
+      "category": "economic_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "fred_macro",
+        "field": "consumer_sentiment",
+        "provider_path": "UMCSENT.value"
+      },
+      "normalized_value": {
+        "source_id": "fred_macro",
+        "field": "consumer_sentiment",
+        "canonical_path": "macro.consumer_sentiment",
+        "quality": {
+          "source_weight": 0.95,
+          "max_age_days": 90
+        },
+        "schedule": "daily"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:fred_macro:payrolls",
+      "category": "economic_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "fred_macro",
+        "field": "payrolls",
+        "provider_path": "PAYEMS.value"
+      },
+      "normalized_value": {
+        "source_id": "fred_macro",
+        "field": "payrolls",
+        "canonical_path": "macro.payrolls",
+        "quality": {
+          "source_weight": 0.95,
+          "max_age_days": 90
+        },
+        "schedule": "daily"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:yfinance_equity:adj_close",
+      "category": "company_financial_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "yfinance_equity",
+        "field": "adj_close",
+        "provider_path": "chart.result.0.meta.regularMarketPrice"
+      },
+      "normalized_value": {
+        "source_id": "yfinance_equity",
+        "field": "adj_close",
+        "canonical_path": "market.price",
+        "quality": {
+          "source_weight": 0.85,
+          "max_age_days": 1
+        },
+        "schedule": "realtime"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:yfinance_equity:volume",
+      "category": "company_financial_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "yfinance_equity",
+        "field": "volume",
+        "provider_path": "chart.result.0.meta.regularMarketVolume"
+      },
+      "normalized_value": {
+        "source_id": "yfinance_equity",
+        "field": "volume",
+        "canonical_path": "extensions.volume",
+        "quality": {
+          "source_weight": 0.85,
+          "max_age_days": 1
+        },
+        "schedule": "realtime"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:yfinance_equity:returns",
+      "category": "company_financial_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "yfinance_equity",
+        "field": "returns",
+        "provider_path": "daily_return"
+      },
+      "normalized_value": {
+        "source_id": "yfinance_equity",
+        "field": "returns",
+        "canonical_path": "extensions.returns",
+        "quality": {
+          "source_weight": 0.85,
+          "max_age_days": 1
+        },
+        "schedule": "realtime"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:yfinance_equity:volatility",
+      "category": "company_financial_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "yfinance_equity",
+        "field": "volatility",
+        "provider_path": "annualized_volatility"
+      },
+      "normalized_value": {
+        "source_id": "yfinance_equity",
+        "field": "volatility",
+        "canonical_path": "risk.volatility_annual",
+        "quality": {
+          "source_weight": 0.85,
+          "max_age_days": 1
+        },
+        "schedule": "realtime"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:fmp_fundamentals:net_margin",
+      "category": "company_financial_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "fmp_fundamentals",
+        "field": "net_margin",
+        "provider_path": "profitability_ratios.netMargin"
+      },
+      "normalized_value": {
+        "source_id": "fmp_fundamentals",
+        "field": "net_margin",
+        "canonical_path": "profitability.net_margin",
+        "quality": {
+          "source_weight": 0.8,
+          "max_age_days": 30
+        },
+        "schedule": "weekly"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:fmp_fundamentals:gearing",
+      "category": "company_financial_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "fmp_fundamentals",
+        "field": "gearing",
+        "provider_path": "debt_ratios.gearing"
+      },
+      "normalized_value": {
+        "source_id": "fmp_fundamentals",
+        "field": "gearing",
+        "canonical_path": "risk.gearing",
+        "quality": {
+          "source_weight": 0.8,
+          "max_age_days": 30
+        },
+        "schedule": "weekly"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:fmp_fundamentals:fixed_cost_ratio",
+      "category": "company_financial_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "fmp_fundamentals",
+        "field": "fixed_cost_ratio",
+        "provider_path": "operating_ratios.fixedCostRatio"
+      },
+      "normalized_value": {
+        "source_id": "fmp_fundamentals",
+        "field": "fixed_cost_ratio",
+        "canonical_path": "risk.fixed_cost",
+        "quality": {
+          "source_weight": 0.8,
+          "max_age_days": 30
+        },
+        "schedule": "weekly"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:fmp_fundamentals:irr",
+      "category": "company_financial_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "fmp_fundamentals",
+        "field": "irr",
+        "provider_path": "investing_ratios.irr"
+      },
+      "normalized_value": {
+        "source_id": "fmp_fundamentals",
+        "field": "irr",
+        "canonical_path": "profitability.irr",
+        "quality": {
+          "source_weight": 0.8,
+          "max_age_days": 30
+        },
+        "schedule": "weekly"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:fmp_fundamentals:revenue",
+      "category": "company_financial_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "fmp_fundamentals",
+        "field": "revenue",
+        "provider_path": "income_statement.revenue"
+      },
+      "normalized_value": {
+        "source_id": "fmp_fundamentals",
+        "field": "revenue",
+        "canonical_path": "company_research.revenue",
+        "quality": {
+          "source_weight": 0.8,
+          "max_age_days": 30
+        },
+        "schedule": "weekly"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:alpha_vantage_technical:rsi",
+      "category": "company_financial_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "alpha_vantage_technical",
+        "field": "rsi",
+        "provider_path": "Technical Analysis: RSI.rsi"
+      },
+      "normalized_value": {
+        "source_id": "alpha_vantage_technical",
+        "field": "rsi",
+        "canonical_path": "technical.rsi_14",
+        "quality": {
+          "source_weight": 0.75,
+          "max_age_days": 2
+        },
+        "schedule": "daily"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:alpha_vantage_macd:macd",
+      "category": "company_financial_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "alpha_vantage_macd",
+        "field": "macd",
+        "provider_path": "Technical Analysis: MACD.MACD"
+      },
+      "normalized_value": {
+        "source_id": "alpha_vantage_macd",
+        "field": "macd",
+        "canonical_path": "technical.macd",
+        "quality": {
+          "source_weight": 0.75,
+          "max_age_days": 2
+        },
+        "schedule": "daily"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:alpha_vantage_macd:macd_signal",
+      "category": "company_financial_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "alpha_vantage_macd",
+        "field": "macd_signal",
+        "provider_path": "Technical Analysis: MACD.MACD_Signal"
+      },
+      "normalized_value": {
+        "source_id": "alpha_vantage_macd",
+        "field": "macd_signal",
+        "canonical_path": "technical.macd_signal",
+        "quality": {
+          "source_weight": 0.75,
+          "max_age_days": 2
+        },
+        "schedule": "daily"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:alpha_vantage_macd:macd_hist",
+      "category": "company_financial_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "alpha_vantage_macd",
+        "field": "macd_hist",
+        "provider_path": "Technical Analysis: MACD.MACD_Hist"
+      },
+      "normalized_value": {
+        "source_id": "alpha_vantage_macd",
+        "field": "macd_hist",
+        "canonical_path": "technical.macd_hist",
+        "quality": {
+          "source_weight": 0.75,
+          "max_age_days": 2
+        },
+        "schedule": "daily"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:alpha_vantage_bollinger:bb_upper",
+      "category": "company_financial_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "alpha_vantage_bollinger",
+        "field": "bb_upper",
+        "provider_path": "Technical Analysis: BBANDS.Real Upper Band"
+      },
+      "normalized_value": {
+        "source_id": "alpha_vantage_bollinger",
+        "field": "bb_upper",
+        "canonical_path": "technical.bb_upper",
+        "quality": {
+          "source_weight": 0.75,
+          "max_age_days": 2
+        },
+        "schedule": "daily"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:alpha_vantage_bollinger:bb_middle",
+      "category": "company_financial_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "alpha_vantage_bollinger",
+        "field": "bb_middle",
+        "provider_path": "Technical Analysis: BBANDS.Real Middle Band"
+      },
+      "normalized_value": {
+        "source_id": "alpha_vantage_bollinger",
+        "field": "bb_middle",
+        "canonical_path": "technical.bb_middle",
+        "quality": {
+          "source_weight": 0.75,
+          "max_age_days": 2
+        },
+        "schedule": "daily"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:alpha_vantage_bollinger:bb_lower",
+      "category": "company_financial_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "alpha_vantage_bollinger",
+        "field": "bb_lower",
+        "provider_path": "Technical Analysis: BBANDS.Real Lower Band"
+      },
+      "normalized_value": {
+        "source_id": "alpha_vantage_bollinger",
+        "field": "bb_lower",
+        "canonical_path": "technical.bb_lower",
+        "quality": {
+          "source_weight": 0.75,
+          "max_age_days": 2
+        },
+        "schedule": "daily"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:iex_insider:insider_buys",
+      "category": "company_financial_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "iex_insider",
+        "field": "insider_buys",
+        "provider_path": "insider_transactions.buy_count"
+      },
+      "normalized_value": {
+        "source_id": "iex_insider",
+        "field": "insider_buys",
+        "canonical_path": "company_research.insider_buys",
+        "quality": {
+          "source_weight": 0.7,
+          "max_age_days": 7
+        },
+        "schedule": "daily"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:iex_insider:insider_sells",
+      "category": "company_financial_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "iex_insider",
+        "field": "insider_sells",
+        "provider_path": "insider_transactions.sell_count"
+      },
+      "normalized_value": {
+        "source_id": "iex_insider",
+        "field": "insider_sells",
+        "canonical_path": "company_research.insider_sells",
+        "quality": {
+          "source_weight": 0.7,
+          "max_age_days": 7
+        },
+        "schedule": "daily"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:news_sentiment:sentiment_polarity",
+      "category": "company_financial_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "news_sentiment",
+        "field": "sentiment_polarity",
+        "provider_path": "sentiment.polarity"
+      },
+      "normalized_value": {
+        "source_id": "news_sentiment",
+        "field": "sentiment_polarity",
+        "canonical_path": "company_research.sentiment",
+        "quality": {
+          "source_weight": 0.65,
+          "max_age_days": 1
+        },
+        "schedule": "hourly"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:news_sentiment:news_volume",
+      "category": "company_financial_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "news_sentiment",
+        "field": "news_volume",
+        "provider_path": "totalResults"
+      },
+      "normalized_value": {
+        "source_id": "news_sentiment",
+        "field": "news_volume",
+        "canonical_path": "extensions.news_volume",
+        "quality": {
+          "source_weight": 0.65,
+          "max_age_days": 1
+        },
+        "schedule": "hourly"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:social_sentiment:social_sentiment",
+      "category": "company_financial_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "social_sentiment",
+        "field": "social_sentiment",
+        "provider_path": "sentiment.average"
+      },
+      "normalized_value": {
+        "source_id": "social_sentiment",
+        "field": "social_sentiment",
+        "canonical_path": "market_research.social_sentiment",
+        "quality": {
+          "source_weight": 0.55,
+          "max_age_days": 1
+        },
+        "schedule": "hourly"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:economic_surprise:gdp_surprise",
+      "category": "economic_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "economic_surprise",
+        "field": "gdp_surprise",
+        "provider_path": "surprise_index.gdp"
+      },
+      "normalized_value": {
+        "source_id": "economic_surprise",
+        "field": "gdp_surprise",
+        "canonical_path": "macro.gdp_surprise",
+        "quality": {
+          "source_weight": 0.75,
+          "max_age_days": 3
+        },
+        "schedule": "daily"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:fmp_factors:smb",
+      "category": "company_financial_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "fmp_factors",
+        "field": "smb",
+        "provider_path": "factors.smb"
+      },
+      "normalized_value": {
+        "source_id": "fmp_factors",
+        "field": "smb",
+        "canonical_path": "factor.smb",
+        "quality": {
+          "source_weight": 0.7,
+          "max_age_days": 2
+        },
+        "schedule": "daily"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:fmp_factors:hml",
+      "category": "company_financial_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "fmp_factors",
+        "field": "hml",
+        "provider_path": "factors.hml"
+      },
+      "normalized_value": {
+        "source_id": "fmp_factors",
+        "field": "hml",
+        "canonical_path": "factor.hml",
+        "quality": {
+          "source_weight": 0.7,
+          "max_age_days": 2
+        },
+        "schedule": "daily"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:fmp_factors:mom",
+      "category": "company_financial_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "fmp_factors",
+        "field": "mom",
+        "provider_path": "factors.mom"
+      },
+      "normalized_value": {
+        "source_id": "fmp_factors",
+        "field": "mom",
+        "canonical_path": "factor.mom",
+        "quality": {
+          "source_weight": 0.7,
+          "max_age_days": 2
+        },
+        "schedule": "daily"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:yield_curve:yield_10y",
+      "category": "economic_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "yield_curve",
+        "field": "yield_10y",
+        "provider_path": "data.10_year"
+      },
+      "normalized_value": {
+        "source_id": "yield_curve",
+        "field": "yield_10y",
+        "canonical_path": "macro.yield_10y",
+        "quality": {
+          "source_weight": 0.8,
+          "max_age_days": 2
+        },
+        "schedule": "daily"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:yield_curve:yield_2y",
+      "category": "economic_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "yield_curve",
+        "field": "yield_2y",
+        "provider_path": "data.2_year"
+      },
+      "normalized_value": {
+        "source_id": "yield_curve",
+        "field": "yield_2y",
+        "canonical_path": "macro.yield_2y",
+        "quality": {
+          "source_weight": 0.8,
+          "max_age_days": 2
+        },
+        "schedule": "daily"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:yield_curve:spread",
+      "category": "economic_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "yield_curve",
+        "field": "spread",
+        "provider_path": "data.spread"
+      },
+      "normalized_value": {
+        "source_id": "yield_curve",
+        "field": "spread",
+        "canonical_path": "macro.yield_spread",
+        "quality": {
+          "source_weight": 0.8,
+          "max_age_days": 2
+        },
+        "schedule": "daily"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:vix:vix_close",
+      "category": "economic_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "vix",
+        "field": "vix_close",
+        "provider_path": "chart.result.0.meta.regularMarketPrice"
+      },
+      "normalized_value": {
+        "source_id": "vix",
+        "field": "vix_close",
+        "canonical_path": "market.vix",
+        "quality": {
+          "source_weight": 0.85,
+          "max_age_days": 1
+        },
+        "schedule": "daily"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:industry_reports:hhi",
+      "category": "company_financial_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "industry_reports",
+        "field": "hhi",
+        "provider_path": "market_structure.hhi"
+      },
+      "normalized_value": {
+        "source_id": "industry_reports",
+        "field": "hhi",
+        "canonical_path": "market_structure.hhi",
+        "quality": {
+          "source_weight": 0.7,
+          "max_age_days": 90
+        },
+        "schedule": "quarterly"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:industry_reports:lerner_index",
+      "category": "company_financial_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "industry_reports",
+        "field": "lerner_index",
+        "provider_path": "market_structure.lerner"
+      },
+      "normalized_value": {
+        "source_id": "industry_reports",
+        "field": "lerner_index",
+        "canonical_path": "market_structure.lerner",
+        "quality": {
+          "source_weight": 0.7,
+          "max_age_days": 90
+        },
+        "schedule": "quarterly"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:industry_reports:entry_barriers",
+      "category": "company_financial_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "industry_reports",
+        "field": "entry_barriers",
+        "provider_path": "market_structure.entry_barrier_score"
+      },
+      "normalized_value": {
+        "source_id": "industry_reports",
+        "field": "entry_barriers",
+        "canonical_path": "market_structure.entry_barrier_score",
+        "quality": {
+          "source_weight": 0.7,
+          "max_age_days": 90
+        },
+        "schedule": "quarterly"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:industry_reports:entry_rate",
+      "category": "company_financial_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "industry_reports",
+        "field": "entry_rate",
+        "provider_path": "market_structure.entry_rate"
+      },
+      "normalized_value": {
+        "source_id": "industry_reports",
+        "field": "entry_rate",
+        "canonical_path": "competition.entry_rate",
+        "quality": {
+          "source_weight": 0.7,
+          "max_age_days": 90
+        },
+        "schedule": "quarterly"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:industry_reports:lifecycle_stage",
+      "category": "company_financial_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "industry_reports",
+        "field": "lifecycle_stage",
+        "provider_path": "market_structure.lifecycle_stage"
+      },
+      "normalized_value": {
+        "source_id": "industry_reports",
+        "field": "lifecycle_stage",
+        "canonical_path": "lifecycle.stage",
+        "quality": {
+          "source_weight": 0.7,
+          "max_age_days": 90
+        },
+        "schedule": "quarterly"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:skyfield_ephemeris:sun_longitude",
+      "category": "company_financial_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "skyfield_ephemeris",
+        "field": "sun_longitude",
+        "provider_path": "sun"
+      },
+      "normalized_value": {
+        "source_id": "skyfield_ephemeris",
+        "field": "sun_longitude",
+        "canonical_path": "astro.sun",
+        "quality": {
+          "source_weight": 0.9,
+          "max_age_days": 1
+        },
+        "schedule": "daily"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:skyfield_ephemeris:moon_longitude",
+      "category": "company_financial_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "skyfield_ephemeris",
+        "field": "moon_longitude",
+        "provider_path": "moon"
+      },
+      "normalized_value": {
+        "source_id": "skyfield_ephemeris",
+        "field": "moon_longitude",
+        "canonical_path": "astro.moon",
+        "quality": {
+          "source_weight": 0.9,
+          "max_age_days": 1
+        },
+        "schedule": "daily"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:skyfield_ephemeris:mercury_longitude",
+      "category": "company_financial_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "skyfield_ephemeris",
+        "field": "mercury_longitude",
+        "provider_path": "mercury"
+      },
+      "normalized_value": {
+        "source_id": "skyfield_ephemeris",
+        "field": "mercury_longitude",
+        "canonical_path": "astro.mercury",
+        "quality": {
+          "source_weight": 0.9,
+          "max_age_days": 1
+        },
+        "schedule": "daily"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:skyfield_ephemeris:venus_longitude",
+      "category": "company_financial_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "skyfield_ephemeris",
+        "field": "venus_longitude",
+        "provider_path": "venus"
+      },
+      "normalized_value": {
+        "source_id": "skyfield_ephemeris",
+        "field": "venus_longitude",
+        "canonical_path": "astro.venus",
+        "quality": {
+          "source_weight": 0.9,
+          "max_age_days": 1
+        },
+        "schedule": "daily"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:skyfield_ephemeris:mars_longitude",
+      "category": "company_financial_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "skyfield_ephemeris",
+        "field": "mars_longitude",
+        "provider_path": "mars"
+      },
+      "normalized_value": {
+        "source_id": "skyfield_ephemeris",
+        "field": "mars_longitude",
+        "canonical_path": "astro.mars",
+        "quality": {
+          "source_weight": 0.9,
+          "max_age_days": 1
+        },
+        "schedule": "daily"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:skyfield_ephemeris:jupiter_longitude",
+      "category": "company_financial_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "skyfield_ephemeris",
+        "field": "jupiter_longitude",
+        "provider_path": "jupiter"
+      },
+      "normalized_value": {
+        "source_id": "skyfield_ephemeris",
+        "field": "jupiter_longitude",
+        "canonical_path": "astro.jupiter",
+        "quality": {
+          "source_weight": 0.9,
+          "max_age_days": 1
+        },
+        "schedule": "daily"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:skyfield_ephemeris:saturn_longitude",
+      "category": "company_financial_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "skyfield_ephemeris",
+        "field": "saturn_longitude",
+        "provider_path": "saturn"
+      },
+      "normalized_value": {
+        "source_id": "skyfield_ephemeris",
+        "field": "saturn_longitude",
+        "canonical_path": "astro.saturn",
+        "quality": {
+          "source_weight": 0.9,
+          "max_age_days": 1
+        },
+        "schedule": "daily"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:skyfield_ephemeris:uranus_longitude",
+      "category": "company_financial_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "skyfield_ephemeris",
+        "field": "uranus_longitude",
+        "provider_path": "uranus"
+      },
+      "normalized_value": {
+        "source_id": "skyfield_ephemeris",
+        "field": "uranus_longitude",
+        "canonical_path": "astro.uranus",
+        "quality": {
+          "source_weight": 0.9,
+          "max_age_days": 1
+        },
+        "schedule": "daily"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:skyfield_ephemeris:neptune_longitude",
+      "category": "company_financial_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "skyfield_ephemeris",
+        "field": "neptune_longitude",
+        "provider_path": "neptune"
+      },
+      "normalized_value": {
+        "source_id": "skyfield_ephemeris",
+        "field": "neptune_longitude",
+        "canonical_path": "astro.neptune",
+        "quality": {
+          "source_weight": 0.9,
+          "max_age_days": 1
+        },
+        "schedule": "daily"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    },
+    {
+      "record_id": "indicator:skyfield_ephemeris:pluto_longitude",
+      "category": "company_financial_indicator",
+      "source_ids": [
+        "user_upload:pasted_content.txt",
+        "user_upload:pasted_content_2.txt"
+      ],
+      "raw_value": {
+        "source_id": "skyfield_ephemeris",
+        "field": "pluto_longitude",
+        "provider_path": "pluto"
+      },
+      "normalized_value": {
+        "source_id": "skyfield_ephemeris",
+        "field": "pluto_longitude",
+        "canonical_path": "astro.pluto",
+        "quality": {
+          "source_weight": 0.9,
+          "max_age_days": 1
+        },
+        "schedule": "daily"
+      },
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "methodology_bound_research_input",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ],
+      "limitations": [
+        "The record is an input definition, not an observed market dataset or validated signal.",
+        "Inclusion does not demonstrate predictive value or a causal relationship."
+      ]
+    }
+  ]
+}

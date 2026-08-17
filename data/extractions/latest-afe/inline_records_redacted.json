@@ -1,0 +1,90 @@
+{
+  "arabic_parts": {
+    "Part of Fortune": {
+      "longitude": 120.45,
+      "sign": 3,
+      "house": 4,
+      "interpretation": "Life, body, soul, wealth, reputation, all things"
+    },
+    "Part of Life": {
+      "longitude": 200.12,
+      "sign": 6,
+      "house": 10,
+      "interpretation": "Natural life, body, sustenance, longevity"
+    },
+    "Part of Marriage": {
+      "longitude": 15.78,
+      "sign": 0,
+      "house": 7,
+      "interpretation": "Long-lasting marriage, marriage quality and fortune"
+    }
+  },
+  "transit_strength": [
+    {
+      "transit_planet": "Jupiter",
+      "natal_planet": "Sun",
+      "aspect": "trine",
+      "orb": 2.5,
+      "dignity_score": 3,
+      "final_dispositor": "Jupiter",
+      "dispositor_score": 3,
+      "speed_modifier": 1.2,
+      "house_modifier": 1.5,
+      "avashta": "awake",
+      "avashta_modifier": 1.5,
+      "orb_modifier": 1.0,
+      "aspect_modifier": 1.2,
+      "strength": 9.72,
+      "active": true
+    }
+  ],
+  "house_affinities": {
+    "Sun": {
+      "house": 5,
+      "bonus": 1.5,
+      "interpretation": "Identity, creation, status expression amplified"
+    },
+    "Moon": {
+      "house": 4,
+      "bonus": 1.5,
+      "interpretation": "Resources, home/family matters flow easily"
+    }
+  },
+  "midpoint_activations": [
+    {
+      "activating_planet": "Jupiter",
+      "midpoint": "Sun/Moon",
+      "longitude": 120.45,
+      "orb": 0.85,
+      "interpretation": "Physical and emotional fulfilment. An essentially positive outlook. Optimism, confidence and resilience. An abundance of creative and procreative energy. Materialistic inclinations. Accumulating assets. Prosperity."
+    },
+    {
+      "activating_planet": "Saturn",
+      "midpoint": "Venus/Mars",
+      "longitude": 200.12,
+      "orb": 0.42,
+      "interpretation": "Frustrated or repressed passions. Challenges and difficulties within love life. Controlling influences within sexual relationships. A risk of disloyalty. Separative influences."
+    },
+    {
+      "activating_planet": "Uranus",
+      "midpoint": "Sun/Moon",
+      "longitude": 300.78,
+      "orb": 1.23,
+      "interpretation": "Thriving on change and stimulation. Rebellious traits. Tensions. Instability. Unpredictable behaviour. Agitation and irritability. Sudden departures or separations."
+    }
+  ],
+  "available_activating_planets": [
+    "Jupiter",
+    "Saturn",
+    "Uranus",
+    "Neptune",
+    "Pluto",
+    "Moon's North Node"
+  ],
+  "available_midpoint_axes": [
+    "Sun/Moon",
+    "Sun/Mercury",
+    "Sun/Venus",
+    "..."
+  ]
+}

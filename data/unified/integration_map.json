@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0.0",
+  "status": "compatibility_map",
+  "canonical_orchestration_root": "data/unified/",
+  "legacy_paths": {
+    "data/frameworks/unified-delineation-framework.json": {
+      "replacement": "data/unified/delineation_ontology.json",
+      "reason": "Use the new evidence-class ontology for retrieval and output contracts; retain legacy framework as source-derived tradition content."
+    },
+    "data/drafts/chart-types.json": {
+      "replacement": "data/unified/framework_registry.json",
+      "reason": "Use explicit chart-type contracts with status, inputs, outputs, and limitations; retain malformed draft as raw source."
+    },
+    "data/merged-signals-indicators/signal_indicator_master.json": {
+      "replacement": "data/unified/unified_astrology_master.json",
+      "reason": "The orchestration master links signal, indicator, formula, methodology, research, and coverage layers."
+    },
+    "data/methodologies/recursive-strength-protocol.json": {
+      "replacement": "data/unified/formula_registry.json",
+      "reason": "Reference the formula registry for provenance and methodology status while retaining the original protocol."
+    }
+  },
+  "naming_policy": {
+    "data_directories": "kebab-case",
+    "json_files": "snake_case",
+    "python_tools": "snake_case",
+    "compatibility_rule": "Do not remove legacy paths automatically; add explicit aliases and migration notes."
+  },
+  "reference_update_status": {
+    "existing_legacy_references": "preserved",
+    "new_orchestration_references": "data/unified/unified_astrology_master.json",
+    "semantic_renames": "not_auto_applied"
+  }
+}

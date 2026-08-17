@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "status": "synthesized_with_pending_review",
+  "canonical_calculation_authority": "/home/ubuntu/skills/astrology-data-unifi/references/calculations.json",
+  "calculations": {
+    "part_of_fortune_day": {
+      "formula": "Ascendant + Moon - Sun mod 360",
+      "source_ids": [
+        "attached-framework-03",
+        "attached-framework-10"
+      ],
+      "status": "methodology_bound"
+    },
+    "part_of_fortune_night": {
+      "formula": "Ascendant + Sun - Moon mod 360",
+      "source_ids": [
+        "attached-framework-03",
+        "attached-framework-10"
+      ],
+      "status": "methodology_bound"
+    },
+    "draconic_longitude": {
+      "formula": "(natal longitude - north node arc) mod 360",
+      "source_ids": [
+        "attached-framework-03"
+      ],
+      "status": "pending_review"
+    },
+    "harmonic_position": {
+      "formula": "(natal longitude * harmonic) mod 360",
+      "source_ids": [
+        "attached-framework-03"
+      ],
+      "status": "pending_review"
+    },
+    "composite_midpoint": {
+      "formula": "circular midpoint of two longitudes",
+      "source_ids": [
+        "attached-framework-03"
+      ],
+      "status": "pending_review"
+    },
+    "transit_strength": {
+      "formula": "dignity + dispositor + accidental modifiers + orb/aspect policy",
+      "source_ids": [
+        "attached-framework-10"
+      ],
+      "status": "methodology_bound"
+    }
+  }
+}

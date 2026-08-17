@@ -1,0 +1,365 @@
+from __future__ import annotations
+
+import json
+import re
+from datetime import datetime, timezone
+from pathlib import Path
+
+ROOT = Path('/home/ubuntu/openastro_worktree')
+OUT = ROOT / 'data/research'
+OUT.mkdir(parents=True, exist_ok=True)
+
+master = json.loads((ROOT / 'data/unified/unified_astrology_master.json').read_text())
+latest = json.loads((ROOT / 'data/unified/latest_afe_integration.json').read_text())
+indicator_data = json.loads((ROOT / 'data/interpretation-indicators/normalized_interpretation_indicators.json').read_text())
+research_contract = json.loads((ROOT / 'data/unified/research_contract.json').read_text())
+financial_contract = research_contract['financial_astrology']
+
+
+def write_json(name: str, payload: dict) -> None:
+    (OUT / name).write_text(json.dumps(payload, ensure_ascii=False, indent=2) + '\n')
+
+
+all_records = indicator_data['records']
+research_records = []
+for record in latest['records_by_type'].get('indicator_definition', []):
+    value = record.get('normalized_value', {})
+    text = json.dumps(value, ensure_ascii=False)
+    category = 'economic_indicator' if re.search(r'economic|macro|yield|inflation|gdp|cpi|vix|treasury|commodity|exchange|unemployment', text, re.I) else 'company_financial_indicator'
+    research_records.append({
+        'record_id': record['record_id'],
+        'category': category,
+        'source_ids': record.get('source_ids', []),
+        'raw_value': record.get('raw_value'),
+        'normalized_value': value,
+        'status': 'source_derived',
+        'evidence_class': 'source_derived',
+        'research_classification': 'methodology_bound_research_input',
+        'promotion_status': 'not_eligible_without_validated_experiment',
+        'prohibited_uses': research_contract['evidence_boundary']['prohibited_uses'],
+        'limitations': [
+            'The record is an input definition, not an observed market dataset or validated signal.',
+            'Inclusion does not demonstrate predictive value or a causal relationship.'
+        ]
+    })
+
+
+method_records = [
+    {
+        'method_id': 'hypothesis_registration',
+        'category': 'research_governance',
+        'definition': 'Register a falsifiable research question, null hypothesis, population, unit of analysis, observation window, features, target, baseline, metric, split, decision rule, and prohibited uses before feature engineering or model selection.',
+        'status': 'methodology_bound',
+        'evidence_class': 'methodology_bound',
+        'source': 'data/unified/research_contract.json#observation_acquisition_contract.preconditions[acq-01-register-hypothesis]',
+        'purpose': 'Separate confirmatory testing from exploratory pattern search and prevent outcome-shaped research claims.',
+        'inputs': ['experiment record', 'research question', 'null hypothesis', 'predeclared baseline', 'decision rule'],
+        'outputs': ['versioned experiment record', 'approval or rejection record'],
+        'required_controls': ['timestamped registration', 'immutable experiment identifier', 'scope and prohibited-use declaration'],
+        'failure_conditions': ['missing null hypothesis', 'undefined target window', 'unregistered feature family', 'outcome-shaped hypothesis'],
+        'promotion_relevance': 'required'
+    },
+    {
+        'method_id': 'observation_acquisition_and_lineage',
+        'category': 'data_governance_method',
+        'definition': 'Acquire actual observations only through documented sources with resolved rights, preserved raw artifacts, hashes, schema snapshots, retrieval timestamps, coverage metadata, and provider adjustment or revision policies.',
+        'status': 'methodology_bound',
+        'evidence_class': 'methodology_bound',
+        'source': 'data/unified/research_contract.json#observation_acquisition_contract',
+        'purpose': 'Create auditable source lineage without asserting that any data has been acquired.',
+        'inputs': ['source decision record', 'rights status', 'universe definition', 'raw response or file'],
+        'outputs': ['source inventory', 'raw artifact manifest', 'content hashes', 'normalized dataset lineage'],
+        'required_controls': ['source rights gate', 'raw preservation before normalization', 'schema drift report', 'provider adjustment basis', 'revision-vintage policy'],
+        'failure_conditions': ['unresolved rights', 'missing raw hash', 'unknown timestamp basis', 'unknown price-adjustment basis'],
+        'promotion_relevance': 'required'
+    },
+    {
+        'method_id': 'feature_dictionary_and_availability_mapping',
+        'category': 'feature_engineering_method',
+        'definition': 'Define every feature with a stable ID, semantic definition, calculation or source, data type, units, source IDs, available_at boundary, version, missing-value policy, and transformation metadata.',
+        'status': 'methodology_bound',
+        'evidence_class': 'methodology_bound',
+        'source': 'data/unified/research_contract.json#observation_acquisition_contract.observation_row_contract',
+        'purpose': 'Make it possible to audit whether every model input was genuinely knowable at each decision cutoff.',
+        'inputs': ['normalized observations', 'calculation requests', 'source availability timestamps'],
+        'outputs': ['feature dictionary', 'feature version', 'availability map'],
+        'required_controls': ['retain raw values', 'record circular encodings separately', 'record deterministic astrology settings', 'explicit missingness reason codes'],
+        'failure_conditions': ['feature has no available_at', 'derived calculation lacks engine settings', 'semantic traditions silently blended'],
+        'promotion_relevance': 'required'
+    },
+    {
+        'method_id': 'independent_label_construction',
+        'category': 'labeling_method',
+        'definition': 'Create target labels independently of candidate feature families, beginning only after the feature cutoff plus a declared censor gap and carrying a versioned source and coding rule.',
+        'status': 'methodology_bound',
+        'evidence_class': 'methodology_bound',
+        'source': 'data/unified/research_contract.json#observation_acquisition_contract.preconditions[acq-07-construct-labels]',
+        'purpose': 'Prevent target leakage and tautological labels.',
+        'inputs': ['feature cutoff', 'censor gap', 'outcome source', 'label definition'],
+        'outputs': ['label dictionary', 'label quality report', 'outcome-window records'],
+        'required_controls': ['outcome begins after cutoff', 'independent coding rule', 'ambiguity handling', 'revision-vintage policy'],
+        'failure_conditions': ['outcome overlap', 'label restates feature', 'future-revised label used without historical availability'],
+        'promotion_relevance': 'required'
+    },
+    {
+        'method_id': 'walk_forward_time_split',
+        'category': 'training_testing_method',
+        'definition': 'Evaluate time-indexed rows through expanding or rolling training windows followed by contiguous future validation windows, retaining a final chronological holdout untouched until candidate selection is complete.',
+        'status': 'methodology_bound',
+        'evidence_class': 'methodology_bound',
+        'source': 'data/unified/research_contract.json#walk_forward_validation_contract',
+        'purpose': 'Measure temporal generalization without training on future observations.',
+        'inputs': ['frozen dataset', 'pre-registered split configuration', 'feature-cutoff audit', 'baseline definitions'],
+        'outputs': ['split manifest', 'fold logs', 'aggregate validation log', 'final-holdout record'],
+        'required_controls': ['chronological boundaries', 'fold-local preprocessing', 'untouched final holdout', 'fold-level metric reporting', 'negative-result reporting'],
+        'leakage_controls': ['feature cutoff', 'outcome after cutoff', 'no holdout tuning', 'fold-local preprocessing', 'final-holdout isolation'],
+        'failure_conditions': ['validation used in training transforms', 'future window enters train data', 'final holdout reused for selection'],
+        'promotion_relevance': 'required'
+    },
+    {
+        'method_id': 'purged_time_split_and_embargo',
+        'category': 'training_testing_method',
+        'definition': 'Remove train rows whose target windows overlap a validation period and apply a declared temporal embargo when serial dependence, publication lag, or event overlap can transmit outcome information across folds.',
+        'status': 'methodology_bound',
+        'evidence_class': 'methodology_bound',
+        'source': 'data/unified/research_contract.json#temporal_leakage_control_contract.core_invariants[leak-05-overlap-purge-and-embargo]',
+        'purpose': 'Prevent nearby records from revealing the same outcome period.',
+        'inputs': ['outcome-window boundaries', 'entity identifiers', 'fold definition', 'embargo policy'],
+        'outputs': ['purged row IDs', 'embargo boundaries', 'updated split manifest'],
+        'required_controls': ['explicit overlap calculation', 'purge count', 'embargo duration', 'post-purge row count'],
+        'leakage_controls': ['purge overlapping observations', 'feature cutoff', 'declared embargo'],
+        'failure_conditions': ['overlapping outcomes remain in train and validation', 'embargo requirement is undocumented'],
+        'promotion_relevance': 'required_when_windows_overlap'
+    },
+    {
+        'method_id': 'fold_local_preprocessing',
+        'category': 'training_testing_method',
+        'definition': 'Fit scaling, imputation, feature selection, encoding, resampling, and hyperparameter tuning exclusively on each training fold before application to its corresponding validation fold.',
+        'status': 'methodology_bound',
+        'evidence_class': 'methodology_bound',
+        'source': 'data/unified/research_contract.json#temporal_leakage_control_contract.core_invariants[leak-04-fold-local-preprocessing]',
+        'purpose': 'Prevent validation or final-holdout information from influencing model preparation.',
+        'inputs': ['train row IDs', 'validation row IDs', 'preprocessing configuration'],
+        'outputs': ['fold pipeline record', 'transform artifact hashes', 'fit-scope audit'],
+        'required_controls': ['fit row identifiers', 'transform version', 'random seed', 'no global fit before split'],
+        'failure_conditions': ['imputer or scaler fit on validation rows', 'feature selection uses final holdout'],
+        'promotion_relevance': 'required'
+    },
+    {
+        'method_id': 'baseline_and_ablation_comparison',
+        'category': 'baseline_method',
+        'definition': 'Compare any candidate against a predeclared naive market or buy-and-hold baseline, a seasonal or regime baseline when applicable, and a feature-ablated comparator when astrology or sentiment features are included.',
+        'status': 'methodology_bound',
+        'evidence_class': 'methodology_bound',
+        'source': 'data/unified/research_contract.json#financial_astrology.baseline_requirements',
+        'purpose': 'Distinguish a candidate from simpler non-astrological explanations.',
+        'inputs': ['pre-registered baselines', 'candidate model specification', 'folds'],
+        'outputs': ['baseline fold metrics', 'ablation comparison', 'metric delta with uncertainty'],
+        'required_controls': ['same split manifest', 'same target definition', 'same evaluation metric', 'no baseline replacement after results'],
+        'failure_conditions': ['candidate is reported without baseline', 'baseline evaluated on a different fold structure'],
+        'promotion_relevance': 'required'
+    },
+    {
+        'method_id': 'uncertainty_and_regime_reporting',
+        'category': 'robustness_method',
+        'definition': 'Report sample size, exclusions, class balance or target distribution, missingness, fold dispersion, confidence or bootstrap intervals, regime sensitivity, provider drift, and negative or null outcomes.',
+        'status': 'methodology_bound',
+        'evidence_class': 'methodology_bound',
+        'source': 'data/unified/research_contract.json#financial_astrology.uncertainty',
+        'purpose': 'Prevent selective reporting and unstable-claim inflation.',
+        'inputs': ['fold metrics', 'data-quality report', 'regime definitions', 'uncertainty procedure'],
+        'outputs': ['uncertainty report', 'regime report', 'negative-results section'],
+        'required_controls': ['predeclared regime rules', 'fold-level rather than only aggregate reporting', 'missingness by feature and fold'],
+        'failure_conditions': ['favorable folds selected without full log', 'regime claim lacks definition or sample count'],
+        'promotion_relevance': 'required'
+    },
+    {
+        'method_id': 'data_revision_and_survivorship_audit',
+        'category': 'data_quality_method',
+        'definition': 'Audit data vintages, delayed publication, restatements, corporate-action adjustments, historical universe membership, delistings, suspensions, and exclusions before interpreting a temporal result.',
+        'status': 'methodology_bound',
+        'evidence_class': 'methodology_bound',
+        'source': 'data/unified/research_contract.json#temporal_leakage_control_contract',
+        'purpose': 'Expose temporal and sample-selection bias that a feature cutoff alone cannot prevent.',
+        'inputs': ['provider revision policy', 'availability snapshots', 'historical universe file', 'exclusion log'],
+        'outputs': ['revision audit', 'survivorship audit', 'limitations register'],
+        'required_controls': ['vintage timestamp', 'historical membership dates', 'adjustment basis', 'documented exclusions'],
+        'failure_conditions': ['present-day universe treated as historical population', 'revised values treated as historically available'],
+        'promotion_relevance': 'required'
+    },
+    {
+        'method_id': 'validation_gated_signal_indicator_promotion',
+        'category': 'research_governance_method',
+        'definition': 'Permit a methodology-bound financial or market record to become a scoped research-exploratory signal or indicator only after reproducible pre-registration, resolved rights, leakage-safe walk-forward evidence, a final holdout, uncertainty reporting, and independent review.',
+        'status': 'methodology_bound',
+        'evidence_class': 'methodology_bound',
+        'source': 'data/unified/research_contract.json#signal_indicator_promotion_contract',
+        'purpose': 'Prevent untested materials from being presented as signals or indicators.',
+        'inputs': ['completed research package', 'promotion review record'],
+        'outputs': ['approved', 'inconclusive', 'or rejected promotion decision'],
+        'required_controls': ['review gate', 'scope limitation', 'non-advisory wording', 'permanent prohibited-use notice'],
+        'failure_conditions': ['source prose alone offered as validation', 'no final holdout', 'unresolved critical leakage violation'],
+        'promotion_relevance': 'governing_method'
+    },
+    {
+        'method_id': 'sentiment_as_feature_family',
+        'category': 'market_sentiment',
+        'definition': 'Treat news, recommendations, holders, and other sentiment proxies as timestamped features with source, availability, revision, rights, and missingness metadata rather than as direct market instructions.',
+        'status': 'pending_review',
+        'evidence_class': 'methodology_bound',
+        'source': 'data/unified/research_contract.json#financial_astrology.data_layers',
+        'purpose': 'Maintain source-specific timing and license controls for non-price feature families.',
+        'inputs': ['source decision record', 'available_at timestamp', 'feature cutoff', 'missingness policy'],
+        'outputs': ['feature records with availability metadata'],
+        'required_controls': ['source license', 'available_at', 'feature cutoff', 'missingness policy', 'provider revision policy'],
+        'failure_conditions': ['sentiment proxy lacks historical availability metadata'],
+        'promotion_relevance': 'requires_separate_validation'
+    }
+]
+
+
+strategy_records = []
+for record in all_records:
+    text = record.get('normalized_text', '')
+    if re.search(r'strategy|method|approach|protocol|framework|baseline|validation|backtest|testing', text, re.I):
+        strategy_records.append({
+            'record_id': record['indicator_id'],
+            'category': 'source_strategy_or_method_text',
+            'subject_path': record['subject_path'],
+            'text': record['normalized_text'],
+            'keywords': record.get('keywords', []),
+            'source_ids': record.get('source_ids', [record['source_id']]),
+            'status': 'source_derived',
+            'evidence_class': 'source_derived',
+            'research_classification': 'source_material_not_validated_strategy',
+            'promotion_status': 'not_eligible_without_validated_experiment',
+            'prohibited_uses': ['treating prose as validated performance', *research_contract['evidence_boundary']['prohibited_uses']],
+        })
+
+
+generated_at = datetime.now(timezone.utc).isoformat()
+research_manifest = {
+    'schema_version': '1.1.0',
+    'dataset_id': 'openastro_research_methods_and_indicator_definitions',
+    'status': 'configuration_and_method_records_only',
+    'generated_at': generated_at,
+    'source_refs': [
+        'data/unified/unified_astrology_master.json',
+        'data/unified/latest_afe_integration.json',
+        'data/unified/research_contract.json',
+        'data/interpretation-indicators/normalized_interpretation_indicators.json'
+    ],
+    'evidence_boundary': research_contract['evidence_boundary'],
+    'observations_acquired': False,
+    'labels_acquired': False,
+    'actual_observation_data_status': 'not_acquired',
+    'actual_label_data_status': 'not_acquired',
+    'execution_status': 'not_executed',
+    'walk_forward_validation_status': 'not_executed_requires_observations_and_labels',
+    'blocking_conditions': [
+        'No registered experiment record with actual population, target, windows, and decision rule.',
+        'No approved source decision records or resolved rights for actual observations.',
+        'No raw observation artifacts, hashes, or normalized time-indexed dataset.',
+        'No independently constructed labels or frozen dataset manifest.',
+        'No chronological split manifest, fold logs, baseline results, or final holdout evaluation.'
+    ],
+    'feature_cutoff_rule': financial_contract['feature_cutoff_rule'],
+    'split_strategy': financial_contract['split_strategy'],
+    'baseline_requirements': financial_contract['baseline_requirements'],
+    'uncertainty_requirements': financial_contract['uncertainty'],
+    'prohibited_uses': financial_contract['prohibited_uses'],
+    'missingness_policy': 'Record unavailable values explicitly with reason codes; do not impute without a declared method fitted only inside each training fold.',
+    'source_rights': 'pending_review',
+    'artifact_refs': {
+        'training_testing_methods': 'data/research/training_testing_methods.json',
+        'observation_acquisition_plan': 'data/research/observation_acquisition_plan.json',
+        'temporal_leakage_controls': 'data/research/temporal_leakage_controls.json',
+        'walk_forward_validation_plan': 'data/research/walk_forward_validation_plan.json',
+        'signal_indicator_promotion_policy': 'data/research/signal_indicator_promotion_policy.json'
+    },
+    'validation_requirements_before_execution': research_contract['walk_forward_validation_contract']['eligible_dataset_conditions']
+}
+
+
+write_json('economic_indicators.json', {
+    'schema_version': '1.1.0',
+    'classification': 'source_derived_inputs_not_validated_signals',
+    'evidence_boundary': research_contract['evidence_boundary'],
+    'records': research_records
+})
+write_json('training_testing_methods.json', {
+    'schema_version': '1.1.0',
+    'classification': 'methodology_bound_research_contract',
+    'evidence_boundary': research_contract['evidence_boundary'],
+    'records': method_records
+})
+write_json('market_sentiment_and_strategies.json', {
+    'schema_version': '1.1.0',
+    'classification': 'source_derived_strategy_text_not_validated_performance',
+    'evidence_boundary': research_contract['evidence_boundary'],
+    'records': strategy_records
+})
+write_json('observation_acquisition_plan.json', {
+    'schema_version': '1.1.0',
+    'status': research_contract['observation_acquisition_contract']['status'],
+    'evidence_class': 'methodology_bound',
+    'contract_source': 'data/unified/research_contract.json#observation_acquisition_contract',
+    'evidence_boundary': research_contract['evidence_boundary'],
+    'contract': research_contract['observation_acquisition_contract']
+})
+write_json('temporal_leakage_controls.json', {
+    'schema_version': '1.1.0',
+    'status': research_contract['temporal_leakage_control_contract']['status'],
+    'evidence_class': 'methodology_bound',
+    'contract_source': 'data/unified/research_contract.json#temporal_leakage_control_contract',
+    'contract': research_contract['temporal_leakage_control_contract']
+})
+write_json('walk_forward_validation_plan.json', {
+    'schema_version': '1.1.0',
+    'status': research_contract['walk_forward_validation_contract']['status'],
+    'evidence_class': 'methodology_bound',
+    'contract_source': 'data/unified/research_contract.json#walk_forward_validation_contract',
+    'evidence_boundary': research_contract['evidence_boundary'],
+    'contract': research_contract['walk_forward_validation_contract']
+})
+write_json('signal_indicator_promotion_policy.json', {
+    'schema_version': '1.1.0',
+    'status': research_contract['signal_indicator_promotion_contract']['status'],
+    'evidence_class': 'methodology_bound',
+    'contract_source': 'data/unified/research_contract.json#signal_indicator_promotion_contract',
+    'evidence_boundary': research_contract['evidence_boundary'],
+    'contract': research_contract['signal_indicator_promotion_contract']
+})
+write_json('research_dataset_manifest.json', research_manifest)
+write_json('research_layer_summary.json', {
+    'schema_version': '1.1.0',
+    'generated_at': generated_at,
+    'economic_indicator_count': len(research_records),
+    'method_count': len(method_records),
+    'strategy_or_sentiment_text_count': len(strategy_records),
+    'contract_artifact_count': 5,
+    'observations_acquired': False,
+    'labels_acquired': False,
+    'execution_status': 'not_executed',
+    'walk_forward_validation_status': research_manifest['walk_forward_validation_status'],
+    'status': research_manifest['status'],
+    'evidence_boundary': research_contract['evidence_boundary'],
+    'execution_readiness': {
+        'ready_to_acquire_observations': False,
+        'ready_to_run_walk_forward_validation': False,
+        'reason': 'Contracts are complete, but no approved actual-data experiment package, observation dataset, labels, or frozen split manifest exists.'
+    },
+    'limitations': [
+        'No market API calls or synthetic observations were used to generate this layer.',
+        'The artifacts define research methods, acquisition gates, and validation requirements; they do not report validated strategies, forecasts, or performance.',
+        'Financial and market materials remain methodology-bound and research-only unless separately promoted through the documented review gate.'
+    ]
+})
+print(json.dumps({
+    'economic_indicators': len(research_records),
+    'methods': len(method_records),
+    'strategy_or_sentiment_text': len(strategy_records),
+    'contract_artifacts': 5,
+    'observations_acquired': False,
+    'execution_status': 'not_executed'
+}, indent=2))

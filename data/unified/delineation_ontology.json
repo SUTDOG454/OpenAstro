@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0.0",
+  "status": "normalized_with_review_gaps",
+  "evidence_classes": [
+    "source_derived",
+    "normalized",
+    "computed",
+    "methodology_bound",
+    "research_exploratory",
+    "synthesized",
+    "pending_review",
+    "unavailable",
+    "not_implemented"
+  ],
+  "observation": {
+    "required": [
+      "observation_id",
+      "point",
+      "source_ids",
+      "status",
+      "calculated_value",
+      "settings"
+    ],
+    "description": "A supplied or computed chart factor; never an interpretation."
+  },
+  "interpretation": {
+    "required": [
+      "interpretation_id",
+      "tradition",
+      "statement",
+      "evidence_refs",
+      "source_ids",
+      "status",
+      "limitations"
+    ],
+    "description": "A source-grounded symbolic or methodology-bound meaning."
+  },
+  "formula_reference": {
+    "required": [
+      "formula_id",
+      "formula",
+      "source_ids",
+      "status",
+      "required_inputs",
+      "outputs",
+      "failure_mode"
+    ],
+    "description": "An explicit calculation or scoring rule with implementation status."
+  },
+  "research_association": {
+    "required": [
+      "association_id",
+      "hypothesis_id",
+      "feature_cutoff",
+      "outcome_window",
+      "baseline",
+      "uncertainty",
+      "prohibited_uses"
+    ],
+    "description": "An exploratory association requiring temporal controls and non-advisory labeling."
+  },
+  "retrieval_protocol": {
+    "steps": [
+      "identify supplied factors",
+      "rank by explicit question and chart type",
+      "retrieve smallest source-grounded modules",
+      "separate observation from meaning",
+      "report missing data and conflicts"
+    ]
+  }
+}

@@ -1,0 +1,727 @@
+{
+  "system": {
+    "version": "5.0.0",
+    "name": "Economic & Market Timing System",
+    "description": "Fully integrated decision-support system combining macroeconomic indicators, technical analysis, market research, company fundamentals, C‑level executive profiling, Sq9 (Gann Square of Nine) cycle timing, pricing strategies, sustainability metrics, and business organization governance.",
+    "timestamp": "2025-07-01T00:00:00.000Z"
+  },
+  "config": {
+    "globalDefaults": {
+      "hurdleRate": 0.06,
+      "riskFreeRate": 0.03,
+      "targetInflationMin": 0.01,
+      "targetInflationMax": 0.03,
+      "targetGDP": 0.025,
+      "maxGearing": 1.2,
+      "maxFixedCostRatio": 0.6
+    },
+    "cache": {
+      "enabled": true,
+      "redisUrl": "redis://localhost:6379",
+      "defaultTTL": 3600,
+      "companyTTL": 86400
+    },
+    "api": {
+      "rateLimit": 100,
+      "rateWindow": 60
+    }
+  },
+  "modules": {
+    "sq9": {
+      "id": "sq9",
+      "name": "Gann Square of Nine",
+      "kind": "vibration",
+      "status": "active",
+      "registryWeight": 0.12,
+      "schema": {
+        "type": "object",
+        "required": [
+          "level",
+          "degree",
+          "role",
+          "event",
+          "weight"
+        ],
+        "properties": {
+          "level": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "degree": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 360
+          },
+          "role": {
+            "type": "string",
+            "enum": [
+              "core",
+              "tension",
+              "peak",
+              "challenge",
+              "opposition",
+              "decline",
+              "bottom",
+              "recovery"
+            ]
+          },
+          "event": {
+            "type": "string"
+          },
+          "weight": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          }
+        }
+      },
+      "levelMapping": [
+        {
+          "level": 1,
+          "degree": 0,
+          "role": "core",
+          "event": "First contact",
+          "weight": 0.15
+        },
+        {
+          "level": 9,
+          "degree": 45,
+          "role": "tension",
+          "event": "Building attraction",
+          "weight": 0.12
+        },
+        {
+          "level": 25,
+          "degree": 90,
+          "role": "peak",
+          "event": "Commitment",
+          "weight": 0.18
+        },
+        {
+          "level": 49,
+          "degree": 135,
+          "role": "challenge",
+          "event": "Tests",
+          "weight": 0.1
+        },
+        {
+          "level": 81,
+          "degree": 180,
+          "role": "opposition",
+          "event": "Crisis / break",
+          "weight": 0.14
+        },
+        {
+          "level": 121,
+          "degree": 225,
+          "role": "decline",
+          "event": "Separation risk",
+          "weight": 0.09
+        },
+        {
+          "level": 169,
+          "degree": 270,
+          "role": "bottom",
+          "event": "Renewal",
+          "weight": 0.11
+        },
+        {
+          "level": 225,
+          "degree": 315,
+          "role": "recovery",
+          "event": "Stabilization",
+          "weight": 0.11
+        }
+      ],
+      "scoringRules": {
+        "normalizeDegree": "deg % 360 (if negative add 360)",
+        "nearestLevel": "minimize circular distance to defined levels",
+        "confidence": "clamp(rawConfidence * (1 - distance / 45), 0, 1)",
+        "contribution": "levelWeight * confidence * registryWeight"
+      }
+    },
+    "marketResearch": {
+      "id": "market_research",
+      "name": "Market Research & Intelligence",
+      "kind": "research",
+      "status": "active",
+      "registryWeight": 0.1,
+      "weights": {
+        "consumerConfidence": 0.2,
+        "brandHealth": 0.15,
+        "competitiveIntensity": 0.2,
+        "marketAttractiveness": 0.15,
+        "productPipeline": 0.1,
+        "sentimentPolarity": 0.1,
+        "pricingPressure": 0.05,
+        "shareOfVoice": 0.05
+      },
+      "scoringRules": {
+        "consumerConfidence": "surveyResponse / 100",
+        "sentimentPolarity": "(avgSentiment + 1) / 2",
+        "pricingPressure": "normalize(avgCompetitorPrice / ourPrice, 0.5, 1.5)",
+        "marketAttractiveness": "normalize(growthRate, 0, 0.2)",
+        "shareOfVoice": "ourAdSpend / (totalAdSpend + ourAdSpend)",
+        "competitiveIntensity": "1 - normalize(herfindahlIndex, 0, 10000) * 0.5 - normalize(entryRate, 0, 0.3) * 0.5",
+        "brandHealth": "normalize(netPromoterScore, -100, 100)",
+        "productPipeline": "normalize(innovationIndex, 0, 1)"
+      }
+    },
+    "companyResearch": {
+      "id": "company_research",
+      "name": "Company Research & Fundamentals",
+      "kind": "fundamental",
+      "status": "active",
+      "registryWeight": 0.1,
+      "categories": {
+        "maturity": {
+          "weight": 0.09
+        },
+        "financial": {
+          "weight": 0.18
+        },
+        "leadership": {
+          "weight": 0.12
+        },
+        "pipeline": {
+          "weight": 0.09
+        },
+        "regulatory": {
+          "weight": 0.08
+        },
+        "insider": {
+          "weight": 0.12
+        },
+        "sentiment": {
+          "weight": 0.14
+        },
+        "astro": {
+          "weight": 0.08
+        },
+        "cLevel": {
+          "weight": 0.1
+        }
+      },
+      "scoringRules": {
+        "maturity": "normalize(companyAgeYears, 5, 50) * 0.5 + normalize(ipoYears, 3, 20) * 0.5",
+        "financial": "normalize(profitMargin, 0, 0.3) * 0.35 + normalize(1/(1+debtEquity), 0, 1) * 0.30 + normalize(cashFlowToRevenue, 0, 0.3) * 0.20 + normalize(revenueGrowth, 0, 0.2) * 0.15",
+        "leadership": "normalize(avgTenure, 2, 15)",
+        "pipeline": "normalize(patentCount, 0, 500) * 0.4 + normalize(rndRatio, 0, 0.2) * 0.6",
+        "regulatory": "1 - normalize(pendingApprovals + complianceViolations * 5, 0, 20)",
+        "insider": "normalize(netInsiderBuying, -5000000, 10000000)",
+        "sentiment": "consensusScore(analystConsensus) * 0.3 + normalize(earningsSurprisePercent, -10, 10) * 0.2 + normalize(institutionalOwnershipPct, 0.2, 0.9) * 0.2 + (1 - normalize(shortRatio, 0, 5)) * 0.3",
+        "astro": "(deriveSq9Signal(companyAgeDegrees).confidence * 0.5 + deriveSq9Signal(ipoDegrees).confidence * 0.5)",
+        "cLevel": "normalize(avgCTenure, 1, 20)"
+      }
+    },
+    "pricing": {
+      "id": "pricing",
+      "name": "Pricing Strategy Module",
+      "status": "active",
+      "strategies": {
+        "costPlus": {
+          "description": "Price = AVC * (1 + markup)",
+          "markupBenchmarks": {
+            "manufacturing": 0.35,
+            "construction": 0.4,
+            "retail": 0.25,
+            "services": 0.45,
+            "foodProcessing": 0.3
+          }
+        },
+        "skimming": {
+          "description": "High initial price, lower later",
+          "trigger": "unique product, strong patent, inelastic demand"
+        },
+        "penetration": {
+          "description": "Low price to gain market share",
+          "trigger": "elastic demand, economies of scale, threat of imitation"
+        },
+        "peakLoad": {
+          "description": "Charge higher during peak demand",
+          "trigger": "capacity utilisation > 85%"
+        },
+        "discounting": {
+          "description": "Clear inventory or respond to competition",
+          "trigger": "inventory > 90 days or competitor cut > 10%"
+        }
+      }
+    },
+    "sustainability": {
+      "id": "sustainability",
+      "name": "Sustainability & ESG Module",
+      "status": "active",
+      "externalities": {
+        "negative": {
+          "shrimpMangrove": "habitat destruction, loss of fisheries",
+          "antibioticUse": "antimicrobial resistance",
+          "feedWaste": "nutrient enrichment",
+          "speciesIntroduction": "predation/competition with natives"
+        },
+        "positive": {
+          "nutrientEnrichment": "up to a point, benefits molluscs and wild fish"
+        },
+        "policyTools": [
+          "tax",
+          "quota",
+          "ban",
+          "subsidy"
+        ],
+        "socialCostBenefit": "Social NPV = Private NPV + External Benefits - External Costs"
+      },
+      "sustainabilityIndicators": {
+        "resourceDepletion": "stock change / annual offtake > 0 = sustainable",
+        "soilSalinisation": "rising EC = unsustainable",
+        "biodiversity": "declining species count = red flag",
+        "antibioticResistance": "increasing prevalence = high risk",
+        "carbonFootprint": "kg CO2 / kg product"
+      }
+    },
+    "omti": {
+      "id": "omti",
+      "name": "Overall Market Timing Index",
+      "status": "active",
+      "weights": {
+        "macro": 0.16,
+        "market": 0.12,
+        "demand": 0.08,
+        "profitability": 0.16,
+        "competition": 0.08,
+        "lifecycle": 0.08,
+        "risk": 0.08,
+        "sq9": 0.04,
+        "marketResearch": 0.1,
+        "companyResearch": 0.1
+      },
+      "scoringRules": {
+        "macro": "scoreGDP() + scoreInflation() + scoreInterest() + scoreUnemployment()",
+        "market": "scoreHHI() + scoreLerner() + scoreEntryBarriers()",
+        "profitability": "scoreIRRSpread() + scoreNetMargin()",
+        "competition": "scoreHHITrend() + scoreLernerTrend() + scoreEntryRate()",
+        "lifecycle": "{introduction:80, growth:100, maturity:60, decline:20, stabilisation:40}[stage]",
+        "risk": "scoreGearing() + scoreFixedCosts() + scoreVolatility()"
+      },
+      "adjustments": {
+        "companyResearch": {
+          "profitability": "clamp(profitability + (companyFinancial - 0.5) * 30, 0, 100)",
+          "risk": "clamp(risk + ((1 - companyRegulatory) * 0.6 + (1 - companyMaturity) * 0.4 - 0.5) * 25, 0, 100)",
+          "demand": "clamp(demand + (companySentiment - 0.5) * 20, 0, 100)"
+        },
+        "marketResearch": {
+          "demand": "clamp(demand + (marketConsumerConfidence - 0.5) * 15, 0, 100)",
+          "competition": "clamp(competition + (1 - marketCompetitiveIntensity - 0.5) * 15, 0, 100)"
+        }
+      },
+      "recommendationMap": {
+        "80-100": "AGGRESSIVE INVESTMENT",
+        "60-79": "INVEST WITH PRUDENCE",
+        "45-59": "HOLD / CAUTION",
+        "30-44": "PREPARE EXIT",
+        "0-29": "IMMEDIATE EXIT"
+      }
+    }
+  },
+  "executiveEngine": {
+    "cLevelRoles": [
+      "CEO",
+      "CFO",
+      "COO",
+      "CTO",
+      "CMO",
+      "CIO",
+      "CHRO",
+      "General Counsel"
+    ],
+    "detectionRule": "title.toUpperCase().includes('CEO') || title.includes('Chief')",
+    "weighting": {
+      "CEO": 1.5,
+      "CFO": 1.2,
+      "defaultCLevel": 1.1,
+      "nonCLevel": 1.0
+    },
+    "cycleFormula": "clamp(((tenureYears / 15) * 0.6 + deriveSq9Signal(ageDegrees).confidence * 0.4) * weight / 1.5, 0, 1)",
+    "signalThresholds": {
+      "high": 0.7,
+      "medium": 0.4,
+      "low": 0.0
+    },
+    "aggregation": {
+      "cLevelTenureScore": "normalize(average tenure of C-level executives, 1, 20)",
+      "executiveSignal": "weighted average of individual signals"
+    }
+  },
+  "indicators": {
+    "technical": {
+      "rsi": {
+        "overbought": 70,
+        "oversold": 30,
+        "period": 14,
+        "formula": "100 - 100/(1 + avgGain/avgLoss)"
+      },
+      "macd": {
+        "fast": 12,
+        "slow": 26,
+        "signal": 9,
+        "formula": "12-day EMA - 26-day EMA"
+      },
+      "bollinger": {
+        "period": 20,
+        "stdDev": 2,
+        "formula": "SMA ± 2σ"
+      },
+      "adx": {
+        "strong": 25,
+        "weak": 20,
+        "period": 14,
+        "formula": "average directional index"
+      },
+      "volume": {
+        "confirmationThreshold": 1.5,
+        "formula": "volume / 20-day average"
+      },
+      "stochastic": {
+        "overbought": 80,
+        "oversold": 20,
+        "period": 14,
+        "formula": "(C - L14) / (H14 - L14) * 100"
+      },
+      "vwap": {
+        "formula": "sum(price * volume) / sum(volume)"
+      },
+      "atr": {
+        "period": 14,
+        "formula": "average true range"
+      }
+    },
+    "macro": {
+      "gdp": {
+        "bullish": 0.025,
+        "bearish": 0.0,
+        "scoring": "if >= 2.5% → 25, else linear to 0"
+      },
+      "inflation": {
+        "targetMin": 0.01,
+        "targetMax": 0.03,
+        "warning": 0.04,
+        "scoring": "if 1-3% → 25, else diminishing"
+      },
+      "unemployment": {
+        "bullish": 0.05,
+        "bearish": 0.07,
+        "scoring": "if < 5% → 25, else diminishing"
+      },
+      "interest": {
+        "bullish": 0.02,
+        "bearish": 0.04,
+        "scoring": "if < 2% → 25, else diminishing"
+      }
+    },
+    "breadth": {
+      "percentAbove200MA": {
+        "oversold": 20,
+        "overbought": 80,
+        "signal": "< 20% = capitulation buy"
+      },
+      "trin": {
+        "bullish": 0.7,
+        "bearish": 1.0,
+        "formula": "(Adv/Decl) / (AdvVol/DeclVol)"
+      },
+      "advanceDeclineLine": {
+        "divergence": "price vs AD line"
+      },
+      "newHighsVsLows": {
+        "bullish": 1.0,
+        "bearish": 0.5
+      }
+    },
+    "sentiment": {
+      "aaiiBullish": {
+        "contrarianSell": 50,
+        "contrarianBuy": 30
+      },
+      "aaiiBearish": {
+        "contrarianBuy": 40,
+        "contrarianSell": 25
+      },
+      "vix": {
+        "fear": 30,
+        "complacency": 15,
+        "formula": "implied volatility"
+      },
+      "putCallRatio": {
+        "bullish": 0.7,
+        "bearish": 1.0
+      }
+    },
+    "fundamental": {
+      "peRatio": {
+        "formula": "price / EPS",
+        "signal": "below sector average = value"
+      },
+      "epsRevisions": {
+        "formula": "net revisions / total",
+        "signal": "upward = growth"
+      },
+      "debtEquity": {
+        "formula": "total liabilities / equity",
+        "threshold": 1.2
+      },
+      "profitMargin": {
+        "formula": "net income / revenue",
+        "benchmark": 0.15
+      }
+    }
+  },
+  "benchmarks": {
+    "aquacultureIRR": {
+      "species": [
+        {
+          "name": "Pacific oysters (good site)",
+          "meanIRR": 31.1,
+          "range": "28.4-33.8"
+        },
+        {
+          "name": "Redclaw (15-ha)",
+          "meanIRR": 19.4,
+          "range": "15.7-23.0"
+        },
+        {
+          "name": "Barramundi (nursery + free-ranging)",
+          "meanIRR": 19.6,
+          "range": "4.7-23.6"
+        },
+        {
+          "name": "Shrimp (N. Qld)",
+          "meanIRR": 17.5,
+          "range": "-0.1-29.9"
+        },
+        {
+          "name": "Atlantic salmon (150k smolt)",
+          "meanIRR": 12.5,
+          "range": "5.5-19.6"
+        },
+        {
+          "name": "Rainbow trout (freshwater)",
+          "meanIRR": 5.6,
+          "range": "3.4-7.8"
+        }
+      ],
+      "hurdleRate": 6.0,
+      "planningHorizon": 20
+    },
+    "productLifecycle": {
+      "introduction": [
+        "Atlantic cod",
+        "Atlantic halibut",
+        "Sole",
+        "Sturgeon",
+        "Abalone",
+        "Freshwater crayfish"
+      ],
+      "growth": [
+        "European seabass",
+        "Sea bream",
+        "Tilapias",
+        "Turbot"
+      ],
+      "maturity": [
+        "Atlantic salmon"
+      ],
+      "stabilisation": [
+        "Rainbow trout",
+        "Brown trout",
+        "Carps",
+        "Mussels",
+        "Oysters"
+      ]
+    },
+    "entryBarrierScore": {
+      "components": [
+        "economiesOfScale",
+        "capitalIntensity",
+        "productDifferentiation",
+        "accessToDistribution",
+        "legalBarriers",
+        "incumbentCostAdvantage",
+        "switchingCosts"
+      ],
+      "scoring": "1-5 each, total 7-35; low <15, moderate 15-24, high >24"
+    }
+  },
+  "formulas": {
+    "macroScore": {
+      "gdp": "if gdp >= 0.025 → 25; elif gdp >= 0.01 → 50 + (gdp - 0.01) * 50/0.015; else → max(0, 50 * (gdp + 0.01) / 0.02)",
+      "inflation": "if 0.01 <= inflation <= 0.03 → 25; elif inflation < 0.01 → 50 + inflation*50; else → max(0, 100 - (inflation-0.03)*15)",
+      "interest": "if rate <= 0.02 → 25; elif rate <= 0.04 → 100 - (rate-0.02)*25; else → max(0, 50 - (rate-0.04)*12.5)",
+      "unemployment": "if unemp <= 0.05 → 25; elif unemp <= 0.07 → 100 - (unemp-0.05)*25; else → max(0, 50 - (unemp-0.07)*12.5)"
+    },
+    "marketStructureScore": {
+      "hhi": "if hhi < 1500 → 40; elif hhi < 2000 → 30; elif hhi < 2500 → 20; elif hhi < 3000 → 10; else → 5",
+      "lerner": "if lerner < 0.1 → 30; elif < 0.2 → 25; elif < 0.3 → 20; elif < 0.4 → 15; elif < 0.5 → 10; else → 5",
+      "entryBarriers": "if score <= 14 → 30; elif <= 20 → 20; elif <= 25 → 15; elif <= 30 → 10; else → 5"
+    },
+    "profitabilityScore": {
+      "irrSpread": "if spread >= 0.05 → 50; elif >= 0.025 → 40; elif >= 0 → 30; elif >= -0.025 → 20; elif >= -0.05 → 10; else → 5",
+      "netMargin": "if margin >= 0.15 → 30; elif >= 0.10 → 25; elif >= 0.05 → 20; elif >= 0 → 15; else → 5"
+    },
+    "competitionScore": {
+      "hhiTrend": "falling → 35; stable → 25; rising → 15",
+      "lernerTrend": "rising → 35; stable → 25; falling → 15",
+      "entryRate": "if rate < 0.05 → 30; elif < 0.10 → 20; elif < 0.15 → 15; elif < 0.20 → 10; else → 5"
+    },
+    "riskScore": {
+      "gearing": "if <= 0.3 → 35; elif <= 0.5 → 28; elif <= 0.7 → 21; elif <= 1.0 → 14; elif <= 1.2 → 7; else → 0",
+      "fixedCosts": "if <= 0.3 → 35; elif <= 0.4 → 28; elif <= 0.5 → 21; elif <= 0.6 → 14; elif <= 0.7 → 7; else → 0",
+      "volatility": "if <= 0.1 → 30; elif <= 0.2 → 24; elif <= 0.3 → 18; elif <= 0.4 → 12; elif <= 0.5 → 6; else → 0"
+    },
+    "normalize": "clamp((value - min) / (max - min), 0, 1)",
+    "clamp": "max(minVal, min(maxVal, value))"
+  },
+  "integrationMatrix": {
+    "layers": [
+      "macro",
+      "market",
+      "demand",
+      "profitability",
+      "competition",
+      "lifecycle",
+      "risk",
+      "sq9",
+      "marketResearch",
+      "companyResearch"
+    ],
+    "weights": [
+      0.16,
+      0.12,
+      0.08,
+      0.16,
+      0.08,
+      0.08,
+      0.08,
+      0.04,
+      0.1,
+      0.1
+    ],
+    "signalFlow": "Data -> Indicators -> Sub-Scores -> Adjustments -> Weighted Sum -> OMTI -> Recommendation",
+    "confidenceInterval": {
+      "method": "Monte Carlo simulation with 1000 iterations",
+      "bandwidth": 0.08
+    },
+    "alertThresholds": {
+      "critical": 30,
+      "warning": 45
+    }
+  },
+  "deployment": {
+    "docker": {
+      "services": [
+        "api",
+        "ml",
+        "execution",
+        "postgres",
+        "redis",
+        "kafka",
+        "dashboard"
+      ],
+      "ports": {
+        "api": 5001,
+        "ml": 5002,
+        "execution": 5003,
+        "dashboard": 8050,
+        "postgres": 5432,
+        "redis": 6379,
+        "kafka": 9092
+      }
+    },
+    "kubernetes": {
+      "replicas": {
+        "api": 3,
+        "ml": 2,
+        "execution": 1
+      },
+      "hpa": {
+        "minReplicas": 3,
+        "maxReplicas": 10,
+        "cpuTarget": 70
+      },
+      "secrets": "[REDACTED]",
+      "configMaps": [
+        "market-timing-config"
+      ]
+    },
+    "monitoring": {
+      "prometheus": {
+        "port": 9090,
+        "metrics": [
+          "api_requests_total",
+          "api_latency_seconds",
+          "omti_score",
+          "model_accuracy",
+          "trades_total",
+          "indicator_values",
+          "sq9_confidence"
+        ]
+      },
+      "grafana": {
+        "port": 3000,
+        "dashboards": [
+          "Market Timing Overview",
+          "OMTI Components",
+          "Trading Performance",
+          "ML Health",
+          "Executive Cycle"
+        ]
+      },
+      "alerts": {
+        "slack": "#alerts",
+        "email": "admin@example.com"
+      }
+    },
+    "logging": {
+      "level": "INFO",
+      "format": "json",
+      "outputs": [
+        "stdout",
+        "elasticsearch"
+      ]
+    }
+  },
+  "testing": {
+    "coverage": {
+      "threshold": 85
+    },
+    "types": [
+      "unit",
+      "integration",
+      "performance",
+      "regression",
+      "e2e"
+    ],
+    "tools": {
+      "unit": "pytest",
+      "coverage": "pytest-cov",
+      "performance": "pytest-benchmark",
+      "load": "locust",
+      "mocking": "responses",
+      "diff": "deepdiff"
+    }
+  },
+  "references": {
+    "sources": [
+      "Tisdell (Aquaculture Economics)",
+      "UNIT-3 (Market Structures)",
+      "Xue (Economic Trends)",
+      "Summer School Lecture (Industrial Organization)",
+      "Market_Structures_April_18_2018 (SCP, Bounds, Conduct Parameter)",
+      "Schumpeter (Innovation)",
+      "AAII, CBOE, FRED Data"
+    ],
+    "models": [
+      "LSTM for price prediction",
+      "Random Forest for fundamental classification",
+      "Reinforcement Learning (DDPG) for trade execution",
+      "Ensemble of above"
+    ]
+  }
+}

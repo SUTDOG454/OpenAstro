@@ -1,0 +1,1336 @@
+{
+  "schema_version": "1.0.0",
+  "source_count": 133,
+  "sources": [
+    {
+      "source_id": "openastro:data/charts/jenny-jimmy-synastry.json",
+      "source_path": "data/charts/jenny-jimmy-synastry.json",
+      "sha256": "17b03a9813aaec52eee2050184e356331c62b9bc2e778318e84fa417d8153a63",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/definitions/astrological-rulers.json",
+      "source_path": "data/definitions/astrological-rulers.json",
+      "sha256": "b0d11794f2c9209426cceb53a1673f6253d00c372b4eedce979ed51a15701dc1",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/delineations/anti-vertex-synastry-delineation-framework.json",
+      "source_path": "data/delineations/anti-vertex-synastry-delineation-framework.json",
+      "sha256": "c50edfbd98d643a244888501773a0d363c56052719ef5f372a5cd40464e1af84",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/delineations/microscopy-of-transiting-planets-simplified.json",
+      "source_path": "data/delineations/microscopy-of-transiting-planets-simplified.json",
+      "sha256": "57ab2ab9e2cacef04416641d3fc4489f7e7afdc89ae730514cd17f92817cd41f",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/drafts/astrological-methodology-module-1.json",
+      "source_path": "data/drafts/astrological-methodology-module-1.json",
+      "sha256": "13401f31c81d1b7889da157c19445cd58b678ae2e60b56bb832232e6e91d0b3a",
+      "media_type": "json",
+      "parser": "unparseable",
+      "parse_warning": "json_unparseable_or_truncated",
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/drafts/astrological-methodology-module-2.json",
+      "source_path": "data/drafts/astrological-methodology-module-2.json",
+      "sha256": "afb5a4f2611ff7e7c46b86d8431acd4f3070d179842f4f93c240da4d0eef5302",
+      "media_type": "json",
+      "parser": "unparseable",
+      "parse_warning": "json_unparseable_or_truncated",
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/drafts/astrological-methodology-module-3.json",
+      "source_path": "data/drafts/astrological-methodology-module-3.json",
+      "sha256": "eb9afba3d6e75201d34523f3c912e7e3f18b37fd3e8ec61832e9bc0fa370d36b",
+      "media_type": "json",
+      "parser": "unparseable",
+      "parse_warning": "json_unparseable_or_truncated",
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/drafts/biseptile-interpretation.json",
+      "source_path": "data/drafts/biseptile-interpretation.json",
+      "sha256": "b932b7aa99055829da3c6ee00d91d6b2a92f50ab1c478881b6def955763f6b91",
+      "media_type": "json",
+      "parser": "unparseable",
+      "parse_warning": "json_unparseable_or_truncated",
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/drafts/chart-types.json",
+      "source_path": "data/drafts/chart-types.json",
+      "sha256": "9b7eb4216cc58a6280caeeede24ca42edd5cbcb42c8c8515ab2935dcbaef5d61",
+      "media_type": "json",
+      "parser": "unparseable",
+      "parse_warning": "json_unparseable_or_truncated",
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/drafts/chiron-compendium-unified.json",
+      "source_path": "data/drafts/chiron-compendium-unified.json",
+      "sha256": "8db55a00d34948c46a3045e98b43734ddd1db827a97f53030baf317a815b51e7",
+      "media_type": "json",
+      "parser": "unparseable",
+      "parse_warning": "json_unparseable_or_truncated",
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/drafts/enriched-master-dataset-framework.json",
+      "source_path": "data/drafts/enriched-master-dataset-framework.json",
+      "sha256": "60c246f77355dc286f39ab84187f3c32064b9359b45f032c60cb7974a6e9d7bd",
+      "media_type": "json",
+      "parser": "unparseable",
+      "parse_warning": "json_unparseable_or_truncated",
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/drafts/master-astrology-chart-types.json",
+      "source_path": "data/drafts/master-astrology-chart-types.json",
+      "sha256": "d072a43cadf37e0cb10df626dda310671456d92f0fc58c088797fc0b9af8b46c",
+      "media_type": "json",
+      "parser": "unparseable",
+      "parse_warning": "json_unparseable_or_truncated",
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/drafts/master-relationship-astrology-compendium.json",
+      "source_path": "data/drafts/master-relationship-astrology-compendium.json",
+      "sha256": "caf4d1ae77bd4f3e5637b72182c2ef427671271441b9bf2c84c8c84fff6ea895",
+      "media_type": "json",
+      "parser": "fenced_json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/drafts/master-synastry-engine.json",
+      "source_path": "data/drafts/master-synastry-engine.json",
+      "sha256": "c8730ec450220b2766e74f6ac28dd2241fb7071503ff838911e41204c1e06b93",
+      "media_type": "json",
+      "parser": "unparseable",
+      "parse_warning": "json_unparseable_or_truncated",
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/drafts/progressions-calculation-system.json",
+      "source_path": "data/drafts/progressions-calculation-system.json",
+      "sha256": "0a30ded40f2175f38e2a850d730e498b0077d3e8d8818072b79aa64f0e504423",
+      "media_type": "json",
+      "parser": "unparseable",
+      "parse_warning": "json_unparseable_or_truncated",
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/drafts/sun-moon-mp.json",
+      "source_path": "data/drafts/sun-moon-mp.json",
+      "sha256": "49d63d0f7d6975f1056c521836286e157c7f8c9d562331259bae661257cbf972",
+      "media_type": "json",
+      "parser": "unparseable",
+      "parse_warning": "json_unparseable_or_truncated",
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/expansion-coverage-audit.json",
+      "source_path": "data/expansion-coverage-audit.json",
+      "sha256": "0e9153aa978beb257a26db1af35c8a048768140c2df9ade17fcf1df8c510bf4e",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/afe-unified/README.md",
+      "source_path": "data/extractions/afe-unified/README.md",
+      "sha256": "fbd9217ca890050f369ea00ee3ecb30aea9c96e46ac61da1fd91920091315728",
+      "media_type": "text",
+      "parser": "text",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/afe-unified/manifest.json",
+      "source_path": "data/extractions/afe-unified/manifest.json",
+      "sha256": "e55c8f66cfc0d7a9ffb009c522dbc6dc9821a2dc524afce1b53e114c0181ea11",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/afe-unified/raw/afe-arabic-parts-transit-strength-v7.txt",
+      "source_path": "data/extractions/afe-unified/raw/afe-arabic-parts-transit-strength-v7.txt",
+      "sha256": "bbaf8ee567d20d3f4cf66256f5b8e1e25c1253dde9bcedf0bf81754b1e2fabf8",
+      "media_type": "text",
+      "parser": "text",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/afe-unified/raw/afe-midpoint-resource-v7-a.txt",
+      "source_path": "data/extractions/afe-unified/raw/afe-midpoint-resource-v7-a.txt",
+      "sha256": "9db6aaee68ea6a4d09a1f1a0fad8559d40723a55515195581eaea6baf717aaf8",
+      "media_type": "text",
+      "parser": "text",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/afe-unified/raw/afe-midpoint-resource-v7-b.txt",
+      "source_path": "data/extractions/afe-unified/raw/afe-midpoint-resource-v7-b.txt",
+      "sha256": "9db6aaee68ea6a4d09a1f1a0fad8559d40723a55515195581eaea6baf717aaf8",
+      "media_type": "text",
+      "parser": "text",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/afe-unified/raw/afe-unified-system-v7.txt",
+      "source_path": "data/extractions/afe-unified/raw/afe-unified-system-v7.txt",
+      "sha256": "4b0514af1e2076119ea6eb011c804bd1c7d9be42065fbf8e611ebaf98c08accb",
+      "media_type": "text",
+      "parser": "text",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/afe-unified/validation_report.json",
+      "source_path": "data/extractions/afe-unified/validation_report.json",
+      "sha256": "213a553c4ea61b90613112f79408436362f3d05ee6dca81fedd1bc76c8f74803",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/all-sources/all_sources_inventory.json",
+      "source_path": "data/extractions/all-sources/all_sources_inventory.json",
+      "sha256": "679552443f6c64608a5a7a656fa6edb63e3aafaa325e830cb35db5f565840a1d",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/all-sources/all_sources_report.md",
+      "source_path": "data/extractions/all-sources/all_sources_report.md",
+      "sha256": "707b666e1c95c037c35837666054092c6023b0954c213d8cd81fff13455b57c1",
+      "media_type": "text",
+      "parser": "text",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/all-sources/all_sources_validation.json",
+      "source_path": "data/extractions/all-sources/all_sources_validation.json",
+      "sha256": "d5a89efd426d6e064eed8006eee6877f2880ca44adf68a6544937576907e9125",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/all-sources/code_schema_index.json",
+      "source_path": "data/extractions/all-sources/code_schema_index.json",
+      "sha256": "9f54de7f98a8b90ab028483e8885e704569a11e3c51f895c83daa13636ecd223",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/all-sources/dataset_index.json",
+      "source_path": "data/extractions/all-sources/dataset_index.json",
+      "sha256": "b28774c83c947020bf199b7824fe5e55ebc3665b59be6071542b920be8cc19fb",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/all-sources/document_index.json",
+      "source_path": "data/extractions/all-sources/document_index.json",
+      "sha256": "ae782e7326b794494b645b0043b810ebdd25f7c45e4be9e6def6e00d50d6b1b0",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/all-sources/financial_company_index.json",
+      "source_path": "data/extractions/all-sources/financial_company_index.json",
+      "sha256": "c1ebfac0f77901493eb705cf39cb21f577b086481db5b31266355e4aaad2e42f",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/all-sources/framework_method_index.json",
+      "source_path": "data/extractions/all-sources/framework_method_index.json",
+      "sha256": "c45fa068fb54ed74e34ea7e3d61c1832b96e541e4c647915ab34698b97c8e59c",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/all-sources/signal_indicator_index.json",
+      "source_path": "data/extractions/all-sources/signal_indicator_index.json",
+      "sha256": "c44cd3eb902f8a37a986d6030c3287a7b1eb8d1308bf55653cf47c10bdb13de2",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/all-sources/test_validation_index.json",
+      "source_path": "data/extractions/all-sources/test_validation_index.json",
+      "sha256": "9b0238335d0147a2745fb0e119949dc19d000c720a5ea98f9212a1af5f931426",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/attached-framework-synthesis/change_record.json",
+      "source_path": "data/extractions/attached-framework-synthesis/change_record.json",
+      "sha256": "0ba89c7c9548352f1bab930dff0841c634aa0f0ffbdf83fef0d11572bd217a26",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/attached-framework-synthesis/normalized_records.json",
+      "source_path": "data/extractions/attached-framework-synthesis/normalized_records.json",
+      "sha256": "b35bb7709ba9d8fa2c99a19bdf3d1a74d7d6d0c5c30a5e7bb0bd6270bf31c343",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/attached-framework-synthesis/package/astrology_master.json",
+      "source_path": "data/extractions/attached-framework-synthesis/package/astrology_master.json",
+      "sha256": "556e2009181a5257c9ee085542016aaf391ba9906835972e729a7818650fd5dd",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/attached-framework-synthesis/package/astrology_report.md",
+      "source_path": "data/extractions/attached-framework-synthesis/package/astrology_report.md",
+      "sha256": "9983c6f4e7b77d09b09442d9db80eea9537408a1095c71abe0298081819e6100",
+      "media_type": "text",
+      "parser": "text",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/attached-framework-synthesis/package/calculations.json",
+      "source_path": "data/extractions/attached-framework-synthesis/package/calculations.json",
+      "sha256": "9ee58b61098bb3b7139602ca5f5c82971902f4502b66b8b3bca33493b29812a0",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/attached-framework-synthesis/package/change_record.json",
+      "source_path": "data/extractions/attached-framework-synthesis/package/change_record.json",
+      "sha256": "0ba89c7c9548352f1bab930dff0841c634aa0f0ffbdf83fef0d11572bd217a26",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/attached-framework-synthesis/package/coverage_gap_register.json",
+      "source_path": "data/extractions/attached-framework-synthesis/package/coverage_gap_register.json",
+      "sha256": "1849a3b9daab9525594cd5c873363a781f4824325a84a1ebb3f7c0816ebaf01a",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/attached-framework-synthesis/package/definitions.json",
+      "source_path": "data/extractions/attached-framework-synthesis/package/definitions.json",
+      "sha256": "8943025ae83b5d38a34ed8c7fb19ce8adfe8a4e7acb1f7e0cb5cc4db2fc3304a",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/attached-framework-synthesis/package/discrepancy.json",
+      "source_path": "data/extractions/attached-framework-synthesis/package/discrepancy.json",
+      "sha256": "b6c8ba933273fdebcd9af0fa017ef40843d5e33f491c28f31e9ccf6992552446",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/attached-framework-synthesis/package/manifest.json",
+      "source_path": "data/extractions/attached-framework-synthesis/package/manifest.json",
+      "sha256": "f56cb900f1c430626547bd231b16c8235e2b9e3956f94d347a657750f7dfa067",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/attached-framework-synthesis/package/methodology_registry.json",
+      "source_path": "data/extractions/attached-framework-synthesis/package/methodology_registry.json",
+      "sha256": "f01cb73ed7457cdc9c2dffbb6b3954669cd2c8798efb0a9dd94e9a8d7dd861d4",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/attached-framework-synthesis/package/normalized_records.json",
+      "source_path": "data/extractions/attached-framework-synthesis/package/normalized_records.json",
+      "sha256": "b35bb7709ba9d8fa2c99a19bdf3d1a74d7d6d0c5c30a5e7bb0bd6270bf31c343",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/attached-framework-synthesis/package/validation_report.json",
+      "source_path": "data/extractions/attached-framework-synthesis/package/validation_report.json",
+      "sha256": "3a5023f0a828afcb52425c263e7892099c1ecef8943545565aa33775bf632635",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/attached-framework-synthesis/package_validation_report.json",
+      "source_path": "data/extractions/attached-framework-synthesis/package_validation_report.json",
+      "sha256": "bd57f0e7421a614e98a4463bf0fe18e76a98f1473661537c7cf9edc38bffc861",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/attached-framework-synthesis/raw/01-house-framework.json",
+      "source_path": "data/extractions/attached-framework-synthesis/raw/01-house-framework.json",
+      "sha256": "e78025d5116d68ad38ac1ab3be0d17f7015636842f45a7c8b99420aa6e23db7f",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/attached-framework-synthesis/raw/02-chart-synthesis.md",
+      "source_path": "data/extractions/attached-framework-synthesis/raw/02-chart-synthesis.md",
+      "sha256": "e9a7c6069c05cd10960c72a133ef0df23bd89f09220d8713f43a0de09ce8bf05",
+      "media_type": "text",
+      "parser": "text",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/attached-framework-synthesis/raw/03-asto-framework.json",
+      "source_path": "data/extractions/attached-framework-synthesis/raw/03-asto-framework.json",
+      "sha256": "5a5a6374c568f80ffea5c3e8fcb737a1e28615205e91acc8003ab2b59a07ca51",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/attached-framework-synthesis/raw/04-economic-market-system.json",
+      "source_path": "data/extractions/attached-framework-synthesis/raw/04-economic-market-system.json",
+      "sha256": "ded8928407c3c9703c990a62604f162ecebfe15e1f24b5717be49d9c6cd345c1",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/attached-framework-synthesis/raw/06-economic-market-normalized.json",
+      "source_path": "data/extractions/attached-framework-synthesis/raw/06-economic-market-normalized.json",
+      "sha256": "d9235036ee2e143044ef58000aa56b33d259f5f995a7c2a439e81fc4762cbfd2",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/attached-framework-synthesis/raw/07-economic-market-governance.json",
+      "source_path": "data/extractions/attached-framework-synthesis/raw/07-economic-market-governance.json",
+      "sha256": "4d76a42a6a3a2268ca5a709b4fd979487146d656284a388b8732e75e89c6c8fe",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/attached-framework-synthesis/raw/08-economic-market-compact.json",
+      "source_path": "data/extractions/attached-framework-synthesis/raw/08-economic-market-compact.json",
+      "sha256": "7e8ca4e1f8f2761d1e920aa843b18a545c81e2147315b2155e495e82026d46d6",
+      "media_type": "json",
+      "parser": "fenced_json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/attached-framework-synthesis/raw/09-asteroid-keywords.json",
+      "source_path": "data/extractions/attached-framework-synthesis/raw/09-asteroid-keywords.json",
+      "sha256": "f8d2e720e63492193970cf12d39b02de1af17254410f93713ddf77d4490a7f68",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/attached-framework-synthesis/raw/10-arabic-parts-transit.json",
+      "source_path": "data/extractions/attached-framework-synthesis/raw/10-arabic-parts-transit.json",
+      "sha256": "c690973c5633c8b2cbe916507b7e2a8194bac8b439fd1b96f0106138766f9f69",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/attached-framework-synthesis/raw/11-sensitive-sexual-archetypes.json",
+      "source_path": "data/extractions/attached-framework-synthesis/raw/11-sensitive-sexual-archetypes.json",
+      "sha256": "c450798349f14c6749d32bc68d02a1bfca411b9caf212fd8dda16a088a28ada9",
+      "media_type": "json",
+      "parser": "unparseable",
+      "parse_warning": "json_unparseable_or_truncated",
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/attached-framework-synthesis/source_analysis.json",
+      "source_path": "data/extractions/attached-framework-synthesis/source_analysis.json",
+      "sha256": "3c32d2d765c8655518690ed22500b2cc65039bd0a63c3f8571dfbee85e33774f",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/attached-framework-synthesis/source_inventory.json",
+      "source_path": "data/extractions/attached-framework-synthesis/source_inventory.json",
+      "sha256": "043c3ca377e6c33856f5a0973e743417818b46ece212326b31bec273a13c7203",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/attached-framework-synthesis/validation_report.json",
+      "source_path": "data/extractions/attached-framework-synthesis/validation_report.json",
+      "sha256": "d4ac62b6d038acea178a647cd3e17a8bec5c23769f21fb17bb7eea82997d2a9a",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/company-research/README.md",
+      "source_path": "data/extractions/company-research/README.md",
+      "sha256": "b2eaa99597025b1bfd8dc2eca92d689d0adc777a21a03f1cc13fd759fbadff49",
+      "media_type": "text",
+      "parser": "text",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/company-research/manifest.json",
+      "source_path": "data/extractions/company-research/manifest.json",
+      "sha256": "1833678ff871fae6fdc7a1ee0ba12153cf2b7b7334014b4392e280d03752838f",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/company-research/rust-structure-report.md",
+      "source_path": "data/extractions/company-research/rust-structure-report.md",
+      "sha256": "96a7f5d4f34314a1bfa39a858dd3b675b69801dc5429de64e95e47e3920c93ed",
+      "media_type": "text",
+      "parser": "text",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/company-research/search-report.md",
+      "source_path": "data/extractions/company-research/search-report.md",
+      "sha256": "7e9bbe6586392362c5843a2fbe83c8a22089a2fdc4520e31d55307d35745d6ed",
+      "media_type": "text",
+      "parser": "text",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/company-research/user-provided/economic-market-timing-system.txt",
+      "source_path": "data/extractions/company-research/user-provided/economic-market-timing-system.txt",
+      "sha256": "34b38b4f6ad61b78733d98f90dc44847e3837975ecb0c763d2c3233d8db2e3ee",
+      "media_type": "text",
+      "parser": "text",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/latest-afe/ingestion_summary.json",
+      "source_path": "data/extractions/latest-afe/ingestion_summary.json",
+      "sha256": "841039d9ee5702c0242d40398ef6708147015e89094cd46a89d22c91a7b3577c",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/latest-afe/inline_records_redacted.json",
+      "source_path": "data/extractions/latest-afe/inline_records_redacted.json",
+      "sha256": "cfa1301aeef8d0921fd4c84d102929c9da988b154659be76572a6764d1406298",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/latest-afe/normalized_records.json",
+      "source_path": "data/extractions/latest-afe/normalized_records.json",
+      "sha256": "782857f3d464f8824ba1c3b0ac482c79ca1c2d5c020958eaec95c0758c040808",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/latest-afe/raw/inline_records.json",
+      "source_path": "data/extractions/latest-afe/raw/inline_records.json",
+      "sha256": "e8c6683f1698f0eeb3a0283bb37740edac238f8b49f5f2a7c1a70b421082a031",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/latest-afe/raw/pasted_content.txt",
+      "source_path": "data/extractions/latest-afe/raw/pasted_content.txt",
+      "sha256": "699c5189c016a8cd9b9fd8dc82782692c5bd781c7b79f2846d9bc6a015a6b54b",
+      "media_type": "text",
+      "parser": "text",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/latest-afe/raw/pasted_content_10.txt",
+      "source_path": "data/extractions/latest-afe/raw/pasted_content_10.txt",
+      "sha256": "c690973c5633c8b2cbe916507b7e2a8194bac8b439fd1b96f0106138766f9f69",
+      "media_type": "text",
+      "parser": "text",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/latest-afe/raw/pasted_content_11.txt",
+      "source_path": "data/extractions/latest-afe/raw/pasted_content_11.txt",
+      "sha256": "c450798349f14c6749d32bc68d02a1bfca411b9caf212fd8dda16a088a28ada9",
+      "media_type": "text",
+      "parser": "text",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/latest-afe/raw/pasted_content_2.txt",
+      "source_path": "data/extractions/latest-afe/raw/pasted_content_2.txt",
+      "sha256": "1e88d68a9e38224be4b0e8d05347d676a399350325560c12aa6600e28de55eef",
+      "media_type": "text",
+      "parser": "text",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/latest-afe/raw/pasted_content_3.txt",
+      "source_path": "data/extractions/latest-afe/raw/pasted_content_3.txt",
+      "sha256": "a66fe1f15113d61542518b9f9a4d76162c115447ecec6183197f2e8676ce1213",
+      "media_type": "text",
+      "parser": "text",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/latest-afe/raw/pasted_content_4.txt",
+      "source_path": "data/extractions/latest-afe/raw/pasted_content_4.txt",
+      "sha256": "5a5a6374c568f80ffea5c3e8fcb737a1e28615205e91acc8003ab2b59a07ca51",
+      "media_type": "text",
+      "parser": "text",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/latest-afe/raw/pasted_content_5.txt",
+      "source_path": "data/extractions/latest-afe/raw/pasted_content_5.txt",
+      "sha256": "ded8928407c3c9703c990a62604f162ecebfe15e1f24b5717be49d9c6cd345c1",
+      "media_type": "text",
+      "parser": "text",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/latest-afe/raw/pasted_content_6.txt",
+      "source_path": "data/extractions/latest-afe/raw/pasted_content_6.txt",
+      "sha256": "d9235036ee2e143044ef58000aa56b33d259f5f995a7c2a439e81fc4762cbfd2",
+      "media_type": "text",
+      "parser": "text",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/latest-afe/raw/pasted_content_7.txt",
+      "source_path": "data/extractions/latest-afe/raw/pasted_content_7.txt",
+      "sha256": "4d76a42a6a3a2268ca5a709b4fd979487146d656284a388b8732e75e89c6c8fe",
+      "media_type": "text",
+      "parser": "text",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/latest-afe/raw/pasted_content_8.txt",
+      "source_path": "data/extractions/latest-afe/raw/pasted_content_8.txt",
+      "sha256": "7e8ca4e1f8f2761d1e920aa843b18a545c81e2147315b2155e495e82026d46d6",
+      "media_type": "text",
+      "parser": "text",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/latest-afe/raw/pasted_content_9.txt",
+      "source_path": "data/extractions/latest-afe/raw/pasted_content_9.txt",
+      "sha256": "f8d2e720e63492193970cf12d39b02de1af17254410f93713ddf77d4490a7f68",
+      "media_type": "text",
+      "parser": "text",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/latest-afe/redacted/inline_records.json",
+      "source_path": "data/extractions/latest-afe/redacted/inline_records.json",
+      "sha256": "e8c6683f1698f0eeb3a0283bb37740edac238f8b49f5f2a7c1a70b421082a031",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/latest-afe/redacted/pasted_content.json",
+      "source_path": "data/extractions/latest-afe/redacted/pasted_content.json",
+      "sha256": "06b242a6d79ff3ee61f24b06f6dbde93e70601404d8b8c1053b888995abf28e5",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/latest-afe/redacted/pasted_content_10.json",
+      "source_path": "data/extractions/latest-afe/redacted/pasted_content_10.json",
+      "sha256": "785f29632438198f2c8f98d46b4f1bf1e1dcdf913b78e997d1c0909d8359c829",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/latest-afe/redacted/pasted_content_11.txt",
+      "source_path": "data/extractions/latest-afe/redacted/pasted_content_11.txt",
+      "sha256": "c450798349f14c6749d32bc68d02a1bfca411b9caf212fd8dda16a088a28ada9",
+      "media_type": "text",
+      "parser": "text",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/latest-afe/redacted/pasted_content_2.json",
+      "source_path": "data/extractions/latest-afe/redacted/pasted_content_2.json",
+      "sha256": "06b242a6d79ff3ee61f24b06f6dbde93e70601404d8b8c1053b888995abf28e5",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/latest-afe/redacted/pasted_content_3.json",
+      "source_path": "data/extractions/latest-afe/redacted/pasted_content_3.json",
+      "sha256": "491e00ba4b317e891a7d7b07ac39fac3c8347639413be6cfc9e37850eac92d85",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/latest-afe/redacted/pasted_content_4.json",
+      "source_path": "data/extractions/latest-afe/redacted/pasted_content_4.json",
+      "sha256": "64c871962a99615d736a568e578026cfd91e3c9d6655bb6166ee92d472d9dd02",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/latest-afe/redacted/pasted_content_5.json",
+      "source_path": "data/extractions/latest-afe/redacted/pasted_content_5.json",
+      "sha256": "309f9ad41e217fe4ccd5abe023719e5e9cefc58b20259c78c9d13396fe3f0f7d",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/latest-afe/redacted/pasted_content_6.json",
+      "source_path": "data/extractions/latest-afe/redacted/pasted_content_6.json",
+      "sha256": "d6cfaefc910f1e3b02f4147bea8231c2bc33889497f7946d10183edad60c52da",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/latest-afe/redacted/pasted_content_7.json",
+      "source_path": "data/extractions/latest-afe/redacted/pasted_content_7.json",
+      "sha256": "116a6156896fad3dae658f6b684c91d420676955fa22a2e29d4b53d6ca1dd9f1",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/latest-afe/redacted/pasted_content_8.json",
+      "source_path": "data/extractions/latest-afe/redacted/pasted_content_8.json",
+      "sha256": "309f9ad41e217fe4ccd5abe023719e5e9cefc58b20259c78c9d13396fe3f0f7d",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/latest-afe/redacted/pasted_content_9.json",
+      "source_path": "data/extractions/latest-afe/redacted/pasted_content_9.json",
+      "sha256": "c3365c2dc9618a992ae154bb65b5bc41d7e9a1780067cb93e7a043b3d6a8edfb",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/latest-afe/source_inventory.json",
+      "source_path": "data/extractions/latest-afe/source_inventory.json",
+      "sha256": "3f9a5b6042bb1dfe10308cfaa3db3d2c899369e9c54682faaf3689a5cea228e8",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/open-astrology-datasets/README.md",
+      "source_path": "data/extractions/open-astrology-datasets/README.md",
+      "sha256": "989beaee82789211a598e3bc471e9c867daf9025b53ebe0b3797ae2852a70fe8",
+      "media_type": "text",
+      "parser": "text",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/open-astrology-datasets/manifest.json",
+      "source_path": "data/extractions/open-astrology-datasets/manifest.json",
+      "sha256": "2a41556ddc873a9612a1cb446f13e0eee28027085ed960ff3583a91f1acabcdb",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/extractions/solunars-p17172.json",
+      "source_path": "data/extractions/solunars-p17172.json",
+      "sha256": "9dcc1867a11fa2b969c55ef859eed18fbdbe4da528fb71f8b1e1788c26e58187",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/frameworks/additions.json",
+      "source_path": "data/frameworks/additions.json",
+      "sha256": "5307c75c255952bbd9864612b15cb9597c51865536acfad4755b19ebb12db519",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/frameworks/astrological-framework-v1.json",
+      "source_path": "data/frameworks/astrological-framework-v1.json",
+      "sha256": "9e45b758dabb06a86e9901e87f5ef01789e128f9b2f5b92d56b0bf83695f42c7",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/frameworks/master-astrological-reference.json",
+      "source_path": "data/frameworks/master-astrological-reference.json",
+      "sha256": "dbea08022c68aefa8f960c27ce834c23baf8976a0587f666fe6c064986b8c207",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/frameworks/unified-delineation-framework.json",
+      "source_path": "data/frameworks/unified-delineation-framework.json",
+      "sha256": "4cab0ff6400f41c57d8fe1569ba9ce40266e931159ce325ec5a951923c549dff",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/frameworks/unified-master-astrology.json",
+      "source_path": "data/frameworks/unified-master-astrology.json",
+      "sha256": "b0858540297583b38aeb0c98e75d5fe5c1b7c500967209405746c4b9dd8f1bba",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/merged-signals-indicators/README.md",
+      "source_path": "data/merged-signals-indicators/README.md",
+      "sha256": "66a4652d11ec1b1ac0bb4826ea79739bc13f8703650be661443858df6a1d79e8",
+      "media_type": "text",
+      "parser": "text",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/merged-signals-indicators/conflicts.json",
+      "source_path": "data/merged-signals-indicators/conflicts.json",
+      "sha256": "59ead3f152133a22b55ddce840f2215b7f5fb728edb8093c7533b9599897bc35",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/merged-signals-indicators/manifest.json",
+      "source_path": "data/merged-signals-indicators/manifest.json",
+      "sha256": "2c26528c128ee02014142bb6db918f5354dda4871b39c08bbfca1bd8ed492321",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/merged-signals-indicators/normalized_records.json",
+      "source_path": "data/merged-signals-indicators/normalized_records.json",
+      "sha256": "8e6f0ca9f78b26fea6f2d9258df30d903f210506d33d4573643f313f22ccdc32",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/merged-signals-indicators/signal_indicator_master.json",
+      "source_path": "data/merged-signals-indicators/signal_indicator_master.json",
+      "sha256": "49c54e500b8823166f420ae9e11e15ad26ae6351577fa3489903492af10daf78",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/merged-signals-indicators/source_inventory.json",
+      "source_path": "data/merged-signals-indicators/source_inventory.json",
+      "sha256": "6f8731bfefc546c1a52e21bba8e474cf020076a07121d52b037c544f84940618",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/merged-signals-indicators/validation_report.json",
+      "source_path": "data/merged-signals-indicators/validation_report.json",
+      "sha256": "2c1e1fa02e978f97fdabee878b1b3166be87aefce1a82a1c6877418e3fc3274b",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/methodologies/recursive-strength-protocol.json",
+      "source_path": "data/methodologies/recursive-strength-protocol.json",
+      "sha256": "963085130c48eddd10a61f91c66f4f89165000d07e733fc4ba2fbf03d86725bc",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/resources/midpoints_resource.sample.json",
+      "source_path": "data/resources/midpoints_resource.sample.json",
+      "sha256": "41cd4f098b30723d4a81ac838c82e506e75eae3e7bc36c8c51a6b38a55003abd",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/sources/astrology-overview.md",
+      "source_path": "data/sources/astrology-overview.md",
+      "sha256": "ccabc52de2ab79fd9a8c7dcf1be4b236e4505e8f2247cebdf1048840510b0e29",
+      "media_type": "text",
+      "parser": "text",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/unified/archive_manifest.json",
+      "source_path": "data/unified/archive_manifest.json",
+      "sha256": "d8536b683e0cc836961f4689ef0832a4670dfd4c1bb609ed86c8621996b1c5c4",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/unified/change_record.json",
+      "source_path": "data/unified/change_record.json",
+      "sha256": "b34741634e7a7ed44a1684b0b85321aef5ae9ad03c8e7278df4640966ff0ab49",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/unified/coverage_gap_register.json",
+      "source_path": "data/unified/coverage_gap_register.json",
+      "sha256": "4c0bc857c4676cfcdbd742e65e8bd1d7588fdb20c82821ab7ccde3e306b8a37a",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/unified/delineation_ontology.json",
+      "source_path": "data/unified/delineation_ontology.json",
+      "sha256": "66c373557610a973cd56e3238ec593a53eee7d41457d0f828b5677ddc0c70a45",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/unified/discrepancy.json",
+      "source_path": "data/unified/discrepancy.json",
+      "sha256": "8ae5746bb9741bf0e1823f406b123a81e00f22a7d118659380239619936a73d0",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/unified/expansion_report.md",
+      "source_path": "data/unified/expansion_report.md",
+      "sha256": "46d53358c0dc85f37614becb81126041f545d2cb5263534f094553d7b1f71134",
+      "media_type": "text",
+      "parser": "text",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/unified/formula_registry.json",
+      "source_path": "data/unified/formula_registry.json",
+      "sha256": "403d30ed26307782668e35139f84d35d12e0aebadc73fd41b69bcc19b8e92670",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/unified/framework_registry.json",
+      "source_path": "data/unified/framework_registry.json",
+      "sha256": "07a00fb648747b3b9a05c841013b40f81cf26b539d869ada404b332a0caba47e",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/unified/integration_map.json",
+      "source_path": "data/unified/integration_map.json",
+      "sha256": "9a7e2b86ed037bf7d2c18f5dc6380da8351d20f89446af6fbf7d388d996cbbae",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/unified/latest_afe_integration.json",
+      "source_path": "data/unified/latest_afe_integration.json",
+      "sha256": "8a0ef89c72bbd0085026187081b82be5ff2653b1d14c8a1889806c72597e8b25",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/unified/latest_afe_integration_report.md",
+      "source_path": "data/unified/latest_afe_integration_report.md",
+      "sha256": "7758f1a5c0cf522c217f01f9b7bc63e7f7912a5903d3a0544a5ed3a571d82480",
+      "media_type": "text",
+      "parser": "text",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/unified/manifest.json",
+      "source_path": "data/unified/manifest.json",
+      "sha256": "abfcf22d2a23e9897b95941712b95e409c5de8f27b948bfa31a70c3eed7d9916",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/unified/research_contract.json",
+      "source_path": "data/unified/research_contract.json",
+      "sha256": "32b241346c157da6b8e8cd48127879fee86d1ffbd492427948d302f4144eeac7",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/unified/unified_astrology_master.json",
+      "source_path": "data/unified/unified_astrology_master.json",
+      "sha256": "eb564e5b54f1561ed6a3fb64ff84ca446907037d4275ed03a16c3cfd2cf07abc",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:data/unified/validation_report.json",
+      "source_path": "data/unified/validation_report.json",
+      "sha256": "2bd5aa24abab076e50036ed51cf1fd83782963330538f3c475e3a48af9c03025",
+      "media_type": "json",
+      "parser": "json",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:docs/astrodatabank-ingestion.md",
+      "source_path": "docs/astrodatabank-ingestion.md",
+      "sha256": "fc9e4b486e7ac33ec53bde15dac08ecc047bcf336478a881958af9622f103793",
+      "media_type": "text",
+      "parser": "text",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:docs/chart-delineation-methodology.md",
+      "source_path": "docs/chart-delineation-methodology.md",
+      "sha256": "bc77c6ba3ed3bb925fa78017374a74e9caf76a0fac0fd46e64643042623f06ac",
+      "media_type": "text",
+      "parser": "text",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:docs/enriched-master-dataset-framework.md",
+      "source_path": "docs/enriched-master-dataset-framework.md",
+      "sha256": "c3cf89db6ab863626b21f70781ca56d837b4f19644f0cf4184aa9891dffb3984",
+      "media_type": "text",
+      "parser": "text",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:docs/recursive-strength-protocol.md",
+      "source_path": "docs/recursive-strength-protocol.md",
+      "sha256": "8862958cc68579c4fd0e6f38483591d8f61c450dec14c37b0a56e5c287d66d97",
+      "media_type": "text",
+      "parser": "text",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:docs/repository-data-map.md",
+      "source_path": "docs/repository-data-map.md",
+      "sha256": "82a1d2292511e18dcdc2c0ccb18bef4025f0ffa903a04b244d23e5f2c4ef2d94",
+      "media_type": "text",
+      "parser": "text",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    },
+    {
+      "source_id": "openastro:docs/synastry-house-overlay-interpretation.md",
+      "source_path": "docs/synastry-house-overlay-interpretation.md",
+      "sha256": "ead8c94de4d45d54e652238e5ed7eff756ba00f7771a1890d515159bab477d61",
+      "media_type": "text",
+      "parser": "text",
+      "parse_warning": null,
+      "trust_status": "untrusted_data",
+      "rights_status": "source_rights_pending_review"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_id": "openastro.company-research.extractions",
+  "generated_at": "2026-08-17T06:02:00Z",
+  "status": "source_extract_unreviewed",
+  "scope": "Company, fundamentals, market, and research source artifacts located through repository search; no source was promoted into executable TypeScript modules.",
+  "sources": [
+    {
+      "source_id": "github.SUTDOG454.finance-query",
+      "repository_url": "https://github.com/SUTDOG454/finance-query",
+      "retrieved_at": "2026-08-17",
+      "commit": "e95b3e0185d170324eaae216c8db302d841e29ae",
+      "declared_license": "MIT",
+      "license_file": "data/extractions/company-research/finance-query/LICENSE",
+      "source_class": "external_source_code_extract",
+      "promotion_rule": "Preserve as reference material; require compatibility review before adapting into OpenAstro application code."
+    },
+    {
+      "source_id": "user.upload.economic-market-timing-system",
+      "repository_url": null,
+      "retrieved_at": "2026-08-17",
+      "commit": null,
+      "declared_license": "not_declared",
+      "license_file": null,
+      "source_class": "user_provided_configuration",
+      "promotion_rule": "Keep as user-provided reference; do not redistribute or treat as independently licensed source."
+    }
+  ],
+  "files": [
+    {"path": "finance-query/LICENSE", "sha256": "50f206b37d936618482361abb2dfaa4ff25b16f0028e9dc4bc04e189b83a9588", "bytes": 1069, "status": "license_preserved"},
+    {"path": "finance-query/src/adapters/fmp/fundamentals/analysis.rs", "sha256": "9065930bb2c600abc69523dc277478dec8644c8abf0368a176f970e96d0d0d07", "bytes": 19366, "status": "source_extract_unreviewed"},
+    {"path": "finance-query/src/adapters/fmp/fundamentals/core.rs", "sha256": "3346d220056fe9578cbc3b6c02da1532370b800c5a553a49de2b4ed9bc291655", "bytes": 25076, "status": "source_extract_unreviewed"},
+    {"path": "finance-query/src/adapters/fmp/quote/company.rs", "sha256": "fb689ecd34d51a0e92a6c7bdef244b5a3e6acd4aa4e3444931597f3a95b0a306", "bytes": 14771, "status": "source_extract_unreviewed"},
+    {"path": "finance-query/src/models/discovery/search/research.rs", "sha256": "f0625511165a7db462944df6e2b5e2145208e300508dabe9f099f387ad732630", "bytes": 2212, "status": "source_extract_unreviewed"},
+    {"path": "finance-query/src/models/fundamentals/financial_data.rs", "sha256": "01f94354f3369185a7b67a3cef5a29415e2772bc022a1346db58c38026d516ee", "bytes": 6805, "status": "source_extract_unreviewed"},
+    {"path": "finance-query/src/models/fundamentals/response.rs", "sha256": "f66db6df65d52a4c38fcefcccc43786a13ddd17f262b8311399bc5ae82f00616", "bytes": 10846, "status": "source_extract_unreviewed"},
+    {"path": "user-provided/economic-market-timing-system.txt", "sha256": "34b38b4f6ad61b78733d98f90dc44847e3837975ecb0c763d2c3233d8db2e3ee", "bytes": 4615, "status": "user_provided_reference"}
+  ],
+  "search_results": {
+    "exact_company_research_symbols_found": false,
+    "exact_executive_engine_symbols_found": false,
+    "selected_repository_source": "finance-query",
+    "selection_reason": "Contains explicit company quote, fundamentals, market, financial-data, and research model paths.",
+    "non_selected_matches": "Astro_INtelligence contained broad financial-astrology prose and frameworks but no explicit company-research TypeScript module; other searched repositories had no exact company-research symbols."
+  },
+  "deduplication": {
+    "method": "content SHA-256; preserve distinct paths even when content is identical",
+    "duplicates_removed": 0
+  },
+  "validation": {
+    "hashes_recorded": true,
+    "license_preserved": true,
+    "source_code_executed": false,
+    "application_promotion": false
+  },
+  "review_queue": [
+    "Confirm license compatibility before adapting MIT source into OpenAstro.",
+    "Map Rust finance-query response models to TypeScript only after defining a canonical company-research schema.",
+    "Review user-provided configuration for privacy, licensing, and factual provenance.",
+    "Add module-specific tests after executable company-research implementations are present."
+  ]
+}

@@ -1,0 +1,40 @@
+# All Repositories
+
+Complete list of all repositories for SUTDOG454.
+
+## Repositories
+
+1. [454](https://github.com/SUTDOG454/454)
+2. [ai-technicals](https://github.com/SUTDOG454/ai-technicals) - Java library for financial technical analysis with multiple technical indicators
+3. [Apps-Synthesis-](https://github.com/SUTDOG454/Apps-Synthesis-) - Multiple Apps For Synthesis
+4. [astro44](https://github.com/SUTDOG454/astro44)
+5. [ASTROLOGY-BOOKS-DATABASE](https://github.com/SUTDOG454/ASTROLOGY-BOOKS-DATABASE) - Astrology Books, Articles and database of charts for research.
+6. [astrology-ontology-enriched](https://github.com/SUTDOG454/astrology-ontology-enriched) (Private)
+7. [astrology_intelligence-](https://github.com/SUTDOG454/astrology_intelligence-)
+8. [Astro_INtelligence](https://github.com/SUTDOG454/Astro_INtelligence) - Master framework
+9. [awesome-copilot](https://github.com/SUTDOG454/awesome-copilot) - Community-contributed instructions, agents, skills, and configurations to help you make the most of GitHub Copilot.
+10. [finance-query](https://github.com/SUTDOG454/finance-query) - Open-source API for financial data. Get quotes, historical data, technical indicators, and more.
+11. [financial-astrology-stats](https://github.com/SUTDOG454/financial-astrology-stats) - We research the correlations between astrology planet cycles and price effect for multiples financial markets using statistics and machine learning techniques. Join the community discussions at Telegram:
+12. [Financial-astrology-system-](https://github.com/SUTDOG454/Financial-astrology-system-)
+13. [financial_indicators](https://github.com/SUTDOG454/financial_indicators) - A Rust library providing various financial algorithms, including but not limited to KDJ and MACD indicators, for technical analysis.
+14. [Gann-and-Financial-Astrology-Indicators](https://github.com/SUTDOG454/Gann-and-Financial-Astrology-Indicators) - Open-source TradingView Pine Script indicators for financial astrology and W.D. Gann trading methods
+15. [Git54](https://github.com/SUTDOG454/Git54)
+16. [kerykeion](https://github.com/SUTDOG454/kerykeion) - Data-Driven Astrology 💫 Kerykeion is a Python library for astrology. It generates SVG charts and extracts detailed structured data for birth charts, synastry, transits, composite charts, and more.
+17. [mcp](https://github.com/SUTDOG454/mcp) - The only MCP Server you need. Connect any MCP host with the tools you use daily through our no-code, secure integration hub.
+18. [ML-Finance](https://github.com/SUTDOG454/ML-Finance) - Calculate technical indicators from historical stock data Create features and targets out of the historical stock data. Prepare features for linear models, xgboost models, and neural network models. Use linear models, decision trees, random forests, and neural networks to predict the future price of stocks in the US markets. Evaluate performance of
+19. [ontology](https://github.com/SUTDOG454/ontology) (Private)
+20. [OpenAstro](https://github.com/SUTDOG454/OpenAstro) - Astrology repository of files created to build an open source astrological analysis and reporting app incorporating all chart types, strength weighting, analysis, delineation, interpretation, and reporting at the most precise, and detailed level possible.
+21. [Options_Trading_ML](https://github.com/SUTDOG454/Options_Trading_ML) - Machine learning Options Trading Algorithm. API calls to collect the data from Yahoo Finance, Sentiment Investor, Finta. Encoding financial indicators. Building Logistic regression and Multinomial Machine Lerning models for evaluation. P2.
+22. [Python-Financial-Technical-Indicators-Pandas](https://github.com/SUTDOG454/Python-Financial-Technical-Indicators-Pandas) - Technical Indicators implemented in Python only using Numpy-Pandas as Magic - Very Very Fast! Very tiny! Stock Market Financial Technical Analysis Python library. Quant Trading automation or cryptocoin exchange
+23. [pyti](https://github.com/SUTDOG454/pyti) - Python library of various financial technical indicators
+24. [pytorch](https://github.com/SUTDOG454/pytorch) - Tensors and Dynamic neural networks in Python with strong GPU acceleration
+25. [qj_technical_indicators](https://github.com/SUTDOG454/qj_technical_indicators) - High-performance technical indicators library for financial analysis, optimized with Numba
+26. [trading-signals](https://github.com/SUTDOG454/trading-signals) - Technical indicators to run technical analysis with JavaScript & TypeScript. 📈
+
+---
+
+**Total Repositories:** 26  
+**Private Repositories:** 2  
+**Public Repositories:** 24
+
+Generated: 2026-07-01

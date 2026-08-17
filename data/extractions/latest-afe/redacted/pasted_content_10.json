@@ -1,0 +1,475 @@
+{
+  "arabic_parts": {
+    "general_formula": {
+      "description": "Core calculation method for all Arabic Parts",
+      "steps": [
+        "Identify two significators (planets, house cusps, or special degrees)",
+        "Calculate arc: Arc = Longitude(Significator B) - Longitude(Significator A)",
+        "If Longitude(B) < Longitude(A), add 360° to Longitude(B) first",
+        "Add arc to projection point (usually Ascendant): Sum = Arc + Longitude(Projection Point)",
+        "Project sum from 0° of projection sign: Part Location = Projection Sign (0°) + Sum"
+      ],
+      "projection_points": [
+        "Ascendant (most common)",
+        "Beginning of a specific sign",
+        "Degree of a planet"
+      ]
+    },
+    "parts_list": [
+      {
+        "name": "Pars Fortunae (Part of Fortune)",
+        "diurnal_formula": "Measure from Sun to Moon; project from Ascendant",
+        "nocturnal_formula": "Measure from Moon to Sun; project from Ascendant",
+        "significations": [
+          "Life",
+          "Body",
+          "Soul",
+          "Wealth",
+          "Reputation",
+          "All things"
+        ],
+        "source_page": "7-8"
+      },
+      {
+        "name": "Pars Futurorum (Part of Future/Sun)",
+        "diurnal_formula": "Measure from Moon to Sun; project from Ascendant",
+        "nocturnal_formula": "Measure from Sun to Moon; project from Ascendant",
+        "significations": [
+          "Soul",
+          "Faith",
+          "Prophecy",
+          "Hidden things",
+          "Intentions"
+        ],
+        "source_page": "9-10"
+      },
+      {
+        "name": "Pars Saturni (Part of Saturn)",
+        "diurnal_formula": "Measure from Saturn to Pars Fortunae; project from Ascendant",
+        "nocturnal_formula": "Measure from Pars Fortunae to Saturn; project from Ascendant",
+        "significations": [
+          "Memory",
+          "Profundity",
+          "Loss",
+          "Death",
+          "Inheritance",
+          "Heavy buildings"
+        ],
+        "source_page": "10"
+      },
+      {
+        "name": "Pars Vitae (Part of Life)",
+        "diurnal_formula": "Measure from Jupiter to Saturn; project from Ascendant",
+        "nocturnal_formula": "Measure from Saturn to Jupiter; project from Ascendant",
+        "significations": [
+          "Natural life",
+          "Body",
+          "Sustenance",
+          "Longevity"
+        ],
+        "source_page": "14"
+      },
+      {
+        "name": "Pars Patris (Part of Father)",
+        "diurnal_formula": "Measure from Sun to Saturn; project from Ascendant",
+        "nocturnal_formula": "Measure from Saturn to Sun; project from Ascendant",
+        "special_note": "If Saturn is combust (under Sun's beams), use Jupiter instead of Saturn",
+        "significations": [
+          "Father's fortune",
+          "Substance",
+          "Origin"
+        ],
+        "source_page": "20"
+      },
+      {
+        "name": "Pars Matrum (Part of Mother)",
+        "diurnal_formula": "Measure from Venus to Moon; project from Ascendant",
+        "nocturnal_formula": "Measure from Moon to Venus; project from Ascendant",
+        "significations": [
+          "Mother's being",
+          "Love between mother and child"
+        ],
+        "source_page": "39"
+      },
+      {
+        "name": "Pars Coniugii (Part of Marriage, Men)",
+        "diurnal_formula": "Measure from Saturn to Venus; project from Ascendant",
+        "nocturnal_formula": "Measure from Saturn to Venus; project from Ascendant",
+        "significations": [
+          "Long-lasting marriage",
+          "Marriage quality and fortune"
+        ],
+        "source_page": "26"
+      },
+      {
+        "name": "Pars Mortis (Part of Death)",
+        "formula": "Measure from Moon to 8th house cusp, add Saturn's completed degrees in its sign, project from beginning of Saturn's sign",
+        "special_note": "Does not use Ascendant as projection point",
+        "significations": [
+          "Manner and quality of death"
+        ],
+        "source_page": "30"
+      },
+      {
+        "name": "Pars Regni (Part of Kingship)",
+        "diurnal_formula": "Measure from Mars to Moon; project from Ascendant",
+        "nocturnal_formula": "Measure from Moon to Mars; project from Ascendant",
+        "significations": [
+          "Attainment of rule",
+          "Authority",
+          "Connection to the powerful"
+        ],
+        "source_page": "35"
+      },
+      {
+        "name": "Pars Frumentum (Part of Grain)",
+        "diurnal_formula": "Measure from Sun to Mars; project from Ascendant",
+        "nocturnal_formula": "Measure from Sun to Mars; project from Ascendant",
+        "significations": [
+          "Price and abundance of grain"
+        ],
+        "special_note": "Model formula for other commodity parts",
+        "source_page": "51"
+      }
+    ]
+  },
+  "transit_strength": {
+    "essential_dignity_scores": [
+      {
+        "dignity": "Domicile (Rulership)",
+        "score": 5,
+        "description": "Maximum authority, full resource access",
+        "examples": [
+          "Sun in Leo",
+          "Moon in Cancer",
+          "Mercury in Gemini or Virgo"
+        ]
+      },
+      {
+        "dignity": "Exaltation",
+        "score": 4,
+        "description": "Highly respected, amplified influence",
+        "examples": [
+          "Sun in Aries",
+          "Jupiter in Cancer",
+          "Saturn in Libra"
+        ]
+      },
+      {
+        "dignity": "Triplicity (Elemental Dignity)",
+        "score": 3,
+        "description": "General community support, elemental harmony",
+        "examples": [
+          "Sun in any Fire sign",
+          "Moon in any Water sign"
+        ]
+      },
+      {
+        "dignity": "Term (Bounds)",
+        "score": 2,
+        "description": "Local jurisdiction within specific sign degrees"
+      },
+      {
+        "dignity": "Face (Decanate)",
+        "score": 1,
+        "description": "Minimal influence, weakest dignity"
+      },
+      {
+        "dignity": "Peregrine",
+        "score": 0,
+        "description": "No essential dignities, dependent on dispositor"
+      },
+      {
+        "dignity": "Detriment (Exile)",
+        "score": -4,
+        "description": "Conflicted operation, lack of suitable resources",
+        "examples": [
+          "Sun in Aquarius",
+          "Moon in Capricorn",
+          "Mars in Libra"
+        ]
+      },
+      {
+        "dignity": "Fall",
+        "score": -5,
+        "description": "Depressed function, inherent weakness",
+        "examples": [
+          "Sun in Libra",
+          "Moon in Scorpio",
+          "Saturn in Aries"
+        ]
+      }
+    ],
+    "dispositor_analysis": {
+      "definition": "Planet that rules the sign occupied by another planet",
+      "process": [
+        "For planet P1, find its dispositor P2 (ruler of P1's sign)",
+        "Find dispositor of P2 (P3)",
+        "Continue until finding a planet that rules itself (is in Domicile) or mutual reception loop closes",
+        "Final Dispositor = planet in Domicile at chain end"
+      ],
+      "interpretation_rules": [
+        "Strong Final Dispositor empowers weak transiting planets",
+        "Weak/non-existent Final Dispositor leads to unfocused, erratic energy",
+        "Dispositor functions as 'funding source' for transit action"
+      ]
+    },
+    "accidental_modifiers": [
+      {
+        "modifier": "Speed/Duration",
+        "conditions": [
+          {
+            "type": "Slow-moving (Saturn, Outer Planets)",
+            "effect": "High impact, governs major long-term life phases"
+          },
+          {
+            "type": "Fast-moving (Moon, Mercury, Venus, Mars)",
+            "effect": "Low impact alone, acts as trigger for slower transits"
+          }
+        ]
+      },
+      {
+        "modifier": "Orb Magnitude",
+        "conditions": [
+          {
+            "type": "Tight (≤1°)",
+            "effect": "Maximum intensity, precise timing"
+          },
+          {
+            "type": "Wide (>3°)",
+            "effect": "Low intensity, diffuse background influence"
+          }
+        ]
+      },
+      {
+        "modifier": "Direction",
+        "conditions": [
+          {
+            "type": "Retrograde",
+            "effect": "Debilitating, internal focus, delays, revisiting issues"
+          }
+        ]
+      },
+      {
+        "modifier": "House Placement",
+        "conditions": [
+          {
+            "type": "Angular (1st, 4th, 7th, 10th)",
+            "effect": "Accidentally strong, visible tangible events"
+          },
+          {
+            "type": "Succedent (2nd, 5th, 8th, 11th)",
+            "effect": "Moderate influence, developing situations"
+          },
+          {
+            "type": "Cadent (3rd, 6th, 9th, 12th)",
+            "effect": "Accidentally weak, internal/preparatory/diminishing"
+          }
+        ]
+      },
+      {
+        "modifier": "Avashta (Functional State)",
+        "conditions": [
+          {
+            "type": "Jagrad (Awake - in dignity)",
+            "effect": "High efficacy, conscious integrated lessons"
+          },
+          {
+            "type": "Svapna (Sleepy - in friendly/neutral sign)",
+            "effect": "Semi-conscious integration"
+          },
+          {
+            "type": "Sushupti (Asleep - in debility)",
+            "effect": "Low efficacy, unconscious, missed opportunities"
+          }
+        ]
+      }
+    ],
+    "aspect_analysis": {
+      "hard_aspects": [
+        {
+          "aspect": "Square (90°)",
+          "nature": "Obstacles, blockages, catalyst for growth"
+        },
+        {
+          "aspect": "Opposition (180°)",
+          "nature": "Polarization, tension requiring integration"
+        }
+      ],
+      "mode_analysis": [
+        {
+          "mode": "Cardinal (Aries, Cancer, Libra, Capricorn)",
+          "nature": "Crisis requiring decisive action and initiative",
+          "strength_required": "Proactive, executive"
+        },
+        {
+          "mode": "Fixed (Taurus, Leo, Scorpio, Aquarius)",
+          "nature": "Rigid attachment, determination to preserve status quo",
+          "strength_required": "Persistence against deep resistance",
+          "special_note": "Potential for resolution via antiscia understanding"
+        },
+        {
+          "mode": "Mutable (Gemini, Virgo, Sagittarius, Pisces)",
+          "nature": "Diffusion, fluidity, uncertainty, boundary issues",
+          "strength_required": "Internal adjustment, spiritual maturity, synthesis"
+        }
+      ],
+      "elemental_clashes": [
+        {
+          "elements": "Fire vs Water",
+          "nature": "Action (Fire) clashes with emotional foundation (Water)"
+        },
+        {
+          "elements": "Earth vs Air",
+          "nature": "Structure (Earth) clashes with mental objectivity (Air)"
+        }
+      ],
+      "orb_strength_rule": "Tighter orb = more intense conflict and immediate demand for attention"
+    },
+    "synthesis_rules": {
+      "highest_potency_conditions": [
+        "High Essential Score (≥3)",
+        "Slow planetary speed",
+        "Tight orb (≤1°)",
+        "Angular house placement",
+        "Strong Final Dispositor",
+        "Planet in Jagrad (Awake) Avashta state"
+      ],
+      "manifestation_quality_rules": [
+        "High dignity + consciousness → 'Higher octave' archetypal expression",
+        "Low dignity + unconsciousness → 'Shadow side' expression with confusion/collapse"
+      ]
+    }
+  },
+  "planetary_house_affinities": {
+    "interpretation_rule": "Planet transiting its 'strong' house gains accidental boost; transiting its 'weak' house is accidentally debilitated",
+    "affinities": [
+      {
+        "planet": "Sun",
+        "strong_houses": [
+          1,
+          5,
+          10
+        ],
+        "strong_interpretation": "Identity, creation, status expression amplified",
+        "weak_houses": [
+          4,
+          6,
+          7,
+          8,
+          12
+        ],
+        "weak_interpretation": "Struggle with home, work, partnerships, transformation, isolation"
+      },
+      {
+        "planet": "Moon",
+        "strong_houses": [
+          2,
+          4
+        ],
+        "strong_interpretation": "Resources, home/family matters flow easily",
+        "weak_houses": [
+          6,
+          8,
+          10,
+          12
+        ],
+        "weak_interpretation": "Difficulty with work, transformation, career, isolation"
+      },
+      {
+        "planet": "Mercury",
+        "strong_houses": [
+          1,
+          3
+        ],
+        "strong_interpretation": "Mind, communication expressed clearly",
+        "weak_houses": [
+          7,
+          8,
+          12
+        ],
+        "weak_interpretation": "Communication struggles in partnerships, transformation, isolation"
+      },
+      {
+        "planet": "Venus",
+        "strong_houses": [
+          2,
+          4,
+          7
+        ],
+        "strong_interpretation": "Values, home, partnership harmony enhanced",
+        "weak_houses": [
+          6,
+          8,
+          10
+        ],
+        "weak_interpretation": "Struggle to find harmony in work, transformation, career"
+      },
+      {
+        "planet": "Mars",
+        "strong_houses": [
+          1,
+          10
+        ],
+        "strong_interpretation": "Action, career drive expressed directly",
+        "weak_houses": [
+          4,
+          6,
+          12
+        ],
+        "weak_interpretation": "Action frustrated in home, work, isolation"
+      },
+      {
+        "planet": "Jupiter",
+        "strong_houses": [
+          1,
+          4,
+          9
+        ],
+        "strong_interpretation": "Growth, home, philosophy expand naturally",
+        "weak_houses": [
+          6,
+          7,
+          8
+        ],
+        "weak_interpretation": "Growth limited in work, partnerships, transformation"
+      },
+      {
+        "planet": "Saturn",
+        "strong_houses": [
+          7,
+          10,
+          11
+        ],
+        "strong_interpretation": "Commitment, career, goals structured effectively",
+        "weak_houses": [
+          1,
+          4
+        ],
+        "weak_interpretation": "Difficulty structuring identity, home foundation"
+      }
+    ]
+  },
+  "integration_guidelines": {
+    "arabic_part_interpretation_steps": [
+      "Calculate part location using appropriate formula",
+      "Determine sign and house placement",
+      "Assess dignity of part's lord using essential dignity scores",
+      "Note aspects to the part from other planets",
+      "Consider dispositor of part's lord for resource analysis"
+    ],
+    "transit_analysis_steps": [
+      "Calculate planet's Essential Dignity Score",
+      "Trace Dispositor Chain to find Final Dispositor",
+      "Apply Accidental Modifiers (speed, orb, house, Avashta)",
+      "Cross-reference with Planetary House Affinities",
+      "Analyze aspects using mode/element framework",
+      "Synthesize all factors for overall potency assessment"
+    ],
+    "combined_application": [
+      "For transit-to-part activations: Assess both transit planet strength and part significator strength",
+      "Use house rulerships to link transit areas with part significations",
+      "Consider dispositor chains that connect transit planets with part lords"
+    ]
+  }
+}

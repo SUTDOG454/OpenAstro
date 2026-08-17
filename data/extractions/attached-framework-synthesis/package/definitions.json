@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0.0",
+  "status": "synthesized_with_pending_review",
+  "canonical_registry_authority": "/home/ubuntu/skills/astrology-data-unifi/references/entity_registry.json",
+  "source_ids": [
+    "attached-framework-01",
+    "attached-framework-03"
+  ],
+  "signs": {
+    "Aries": "Pioneering, energetic, impulsive",
+    "Taurus": "Stable, sensual, persistent",
+    "Gemini": "Communicative, adaptable, intellectual",
+    "Cancer": "Nurturing, emotional, protective",
+    "Leo": "Regal, creative, confident",
+    "Virgo": "Analytical, practical, service-oriented",
+    "Libra": "Balanced, diplomatic, just",
+    "Scorpio": "Intense, transformative, mysterious",
+    "Sagittarius": "Adventurous, philosophical, optimistic",
+    "Capricorn": "Disciplined, ambitious, responsible",
+    "Aquarius": "Innovative, humanitarian, independent",
+    "Pisces": "Compassionate, artistic, spiritual"
+  },
+  "planets": {
+    "Sun": "Spirit",
+    "Moon": "Psyche",
+    "Mercury": "Communication",
+    "Venus": "Love",
+    "Mars": "Action",
+    "Jupiter": "Expansion",
+    "Saturn": "Discipline",
+    "Uranus": "Innovation",
+    "Neptune": "Spirituality",
+    "Pluto": "Transformation",
+    "North Node": "Materialization",
+    "South Node": "Liberation"
+  },
+  "houses": {
+    "House1": "House of Self, Rising Sign, Childhood",
+    "House2": "House of Money, Values, Self‑Worth",
+    "House3": "House of Mind, Communication, Siblings",
+    "House4": "House of Home, Mother, Roots, Past Lives",
+    "House5": "House of Creativity, Children, Romance, Speculation",
+    "House6": "House of Work, Health, Service",
+    "House7": "House of Partnerships, Marriage, Open Enemies",
+    "House8": "House of Sex, Death, Transformation, Shared Resources",
+    "House9": "House of Philosophy, Travel, Higher Education, Religion",
+    "House10": "House of Career, Public Status, Authority",
+    "House11": "House of Friends, Groups, Hopes, Wishes",
+    "House12": "House of the Unconscious, Self‑Undoing, Hidden Enemies, Institutions"
+  },
+  "terms": {
+    "Cazimi": "Within 30 arcminutes of Sun",
+    "Combust": "Within 31 arcminutes to 3 degrees of Sun",
+    "Applying": "Faster body moving toward exact aspect",
+    "Separating": "Faster body moving away from exact aspect",
+    "Anaretic Degree": "29th degree of a sign"
+  },
+  "notes": [
+    "Attached definitions are source-derived and do not replace the canonical entity registry."
+  ]
+}

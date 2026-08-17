@@ -1,0 +1,1359 @@
+{
+  "schema_version": "1.0.0",
+  "status": "methodology_bound_research_only",
+  "record_count": 44,
+  "records": [
+    {
+      "record_id": "usr_6489666bbf38ff0f7ed4",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "financial_framework_metadata",
+      "subject_path": "framework_metadata",
+      "raw_text": "{\"name\": \"Astrology Prediction and Financial Timing System - Ultra-Expanded v9.0\", \"version\": \"9.0 - Maximum Integration, Expansion, and Factor Amplification\", \"extraction_date\": \"2026-07-16\", \"expansion_summary\": \"Incorporated over 120 new factors, 25 new techniques, 15 additional technical indicators, 50+ asteroids, 30+ fixed stars, 12 Uranian planets, 8 Vedic sub-systems, 10 economic indicators, 5 behavioral biases, 6 wellness dimensions, and 8 relationship chart types. All layers are integrated via a multi-level probabilistic Bayesian network with real-time market feed and adaptive learning.\", \"total_sections\": 28, \"total_techniques\": 38, \"total_delineation_steps\": 210, \"total_weighting_factors\": 180, \"total_interpretation_rules\": 500, \"total_reporting_modules\": 35, \"status\": \"Production-ready, institutional-grade, continuous learning system.\"}",
+      "normalized_text": "{\"name\": \"Astrology Prediction and Financial Timing System - Ultra-Expanded v9.0\", \"version\": \"9.0 - Maximum Integration, Expansion, and Factor Amplification\", \"extraction_date\": \"2026-07-16\", \"expansion_summary\": \"Incorporated over 120 new factors, 25 new techniques, 15 additional technical indicators, 50+ asteroids, 30+ fixed stars, 12 Uranian planets, 8 Vedic sub-systems, 10 economic indicators, 5 behavioral biases, 6 wellness dimensions, and 8 relationship chart types. All layers are integrated via a multi-level probabilistic Bayesian network with real-time market feed and adaptive learning.\", \"total_sections\": 28, \"total_techniques\": 38, \"total_delineation_steps\": 210, \"total_weighting_factors\": 180, \"total_interpretation_rules\": 500, \"total_reporting_modules\": 35, \"status\": \"Production-ready, institutional-grade, continuous learning system.\"}",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "Financial-framework statements are methodology proposals, not validated strategies, performance evidence, or advice."
+      ],
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_d0e67fc0bcebcb7fce1e",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "financial_technique_proposal",
+      "subject_path": "technique:1_transits",
+      "raw_text": "Current planetary positions as external triggers.",
+      "normalized_text": "Current planetary positions as external triggers.",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "This is an unvalidated source proposal. It cannot generate trading instructions, position sizing, forecasts, or causal claims."
+      ],
+      "extensions": {
+        "technique_id": "1_transits",
+        "source_fields": {
+          "definition": "Current planetary positions as external triggers.",
+          "delineation_steps": [
+            "1.1 Outer planets to personal planets/angles: generational shifts.",
+            "1.2 Social planets to personal: career, maturity.",
+            "1.3 Inner planets: daily events.",
+            "1.4 Phase: applying/exact/separating/station.",
+            "1.5 House and sign of transit.",
+            "1.6 Transits to midpoints, asteroids, fixed stars, Uranian points.",
+            "1.7 Transits to Vedic Nakshatras for nuance.",
+            "1.8 Multiple transit confluences (e.g., Jupiter-Saturn combo).",
+            "1.9 Transit to economic cycle timing."
+          ],
+          "weighting": {
+            "critical": "Outer hard to Sun/Moon/ASC/MC – 10/10",
+            "high": "Saturn/Jupiter hard to personal – 8/10",
+            "medium": "Outer soft, fixed stars – 6/10",
+            "low": "Inner planets – 4/10"
+          },
+          "interpretation": {
+            "pluto": "Transformation, power, obsession.",
+            "uranus": "Sudden change, innovation.",
+            "neptune": "Dissolution, idealism, confusion.",
+            "saturn": "Structure, discipline, karmic lessons.",
+            "jupiter": "Expansion, optimism.",
+            "chiron": "Healing, teaching."
+          },
+          "synthesis_role": "Trigger layer – exact timing of events."
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_b537862a1d061c29884b",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "financial_technique_proposal",
+      "subject_path": "technique:2_secondary_progressions",
+      "raw_text": "Internal psychological maturation.",
+      "normalized_text": "Internal psychological maturation.",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "This is an unvalidated source proposal. It cannot generate trading instructions, position sizing, forecasts, or causal claims."
+      ],
+      "extensions": {
+        "technique_id": "2_secondary_progressions",
+        "source_fields": {
+          "definition": "Internal psychological maturation.",
+          "delineation_steps": [
+            "Prog Sun: evolving identity.",
+            "Prog Moon: emotional weather.",
+            "Prog ASC/MC changes: public rebranding.",
+            "Prog stations: internalization.",
+            "Prog New/Full Moon: emotional cycles."
+          ],
+          "weighting": {
+            "critical": "Prog Sun changes house/sign – 9/10",
+            "high": "Prog Moon hard to natal – 7/10",
+            "medium": "Prog ASC/MC change – 5/10",
+            "low": "Inner planet aspects – 3/10"
+          },
+          "interpretation": "Readiness layer – psychological receptivity."
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_4ba5312ed666da765a6b",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "financial_technique_proposal",
+      "subject_path": "technique:3_solar_arc_directions",
+      "raw_text": "Fated milestones.",
+      "normalized_text": "Fated milestones.",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "This is an unvalidated source proposal. It cannot generate trading instructions, position sizing, forecasts, or causal claims."
+      ],
+      "extensions": {
+        "technique_id": "3_solar_arc_directions",
+        "source_fields": {
+          "definition": "Fated milestones.",
+          "delineation_steps": [
+            "Directed ASC/MC to planets: direction.",
+            "Directed planets to natal points.",
+            "Directed midpoints.",
+            "Financial: to 2nd/8th rulers."
+          ],
+          "weighting": {
+            "critical": "Directed Sun/ASC/MC to personal planet/angle – 10/10",
+            "high": "Directed outer to personal – 8/10",
+            "medium": "Directed inner to outer – 5/10"
+          },
+          "interpretation": "Milestone layer – fated timing."
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_e057fe6e3da3c6083abc",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "financial_technique_proposal",
+      "subject_path": "technique:4_solar_returns",
+      "raw_text": "Yearly thematic blueprint.",
+      "normalized_text": "Yearly thematic blueprint.",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "This is an unvalidated source proposal. It cannot generate trading instructions, position sizing, forecasts, or causal claims."
+      ],
+      "extensions": {
+        "technique_id": "4_solar_returns",
+        "source_fields": {
+          "definition": "Yearly thematic blueprint.",
+          "delineation_steps": [
+            "SR ASC + ruler: approach.",
+            "Natal planets on SR angles.",
+            "SR planets on SR angles.",
+            "SR Sun house/aspects.",
+            "SR Moon house/aspects.",
+            "SR Nodes, PoF.",
+            "Critical degrees.",
+            "Retrogrades, OOB.",
+            "Dignities.",
+            "Profection Lord.",
+            "Asteroids, Fixed Stars.",
+            "Sabian Symbols.",
+            "Evolutionary assessment.",
+            "Financial houses (2nd/8th).",
+            "Vedic Tajika comparisons.",
+            "Eclipse activation."
+          ],
+          "weighting": "See base table, expanded with new factors.",
+          "interpretation": "Backdrop for the year."
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_6e3f4d962823b2aa32cc",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "financial_technique_proposal",
+      "subject_path": "technique:5_financial_technical_analysis",
+      "raw_text": "Astrological timing + technical indicators.",
+      "normalized_text": "Astrological timing + technical indicators.",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "This is an unvalidated source proposal. It cannot generate trading instructions, position sizing, forecasts, or causal claims."
+      ],
+      "extensions": {
+        "technique_id": "5_financial_technical_analysis",
+        "source_fields": {
+          "definition": "Astrological timing + technical indicators.",
+          "delineation_steps": [
+            "Identify planetary aspects.",
+            "Map to financial houses.",
+            "Overlay with technicals.",
+            "Assess historical cycle correlations.",
+            "Incorporate sentiment and risk.",
+            "Generate timing windows."
+          ],
+          "weighting": {
+            "critical": "Confluence + technical signal – 10/10",
+            "high": "Strong astro with neutral technical – 7/10",
+            "medium": "One layer only – 5/10",
+            "low": "Weak or ambiguous – 3/10"
+          },
+          "interpretation": "Action layer – entry/exit signals."
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_5a18631d714ac7a9e180",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "financial_technique_proposal",
+      "subject_path": "technique:6_mundane_astrology",
+      "raw_text": "Global economic and political context.",
+      "normalized_text": "Global economic and political context.",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "This is an unvalidated source proposal. It cannot generate trading instructions, position sizing, forecasts, or causal claims."
+      ],
+      "extensions": {
+        "technique_id": "6_mundane_astrology",
+        "source_fields": {
+          "definition": "Global economic and political context.",
+          "delineation_steps": [
+            "Select relevant charts (USA, NYSE, etc.).",
+            "Ingress charts.",
+            "Eclipse paths.",
+            "Planetary stations.",
+            "Synthesize themes.",
+            "Overlay with global technicals."
+          ],
+          "weighting": {
+            "critical": "Outer transit to mundane angles – 10/10",
+            "high": "Jupiter-Saturn/Eclipses in economic houses – 8/10",
+            "medium": "Inner planet ingresses – 5/10",
+            "low": "Minor aspects – 3/10"
+          },
+          "interpretation": "Macro layer – sets the broad context."
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_981d2a4c77f99ecdb2ab",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "financial_technique_proposal",
+      "subject_path": "technique:7_harmonic_charts",
+      "raw_text": "Reveal sub-cycles.",
+      "normalized_text": "Reveal sub-cycles.",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "This is an unvalidated source proposal. It cannot generate trading instructions, position sizing, forecasts, or causal claims."
+      ],
+      "extensions": {
+        "technique_id": "7_harmonic_charts",
+        "source_fields": {
+          "definition": "Reveal sub-cycles.",
+          "delineation": "Extract harmonic aspects and their conjunctions with financial points.",
+          "weighting": "5/10"
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_398028518de2626f92a7",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "financial_technique_proposal",
+      "subject_path": "technique:8_uranian_planets",
+      "raw_text": "Transneptunian points for nuance.",
+      "normalized_text": "Transneptunian points for nuance.",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "This is an unvalidated source proposal. It cannot generate trading instructions, position sizing, forecasts, or causal claims."
+      ],
+      "extensions": {
+        "technique_id": "8_uranian_planets",
+        "source_fields": {
+          "definition": "Transneptunian points for nuance.",
+          "delineation": "Map to financial houses; aspects add depth.",
+          "weighting": "5/10"
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_3a24c27707cd1e22e9ec",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "financial_technique_proposal",
+      "subject_path": "technique:9_vedic_dasha",
+      "raw_text": "Vimshottari and other Dasha systems.",
+      "normalized_text": "Vimshottari and other Dasha systems.",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "This is an unvalidated source proposal. It cannot generate trading instructions, position sizing, forecasts, or causal claims."
+      ],
+      "extensions": {
+        "technique_id": "9_vedic_dasha",
+        "source_fields": {
+          "definition": "Vimshottari and other Dasha systems.",
+          "delineation": "Current Dasha/Bhukti, map rulers, check transits.",
+          "weighting": "7/10"
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_e369f958db4d961f5e35",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "financial_technique_proposal",
+      "subject_path": "technique:10_vedic_navamsha",
+      "raw_text": "9th harmonic for outcome validation.",
+      "normalized_text": "9th harmonic for outcome validation.",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "This is an unvalidated source proposal. It cannot generate trading instructions, position sizing, forecasts, or causal claims."
+      ],
+      "extensions": {
+        "technique_id": "10_vedic_navamsha",
+        "source_fields": {
+          "definition": "9th harmonic for outcome validation.",
+          "delineation": "Compare Navamsha with SR.",
+          "weighting": "6/10"
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_8b2e062cfee1bfc96805",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "financial_technique_proposal",
+      "subject_path": "technique:11_astrocartography_relocation",
+      "raw_text": "Planetary lines on globe.",
+      "normalized_text": "Planetary lines on globe.",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "This is an unvalidated source proposal. It cannot generate trading instructions, position sizing, forecasts, or causal claims."
+      ],
+      "extensions": {
+        "technique_id": "11_astrocartography_relocation",
+        "source_fields": {
+          "definition": "Planetary lines on globe.",
+          "delineation": "Identify wealth lines near client.",
+          "weighting": "Conditional 6/10"
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_bd00b30a62c7549a911a",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "financial_technique_proposal",
+      "subject_path": "technique:12_economic_cycle_alignment",
+      "raw_text": "Align astro cycles with economic waves.",
+      "normalized_text": "Align astro cycles with economic waves.",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "This is an unvalidated source proposal. It cannot generate trading instructions, position sizing, forecasts, or causal claims."
+      ],
+      "extensions": {
+        "technique_id": "12_economic_cycle_alignment",
+        "source_fields": {
+          "definition": "Align astro cycles with economic waves.",
+          "delineation": "Current phase of Kitchin, Juglar, Kuznets, Kondratiev.",
+          "weighting": "8/10 (macro)"
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_561ec74bede60aa34b17",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "financial_technique_proposal",
+      "subject_path": "technique:13_sentiment_analysis",
+      "raw_text": "Fear/greed proxies from Moon/Nodes/outer planets.",
+      "normalized_text": "Fear/greed proxies from Moon/Nodes/outer planets.",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "This is an unvalidated source proposal. It cannot generate trading instructions, position sizing, forecasts, or causal claims."
+      ],
+      "extensions": {
+        "technique_id": "13_sentiment_analysis",
+        "source_fields": {
+          "definition": "Fear/greed proxies from Moon/Nodes/outer planets.",
+          "delineation": "Assign sentiment scores.",
+          "weighting": "6/10"
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_bdf7ff5822e165f1dd5e",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "financial_technique_proposal",
+      "subject_path": "technique:14_risk_metrics",
+      "raw_text": "Forward-looking risk: drawdown, volatility, risk-reward.",
+      "normalized_text": "Forward-looking risk: drawdown, volatility, risk-reward.",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "This is an unvalidated source proposal. It cannot generate trading instructions, position sizing, forecasts, or causal claims."
+      ],
+      "extensions": {
+        "technique_id": "14_risk_metrics",
+        "source_fields": {
+          "definition": "Forward-looking risk: drawdown, volatility, risk-reward.",
+          "delineation": "Combine historical volatility with current technicals.",
+          "weighting": "8/10"
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_6d3cb4a58b5d9cef6095",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "financial_technique_proposal",
+      "subject_path": "technique:15_midpoints",
+      "raw_text": "Sensitive points, activation triggers fusions.",
+      "normalized_text": "Sensitive points, activation triggers fusions.",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "This is an unvalidated source proposal. It cannot generate trading instructions, position sizing, forecasts, or causal claims."
+      ],
+      "extensions": {
+        "technique_id": "15_midpoints",
+        "source_fields": {
+          "definition": "Sensitive points, activation triggers fusions.",
+          "delineation": "Include Sun/Moon, Asc/MC, financial rulers.",
+          "weighting": "5/10"
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_6b2a671440612fe277e4",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "financial_technique_proposal",
+      "subject_path": "technique:16_asteroids_extended",
+      "raw_text": "50+ asteroids for psychological nuance.",
+      "normalized_text": "50+ asteroids for psychological nuance.",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "This is an unvalidated source proposal. It cannot generate trading instructions, position sizing, forecasts, or causal claims."
+      ],
+      "extensions": {
+        "technique_id": "16_asteroids_extended",
+        "source_fields": {
+          "definition": "50+ asteroids for psychological nuance.",
+          "delineation": "Conjunctions to angles/planets add specific archetypes.",
+          "weighting": "4/10"
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_2bc6868a6c529825dd00",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "financial_technique_proposal",
+      "subject_path": "technique:17_fixed_stars_extended",
+      "raw_text": "30+ stars for fateful events.",
+      "normalized_text": "30+ stars for fateful events.",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "This is an unvalidated source proposal. It cannot generate trading instructions, position sizing, forecasts, or causal claims."
+      ],
+      "extensions": {
+        "technique_id": "17_fixed_stars_extended",
+        "source_fields": {
+          "definition": "30+ stars for fateful events.",
+          "delineation": "Conjunctions to angles or personal planets add mythic dimension.",
+          "weighting": "6/10 if on angle."
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_7a8b9077739229530bc2",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "financial_technique_proposal",
+      "subject_path": "technique:18_vedic_shadbala",
+      "raw_text": "Sixfold strength of planets.",
+      "normalized_text": "Sixfold strength of planets.",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "This is an unvalidated source proposal. It cannot generate trading instructions, position sizing, forecasts, or causal claims."
+      ],
+      "extensions": {
+        "technique_id": "18_vedic_shadbala",
+        "source_fields": {
+          "definition": "Sixfold strength of planets.",
+          "delineation": "Compute overall strength; strong planets can overcome harsh aspects.",
+          "weighting": "5/10"
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_54d5f0e52b3b0bfe50b6",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "financial_technique_proposal",
+      "subject_path": "technique:19_vedic_ashtakavarga",
+      "raw_text": "Transit strength scores.",
+      "normalized_text": "Transit strength scores.",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "This is an unvalidated source proposal. It cannot generate trading instructions, position sizing, forecasts, or causal claims."
+      ],
+      "extensions": {
+        "technique_id": "19_vedic_ashtakavarga",
+        "source_fields": {
+          "definition": "Transit strength scores.",
+          "delineation": "Use accumulated points to gauge transit timing.",
+          "weighting": "6/10"
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_d337f63d45ea3ff0a7dd",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "financial_technique_proposal",
+      "subject_path": "technique:20_vedic_tajika",
+      "raw_text": "Vedic Solar Return (annual chart).",
+      "normalized_text": "Vedic Solar Return (annual chart).",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "This is an unvalidated source proposal. It cannot generate trading instructions, position sizing, forecasts, or causal claims."
+      ],
+      "extensions": {
+        "technique_id": "20_vedic_tajika",
+        "source_fields": {
+          "definition": "Vedic Solar Return (annual chart).",
+          "delineation": "Compare with Western SR; look for confluence.",
+          "weighting": "7/10"
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_0dbc461e907a33b6d451",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "financial_technique_proposal",
+      "subject_path": "technique:21_vedic_muhurta",
+      "raw_text": "Electional astrology for initiation timing.",
+      "normalized_text": "Electional astrology for initiation timing.",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "This is an unvalidated source proposal. It cannot generate trading instructions, position sizing, forecasts, or causal claims."
+      ],
+      "extensions": {
+        "technique_id": "21_vedic_muhurta",
+        "source_fields": {
+          "definition": "Electional astrology for initiation timing.",
+          "delineation": "Find auspicious moments for financial actions.",
+          "weighting": "6/10"
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_1c74f823ffe32f60bd6b",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "financial_technique_proposal",
+      "subject_path": "technique:22_elliott_wave_astro_overlay",
+      "raw_text": "Map astrological cycles to Elliott wave counts.",
+      "normalized_text": "Map astrological cycles to Elliott wave counts.",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "This is an unvalidated source proposal. It cannot generate trading instructions, position sizing, forecasts, or causal claims."
+      ],
+      "extensions": {
+        "technique_id": "22_elliott_wave_astro_overlay",
+        "source_fields": {
+          "definition": "Map astrological cycles to Elliott wave counts.",
+          "delineation": "Identify wave degrees with planetary cycles.",
+          "weighting": "6/10"
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_5bdc079feb9de50b47c9",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "financial_technique_proposal",
+      "subject_path": "technique:23_gann_time_cycles",
+      "raw_text": "Use W.D. Gann’s astro-based time cycles.",
+      "normalized_text": "Use W.D. Gann’s astro-based time cycles.",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "This is an unvalidated source proposal. It cannot generate trading instructions, position sizing, forecasts, or causal claims."
+      ],
+      "extensions": {
+        "technique_id": "23_gann_time_cycles",
+        "source_fields": {
+          "definition": "Use W.D. Gann’s astro-based time cycles.",
+          "delineation": "Identify important time intervals (e.g., 90°, 180°).",
+          "weighting": "6/10"
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_34e8f640f28b79ccab5a",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "financial_technique_proposal",
+      "subject_path": "technique:24_market_profile_astro",
+      "raw_text": "Volume/price distribution over astro windows.",
+      "normalized_text": "Volume/price distribution over astro windows.",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "This is an unvalidated source proposal. It cannot generate trading instructions, position sizing, forecasts, or causal claims."
+      ],
+      "extensions": {
+        "technique_id": "24_market_profile_astro",
+        "source_fields": {
+          "definition": "Volume/price distribution over astro windows.",
+          "delineation": "Correlate high volume nodes with planetary aspects.",
+          "weighting": "5/10"
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_73bbf29d691e05c1695b",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "financial_technique_proposal",
+      "subject_path": "technique:25_behavioral_finance_astro",
+      "raw_text": "Link transits to cognitive biases (e.g., Pluto = panic selling).",
+      "normalized_text": "Link transits to cognitive biases (e.g., Pluto = panic selling).",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "This is an unvalidated source proposal. It cannot generate trading instructions, position sizing, forecasts, or causal claims."
+      ],
+      "extensions": {
+        "technique_id": "25_behavioral_finance_astro",
+        "source_fields": {
+          "definition": "Link transits to cognitive biases (e.g., Pluto = panic selling).",
+          "delineation": "Identify transits that exacerbate biases; recommend countermeasures.",
+          "weighting": "6/10"
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_55b18b9f108d2df529be",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "financial_technique_proposal",
+      "subject_path": "technique:26_wellness_correlations",
+      "raw_text": "Transits to 6th/12th houses suggest health interventions.",
+      "normalized_text": "Transits to 6th/12th houses suggest health interventions.",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "This is an unvalidated source proposal. It cannot generate trading instructions, position sizing, forecasts, or causal claims."
+      ],
+      "extensions": {
+        "technique_id": "26_wellness_correlations",
+        "source_fields": {
+          "definition": "Transits to 6th/12th houses suggest health interventions.",
+          "delineation": "Map to diet, exercise, sleep, mental health.",
+          "weighting": "5/10"
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_9b6db92b97586b5bf8e1",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "financial_technique_proposal",
+      "subject_path": "technique:27_relationship_synastry_composite",
+      "raw_text": "If partner data, composite/Davison charts.",
+      "normalized_text": "If partner data, composite/Davison charts.",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "This is an unvalidated source proposal. It cannot generate trading instructions, position sizing, forecasts, or causal claims."
+      ],
+      "extensions": {
+        "technique_id": "27_relationship_synastry_composite",
+        "source_fields": {
+          "definition": "If partner data, composite/Davison charts.",
+          "delineation": "Transits to composite points indicate relationship milestones.",
+          "weighting": "Conditional 7/10"
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_6738d9cef44f158510ad",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "financial_technique_proposal",
+      "subject_path": "technique:28_timeframes_multiscale",
+      "raw_text": "Intraday, daily, weekly, monthly, yearly, decadal.",
+      "normalized_text": "Intraday, daily, weekly, monthly, yearly, decadal.",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "This is an unvalidated source proposal. It cannot generate trading instructions, position sizing, forecasts, or causal claims."
+      ],
+      "extensions": {
+        "technique_id": "28_timeframes_multiscale",
+        "source_fields": {
+          "definition": "Intraday, daily, weekly, monthly, yearly, decadal.",
+          "delineation": "Apply appropriate techniques for each scale.",
+          "weighting": "Variable."
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_dd0a58bc990e112c9573",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "financial_technique_proposal",
+      "subject_path": "technique:29_economic_indicators_integration",
+      "raw_text": "Overlay astro cycles with GDP, inflation, employment, interest rates.",
+      "normalized_text": "Overlay astro cycles with GDP, inflation, employment, interest rates.",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "This is an unvalidated source proposal. It cannot generate trading instructions, position sizing, forecasts, or causal claims."
+      ],
+      "extensions": {
+        "technique_id": "29_economic_indicators_integration",
+        "source_fields": {
+          "definition": "Overlay astro cycles with GDP, inflation, employment, interest rates.",
+          "delineation": "Correlate with planetary aspects (e.g., Saturn with inflation).",
+          "weighting": "7/10"
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_8f5fed2d984f0efa9544",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "financial_technique_proposal",
+      "subject_path": "technique:30_crypto_specific",
+      "raw_text": "Crypto has high sensitivity to Uranus, Neptune.",
+      "normalized_text": "Crypto has high sensitivity to Uranus, Neptune.",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "This is an unvalidated source proposal. It cannot generate trading instructions, position sizing, forecasts, or causal claims."
+      ],
+      "extensions": {
+        "technique_id": "30_crypto_specific",
+        "source_fields": {
+          "definition": "Crypto has high sensitivity to Uranus, Neptune.",
+          "delineation": "Focus on Uranus, Neptune, Pluto aspects, and 2nd/8th in natal/SR.",
+          "weighting": "8/10 for crypto-focused clients."
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_8b256b0ce83bd957e6a8",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "financial_technique_proposal",
+      "subject_path": "technique:31_sector_rotation_advanced",
+      "raw_text": "Map signs/elements to sectors.",
+      "normalized_text": "Map signs/elements to sectors.",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "This is an unvalidated source proposal. It cannot generate trading instructions, position sizing, forecasts, or causal claims."
+      ],
+      "extensions": {
+        "technique_id": "31_sector_rotation_advanced",
+        "source_fields": {
+          "definition": "Map signs/elements to sectors.",
+          "delineation": "Ingress and transits to indicate sector preferences.",
+          "weighting": "6/10"
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_1a760d2c775f36d6b01d",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "financial_technique_proposal",
+      "subject_path": "technique:32_planetary_hours_and_days",
+      "raw_text": "Daily timing for actions.",
+      "normalized_text": "Daily timing for actions.",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "This is an unvalidated source proposal. It cannot generate trading instructions, position sizing, forecasts, or causal claims."
+      ],
+      "extensions": {
+        "technique_id": "32_planetary_hours_and_days",
+        "source_fields": {
+          "definition": "Daily timing for actions.",
+          "delineation": "Use planetary day/hour for initiation.",
+          "weighting": "4/10"
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_373945b7961dfd809775",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "financial_technique_proposal",
+      "subject_path": "technique:33_eclipse_saros_lifetime",
+      "raw_text": "Saros series have long-term financial correlations.",
+      "normalized_text": "Saros series have long-term financial correlations.",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "This is an unvalidated source proposal. It cannot generate trading instructions, position sizing, forecasts, or causal claims."
+      ],
+      "extensions": {
+        "technique_id": "33_eclipse_saros_lifetime",
+        "source_fields": {
+          "definition": "Saros series have long-term financial correlations.",
+          "delineation": "Track which Saros series affect specific assets.",
+          "weighting": "5/10"
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_4bbc24ba721fe24c8a29",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "financial_technique_proposal",
+      "subject_path": "technique:34_parans",
+      "raw_text": "Stars rising/setting with planets at a location.",
+      "normalized_text": "Stars rising/setting with planets at a location.",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "This is an unvalidated source proposal. It cannot generate trading instructions, position sizing, forecasts, or causal claims."
+      ],
+      "extensions": {
+        "technique_id": "34_parans",
+        "source_fields": {
+          "definition": "Stars rising/setting with planets at a location.",
+          "delineation": "Use for relocation and event timing.",
+          "weighting": "4/10"
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_c65ad17c465ca8455e62",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "financial_technique_proposal",
+      "subject_path": "technique:35_helical_rising",
+      "raw_text": "First visible rising of a star.",
+      "normalized_text": "First visible rising of a star.",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "This is an unvalidated source proposal. It cannot generate trading instructions, position sizing, forecasts, or causal claims."
+      ],
+      "extensions": {
+        "technique_id": "35_helical_rising",
+        "source_fields": {
+          "definition": "First visible rising of a star.",
+          "delineation": "Used in ancient astrology for agriculture; for commodities.",
+          "weighting": "4/10"
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_323c174409c09ae8ab17",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "financial_technique_proposal",
+      "subject_path": "technique:36_astrometeorology",
+      "raw_text": "Planetary influences on weather and commodities.",
+      "normalized_text": "Planetary influences on weather and commodities.",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "This is an unvalidated source proposal. It cannot generate trading instructions, position sizing, forecasts, or causal claims."
+      ],
+      "extensions": {
+        "technique_id": "36_astrometeorology",
+        "source_fields": {
+          "definition": "Planetary influences on weather and commodities.",
+          "delineation": "Correlate with agricultural prices.",
+          "weighting": "5/10"
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_9ec48f995f249174a56c",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "financial_technique_proposal",
+      "subject_path": "technique:37_esoteric_astrology",
+      "raw_text": "Ray energies and spiritual cycles.",
+      "normalized_text": "Ray energies and spiritual cycles.",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "This is an unvalidated source proposal. It cannot generate trading instructions, position sizing, forecasts, or causal claims."
+      ],
+      "extensions": {
+        "technique_id": "37_esoteric_astrology",
+        "source_fields": {
+          "definition": "Ray energies and spiritual cycles.",
+          "delineation": "Apply to long-term personal growth.",
+          "weighting": "3/10"
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_4540901236b0e1cc595f",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "financial_technique_proposal",
+      "subject_path": "technique:38_chart_networks",
+      "raw_text": "Multi-chart synthesis: natal, composite, Davison, harmonic, etc.",
+      "normalized_text": "Multi-chart synthesis: natal, composite, Davison, harmonic, etc.",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "This is an unvalidated source proposal. It cannot generate trading instructions, position sizing, forecasts, or causal claims."
+      ],
+      "extensions": {
+        "technique_id": "38_chart_networks",
+        "source_fields": {
+          "definition": "Multi-chart synthesis: natal, composite, Davison, harmonic, etc.",
+          "delineation": "Weighted integration of all charts.",
+          "weighting": "9/10 (overarching)"
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_dfdceea682b27097c66c",
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "record_type": "economic_cycle_reference",
+      "subject_path": "economic_cycles",
+      "raw_text": "{\"kitchin\": \"3-5 years\", \"juglar\": \"7-11 years\", \"kuznets\": \"15-25 years (infrastructure)\", \"kondratiev\": \"50-60 years\"}",
+      "normalized_text": "{\"kitchin\": \"3-5 years\", \"juglar\": \"7-11 years\", \"kuznets\": \"15-25 years (infrastructure)\", \"kondratiev\": \"50-60 years\"}",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "Economic-cycle statements are preserved as source proposals and require a registered research protocol before use."
+      ],
+      "source_ids": [
+        "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt"
+      ]
+    },
+    {
+      "record_id": "usr_6c89ae39ff3793b7ad88",
+      "source_id": "openastro:user-upload:financialastrologyplanetarycycles-detailedexploration-txt",
+      "source_sha256": "1b05c1a7a360bec0fd60b980d45376a2e7e7348793287b37a45a7743c09fae30",
+      "source_path": "data/sources/2026-08-user-uploads/raw/FinancialAstrologyPlanetaryCycles_DetailedExploration.txt",
+      "record_type": "financial_cycle_source_proposal",
+      "subject_path": "heading:major-planetary-cycles-in-financial-astrology",
+      "raw_text": "```json { \"cycles_overview\": \"Outer planets drive long-term trends; inner planets add short-term triggers. Cycles are verified via multiple ephemerides for accuracy.\", \"key_cycles\": [ { \"cycle\": \"Jupiter-Saturn Cycle (~20 years)\", \"financial_significance\": \"Economic structure and growth cycles. Conjunctions initiate new paradigms; aspects mark phases of expansion vs. contraction.\", \"market_examples\": \"2020 conjunction: Shift toward tech/digital assets, post-crisis recovery rallies.\", \"technical_integration\": \"Aligns with supercycle highs/lows, 200-week MAs, major Fibonacci turns.\", \"life_event_link\": \"Career/financial planning horizons, investment portfolio restructuring.\" }, { \"cycle\": \"Jupiter-Uranus Cycle (~14 years)\", \"financial_significance\": \"Innovation booms, sudden market moves, new technologies or asset classes.\", \"market_examples\": \"Tech rallies, crypto surges during favorable aspects.\", \"technical_integration\": \"Volatility spikes, gap openings, breakout patterns on RSI/MACD.\", \"life_event_link\": \"Unexpected opportunities, entrepreneurial ventures, or windfalls.\" }, { \"cycle\": \"Saturn-Uranus Cycle (~45 years)\", \"financial_significance\": \"Tension between tradition and disruption; regulatory changes, market structure evolution.\", \"market_examples\": \"Periods of volatility followed by new rules or systems.\", \"technical_integration\": \"Range expansions, trend reversals at key support/resistance.\", \"life_event_link\": \"Balancing stability with adaptation in finances.\" }, { \"cycle\": \"Jupiter-Neptune Cycle (~13 years)\", \"financial_significance\": \"Speculative bubbles, inflation, or visionary investments (e.g., green tech, crypto).\", \"market_examples\": \"Optimism-driven rallies that may require Saturn reality checks.\", \"technical_integration\": \"Overbought conditions, volume spikes without sustained follow-through.\", \"life_event_link\": \"Investment illusions vs. realistic growth.\" }, { \"cycle\": \"Saturn-Pluto Cycle (~33-38 years)\", \"financial_significance\": \"Major economic resets, debt cycles, power shifts in global finance.\", \"market_examples\": \"2008-2020 period correlations with crises and rebuilding.\", \"technical_integration\": \"Long-term bottoms, capitulation volum",
+      "normalized_text": "```json { \"cycles_overview\": \"Outer planets drive long-term trends; inner planets add short-term triggers. Cycles are verified via multiple ephemerides for accuracy.\", \"key_cycles\": [ { \"cycle\": \"Jupiter-Saturn Cycle (~20 years)\", \"financial_significance\": \"Economic structure and growth cycles. Conjunctions initiate new paradigms; aspects mark phases of expansion vs. contraction.\", \"market_examples\": \"2020 conjunction: Shift toward tech/digital assets, post-crisis recovery rallies.\", \"technical_integration\": \"Aligns with supercycle highs/lows, 200-week MAs, major Fibonacci turns.\", \"life_event_link\": \"Career/financial planning horizons, investment portfolio restructuring.\" }, { \"cycle\": \"Jupiter-Uranus Cycle (~14 years)\", \"financial_significance\": \"Innovation booms, sudden market moves, new technologies or asset classes.\", \"market_examples\": \"Tech rallies, crypto surges during favorable aspects.\", \"technical_integration\": \"Volatility spikes, gap openings, breakout patterns on RSI/MACD.\", \"life_event_link\": \"Unexpected opportunities, entrepreneurial ventures, or windfalls.\" }, { \"cycle\": \"Saturn-Uranus Cycle (~45 years)\", \"financial_significance\": \"Tension between tradition and disruption; regulatory changes, market structure evolution.\", \"market_examples\": \"Periods of volatility followed by new rules or systems.\", \"technical_integration\": \"Range expansions, trend reversals at key support/resistance.\", \"life_event_link\": \"Balancing stability with adaptation in finances.\" }, { \"cycle\": \"Jupiter-Neptune Cycle (~13 years)\", \"financial_significance\": \"Speculative bubbles, inflation, or visionary investments (e.g., green tech, crypto).\", \"market_examples\": \"Optimism-driven rallies that may require Saturn reality checks.\", \"technical_integration\": \"Overbought conditions, volume spikes without sustained follow-through.\", \"life_event_link\": \"Investment illusions vs. realistic growth.\" }, { \"cycle\": \"Saturn-Pluto Cycle (~33-38 years)\", \"financial_significance\": \"Major economic resets, debt cycles, power shifts in global finance.\", \"market_examples\": \"2008-2020 period correlations with crises and rebuilding.\", \"technical_integration\": \"Long-term bottoms, capitulation volum",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "Financial-cycle statements are unvalidated source proposals. They are research-only and cannot generate advice, signals, position sizing, or causal claims."
+      ],
+      "extensions": {
+        "heading": "Major Planetary Cycles in Financial Astrology",
+        "line_start": 7,
+        "line_end": 64
+      },
+      "source_ids": [
+        "openastro:user-upload:financialastrologyplanetarycycles-detailedexploration-txt"
+      ]
+    },
+    {
+      "record_id": "usr_6bc64b14b56548f7f92b",
+      "source_id": "openastro:user-upload:financialastrologyplanetarycycles-detailedexploration-txt",
+      "source_sha256": "1b05c1a7a360bec0fd60b980d45376a2e7e7348793287b37a45a7743c09fae30",
+      "source_path": "data/sources/2026-08-user-uploads/raw/FinancialAstrologyPlanetaryCycles_DetailedExploration.txt",
+      "record_type": "financial_cycle_source_proposal",
+      "subject_path": "heading:application-to-stocks-crypto-and-broader-markets",
+      "raw_text": "- **Stocks**: Jupiter cycles favor growth sectors; Saturn cycles emphasize value and defensives. Use for quarterly/annual portfolio reviews. - **Crypto**: Highly sensitive to Uranus/Jupiter aspects due to its innovative, speculative nature. - **Commodities/Currencies**: Mars and Venus cycles influence shorter moves; outer planet cycles for secular trends. - **Personal Finance**: Progressed charts and transits to personal financial houses indicate optimal timing for major decisions (investing, debt management, retirement planning).",
+      "normalized_text": "- **Stocks**: Jupiter cycles favor growth sectors; Saturn cycles emphasize value and defensives. Use for quarterly/annual portfolio reviews. - **Crypto**: Highly sensitive to Uranus/Jupiter aspects due to its innovative, speculative nature. - **Commodities/Currencies**: Mars and Venus cycles influence shorter moves; outer planet cycles for secular trends. - **Personal Finance**: Progressed charts and transits to personal financial houses indicate optimal timing for major decisions (investing, debt management, retirement planning).",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "Financial-cycle statements are unvalidated source proposals. They are research-only and cannot generate advice, signals, position sizing, or causal claims."
+      ],
+      "extensions": {
+        "heading": "Application to Stocks, Crypto, and Broader Markets",
+        "line_start": 65,
+        "line_end": 71
+      },
+      "source_ids": [
+        "openastro:user-upload:financialastrologyplanetarycycles-detailedexploration-txt"
+      ]
+    },
+    {
+      "record_id": "usr_fd23e2b02c0b9d9ab082",
+      "source_id": "openastro:user-upload:financialastrologyplanetarycycles-detailedexploration-txt",
+      "source_sha256": "1b05c1a7a360bec0fd60b980d45376a2e7e7348793287b37a45a7743c09fae30",
+      "source_path": "data/sources/2026-08-user-uploads/raw/FinancialAstrologyPlanetaryCycles_DetailedExploration.txt",
+      "record_type": "financial_cycle_source_proposal",
+      "subject_path": "heading:practical-considerations",
+      "raw_text": "- **Strengths**: Cycles excel at identifying probable windows of opportunity or caution rather than precise prices. - **Integration Best Practices**: Use planetary cycles for bias (bullish/bearish/neutral), technical indicators for confirmation and execution. - **Mid-2026 Context**: Ongoing cycles (post-2020 Jupiter-Saturn) continue to influence innovation-driven markets alongside any active outer planet aspects. For targeted analysis, provide: - Specific cycle or aspect (e.g., current Jupiter transit). - Market/asset (stock, index, crypto). - Personal birth data for individualized cycle overlays. - Date range of interest. Which planetary cycle, market, or combination would you like to examine in greater depth?",
+      "normalized_text": "- **Strengths**: Cycles excel at identifying probable windows of opportunity or caution rather than precise prices. - **Integration Best Practices**: Use planetary cycles for bias (bullish/bearish/neutral), technical indicators for confirmation and execution. - **Mid-2026 Context**: Ongoing cycles (post-2020 Jupiter-Saturn) continue to influence innovation-driven markets alongside any active outer planet aspects. For targeted analysis, provide: - Specific cycle or aspect (e.g., current Jupiter transit). - Market/asset (stock, index, crypto). - Personal birth data for individualized cycle overlays. - Date range of interest. Which planetary cycle, market, or combination would you like to examine in greater depth?",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "limitations": [
+        "Financial-cycle statements are unvalidated source proposals. They are research-only and cannot generate advice, signals, position sizing, or causal claims."
+      ],
+      "extensions": {
+        "heading": "Practical Considerations",
+        "line_start": 72,
+        "line_end": 85
+      },
+      "source_ids": [
+        "openastro:user-upload:financialastrologyplanetarycycles-detailedexploration-txt"
+      ]
+    },
+    {
+      "record_id": "usr_5fd2e27a4361971c3e73",
+      "source_id": "openastro:user-upload:historicaldata-1785490203238-csv",
+      "source_sha256": "694868593351dcf4af75a96d53737ed79006cc3ea8478df399db57cc56981c90",
+      "source_path": "data/sources/2026-08-user-uploads/raw/HistoricalData_1785490203238.csv",
+      "record_type": "unverified_ohlcv_dataset_profile",
+      "subject_path": "dataset_profile",
+      "raw_text": "User-supplied CSV has 33 rows with columns ['Date', 'Close/Last', 'Volume', 'Open', 'High', 'Low'].",
+      "normalized_text": "User-supplied CSV has 33 rows with columns ['Date', 'Close/Last', 'Volume', 'Open', 'High', 'Low'].",
+      "tradition_scope": [
+        "financial_astrology"
+      ],
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "limitations": [
+        "Instrument identifier, exchange, price-adjustment basis, timezone, source rights, and historical availability are not established.",
+        "This file is not registered as an active research observation dataset and does not change observations_acquired in the research-layer manifest."
+      ],
+      "extensions": {
+        "row_count": 33,
+        "columns": [
+          "Date",
+          "Close/Last",
+          "Volume",
+          "Open",
+          "High",
+          "Low"
+        ],
+        "first_date_as_supplied": "07/30/2026",
+        "last_date_as_supplied": "06/12/2026",
+        "research_dataset_status": "unverified_candidate_not_acquired"
+      },
+      "source_ids": [
+        "openastro:user-upload:historicaldata-1785490203238-csv"
+      ]
+    }
+  ],
+  "research_layer_status": "configuration_and_method_records_only",
+  "observations_acquired": false,
+  "labels_acquired": false,
+  "policy": "Financial materials are retained as source proposals, static code metadata, or unverified candidate data. They do not alter the research manifest, execute a backtest, establish a valid observation dataset, or authorize signals, forecasts, position sizing, or advice."
+}

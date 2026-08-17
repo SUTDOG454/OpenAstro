@@ -1,0 +1,2334 @@
+{
+  "schema_version": "1.0.0",
+  "status": "merged_with_review_gaps",
+  "generated_at": "2026-08-17T07:04:44.007094+00:00",
+  "source_inventory_ref": "data/extractions/latest-afe/source_inventory.json",
+  "normalized_records_ref": "data/extractions/latest-afe/normalized_records.json",
+  "counts": {
+    "sources": 12,
+    "records": 82,
+    "arabic_parts": 3,
+    "transit_strength": 1,
+    "house_affinity": 2,
+    "midpoint_activations": 3,
+    "indicators": 50,
+    "signals": 15,
+    "formula_references": 8
+  },
+  "records_by_type": {
+    "arabic_part": [
+      {
+        "record_id": "arabic_part:part_of_fortune",
+        "canonical_type": "arabic_part",
+        "canonical_id": "arabic_part_part_of_fortune",
+        "source_ids": [
+          "user_message:inline_records:latest"
+        ],
+        "status": "source_derived",
+        "raw_value": {
+          "longitude": 120.45,
+          "sign": 3,
+          "house": 4,
+          "interpretation": "Life, body, soul, wealth, reputation, all things"
+        },
+        "normalized_value": {
+          "longitude": 120.45,
+          "sign": 3,
+          "house": 4,
+          "interpretation": "Life, body, soul, wealth, reputation, all things",
+          "part_id": "part_of_fortune",
+          "longitude_degrees": 120.45,
+          "sign_index": 3,
+          "house_number": 4,
+          "evidence_class": "computed_input_provided",
+          "interpretation_status": "source_derived_methodology_bound"
+        },
+        "transformation": "normalize longitude/sign/house field names; preserve supplied interpretation",
+        "limitations": []
+      },
+      {
+        "record_id": "arabic_part:part_of_life",
+        "canonical_type": "arabic_part",
+        "canonical_id": "arabic_part_part_of_life",
+        "source_ids": [
+          "user_message:inline_records:latest"
+        ],
+        "status": "source_derived",
+        "raw_value": {
+          "longitude": 200.12,
+          "sign": 6,
+          "house": 10,
+          "interpretation": "Natural life, body, sustenance, longevity"
+        },
+        "normalized_value": {
+          "longitude": 200.12,
+          "sign": 6,
+          "house": 10,
+          "interpretation": "Natural life, body, sustenance, longevity",
+          "part_id": "part_of_life",
+          "longitude_degrees": 200.12,
+          "sign_index": 6,
+          "house_number": 10,
+          "evidence_class": "computed_input_provided",
+          "interpretation_status": "source_derived_methodology_bound"
+        },
+        "transformation": "normalize longitude/sign/house field names; preserve supplied interpretation",
+        "limitations": []
+      },
+      {
+        "record_id": "arabic_part:part_of_marriage",
+        "canonical_type": "arabic_part",
+        "canonical_id": "arabic_part_part_of_marriage",
+        "source_ids": [
+          "user_message:inline_records:latest"
+        ],
+        "status": "source_derived",
+        "raw_value": {
+          "longitude": 15.78,
+          "sign": 0,
+          "house": 7,
+          "interpretation": "Long-lasting marriage, marriage quality and fortune"
+        },
+        "normalized_value": {
+          "longitude": 15.78,
+          "sign": 0,
+          "house": 7,
+          "interpretation": "Long-lasting marriage, marriage quality and fortune",
+          "part_id": "part_of_marriage",
+          "longitude_degrees": 15.78,
+          "sign_index": 0,
+          "house_number": 7,
+          "evidence_class": "computed_input_provided",
+          "interpretation_status": "source_derived_methodology_bound"
+        },
+        "transformation": "normalize longitude/sign/house field names; preserve supplied interpretation",
+        "limitations": []
+      }
+    ],
+    "transit_strength": [
+      {
+        "record_id": "transit_strength:jupiter_sun_trine",
+        "canonical_type": "transit_strength",
+        "canonical_id": "transit_strength_jupiter_sun_trine",
+        "source_ids": [
+          "user_message:inline_records:latest"
+        ],
+        "status": "methodology_bound",
+        "raw_value": {
+          "transit_planet": "Jupiter",
+          "natal_planet": "Sun",
+          "aspect": "trine",
+          "orb": 2.5,
+          "dignity_score": 3,
+          "final_dispositor": "Jupiter",
+          "dispositor_score": 3,
+          "speed_modifier": 1.2,
+          "house_modifier": 1.5,
+          "avashta": "awake",
+          "avashta_modifier": 1.5,
+          "orb_modifier": 1.0,
+          "aspect_modifier": 1.2,
+          "strength": 9.72,
+          "active": true
+        },
+        "normalized_value": {
+          "transit_planet": "Jupiter",
+          "natal_planet": "Sun",
+          "aspect": "trine",
+          "orb": 2.5,
+          "dignity_score": 3,
+          "final_dispositor": "Jupiter",
+          "dispositor_score": 3,
+          "speed_modifier": 1.2,
+          "house_modifier": 1.5,
+          "avashta": "awake",
+          "avashta_modifier": 1.5,
+          "orb_modifier": 1.0,
+          "aspect_modifier": 1.2,
+          "strength": 9.72,
+          "active": true,
+          "orb_degrees": 2.5,
+          "strength_status": "source_derived_methodology_bound",
+          "active_status": true
+        },
+        "transformation": "normalize orb and active fields; retain supplied score and modifiers",
+        "limitations": [
+          "Speed modifier is source-derived and not an ephemeris measurement in this record."
+        ]
+      }
+    ],
+    "house_affinity": [
+      {
+        "record_id": "house_affinity:sun_5",
+        "canonical_type": "house_affinity",
+        "canonical_id": "house_affinity_sun_5",
+        "source_ids": [
+          "user_message:inline_records:latest"
+        ],
+        "status": "methodology_bound",
+        "raw_value": {
+          "house": 5,
+          "bonus": 1.5,
+          "interpretation": "Identity, creation, status expression amplified"
+        },
+        "normalized_value": {
+          "house": 5,
+          "bonus": 1.5,
+          "interpretation": "Identity, creation, status expression amplified",
+          "planet": "Sun",
+          "house_number": 5,
+          "bonus_score": 1.5
+        },
+        "transformation": "normalize house and bonus fields",
+        "limitations": []
+      },
+      {
+        "record_id": "house_affinity:moon_4",
+        "canonical_type": "house_affinity",
+        "canonical_id": "house_affinity_moon_4",
+        "source_ids": [
+          "user_message:inline_records:latest"
+        ],
+        "status": "methodology_bound",
+        "raw_value": {
+          "house": 4,
+          "bonus": 1.5,
+          "interpretation": "Resources, home/family matters flow easily"
+        },
+        "normalized_value": {
+          "house": 4,
+          "bonus": 1.5,
+          "interpretation": "Resources, home/family matters flow easily",
+          "planet": "Moon",
+          "house_number": 4,
+          "bonus_score": 1.5
+        },
+        "transformation": "normalize house and bonus fields",
+        "limitations": []
+      }
+    ],
+    "midpoint_activation": [
+      {
+        "record_id": "midpoint_activation:jupiter_sun_moon_120.45",
+        "canonical_type": "midpoint_activation",
+        "canonical_id": "midpoint_activation_jupiter_sun_moon_120_45",
+        "source_ids": [
+          "user_message:inline_records:latest"
+        ],
+        "status": "methodology_bound",
+        "raw_value": {
+          "activating_planet": "Jupiter",
+          "midpoint": "Sun/Moon",
+          "longitude": 120.45,
+          "orb": 0.85,
+          "interpretation": "Physical and emotional fulfilment. An essentially positive outlook. Optimism, confidence and resilience. An abundance of creative and procreative energy. Materialistic inclinations. Accumulating assets. Prosperity."
+        },
+        "normalized_value": {
+          "activating_planet": "Jupiter",
+          "midpoint": "Sun/Moon",
+          "longitude": 120.45,
+          "orb": 0.85,
+          "interpretation": "Physical and emotional fulfilment. An essentially positive outlook. Optimism, confidence and resilience. An abundance of creative and procreative energy. Materialistic inclinations. Accumulating assets. Prosperity.",
+          "axis": "Sun/Moon",
+          "activator": "Jupiter",
+          "longitude_degrees": 120.45,
+          "orb_degrees": 0.85,
+          "interpretation_status": "source_derived_methodology_bound"
+        },
+        "transformation": "normalize midpoint axis, activator, longitude, and orb",
+        "limitations": []
+      },
+      {
+        "record_id": "midpoint_activation:saturn_venus_mars_200.12",
+        "canonical_type": "midpoint_activation",
+        "canonical_id": "midpoint_activation_saturn_venus_mars_200_12",
+        "source_ids": [
+          "user_message:inline_records:latest"
+        ],
+        "status": "methodology_bound",
+        "raw_value": {
+          "activating_planet": "Saturn",
+          "midpoint": "Venus/Mars",
+          "longitude": 200.12,
+          "orb": 0.42,
+          "interpretation": "Frustrated or repressed passions. Challenges and difficulties within love life. Controlling influences within sexual relationships. A risk of disloyalty. Separative influences."
+        },
+        "normalized_value": {
+          "activating_planet": "Saturn",
+          "midpoint": "Venus/Mars",
+          "longitude": 200.12,
+          "orb": 0.42,
+          "interpretation": "Frustrated or repressed passions. Challenges and difficulties within love life. Controlling influences within sexual relationships. A risk of disloyalty. Separative influences.",
+          "axis": "Venus/Mars",
+          "activator": "Saturn",
+          "longitude_degrees": 200.12,
+          "orb_degrees": 0.42,
+          "interpretation_status": "source_derived_methodology_bound"
+        },
+        "transformation": "normalize midpoint axis, activator, longitude, and orb",
+        "limitations": []
+      },
+      {
+        "record_id": "midpoint_activation:uranus_sun_moon_300.78",
+        "canonical_type": "midpoint_activation",
+        "canonical_id": "midpoint_activation_uranus_sun_moon_300_78",
+        "source_ids": [
+          "user_message:inline_records:latest"
+        ],
+        "status": "methodology_bound",
+        "raw_value": {
+          "activating_planet": "Uranus",
+          "midpoint": "Sun/Moon",
+          "longitude": 300.78,
+          "orb": 1.23,
+          "interpretation": "Thriving on change and stimulation. Rebellious traits. Tensions. Instability. Unpredictable behaviour. Agitation and irritability. Sudden departures or separations."
+        },
+        "normalized_value": {
+          "activating_planet": "Uranus",
+          "midpoint": "Sun/Moon",
+          "longitude": 300.78,
+          "orb": 1.23,
+          "interpretation": "Thriving on change and stimulation. Rebellious traits. Tensions. Instability. Unpredictable behaviour. Agitation and irritability. Sudden departures or separations.",
+          "axis": "Sun/Moon",
+          "activator": "Uranus",
+          "longitude_degrees": 300.78,
+          "orb_degrees": 1.23,
+          "interpretation_status": "source_derived_methodology_bound"
+        },
+        "transformation": "normalize midpoint axis, activator, longitude, and orb",
+        "limitations": []
+      }
+    ],
+    "indicator_definition": [
+      {
+        "record_id": "indicator:fred_macro:gdp_qoq",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_fred_macro_gdp_qoq",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "fred_macro",
+          "field": "gdp_qoq",
+          "provider_path": "GDPC1.value"
+        },
+        "normalized_value": {
+          "source_id": "fred_macro",
+          "field": "gdp_qoq",
+          "canonical_path": "macro.gdp_growth",
+          "quality": {
+            "source_weight": 0.95,
+            "max_age_days": 90
+          },
+          "schedule": "daily"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:fred_macro:cpi_yoy",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_fred_macro_cpi_yoy",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "fred_macro",
+          "field": "cpi_yoy",
+          "provider_path": "CPIAUCSL.value"
+        },
+        "normalized_value": {
+          "source_id": "fred_macro",
+          "field": "cpi_yoy",
+          "canonical_path": "macro.cpi_inflation",
+          "quality": {
+            "source_weight": 0.95,
+            "max_age_days": 90
+          },
+          "schedule": "daily"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:fred_macro:fed_funds",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_fred_macro_fed_funds",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "fred_macro",
+          "field": "fed_funds",
+          "provider_path": "FEDFUNDS.value"
+        },
+        "normalized_value": {
+          "source_id": "fred_macro",
+          "field": "fed_funds",
+          "canonical_path": "macro.fed_funds_rate",
+          "quality": {
+            "source_weight": 0.95,
+            "max_age_days": 90
+          },
+          "schedule": "daily"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:fred_macro:unemp_rate",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_fred_macro_unemp_rate",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "fred_macro",
+          "field": "unemp_rate",
+          "provider_path": "UNRATE.value"
+        },
+        "normalized_value": {
+          "source_id": "fred_macro",
+          "field": "unemp_rate",
+          "canonical_path": "macro.unemployment",
+          "quality": {
+            "source_weight": 0.95,
+            "max_age_days": 90
+          },
+          "schedule": "daily"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:fred_macro:consumer_sentiment",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_fred_macro_consumer_sentiment",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "fred_macro",
+          "field": "consumer_sentiment",
+          "provider_path": "UMCSENT.value"
+        },
+        "normalized_value": {
+          "source_id": "fred_macro",
+          "field": "consumer_sentiment",
+          "canonical_path": "macro.consumer_sentiment",
+          "quality": {
+            "source_weight": 0.95,
+            "max_age_days": 90
+          },
+          "schedule": "daily"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:fred_macro:payrolls",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_fred_macro_payrolls",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "fred_macro",
+          "field": "payrolls",
+          "provider_path": "PAYEMS.value"
+        },
+        "normalized_value": {
+          "source_id": "fred_macro",
+          "field": "payrolls",
+          "canonical_path": "macro.payrolls",
+          "quality": {
+            "source_weight": 0.95,
+            "max_age_days": 90
+          },
+          "schedule": "daily"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:yfinance_equity:adj_close",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_yfinance_equity_adj_close",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "yfinance_equity",
+          "field": "adj_close",
+          "provider_path": "chart.result.0.meta.regularMarketPrice"
+        },
+        "normalized_value": {
+          "source_id": "yfinance_equity",
+          "field": "adj_close",
+          "canonical_path": "market.price",
+          "quality": {
+            "source_weight": 0.85,
+            "max_age_days": 1
+          },
+          "schedule": "realtime"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:yfinance_equity:volume",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_yfinance_equity_volume",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "yfinance_equity",
+          "field": "volume",
+          "provider_path": "chart.result.0.meta.regularMarketVolume"
+        },
+        "normalized_value": {
+          "source_id": "yfinance_equity",
+          "field": "volume",
+          "canonical_path": "extensions.volume",
+          "quality": {
+            "source_weight": 0.85,
+            "max_age_days": 1
+          },
+          "schedule": "realtime"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:yfinance_equity:returns",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_yfinance_equity_returns",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "yfinance_equity",
+          "field": "returns",
+          "provider_path": "daily_return"
+        },
+        "normalized_value": {
+          "source_id": "yfinance_equity",
+          "field": "returns",
+          "canonical_path": "extensions.returns",
+          "quality": {
+            "source_weight": 0.85,
+            "max_age_days": 1
+          },
+          "schedule": "realtime"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:yfinance_equity:volatility",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_yfinance_equity_volatility",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "yfinance_equity",
+          "field": "volatility",
+          "provider_path": "annualized_volatility"
+        },
+        "normalized_value": {
+          "source_id": "yfinance_equity",
+          "field": "volatility",
+          "canonical_path": "risk.volatility_annual",
+          "quality": {
+            "source_weight": 0.85,
+            "max_age_days": 1
+          },
+          "schedule": "realtime"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:fmp_fundamentals:net_margin",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_fmp_fundamentals_net_margin",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "fmp_fundamentals",
+          "field": "net_margin",
+          "provider_path": "profitability_ratios.netMargin"
+        },
+        "normalized_value": {
+          "source_id": "fmp_fundamentals",
+          "field": "net_margin",
+          "canonical_path": "profitability.net_margin",
+          "quality": {
+            "source_weight": 0.8,
+            "max_age_days": 30
+          },
+          "schedule": "weekly"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:fmp_fundamentals:gearing",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_fmp_fundamentals_gearing",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "fmp_fundamentals",
+          "field": "gearing",
+          "provider_path": "debt_ratios.gearing"
+        },
+        "normalized_value": {
+          "source_id": "fmp_fundamentals",
+          "field": "gearing",
+          "canonical_path": "risk.gearing",
+          "quality": {
+            "source_weight": 0.8,
+            "max_age_days": 30
+          },
+          "schedule": "weekly"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:fmp_fundamentals:fixed_cost_ratio",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_fmp_fundamentals_fixed_cost_ratio",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "fmp_fundamentals",
+          "field": "fixed_cost_ratio",
+          "provider_path": "operating_ratios.fixedCostRatio"
+        },
+        "normalized_value": {
+          "source_id": "fmp_fundamentals",
+          "field": "fixed_cost_ratio",
+          "canonical_path": "risk.fixed_cost",
+          "quality": {
+            "source_weight": 0.8,
+            "max_age_days": 30
+          },
+          "schedule": "weekly"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:fmp_fundamentals:irr",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_fmp_fundamentals_irr",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "fmp_fundamentals",
+          "field": "irr",
+          "provider_path": "investing_ratios.irr"
+        },
+        "normalized_value": {
+          "source_id": "fmp_fundamentals",
+          "field": "irr",
+          "canonical_path": "profitability.irr",
+          "quality": {
+            "source_weight": 0.8,
+            "max_age_days": 30
+          },
+          "schedule": "weekly"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:fmp_fundamentals:revenue",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_fmp_fundamentals_revenue",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "fmp_fundamentals",
+          "field": "revenue",
+          "provider_path": "income_statement.revenue"
+        },
+        "normalized_value": {
+          "source_id": "fmp_fundamentals",
+          "field": "revenue",
+          "canonical_path": "company_research.revenue",
+          "quality": {
+            "source_weight": 0.8,
+            "max_age_days": 30
+          },
+          "schedule": "weekly"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:alpha_vantage_technical:rsi",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_alpha_vantage_technical_rsi",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "alpha_vantage_technical",
+          "field": "rsi",
+          "provider_path": "Technical Analysis: RSI.rsi"
+        },
+        "normalized_value": {
+          "source_id": "alpha_vantage_technical",
+          "field": "rsi",
+          "canonical_path": "technical.rsi_14",
+          "quality": {
+            "source_weight": 0.75,
+            "max_age_days": 2
+          },
+          "schedule": "daily"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:alpha_vantage_macd:macd",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_alpha_vantage_macd_macd",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "alpha_vantage_macd",
+          "field": "macd",
+          "provider_path": "Technical Analysis: MACD.MACD"
+        },
+        "normalized_value": {
+          "source_id": "alpha_vantage_macd",
+          "field": "macd",
+          "canonical_path": "technical.macd",
+          "quality": {
+            "source_weight": 0.75,
+            "max_age_days": 2
+          },
+          "schedule": "daily"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:alpha_vantage_macd:macd_signal",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_alpha_vantage_macd_macd_signal",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "alpha_vantage_macd",
+          "field": "macd_signal",
+          "provider_path": "Technical Analysis: MACD.MACD_Signal"
+        },
+        "normalized_value": {
+          "source_id": "alpha_vantage_macd",
+          "field": "macd_signal",
+          "canonical_path": "technical.macd_signal",
+          "quality": {
+            "source_weight": 0.75,
+            "max_age_days": 2
+          },
+          "schedule": "daily"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:alpha_vantage_macd:macd_hist",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_alpha_vantage_macd_macd_hist",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "alpha_vantage_macd",
+          "field": "macd_hist",
+          "provider_path": "Technical Analysis: MACD.MACD_Hist"
+        },
+        "normalized_value": {
+          "source_id": "alpha_vantage_macd",
+          "field": "macd_hist",
+          "canonical_path": "technical.macd_hist",
+          "quality": {
+            "source_weight": 0.75,
+            "max_age_days": 2
+          },
+          "schedule": "daily"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:alpha_vantage_bollinger:bb_upper",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_alpha_vantage_bollinger_bb_upper",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "alpha_vantage_bollinger",
+          "field": "bb_upper",
+          "provider_path": "Technical Analysis: BBANDS.Real Upper Band"
+        },
+        "normalized_value": {
+          "source_id": "alpha_vantage_bollinger",
+          "field": "bb_upper",
+          "canonical_path": "technical.bb_upper",
+          "quality": {
+            "source_weight": 0.75,
+            "max_age_days": 2
+          },
+          "schedule": "daily"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:alpha_vantage_bollinger:bb_middle",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_alpha_vantage_bollinger_bb_middle",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "alpha_vantage_bollinger",
+          "field": "bb_middle",
+          "provider_path": "Technical Analysis: BBANDS.Real Middle Band"
+        },
+        "normalized_value": {
+          "source_id": "alpha_vantage_bollinger",
+          "field": "bb_middle",
+          "canonical_path": "technical.bb_middle",
+          "quality": {
+            "source_weight": 0.75,
+            "max_age_days": 2
+          },
+          "schedule": "daily"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:alpha_vantage_bollinger:bb_lower",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_alpha_vantage_bollinger_bb_lower",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "alpha_vantage_bollinger",
+          "field": "bb_lower",
+          "provider_path": "Technical Analysis: BBANDS.Real Lower Band"
+        },
+        "normalized_value": {
+          "source_id": "alpha_vantage_bollinger",
+          "field": "bb_lower",
+          "canonical_path": "technical.bb_lower",
+          "quality": {
+            "source_weight": 0.75,
+            "max_age_days": 2
+          },
+          "schedule": "daily"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:iex_insider:insider_buys",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_iex_insider_insider_buys",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "iex_insider",
+          "field": "insider_buys",
+          "provider_path": "insider_transactions.buy_count"
+        },
+        "normalized_value": {
+          "source_id": "iex_insider",
+          "field": "insider_buys",
+          "canonical_path": "company_research.insider_buys",
+          "quality": {
+            "source_weight": 0.7,
+            "max_age_days": 7
+          },
+          "schedule": "daily"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:iex_insider:insider_sells",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_iex_insider_insider_sells",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "iex_insider",
+          "field": "insider_sells",
+          "provider_path": "insider_transactions.sell_count"
+        },
+        "normalized_value": {
+          "source_id": "iex_insider",
+          "field": "insider_sells",
+          "canonical_path": "company_research.insider_sells",
+          "quality": {
+            "source_weight": 0.7,
+            "max_age_days": 7
+          },
+          "schedule": "daily"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:news_sentiment:sentiment_polarity",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_news_sentiment_sentiment_polarity",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "news_sentiment",
+          "field": "sentiment_polarity",
+          "provider_path": "sentiment.polarity"
+        },
+        "normalized_value": {
+          "source_id": "news_sentiment",
+          "field": "sentiment_polarity",
+          "canonical_path": "company_research.sentiment",
+          "quality": {
+            "source_weight": 0.65,
+            "max_age_days": 1
+          },
+          "schedule": "hourly"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:news_sentiment:news_volume",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_news_sentiment_news_volume",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "news_sentiment",
+          "field": "news_volume",
+          "provider_path": "totalResults"
+        },
+        "normalized_value": {
+          "source_id": "news_sentiment",
+          "field": "news_volume",
+          "canonical_path": "extensions.news_volume",
+          "quality": {
+            "source_weight": 0.65,
+            "max_age_days": 1
+          },
+          "schedule": "hourly"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:social_sentiment:social_sentiment",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_social_sentiment_social_sentiment",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "social_sentiment",
+          "field": "social_sentiment",
+          "provider_path": "sentiment.average"
+        },
+        "normalized_value": {
+          "source_id": "social_sentiment",
+          "field": "social_sentiment",
+          "canonical_path": "market_research.social_sentiment",
+          "quality": {
+            "source_weight": 0.55,
+            "max_age_days": 1
+          },
+          "schedule": "hourly"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:economic_surprise:gdp_surprise",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_economic_surprise_gdp_surprise",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "economic_surprise",
+          "field": "gdp_surprise",
+          "provider_path": "surprise_index.gdp"
+        },
+        "normalized_value": {
+          "source_id": "economic_surprise",
+          "field": "gdp_surprise",
+          "canonical_path": "macro.gdp_surprise",
+          "quality": {
+            "source_weight": 0.75,
+            "max_age_days": 3
+          },
+          "schedule": "daily"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:fmp_factors:smb",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_fmp_factors_smb",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "fmp_factors",
+          "field": "smb",
+          "provider_path": "factors.smb"
+        },
+        "normalized_value": {
+          "source_id": "fmp_factors",
+          "field": "smb",
+          "canonical_path": "factor.smb",
+          "quality": {
+            "source_weight": 0.7,
+            "max_age_days": 2
+          },
+          "schedule": "daily"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:fmp_factors:hml",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_fmp_factors_hml",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "fmp_factors",
+          "field": "hml",
+          "provider_path": "factors.hml"
+        },
+        "normalized_value": {
+          "source_id": "fmp_factors",
+          "field": "hml",
+          "canonical_path": "factor.hml",
+          "quality": {
+            "source_weight": 0.7,
+            "max_age_days": 2
+          },
+          "schedule": "daily"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:fmp_factors:mom",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_fmp_factors_mom",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "fmp_factors",
+          "field": "mom",
+          "provider_path": "factors.mom"
+        },
+        "normalized_value": {
+          "source_id": "fmp_factors",
+          "field": "mom",
+          "canonical_path": "factor.mom",
+          "quality": {
+            "source_weight": 0.7,
+            "max_age_days": 2
+          },
+          "schedule": "daily"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:yield_curve:yield_10y",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_yield_curve_yield_10y",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "yield_curve",
+          "field": "yield_10y",
+          "provider_path": "data.10_year"
+        },
+        "normalized_value": {
+          "source_id": "yield_curve",
+          "field": "yield_10y",
+          "canonical_path": "macro.yield_10y",
+          "quality": {
+            "source_weight": 0.8,
+            "max_age_days": 2
+          },
+          "schedule": "daily"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:yield_curve:yield_2y",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_yield_curve_yield_2y",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "yield_curve",
+          "field": "yield_2y",
+          "provider_path": "data.2_year"
+        },
+        "normalized_value": {
+          "source_id": "yield_curve",
+          "field": "yield_2y",
+          "canonical_path": "macro.yield_2y",
+          "quality": {
+            "source_weight": 0.8,
+            "max_age_days": 2
+          },
+          "schedule": "daily"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:yield_curve:spread",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_yield_curve_spread",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "yield_curve",
+          "field": "spread",
+          "provider_path": "data.spread"
+        },
+        "normalized_value": {
+          "source_id": "yield_curve",
+          "field": "spread",
+          "canonical_path": "macro.yield_spread",
+          "quality": {
+            "source_weight": 0.8,
+            "max_age_days": 2
+          },
+          "schedule": "daily"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:vix:vix_close",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_vix_vix_close",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "vix",
+          "field": "vix_close",
+          "provider_path": "chart.result.0.meta.regularMarketPrice"
+        },
+        "normalized_value": {
+          "source_id": "vix",
+          "field": "vix_close",
+          "canonical_path": "market.vix",
+          "quality": {
+            "source_weight": 0.85,
+            "max_age_days": 1
+          },
+          "schedule": "daily"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:industry_reports:hhi",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_industry_reports_hhi",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "industry_reports",
+          "field": "hhi",
+          "provider_path": "market_structure.hhi"
+        },
+        "normalized_value": {
+          "source_id": "industry_reports",
+          "field": "hhi",
+          "canonical_path": "market_structure.hhi",
+          "quality": {
+            "source_weight": 0.7,
+            "max_age_days": 90
+          },
+          "schedule": "quarterly"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:industry_reports:lerner_index",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_industry_reports_lerner_index",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "industry_reports",
+          "field": "lerner_index",
+          "provider_path": "market_structure.lerner"
+        },
+        "normalized_value": {
+          "source_id": "industry_reports",
+          "field": "lerner_index",
+          "canonical_path": "market_structure.lerner",
+          "quality": {
+            "source_weight": 0.7,
+            "max_age_days": 90
+          },
+          "schedule": "quarterly"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:industry_reports:entry_barriers",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_industry_reports_entry_barriers",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "industry_reports",
+          "field": "entry_barriers",
+          "provider_path": "market_structure.entry_barrier_score"
+        },
+        "normalized_value": {
+          "source_id": "industry_reports",
+          "field": "entry_barriers",
+          "canonical_path": "market_structure.entry_barrier_score",
+          "quality": {
+            "source_weight": 0.7,
+            "max_age_days": 90
+          },
+          "schedule": "quarterly"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:industry_reports:entry_rate",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_industry_reports_entry_rate",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "industry_reports",
+          "field": "entry_rate",
+          "provider_path": "market_structure.entry_rate"
+        },
+        "normalized_value": {
+          "source_id": "industry_reports",
+          "field": "entry_rate",
+          "canonical_path": "competition.entry_rate",
+          "quality": {
+            "source_weight": 0.7,
+            "max_age_days": 90
+          },
+          "schedule": "quarterly"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:industry_reports:lifecycle_stage",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_industry_reports_lifecycle_stage",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "industry_reports",
+          "field": "lifecycle_stage",
+          "provider_path": "market_structure.lifecycle_stage"
+        },
+        "normalized_value": {
+          "source_id": "industry_reports",
+          "field": "lifecycle_stage",
+          "canonical_path": "lifecycle.stage",
+          "quality": {
+            "source_weight": 0.7,
+            "max_age_days": 90
+          },
+          "schedule": "quarterly"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:skyfield_ephemeris:sun_longitude",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_skyfield_ephemeris_sun_longitude",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "skyfield_ephemeris",
+          "field": "sun_longitude",
+          "provider_path": "sun"
+        },
+        "normalized_value": {
+          "source_id": "skyfield_ephemeris",
+          "field": "sun_longitude",
+          "canonical_path": "astro.sun",
+          "quality": {
+            "source_weight": 0.9,
+            "max_age_days": 1
+          },
+          "schedule": "daily"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:skyfield_ephemeris:moon_longitude",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_skyfield_ephemeris_moon_longitude",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "skyfield_ephemeris",
+          "field": "moon_longitude",
+          "provider_path": "moon"
+        },
+        "normalized_value": {
+          "source_id": "skyfield_ephemeris",
+          "field": "moon_longitude",
+          "canonical_path": "astro.moon",
+          "quality": {
+            "source_weight": 0.9,
+            "max_age_days": 1
+          },
+          "schedule": "daily"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:skyfield_ephemeris:mercury_longitude",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_skyfield_ephemeris_mercury_longitude",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "skyfield_ephemeris",
+          "field": "mercury_longitude",
+          "provider_path": "mercury"
+        },
+        "normalized_value": {
+          "source_id": "skyfield_ephemeris",
+          "field": "mercury_longitude",
+          "canonical_path": "astro.mercury",
+          "quality": {
+            "source_weight": 0.9,
+            "max_age_days": 1
+          },
+          "schedule": "daily"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:skyfield_ephemeris:venus_longitude",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_skyfield_ephemeris_venus_longitude",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "skyfield_ephemeris",
+          "field": "venus_longitude",
+          "provider_path": "venus"
+        },
+        "normalized_value": {
+          "source_id": "skyfield_ephemeris",
+          "field": "venus_longitude",
+          "canonical_path": "astro.venus",
+          "quality": {
+            "source_weight": 0.9,
+            "max_age_days": 1
+          },
+          "schedule": "daily"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:skyfield_ephemeris:mars_longitude",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_skyfield_ephemeris_mars_longitude",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "skyfield_ephemeris",
+          "field": "mars_longitude",
+          "provider_path": "mars"
+        },
+        "normalized_value": {
+          "source_id": "skyfield_ephemeris",
+          "field": "mars_longitude",
+          "canonical_path": "astro.mars",
+          "quality": {
+            "source_weight": 0.9,
+            "max_age_days": 1
+          },
+          "schedule": "daily"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:skyfield_ephemeris:jupiter_longitude",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_skyfield_ephemeris_jupiter_longitude",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "skyfield_ephemeris",
+          "field": "jupiter_longitude",
+          "provider_path": "jupiter"
+        },
+        "normalized_value": {
+          "source_id": "skyfield_ephemeris",
+          "field": "jupiter_longitude",
+          "canonical_path": "astro.jupiter",
+          "quality": {
+            "source_weight": 0.9,
+            "max_age_days": 1
+          },
+          "schedule": "daily"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:skyfield_ephemeris:saturn_longitude",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_skyfield_ephemeris_saturn_longitude",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "skyfield_ephemeris",
+          "field": "saturn_longitude",
+          "provider_path": "saturn"
+        },
+        "normalized_value": {
+          "source_id": "skyfield_ephemeris",
+          "field": "saturn_longitude",
+          "canonical_path": "astro.saturn",
+          "quality": {
+            "source_weight": 0.9,
+            "max_age_days": 1
+          },
+          "schedule": "daily"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:skyfield_ephemeris:uranus_longitude",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_skyfield_ephemeris_uranus_longitude",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "skyfield_ephemeris",
+          "field": "uranus_longitude",
+          "provider_path": "uranus"
+        },
+        "normalized_value": {
+          "source_id": "skyfield_ephemeris",
+          "field": "uranus_longitude",
+          "canonical_path": "astro.uranus",
+          "quality": {
+            "source_weight": 0.9,
+            "max_age_days": 1
+          },
+          "schedule": "daily"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:skyfield_ephemeris:neptune_longitude",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_skyfield_ephemeris_neptune_longitude",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "skyfield_ephemeris",
+          "field": "neptune_longitude",
+          "provider_path": "neptune"
+        },
+        "normalized_value": {
+          "source_id": "skyfield_ephemeris",
+          "field": "neptune_longitude",
+          "canonical_path": "astro.neptune",
+          "quality": {
+            "source_weight": 0.9,
+            "max_age_days": 1
+          },
+          "schedule": "daily"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      },
+      {
+        "record_id": "indicator:skyfield_ephemeris:pluto_longitude",
+        "canonical_type": "indicator_definition",
+        "canonical_id": "indicator_skyfield_ephemeris_pluto_longitude",
+        "source_ids": [
+          "user_upload:pasted_content.txt",
+          "user_upload:pasted_content_2.txt"
+        ],
+        "status": "normalized",
+        "raw_value": {
+          "source_id": "skyfield_ephemeris",
+          "field": "pluto_longitude",
+          "provider_path": "pluto"
+        },
+        "normalized_value": {
+          "source_id": "skyfield_ephemeris",
+          "field": "pluto_longitude",
+          "canonical_path": "astro.pluto",
+          "quality": {
+            "source_weight": 0.9,
+            "max_age_days": 1
+          },
+          "schedule": "daily"
+        },
+        "transformation": "map provider field to canonical path; redact source credentials",
+        "limitations": []
+      }
+    ],
+    "formula_reference": [
+      {
+        "record_id": "formula:harmonic_position",
+        "canonical_type": "formula_reference",
+        "canonical_id": "formula_harmonic_position",
+        "source_ids": [
+          "user_upload:pasted_content_3.txt"
+        ],
+        "status": "methodology_bound",
+        "raw_value": {
+          "formula": "Harmonic_Planet_Position = (Natal_Planet_Position × H) mod 360",
+          "example": {
+            "natal_planet": "10° Aries (10°)",
+            "harmonic_H": 5,
+            "calculation": "10 × 5 = 50° → 20° Taurus",
+            "interpretation": "Aspects in the 5th harmonic chart become quintile aspects in the natal chart"
+          },
+          "steps": [
+            "Convert all planetary longitudes to decimal degrees (0-360).",
+            "Multiply each longitude by the harmonic number H.",
+            "If result ≥ 360°, subtract 360° repeatedly until result is between 0° and 360°.",
+            "Plot new positions on a 360° wheel (standard or 90° dial).",
+            "Identify conjunctions (≤ 1° orb) – these are the harmonic aspects."
+          ],
+          "python_code": {
+            "function": "def calculate_harmonic_chart(positions, H): return [(pos * H) % 360 for pos in positions]",
+            "example": "harmonic_5 = calculate_harmonic_chart([10, 45, 120], 5)  # [50, 225, 240]"
+          }
+        },
+        "normalized_value": {
+          "formula_id": "harmonic_position",
+          "formula": "(natal_longitude * harmonic_number) mod 360",
+          "status": "methodology_bound"
+        },
+        "transformation": "extract explicit harmonic calculation contract",
+        "limitations": []
+      },
+      {
+        "record_id": "formula:source:draconic_longitude",
+        "canonical_type": "formula_reference",
+        "canonical_id": "formula_source_draconic_longitude",
+        "source_ids": [
+          "user_upload:pasted_content_4.txt"
+        ],
+        "status": "pending_review",
+        "raw_value": {
+          "name": "draconic_longitude",
+          "formula": "(natal longitude - north node arc) mod 360",
+          "purpose": "Soul recalibration"
+        },
+        "normalized_value": {
+          "formula_id": "draconic_longitude",
+          "formula": "(natal longitude - north node arc) mod 360",
+          "purpose": "Soul recalibration",
+          "status": "pending_review"
+        },
+        "transformation": "normalize source calculation record",
+        "limitations": []
+      },
+      {
+        "record_id": "formula:source:harmonic_position",
+        "canonical_type": "formula_reference",
+        "canonical_id": "formula_source_harmonic_position",
+        "source_ids": [
+          "user_upload:pasted_content_4.txt"
+        ],
+        "status": "pending_review",
+        "raw_value": {
+          "name": "harmonic_position",
+          "formula": "(natal longitude * n) mod 360",
+          "purpose": "Harmonic resonance chart"
+        },
+        "normalized_value": {
+          "formula_id": "harmonic_position",
+          "formula": "(natal longitude * n) mod 360",
+          "purpose": "Harmonic resonance chart",
+          "status": "pending_review"
+        },
+        "transformation": "normalize source calculation record",
+        "limitations": []
+      },
+      {
+        "record_id": "formula:source:composite_midpoint",
+        "canonical_type": "formula_reference",
+        "canonical_id": "formula_source_composite_midpoint",
+        "source_ids": [
+          "user_upload:pasted_content_4.txt"
+        ],
+        "status": "pending_review",
+        "raw_value": {
+          "name": "composite_midpoint",
+          "formula": "(longitudeA + longitudeB) / 2",
+          "purpose": "Relationship midpoint chart"
+        },
+        "normalized_value": {
+          "formula_id": "composite_midpoint",
+          "formula": "(longitudeA + longitudeB) / 2",
+          "purpose": "Relationship midpoint chart",
+          "status": "pending_review"
+        },
+        "transformation": "normalize source calculation record",
+        "limitations": []
+      },
+      {
+        "record_id": "formula:source:davison_midpoint",
+        "canonical_type": "formula_reference",
+        "canonical_id": "formula_source_davison_midpoint",
+        "source_ids": [
+          "user_upload:pasted_content_4.txt"
+        ],
+        "status": "pending_review",
+        "raw_value": {
+          "name": "davison_midpoint",
+          "formula": "Julian day midpoint plus averaged coordinates",
+          "purpose": "Time-space relationship chart"
+        },
+        "normalized_value": {
+          "formula_id": "davison_midpoint",
+          "formula": "Julian day midpoint plus averaged coordinates",
+          "purpose": "Time-space relationship chart",
+          "status": "pending_review"
+        },
+        "transformation": "normalize source calculation record",
+        "limitations": []
+      },
+      {
+        "record_id": "formula:source:solar_arc",
+        "canonical_type": "formula_reference",
+        "canonical_id": "formula_source_solar_arc",
+        "source_ids": [
+          "user_upload:pasted_content_4.txt"
+        ],
+        "status": "pending_review",
+        "raw_value": {
+          "name": "solar_arc",
+          "formula": "progressed sun - natal sun applied to all points",
+          "purpose": "Directioning system"
+        },
+        "normalized_value": {
+          "formula_id": "solar_arc",
+          "formula": "progressed sun - natal sun applied to all points",
+          "purpose": "Directioning system",
+          "status": "pending_review"
+        },
+        "transformation": "normalize source calculation record",
+        "limitations": []
+      },
+      {
+        "record_id": "formula:source:part_of_fortune_day",
+        "canonical_type": "formula_reference",
+        "canonical_id": "formula_source_part_of_fortune_day",
+        "source_ids": [
+          "user_upload:pasted_content_4.txt"
+        ],
+        "status": "pending_review",
+        "raw_value": {
+          "name": "part_of_fortune_day",
+          "formula": "Asc + Moon - Sun",
+          "purpose": "Day formula for material fortune"
+        },
+        "normalized_value": {
+          "formula_id": "part_of_fortune_day",
+          "formula": "Asc + Moon - Sun",
+          "purpose": "Day formula for material fortune",
+          "status": "pending_review"
+        },
+        "transformation": "normalize source calculation record",
+        "limitations": []
+      },
+      {
+        "record_id": "formula:source:part_of_fortune_night",
+        "canonical_type": "formula_reference",
+        "canonical_id": "formula_source_part_of_fortune_night",
+        "source_ids": [
+          "user_upload:pasted_content_4.txt"
+        ],
+        "status": "pending_review",
+        "raw_value": {
+          "name": "part_of_fortune_night",
+          "formula": "Asc + Sun - Moon",
+          "purpose": "Night formula for material fortune"
+        },
+        "normalized_value": {
+          "formula_id": "part_of_fortune_night",
+          "formula": "Asc + Sun - Moon",
+          "purpose": "Night formula for material fortune",
+          "status": "pending_review"
+        },
+        "transformation": "normalize source calculation record",
+        "limitations": []
+      }
+    ],
+    "signal": [
+      {
+        "record_id": "signal:asto:0:sun_trine_north_node",
+        "canonical_type": "signal",
+        "canonical_id": "signal_asto_0_sun_trine_north_node",
+        "source_ids": [
+          "user_upload:pasted_content_4.txt"
+        ],
+        "status": "source_derived",
+        "raw_value": {
+          "signal": "Sun trine North Node",
+          "theme": "identity naturally supports life purpose",
+          "layers": [
+            "natal",
+            "timing"
+          ],
+          "priority": "high"
+        },
+        "normalized_value": {
+          "signal_id": "sun_trine_north_node",
+          "theme": "identity naturally supports life purpose",
+          "layers": [
+            "natal",
+            "timing"
+          ],
+          "priority": "high",
+          "evidence_class": "source_derived"
+        },
+        "transformation": "normalize signal identity and layer list",
+        "limitations": []
+      },
+      {
+        "record_id": "signal:asto:1:mercury_square_saturn",
+        "canonical_type": "signal",
+        "canonical_id": "signal_asto_1_mercury_square_saturn",
+        "source_ids": [
+          "user_upload:pasted_content_4.txt"
+        ],
+        "status": "source_derived",
+        "raw_value": {
+          "signal": "Mercury square Saturn",
+          "theme": "disciplined but difficult communication; mastery through effort",
+          "layers": [
+            "natal",
+            "harmonic"
+          ],
+          "priority": "high"
+        },
+        "normalized_value": {
+          "signal_id": "mercury_square_saturn",
+          "theme": "disciplined but difficult communication; mastery through effort",
+          "layers": [
+            "natal",
+            "harmonic"
+          ],
+          "priority": "high",
+          "evidence_class": "source_derived"
+        },
+        "transformation": "normalize signal identity and layer list",
+        "limitations": []
+      },
+      {
+        "record_id": "signal:asto:2:moon_conjunct_neptune",
+        "canonical_type": "signal",
+        "canonical_id": "signal_asto_2_moon_conjunct_neptune",
+        "source_ids": [
+          "user_upload:pasted_content_4.txt"
+        ],
+        "status": "source_derived",
+        "raw_value": {
+          "signal": "Moon conjunct Neptune",
+          "theme": "mystical sensitivity, dreams, porous boundaries",
+          "layers": [
+            "natal",
+            "harmonic"
+          ],
+          "priority": "high"
+        },
+        "normalized_value": {
+          "signal_id": "moon_conjunct_neptune",
+          "theme": "mystical sensitivity, dreams, porous boundaries",
+          "layers": [
+            "natal",
+            "harmonic"
+          ],
+          "priority": "high",
+          "evidence_class": "source_derived"
+        },
+        "transformation": "normalize signal identity and layer list",
+        "limitations": []
+      },
+      {
+        "record_id": "signal:asto:3:moon_square_uranus",
+        "canonical_type": "signal",
+        "canonical_id": "signal_asto_3_moon_square_uranus",
+        "source_ids": [
+          "user_upload:pasted_content_4.txt"
+        ],
+        "status": "source_derived",
+        "raw_value": {
+          "signal": "Moon square Uranus",
+          "theme": "emotional volatility and sudden insight",
+          "layers": [
+            "natal",
+            "harmonic"
+          ],
+          "priority": "high"
+        },
+        "normalized_value": {
+          "signal_id": "moon_square_uranus",
+          "theme": "emotional volatility and sudden insight",
+          "layers": [
+            "natal",
+            "harmonic"
+          ],
+          "priority": "high",
+          "evidence_class": "source_derived"
+        },
+        "transformation": "normalize signal identity and layer list",
+        "limitations": []
+      },
+      {
+        "record_id": "signal:asto:4:venus_sextile_pluto",
+        "canonical_type": "signal",
+        "canonical_id": "signal_asto_4_venus_sextile_pluto",
+        "source_ids": [
+          "user_upload:pasted_content_4.txt"
+        ],
+        "status": "source_derived",
+        "raw_value": {
+          "signal": "Venus sextile Pluto",
+          "theme": "transformative love and aesthetic depth",
+          "layers": [
+            "natal",
+            "harmonic"
+          ],
+          "priority": "high"
+        },
+        "normalized_value": {
+          "signal_id": "venus_sextile_pluto",
+          "theme": "transformative love and aesthetic depth",
+          "layers": [
+            "natal",
+            "harmonic"
+          ],
+          "priority": "high",
+          "evidence_class": "source_derived"
+        },
+        "transformation": "normalize signal identity and layer list",
+        "limitations": []
+      },
+      {
+        "record_id": "signal:asto:5:jupiter_in_pisces",
+        "canonical_type": "signal",
+        "canonical_id": "signal_asto_5_jupiter_in_pisces",
+        "source_ids": [
+          "user_upload:pasted_content_4.txt"
+        ],
+        "status": "source_derived",
+        "raw_value": {
+          "signal": "Jupiter in Pisces",
+          "theme": "domicile strength and final dispositor emphasis",
+          "layers": [
+            "dignity",
+            "natal"
+          ],
+          "priority": "high"
+        },
+        "normalized_value": {
+          "signal_id": "jupiter_in_pisces",
+          "theme": "domicile strength and final dispositor emphasis",
+          "layers": [
+            "dignity",
+            "natal"
+          ],
+          "priority": "high",
+          "evidence_class": "source_derived"
+        },
+        "transformation": "normalize signal identity and layer list",
+        "limitations": []
+      },
+      {
+        "record_id": "signal:asto:6:pluto_sun_tight_contact",
+        "canonical_type": "signal",
+        "canonical_id": "signal_asto_6_pluto_sun_tight_contact",
+        "source_ids": [
+          "user_upload:pasted_content_4.txt"
+        ],
+        "status": "source_derived",
+        "raw_value": {
+          "signal": "Pluto-Sun tight contact",
+          "theme": "life path charged with truth-seeking and transformation",
+          "layers": [
+            "natal",
+            "fixed_star"
+          ],
+          "priority": "high"
+        },
+        "normalized_value": {
+          "signal_id": "pluto_sun_tight_contact",
+          "theme": "life path charged with truth-seeking and transformation",
+          "layers": [
+            "natal",
+            "fixed_star"
+          ],
+          "priority": "high",
+          "evidence_class": "source_derived"
+        },
+        "transformation": "normalize signal identity and layer list",
+        "limitations": []
+      },
+      {
+        "record_id": "signal:asto:7:spica_uranus",
+        "canonical_type": "signal",
+        "canonical_id": "signal_asto_7_spica_uranus",
+        "source_ids": [
+          "user_upload:pasted_content_4.txt"
+        ],
+        "status": "source_derived",
+        "raw_value": {
+          "signal": "Spica-Uranus",
+          "theme": "brilliance, gifts, protection",
+          "layers": [
+            "fixed_star",
+            "natal"
+          ],
+          "priority": "medium-high"
+        },
+        "normalized_value": {
+          "signal_id": "spica_uranus",
+          "theme": "brilliance, gifts, protection",
+          "layers": [
+            "fixed_star",
+            "natal"
+          ],
+          "priority": "medium-high",
+          "evidence_class": "source_derived"
+        },
+        "transformation": "normalize signal identity and layer list",
+        "limitations": []
+      },
+      {
+        "record_id": "signal:asto:8:antares_moon",
+        "canonical_type": "signal",
+        "canonical_id": "signal_asto_8_antares_moon",
+        "source_ids": [
+          "user_upload:pasted_content_4.txt"
+        ],
+        "status": "source_derived",
+        "raw_value": {
+          "signal": "Antares-Moon",
+          "theme": "intensity and emotional power",
+          "layers": [
+            "fixed_star",
+            "natal"
+          ],
+          "priority": "medium-high"
+        },
+        "normalized_value": {
+          "signal_id": "antares_moon",
+          "theme": "intensity and emotional power",
+          "layers": [
+            "fixed_star",
+            "natal"
+          ],
+          "priority": "medium-high",
+          "evidence_class": "source_derived"
+        },
+        "transformation": "normalize signal identity and layer list",
+        "limitations": []
+      },
+      {
+        "record_id": "signal:asto:9:mercury_uranus_mc_harmonic_cluster",
+        "canonical_type": "signal",
+        "canonical_id": "signal_asto_9_mercury_uranus_mc_harmonic_cluster",
+        "source_ids": [
+          "user_upload:pasted_content_4.txt"
+        ],
+        "status": "source_derived",
+        "raw_value": {
+          "signal": "Mercury-Uranus-MC harmonic cluster",
+          "theme": "innovative communication and public vocation",
+          "layers": [
+            "harmonic",
+            "angularity"
+          ],
+          "priority": "very high"
+        },
+        "normalized_value": {
+          "signal_id": "mercury_uranus_mc_harmonic_cluster",
+          "theme": "innovative communication and public vocation",
+          "layers": [
+            "harmonic",
+            "angularity"
+          ],
+          "priority": "very high",
+          "evidence_class": "source_derived"
+        },
+        "transformation": "normalize signal identity and layer list",
+        "limitations": []
+      },
+      {
+        "record_id": "signal:asto:10:sun_mercury_jupiter_harmonic_cluster",
+        "canonical_type": "signal",
+        "canonical_id": "signal_asto_10_sun_mercury_jupiter_harmonic_cluster",
+        "source_ids": [
+          "user_upload:pasted_content_4.txt"
+        ],
+        "status": "source_derived",
+        "raw_value": {
+          "signal": "Sun-Mercury-Jupiter harmonic cluster",
+          "theme": "teacher-philosopher identity",
+          "layers": [
+            "harmonic",
+            "natal"
+          ],
+          "priority": "very high"
+        },
+        "normalized_value": {
+          "signal_id": "sun_mercury_jupiter_harmonic_cluster",
+          "theme": "teacher-philosopher identity",
+          "layers": [
+            "harmonic",
+            "natal"
+          ],
+          "priority": "very high",
+          "evidence_class": "source_derived"
+        },
+        "transformation": "normalize signal identity and layer list",
+        "limitations": []
+      },
+      {
+        "record_id": "signal:asto:11:sun_venus_chiron_harmonic_cluster",
+        "canonical_type": "signal",
+        "canonical_id": "signal_asto_11_sun_venus_chiron_harmonic_cluster",
+        "source_ids": [
+          "user_upload:pasted_content_4.txt"
+        ],
+        "status": "source_derived",
+        "raw_value": {
+          "signal": "Sun-Venus-Chiron harmonic cluster",
+          "theme": "wounded-healer identity fused with love and selfhood",
+          "layers": [
+            "harmonic",
+            "asteroid"
+          ],
+          "priority": "very high"
+        },
+        "normalized_value": {
+          "signal_id": "sun_venus_chiron_harmonic_cluster",
+          "theme": "wounded-healer identity fused with love and selfhood",
+          "layers": [
+            "harmonic",
+            "asteroid"
+          ],
+          "priority": "very high",
+          "evidence_class": "source_derived"
+        },
+        "transformation": "normalize signal identity and layer list",
+        "limitations": []
+      },
+      {
+        "record_id": "signal:asto:12:moon_jupiter_neptune_harmonic_cluster",
+        "canonical_type": "signal",
+        "canonical_id": "signal_asto_12_moon_jupiter_neptune_harmonic_cluster",
+        "source_ids": [
+          "user_upload:pasted_content_4.txt"
+        ],
+        "status": "source_derived",
+        "raw_value": {
+          "signal": "Moon-Jupiter-Neptune harmonic cluster",
+          "theme": "emotional wisdom and mystical sensitivity",
+          "layers": [
+            "harmonic",
+            "natal"
+          ],
+          "priority": "very high"
+        },
+        "normalized_value": {
+          "signal_id": "moon_jupiter_neptune_harmonic_cluster",
+          "theme": "emotional wisdom and mystical sensitivity",
+          "layers": [
+            "harmonic",
+            "natal"
+          ],
+          "priority": "very high",
+          "evidence_class": "source_derived"
+        },
+        "transformation": "normalize signal identity and layer list",
+        "limitations": []
+      },
+      {
+        "record_id": "signal:asto:13:atropos_return",
+        "canonical_type": "signal",
+        "canonical_id": "signal_asto_13_atropos_return",
+        "source_ids": [
+          "user_upload:pasted_content_4.txt"
+        ],
+        "status": "source_derived",
+        "raw_value": {
+          "signal": "Atropos return",
+          "theme": "27-year karmic ending checkpoint",
+          "layers": [
+            "asteroid",
+            "timing"
+          ],
+          "priority": "high"
+        },
+        "normalized_value": {
+          "signal_id": "atropos_return",
+          "theme": "27-year karmic ending checkpoint",
+          "layers": [
+            "asteroid",
+            "timing"
+          ],
+          "priority": "high",
+          "evidence_class": "source_derived"
+        },
+        "transformation": "normalize signal identity and layer list",
+        "limitations": []
+      },
+      {
+        "record_id": "signal:asto:14:atropos_double_cycle",
+        "canonical_type": "signal",
+        "canonical_id": "signal_asto_14_atropos_double_cycle",
+        "source_ids": [
+          "user_upload:pasted_content_4.txt"
+        ],
+        "status": "source_derived",
+        "raw_value": {
+          "signal": "Atropos double cycle",
+          "theme": "54-year intensified completion cycle",
+          "layers": [
+            "asteroid",
+            "timing"
+          ],
+          "priority": "medium-high"
+        },
+        "normalized_value": {
+          "signal_id": "atropos_double_cycle",
+          "theme": "54-year intensified completion cycle",
+          "layers": [
+            "asteroid",
+            "timing"
+          ],
+          "priority": "medium-high",
+          "evidence_class": "source_derived"
+        },
+        "transformation": "normalize signal identity and layer list",
+        "limitations": []
+      }
+    ]
+  },
+  "available_midpoint_metadata": {
+    "activating_planets": [
+      "Jupiter",
+      "Saturn",
+      "Uranus",
+      "Neptune",
+      "Pluto",
+      "Moon's North Node"
+    ],
+    "axes": [
+      "Sun/Moon",
+      "Sun/Mercury",
+      "Sun/Venus",
+      "..."
+    ],
+    "status": "source_derived_with_provisional_ellipsis"
+  },
+  "research_dataset_manifest": {
+    "dataset_id": "latest_afe_configuration_and_sample_records",
+    "status": "configuration_and_sample_records_only",
+    "observations_acquired": false,
+    "feature_cutoff": "not_applicable_without_time-indexed observations",
+    "outcome_window": "not_defined",
+    "split_strategy": "not_applicable",
+    "prohibited_uses": [
+      "trading instructions",
+      "position sizing",
+      "personal financial advice",
+      "causal claims from astrological symbolism"
+    ],
+    "limitations": [
+      "The supplied financial blocks describe data sources and formulas but do not provide licensed, time-indexed observations.",
+      "No API calls were made."
+    ]
+  }
+}

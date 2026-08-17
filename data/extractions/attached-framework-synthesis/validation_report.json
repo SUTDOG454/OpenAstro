@@ -1,0 +1,24 @@
+{
+  "status": "warning",
+  "checks": {
+    "json_syntax": "passed",
+    "source_ids_unique": "passed",
+    "record_ids_and_provenance": "passed",
+    "change_record": "passed",
+    "zip_integrity": "not_present"
+  },
+  "errors": [],
+  "warnings": [
+    "Missing optional contract artifact: validation_report.json"
+  ],
+  "evidence": {
+    "package": "/home/ubuntu/openastro_worktree/data/extractions/attached-framework-synthesis",
+    "sha256_files": {
+      "source_inventory.json": "043c3ca377e6c33856f5a0973e743417818b46ece212326b31bec273a13c7203",
+      "source_analysis.json": "3c32d2d765c8655518690ed22500b2cc65039bd0a63c3f8571dfbee85e33774f",
+      "package_validation_report.json": "2a492cc369afdcefc4b6ca2b63d0e34aed5515b5de2076161d9d9e111f180156",
+      "normalized_records.json": "b35bb7709ba9d8fa2c99a19bdf3d1a74d7d6d0c5c30a5e7bb0bd6270bf31c343",
+      "change_record.json": "0ba89c7c9548352f1bab930dff0841c634aa0f0ffbdf83fef0d11572bd217a26"
+    }
+  }
+}

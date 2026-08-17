@@ -1,0 +1,1437 @@
+```json
+{
+  "system": {
+    "name": "AFE Unified System",
+    "version": "8.0.0",
+    "description": "Complete integrated decision‑support system combining financial data, technical analysis, astrological timing, psychological archetypes, and machine learning.",
+    "release_date": "2026-08-17",
+    "status": "production-ready"
+  },
+  "config": {
+    "globalDefaults": {
+      "hurdleRate": 0.06,
+      "riskFreeRate": 0.03,
+      "targetInflationMin": 0.01,
+      "targetInflationMax": 0.03,
+      "targetGDP": 0.025,
+      "maxGearing": 1.2,
+      "maxFixedCostRatio": 0.6
+    },
+    "cache": {
+      "enabled": true,
+      "redisUrl": "redis://localhost:6379",
+      "defaultTTL": 3600,
+      "companyTTL": 86400
+    },
+    "api": {
+      "rateLimit": 100,
+      "rateWindow": 60
+    },
+    "sources": [
+      {
+        "id": "fred_macro",
+        "type": "api",
+        "enabled": true,
+        "endpoint": "https://api.stlouisfed.org/fred/series/observations",
+        "params": {
+          "series_ids": ["GDPC1", "CPIAUCSL", "FEDFUNDS", "UNRATE", "UMCSENT", "PAYEMS"],
+          "api_key": "fred_key_12345",
+          "frequency": "m",
+          "units": "chg",
+          "observation_start": "2000-01-01"
+        },
+        "schedule": "daily",
+        "parser": "fred_json_parser",
+        "fields": {
+          "gdp_qoq": "GDPC1.value",
+          "cpi_yoy": "CPIAUCSL.value",
+          "fed_funds": "FEDFUNDS.value",
+          "unemp_rate": "UNRATE.value",
+          "consumer_sentiment": "UMCSENT.value",
+          "payrolls": "PAYEMS.value"
+        },
+        "quality": { "source_weight": 0.95, "max_age_days": 90 }
+      },
+      {
+        "id": "yfinance_equity",
+        "type": "api",
+        "enabled": true,
+        "endpoint": "https://query1.finance.yahoo.com/v8/finance/chart/",
+        "symbols": ["^GSPC", "AQB", "MOWI.OL", "SALM", "BTC-USD", "ETH-USD"],
+        "range": "5y",
+        "interval": "1d",
+        "schedule": "realtime",
+        "parser": "yfinance_json_parser",
+        "fields": {
+          "adj_close": "chart.result.0.meta.regularMarketPrice",
+          "volume": "chart.result.0.meta.regularMarketVolume",
+          "returns": "daily_return",
+          "volatility": "annualized_volatility"
+        },
+        "quality": { "source_weight": 0.85, "max_age_days": 1 }
+      },
+      {
+        "id": "fmp_fundamentals",
+        "type": "api",
+        "enabled": true,
+        "endpoint": "https://financialmodelingprep.com/api/v3/financials/",
+        "symbols": ["AQB", "MOWI.OL", "SALM"],
+        "period": "annual",
+        "schedule": "weekly",
+        "parser": "fmp_json_parser",
+        "fields": {
+          "net_margin": "profitability_ratios.netMargin",
+          "gearing": "debt_ratios.gearing",
+          "fixed_cost_ratio": "operating_ratios.fixedCostRatio",
+          "irr": "investing_ratios.irr",
+          "revenue": "income_statement.revenue"
+        },
+        "quality": { "source_weight": 0.80, "max_age_days": 30 }
+      },
+      {
+        "id": "alpha_vantage_technical",
+        "type": "api",
+        "enabled": true,
+        "endpoint": "https://www.alphavantage.co/query",
+        "params": {
+          "function": "RSI",
+          "symbol": "SPY",
+          "interval": "daily",
+          "time_period": 14,
+          "apikey": "alpha_key_67890"
+        },
+        "schedule": "daily",
+        "parser": "alpha_vantage_parser",
+        "fields": { "rsi": "Technical Analysis: RSI.rsi" },
+        "quality": { "source_weight": 0.75, "max_age_days": 2 }
+      },
+      {
+        "id": "alpha_vantage_macd",
+        "type": "api",
+        "enabled": true,
+        "endpoint": "https://www.alphavantage.co/query",
+        "params": {
+          "function": "MACD",
+          "symbol": "SPY",
+          "interval": "daily",
+          "series_type": "close",
+          "apikey": "alpha_key_67890"
+        },
+        "schedule": "daily",
+        "parser": "alpha_vantage_macd_parser",
+        "fields": {
+          "macd": "Technical Analysis: MACD.MACD",
+          "macd_signal": "Technical Analysis: MACD.MACD_Signal",
+          "macd_hist": "Technical Analysis: MACD.MACD_Hist"
+        },
+        "quality": { "source_weight": 0.75, "max_age_days": 2 }
+      },
+      {
+        "id": "alpha_vantage_bollinger",
+        "type": "api",
+        "enabled": true,
+        "endpoint": "https://www.alphavantage.co/query",
+        "params": {
+          "function": "BBANDS",
+          "symbol": "SPY",
+          "interval": "daily",
+          "time_period": 20,
+          "nbdevup": 2,
+          "nbdevdn": 2,
+          "apikey": "alpha_key_67890"
+        },
+        "schedule": "daily",
+        "parser": "alpha_vantage_bbands_parser",
+        "fields": {
+          "bb_upper": "Technical Analysis: BBANDS.Real Upper Band",
+          "bb_middle": "Technical Analysis: BBANDS.Real Middle Band",
+          "bb_lower": "Technical Analysis: BBANDS.Real Lower Band"
+        },
+        "quality": { "source_weight": 0.75, "max_age_days": 2 }
+      },
+      {
+        "id": "iex_insider",
+        "type": "api",
+        "enabled": true,
+        "endpoint": "https://cloud.iexapis.com/stable/stock/{symbol}/insider-transactions",
+        "params": { "token": "iex_token_abc" },
+        "symbols": ["AQB", "MOWI.OL"],
+        "schedule": "daily",
+        "parser": "iex_json_parser",
+        "fields": {
+          "insider_buys": "insider_transactions.buy_count",
+          "insider_sells": "insider_transactions.sell_count"
+        },
+        "quality": { "source_weight": 0.70, "max_age_days": 7 }
+      },
+      {
+        "id": "news_sentiment",
+        "type": "api",
+        "enabled": true,
+        "endpoint": "https://newsapi.org/v2/everything",
+        "params": {
+          "q": "aquaculture OR salmon OR seafood",
+          "apiKey": "news_key_123",
+          "language": "en",
+          "sortBy": "publishedAt"
+        },
+        "schedule": "hourly",
+        "parser": "newsapi_parser",
+        "fields": {
+          "sentiment_polarity": "sentiment.polarity",
+          "news_volume": "totalResults"
+        },
+        "quality": { "source_weight": 0.65, "max_age_days": 1 }
+      },
+      {
+        "id": "social_sentiment",
+        "type": "api",
+        "enabled": true,
+        "endpoint": "https://api.twitter.com/2/tweets/search/recent",
+        "params": {
+          "query": "aquaculture OR salmon",
+          "bearer_token": "twitter_bearer_xyz"
+        },
+        "schedule": "hourly",
+        "parser": "twitter_parser",
+        "fields": { "social_sentiment": "sentiment.average" },
+        "quality": { "source_weight": 0.55, "max_age_days": 1 }
+      },
+      {
+        "id": "economic_surprise",
+        "type": "api",
+        "enabled": true,
+        "endpoint": "https://tradingeconomics.com/surprise-index",
+        "params": { "country": "us", "indicator": "gdp" },
+        "schedule": "daily",
+        "parser": "tradingeconomics_parser",
+        "fields": { "gdp_surprise": "surprise_index.gdp" },
+        "quality": { "source_weight": 0.75, "max_age_days": 3 }
+      },
+      {
+        "id": "fmp_factors",
+        "type": "api",
+        "enabled": true,
+        "endpoint": "https://financialmodelingprep.com/api/v3/fama_french",
+        "params": { "apikey": "fmp_key_456" },
+        "schedule": "daily",
+        "parser": "fmp_json_parser",
+        "fields": {
+          "smb": "factors.smb",
+          "hml": "factors.hml",
+          "mom": "factors.mom"
+        },
+        "quality": { "source_weight": 0.70, "max_age_days": 2 }
+      },
+      {
+        "id": "yield_curve",
+        "type": "api",
+        "enabled": true,
+        "endpoint": "https://api.treasury.gov/ws/v1/",
+        "schedule": "daily",
+        "parser": "treasury_parser",
+        "fields": {
+          "yield_10y": "data.10_year",
+          "yield_2y": "data.2_year",
+          "spread": "data.spread"
+        },
+        "quality": { "source_weight": 0.80, "max_age_days": 2 }
+      },
+      {
+        "id": "vix",
+        "type": "api",
+        "enabled": true,
+        "endpoint": "https://query1.finance.yahoo.com/v8/finance/chart/%5EVIX",
+        "schedule": "daily",
+        "parser": "yfinance_json_parser",
+        "fields": { "vix_close": "chart.result.0.meta.regularMarketPrice" },
+        "quality": { "source_weight": 0.85, "max_age_days": 1 }
+      },
+      {
+        "id": "industry_reports",
+        "type": "file",
+        "enabled": true,
+        "path": "/data/industry/atlantic_salmon_2026.json",
+        "schedule": "quarterly",
+        "parser": "json_file_parser",
+        "fields": {
+          "hhi": "market_structure.hhi",
+          "lerner_index": "market_structure.lerner",
+          "entry_barriers": "market_structure.entry_barrier_score",
+          "entry_rate": "market_structure.entry_rate",
+          "lifecycle_stage": "market_structure.lifecycle_stage"
+        },
+        "quality": { "source_weight": 0.70, "max_age_days": 90 }
+      },
+      {
+        "id": "skyfield_ephemeris",
+        "type": "local",
+        "enabled": true,
+        "path": "/data/astro/planetary_positions.csv",
+        "schedule": "daily",
+        "parser": "csv_parser",
+        "fields": {
+          "sun_longitude": "sun",
+          "moon_longitude": "moon",
+          "mercury_longitude": "mercury",
+          "venus_longitude": "venus",
+          "mars_longitude": "mars",
+          "jupiter_longitude": "jupiter",
+          "saturn_longitude": "saturn",
+          "uranus_longitude": "uranus",
+          "neptune_longitude": "neptune",
+          "pluto_longitude": "pluto"
+        },
+        "quality": { "source_weight": 0.90, "max_age_days": 1 }
+      }
+    ],
+    "normalization": {
+      "field_mappings": {
+        "gdp_qoq": "macro.gdp_growth",
+        "cpi_yoy": "macro.cpi_inflation",
+        "fed_funds": "macro.fed_funds_rate",
+        "unemp_rate": "macro.unemployment",
+        "consumer_sentiment": "macro.consumer_sentiment",
+        "payrolls": "macro.payrolls",
+        "adj_close": "market.price",
+        "volatility": "risk.volatility_annual",
+        "net_margin": "profitability.net_margin",
+        "gearing": "risk.gearing",
+        "fixed_cost_ratio": "risk.fixed_cost",
+        "irr": "profitability.irr",
+        "revenue": "company_research.revenue",
+        "rsi": "technical.rsi_14",
+        "macd": "technical.macd",
+        "macd_signal": "technical.macd_signal",
+        "macd_hist": "technical.macd_hist",
+        "bb_upper": "technical.bb_upper",
+        "bb_middle": "technical.bb_middle",
+        "bb_lower": "technical.bb_lower",
+        "insider_buys": "company_research.insider_buys",
+        "insider_sells": "company_research.insider_sells",
+        "sentiment_polarity": "company_research.sentiment",
+        "social_sentiment": "market_research.social_sentiment",
+        "gdp_surprise": "macro.gdp_surprise",
+        "smb": "factor.smb",
+        "hml": "factor.hml",
+        "mom": "factor.mom",
+        "yield_10y": "macro.yield_10y",
+        "yield_2y": "macro.yield_2y",
+        "spread": "macro.yield_spread",
+        "vix_close": "market.vix",
+        "hhi": "market_structure.hhi",
+        "lerner_index": "market_structure.lerner",
+        "entry_barriers": "market_structure.entry_barrier_score",
+        "entry_rate": "competition.entry_rate",
+        "lifecycle_stage": "lifecycle.stage",
+        "sun_longitude": "astro.sun",
+        "moon_longitude": "astro.moon",
+        "mercury_longitude": "astro.mercury",
+        "venus_longitude": "astro.venus",
+        "mars_longitude": "astro.mars",
+        "jupiter_longitude": "astro.jupiter",
+        "saturn_longitude": "astro.saturn",
+        "uranus_longitude": "astro.uranus",
+        "neptune_longitude": "astro.neptune",
+        "pluto_longitude": "astro.pluto"
+      },
+      "unit_conversions": {
+        "macro.gdp_growth": { "to": "decimal", "factor": 0.01 },
+        "macro.cpi_inflation": { "to": "decimal", "factor": 0.01 },
+        "macro.fed_funds_rate": { "to": "decimal", "factor": 0.01 },
+        "macro.unemployment": { "to": "decimal", "factor": 0.01 },
+        "profitability.net_margin": { "to": "decimal", "factor": 0.01 },
+        "risk.gearing": { "to": "decimal", "factor": 1 },
+        "risk.fixed_cost": { "to": "decimal", "factor": 1 },
+        "market_structure.lerner": { "to": "decimal", "factor": 1 },
+        "market_structure.hhi": { "to": "decimal", "factor": 1 },
+        "competition.entry_rate": { "to": "decimal", "factor": 0.01 },
+        "macro.yield_spread": { "to": "decimal", "factor": 0.01 }
+      },
+      "timestamp_alignment": {
+        "timezone": "UTC",
+        "frequency": "D",
+        "method": "ffill"
+      }
+    },
+    "deduplication": {
+      "key_fields": ["symbol", "date", "source_id"],
+      "synthesis_strategies": {
+        "numeric": "weighted_average_with_time_decay",
+        "categorical": "mode_with_recency",
+        "string": "most_recent"
+      },
+      "time_decay_factor": 0.5,
+      "weights": {
+        "fred_macro": 0.95,
+        "yfinance_equity": 0.85,
+        "fmp_fundamentals": 0.80,
+        "alpha_vantage_technical": 0.75,
+        "alpha_vantage_macd": 0.75,
+        "alpha_vantage_bollinger": 0.75,
+        "iex_insider": 0.70,
+        "news_sentiment": 0.65,
+        "social_sentiment": 0.55,
+        "economic_surprise": 0.75,
+        "fmp_factors": 0.70,
+        "yield_curve": 0.80,
+        "vix": 0.85,
+        "industry_reports": 0.70,
+        "skyfield_ephemeris": 0.90
+      },
+      "conflict_threshold": 0.20
+    },
+    "enrichment": {
+      "derived_features": [
+        {
+          "name": "macro_composite",
+          "formula": "(gdp_score*0.20 + cpi_score*0.20 + fed_score*0.20 + unemp_score*0.20 + sentiment_score*0.20)",
+          "source_fields": ["macro.gdp_growth", "macro.cpi_inflation", "macro.fed_funds_rate", "macro.unemployment", "macro.consumer_sentiment"],
+          "target": "macro.composite"
+        },
+        {
+          "name": "profitability_spread",
+          "formula": "profitability.irr - macro.fed_funds_rate",
+          "source_fields": ["profitability.irr", "macro.fed_funds_rate"],
+          "target": "profitability.spread"
+        },
+        {
+          "name": "risk_adjusted_gearing",
+          "formula": "risk.gearing * risk.volatility_annual",
+          "source_fields": ["risk.gearing", "risk.volatility_annual"],
+          "target": "risk.adj_gearing"
+        },
+        {
+          "name": "zscore_504",
+          "formula": "(market.price - rolling_mean(market.price, 504)) / rolling_std(market.price, 504)",
+          "source_fields": ["market.price"],
+          "target": "market.zscore_504"
+        },
+        {
+          "name": "zscore_252",
+          "formula": "(market.price - rolling_mean(market.price, 252)) / rolling_std(market.price, 252)",
+          "source_fields": ["market.price"],
+          "target": "market.zscore_252"
+        },
+        {
+          "name": "insider_net_buy",
+          "formula": "company_research.insider_buys - company_research.insider_sells",
+          "source_fields": ["company_research.insider_buys", "company_research.insider_sells"],
+          "target": "company_research.insider_net"
+        },
+        {
+          "name": "sq9_cycle_position",
+          "formula": "astro.sun % 360",
+          "source_fields": ["astro.sun"],
+          "target": "sq9.cycle_position"
+        },
+        {
+          "name": "moon_phase",
+          "formula": "astro.moon % 360",
+          "source_fields": ["astro.moon"],
+          "target": "astro.moon_phase"
+        },
+        {
+          "name": "macro_gdp_surprise_score",
+          "formula": "clamp((macro.gdp_surprise + 10) / 20, 0, 1)",
+          "source_fields": ["macro.gdp_surprise"],
+          "target": "macro.gdp_surprise_score"
+        },
+        {
+          "name": "factor_composite",
+          "formula": "factor.smb + factor.hml + factor.mom",
+          "source_fields": ["factor.smb", "factor.hml", "factor.mom"],
+          "target": "factor.composite"
+        },
+        {
+          "name": "tech_rsi_divergence",
+          "formula": "(technical.rsi_14 - rolling_mean(technical.rsi_14, 14))",
+          "source_fields": ["technical.rsi_14"],
+          "target": "technical.rsi_divergence"
+        },
+        {
+          "name": "yield_curve_slope",
+          "formula": "macro.yield_10y - macro.yield_2y",
+          "source_fields": ["macro.yield_10y", "macro.yield_2y"],
+          "target": "macro.yield_slope"
+        },
+        {
+          "name": "vix_percentile",
+          "formula": "(market.vix - rolling_min(market.vix, 252)) / (rolling_max(market.vix, 252) - rolling_min(market.vix, 252))",
+          "source_fields": ["market.vix"],
+          "target": "market.vix_percentile"
+        }
+      ],
+      "external_metadata": {
+        "industry_classification": {
+          "source": "https://api.industry-class.org/v1/sic",
+          "mapping": {
+            "AQB": "0910",
+            "MOWI.OL": "0910",
+            "SALM": "0910"
+          },
+          "target_field": "metadata.sic_code"
+        }
+      },
+      "ml_features": {
+        "enabled": true,
+        "model_path": "/models/feature_extractor.pkl",
+        "input_fields": ["macro.composite", "profitability.spread", "risk.adj_gearing", "market.zscore_504", "technical.rsi_14", "macro.yield_slope", "market.vix_percentile"],
+        "output_prefix": "ml"
+      }
+    },
+    "omti_weights": {
+      "macro": 0.14,
+      "market": 0.10,
+      "demand": 0.07,
+      "profitability": 0.14,
+      "competition": 0.07,
+      "lifecycle": 0.07,
+      "risk": 0.07,
+      "sq9": 0.04,
+      "market_research": 0.10,
+      "company_research": 0.10,
+      "astro_timing": 0.10
+    },
+    "astro_timing_factors": {
+      "natal_phase": { "weight": 0.30, "description": "Company age mapped to progressed Sun phase" },
+      "transit_activation": { "weight": 0.40, "description": "Outer planet transits to company chart angles" },
+      "sq9_compatibility": { "weight": 0.30, "description": "Current price relative to Sq9 levels" }
+    },
+    "injection": {
+      "modules": ["macro", "market_structure", "demand", "profitability", "competition", "lifecycle", "risk", "sq9", "market_research", "company_research", "astro_timing"],
+      "benefit_model": "/models/benefit_model.pkl",
+      "threshold": 0.25,
+      "routing_table": {
+        "macro.gdp_growth": "macro",
+        "macro.cpi_inflation": "macro",
+        "macro.fed_funds_rate": "macro",
+        "macro.unemployment": "macro",
+        "macro.composite": "macro",
+        "macro.yield_slope": "macro",
+        "macro.gdp_surprise_score": "macro",
+        "market_structure.hhi": "market_structure",
+        "market_structure.lerner": "market_structure",
+        "market_structure.entry_barrier_score": "market_structure",
+        "profitability.net_margin": "profitability",
+        "profitability.spread": "profitability",
+        "competition.entry_rate": "competition",
+        "lifecycle.stage": "lifecycle",
+        "risk.volatility_annual": "risk",
+        "risk.gearing": "risk",
+        "risk.fixed_cost": "risk",
+        "risk.adj_gearing": "risk",
+        "sq9.cycle_position": "sq9",
+        "market_research.consumer_confidence": "market_research",
+        "market_research.brand_health": "market_research",
+        "market_research.social_sentiment": "market_research",
+        "company_research.sentiment": "company_research",
+        "company_research.insider_net": "company_research",
+        "company_research.financial": "company_research",
+        "company_research.leadership": "company_research",
+        "company_research.cLevel": "company_research",
+        "company_research.astro": "company_research",
+        "technical.rsi_14": "technical",
+        "technical.macd_hist": "technical",
+        "technical.bb_position": "technical",
+        "factor.composite": "factor",
+        "astro.moon_phase": "astro_timing",
+        "astro.sun": "astro_timing"
+      }
+    },
+    "quality_control": {
+      "schema_validation": true,
+      "range_checks": {
+        "macro.gdp_growth": { "min": -0.10, "max": 0.10 },
+        "macro.cpi_inflation": { "min": -0.05, "max": 0.20 },
+        "macro.fed_funds_rate": { "min": 0.00, "max": 0.20 },
+        "macro.unemployment": { "min": 0.02, "max": 0.15 },
+        "profitability.net_margin": { "min": -0.50, "max": 0.50 },
+        "risk.gearing": { "min": 0.00, "max": 5.00 },
+        "risk.volatility_annual": { "min": 0.00, "max": 2.00 },
+        "market_structure.hhi": { "min": 0, "max": 10000 },
+        "competition.entry_rate": { "min": 0.00, "max": 0.50 },
+        "market.vix": { "min": 5, "max": 80 },
+        "technical.rsi_14": { "min": 0, "max": 100 }
+      },
+      "outlier_detection": {
+        "method": "isolation_forest",
+        "contamination": 0.01,
+        "random_state": 42
+      },
+      "confidence_scoring": {
+        "source_weight": 0.30,
+        "coverage_factor": 0.30,
+        "age_factor": 0.20,
+        "anomaly_factor": 0.20
+      }
+    },
+    "feedback_loop": {
+      "enabled": true,
+      "target_metric": "omti_accuracy",
+      "update_interval": "daily",
+      "source_weight_adjustment": 0.01,
+      "model_retrain_cron": "0 3 * * 0",
+      "signal_weight_adjustment": true
+    }
+  },
+  "data": {
+    "astral_twelve": {
+      "signs": [
+        {
+          "id": "Aries",
+          "life_phrase": "I am.",
+          "keywords": ["initiative", "impulsive", "pioneering", "direct", "impatient"],
+          "interpretation": "Aries is the mover — self‑assertive, action‑first. Values directness; learns through starting and leading. Lessons: channel impulse into sustained leadership."
+        },
+        {
+          "id": "Taurus",
+          "life_phrase": "I possess / I build.",
+          "keywords": ["steadiness", "material security", "sensuality", "stubbornness", "craftsmanship"],
+          "interpretation": "Taurus aims for stability and quality; focuses on resources, the body and values; strength in persistence."
+        },
+        {
+          "id": "Gemini",
+          "life_phrase": "I think / I communicate.",
+          "keywords": ["information", "versatility", "curiosity", "verbal dexterity", "inconsistent"],
+          "interpretation": "Gemini organises and transmits information; adaptable and curious, thrives on exchange."
+        },
+        {
+          "id": "Cancer",
+          "life_phrase": "I nurture / I protect.",
+          "keywords": ["home", "feeling", "memory", "instinct", "protective"],
+          "interpretation": "Cancer concerns security and emotional bonds; instinctive, relational, and protective."
+        },
+        {
+          "id": "Leo",
+          "life_phrase": "I will be seen / I create.",
+          "keywords": ["authority", "self-expression", "generosity", "drama", "pride"],
+          "interpretation": "Leo is expressive and regal; seeks recognition and creative leadership."
+        },
+        {
+          "id": "Virgo",
+          "life_phrase": "I analyse / I refine.",
+          "keywords": ["detail", "service", "critique", "organisation", "healing"],
+          "interpretation": "Virgo discriminates and perfects; excels in systems and service; shadow in hyper-critique."
+        },
+        {
+          "id": "Libra",
+          "life_phrase": "I relate / I balance.",
+          "keywords": ["partnership", "aesthetics", "diplomacy", "indecision", "fairness"],
+          "interpretation": "Libra mediates and values harmony; oriented to relationships and balance."
+        },
+        {
+          "id": "Scorpio",
+          "life_phrase": "I transform / I possess.",
+          "keywords": ["intensity", "depth", "secrecy", "regeneration", "power"],
+          "interpretation": "Scorpio probes transformation through crisis and intimacy; themes of control and rebirth."
+        },
+        {
+          "id": "Sagittarius",
+          "life_phrase": "I explore / I teach.",
+          "keywords": ["expansion", "philosophy", "freedom", "bluntness", "adventure"],
+          "interpretation": "Sagittarius quests for meaning through travel, belief and teaching; expansive and candid."
+        },
+        {
+          "id": "Capricorn",
+          "life_phrase": "I structure / I achieve.",
+          "keywords": ["ambition", "discipline", "authority", "restraint", "status"],
+          "interpretation": "Capricorn builds through time and structure; practical and reputation-focused."
+        },
+        {
+          "id": "Aquarius",
+          "life_phrase": "I innovate / I detach.",
+          "keywords": ["originality", "humanitarianism", "eccentricity", "detachment", "intellect"],
+          "interpretation": "Aquarius reframes social forms; idealistic and inventive, values collective progress."
+        },
+        {
+          "id": "Pisces",
+          "life_phrase": "I dissolve / I union.",
+          "keywords": ["empathy", "imagination", "surrender", "transcendence", "boundary-blurring"],
+          "interpretation": "Pisces dissolves boundaries and senses whole patterns; mystical and compassionate; risk of escapism."
+        }
+      ],
+      "houses": [
+        { "id": "1st", "title": "Self, appearance, identity" },
+        { "id": "2nd", "title": "Values, possessions, resources" },
+        { "id": "3rd", "title": "Communication, siblings, immediate environment" },
+        { "id": "4th", "title": "Home, roots, family, private life" },
+        { "id": "5th", "title": "Creativity, children, romance" },
+        { "id": "6th", "title": "Work, routine, health" },
+        { "id": "7th", "title": "Partnerships & one-to-one relations" },
+        { "id": "8th", "title": "Shared resources, transformation" },
+        { "id": "9th", "title": "Philosophy, long trips, higher learning" },
+        { "id": "10th", "title": "Public role, career, reputation" },
+        { "id": "11th", "title": "Groups, friends, hopes" },
+        { "id": "12th", "title": "Solitude, hidden enemies, surrender" }
+      ],
+      "planets": [
+        { "id": "Sun", "title": "identity, will, life-force" },
+        { "id": "Moon", "title": "needs, habits, emotions" },
+        { "id": "Mercury", "title": "communication, thought, commerce" },
+        { "id": "Venus", "title": "values, relationships, aesthetics" },
+        { "id": "Mars", "title": "drive, assertion, courage" },
+        { "id": "Jupiter", "title": "expansion, belief, luck" },
+        { "id": "Saturn", "title": "limits, structure, responsibility" },
+        { "id": "Uranus", "title": "innovation, rebellion, sudden change" },
+        { "id": "Neptune", "title": "ideals, dreams, dissolution" },
+        { "id": "Pluto", "title": "transformation, power, regeneration" }
+      ],
+      "aspects": [
+        { "id": "Conjunction", "title": "0° – blending/amplification; context dependent" },
+        { "id": "Sextile", "title": "60° – opportunity, easy coordination" },
+        { "id": "Square", "title": "90° – tension, friction, productive challenge" },
+        { "id": "Trine", "title": "120° – harmony, natural flow" },
+        { "id": "Opposition", "title": "180° – polarity, projection, relational tension" },
+        { "id": "Quincunx", "title": "150° – adjustment, irritation" }
+      ],
+      "elements": [
+        { "id": "Fire", "signs": ["Aries", "Leo", "Sagittarius"] },
+        { "id": "Earth", "signs": ["Taurus", "Virgo", "Capricorn"] },
+        { "id": "Air", "signs": ["Gemini", "Libra", "Aquarius"] },
+        { "id": "Water", "signs": ["Cancer", "Scorpio", "Pisces"] }
+      ],
+      "modalities": [
+        { "id": "Cardinal", "signs": ["Aries", "Cancer", "Libra", "Capricorn"] },
+        { "id": "Fixed", "signs": ["Taurus", "Leo", "Scorpio", "Aquarius"] },
+        { "id": "Mutable", "signs": ["Gemini", "Virgo", "Sagittarius", "Pisces"] }
+      ],
+      "dignities": [
+        { "name": "Domicile", "score": 5 },
+        { "name": "Exaltation", "score": 4 },
+        { "name": "Triplicity", "score": 3 },
+        { "name": "Term", "score": 2 },
+        { "name": "Face", "score": 1 },
+        { "name": "Peregrine", "score": 0 },
+        { "name": "Detriment", "score": -4 },
+        { "name": "Fall", "score": -5 }
+      ],
+      "asteroids": [
+        { "id": "Chiron", "role": "wounded healer" },
+        { "id": "Ceres", "role": "nurturing" },
+        { "id": "Pallas", "role": "wisdom" },
+        { "id": "Juno", "role": "commitment" },
+        { "id": "Vesta", "role": "devotion" },
+        { "id": "Eros", "role": "passion" },
+        { "id": "Psyche", "role": "soul" }
+      ]
+    },
+    "fixed_stars": [
+      { "name": "Algol", "longitude": 26.0, "nature": "Saturn/Mars", "keywords": "Violence, beheading, catastrophe, extreme creativity" },
+      { "name": "Pleiades", "longitude": 0.0, "nature": "Moon/Mars", "keywords": "Accidents, blindness, feminine power, sorrow" },
+      { "name": "Aldebaran", "longitude": 9.0, "nature": "Mars/Venus", "keywords": "Royal star (Michael), eloquence, honor, courage, danger of violence" },
+      { "name": "Capella", "longitude": 21.0, "nature": "Mars/Mercury", "keywords": "Inquisitiveness, powerful friends, wealth, civic honors" },
+      { "name": "Sirius", "longitude": 14.0, "nature": "Jupiter/Mars", "keywords": "Fame, leadership, wealth, ambition, dog bites, drought" },
+      { "name": "Procyon", "longitude": 25.0, "nature": "Mercury/Mars", "keywords": "Wealth, fame, sudden success then disaster, dog bites" },
+      { "name": "Regulus", "longitude": 0.0, "nature": "Mars/Jupiter", "keywords": "Royal star (Raphael), nobility, power, sudden downfall, success" },
+      { "name": "Alkaid", "longitude": 27.0, "nature": "Moon/Mercury/Saturn", "keywords": "Death, mourning, war, natural catastrophes" },
+      { "name": "Spica", "longitude": 24.0, "nature": "Venus/Mars", "keywords": "Wealth, fame, honor, artistic genius, protection" },
+      { "name": "Arcturus", "longitude": 24.0, "nature": "Jupiter/Mars", "keywords": "Riches, fame, popularity, success through work" },
+      { "name": "Alphecca", "longitude": 12.0, "nature": "Venus/Mercury", "keywords": "Honor, dignity, artistic ability, betrayal in love" },
+      { "name": "Antares", "longitude": 9.0, "nature": "Mars/Jupiter", "keywords": "Royal star (Oriel), adventure, stubbornness, sudden loss, violence" },
+      { "name": "Vega", "longitude": 15.0, "nature": "Venus/Mercury", "keywords": "Luck in politics, artistic talent, fleeting fame" },
+      { "name": "Fomalhaut", "longitude": 4.0, "nature": "Venus/Mercury", "keywords": "Royal star (Gabriel), fame, occult, congenital defects, alchemy" },
+      { "name": "Achernar", "longitude": 15.0, "nature": "Venus", "keywords": "Success in religious/occult matters, danger from water" }
+    ],
+    "eclipses_2026": [
+      {
+        "date": "2026-02-17",
+        "type": "Solar",
+        "degree": 28.56,
+        "sign": "Aquarius",
+        "saros": 121,
+        "doorway_factor": 0.8,
+        "theme": "Release of collective ideals"
+      },
+      {
+        "date": "2026-03-03",
+        "type": "Lunar",
+        "degree": 12.50,
+        "sign": "Virgo",
+        "saros": 113,
+        "doorway_factor": 0.7,
+        "theme": "Critical analysis & health"
+      },
+      {
+        "date": "2026-08-12",
+        "type": "Solar",
+        "degree": 20.00,
+        "sign": "Leo",
+        "saros": 134,
+        "doorway_factor": 1.0,
+        "theme": "Reset of creative power"
+      },
+      {
+        "date": "2026-08-28",
+        "type": "Lunar",
+        "degree": 4.00,
+        "sign": "Pisces",
+        "saros": 126,
+        "doorway_factor": 0.9,
+        "theme": "Spiritual culmination"
+      }
+    ],
+    "arabic_parts": [
+      { "name": "Pars Fortunae", "significations": "Life, Body, Soul, Wealth, Reputation" },
+      { "name": "Pars Futurorum", "significations": "Soul, Faith, Prophecy, Hidden things, Intentions" },
+      { "name": "Pars Saturni", "significations": "Memory, Profundity, Loss, Death, Inheritance" },
+      { "name": "Pars Vitae", "significations": "Natural life, Body, Sustenance, Longevity" },
+      { "name": "Pars Patris", "significations": "Father's fortune, Substance, Origin" },
+      { "name": "Pars Matrum", "significations": "Mother's being, Love between mother and child" },
+      { "name": "Pars Coniugii", "significations": "Long-lasting marriage, Marriage quality and fortune" },
+      { "name": "Pars Mortis", "significations": "Manner and quality of death" },
+      { "name": "Pars Regni", "significations": "Attainment of rule, Authority, Connection to the powerful" },
+      { "name": "Pars Frumentum", "significations": "Price and abundance of grain" }
+    ],
+    "midpoint_resource": {
+      "activating_planets": ["Jupiter", "Saturn", "Uranus", "Neptune", "Pluto", "Moon's North Node"],
+      "example_interpretation": {
+        "Jupiter": {
+          "Sun/Moon": "Physical and emotional fulfilment. An essentially positive outlook. Optimism, confidence and resilience. An abundance of creative and procreative energy. Materialistic inclinations. Accumulating assets. Prosperity."
+        },
+        "Saturn": {
+          "Sun/Moon": "Experiencing difficulties or restrictions within partnerships. Testing relationships. Coldness and rejection. A proneness to loss or separation."
+        },
+        "Uranus": {
+          "Sun/Moon": "Thriving on change and stimulation. Rebellious traits. Tensions. Instability. Unpredictable behaviour. Agitation and irritability. Sudden departures or separations."
+        },
+        "Neptune": {
+          "Sun/Moon": "Spiritual awareness; healing energy. Empathic and sensitive to the needs of each other. Contending with deceptive and undermining currents. Infatuation. Disillusionment. Dependencies and addictions."
+        },
+        "Pluto": {
+          "Sun/Moon": "Fated partnership. Power struggles. Compulsive and obsessive tendencies. Extremism. Manipulation. Conclusive endings and new beginnings."
+        },
+        "Moon's North Node": {
+          "Sun/Moon": "A supportive and consistent partnership. An attraction of kindred souls and spirits. Feeling 'at one' with a partner; unity. A significant union - marriage. Strong family ties and bonds."
+        }
+      }
+    },
+    "house_affinities": {
+      "Sun": { "strong": [1, 5, 10], "weak": [4, 6, 7, 8, 12] },
+      "Moon": { "strong": [2, 4], "weak": [6, 8, 10, 12] },
+      "Mercury": { "strong": [1, 3], "weak": [7, 8, 12] },
+      "Venus": { "strong": [2, 4, 7], "weak": [6, 8, 10] },
+      "Mars": { "strong": [1, 10], "weak": [4, 6, 12] },
+      "Jupiter": { "strong": [1, 4, 9], "weak": [6, 7, 8] },
+      "Saturn": { "strong": [7, 10, 11], "weak": [1, 4] }
+    },
+    "chiron_node_midpoint": {
+      "activations": {
+        "Sun": "Life Purpose Through Spiritual Connection",
+        "Moon": "Emotional Healing Through Evolution",
+        "Mercury": "Channeled Communication",
+        "Venus": "Love as Evolution",
+        "Mars": "Action as Spiritual Practice",
+        "Jupiter": "Abundant Spiritual Connection",
+        "Saturn": "Frustration and Delayed Connection",
+        "Uranus": "Breakthrough Healing",
+        "Neptune": "Visionary Healing with Warning",
+        "Pluto": "Transformative Healing with Shadow",
+        "Ascendant": "Personality as Gatekeeper",
+        "Midheaven": "Career Contingent on Healing"
+      }
+    },
+    "asteroid_definitions": [
+      {
+        "name": "Juno",
+        "number": 3,
+        "keywords": "Marriage, commitment, legal bonds, spousal qualities",
+        "interpretation": "Represents marriage partnerships and what you need in relationships to commit. Shows spousal qualities and legal ties."
+      },
+      {
+        "name": "Eros",
+        "number": 433,
+        "keywords": "Erotic love, sexual desire, passion, transformation",
+        "interpretation": "Rules sex and sexual desire. Shows what turns you on and your approach to sexual relationships."
+      },
+      {
+        "name": "Psyche",
+        "number": 16,
+        "keywords": "Soul, love, telepathy, intuition, unconscious",
+        "interpretation": "Represents the soul and psychic connection. Soulmate indicator especially with Eros."
+      },
+      {
+        "name": "Amor",
+        "number": 1221,
+        "keywords": "Compassion, empathy, loving kindness",
+        "interpretation": "Represents potential for intimacy and whether love is conditional or not."
+      },
+      {
+        "name": "Aphrodite",
+        "number": 1388,
+        "keywords": "Love, beauty, fertility, sexual connection",
+        "interpretation": "Goddess of love and fertility. Shows how connected you are with spouse and how you are in love."
+      },
+      {
+        "name": "Valentine",
+        "number": 447,
+        "keywords": "Pure love, sacrifice, unconditional",
+        "interpretation": "Represents sacrificial pure love. The kind where you'd take a bullet for someone."
+      },
+      {
+        "name": "Cupido",
+        "number": 763,
+        "keywords": "Infatuation, attraction, flirtation",
+        "interpretation": "Asteroid of crushes and instant attraction. Shows pursuit of romance and initial courting period."
+      },
+      {
+        "name": "Sappho",
+        "number": 80,
+        "keywords": "Poetry, artistic expression, sexuality, authenticity",
+        "interpretation": "Represents same-sex attraction, flirtation, artistic sensitivity, and being true to your sexual self."
+      },
+      {
+        "name": "Chiron",
+        "number": 2060,
+        "keywords": "Wounded healer, transformation, teaching",
+        "interpretation": "The wounded healer. Represents where you have constant burden that becomes wisdom."
+      },
+      {
+        "name": "Ceres",
+        "number": 1,
+        "keywords": "Unconditional love, nurturing, mothering",
+        "interpretation": "Represents unconditional mother love and what you need to feel nurtured."
+      },
+      {
+        "name": "Pallas",
+        "number": 2,
+        "keywords": "Wisdom, strategy, creative intelligence, communication",
+        "interpretation": "Goddess of wisdom and strategic thinking. Shows pattern recognition, creative problem-solving."
+      },
+      {
+        "name": "Vesta",
+        "number": 4,
+        "keywords": "Sacred sex, devotion, ritual, tantric",
+        "interpretation": "Represents devotion to serving, ritualistic practice, sacred flame, and tantric sex."
+      },
+      {
+        "name": "Persephone",
+        "number": 399,
+        "keywords": "Transformation, underworld, seasons, shadow",
+        "interpretation": "Represents descent into underworld and seasonal transformation. Shows shadow work, abduction, initiation, return."
+      },
+      {
+        "name": "Medea",
+        "number": 212,
+        "keywords": "Betrayal, revenge, passion, transformation",
+        "interpretation": "Represents intense passion that can turn to revenge. Shows extremes in love and relationship betrayals."
+      },
+      {
+        "name": "Circe",
+        "number": 34,
+        "keywords": "Enchantment, transformation, seduction, magic",
+        "interpretation": "Sorceress who transforms. Represents enchantment, seduction, magical transformation, and animal nature."
+      },
+      {
+        "name": "Medusa",
+        "number": 149,
+        "keywords": "Victimization, rage, transformation, beauty",
+        "interpretation": "Represents being victimised then transforming rage. Shows beauty that threatens and protective anger."
+      },
+      {
+        "name": "Nessus",
+        "number": 7066,
+        "keywords": "Abuse, betrayal, karma patterns",
+        "interpretation": "Represents karmic patterns around abuse and betrayal. Shows where healing from victimization is needed."
+      },
+      {
+        "name": "Pholus",
+        "number": 5145,
+        "keywords": "Small cause big effect, turning points",
+        "interpretation": "Represents small cause big effect. Shows life-changing relationship turning points and catalytic events."
+      }
+    ],
+    "zodiac_archetypes": [
+      {
+        "name": "Aries",
+        "keyword": "Warrior",
+        "traits": ["Courageous", "Impulsive", "Competitive", "Direct", "Pioneering"],
+        "shadow": "Aggression, narcissism, rashness",
+        "gift": "Initiative, leadership, passion"
+      },
+      {
+        "name": "Taurus",
+        "keyword": "Lover",
+        "traits": ["Sensual", "Patient", "Reliable", "Possessive", "Artistic"],
+        "shadow": "Stubbornness, materialism, laziness",
+        "gift": "Steadfastness, appreciation of beauty, loyalty"
+      },
+      {
+        "name": "Gemini",
+        "keyword": "Communicator",
+        "traits": ["Curious", "Versatile", "Social", "Clever", "Restless"],
+        "shadow": "Superficiality, inconsistency, gossip",
+        "gift": "Intellect, adaptability, eloquence"
+      },
+      {
+        "name": "Cancer",
+        "keyword": "Mother",
+        "traits": ["Nurturing", "Protective", "Intuitive", "Emotional", "Tenacious"],
+        "shadow": "Overprotectiveness, moodiness, clinginess",
+        "gift": "Empathy, loyalty, home-building"
+      },
+      {
+        "name": "Leo",
+        "keyword": "King/Queen",
+        "traits": ["Confident", "Dramatic", "Generous", "Creative", "Loyal"],
+        "shadow": "Arrogance, vanity, domination",
+        "gift": "Leadership, warmth, self-expression"
+      },
+      {
+        "name": "Virgo",
+        "keyword": "Healer",
+        "traits": ["Analytical", "Practical", "Meticulous", "Helpful", "Pure"],
+        "shadow": "Perfectionism, criticism, worry",
+        "gift": "Service, clarity, discernment"
+      },
+      {
+        "name": "Libra",
+        "keyword": "Artist",
+        "traits": ["Diplomatic", "Aesthetic", "Cooperative", "Fair", "Sociable"],
+        "shadow": "Indecisiveness, codependency, superficial charm",
+        "gift": "Harmony, beauty, justice"
+      },
+      {
+        "name": "Scorpio",
+        "keyword": "Magician",
+        "traits": ["Intense", "Passionate", "Strategic", "Mysterious", "Transformative"],
+        "shadow": "Obsession, secrecy, vindictiveness",
+        "gift": "Depth, power, regeneration"
+      },
+      {
+        "name": "Sagittarius",
+        "keyword": "Seeker",
+        "traits": ["Optimistic", "Adventurous", "Philosophical", "Honest", "Restless"],
+        "shadow": "Dogmatism, recklessness, overindulgence",
+        "gift": "Wisdom, exploration, teaching"
+      },
+      {
+        "name": "Capricorn",
+        "keyword": "Executive",
+        "traits": ["Disciplined", "Ambitious", "Responsible", "Pragmatic", "Patient"],
+        "shadow": "Rigidity, pessimism, workaholism",
+        "gift": "Structure, achievement, mastery"
+      },
+      {
+        "name": "Aquarius",
+        "keyword": "Revolutionary",
+        "traits": ["Innovative", "Humanitarian", "Unconventional", "Intellectual", "Future‑oriented"],
+        "shadow": "Detachment, rebellion, coldness",
+        "gift": "Originality, progress, community"
+      },
+      {
+        "name": "Pisces",
+        "keyword": "Mystic",
+        "traits": ["Compassionate", "Imaginative", "Intuitive", "Sacrificial", "Adaptable"],
+        "shadow": "Escapism, victimhood, confusion",
+        "gift": "Empathy, creativity, transcendence"
+      }
+    ],
+    "delineation_signals": [
+      {
+        "id": "sig_251",
+        "description": "Venus in Libra (domicile): strong desire for harmony, partnership, and aesthetic balance; enjoys cooperation and beauty.",
+        "trigger": "Natal Venus in Libra (domicile)",
+        "expected_effect": "Diplomatic, charming, relationship-oriented, appreciates art and justice",
+        "source": "Delineation Ontology",
+        "confidence": 0.70,
+        "category": "Personality",
+        "testable": true
+      },
+      {
+        "id": "sig_252",
+        "description": "Mars in Scorpio (domicile): intense drive, strategic action, focused passion, and transformative power.",
+        "trigger": "Natal Mars in Scorpio (domicile)",
+        "expected_effect": "Determined, investigative, powerful presence, resourceful",
+        "source": "Delineation Ontology",
+        "confidence": 0.70,
+        "category": "Personality",
+        "testable": true
+      },
+      {
+        "id": "sig_253",
+        "description": "Jupiter in Pisces (domicile): compassionate, idealistic, generous, and spiritually inclined.",
+        "trigger": "Natal Jupiter in Pisces (domicile)",
+        "expected_effect": "Altruism, faith, artistic sensitivity, emotional openness",
+        "source": "Delineation Ontology",
+        "confidence": 0.70,
+        "category": "Personality",
+        "testable": true
+      },
+      {
+        "id": "sig_254",
+        "description": "Saturn in Aquarius (domicile): innovative thinking applied to structure, humanitarian goals, and scientific discipline.",
+        "trigger": "Natal Saturn in Aquarius (domicile)",
+        "expected_effect": "Progressive leadership, technological mastery, social reform",
+        "source": "Delineation Ontology",
+        "confidence": 0.70,
+        "category": "Personality",
+        "testable": true
+      },
+      {
+        "id": "sig_255",
+        "description": "Mercury in Gemini (domicile): quick wit, versatility, excellent communication, and intellectual curiosity.",
+        "trigger": "Natal Mercury in Gemini (domicile)",
+        "expected_effect": "Communicative, adaptable, loves learning and sharing ideas",
+        "source": "Delineation Ontology",
+        "confidence": 0.70,
+        "category": "Personality",
+        "testable": true
+      },
+      {
+        "id": "sig_256",
+        "description": "Mercury in Virgo (domicile): analytical, precise, detail-oriented, and service-minded communication.",
+        "trigger": "Natal Mercury in Virgo (domicile)",
+        "expected_effect": "Critical thinking, practical problem-solving, technical writing",
+        "source": "Delineation Ontology",
+        "confidence": 0.70,
+        "category": "Personality",
+        "testable": true
+      },
+      {
+        "id": "sig_257",
+        "description": "Venus in Pisces (exaltation): unconditional love, romantic idealism, artistic sensitivity.",
+        "trigger": "Natal Venus in Pisces (exaltation)",
+        "expected_effect": "Compassionate, creative, self-sacrificing, romantic",
+        "source": "Delineation Ontology",
+        "confidence": 0.70,
+        "category": "Personality",
+        "testable": true
+      },
+      {
+        "id": "sig_258",
+        "description": "Moon in Taurus (exaltation): stable emotions, comfort-seeking, nurturing through material care.",
+        "trigger": "Natal Moon in Taurus (exaltation)",
+        "expected_effect": "Reliable, patient, enjoys sensory pleasures, steady affections",
+        "source": "Delineation Ontology",
+        "confidence": 0.70,
+        "category": "Personality",
+        "testable": true
+      },
+      {
+        "id": "sig_259",
+        "description": "Sun in Libra (detriment): identity and self-expression are channeled through relationships and diplomacy.",
+        "trigger": "Natal Sun in Libra (detriment)",
+        "expected_effect": "Harmonious, diplomatic, may struggle with self-assertion",
+        "source": "Delineation Ontology",
+        "confidence": 0.60,
+        "category": "Personality",
+        "testable": true
+      },
+      {
+        "id": "sig_260",
+        "description": "Moon in Scorpio (fall): intense emotions, deep secrecy, and a need for psychological control.",
+        "trigger": "Natal Moon in Scorpio (fall)",
+        "expected_effect": "Emotional depth, possessiveness, transformative inner life",
+        "source": "Delineation Ontology",
+        "confidence": 0.60,
+        "category": "Personality",
+        "testable": true
+      },
+      {
+        "id": "sig_261",
+        "description": "Sun in Aquarius (detriment): identity tied to individuality, rebellion, and social ideals.",
+        "trigger": "Natal Sun in Aquarius (detriment)",
+        "expected_effect": "Unconventional, humanitarian, intellectual, emotionally detached",
+        "source": "Delineation Ontology",
+        "confidence": 0.60,
+        "category": "Personality",
+        "testable": true
+      },
+      {
+        "id": "sig_262",
+        "description": "Mars in Cancer (fall): defensive action, nurturing aggression, protection of loved ones.",
+        "trigger": "Natal Mars in Cancer (fall)",
+        "expected_effect": "Protective, emotionally driven, may be passive-aggressive",
+        "source": "Delineation Ontology",
+        "confidence": 0.60,
+        "category": "Personality",
+        "testable": true
+      },
+      {
+        "id": "sig_263",
+        "description": "Jupiter in Capricorn (fall): restrained optimism, cautious expansion, practical wisdom.",
+        "trigger": "Natal Jupiter in Capricorn (fall)",
+        "expected_effect": "Patient, strategic, conservative investments, slow but steady growth",
+        "source": "Delineation Ontology",
+        "confidence": 0.60,
+        "category": "Financial",
+        "testable": true
+      },
+      {
+        "id": "sig_264",
+        "description": "Saturn in Aries (fall): impulsive discipline, struggle with authority, pioneering but with obstacles.",
+        "trigger": "Natal Saturn in Aries (fall)",
+        "expected_effect": "Bold but risky, learns through challenges, builds independence",
+        "source": "Delineation Ontology",
+        "confidence": 0.60,
+        "category": "Personality",
+        "testable": true
+      },
+      {
+        "id": "sig_265",
+        "description": "Venus in Virgo (fall): critical approach to love, desires perfection, may be overly analytical in relationships.",
+        "trigger": "Natal Venus in Virgo (fall)",
+        "expected_effect": "Practical love, service-oriented, may struggle with self-worth",
+        "source": "Delineation Ontology",
+        "confidence": 0.60,
+        "category": "Relationships",
+        "testable": true
+      },
+      {
+        "id": "sig_266",
+        "description": "Mercury in Pisces (fall): imaginative thinking, intuitive communication, may lack clarity.",
+        "trigger": "Natal Mercury in Pisces (fall)",
+        "expected_effect": "Creative, poetic, easily distracted, relies on intuition",
+        "source": "Delineation Ontology",
+        "confidence": 0.60,
+        "category": "Personality",
+        "testable": true
+      },
+      {
+        "id": "sig_267",
+        "description": "Strong stellium in a house: intense focus and major life events in that house's area.",
+        "trigger": "Strong stellium in a house",
+        "expected_effect": "Concentration of experience, talent, and challenges in that life domain",
+        "source": "Delineation Ontology",
+        "confidence": 0.75,
+        "category": "Life Events",
+        "testable": true
+      },
+      {
+        "id": "sig_268",
+        "description": "Planet in its own house (e.g., Sun in 5th): natural expression and strength.",
+        "trigger": "Planet in its own house",
+        "expected_effect": "Empowered, spontaneous, effective in that area",
+        "source": "Delineation Ontology",
+        "confidence": 0.75,
+        "category": "Personality",
+        "testable": true
+      },
+      {
+        "id": "sig_269",
+        "description": "Planet in the house of its detriment (e.g., Sun in 7th): expression is challenging or requires cooperation.",
+        "trigger": "Planet in the house of its detriment",
+        "expected_effect": "Difficult expression, need for integration with opposite archetype",
+        "source": "Delineation Ontology",
+        "confidence": 0.70,
+        "category": "Personality",
+        "testable": true
+      },
+      {
+        "id": "sig_270",
+        "description": "Chart ruler in the 9th house: life path involves travel, higher education, or philosophy.",
+        "trigger": "Ruler of Ascendant in 9th house",
+        "expected_effect": "Interest in foreign cultures, academic pursuits, search for meaning",
+        "source": "Delineation Ontology",
+        "confidence": 0.75,
+        "category": "Personality",
+        "testable": true
+      },
+      {
+        "id": "sig_271",
+        "description": "Chart ruler in the 12th house: introspective, spiritual, may have hidden strengths or private struggles.",
+        "trigger": "Ruler of Ascendant in 12th house",
+        "expected_effect": "Solitude, spiritual seeking, working behind the scenes",
+        "source": "Delineation Ontology",
+        "confidence": 0.75,
+        "category": "Personality",
+        "testable": true
+      },
+      {
+        "id": "sig_272",
+        "description": "Synastry Sun conjunct Moon: strong emotional resonance, mutual understanding, and deep bonding.",
+        "trigger": "Synastry: Person A's Sun conjunct Person B's Moon",
+        "expected_effect": "Instant rapport, emotional intimacy, supportive partnership",
+        "source": "Synastry Chart Ontology",
+        "confidence": 0.85,
+        "category": "Relationships",
+        "testable": true
+      },
+      {
+        "id": "sig_273",
+        "description": "Synastry Venus conjunct Jupiter: mutual benefit, generosity, and happiness in love; financial alignment.",
+        "trigger": "Synastry: Person A's Venus conjunct Person B's Jupiter",
+        "expected_effect": "Generous love, shared values, prosperity through partnership",
+        "source": "Synastry Chart Ontology",
+        "confidence": 0.80,
+        "category": "Relationships/Financial",
+        "testable": true
+      },
+      {
+        "id": "sig_274",
+        "description": "Synastry Mars conjunct Saturn: intense friction, power struggles, but potential for long-term building together.",
+        "trigger": "Synastry: Person A's Mars conjunct Person B's Saturn",
+        "expected_effect": "Challenging but productive partnership, lessons in discipline",
+        "source": "Synastry Chart Ontology",
+        "confidence": 0.80,
+        "category": "Relationships",
+        "testable": true
+      }
+    ],
+    "archetype_portfolio_map": {
+      "Warrior": {
+        "style": "Aggressive Growth",
+        "assets": ["Tech Startups", "Biotech", "Emerging Markets"],
+        "risk_tolerance": 0.9,
+        "horizon": "Short",
+        "weight_modifier": 1.2
+      },
+      "Lover": {
+        "style": "Income & Stability",
+        "assets": ["Dividend Stocks", "Bonds", "REITs"],
+        "risk_tolerance": 0.3,
+        "horizon": "Long",
+        "weight_modifier": 0.8
+      },
+      "Communicator": {
+        "style": "Flexible / Thematic",
+        "assets": ["Information Tech", "Media", "Crypto"],
+        "risk_tolerance": 0.6,
+        "horizon": "Medium",
+        "weight_modifier": 1.0
+      },
+      "Mother": {
+        "style": "Defensive & Consumer Staples",
+        "assets": ["Utilities", "Healthcare", "Food"],
+        "risk_tolerance": 0.2,
+        "horizon": "Long",
+        "weight_modifier": 0.7
+      },
+      "King/Queen": {
+        "style": "Growth & Innovation",
+        "assets": ["Blue-chip Growth", "AI", "Luxury"],
+        "risk_tolerance": 0.8,
+        "horizon": "Long",
+        "weight_modifier": 1.1
+      },
+      "Healer": {
+        "style": "Value & Quality",
+        "assets": ["Healthcare", "Industrials", "ESG"],
+        "risk_tolerance": 0.5,
+        "horizon": "Long",
+        "weight_modifier": 0.9
+      },
+      "Artist": {
+        "style": "Balanced / Socially Responsible",
+        "assets": ["SRI ETFs", "Diversified ETFs", "Art"],
+        "risk_tolerance": 0.4,
+        "horizon": "Medium",
+        "weight_modifier": 0.9
+      },
+      "Magician": {
+        "style": "Alternative / Deep Value",
+        "assets": ["Private Equity", "Distressed Assets", "Commodities"],
+        "risk_tolerance": 0.85,
+        "horizon": "Medium",
+        "weight_modifier": 1.3
+      },
+      "Seeker": {
+        "style": "Global / Diversified",
+        "assets": ["International Equities", "Education", "Travel"],
+        "risk_tolerance": 0.6,
+        "horizon": "Medium",
+        "weight_modifier": 1.0
+      },
+      "Executive": {
+        "style": "Value & Dividends",
+        "assets": ["Financials", "Real Estate", "Energy"],
+        "risk_tolerance": 0.4,
+        "horizon": "Long",
+        "weight_modifier": 0.8
+      },
+      "Revolutionary": {
+        "style": "Disruptive Innovation",
+        "assets": ["Blockchain", "Renewable Energy", "Tech"],
+        "risk_tolerance": 0.8,
+        "horizon": "Long",
+        "weight_modifier": 1.2
+      },
+      "Mystic": {
+        "style": "Thematic / ESG / Biotech",
+        "assets": ["Biotech", "Psychedelics", "Water", "AI"],
+        "risk_tolerance": 0.7,
+        "horizon": "Medium",
+        "weight_modifier": 1.1
+      }
+    },
+    "magi_data": {
+      "super_aspect_power": {
+        "conjunction": 10,
+        "opposition": 9,
+        "quincunx": 8
+      },
+      "chiron_power": 10,
+      "magical_triangle_power": 10,
+      "financial_super_aspects": [
+        "Jupiter-Pluto",
+        "Jupiter-Chiron",
+        "Venus-Pluto",
+        "Chiron-Pluto"
+      ]
+    },
+    "transit_strength": {
+      "essential_dignity_scores": [
+        { "dignity": "Domicile", "score": 5 },
+        { "dignity": "Exaltation", "score": 4 },
+        { "dignity": "Triplicity", "score": 3 },
+        { "dignity": "Term", "score": 2 },
+        { "dignity": "Face", "score": 1 },
+        { "dignity": "Peregrine", "score": 0 },
+        { "dignity": "Detriment", "score": -4 },
+        { "dignity": "Fall", "score": -5 }
+      ],
+      "accidental_modifiers": {
+        "speed": { "slow": 1.5, "fast": 0.7 },
+        "orb": { "tight": 2.0, "wide": 0.5 },
+        "direction": { "retrograde": 0.6, "direct": 1.0 },
+        "house": { "angular": 1.5, "succedent": 1.0, "cadent": 0.6 },
+        "avashta": { "jagrad": 1.5, "svapna": 1.0, "sushupti": 0.5 }
+      }
+    }
+  },
+  "deployment": {
+    "docker": {
+      "services": ["api", "ml", "execution", "postgres", "redis", "kafka", "dashboard"],
+      "ports": {
+        "api": 5001,
+        "ml": 5002,
+        "execution": 5003,
+        "dashboard": 8050,
+        "postgres": 5432,
+        "redis": 6379,
+        "kafka": 9092
+      }
+    },
+    "kubernetes": {
+      "replicas": { "api": 3, "ml": 2, "execution": 1 },
+      "hpa": { "minReplicas": 3, "maxReplicas": 10, "cpuTarget": 70 },
+      "secrets": ["db-secret", "broker-secret", "api-keys"],
+      "configMaps": ["market-timing-config"]
+    },
+    "monitoring": {
+      "prometheus": {
+        "port": 9090,
+        "metrics": ["api_requests_total", "api_latency_seconds", "omti_score", "model_accuracy"]
+      },
+      "grafana": {
+        "port": 3000,
+        "dashboards": ["Market Timing Overview", "OMTI Components", "ML Health"]
+      }
+    },
+    "logging": {
+      "level": "INFO",
+      "format": "json",
+      "outputs": ["stdout", "elasticsearch"]
+    }
+  },
+  "testing": {
+    "coverage": { "threshold": 85 },
+    "types": ["unit", "integration", "performance", "regression", "e2e"]
+  },
+  "references": {
+    "sources": ["FRED", "Yahoo Finance", "FMP", "Alpha Vantage", "IEX", "NewsAPI", "Twitter", "Trading Economics", "Skyfield", "AstralTwelve"],
+    "models": ["LSTM", "Random Forest", "Reinforcement Learning", "XGBoost"]
+  }
+}
+```

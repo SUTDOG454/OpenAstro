@@ -1,0 +1,1715 @@
+{
+  "schema_version": "1.0.0",
+  "sources": [
+    {
+      "source_id": "openastro:synastry-upload:astro-databank-scorer-template-csv",
+      "source_path": "data/sources/2026-08-synastry-research/raw/astro_databank_scorer_template.csv",
+      "filename": "astro_databank_scorer_template.csv",
+      "sha256": "05e9983eb28c5b6c782a7a487ff5eb4cff7f3c379f59c1f28b00670fe4b88558",
+      "size_bytes": 223,
+      "media_type": "text/csv",
+      "family": "template_or_mock_methodology",
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "raw_preservation": "staged_copy",
+      "limitations": [
+        "Template/mock/example material is not an observed cohort, empirical validation, or deployed score."
+      ],
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review"
+      ],
+      "parser": "csv_dict_reader",
+      "profile": {
+        "row_count": 4,
+        "columns": [
+          "couple_name",
+          "role",
+          "field",
+          "value"
+        ],
+        "numeric_columns": [],
+        "missing_value_counts": {
+          "couple_name": 0,
+          "role": 0,
+          "field": 0,
+          "value": 0
+        },
+        "first_row": {
+          "couple_name": "TEMPLATE",
+          "role": "placeholder",
+          "field": "chart_a",
+          "value": "birth chart object"
+        }
+      }
+    },
+    {
+      "source_id": "openastro:synastry-upload:astro-databank-scorer-template-py",
+      "source_path": "data/sources/2026-08-synastry-research/raw/astro_databank_scorer_template.py",
+      "filename": "astro_databank_scorer_template.py",
+      "sha256": "b2ca17d41a52dcafa2d327dcd741dd13d39b4d8ab12a894d7956e8ea94b5ed3d",
+      "size_bytes": 848,
+      "media_type": "text/x-python",
+      "family": "untrusted_scoring_code_template",
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "raw_preservation": "staged_copy",
+      "limitations": [
+        "Static code inspection only. The file was not executed, dependency-resolved, security-reviewed, or adopted as a scoring engine."
+      ],
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review",
+        "do_not_execute",
+        "static_inspection_only"
+      ],
+      "parser": "static_code_inspection"
+    },
+    {
+      "source_id": "openastro:synastry-upload:astro-workflow-plan-csv",
+      "source_path": "data/sources/2026-08-synastry-research/raw/astro_workflow_plan.csv",
+      "filename": "astro_workflow_plan.csv",
+      "sha256": "fc7d6eee1a6d9281e401712f1e10ba3552f7c909f9a582a65b175d7b4b672c06",
+      "size_bytes": 844,
+      "media_type": "text/csv",
+      "family": "template_or_mock_methodology",
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "raw_preservation": "staged_copy",
+      "limitations": [
+        "Template/mock/example material is not an observed cohort, empirical validation, or deployed score."
+      ],
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review"
+      ],
+      "parser": "csv_dict_reader",
+      "profile": {
+        "row_count": 5,
+        "columns": [
+          "task",
+          "status",
+          "note"
+        ],
+        "numeric_columns": [],
+        "missing_value_counts": {
+          "task": 0,
+          "status": 0,
+          "note": 0
+        },
+        "first_row": {
+          "task": "Parse scraped XML to extract birth times and positions",
+          "status": "supported_by_export_format",
+          "note": "ADB XML export docs mention birth data fields and Rodden rating tags; use XML parser on exported archive."
+        }
+      }
+    },
+    {
+      "source_id": "openastro:synastry-upload:astroinvestigators-weighting-examples-csv",
+      "source_path": "data/sources/2026-08-synastry-research/raw/astroinvestigators_weighting_examples.csv",
+      "filename": "astroinvestigators_weighting_examples.csv",
+      "sha256": "f567a8b2866b1e3d8e6a36773ed1bc7c2816a191e2bae1bac725392c9bc9a026",
+      "size_bytes": 355,
+      "media_type": "text/csv",
+      "family": "template_or_mock_methodology",
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "raw_preservation": "staged_copy",
+      "limitations": [
+        "Template/mock/example material is not an observed cohort, empirical validation, or deployed score."
+      ],
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review"
+      ],
+      "parser": "csv_dict_reader",
+      "profile": {
+        "row_count": 6,
+        "columns": [
+          "aspect",
+          "chi_square",
+          "percentile",
+          "stability_factor",
+          "category_bonus",
+          "normalized_weight"
+        ],
+        "numeric_columns": [
+          "chi_square",
+          "percentile",
+          "stability_factor",
+          "category_bonus",
+          "normalized_weight"
+        ],
+        "missing_value_counts": {
+          "aspect": 0,
+          "chi_square": 0,
+          "percentile": 0,
+          "stability_factor": 0,
+          "category_bonus": 0,
+          "normalized_weight": 0
+        },
+        "first_row": {
+          "aspect": "Vertex-Node conj",
+          "chi_square": 14.1,
+          "percentile": 100.0,
+          "stability_factor": 1.0,
+          "category_bonus": 1.3,
+          "normalized_weight": 18.330000000000002
+        }
+      }
+    },
+    {
+      "source_id": "openastro:synastry-upload:celebrity-effect-sizes-ci-report-csv",
+      "source_path": "data/sources/2026-08-synastry-research/raw/celebrity_effect_sizes_ci_report.csv",
+      "filename": "celebrity_effect_sizes_ci_report.csv",
+      "sha256": "534e09378f37ba0649d69be2bac593a6ea8876818a530a9fab91bcec489f03fa",
+      "size_bytes": 809,
+      "media_type": "text/csv",
+      "family": "source_reported_statistical_output",
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "raw_preservation": "staged_copy",
+      "limitations": [
+        "Reported statistics are preserved as source claims and were not independently recomputed from a frozen raw cohort."
+      ],
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review"
+      ],
+      "parser": "csv_dict_reader",
+      "profile": {
+        "row_count": 5,
+        "columns": [
+          "feature",
+          "mean_long",
+          "mean_short",
+          "mean_diff",
+          "cohens_d",
+          "ci_low",
+          "ci_high",
+          "welch_p"
+        ],
+        "numeric_columns": [
+          "mean_long",
+          "mean_short",
+          "mean_diff",
+          "cohens_d",
+          "ci_low",
+          "ci_high",
+          "welch_p"
+        ],
+        "missing_value_counts": {
+          "feature": 0,
+          "mean_long": 0,
+          "mean_short": 0,
+          "mean_diff": 0,
+          "cohens_d": 0,
+          "ci_low": 0,
+          "ci_high": 0,
+          "welch_p": 0
+        },
+        "first_row": {
+          "feature": "promise_score",
+          "mean_long": 82.51611658772264,
+          "mean_short": 81.56538033617417,
+          "mean_diff": 0.950736251548463,
+          "cohens_d": 0.13197714243158035,
+          "ci_low": -0.8836869612400313,
+          "ci_high": 1.147641246103192,
+          "welch_p": 0.8036811195631226
+        }
+      }
+    },
+    {
+      "source_id": "openastro:synastry-upload:celebrity-significance-report-csv",
+      "source_path": "data/sources/2026-08-synastry-research/raw/celebrity_significance_report.csv",
+      "filename": "celebrity_significance_report.csv",
+      "sha256": "ffb49c4eabac9f1725a1ac46c1659e52ff8211000c74f0e060984649b1bf80ab",
+      "size_bytes": 785,
+      "media_type": "text/csv",
+      "family": "source_reported_statistical_output",
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "raw_preservation": "staged_copy",
+      "limitations": [
+        "Reported statistics are preserved as source claims and were not independently recomputed from a frozen raw cohort."
+      ],
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review"
+      ],
+      "parser": "csv_dict_reader",
+      "profile": {
+        "row_count": 5,
+        "columns": [
+          "feature",
+          "pearson_r",
+          "p_value",
+          "abs_r",
+          "cohens_d_long_short",
+          "bonferroni_p",
+          "significance",
+          "bonferroni_significance"
+        ],
+        "numeric_columns": [
+          "pearson_r",
+          "p_value",
+          "abs_r",
+          "cohens_d_long_short",
+          "bonferroni_p"
+        ],
+        "missing_value_counts": {
+          "feature": 0,
+          "pearson_r": 0,
+          "p_value": 0,
+          "abs_r": 0,
+          "cohens_d_long_short": 0,
+          "bonferroni_p": 0,
+          "significance": 0,
+          "bonferroni_significance": 0
+        },
+        "first_row": {
+          "feature": "volatility_score",
+          "pearson_r": 0.4308180856155687,
+          "p_value": 0.10889704457376335,
+          "abs_r": 0.4308180856155687,
+          "cohens_d_long_short": 0.33174142306145293,
+          "bonferroni_p": 0.5444852228688167,
+          "significance": "Not significant",
+          "bonferroni_significance": "Not significant"
+        }
+      }
+    },
+    {
+      "source_id": "openastro:synastry-upload:celebrity-statistical-tests-csv",
+      "source_path": "data/sources/2026-08-synastry-research/raw/celebrity_statistical_tests.csv",
+      "filename": "celebrity_statistical_tests.csv",
+      "sha256": "cba8558e47891072011b0cbabb43ee74726107d8880f7fcae242fd6a4036ad5e",
+      "size_bytes": 327,
+      "media_type": "text/csv",
+      "family": "synastry_source_table",
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "raw_preservation": "staged_copy",
+      "limitations": [
+        "Source table requires schema, provenance, and methodology review before use."
+      ],
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review"
+      ],
+      "parser": "csv_dict_reader",
+      "profile": {
+        "row_count": 5,
+        "columns": [
+          "test",
+          "statistic",
+          "p_value"
+        ],
+        "numeric_columns": [
+          "statistic",
+          "p_value"
+        ],
+        "missing_value_counts": {
+          "test": 0,
+          "statistic": 0,
+          "p_value": 0
+        },
+        "first_row": {
+          "test": "one_sample_t_vs_65",
+          "statistic": -1.3832836979678922,
+          "p_value": 0.1882406860676111
+        }
+      }
+    },
+    {
+      "source_id": "openastro:synastry-upload:celebrity-synastry-25-csv",
+      "source_path": "data/sources/2026-08-synastry-research/raw/celebrity_synastry_25.csv",
+      "filename": "celebrity_synastry_25.csv",
+      "sha256": "dbfe051ecc521bdef8b644f637422cd8976ca7c9cb785688703d4c05877fcc0d",
+      "size_bytes": 6214,
+      "media_type": "text/csv",
+      "family": "small_named_synastry_cohort_candidate",
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "raw_preservation": "staged_copy",
+      "limitations": [
+        "Small named-pair cohort with source rights, sampling frame, inclusion criteria, birth-data provenance, and outcome definitions pending review. It is not a representative training or validation dataset."
+      ],
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review"
+      ],
+      "parser": "csv_dict_reader",
+      "profile": {
+        "row_count": 75,
+        "columns": [
+          "chart_id",
+          "pair_id",
+          "tree_name",
+          "node_name",
+          "aspect",
+          "orb",
+          "harmonic_layer",
+          "score",
+          "classification"
+        ],
+        "numeric_columns": [
+          "orb",
+          "score"
+        ],
+        "missing_value_counts": {
+          "chart_id": 0,
+          "pair_id": 0,
+          "tree_name": 0,
+          "node_name": 0,
+          "aspect": 0,
+          "orb": 0,
+          "harmonic_layer": 0,
+          "score": 0,
+          "classification": 0
+        },
+        "first_row": {
+          "chart_id": "C001",
+          "pair_id": "WIL-JAD",
+          "tree_name": "relationship_marriage_tree",
+          "node_name": "VE/CU",
+          "aspect": "conjunction",
+          "orb": 0.24,
+          "harmonic_layer": "9th",
+          "score": 52.36,
+          "classification": "Strong"
+        }
+      }
+    },
+    {
+      "source_id": "openastro:synastry-upload:celebrity-synastry-correlation-matrix-csv",
+      "source_path": "data/sources/2026-08-synastry-research/raw/celebrity_synastry_correlation_matrix.csv",
+      "filename": "celebrity_synastry_correlation_matrix.csv",
+      "sha256": "86e59091784b8d5d64a4d80da83763810a032b2400429f267c21a7edc2f5f75b",
+      "size_bytes": 809,
+      "media_type": "text/csv",
+      "family": "source_reported_statistical_output",
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "raw_preservation": "staged_copy",
+      "limitations": [
+        "Reported statistics are preserved as source claims and were not independently recomputed from a frozen raw cohort."
+      ],
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review"
+      ],
+      "parser": "csv_dict_reader",
+      "profile": {
+        "row_count": 6,
+        "columns": [
+          "",
+          "promise_score",
+          "timing_score",
+          "mean_weight",
+          "volatility_score",
+          "vol_adj_score",
+          "marriage_years"
+        ],
+        "numeric_columns": [
+          "promise_score",
+          "timing_score",
+          "mean_weight",
+          "volatility_score",
+          "vol_adj_score",
+          "marriage_years"
+        ],
+        "missing_value_counts": {
+          "": 0,
+          "promise_score": 0,
+          "timing_score": 0,
+          "mean_weight": 0,
+          "volatility_score": 0,
+          "vol_adj_score": 0,
+          "marriage_years": 0
+        },
+        "first_row": {
+          "": "promise_score",
+          "promise_score": 1.0,
+          "timing_score": 0.09472535125379371,
+          "mean_weight": 0.013658198991994807,
+          "volatility_score": -0.17405590219744263,
+          "vol_adj_score": 0.8044213142027388,
+          "marriage_years": -0.28104103562903254
+        }
+      }
+    },
+    {
+      "source_id": "openastro:synastry-upload:celebrity-synastry-scored-mock-csv",
+      "source_path": "data/sources/2026-08-synastry-research/raw/celebrity_synastry_scored_mock.csv",
+      "filename": "celebrity_synastry_scored_mock.csv",
+      "sha256": "c9a6543a9886d782c140d697fd6a98b188291d71c61ef3ea3c7185668f2ce29c",
+      "size_bytes": 2219,
+      "media_type": "text/csv",
+      "family": "template_or_mock_methodology",
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "raw_preservation": "staged_copy",
+      "limitations": [
+        "Template/mock/example material is not an observed cohort, empirical validation, or deployed score."
+      ],
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review"
+      ],
+      "parser": "csv_dict_reader",
+      "profile": {
+        "row_count": 15,
+        "columns": [
+          "couple_name",
+          "verified",
+          "marriage_years",
+          "promise_score",
+          "timing_score",
+          "mean_weight",
+          "volatility_score",
+          "vol_adj_score",
+          "marriage_success_label",
+          "source_ids"
+        ],
+        "numeric_columns": [
+          "marriage_years",
+          "promise_score",
+          "timing_score",
+          "mean_weight",
+          "volatility_score",
+          "vol_adj_score"
+        ],
+        "missing_value_counts": {
+          "couple_name": 0,
+          "verified": 0,
+          "marriage_years": 0,
+          "promise_score": 0,
+          "timing_score": 0,
+          "mean_weight": 0,
+          "volatility_score": 0,
+          "vol_adj_score": 0,
+          "marriage_success_label": 0,
+          "source_ids": 13
+        },
+        "first_row": {
+          "couple_name": "Dolly Parton / Carl Dean",
+          "verified": "False",
+          "marriage_years": 59,
+          "promise_score": 85.47699907107862,
+          "timing_score": 74.50169976607222,
+          "mean_weight": 73.38976032662362,
+          "volatility_score": 12.96109054123704,
+          "vol_adj_score": 64.91373388457727,
+          "marriage_success_label": "Very_Strong",
+          "source_ids": null
+        }
+      }
+    },
+    {
+      "source_id": "openastro:synastry-upload:celebrity-synastry-scored-template-csv",
+      "source_path": "data/sources/2026-08-synastry-research/raw/celebrity_synastry_scored_template.csv",
+      "filename": "celebrity_synastry_scored_template.csv",
+      "sha256": "e4c1b2c7b6a57eac8d59add19f48e02b34123aa2732c032cf0aeeb64e0b10f1f",
+      "size_bytes": 829,
+      "media_type": "text/csv",
+      "family": "template_or_mock_methodology",
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "raw_preservation": "staged_copy",
+      "limitations": [
+        "Template/mock/example material is not an observed cohort, empirical validation, or deployed score."
+      ],
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review"
+      ],
+      "parser": "csv_dict_reader",
+      "profile": {
+        "row_count": 15,
+        "columns": [
+          "couple_name",
+          "verified",
+          "marriage_years",
+          "promise_score",
+          "timing_score",
+          "mean_weight",
+          "volatility_score",
+          "vol_adj_score",
+          "marriage_success_label",
+          "source_ids"
+        ],
+        "numeric_columns": [
+          "marriage_years"
+        ],
+        "missing_value_counts": {
+          "couple_name": 0,
+          "verified": 0,
+          "marriage_years": 0,
+          "promise_score": 15,
+          "timing_score": 15,
+          "mean_weight": 15,
+          "volatility_score": 15,
+          "vol_adj_score": 15,
+          "marriage_success_label": 15,
+          "source_ids": 13
+        },
+        "first_row": {
+          "couple_name": "Dolly Parton / Carl Dean",
+          "verified": "False",
+          "marriage_years": 59,
+          "promise_score": null,
+          "timing_score": null,
+          "mean_weight": null,
+          "volatility_score": null,
+          "vol_adj_score": null,
+          "marriage_success_label": null,
+          "source_ids": null
+        }
+      }
+    },
+    {
+      "source_id": "openastro:synastry-upload:celebrity-synastry-test-results-csv",
+      "source_path": "data/sources/2026-08-synastry-research/raw/celebrity_synastry_test_results.csv",
+      "filename": "celebrity_synastry_test_results.csv",
+      "sha256": "1ac775f558bf75361388ea544f8bd9d2d81d09495bf4c440d60f368c64f993ff",
+      "size_bytes": 429,
+      "media_type": "text/csv",
+      "family": "source_reported_statistical_output",
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "raw_preservation": "staged_copy",
+      "limitations": [
+        "Reported statistics are preserved as source claims and were not independently recomputed from a frozen raw cohort."
+      ],
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review"
+      ],
+      "parser": "csv_dict_reader",
+      "profile": {
+        "row_count": 5,
+        "columns": [
+          "pair_name",
+          "promise_score",
+          "timing_score",
+          "mean_weight",
+          "volatility_score",
+          "vol_adj_score",
+          "marriage_success_label"
+        ],
+        "numeric_columns": [
+          "promise_score",
+          "timing_score",
+          "mean_weight",
+          "volatility_score",
+          "vol_adj_score"
+        ],
+        "missing_value_counts": {
+          "pair_name": 0,
+          "promise_score": 0,
+          "timing_score": 0,
+          "mean_weight": 0,
+          "volatility_score": 0,
+          "vol_adj_score": 0,
+          "marriage_success_label": 0
+        },
+        "first_row": {
+          "pair_name": "Couple A",
+          "promise_score": 93.57,
+          "timing_score": 93.57,
+          "mean_weight": 93.57,
+          "volatility_score": 0.5733333333333334,
+          "vol_adj_score": 79.44850000000001,
+          "marriage_success_label": "Extreme"
+        }
+      }
+    },
+    {
+      "source_id": "openastro:synastry-upload:celebrity-synastry-with-overlays-csv",
+      "source_path": "data/sources/2026-08-synastry-research/raw/celebrity_synastry_with_overlays.csv",
+      "filename": "celebrity_synastry_with_overlays.csv",
+      "sha256": "daa30c783d29613409ab5cc557a12fe144c38dc6ddbbe667fc5ef4f0cd7c76f5",
+      "size_bytes": 2659,
+      "media_type": "text/csv",
+      "family": "small_named_synastry_cohort_candidate",
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "raw_preservation": "staged_copy",
+      "limitations": [
+        "Small named-pair cohort with source rights, sampling frame, inclusion criteria, birth-data provenance, and outcome definitions pending review. It is not a representative training or validation dataset."
+      ],
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review"
+      ],
+      "parser": "csv_dict_reader",
+      "profile": {
+        "row_count": 15,
+        "columns": [
+          "couple_name",
+          "marriage_years",
+          "status",
+          "source_id",
+          "verified_marriage_notes",
+          "source_ids",
+          "verified",
+          "rodden_rating",
+          "promise_score",
+          "timing_score",
+          "mean_weight",
+          "volatility_score",
+          "vol_adj_score",
+          "overlay_1",
+          "overlay_4",
+          "overlay_5",
+          "overlay_7",
+          "overlay_8",
+          "overlay_10",
+          "overlay_11",
+          "overlay_12"
+        ],
+        "numeric_columns": [
+          "marriage_years",
+          "promise_score",
+          "timing_score",
+          "mean_weight",
+          "volatility_score",
+          "vol_adj_score",
+          "overlay_1",
+          "overlay_4",
+          "overlay_5",
+          "overlay_7",
+          "overlay_8",
+          "overlay_10",
+          "overlay_11",
+          "overlay_12"
+        ],
+        "missing_value_counts": {
+          "couple_name": 0,
+          "marriage_years": 0,
+          "status": 0,
+          "source_id": 0,
+          "verified_marriage_notes": 13,
+          "source_ids": 13,
+          "verified": 13,
+          "rodden_rating": 0,
+          "promise_score": 0,
+          "timing_score": 0,
+          "mean_weight": 0,
+          "volatility_score": 0,
+          "vol_adj_score": 0,
+          "overlay_1": 0,
+          "overlay_4": 0,
+          "overlay_5": 0,
+          "overlay_7": 0,
+          "overlay_8": 0,
+          "overlay_10": 0,
+          "overlay_11": 0,
+          "overlay_12": 0
+        },
+        "first_row": {
+          "couple_name": "Dolly Parton / Carl Dean",
+          "marriage_years": 59,
+          "status": "long_term",
+          "source_id": "web:388",
+          "verified_marriage_notes": null,
+          "source_ids": null,
+          "verified": null,
+          "rodden_rating": "AA",
+          "promise_score": 92.14315422280214,
+          "timing_score": 68.82731011256446,
+          "mean_weight": 71.54467884877259,
+          "volatility_score": 40.0,
+          "vol_adj_score": 60.919726965678066,
+          "overlay_1": 3,
+          "overlay_4": 1,
+          "overlay_5": 0,
+          "overlay_7": 1,
+          "overlay_8": 1,
+          "overlay_10": 0,
+          "overlay_11": 0,
+          "overlay_12": 1
+        }
+      }
+    },
+    {
+      "source_id": "openastro:synastry-upload:harmonic-synastry-notes-csv",
+      "source_path": "data/sources/2026-08-synastry-research/raw/harmonic_synastry_notes.csv",
+      "filename": "harmonic_synastry_notes.csv",
+      "sha256": "b41ca5c8cf665de48a6d77dace65bab4b2b3ecdf1bcbb65b113a41eb8697e483",
+      "size_bytes": 407,
+      "media_type": "text/csv",
+      "family": "synastry_source_table",
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "raw_preservation": "staged_copy",
+      "limitations": [
+        "Source table requires schema, provenance, and methodology review before use."
+      ],
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review"
+      ],
+      "parser": "csv_dict_reader",
+      "profile": {
+        "row_count": 4,
+        "columns": [
+          "harmonic",
+          "relationship_theme",
+          "default_weight",
+          "best_domain"
+        ],
+        "numeric_columns": [
+          "default_weight"
+        ],
+        "missing_value_counts": {
+          "harmonic": 0,
+          "relationship_theme": 0,
+          "default_weight": 0,
+          "best_domain": 0
+        },
+        "first_row": {
+          "harmonic": "5th",
+          "relationship_theme": "attraction, creativity, romance, style",
+          "default_weight": 1.05,
+          "best_domain": "relationship_marriage_tree"
+        }
+      }
+    },
+    {
+      "source_id": "openastro:synastry-upload:lowest-harmonic-support-csv",
+      "source_path": "data/sources/2026-08-synastry-research/raw/lowest_harmonic_support.csv",
+      "filename": "lowest_harmonic_support.csv",
+      "sha256": "79626a08f0b6809d03b1cd1cb6000dad8a4d0b1eadda3095e3acf35b57532604",
+      "size_bytes": 472,
+      "media_type": "text/csv",
+      "family": "source_reported_statistical_output",
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "raw_preservation": "staged_copy",
+      "limitations": [
+        "Reported statistics are preserved as source claims and were not independently recomputed from a frozen raw cohort."
+      ],
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review"
+      ],
+      "parser": "csv_dict_reader",
+      "profile": {
+        "row_count": 5,
+        "columns": [
+          "chart_id",
+          "pair_id",
+          "promise_score",
+          "timing_score",
+          "volatility_score",
+          "harmonic_support",
+          "mean_weight",
+          "marriage_duration_years",
+          "success"
+        ],
+        "numeric_columns": [
+          "promise_score",
+          "timing_score",
+          "volatility_score",
+          "harmonic_support",
+          "mean_weight",
+          "marriage_duration_years",
+          "success"
+        ],
+        "missing_value_counts": {
+          "chart_id": 0,
+          "pair_id": 0,
+          "promise_score": 0,
+          "timing_score": 0,
+          "volatility_score": 0,
+          "harmonic_support": 0,
+          "mean_weight": 0,
+          "marriage_duration_years": 0,
+          "success": 0
+        },
+        "first_row": {
+          "chart_id": "C003",
+          "pair_id": "ELI-RIC",
+          "promise_score": 41.2,
+          "timing_score": 41.2,
+          "volatility_score": 0.2866666666666667,
+          "harmonic_support": 3,
+          "mean_weight": 41.2,
+          "marriage_duration_years": 8.93,
+          "success": 0
+        }
+      }
+    },
+    {
+      "source_id": "openastro:synastry-upload:obama-obama-synastry-test-csv",
+      "source_path": "data/sources/2026-08-synastry-research/raw/obama_obama_synastry_test.csv",
+      "filename": "obama_obama_synastry_test.csv",
+      "sha256": "db75fee76938e5961fb24c33d75d18085c4293ec26f055071399cb66fe7a41c5",
+      "size_bytes": 240,
+      "media_type": "text/csv",
+      "family": "small_named_synastry_cohort_candidate",
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "raw_preservation": "staged_copy",
+      "limitations": [
+        "Small named-pair cohort with source rights, sampling frame, inclusion criteria, birth-data provenance, and outcome definitions pending review. It is not a representative training or validation dataset."
+      ],
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review"
+      ],
+      "parser": "csv_dict_reader",
+      "profile": {
+        "row_count": 1,
+        "columns": [
+          "pair_name",
+          "promise_score",
+          "timing_score",
+          "mean_weight",
+          "volatility_score",
+          "harmonic_support",
+          "vol_adj_score",
+          "marriage_success_label",
+          "thresholds_used"
+        ],
+        "numeric_columns": [
+          "promise_score",
+          "timing_score",
+          "mean_weight",
+          "volatility_score",
+          "harmonic_support",
+          "vol_adj_score"
+        ],
+        "missing_value_counts": {
+          "pair_name": 0,
+          "promise_score": 0,
+          "timing_score": 0,
+          "mean_weight": 0,
+          "volatility_score": 0,
+          "harmonic_support": 0,
+          "vol_adj_score": 0,
+          "marriage_success_label": 0,
+          "thresholds_used": 0
+        },
+        "first_row": {
+          "pair_name": "Barack Obama / Michelle Obama",
+          "promise_score": 90.0,
+          "timing_score": 88.0,
+          "mean_weight": 86.0,
+          "volatility_score": 14.0,
+          "harmonic_support": 84.0,
+          "vol_adj_score": 73.02,
+          "marriage_success_label": "Very_Strong",
+          "thresholds_used": "[45.44, 57.11, 67.17, 73.03]"
+        }
+      }
+    },
+    {
+      "source_id": "openastro:synastry-upload:pair-summary-csv",
+      "source_path": "data/sources/2026-08-synastry-research/raw/pair_summary.csv",
+      "filename": "pair_summary.csv",
+      "sha256": "6e887497dfeb8031f6cf87d5a3f9ea854bd4ca7bfdf0681f2637ff5f1a8cfce4",
+      "size_bytes": 2787,
+      "media_type": "text/csv",
+      "family": "source_reported_statistical_output",
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "raw_preservation": "staged_copy",
+      "limitations": [
+        "Reported statistics are preserved as source claims and were not independently recomputed from a frozen raw cohort."
+      ],
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review"
+      ],
+      "parser": "csv_dict_reader",
+      "profile": {
+        "row_count": 25,
+        "columns": [
+          "chart_id",
+          "pair_id",
+          "max_score",
+          "mean_score",
+          "median_score",
+          "row_count",
+          "tight_orb_mean",
+          "strong_rows",
+          "weight_sum",
+          "promise_mean",
+          "timing_mean",
+          "harmonic_support_sum",
+          "volatility_mean",
+          "strong_ratio"
+        ],
+        "numeric_columns": [
+          "max_score",
+          "mean_score",
+          "median_score",
+          "row_count",
+          "tight_orb_mean",
+          "strong_rows",
+          "weight_sum",
+          "promise_mean",
+          "timing_mean",
+          "harmonic_support_sum",
+          "volatility_mean",
+          "strong_ratio"
+        ],
+        "missing_value_counts": {
+          "chart_id": 0,
+          "pair_id": 0,
+          "max_score": 0,
+          "mean_score": 0,
+          "median_score": 0,
+          "row_count": 0,
+          "tight_orb_mean": 0,
+          "strong_rows": 0,
+          "weight_sum": 0,
+          "promise_mean": 0,
+          "timing_mean": 0,
+          "harmonic_support_sum": 0,
+          "volatility_mean": 0,
+          "strong_ratio": 0
+        },
+        "first_row": {
+          "chart_id": "C006",
+          "pair_id": "CHR-JOH",
+          "max_score": 95.57,
+          "mean_score": 93.57,
+          "median_score": 93.57,
+          "row_count": 3,
+          "tight_orb_mean": 0.5733333333333334,
+          "strong_rows": 3,
+          "weight_sum": 280.71,
+          "promise_mean": 93.57,
+          "timing_mean": 93.57,
+          "harmonic_support_sum": 1,
+          "volatility_mean": 0.5733333333333334,
+          "strong_ratio": 1.0
+        }
+      }
+    },
+    {
+      "source_id": "openastro:synastry-upload:pair-summary-agg-csv",
+      "source_path": "data/sources/2026-08-synastry-research/raw/pair_summary_agg.csv",
+      "filename": "pair_summary_agg.csv",
+      "sha256": "3f6098d7bc63e4d2ec62734261f32c87d8f2a41d978fb6b87ac92ff3514e5508",
+      "size_bytes": 1709,
+      "media_type": "text/csv",
+      "family": "source_reported_statistical_output",
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "raw_preservation": "staged_copy",
+      "limitations": [
+        "Reported statistics are preserved as source claims and were not independently recomputed from a frozen raw cohort."
+      ],
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review"
+      ],
+      "parser": "csv_dict_reader",
+      "profile": {
+        "row_count": 25,
+        "columns": [
+          "chart_id",
+          "pair_id",
+          "promise_mean",
+          "timing_mean",
+          "volatility_mean",
+          "avg_weight",
+          "max_weight",
+          "harmonic_support"
+        ],
+        "numeric_columns": [
+          "promise_mean",
+          "timing_mean",
+          "volatility_mean",
+          "avg_weight",
+          "max_weight",
+          "harmonic_support"
+        ],
+        "missing_value_counts": {
+          "chart_id": 0,
+          "pair_id": 0,
+          "promise_mean": 0,
+          "timing_mean": 0,
+          "volatility_mean": 0,
+          "avg_weight": 0,
+          "max_weight": 0,
+          "harmonic_support": 0
+        },
+        "first_row": {
+          "chart_id": "C001",
+          "pair_id": "WIL-JAD",
+          "promise_mean": 50.35999999999999,
+          "timing_mean": 46.3312,
+          "volatility_mean": 0.4533333333333333,
+          "avg_weight": 50.35999999999999,
+          "max_weight": 52.36,
+          "harmonic_support": 3
+        }
+      }
+    },
+    {
+      "source_id": "openastro:synastry-upload:pair-summary-duration-csv",
+      "source_path": "data/sources/2026-08-synastry-research/raw/pair_summary_duration.csv",
+      "filename": "pair_summary_duration.csv",
+      "sha256": "7ac4b72e19c3a94660931f4fa3c64eef03c80c6724d152e24084027a8780f554",
+      "size_bytes": 1722,
+      "media_type": "text/csv",
+      "family": "source_reported_statistical_output",
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "raw_preservation": "staged_copy",
+      "limitations": [
+        "Reported statistics are preserved as source claims and were not independently recomputed from a frozen raw cohort."
+      ],
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review"
+      ],
+      "parser": "csv_dict_reader",
+      "profile": {
+        "row_count": 25,
+        "columns": [
+          "chart_id",
+          "pair_id",
+          "promise_score",
+          "timing_score",
+          "volatility_score",
+          "harmonic_support",
+          "mean_weight",
+          "marriage_duration_years",
+          "success"
+        ],
+        "numeric_columns": [
+          "promise_score",
+          "timing_score",
+          "volatility_score",
+          "harmonic_support",
+          "mean_weight",
+          "marriage_duration_years",
+          "success"
+        ],
+        "missing_value_counts": {
+          "chart_id": 0,
+          "pair_id": 0,
+          "promise_score": 0,
+          "timing_score": 0,
+          "volatility_score": 0,
+          "harmonic_support": 0,
+          "mean_weight": 0,
+          "marriage_duration_years": 0,
+          "success": 0
+        },
+        "first_row": {
+          "chart_id": "C001",
+          "pair_id": "WIL-JAD",
+          "promise_score": 50.35999999999999,
+          "timing_score": 50.35999999999999,
+          "volatility_score": 0.4533333333333333,
+          "harmonic_support": 3,
+          "mean_weight": 50.35999999999999,
+          "marriage_duration_years": 9.73,
+          "success": 0
+        }
+      }
+    },
+    {
+      "source_id": "openastro:synastry-upload:pair-summary-duration-binary-csv",
+      "source_path": "data/sources/2026-08-synastry-research/raw/pair_summary_duration_binary.csv",
+      "filename": "pair_summary_duration_binary.csv",
+      "sha256": "7c2b6514bef8c521e023d4b412c8235341cec0b9b318d1457386ea8564cb8fa2",
+      "size_bytes": 1924,
+      "media_type": "text/csv",
+      "family": "source_reported_statistical_output",
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "raw_preservation": "staged_copy",
+      "limitations": [
+        "Reported statistics are preserved as source claims and were not independently recomputed from a frozen raw cohort."
+      ],
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review"
+      ],
+      "parser": "csv_dict_reader",
+      "profile": {
+        "row_count": 25,
+        "columns": [
+          "chart_id",
+          "pair_id",
+          "promise_score",
+          "timing_score",
+          "volatility_score",
+          "harmonic_support",
+          "mean_weight",
+          "marriage_duration_years",
+          "divorce_rate",
+          "sun_moon_synastry",
+          "short_marriage",
+          "long_marriage"
+        ],
+        "numeric_columns": [
+          "promise_score",
+          "timing_score",
+          "volatility_score",
+          "harmonic_support",
+          "mean_weight",
+          "marriage_duration_years",
+          "divorce_rate",
+          "sun_moon_synastry",
+          "short_marriage",
+          "long_marriage"
+        ],
+        "missing_value_counts": {
+          "chart_id": 0,
+          "pair_id": 0,
+          "promise_score": 0,
+          "timing_score": 0,
+          "volatility_score": 0,
+          "harmonic_support": 0,
+          "mean_weight": 0,
+          "marriage_duration_years": 0,
+          "divorce_rate": 0,
+          "sun_moon_synastry": 0,
+          "short_marriage": 0,
+          "long_marriage": 0
+        },
+        "first_row": {
+          "chart_id": "C001",
+          "pair_id": "WIL-JAD",
+          "promise_score": 50.35999999999999,
+          "timing_score": 50.35999999999999,
+          "volatility_score": 0.4533333333333333,
+          "harmonic_support": 3,
+          "mean_weight": 50.35999999999999,
+          "marriage_duration_years": 9.73,
+          "divorce_rate": 1,
+          "sun_moon_synastry": 0,
+          "short_marriage": 1,
+          "long_marriage": 0
+        }
+      }
+    },
+    {
+      "source_id": "openastro:synastry-upload:rodden-aa-vs-a-score-summary-csv",
+      "source_path": "data/sources/2026-08-synastry-research/raw/rodden_AA_vs_A_score_summary.csv",
+      "filename": "rodden_AA_vs_A_score_summary.csv",
+      "sha256": "0bcd9e1183f05399e89e90edc2a40d8d71a8992096981d75a924ac3e8a5b770a",
+      "size_bytes": 157,
+      "media_type": "text/csv",
+      "family": "source_reported_statistical_output",
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "raw_preservation": "staged_copy",
+      "limitations": [
+        "Reported statistics are preserved as source claims and were not independently recomputed from a frozen raw cohort."
+      ],
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review"
+      ],
+      "parser": "csv_dict_reader",
+      "profile": {
+        "row_count": 2,
+        "columns": [
+          "rodden_rating",
+          "count",
+          "mean",
+          "median",
+          "std"
+        ],
+        "numeric_columns": [
+          "count",
+          "mean",
+          "median",
+          "std"
+        ],
+        "missing_value_counts": {
+          "rodden_rating": 0,
+          "count": 0,
+          "mean": 0,
+          "median": 0,
+          "std": 0
+        },
+        "first_row": {
+          "rodden_rating": "A",
+          "count": 6,
+          "mean": 59.662477277965856,
+          "median": 59.33622547131361,
+          "std": 3.7206190673079855
+        }
+      }
+    },
+    {
+      "source_id": "openastro:synastry-upload:sample-score-tests-csv",
+      "source_path": "data/sources/2026-08-synastry-research/raw/sample_score_tests.csv",
+      "filename": "sample_score_tests.csv",
+      "sha256": "f5a4d174007722a8edb9f95d3612a1ea2777ddc002a9248d17fc3a879d322d89",
+      "size_bytes": 187,
+      "media_type": "text/csv",
+      "family": "template_or_mock_methodology",
+      "evidence_class": "methodology_bound",
+      "status": "pending_review",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "raw_preservation": "staged_copy",
+      "limitations": [
+        "Template/mock/example material is not an observed cohort, empirical validation, or deployed score."
+      ],
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review"
+      ],
+      "parser": "csv_dict_reader",
+      "profile": {
+        "row_count": 3,
+        "columns": [
+          "promise_score",
+          "timing_score",
+          "mean_weight",
+          "volatility_score",
+          "harmonic_support",
+          "vol_adj_score",
+          "label"
+        ],
+        "numeric_columns": [
+          "promise_score",
+          "timing_score",
+          "mean_weight",
+          "volatility_score",
+          "harmonic_support",
+          "vol_adj_score"
+        ],
+        "missing_value_counts": {
+          "promise_score": 0,
+          "timing_score": 0,
+          "mean_weight": 0,
+          "volatility_score": 0,
+          "harmonic_support": 0,
+          "vol_adj_score": 0,
+          "label": 0
+        },
+        "first_row": {
+          "promise_score": 82,
+          "timing_score": 76,
+          "mean_weight": 70,
+          "volatility_score": 12,
+          "harmonic_support": 66,
+          "vol_adj_score": 63.760000000000005,
+          "label": "Strong"
+        }
+      }
+    },
+    {
+      "source_id": "openastro:synastry-upload:scored-25-couple-dataset-csv",
+      "source_path": "data/sources/2026-08-synastry-research/raw/scored_25_couple_dataset.csv",
+      "filename": "scored_25_couple_dataset.csv",
+      "sha256": "6e89931677f1580cac96fe604f2f0cf1fc9261ffd0a5db238648cf1581840f38",
+      "size_bytes": 2349,
+      "media_type": "text/csv",
+      "family": "small_named_synastry_cohort_candidate",
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "raw_preservation": "staged_copy",
+      "limitations": [
+        "Small named-pair cohort with source rights, sampling frame, inclusion criteria, birth-data provenance, and outcome definitions pending review. It is not a representative training or validation dataset."
+      ],
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review"
+      ],
+      "parser": "csv_dict_reader",
+      "profile": {
+        "row_count": 25,
+        "columns": [
+          "chart_id",
+          "pair_id",
+          "promise_score",
+          "timing_score",
+          "volatility_score",
+          "harmonic_support",
+          "mean_weight",
+          "marriage_duration_years",
+          "divorce_rate",
+          "sun_moon_synastry",
+          "short_marriage",
+          "long_marriage",
+          "refined_score",
+          "refined_pred",
+          "strength_label"
+        ],
+        "numeric_columns": [
+          "promise_score",
+          "timing_score",
+          "volatility_score",
+          "harmonic_support",
+          "mean_weight",
+          "marriage_duration_years",
+          "divorce_rate",
+          "sun_moon_synastry",
+          "short_marriage",
+          "long_marriage",
+          "refined_score",
+          "refined_pred"
+        ],
+        "missing_value_counts": {
+          "chart_id": 0,
+          "pair_id": 0,
+          "promise_score": 0,
+          "timing_score": 0,
+          "volatility_score": 0,
+          "harmonic_support": 0,
+          "mean_weight": 0,
+          "marriage_duration_years": 0,
+          "divorce_rate": 0,
+          "sun_moon_synastry": 0,
+          "short_marriage": 0,
+          "long_marriage": 0,
+          "refined_score": 0,
+          "refined_pred": 0,
+          "strength_label": 0
+        },
+        "first_row": {
+          "chart_id": "C001",
+          "pair_id": "WIL-JAD",
+          "promise_score": 50.35999999999999,
+          "timing_score": 50.35999999999999,
+          "volatility_score": 0.4533333333333333,
+          "harmonic_support": 3,
+          "mean_weight": 50.35999999999999,
+          "marriage_duration_years": 9.73,
+          "divorce_rate": 1,
+          "sun_moon_synastry": 0,
+          "short_marriage": 1,
+          "long_marriage": 0,
+          "refined_score": 50.359999999999985,
+          "refined_pred": 0,
+          "strength_label": "Weak"
+        }
+      }
+    },
+    {
+      "source_id": "openastro:synastry-upload:scored-25-couple-dataset-volatility-csv",
+      "source_path": "data/sources/2026-08-synastry-research/raw/scored_25_couple_dataset_volatility.csv",
+      "filename": "scored_25_couple_dataset_volatility.csv",
+      "sha256": "6de5bdf27b6eb79cdcc467e51d167eb69f1fcc2bb414b39596a7da286d0bf81c",
+      "size_bytes": 2474,
+      "media_type": "text/csv",
+      "family": "small_named_synastry_cohort_candidate",
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "raw_preservation": "staged_copy",
+      "limitations": [
+        "Small named-pair cohort with source rights, sampling frame, inclusion criteria, birth-data provenance, and outcome definitions pending review. It is not a representative training or validation dataset."
+      ],
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review"
+      ],
+      "parser": "csv_dict_reader",
+      "profile": {
+        "row_count": 25,
+        "columns": [
+          "chart_id",
+          "pair_id",
+          "promise_score",
+          "timing_score",
+          "volatility_score",
+          "harmonic_support",
+          "mean_weight",
+          "marriage_duration_years",
+          "divorce_rate",
+          "sun_moon_synastry",
+          "short_marriage",
+          "long_marriage",
+          "vol_adj_score",
+          "marriage_success_label"
+        ],
+        "numeric_columns": [
+          "promise_score",
+          "timing_score",
+          "volatility_score",
+          "harmonic_support",
+          "mean_weight",
+          "marriage_duration_years",
+          "divorce_rate",
+          "sun_moon_synastry",
+          "short_marriage",
+          "long_marriage",
+          "vol_adj_score"
+        ],
+        "missing_value_counts": {
+          "chart_id": 0,
+          "pair_id": 0,
+          "promise_score": 0,
+          "timing_score": 0,
+          "volatility_score": 0,
+          "harmonic_support": 0,
+          "mean_weight": 0,
+          "marriage_duration_years": 0,
+          "divorce_rate": 0,
+          "sun_moon_synastry": 0,
+          "short_marriage": 0,
+          "long_marriage": 0,
+          "vol_adj_score": 0,
+          "marriage_success_label": 0
+        },
+        "first_row": {
+          "chart_id": "C001",
+          "pair_id": "WIL-JAD",
+          "promise_score": 50.35999999999999,
+          "timing_score": 50.35999999999999,
+          "volatility_score": 0.4533333333333333,
+          "harmonic_support": 3,
+          "mean_weight": 50.35999999999999,
+          "marriage_duration_years": 9.73,
+          "divorce_rate": 1,
+          "sun_moon_synastry": 0,
+          "short_marriage": 1,
+          "long_marriage": 0,
+          "vol_adj_score": 42.73799999999999,
+          "marriage_success_label": "Weak"
+        }
+      }
+    },
+    {
+      "source_id": "openastro:synastry-upload:synastry-models-py",
+      "source_path": "data/sources/2026-08-synastry-research/raw/synastry_models.py",
+      "filename": "synastry_models.py",
+      "sha256": "d73fff90a2245a27371dce10803ef59555b53aeb01e9508d9d86da30df00f3bd",
+      "size_bytes": 1767,
+      "media_type": "text/x-python",
+      "family": "untrusted_scoring_code_template",
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "raw_preservation": "staged_copy",
+      "limitations": [
+        "Static code inspection only. The file was not executed, dependency-resolved, security-reviewed, or adopted as a scoring engine."
+      ],
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review",
+        "do_not_execute",
+        "static_inspection_only"
+      ],
+      "parser": "static_code_inspection"
+    },
+    {
+      "source_id": "openastro:synastry-upload:synastry-scoring-py",
+      "source_path": "data/sources/2026-08-synastry-research/raw/synastry_scoring.py",
+      "filename": "synastry_scoring.py",
+      "sha256": "a79e99da9030ab0c44bf4c91b4b91ccebdb085299a2612d5566556bb6eb4dc9f",
+      "size_bytes": 3859,
+      "media_type": "text/x-python",
+      "family": "untrusted_scoring_code_template",
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "raw_preservation": "staged_copy",
+      "limitations": [
+        "Static code inspection only. The file was not executed, dependency-resolved, security-reviewed, or adopted as a scoring engine."
+      ],
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review",
+        "do_not_execute",
+        "static_inspection_only"
+      ],
+      "parser": "static_code_inspection"
+    },
+    {
+      "source_id": "openastro:synastry-upload:synastry-scoring-function-py",
+      "source_path": "data/sources/2026-08-synastry-research/raw/synastry_scoring_function.py",
+      "filename": "synastry_scoring_function.py",
+      "sha256": "85be2ed5ccd7107e7f8491d37a7176765b70fc2875d379a9cb95bc128009766f",
+      "size_bytes": 605,
+      "media_type": "text/x-python",
+      "family": "untrusted_scoring_code_template",
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "raw_preservation": "staged_copy",
+      "limitations": [
+        "Static code inspection only. The file was not executed, dependency-resolved, security-reviewed, or adopted as a scoring engine."
+      ],
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review",
+        "do_not_execute",
+        "static_inspection_only"
+      ],
+      "parser": "static_code_inspection"
+    },
+    {
+      "source_id": "openastro:synastry-upload:synastry-scoring-v4-py",
+      "source_path": "data/sources/2026-08-synastry-research/raw/synastry_scoring_v4.py",
+      "filename": "synastry_scoring_v4.py",
+      "sha256": "4d128faec09e9d5cf456205d1317238cd5fb2b9e60dae9dffea5384d794628b2",
+      "size_bytes": 3330,
+      "media_type": "text/x-python",
+      "family": "untrusted_scoring_code_template",
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "raw_preservation": "staged_copy",
+      "limitations": [
+        "Static code inspection only. The file was not executed, dependency-resolved, security-reviewed, or adopted as a scoring engine."
+      ],
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review",
+        "do_not_execute",
+        "static_inspection_only"
+      ],
+      "parser": "static_code_inspection"
+    },
+    {
+      "source_id": "openastro:synastry-upload:top5-harmonic-support-csv",
+      "source_path": "data/sources/2026-08-synastry-research/raw/top5_harmonic_support.csv",
+      "filename": "top5_harmonic_support.csv",
+      "sha256": "39b70073f93ee0162a02cad63ca4693ea45b9ec46bf8c41eabe880e0ab32e8b4",
+      "size_bytes": 391,
+      "media_type": "text/csv",
+      "family": "source_reported_statistical_output",
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "raw_preservation": "staged_copy",
+      "limitations": [
+        "Reported statistics are preserved as source claims and were not independently recomputed from a frozen raw cohort."
+      ],
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review"
+      ],
+      "parser": "csv_dict_reader",
+      "profile": {
+        "row_count": 5,
+        "columns": [
+          "chart_id",
+          "pair_id",
+          "promise_mean",
+          "timing_mean",
+          "volatility_mean",
+          "avg_weight",
+          "max_weight",
+          "harmonic_support"
+        ],
+        "numeric_columns": [
+          "promise_mean",
+          "timing_mean",
+          "volatility_mean",
+          "avg_weight",
+          "max_weight",
+          "harmonic_support"
+        ],
+        "missing_value_counts": {
+          "chart_id": 0,
+          "pair_id": 0,
+          "promise_mean": 0,
+          "timing_mean": 0,
+          "volatility_mean": 0,
+          "avg_weight": 0,
+          "max_weight": 0,
+          "harmonic_support": 0
+        },
+        "first_row": {
+          "chart_id": "C006",
+          "pair_id": "CHR-JOH",
+          "promise_mean": 93.57,
+          "timing_mean": 86.0844,
+          "volatility_mean": 0.5733333333333334,
+          "avg_weight": 93.57,
+          "max_weight": 95.57,
+          "harmonic_support": 3
+        }
+      }
+    }
+  ]
+}

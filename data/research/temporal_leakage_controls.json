@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.1.0",
+  "status": "required_before_any_evaluation",
+  "evidence_class": "methodology_bound",
+  "contract_source": "data/unified/research_contract.json#temporal_leakage_control_contract",
+  "contract": {
+    "status": "required_before_any_evaluation",
+    "core_invariants": [
+      {
+        "control_id": "leak-01-availability",
+        "rule": "For each feature, available_at must be less than or equal to the row feature_cutoff.",
+        "evidence": [
+          "feature availability timestamp",
+          "source timestamp",
+          "row feature cutoff",
+          "validator output"
+        ],
+        "failure_action": "Exclude the feature-row value and record FEATURE_AFTER_CUTOFF."
+      },
+      {
+        "control_id": "leak-02-outcome-separation",
+        "rule": "The outcome window must begin strictly after the feature cutoff and declared censor gap.",
+        "evidence": [
+          "feature cutoff",
+          "censor gap",
+          "outcome window start",
+          "validator output"
+        ],
+        "failure_action": "Exclude the row and record OUTCOME_OVERLAP."
+      },
+      {
+        "control_id": "leak-03-timezone-and-calendar",
+        "rule": "All timestamps must be timezone-aware and evaluated against the declared exchange calendar and market-close convention.",
+        "evidence": [
+          "timestamp parse report",
+          "timezone field",
+          "calendar identifier",
+          "market-close convention"
+        ],
+        "failure_action": "Block rows with ambiguous or invalid temporal ordering."
+      },
+      {
+        "control_id": "leak-04-fold-local-preprocessing",
+        "rule": "Scaling, imputation, feature selection, encoding fitting, and hyperparameter tuning must be fitted only on each training fold and then applied to its validation fold.",
+        "evidence": [
+          "fold pipeline configuration",
+          "fit row identifiers",
+          "transform artifacts",
+          "random seed"
+        ],
+        "failure_action": "Invalidate the fold if any preprocessing saw validation or final-holdout rows."
+      },
+      {
+        "control_id": "leak-05-overlap-purge-and-embargo",
+        "rule": "When target windows overlap or entities have serially dependent events, purge training rows with overlapping outcomes and apply a declared embargo where needed.",
+        "evidence": [
+          "target windows",
+          "purged row identifiers",
+          "embargo duration",
+          "split manifest"
+        ],
+        "failure_action": "Regenerate the split with the required purge and embargo."
+      },
+      {
+        "control_id": "leak-06-final-holdout",
+        "rule": "The final holdout must be defined before model selection and cannot be used for feature discovery, threshold selection, or repeated tuning.",
+        "evidence": [
+          "experiment registration timestamp",
+          "holdout date range",
+          "model-selection log",
+          "final evaluation record"
+        ],
+        "failure_action": "Reclassify the work as exploratory and register a new confirmatory holdout."
+      },
+      {
+        "control_id": "leak-07-data-revisions",
+        "rule": "Revised, restated, or delayed-release values may only be used according to their original public availability timestamp, not their current revised value.",
+        "evidence": [
+          "vintage timestamp",
+          "provider revision policy",
+          "availability snapshot",
+          "source hash"
+        ],
+        "failure_action": "Exclude or relabel the feature as unavailable at the historical cutoff."
+      },
+      {
+        "control_id": "leak-08-survivorship-and-selection",
+        "rule": "Historical evaluation must document the universe construction and exclusions so that delisted or unavailable instruments do not silently bias the sample.",
+        "evidence": [
+          "historical universe file",
+          "membership dates",
+          "exclusion log",
+          "coverage report"
+        ],
+        "failure_action": "Limit claims to the observed survivor sample and mark survivorship risk."
+      }
+    ],
+    "validator_alignment": {
+      "runtime_module": "client/src/lib/astro/research/featureCutoff.ts",
+      "implemented_error_codes": [
+        "FEATURE_AFTER_CUTOFF",
+        "INVALID_TIMESTAMP",
+        "OUTCOME_OVERLAP"
+      ],
+      "additional_execution_audits_required": [
+        "fold_local_preprocessing",
+        "purge_and_embargo",
+        "final_holdout_isolation",
+        "provider_revision_vintage",
+        "universe_survivorship"
+      ]
+    }
+  }
+}

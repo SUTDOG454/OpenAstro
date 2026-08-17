@@ -1,0 +1,1861 @@
+{
+  "schema_version": "1.0.0",
+  "status": "source_derived_pending_registry_reconciliation",
+  "record_count": 25,
+  "records": [
+    {
+      "record_id": "usr_c945e4d3e23c6403af92",
+      "source_id": "openastro:user-upload:masterastrologycharttypes-txt",
+      "source_sha256": "c42998ea1fb2d9be0819023e49ab36642964d4f89832ac1e7bd369f428b3633f",
+      "source_path": "data/sources/2026-08-user-uploads/raw/MasterAstrologyChartTypes.txt",
+      "record_type": "chart_type_proposal",
+      "subject_path": "chart_type:natal_chart",
+      "raw_text": "Maps core personality, life themes, needs, and karma for one person. Serves as the foundation for all derived, relationship, timing, and specialised chart techniques.",
+      "normalized_text": "Maps core personality, life themes, needs, and karma for one person. Serves as the foundation for all derived, relationship, timing, and specialised chart techniques.",
+      "tradition_scope": [
+        "western"
+      ],
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "limitations": [
+        "Candidate chart-type metadata requires reconciliation with the configured canonical chart-type registry before implementation."
+      ],
+      "extensions": {
+        "source_chart_type": {
+          "id": "natal_chart",
+          "label": "Natal Chart",
+          "system": "Western",
+          "category": "Radix",
+          "dimension": "Individual",
+          "relationship_scope": "Foundational",
+          "time_basis": "Static (birth moment)",
+          "reference_frame": "Geocentric, Tropical or Sidereal",
+          "house_system": "Any (e.g., Placidus, Whole Sign, Koch, Equal, Campanus, Porphyry)",
+          "core_purpose": "Maps core personality, life themes, needs, and karma for one person. Serves as the foundation for all derived, relationship, timing, and specialised chart techniques.",
+          "interpretive_focus": {
+            "psychology": "Core temperament, ego patterning, defenses, motivations, attachment style and basic relational needs.",
+            "karma_evolution": "Describes soul lessons, inherited patterns, and evolutionary direction of the life as a whole.",
+            "life_areas": "Shows how energy distributes across houses, elements, modalities, and planetary dignities and strengths.",
+            "relationship_relevance": "Defines what each person brings into any relationship: needs, wounds, capacity for intimacy, and basic compatibility factors."
+          },
+          "role_in_relationship_dynamics": {
+            "function": "Foundation chart for all other relationship techniques.",
+            "usage": [
+              "Provides baseline for synastry comparisons.",
+              "Defines the individuals who form composite, coalescent, Davison, and harmonic relationship charts.",
+              "Supplies natal positions activated by transits, progressions, directions, returns, and timing charts."
+            ]
+          },
+          "interaction_with_other_charts": {
+            "derived_from": [],
+            "feeds_into": [
+              "synastry_chart",
+              "composite_chart",
+              "davison_relationship_chart",
+              "persona_chart",
+              "asteroid_chart",
+              "fixed_star_chart",
+              "draconic_natal_chart",
+              "progressions_individual",
+              "solar_arc_directions",
+              "return_charts",
+              "arabic_parts_chart",
+              "antiscion_chart",
+              "harmonic_charts",
+              "parans_chart",
+              "vedic_rasi_chart"
+            ],
+            "overlays_with": [
+              "transit_chart",
+              "return_charts",
+              "parans_chart",
+              "draconic_natal_chart"
+            ],
+            "timing_with": [
+              "transit_chart",
+              "progressions_individual",
+              "solar_arc_directions",
+              "return_charts"
+            ],
+            "supports": [],
+            "alternative_to": []
+          }
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:masterastrologycharttypes-txt"
+      ]
+    },
+    {
+      "record_id": "usr_3bb9a92eb543946cb73c",
+      "source_id": "openastro:user-upload:masterastrologycharttypes-txt",
+      "source_sha256": "c42998ea1fb2d9be0819023e49ab36642964d4f89832ac1e7bd369f428b3633f",
+      "source_path": "data/sources/2026-08-user-uploads/raw/MasterAstrologyChartTypes.txt",
+      "record_type": "chart_type_proposal",
+      "subject_path": "chart_type:persona_chart",
+      "raw_text": "Explores ego masks, sub-personalities, and shadow expressions of each natal planet. Each planet in the natal chart becomes the Ascendant of its own derived chart, producing a separate 'persona' for that planetary archetype.",
+      "normalized_text": "Explores ego masks, sub-personalities, and shadow expressions of each natal planet. Each planet in the natal chart becomes the Ascendant of its own derived chart, producing a separate 'persona' for that planetary archetype.",
+      "tradition_scope": [
+        "western"
+      ],
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "limitations": [
+        "Candidate chart-type metadata requires reconciliation with the configured canonical chart-type registry before implementation."
+      ],
+      "extensions": {
+        "source_chart_type": {
+          "id": "persona_chart",
+          "label": "Persona Chart",
+          "system": "Western",
+          "category": "Derived Natal",
+          "dimension": "Individual",
+          "relationship_scope": "Supplemental",
+          "time_basis": "Derived from natal planetary positions",
+          "reference_frame": "Geocentric, usually Tropical",
+          "core_purpose": "Explores ego masks, sub-personalities, and shadow expressions of each natal planet. Each planet in the natal chart becomes the Ascendant of its own derived chart, producing a separate 'persona' for that planetary archetype.",
+          "interpretive_focus": {
+            "psychology": "Reveals specific behavioral masks tied to each planet (e.g., Sun persona governing public ego expression, Venus persona governing relational presentation).",
+            "shadow_work": "Highlights disowned or projected traits that play out in relationships and can only be seen through another person's reactions.",
+            "motivation_variation": "Explains why a person behaves differently in different contexts than their core natal pattern suggests."
+          },
+          "role_in_relationship_dynamics": {
+            "function": "Refines understanding of how each person shows up in partnership beyond the base natal imprint.",
+            "usage": [
+              "Clarifies mixed signals seen in synastry and composite analysis.",
+              "Shows masks used in intimacy, conflict, sexuality, and commitment contexts.",
+              "Helps identify the sub-personality most activated in romantic vs professional vs family contexts."
+            ]
+          },
+          "interaction_with_other_charts": {
+            "derived_from": [
+              "natal_chart"
+            ],
+            "feeds_into": [
+              "synastry_chart",
+              "composite_chart"
+            ],
+            "overlays_with": [
+              "natal_chart",
+              "synastry_chart"
+            ],
+            "timing_with": [
+              "transit_chart",
+              "progressions_individual"
+            ],
+            "supports": [
+              "natal_chart",
+              "composite_chart"
+            ],
+            "alternative_to": []
+          }
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:masterastrologycharttypes-txt"
+      ]
+    },
+    {
+      "record_id": "usr_d2c99009cc8d5967abd2",
+      "source_id": "openastro:user-upload:masterastrologycharttypes-txt",
+      "source_sha256": "c42998ea1fb2d9be0819023e49ab36642964d4f89832ac1e7bd369f428b3633f",
+      "source_path": "data/sources/2026-08-user-uploads/raw/MasterAstrologyChartTypes.txt",
+      "record_type": "chart_type_proposal",
+      "subject_path": "chart_type:asteroid_chart",
+      "raw_text": "Tracks minor bodies (e.g., Juno, Eros, Psyche, Amor, Cupido, Karma, Chiron, Ceres, Pallas, Vesta, Pholus, Nessus, Sedna) for nuanced soul-level themes in individual and relationship charts.",
+      "normalized_text": "Tracks minor bodies (e.g., Juno, Eros, Psyche, Amor, Cupido, Karma, Chiron, Ceres, Pallas, Vesta, Pholus, Nessus, Sedna) for nuanced soul-level themes in individual and relationship charts.",
+      "tradition_scope": [
+        "western"
+      ],
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "limitations": [
+        "Candidate chart-type metadata requires reconciliation with the configured canonical chart-type registry before implementation."
+      ],
+      "extensions": {
+        "source_chart_type": {
+          "id": "asteroid_chart",
+          "label": "Asteroid Chart",
+          "system": "Western",
+          "category": "Supplementary Bodies",
+          "dimension": "Individual or Relationship",
+          "relationship_scope": "Specialized",
+          "time_basis": "Static (birth or event) or dynamic (transit/progression)",
+          "reference_frame": "Geocentric, Tropical or Sidereal",
+          "core_purpose": "Tracks minor bodies (e.g., Juno, Eros, Psyche, Amor, Cupido, Karma, Chiron, Ceres, Pallas, Vesta, Pholus, Nessus, Sedna) for nuanced soul-level themes in individual and relationship charts.",
+          "interpretive_focus": {
+            "soul_attraction": "Reveals fated attractions, soulmate signatures, erotic imprinting patterns, and spiritual bonding themes.",
+            "healing_themes": "Shows wounds and remedies around intimacy, trauma, trust, and abandonment (especially Chiron, Ceres, Black Moon Lilith).",
+            "commitment_patterns": "Highlights devotion, loyalty, and relational contracts, especially via Juno, Vesta, and similar archetypal points.",
+            "shadow_content": "Displays complex obsessions, compulsions, and shadowed desires in love, particularly through Eros, Psyche, and Nessus.",
+            "karmic_threads": "Karma, Destinn, and Sappho asteroids mark fated relational encounters and past-life resonances."
+          },
+          "role_in_relationship_dynamics": {
+            "function": "Adds karmic, erotic, and spiritual detail to otherwise standard planet-based analysis.",
+            "usage": [
+              "Refines Romantic Super-Linkages and high-intensity bindings between charts.",
+              "Deepens interpretation of harmonics and coalescent charts by specifying which archetypes are bound.",
+              "Used in synastry overlays to confirm or deepen conventional aspect findings."
+            ]
+          },
+          "interaction_with_other_charts": {
+            "derived_from": [
+              "natal_chart"
+            ],
+            "feeds_into": [],
+            "overlays_with": [
+              "natal_chart",
+              "synastry_chart",
+              "composite_chart",
+              "harmonic_charts",
+              "coalescent_chart",
+              "davison_relationship_chart"
+            ],
+            "timing_with": [
+              "transit_chart",
+              "solar_arc_directions",
+              "progressions_individual"
+            ],
+            "supports": [
+              "synastry_chart",
+              "composite_chart",
+              "coalescent_chart"
+            ],
+            "alternative_to": []
+          }
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:masterastrologycharttypes-txt"
+      ]
+    },
+    {
+      "record_id": "usr_23fef9cb2b737226fb4b",
+      "source_id": "openastro:user-upload:masterastrologycharttypes-txt",
+      "source_sha256": "c42998ea1fb2d9be0819023e49ab36642964d4f89832ac1e7bd369f428b3633f",
+      "source_path": "data/sources/2026-08-user-uploads/raw/MasterAstrologyChartTypes.txt",
+      "record_type": "chart_type_proposal",
+      "subject_path": "chart_type:fixed_star_chart",
+      "raw_text": "Maps planetary contacts to major fixed stars to show destiny signatures, archetypal overlays, and mythic narrative threads woven into individual or relationship charts.",
+      "normalized_text": "Maps planetary contacts to major fixed stars to show destiny signatures, archetypal overlays, and mythic narrative threads woven into individual or relationship charts.",
+      "tradition_scope": [
+        "western"
+      ],
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "limitations": [
+        "Candidate chart-type metadata requires reconciliation with the configured canonical chart-type registry before implementation."
+      ],
+      "extensions": {
+        "source_chart_type": {
+          "id": "fixed_star_chart",
+          "label": "Fixed Star Chart",
+          "system": "Western",
+          "category": "Stellar",
+          "dimension": "Individual or Relationship",
+          "relationship_scope": "Karmic / Spiritual",
+          "time_basis": "Static (birth or event)",
+          "reference_frame": "Geocentric, stars projected onto the Tropical zodiac",
+          "core_purpose": "Maps planetary contacts to major fixed stars to show destiny signatures, archetypal overlays, and mythic narrative threads woven into individual or relationship charts.",
+          "interpretive_focus": {
+            "destiny_signatures": "Indicates fated opportunities, crises, fame patterns, or spiritual missions tied to specific stars (e.g., Regulus for leadership, Algol for intensity and crisis, Spica for gifts).",
+            "archetypes": "Brings mythic narratives into chart interpretation; each star carries a Behenian or classical archetype with specific themes.",
+            "karmic_imprinting": "Marks areas of life where the relationship or individual feels 'written' by fate or cosmically mandated.",
+            "parans_integration": "Fixed star contacts deepened via parans (simultaneous horizon crossings) rather than only ecliptic conjunctions."
+          },
+          "role_in_relationship_dynamics": {
+            "function": "Amplifies karmic and spiritual themes in individual and relationship charts.",
+            "usage": [
+              "Highlights star-kissed composite or Davison planets that define the relationship's mythic storyline.",
+              "Shows how partners activate each other's star contacts through synastry overlays.",
+              "Used in parans analysis to identify locational destiny for couples."
+            ]
+          },
+          "interaction_with_other_charts": {
+            "derived_from": [
+              "natal_chart"
+            ],
+            "feeds_into": [
+              "parans_chart"
+            ],
+            "overlays_with": [
+              "natal_chart",
+              "composite_chart",
+              "davison_relationship_chart",
+              "coalescent_chart",
+              "draconic_natal_chart"
+            ],
+            "timing_with": [
+              "transit_chart",
+              "solar_arc_directions",
+              "progressions_individual"
+            ],
+            "supports": [
+              "composite_chart",
+              "coalescent_chart",
+              "draconic_natal_chart"
+            ],
+            "alternative_to": []
+          }
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:masterastrologycharttypes-txt"
+      ]
+    },
+    {
+      "record_id": "usr_32c404c6e775e438456f",
+      "source_id": "openastro:user-upload:masterastrologycharttypes-txt",
+      "source_sha256": "c42998ea1fb2d9be0819023e49ab36642964d4f89832ac1e7bd369f428b3633f",
+      "source_path": "data/sources/2026-08-user-uploads/raw/MasterAstrologyChartTypes.txt",
+      "record_type": "chart_type_proposal",
+      "subject_path": "chart_type:synastry_chart",
+      "raw_text": "Describes direct inter-chart aspects and house overlays between two individuals by superimposing one natal chart onto another. Shows the live energetic exchange between two people.",
+      "normalized_text": "Describes direct inter-chart aspects and house overlays between two individuals by superimposing one natal chart onto another. Shows the live energetic exchange between two people.",
+      "tradition_scope": [
+        "western"
+      ],
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "limitations": [
+        "Candidate chart-type metadata requires reconciliation with the configured canonical chart-type registry before implementation."
+      ],
+      "extensions": {
+        "source_chart_type": {
+          "id": "synastry_chart",
+          "label": "Synastry Chart",
+          "system": "Western",
+          "category": "Relationship Overlay",
+          "dimension": "Dyadic (or multi-person)",
+          "relationship_scope": "Operational Dynamics",
+          "time_basis": "Static comparison of two (or more) natal charts",
+          "reference_frame": "Geocentric",
+          "core_purpose": "Describes direct inter-chart aspects and house overlays between two individuals by superimposing one natal chart onto another. Shows the live energetic exchange between two people.",
+          "interpretive_focus": {
+            "compatibility": "Shows ease, friction, and attraction through aspects between planets, angles, and sensitive points of both charts.",
+            "energetic_exchange": "Illustrates how each person energizes, challenges, soothes, or destabilizes the other's houses and planets.",
+            "conflict_patterns": "Frames sources of projection, misunderstanding, power dynamics, and repeating relational conflicts.",
+            "house_overlays": "Where Person A's planets land in Person B's houses reveals the life areas most activated by the relationship.",
+            "mutual_aspects": "Reciprocal aspects (A's Sun trine B's Moon and B's Moon trine A's Sun) show the deepest mutual bonds."
+          },
+          "role_in_relationship_dynamics": {
+            "function": "Primary chart for assessing interpersonal compatibility and dynamic challenges in real time.",
+            "usage": [
+              "Forms the base layer for timing overlays with transits, progressions, and directions.",
+              "Works in tandem with composite and Davison charts: synastry shows 'how it feels between us', composite/Davison shows 'what the relationship is'.",
+              "Used as the core reference in relationship counseling and compatibility assessment."
+            ]
+          },
+          "interaction_with_other_charts": {
+            "derived_from": [
+              "natal_chart_person1",
+              "natal_chart_person2"
+            ],
+            "feeds_into": [
+              "harmonic_charts",
+              "coalescent_chart",
+              "asteroid_chart"
+            ],
+            "overlays_with": [
+              "composite_chart",
+              "davison_relationship_chart",
+              "transit_chart",
+              "progressions_individual",
+              "solar_arc_directions",
+              "antiscion_chart",
+              "arabic_parts_chart"
+            ],
+            "timing_with": [
+              "transit_chart",
+              "progressions_individual",
+              "solar_arc_directions",
+              "return_charts"
+            ],
+            "supports": [
+              "composite_chart",
+              "davison_relationship_chart",
+              "coalescent_chart"
+            ],
+            "alternative_to": []
+          }
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:masterastrologycharttypes-txt"
+      ]
+    },
+    {
+      "record_id": "usr_63ea8b4f7e2b857004e7",
+      "source_id": "openastro:user-upload:masterastrologycharttypes-txt",
+      "source_sha256": "c42998ea1fb2d9be0819023e49ab36642964d4f89832ac1e7bd369f428b3633f",
+      "source_path": "data/sources/2026-08-user-uploads/raw/MasterAstrologyChartTypes.txt",
+      "record_type": "chart_type_proposal",
+      "subject_path": "chart_type:composite_chart",
+      "raw_text": "Represents the relationship itself as a distinct entity by calculating the midpoint of each pair of corresponding planets between two natal charts. The resulting chart has its own Sun, Moon, angles, and houses describing the relationship's nature.",
+      "normalized_text": "Represents the relationship itself as a distinct entity by calculating the midpoint of each pair of corresponding planets between two natal charts. The resulting chart has its own Sun, Moon, angles, and houses describing the relationship's nature.",
+      "tradition_scope": [
+        "western"
+      ],
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "limitations": [
+        "Candidate chart-type metadata requires reconciliation with the configured canonical chart-type registry before implementation."
+      ],
+      "extensions": {
+        "source_chart_type": {
+          "id": "composite_chart",
+          "label": "Composite Chart (Midpoint Method)",
+          "system": "Western",
+          "category": "Relationship Entity",
+          "dimension": "Dyadic (can extend to multi-person)",
+          "relationship_scope": "Entity / We-Self",
+          "time_basis": "Static (zodiacal midpoints of two natal charts)",
+          "reference_frame": "Geocentric",
+          "core_purpose": "Represents the relationship itself as a distinct entity by calculating the midpoint of each pair of corresponding planets between two natal charts. The resulting chart has its own Sun, Moon, angles, and houses describing the relationship's nature.",
+          "interpretive_focus": {
+            "emotional_core": "Shows shared needs, emotional climate, and bonding style of the partnership.",
+            "joint_purpose": "Reveals the mission, direction, and fate of the relationship as a whole via composite Sun, MC, and nodal axis.",
+            "developmental_phases": "Indicates potential lifecycle stages of the relationship.",
+            "difference_from_davison": "Composite positions are abstract mathematical midpoints in the zodiac; they do not correspond to actual planetary positions in space or time, making timing via transits somewhat more abstract than with the Davison chart."
+          },
+          "role_in_relationship_dynamics": {
+            "function": "Defines what the relationship becomes once formed, beyond individual needs or synastry dynamics.",
+            "usage": [
+              "Used to forecast phases of the relationship via progressions and solar arcs.",
+              "Read alongside synastry to distinguish between attraction dynamics and relationship purpose.",
+              "Compared with Davison to see abstract versus grounded facets of the same bond."
+            ]
+          },
+          "interaction_with_other_charts": {
+            "derived_from": [
+              "natal_chart_person1",
+              "natal_chart_person2"
+            ],
+            "feeds_into": [
+              "progressed_composite_chart",
+              "coalescent_chart",
+              "draconic_relationship_chart",
+              "harmonic_charts"
+            ],
+            "overlays_with": [
+              "synastry_chart",
+              "davison_relationship_chart",
+              "transit_chart",
+              "asteroid_chart",
+              "fixed_star_chart"
+            ],
+            "timing_with": [
+              "transit_chart",
+              "progressed_composite_chart",
+              "solar_arc_directions",
+              "return_charts"
+            ],
+            "supports": [
+              "coalescent_chart"
+            ],
+            "alternative_to": [
+              "davison_relationship_chart"
+            ]
+          }
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:masterastrologycharttypes-txt"
+      ]
+    },
+    {
+      "record_id": "usr_71e9b7115c4dd1886334",
+      "source_id": "openastro:user-upload:masterastrologycharttypes-txt",
+      "source_sha256": "c42998ea1fb2d9be0819023e49ab36642964d4f89832ac1e7bd369f428b3633f",
+      "source_path": "data/sources/2026-08-user-uploads/raw/MasterAstrologyChartTypes.txt",
+      "record_type": "chart_type_proposal",
+      "subject_path": "chart_type:harmonic_charts",
+      "raw_text": "Transforms aspects within a natal or composite chart into conjunction patterns by multiplying all planetary positions by a specific harmonic number. Common harmonics: H1 (natal), H2 (opposition), H3 (trine), H4 (squares), H5 (quintiles, creativity), H7 (septiles, fate/mysticism), H9 (noviles, spiritual gifts), H12 (unconscious).",
+      "normalized_text": "Transforms aspects within a natal or composite chart into conjunction patterns by multiplying all planetary positions by a specific harmonic number. Common harmonics: H1 (natal), H2 (opposition), H3 (trine), H4 (squares), H5 (quintiles, creativity), H7 (septiles, fate/mysticism), H9 (noviles, spiritual gifts), H12 (unconscious).",
+      "tradition_scope": [
+        "western"
+      ],
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "limitations": [
+        "Candidate chart-type metadata requires reconciliation with the configured canonical chart-type registry before implementation."
+      ],
+      "extensions": {
+        "source_chart_type": {
+          "id": "harmonic_charts",
+          "label": "Harmonic Charts (Western)",
+          "system": "Western",
+          "category": "Numerical Harmonics",
+          "dimension": "Individual or Relationship",
+          "relationship_scope": "Soul / Resonance",
+          "time_basis": "Derived from natal or composite chart",
+          "reference_frame": "Geocentric",
+          "core_purpose": "Transforms aspects within a natal or composite chart into conjunction patterns by multiplying all planetary positions by a specific harmonic number. Common harmonics: H1 (natal), H2 (opposition), H3 (trine), H4 (squares), H5 (quintiles, creativity), H7 (septiles, fate/mysticism), H9 (noviles, spiritual gifts), H12 (unconscious).",
+          "interpretive_focus": {
+            "spiritual_resonance": "Shows subtle resonances, talents, and soul-ties linked to the number symbolism of the harmonic.",
+            "karmic_potentials": "Uncovers latent potentials and karmic contracts not obvious in the base chart's standard aspects.",
+            "relationship_emphasis": "In relationship work, supports synastry/composite by highlighting soul-level connection evidence that transcends personality interaction.",
+            "talent_mapping": "H5 charts reveal creative and intellectual gifts; H7 shows mystical and fated threads; H9 reveals spiritual mission."
+          },
+          "role_in_relationship_dynamics": {
+            "function": "Confirms and deepens the sense of fate, spiritual purpose, and special resonance between partners.",
+            "usage": [
+              "Analyse harmonic synastry (5th, 7th, 9th) for subtle binding patterns that explain inexplicable attraction.",
+              "Use harmonic composites to examine shared spiritual, creative, or fated missions.",
+              "H4 chart highlights stress and growth aspects not immediately visible in standard charts."
+            ]
+          },
+          "interaction_with_other_charts": {
+            "derived_from": [
+              "natal_chart",
+              "composite_chart",
+              "draconic_natal_chart"
+            ],
+            "feeds_into": [],
+            "overlays_with": [
+              "coalescent_chart",
+              "synastry_chart",
+              "asteroid_chart"
+            ],
+            "timing_with": [
+              "transit_chart",
+              "progressions_individual"
+            ],
+            "supports": [
+              "coalescent_chart",
+              "synastry_chart",
+              "composite_chart"
+            ],
+            "alternative_to": []
+          }
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:masterastrologycharttypes-txt"
+      ]
+    },
+    {
+      "record_id": "usr_a9399608eb81bab332bf",
+      "source_id": "openastro:user-upload:masterastrologycharttypes-txt",
+      "source_sha256": "c42998ea1fb2d9be0819023e49ab36642964d4f89832ac1e7bd369f428b3633f",
+      "source_path": "data/sources/2026-08-user-uploads/raw/MasterAstrologyChartTypes.txt",
+      "record_type": "chart_type_proposal",
+      "subject_path": "chart_type:coalescent_chart",
+      "raw_text": "Portrays the unified spiritual frequency and transformational potential of the relationship at a level beyond personality or mundane event. Treats the relationship as a vibrational field rather than a midpoint entity.",
+      "normalized_text": "Portrays the unified spiritual frequency and transformational potential of the relationship at a level beyond personality or mundane event. Treats the relationship as a vibrational field rather than a midpoint entity.",
+      "tradition_scope": [
+        "western_(advanced_/_innovative)"
+      ],
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "limitations": [
+        "Candidate chart-type metadata requires reconciliation with the configured canonical chart-type registry before implementation."
+      ],
+      "extensions": {
+        "source_chart_type": {
+          "id": "coalescent_chart",
+          "label": "Coalescent Chart",
+          "system": "Western (advanced / innovative)",
+          "category": "Relationship Frequency",
+          "dimension": "Dyadic",
+          "relationship_scope": "Spiritual / Vibrational",
+          "time_basis": "Derived from two natal charts (method varies by school; involves harmonic or frequency-based merging)",
+          "reference_frame": "Geocentric",
+          "core_purpose": "Portrays the unified spiritual frequency and transformational potential of the relationship at a level beyond personality or mundane event. Treats the relationship as a vibrational field rather than a midpoint entity.",
+          "interpretive_focus": {
+            "vibrational_attunement": "Shows how the couple's energies merge at a high-frequency, transpersonal level beyond their individual charts.",
+            "transformational_power": "Indicates capacity of the relationship to catalyse awakening, healing, or radical life shifts for both parties.",
+            "spiritual_confirmation": "Acts as a cross-check for whether intense synastry and harmonic resonance represents genuine soul-level work."
+          },
+          "role_in_relationship_dynamics": {
+            "function": "Acts as a spiritual truth-test and deep confirmation layer for harmonic and composite insights.",
+            "usage": [
+              "Confirm whether intense synastry or harmonic patterns represent enduring spiritual work or temporary chemistry.",
+              "Used as the final layer in an advanced multi-chart relationship analysis sequence."
+            ]
+          },
+          "interaction_with_other_charts": {
+            "derived_from": [
+              "natal_chart_person1",
+              "natal_chart_person2",
+              "harmonic_charts"
+            ],
+            "feeds_into": [],
+            "overlays_with": [
+              "composite_chart",
+              "davison_relationship_chart",
+              "harmonic_charts",
+              "asteroid_chart",
+              "fixed_star_chart"
+            ],
+            "timing_with": [
+              "transit_chart",
+              "progressions_individual"
+            ],
+            "supports": [
+              "harmonic_charts",
+              "composite_chart",
+              "draconic_relationship_chart"
+            ],
+            "alternative_to": []
+          }
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:masterastrologycharttypes-txt"
+      ]
+    },
+    {
+      "record_id": "usr_618c2c7eab9e01c9f0af",
+      "source_id": "openastro:user-upload:masterastrologycharttypes-txt",
+      "source_sha256": "c42998ea1fb2d9be0819023e49ab36642964d4f89832ac1e7bd369f428b3633f",
+      "source_path": "data/sources/2026-08-user-uploads/raw/MasterAstrologyChartTypes.txt",
+      "record_type": "chart_type_proposal",
+      "subject_path": "chart_type:solar_arc_directions",
+      "raw_text": "Moves all natal planets and angles by the same uniform arc (the distance the progressed Sun has moved from natal to the target date) to time major developmental triggers and life turning points.",
+      "normalized_text": "Moves all natal planets and angles by the same uniform arc (the distance the progressed Sun has moved from natal to the target date) to time major developmental triggers and life turning points.",
+      "tradition_scope": [
+        "western"
+      ],
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "limitations": [
+        "Candidate chart-type metadata requires reconciliation with the configured canonical chart-type registry before implementation."
+      ],
+      "extensions": {
+        "source_chart_type": {
+          "id": "solar_arc_directions",
+          "label": "Solar Arc Directions",
+          "system": "Western",
+          "category": "Forecasting – Directions",
+          "dimension": "Individual or Relationship",
+          "relationship_scope": "Timing / Development",
+          "time_basis": "Dynamic (symbolic progression; all planets move by the arc of the progressed Sun ~1° per year)",
+          "reference_frame": "Geocentric",
+          "core_purpose": "Moves all natal planets and angles by the same uniform arc (the distance the progressed Sun has moved from natal to the target date) to time major developmental triggers and life turning points.",
+          "interpretive_focus": {
+            "developmental_triggers": "Marks key shifts in identity, commitment, and life circumstances. Particularly powerful when directed angles contact natal planets or vice versa.",
+            "lifecycles": "Tracks major turning points in the relationship's story when applied to composite or Davison charts.",
+            "outer_event_focus": "Solar Arc hits tend to correlate with visible, external life events more than internal psychological shifts."
+          },
+          "role_in_relationship_dynamics": {
+            "function": "Times activation of natal, synastry, composite, and Davison potentials at a high level.",
+            "usage": [
+              "Directed angles to natal Venus, Jupiter, or Saturn can mark when relationships begin, formalize, or end.",
+              "Combine with transits and progressions for precise and redundant timing windows.",
+              "Apply to composite and Davison charts to track major phases of the relationship entity."
+            ]
+          },
+          "interaction_with_other_charts": {
+            "derived_from": [
+              "natal_chart",
+              "composite_chart",
+              "davison_relationship_chart"
+            ],
+            "feeds_into": [
+              "solar_arc_davison_chart"
+            ],
+            "overlays_with": [
+              "natal_chart",
+              "synastry_chart",
+              "composite_chart",
+              "transit_chart"
+            ],
+            "timing_with": [
+              "transit_chart",
+              "progressions_individual",
+              "return_charts"
+            ],
+            "supports": [
+              "progressed_composite_chart",
+              "progressed_davison_chart"
+            ],
+            "alternative_to": [
+              "progressions_individual"
+            ]
+          }
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:masterastrologycharttypes-txt"
+      ]
+    },
+    {
+      "record_id": "usr_8258628cbf3b98060c93",
+      "source_id": "openastro:user-upload:masterastrologycharttypes-txt",
+      "source_sha256": "c42998ea1fb2d9be0819023e49ab36642964d4f89832ac1e7bd369f428b3633f",
+      "source_path": "data/sources/2026-08-user-uploads/raw/MasterAstrologyChartTypes.txt",
+      "record_type": "chart_type_proposal",
+      "subject_path": "chart_type:progressions_individual",
+      "raw_text": "Tracks inner emotional and psychological evolution over time by advancing natal positions symbolically. Progressed Moon is the most frequently used, completing one zodiac cycle in approximately 27–28 years.",
+      "normalized_text": "Tracks inner emotional and psychological evolution over time by advancing natal positions symbolically. Progressed Moon is the most frequently used, completing one zodiac cycle in approximately 27–28 years.",
+      "tradition_scope": [
+        "western"
+      ],
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "limitations": [
+        "Candidate chart-type metadata requires reconciliation with the configured canonical chart-type registry before implementation."
+      ],
+      "extensions": {
+        "source_chart_type": {
+          "id": "progressions_individual",
+          "label": "Secondary Progressions (Individual)",
+          "system": "Western",
+          "category": "Forecasting – Progressions",
+          "dimension": "Individual",
+          "relationship_scope": "Inner Cycles",
+          "time_basis": "Dynamic (symbolic time: 1 day after birth = 1 year of life)",
+          "reference_frame": "Geocentric",
+          "core_purpose": "Tracks inner emotional and psychological evolution over time by advancing natal positions symbolically. Progressed Moon is the most frequently used, completing one zodiac cycle in approximately 27–28 years.",
+          "interpretive_focus": {
+            "emotional_cycles": "Shows long-term mood shifts, relationship needs, and readiness for commitment. Progressed Moon sign changes every ~2.5 years.",
+            "maturity": "Charts growth in emotional intelligence, intimacy capacity, and evolving relationship expectations.",
+            "identity_shifts": "Progressed Sun sign change (~30 years into life) marks major identity evolution; progressed Ascendant shifts signal external persona changes."
+          },
+          "role_in_relationship_dynamics": {
+            "function": "Describes when a person is open, resistant, or transforming in relation to partnership.",
+            "usage": [
+              "Times when someone is likely to enter, deepen, or leave relationships.",
+              "Compared with progressed composite or progressed Davison for synchronized growth phases between partners.",
+              "Progressed Venus stations or sign changes often correlate with falling in love or ending relationships."
+            ]
+          },
+          "interaction_with_other_charts": {
+            "derived_from": [
+              "natal_chart"
+            ],
+            "feeds_into": [
+              "progressed_composite_chart",
+              "progressed_davison_chart"
+            ],
+            "overlays_with": [
+              "natal_chart",
+              "transit_chart",
+              "solar_arc_directions",
+              "return_charts"
+            ],
+            "timing_with": [
+              "transit_chart",
+              "solar_arc_directions",
+              "return_charts"
+            ],
+            "supports": [
+              "synastry_chart",
+              "composite_chart",
+              "davison_relationship_chart"
+            ],
+            "alternative_to": [
+              "solar_arc_directions"
+            ]
+          }
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:masterastrologycharttypes-txt"
+      ]
+    },
+    {
+      "record_id": "usr_e29df0c2a9b1f40a4e4e",
+      "source_id": "openastro:user-upload:masterastrologycharttypes-txt",
+      "source_sha256": "c42998ea1fb2d9be0819023e49ab36642964d4f89832ac1e7bd369f428b3633f",
+      "source_path": "data/sources/2026-08-user-uploads/raw/MasterAstrologyChartTypes.txt",
+      "record_type": "chart_type_proposal",
+      "subject_path": "chart_type:progressed_composite_chart",
+      "raw_text": "Shows the evolving emotional climate and developmental stage of the relationship entity (composite) over time, tracking how the 'we-self' matures independently of individual growth curves.",
+      "normalized_text": "Shows the evolving emotional climate and developmental stage of the relationship entity (composite) over time, tracking how the 'we-self' matures independently of individual growth curves.",
+      "tradition_scope": [
+        "western"
+      ],
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "limitations": [
+        "Candidate chart-type metadata requires reconciliation with the configured canonical chart-type registry before implementation."
+      ],
+      "extensions": {
+        "source_chart_type": {
+          "id": "progressed_composite_chart",
+          "label": "Progressed Composite Chart",
+          "system": "Western",
+          "category": "Relationship Forecasting – Progressions",
+          "dimension": "Dyadic",
+          "relationship_scope": "Lifecycle / Phases",
+          "time_basis": "Dynamic (secondary progressions applied to the composite chart)",
+          "reference_frame": "Geocentric",
+          "core_purpose": "Shows the evolving emotional climate and developmental stage of the relationship entity (composite) over time, tracking how the 'we-self' matures independently of individual growth curves.",
+          "interpretive_focus": {
+            "evolutionary_cycles": "Progressed composite Sun and Moon signal long-term identity and emotional phase changes in the relationship itself.",
+            "phase_shifts": "Signals periods of consolidation, crisis, renewal, or dissolution in the relationship's arc.",
+            "aspect_formation": "New aspects between progressed composite planets and composite angles mark when specific relational themes intensify."
+          },
+          "role_in_relationship_dynamics": {
+            "function": "Allows timing of major relationship milestones and turning points at the entity level.",
+            "usage": [
+              "Used alongside solar arcs to forecast key events in couple life.",
+              "Compared with progressed Davison to see if both entity charts align on the same critical periods.",
+              "Identifies when the relationship's emotional tone is likely to shift, even if individual progressions are quiet."
+            ]
+          },
+          "interaction_with_other_charts": {
+            "derived_from": [
+              "composite_chart"
+            ],
+            "feeds_into": [],
+            "overlays_with": [
+              "solar_arc_directions",
+              "transit_chart",
+              "progressions_individual"
+            ],
+            "timing_with": [
+              "transit_chart",
+              "solar_arc_directions"
+            ],
+            "supports": [
+              "composite_chart",
+              "synastry_chart"
+            ],
+            "alternative_to": [
+              "progressed_davison_chart"
+            ]
+          }
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:masterastrologycharttypes-txt"
+      ]
+    },
+    {
+      "record_id": "usr_b4bff4e1d588c10e919a",
+      "source_id": "openastro:user-upload:masterastrologycharttypes-txt",
+      "source_sha256": "c42998ea1fb2d9be0819023e49ab36642964d4f89832ac1e7bd369f428b3633f",
+      "source_path": "data/sources/2026-08-user-uploads/raw/MasterAstrologyChartTypes.txt",
+      "record_type": "chart_type_proposal",
+      "subject_path": "chart_type:transit_chart",
+      "raw_text": "Shows ongoing actual planetary movements and their aspects and contacts to natal, composite, Davison, or other chart positions. The most widely used timing technique in Western astrology.",
+      "normalized_text": "Shows ongoing actual planetary movements and their aspects and contacts to natal, composite, Davison, or other chart positions. The most widely used timing technique in Western astrology.",
+      "tradition_scope": [
+        "western"
+      ],
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "limitations": [
+        "Candidate chart-type metadata requires reconciliation with the configured canonical chart-type registry before implementation."
+      ],
+      "extensions": {
+        "source_chart_type": {
+          "id": "transit_chart",
+          "label": "Transit Chart",
+          "system": "Western",
+          "category": "Forecasting – Transits",
+          "dimension": "Individual, Relationship, or Mundane",
+          "relationship_scope": "Events / External Pressures",
+          "time_basis": "Dynamic (real-time planetary motions against natal or derived chart)",
+          "reference_frame": "Geocentric",
+          "core_purpose": "Shows ongoing actual planetary movements and their aspects and contacts to natal, composite, Davison, or other chart positions. The most widely used timing technique in Western astrology.",
+          "interpretive_focus": {
+            "external_influences": "Describes environmental pressures, opportunities, and crises affecting individuals and relationships.",
+            "event_timing": "Helps time meetings, relocations, breakups, reconciliations, marriages, and other concrete events.",
+            "activation": "Activates latent patterns shown in all static charts; transits do not create new themes but trigger existing potentials."
+          },
+          "role_in_relationship_dynamics": {
+            "function": "Activates latent patterns shown in all static and derived charts.",
+            "usage": [
+              "Overlay transits on natal, synastry, composite, and Davison charts to see where life is pressing the relationship.",
+              "Outer planet transits (Saturn, Uranus, Neptune, Pluto) to composite or Davison angles mark major relationship turning points.",
+              "Used as the final timing confirmation layer alongside progressions and Solar Arc."
+            ]
+          },
+          "interaction_with_other_charts": {
+            "derived_from": [],
+            "feeds_into": [],
+            "overlays_with": [
+              "natal_chart",
+              "synastry_chart",
+              "composite_chart",
+              "davison_relationship_chart",
+              "coalescent_chart",
+              "draconic_natal_chart",
+              "return_charts"
+            ],
+            "timing_with": [
+              "progressions_individual",
+              "solar_arc_directions",
+              "return_charts",
+              "progressed_composite_chart",
+              "progressed_davison_chart"
+            ],
+            "supports": [
+              "natal_chart",
+              "composite_chart",
+              "davison_relationship_chart"
+            ],
+            "alternative_to": []
+          }
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:masterastrologycharttypes-txt"
+      ]
+    },
+    {
+      "record_id": "usr_81d556ff311b52eaa95c",
+      "source_id": "openastro:user-upload:masterastrologycharttypes-txt",
+      "source_sha256": "c42998ea1fb2d9be0819023e49ab36642964d4f89832ac1e7bd369f428b3633f",
+      "source_path": "data/sources/2026-08-user-uploads/raw/MasterAstrologyChartTypes.txt",
+      "record_type": "chart_type_proposal",
+      "subject_path": "chart_type:antiscion_chart",
+      "raw_text": "Examines mirror positions (antiscia and contra-antiscia) as hidden points of contact operating below the surface of standard aspect analysis. Antiscion of a planet falls where days of equal length are shared across the solstitial axis.",
+      "normalized_text": "Examines mirror positions (antiscia and contra-antiscia) as hidden points of contact operating below the surface of standard aspect analysis. Antiscion of a planet falls where days of equal length are shared across the solstitial axis.",
+      "tradition_scope": [
+        "western"
+      ],
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "limitations": [
+        "Candidate chart-type metadata requires reconciliation with the configured canonical chart-type registry before implementation."
+      ],
+      "extensions": {
+        "source_chart_type": {
+          "id": "antiscion_chart",
+          "label": "Antiscion / Antiscia Chart",
+          "system": "Western",
+          "category": "Mirror Points",
+          "dimension": "Individual or Relationship",
+          "relationship_scope": "Hidden / Subconscious",
+          "time_basis": "Derived (mirror over solstitial axis at 0° Cancer / 0° Capricorn)",
+          "reference_frame": "Geocentric",
+          "core_purpose": "Examines mirror positions (antiscia and contra-antiscia) as hidden points of contact operating below the surface of standard aspect analysis. Antiscion of a planet falls where days of equal length are shared across the solstitial axis.",
+          "interpretive_focus": {
+            "subconscious_ties": "Reveals magnetic but subtle attractions operating below conscious awareness; explains bonds that feel inexplicably deep.",
+            "mysterious_resonances": "Accounts for pull or repulsion between charts that cannot be explained by standard aspects or house overlays.",
+            "timing_nuance": "Transiting planets making antiscion contacts to natal or composite factors can trigger events without visible hard aspects."
+          },
+          "role_in_relationship_dynamics": {
+            "function": "Accounts for 'irrational' connection or aversion between charts and adds depth to advanced synastry readings.",
+            "usage": [
+              "Used in advanced synastry to reveal occult linkages when standard aspects seem insufficient.",
+              "Applied in Hellenistic and Uranian contexts as part of a full relationship analysis."
+            ]
+          },
+          "interaction_with_other_charts": {
+            "derived_from": [
+              "natal_chart",
+              "composite_chart"
+            ],
+            "feeds_into": [],
+            "overlays_with": [
+              "synastry_chart",
+              "composite_chart",
+              "transit_chart"
+            ],
+            "timing_with": [
+              "transit_chart",
+              "solar_arc_directions"
+            ],
+            "supports": [
+              "synastry_chart",
+              "composite_chart"
+            ],
+            "alternative_to": []
+          }
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:masterastrologycharttypes-txt"
+      ]
+    },
+    {
+      "record_id": "usr_99967f13fbfaaf80ac56",
+      "source_id": "openastro:user-upload:masterastrologycharttypes-txt",
+      "source_sha256": "c42998ea1fb2d9be0819023e49ab36642964d4f89832ac1e7bd369f428b3633f",
+      "source_path": "data/sources/2026-08-user-uploads/raw/MasterAstrologyChartTypes.txt",
+      "record_type": "chart_type_proposal",
+      "subject_path": "chart_type:arabic_parts_chart",
+      "raw_text": "Uses calculated sensitive points (e.g., Part of Fortune, Part of Spirit, Part of Marriage, Part of Love, Part of Eros, Part of Divorce) to symbolise specific karmic and thematic foci.",
+      "normalized_text": "Uses calculated sensitive points (e.g., Part of Fortune, Part of Spirit, Part of Marriage, Part of Love, Part of Eros, Part of Divorce) to symbolise specific karmic and thematic foci.",
+      "tradition_scope": [
+        "western_(hellenistic_/_medieval-derived)"
+      ],
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "limitations": [
+        "Candidate chart-type metadata requires reconciliation with the configured canonical chart-type registry before implementation."
+      ],
+      "extensions": {
+        "source_chart_type": {
+          "id": "arabic_parts_chart",
+          "label": "Arabic Parts / Lots Chart",
+          "system": "Western (Hellenistic / Medieval-derived)",
+          "category": "Calculated Points",
+          "dimension": "Individual or Relationship",
+          "relationship_scope": "Fate / Thematic",
+          "time_basis": "Derived from natal or event positions (Ascendant + Planet A − Planet B)",
+          "reference_frame": "Geocentric",
+          "core_purpose": "Uses calculated sensitive points (e.g., Part of Fortune, Part of Spirit, Part of Marriage, Part of Love, Part of Eros, Part of Divorce) to symbolise specific karmic and thematic foci.",
+          "interpretive_focus": {
+            "karmic_points": "Each lot condenses a specific life theme—prosperity, love, separation, marriage—into a single degree that acts like a planet.",
+            "relationship_fate": "Marriage, partnership, and divorce lots show predestined patterns around commitment and long-term bonding.",
+            "activation_timing": "Lots are activated by transits, progressions, and directions just as natal planets are."
+          },
+          "role_in_relationship_dynamics": {
+            "function": "Highlights fated meeting indicators and key relationship event markers when activated by timing techniques.",
+            "usage": [
+              "Overlay synastry and transits to marriage-related lots to time significant relationship developments.",
+              "Compare partners' lots of Love and Marriage with each other's natal positions for synastry depth.",
+              "Use in Hellenistic analysis as core timing and thematic indicators alongside planets."
+            ]
+          },
+          "interaction_with_other_charts": {
+            "derived_from": [
+              "natal_chart"
+            ],
+            "feeds_into": [],
+            "overlays_with": [
+              "natal_chart",
+              "synastry_chart",
+              "composite_chart"
+            ],
+            "timing_with": [
+              "transit_chart",
+              "progressions_individual",
+              "solar_arc_directions"
+            ],
+            "supports": [
+              "synastry_chart",
+              "natal_chart"
+            ],
+            "alternative_to": []
+          }
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:masterastrologycharttypes-txt"
+      ]
+    },
+    {
+      "record_id": "usr_f3243044b8531a2a4667",
+      "source_id": "openastro:user-upload:masterastrologycharttypes-txt",
+      "source_sha256": "c42998ea1fb2d9be0819023e49ab36642964d4f89832ac1e7bd369f428b3633f",
+      "source_path": "data/sources/2026-08-user-uploads/raw/MasterAstrologyChartTypes.txt",
+      "record_type": "chart_type_proposal",
+      "subject_path": "chart_type:parans_chart",
+      "raw_text": "Examines when a planet and a fixed star simultaneously cross the same horizon or meridian point at a specific location, creating a powerful locational-destiny contact beyond ecliptic conjunctions.",
+      "normalized_text": "Examines when a planet and a fixed star simultaneously cross the same horizon or meridian point at a specific location, creating a powerful locational-destiny contact beyond ecliptic conjunctions.",
+      "tradition_scope": [
+        "western_(paranatellonta)"
+      ],
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "limitations": [
+        "Candidate chart-type metadata requires reconciliation with the configured canonical chart-type registry before implementation."
+      ],
+      "extensions": {
+        "source_chart_type": {
+          "id": "parans_chart",
+          "label": "Parans Chart",
+          "system": "Western (Paranatellonta)",
+          "category": "Local Space / Fixed Stars",
+          "dimension": "Individual or Relationship",
+          "relationship_scope": "Locational Fate",
+          "time_basis": "Static (birth or event at specific location)",
+          "reference_frame": "Horizon-based star–planet simultaneous risings, culminations, settings, and anti-culminations",
+          "core_purpose": "Examines when a planet and a fixed star simultaneously cross the same horizon or meridian point at a specific location, creating a powerful locational-destiny contact beyond ecliptic conjunctions.",
+          "interpretive_focus": {
+            "locational_destiny": "Marks places and times where fate or destiny moments are concentrated via planet–star paran combinations.",
+            "timing_nuance": "Adds fine-grained timing layers to transits and progressions using star–planet synchrony that ecliptic-only analysis misses.",
+            "couple_geography": "In relationship work, identifies the geographic zones most activated by the combined parans of both partners."
+          },
+          "role_in_relationship_dynamics": {
+            "function": "Shows where on earth the relationship story is likely to unfold, peak, or encounter destiny.",
+            "usage": [
+              "Used in relocation and event astrology for couples.",
+              "Combined with Astrocartography to layer star-planet contacts onto geographic ACG lines.",
+              "Timed parans mark periods when star themes enter the life via transits crossing the paran point."
+            ]
+          },
+          "interaction_with_other_charts": {
+            "derived_from": [
+              "natal_chart",
+              "fixed_star_chart"
+            ],
+            "feeds_into": [],
+            "overlays_with": [
+              "natal_chart",
+              "composite_chart"
+            ],
+            "timing_with": [
+              "transit_chart",
+              "progressed_composite_chart",
+              "solar_arc_directions"
+            ],
+            "supports": [
+              "fixed_star_chart",
+              "natal_chart"
+            ],
+            "alternative_to": []
+          }
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:masterastrologycharttypes-txt"
+      ]
+    },
+    {
+      "record_id": "usr_603ccc8f0a25f8c836a3",
+      "source_id": "openastro:user-upload:masterastrologycharttypes-txt",
+      "source_sha256": "c42998ea1fb2d9be0819023e49ab36642964d4f89832ac1e7bd369f428b3633f",
+      "source_path": "data/sources/2026-08-user-uploads/raw/MasterAstrologyChartTypes.txt",
+      "record_type": "chart_type_proposal",
+      "subject_path": "chart_type:draconic_natal_chart",
+      "raw_text": "Re-zeros the zodiac on the natal North Node, revealing soul-level motivations, pre-incarnational intent, and karmic identity that the current-life personality is growing toward.",
+      "normalized_text": "Re-zeros the zodiac on the natal North Node, revealing soul-level motivations, pre-incarnational intent, and karmic identity that the current-life personality is growing toward.",
+      "tradition_scope": [
+        "western_(karmic_/_lunar_nodes)"
+      ],
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "limitations": [
+        "Candidate chart-type metadata requires reconciliation with the configured canonical chart-type registry before implementation."
+      ],
+      "extensions": {
+        "source_chart_type": {
+          "id": "draconic_natal_chart",
+          "label": "Draconic Natal Chart",
+          "system": "Western (Karmic / Lunar Nodes)",
+          "category": "Nodal / Karmic",
+          "dimension": "Individual",
+          "relationship_scope": "Soul Mission",
+          "time_basis": "Derived (North Node set to 0° Aries; all natal positions shifted accordingly)",
+          "reference_frame": "Geocentric, nodal-referenced zodiac",
+          "core_purpose": "Re-zeros the zodiac on the natal North Node, revealing soul-level motivations, pre-incarnational intent, and karmic identity that the current-life personality is growing toward.",
+          "interpretive_focus": {
+            "life_mission": "Shows 'why' the soul chose its natal pattern and the core evolutionary agenda beyond personality preferences.",
+            "relationship_karmas": "Highlights karmic contracts and deep bonds that transcend current-life personality and speak to multi-lifetime soul agreements.",
+            "comparison_layer": "When draconic positions align with another person's tropical positions, it signals a fated soul-level contact."
+          },
+          "role_in_relationship_dynamics": {
+            "function": "Clarifies why certain partners feel fated or pivotal for soul growth; reveals the soul contract behind the relationship.",
+            "usage": [
+              "Compare draconic to natal and synastry charts for multi-layered karmic mapping.",
+              "Overlay one person's draconic chart onto another's tropical natal as a synastry variant.",
+              "Use draconic composite to reveal the higher spiritual purpose of a relationship."
+            ]
+          },
+          "interaction_with_other_charts": {
+            "derived_from": [
+              "natal_chart"
+            ],
+            "feeds_into": [
+              "draconic_relationship_chart",
+              "harmonic_charts"
+            ],
+            "overlays_with": [
+              "natal_chart",
+              "synastry_chart",
+              "composite_chart",
+              "fixed_star_chart"
+            ],
+            "timing_with": [
+              "transit_chart",
+              "progressions_individual"
+            ],
+            "supports": [
+              "synastry_chart",
+              "coalescent_chart"
+            ],
+            "alternative_to": []
+          }
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:masterastrologycharttypes-txt"
+      ]
+    },
+    {
+      "record_id": "usr_5ad7c59fb9bf1ff015bc",
+      "source_id": "openastro:user-upload:masterastrologycharttypes-txt",
+      "source_sha256": "c42998ea1fb2d9be0819023e49ab36642964d4f89832ac1e7bd369f428b3633f",
+      "source_path": "data/sources/2026-08-user-uploads/raw/MasterAstrologyChartTypes.txt",
+      "record_type": "chart_type_proposal",
+      "subject_path": "chart_type:draconic_relationship_chart",
+      "raw_text": "Applies draconic re-zeroing logic to synastry and composite analysis to emphasise soul-to-soul dynamics, past-life contracts, and the deepest karmic reasons two souls have come together.",
+      "normalized_text": "Applies draconic re-zeroing logic to synastry and composite analysis to emphasise soul-to-soul dynamics, past-life contracts, and the deepest karmic reasons two souls have come together.",
+      "tradition_scope": [
+        "western"
+      ],
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "limitations": [
+        "Candidate chart-type metadata requires reconciliation with the configured canonical chart-type registry before implementation."
+      ],
+      "extensions": {
+        "source_chart_type": {
+          "id": "draconic_relationship_chart",
+          "label": "Draconic Synastry and Draconic Composite",
+          "system": "Western",
+          "category": "Nodal / Karmic",
+          "dimension": "Dyadic",
+          "relationship_scope": "Soul / Karmic",
+          "time_basis": "Derived from draconic counterparts of each partner's natal chart",
+          "reference_frame": "Geocentric, nodal zodiac",
+          "core_purpose": "Applies draconic re-zeroing logic to synastry and composite analysis to emphasise soul-to-soul dynamics, past-life contracts, and the deepest karmic reasons two souls have come together.",
+          "interpretive_focus": {
+            "karmic_contracts": "Shows past-life debts, promises, and soul-level purposes of the relationship beyond current-life personality.",
+            "hidden_motives": "Clarifies deeper motives behind conscious-level interactions, especially compulsive or inexplicable relational behaviours.",
+            "soul_alignment": "When draconic composite aligns with tropical composite, soul purpose and worldly reality are in accord."
+          },
+          "role_in_relationship_dynamics": {
+            "function": "Overlay for understanding the spiritual reasons behind relationship patterns; a soul-contract map of the partnership.",
+            "usage": [
+              "Compare draconic composites with tropical composites to see where higher purpose aligns with mundane reality.",
+              "Use draconic synastry to identify soul-level contacts not visible in standard tropical synastry.",
+              "Interpret alongside coalescent chart for a complete spiritual portrait of the bond."
+            ]
+          },
+          "interaction_with_other_charts": {
+            "derived_from": [
+              "draconic_natal_chart",
+              "natal_chart_person1",
+              "natal_chart_person2"
+            ],
+            "feeds_into": [],
+            "overlays_with": [
+              "composite_chart",
+              "davison_relationship_chart",
+              "synastry_chart",
+              "coalescent_chart"
+            ],
+            "timing_with": [
+              "transit_chart",
+              "progressions_individual"
+            ],
+            "supports": [
+              "coalescent_chart",
+              "fixed_star_chart",
+              "harmonic_charts"
+            ],
+            "alternative_to": []
+          }
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:masterastrologycharttypes-txt"
+      ]
+    },
+    {
+      "record_id": "usr_f4416a8a3db8207c28c1",
+      "source_id": "openastro:user-upload:masterastrologycharttypes-txt",
+      "source_sha256": "c42998ea1fb2d9be0819023e49ab36642964d4f89832ac1e7bd369f428b3633f",
+      "source_path": "data/sources/2026-08-user-uploads/raw/MasterAstrologyChartTypes.txt",
+      "record_type": "chart_type_proposal",
+      "subject_path": "chart_type:return_charts",
+      "raw_text": "Charts cast for the exact moment a planet returns to its natal position, describing the themes, opportunities, and challenges of the next complete cycle of that planet.",
+      "normalized_text": "Charts cast for the exact moment a planet returns to its natal position, describing the themes, opportunities, and challenges of the next complete cycle of that planet.",
+      "tradition_scope": [
+        "western"
+      ],
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "limitations": [
+        "Candidate chart-type metadata requires reconciliation with the configured canonical chart-type registry before implementation."
+      ],
+      "extensions": {
+        "source_chart_type": {
+          "id": "return_charts",
+          "label": "Planetary Return Charts (Solar, Lunar, Venus, Mars, Saturn, etc.)",
+          "system": "Western",
+          "category": "Cyclical Returns",
+          "dimension": "Individual or Relationship",
+          "relationship_scope": "Annual / Periodic Themes",
+          "time_basis": "Dynamic (chart cast for exact moment planet returns to natal zodiacal degree)",
+          "reference_frame": "Geocentric",
+          "core_purpose": "Charts cast for the exact moment a planet returns to its natal position, describing the themes, opportunities, and challenges of the next complete cycle of that planet.",
+          "interpretive_focus": {
+            "solar_return": "Yearly chart (Sun return to natal Sun degree) showing overarching themes, opportunities, and relationship focus for the next twelve months.",
+            "lunar_return": "Monthly emotional climate chart (Moon returns to natal Moon degree ~every 27.5 days) showing relational moods and needs.",
+            "venus_return": "Annual or periodic Venus return chart highlighting relationship themes, attraction, and values for the coming cycle.",
+            "saturn_return": "~29-year cycle chart for major life restructuring, commitment tests, and long-term relationship obligations.",
+            "other_returns": "Mars, Jupiter, and other returns for targeted cycle reading."
+          },
+          "role_in_relationship_dynamics": {
+            "function": "Provides time-limited focus charts for relationship developments in a given period.",
+            "usage": [
+              "Overlay solar return with natal and synastry to see when relationships start or crystallise.",
+              "Venus return chart used to forecast the romantic and relational themes of the coming year.",
+              "Read composite or Davison solar return alongside individual solar returns for synchronised couple timing."
+            ]
+          },
+          "interaction_with_other_charts": {
+            "derived_from": [
+              "natal_chart"
+            ],
+            "feeds_into": [],
+            "overlays_with": [
+              "natal_chart",
+              "composite_chart",
+              "davison_relationship_chart"
+            ],
+            "timing_with": [
+              "transit_chart",
+              "progressions_individual",
+              "solar_arc_directions"
+            ],
+            "supports": [
+              "natal_chart",
+              "composite_chart"
+            ],
+            "alternative_to": []
+          }
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:masterastrologycharttypes-txt"
+      ]
+    },
+    {
+      "record_id": "usr_87297d4e3172dc1223b7",
+      "source_id": "openastro:user-upload:masterastrologycharttypes-txt",
+      "source_sha256": "c42998ea1fb2d9be0819023e49ab36642964d4f89832ac1e7bd369f428b3633f",
+      "source_path": "data/sources/2026-08-user-uploads/raw/MasterAstrologyChartTypes.txt",
+      "record_type": "chart_type_proposal",
+      "subject_path": "chart_type:davison_relationship_chart",
+      "raw_text": "Creates a chart for the relationship itself by taking the exact midpoint in time and space between two birth charts, yielding an actual date, time, and location that represents the 'birthday' of the relationship. Unlike the midpoint composite, the Davison chart is grounded in real astronomical positions.",
+      "normalized_text": "Creates a chart for the relationship itself by taking the exact midpoint in time and space between two birth charts, yielding an actual date, time, and location that represents the 'birthday' of the relationship. Unlike the midpoint composite, the Davison chart is grounded in real astronomical positions.",
+      "tradition_scope": [
+        "western"
+      ],
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "limitations": [
+        "Candidate chart-type metadata requires reconciliation with the configured canonical chart-type registry before implementation."
+      ],
+      "extensions": {
+        "source_chart_type": {
+          "id": "davison_relationship_chart",
+          "label": "Davison Relationship Chart (Time/Space Midpoint)",
+          "system": "Western",
+          "category": "Relationship – Davison",
+          "dimension": "Dyadic",
+          "relationship_scope": "Relationship Purpose, Destiny, and Lifecycle",
+          "time_basis": "Static (midpoint in time and space between two births)",
+          "reference_frame": "Geocentric, Tropical (or Sidereal) chart cast for the relationship's mid-time and mid-place",
+          "core_purpose": "Creates a chart for the relationship itself by taking the exact midpoint in time and space between two birth charts, yielding an actual date, time, and location that represents the 'birthday' of the relationship. Unlike the midpoint composite, the Davison chart is grounded in real astronomical positions.",
+          "calculation_method": {
+            "mid_time": "Average the Julian Day Numbers (or dates and times) of both births to obtain the exact mid-time; this becomes the Davison chart's birth date and time.",
+            "mid_space": "Average the geographic latitudes and longitudes of both birthplaces to obtain the mid-location; this becomes the Davison chart's birthplace.",
+            "chart_casting": "Cast a standard natal chart for this derived date, time, and place, producing real planetary positions and angles—not averaged zodiacal midpoints.",
+            "time_space_chart": "Because it is anchored in real time and space, the Davison is often called a 'time/space chart' and can be timed via transits, progressions, and directions exactly as a natal chart is."
+          },
+          "interpretive_focus": {
+            "relationship_entity": "Represents the relationship as an independent being with its own Sun, Moon, angles, and houses, describing its purpose, character, and challenges.",
+            "purpose_and_destiny": "Davison Sun, MC, nodal axis, and outer planets articulate the overarching purpose and destiny trajectory of the bond.",
+            "emotional_core": "Davison Moon and its aspects describe the emotional tone, shared needs, and instinctive responses within the relationship.",
+            "strengths_and_challenges": "Conjunctions, trines, and sextiles show ease and shared goals; squares and oppositions reveal friction and growth edges the relationship is fated to work through.",
+            "difference_from_composite": "Unlike midpoint composites, the Davison chart is anchored to a real-world moment; transit and progression timing against the Davison tends to be more concrete and event-correlated."
+          },
+          "interpretation_guidelines": {
+            "baseline_reading": [
+              "Read Davison as a natal chart: Ascendant, MC, Sun, Moon, then inner and outer planets by sign, house, and aspect.",
+              "Focus on angular planets and stellia for dominant relationship themes.",
+              "Pay special attention to Saturn, nodes, and outer planets for karmic and long-term lessons."
+            ],
+            "timing_use": {
+              "transits": "Apply transits to the Davison chart as if it were a natal; Saturn return to Davison Saturn marks major tests and restructuring of the relationship.",
+              "progressions": "Progress the Davison chart (especially Sun, Moon, and angles) to track developmental phases; Davison Sun changing signs correlates with shifts in relationship identity.",
+              "directions": "Solar Arc and primary directions to Davison angles and key planets time critical turning points (start, end, moves, marriages, crises)."
+            },
+            "comparison_with_other_methods": {
+              "with_synastry": "Use synastry to understand mutual experience and triggers, then Davison for the shared path and purpose.",
+              "with_composite": "Composite describes an abstract midpoint energy field; Davison expresses the relationship's concrete incarnation in time and space. Use both for abstract versus grounded facets."
+            }
+          },
+          "role_in_relationship_dynamics": {
+            "function": "Gives a grounded, event-sensitive map of the relationship's destiny, showing why it exists, what it must face, and how it evolves over time.",
+            "usage": [
+              "Clarify the long-term purpose of a significant bond (romantic, parent–child, business partnership).",
+              "Track Davison transits and progressions around milestone events to understand the relationship's developmental story.",
+              "Compare Davison Moon, Venus, and angles with each partner's natal chart to see how each person connects to the relationship's needs and direction."
+            ]
+          },
+          "interaction_with_other_charts": {
+            "derived_from": [
+              "natal_chart_person1",
+              "natal_chart_person2"
+            ],
+            "feeds_into": [
+              "progressed_davison_chart",
+              "solar_arc_davison_chart",
+              "davison_plus_natals_chart"
+            ],
+            "overlays_with": [
+              "synastry_chart",
+              "composite_chart",
+              "davison_plus_natals_chart",
+              "transit_chart",
+              "asteroid_chart",
+              "fixed_star_chart",
+              "draconic_relationship_chart"
+            ],
+            "timing_with": [
+              "transit_chart",
+              "progressed_davison_chart",
+              "solar_arc_davison_chart",
+              "progressions_individual",
+              "return_charts"
+            ],
+            "supports": [
+              "synastry_chart"
+            ],
+            "alternative_to": [
+              "composite_chart"
+            ]
+          }
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:masterastrologycharttypes-txt"
+      ]
+    },
+    {
+      "record_id": "usr_bc26cc36abd87f277389",
+      "source_id": "openastro:user-upload:masterastrologycharttypes-txt",
+      "source_sha256": "c42998ea1fb2d9be0819023e49ab36642964d4f89832ac1e7bd369f428b3633f",
+      "source_path": "data/sources/2026-08-user-uploads/raw/MasterAstrologyChartTypes.txt",
+      "record_type": "chart_type_proposal",
+      "subject_path": "chart_type:progressed_davison_chart",
+      "raw_text": "Applies secondary progressions to the Davison relationship chart, treating it exactly like a natal, to track the relationship's own internal developmental phases and emotional evolution over time.",
+      "normalized_text": "Applies secondary progressions to the Davison relationship chart, treating it exactly like a natal, to track the relationship's own internal developmental phases and emotional evolution over time.",
+      "tradition_scope": [
+        "western"
+      ],
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "limitations": [
+        "Candidate chart-type metadata requires reconciliation with the configured canonical chart-type registry before implementation."
+      ],
+      "extensions": {
+        "source_chart_type": {
+          "id": "progressed_davison_chart",
+          "label": "Progressed Davison Relationship Chart",
+          "system": "Western",
+          "category": "Progressions – Davison",
+          "dimension": "Dyadic",
+          "relationship_scope": "Evolutionary Phases of the Relationship Entity",
+          "time_basis": "Dynamic (secondary-style progressions applied to the Davison chart)",
+          "reference_frame": "Geocentric, Tropical or Sidereal, secondary progressions",
+          "core_purpose": "Applies secondary progressions to the Davison relationship chart, treating it exactly like a natal, to track the relationship's own internal developmental phases and emotional evolution over time.",
+          "calculation_method": {
+            "progression_key": "Standard secondary progression key: 1 day after Davison birth date ≈ 1 year of relationship life.",
+            "planets_and_angles": "Progress all Davison planets and angles; prioritise Sun, Moon, and Asc/MC for major phase shifts.",
+            "start_point": "Base date is the Davison 'birth date' derived from the time/space midpoints of both natal charts."
+          },
+          "interpretive_focus": {
+            "phase_changes": "Progressed Davison Sun and angles changing signs or houses indicate new chapters in the relationship's identity and focus.",
+            "emotional_cycles": "Progressed Davison Moon shows shorter (~2.5-year) emotional cycles, mood shifts, and fluctuations in closeness versus distance within the relationship.",
+            "aspect_formation": "New progressed aspects between Davison planets or to Davison angles mark periods when specific dynamics intensify or resolve."
+          },
+          "interpretation_guidelines": {
+            "hierarchy": "Read progressed Davison in tandem with transits and Solar Arc to the base Davison; clusters around the same factors are most significant.",
+            "focus": "Prioritise progressed Sun, Moon, and angles; treat slower progressed planets as secondary refinements.",
+            "event_correlation": "Back-test key past events (start, cohabitation, marriage, separations) against progressed Davison hits to calibrate orbs."
+          },
+          "role_in_relationship_dynamics": {
+            "function": "Maps the internal maturation of the relationship entity across years, independent of individual personal growth.",
+            "usage": [
+              "Explains why the same relationship may feel like a fundamentally different relationship in different periods.",
+              "Identifies years when relationship identity, goals, or level of commitment is likely to change."
+            ]
+          },
+          "interaction_with_other_charts": {
+            "derived_from": [
+              "davison_relationship_chart"
+            ],
+            "feeds_into": [],
+            "overlays_with": [
+              "solar_arc_davison_chart",
+              "transit_chart"
+            ],
+            "timing_with": [
+              "transit_chart",
+              "solar_arc_davison_chart",
+              "solar_arc_directions"
+            ],
+            "supports": [
+              "davison_relationship_chart",
+              "synastry_chart"
+            ],
+            "alternative_to": [
+              "progressed_composite_chart"
+            ]
+          }
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:masterastrologycharttypes-txt"
+      ]
+    },
+    {
+      "record_id": "usr_8ef28a47ea470e9524b4",
+      "source_id": "openastro:user-upload:masterastrologycharttypes-txt",
+      "source_sha256": "c42998ea1fb2d9be0819023e49ab36642964d4f89832ac1e7bd369f428b3633f",
+      "source_path": "data/sources/2026-08-user-uploads/raw/MasterAstrologyChartTypes.txt",
+      "record_type": "chart_type_proposal",
+      "subject_path": "chart_type:solar_arc_davison_chart",
+      "raw_text": "Directs the Davison relationship chart by Solar Arc (approximately 1° per year of relationship) to time visible external milestones and crises in the life of the relationship.",
+      "normalized_text": "Directs the Davison relationship chart by Solar Arc (approximately 1° per year of relationship) to time visible external milestones and crises in the life of the relationship.",
+      "tradition_scope": [
+        "western"
+      ],
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "limitations": [
+        "Candidate chart-type metadata requires reconciliation with the configured canonical chart-type registry before implementation."
+      ],
+      "extensions": {
+        "source_chart_type": {
+          "id": "solar_arc_davison_chart",
+          "label": "Solar Arc Davison Directions",
+          "system": "Western",
+          "category": "Directions – Solar Arc Davison",
+          "dimension": "Dyadic",
+          "relationship_scope": "Major External Turning Points in the Relationship",
+          "time_basis": "Dynamic (Solar Arc directions of all Davison chart positions)",
+          "reference_frame": "Geocentric, Solar Arc directions applied to Davison natal positions",
+          "core_purpose": "Directs the Davison relationship chart by Solar Arc (approximately 1° per year of relationship) to time visible external milestones and crises in the life of the relationship.",
+          "calculation_method": {
+            "solar_arc_key": "Move all Davison planets and angles by a uniform arc equal to the Davison Sun's annual motion (~1° per year).",
+            "directions_to_natal": "Interpret directed Davison planets and angles contacting base Davison planets and angles.",
+            "calendar_mapping": "Map arc years from the Davison birth date to real calendar years to identify the timing window."
+          },
+          "interpretive_focus": {
+            "angular_hits": "Solar Arc Davison Asc or MC contacting Davison or partner natal planets describes public and status shifts (marriage, moving in, separation, public crises).",
+            "relationship_planets": "Directions involving Davison Sun, Moon, Venus, Mars, and Saturn strongly correlate with relationship turning points.",
+            "stacking": "When Solar Arc Davison contacts coincide with progressed Davison and transits, events are most likely to be concrete and visible."
+          },
+          "interpretation_guidelines": {
+            "event_focus": "Use primarily for visible outer events rather than subtle psychological shifts.",
+            "orbs": "Operate with tight orbs (~1°) for directed contacts to Davison angles and key planets.",
+            "validation": "Back-test major relationship events to tune the arc key and confirm interpretive relevance."
+          },
+          "role_in_relationship_dynamics": {
+            "function": "High-level timing tool for major relationship milestones using the Davison entity chart.",
+            "usage": [
+              "Identify windows for formalisation (engagement, marriage), major relocations, or significant crises.",
+              "Combine with progressed Davison and transits to triangulate timing windows."
+            ]
+          },
+          "interaction_with_other_charts": {
+            "derived_from": [
+              "davison_relationship_chart"
+            ],
+            "feeds_into": [],
+            "overlays_with": [
+              "progressed_davison_chart",
+              "transit_chart"
+            ],
+            "timing_with": [
+              "transit_chart",
+              "progressed_davison_chart",
+              "solar_arc_directions"
+            ],
+            "supports": [
+              "davison_relationship_chart"
+            ],
+            "alternative_to": [
+              "solar_arc_directions"
+            ]
+          }
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:masterastrologycharttypes-txt"
+      ]
+    },
+    {
+      "record_id": "usr_07b3992e7cf8a49e8fb7",
+      "source_id": "openastro:user-upload:masterastrologycharttypes-txt",
+      "source_sha256": "c42998ea1fb2d9be0819023e49ab36642964d4f89832ac1e7bd369f428b3633f",
+      "source_path": "data/sources/2026-08-user-uploads/raw/MasterAstrologyChartTypes.txt",
+      "record_type": "chart_type_proposal",
+      "subject_path": "chart_type:davison_plus_natals_chart",
+      "raw_text": "Overlays each partner's natal chart with the Davison relationship chart to show how each individual resonates with, fits, and experiences the relationship entity they have created together.",
+      "normalized_text": "Overlays each partner's natal chart with the Davison relationship chart to show how each individual resonates with, fits, and experiences the relationship entity they have created together.",
+      "tradition_scope": [
+        "western"
+      ],
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "limitations": [
+        "Candidate chart-type metadata requires reconciliation with the configured canonical chart-type registry before implementation."
+      ],
+      "extensions": {
+        "source_chart_type": {
+          "id": "davison_plus_natals_chart",
+          "label": "Davison + Natals Overlay",
+          "system": "Western",
+          "category": "Relationship – Davison Overlay",
+          "dimension": "Dyadic",
+          "relationship_scope": "How Each Partner Relates to the Relationship Entity",
+          "time_basis": "Static (biwheel overlay); Dynamic when timing is applied",
+          "reference_frame": "Geocentric, Tropical biwheel (Davison inner wheel + individual natal outer wheel)",
+          "core_purpose": "Overlays each partner's natal chart with the Davison relationship chart to show how each individual resonates with, fits, and experiences the relationship entity they have created together.",
+          "calculation_method": {
+            "biwheel_setup": "Place Davison chart as inner wheel and one partner's natal as outer wheel; compute inter-wheel aspects and house overlays. Repeat with the second partner.",
+            "role_analysis": "Identify where each partner's planets fall in Davison houses and how they aspect Davison planets and angles."
+          },
+          "interpretive_focus": {
+            "fit_and_role": "Shows how comfortably each person fits the relationship's needs and direction (e.g., natal Sun on Davison Asc vs natal Saturn squaring Davison Venus).",
+            "asymmetric_experience": "Highlights if one partner is more naturally in tune with the relationship entity or carries a disproportionate share of its challenges.",
+            "activation_points": "Partner's natal planets on Davison angles or luminaries mark where they most strongly activate the relationship's fate and storyline."
+          },
+          "interpretation_guidelines": {
+            "partner_by_partner": "Read each partner's overlay separately to avoid conflating their roles.",
+            "house_emphasis": "Note which Davison houses receive each partner's planets; these are the life areas they contribute to most strongly.",
+            "timing_extension": "Use individual transits and progressions to planets tightly aspecting Davison factors as timing triggers for that person's role in relationship evolution."
+          },
+          "role_in_relationship_dynamics": {
+            "function": "Explains why each partner experiences the same relationship differently and where they support or strain the relationship entity.",
+            "usage": [
+              "In counselling, show that some tensions originate from mismatch between individual and relationship purpose, not only between partners.",
+              "Identify which partner is more likely to initiate changes implied by Davison progressions or transits."
+            ]
+          },
+          "interaction_with_other_charts": {
+            "derived_from": [
+              "davison_relationship_chart",
+              "natal_chart_person1",
+              "natal_chart_person2"
+            ],
+            "feeds_into": [],
+            "overlays_with": [
+              "synastry_chart",
+              "composite_chart",
+              "transit_chart"
+            ],
+            "timing_with": [
+              "progressions_individual",
+              "transit_chart",
+              "solar_arc_directions"
+            ],
+            "supports": [
+              "davison_relationship_chart",
+              "synastry_chart"
+            ],
+            "alternative_to": []
+          }
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:masterastrologycharttypes-txt"
+      ]
+    },
+    {
+      "record_id": "usr_06ce94364dcc8049a0ef",
+      "source_id": "openastro:user-upload:masterastrologycharttypes-txt",
+      "source_sha256": "c42998ea1fb2d9be0819023e49ab36642964d4f89832ac1e7bd369f428b3633f",
+      "source_path": "data/sources/2026-08-user-uploads/raw/MasterAstrologyChartTypes.txt",
+      "record_type": "chart_type_proposal",
+      "subject_path": "chart_type:vedic_rasi_chart",
+      "raw_text": "Primary Vedic natal chart representing overall life, character, karma, and basic relationship potential. Base chart from which all divisional (varga) charts are derived.",
+      "normalized_text": "Primary Vedic natal chart representing overall life, character, karma, and basic relationship potential. Base chart from which all divisional (varga) charts are derived.",
+      "tradition_scope": [
+        "vedic_/_jyotiṣa"
+      ],
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "limitations": [
+        "Candidate chart-type metadata requires reconciliation with the configured canonical chart-type registry before implementation."
+      ],
+      "extensions": {
+        "source_chart_type": {
+          "id": "vedic_rasi_chart",
+          "label": "Rāśi Chart (D-1)",
+          "system": "Vedic / Jyotiṣa",
+          "category": "Radix",
+          "dimension": "Individual",
+          "relationship_scope": "Foundational",
+          "time_basis": "Static (birth moment)",
+          "reference_frame": "Geocentric, Sidereal (Lahiri or other ayanamsha)",
+          "house_system": "Whole Sign (South Indian or North Indian grid layout)",
+          "core_purpose": "Primary Vedic natal chart representing overall life, character, karma, and basic relationship potential. Base chart from which all divisional (varga) charts are derived.",
+          "interpretive_focus": {
+            "life_overview": "Shows general character, karma, major life themes, and relationship indicators via house lords, planetary placements, and yogas.",
+            "planetary_strength": "Shadbala and other Vedic strength measures assess which planets have power to deliver their results.",
+            "relationship_indicators": "7th house, its lord, Venus (and Jupiter for women), and the navamsa chart are the primary relationship indicators."
+          },
+          "role_in_relationship_dynamics": {
+            "function": "Base chart for all Vedic relationship analysis, varga derivation, and dasha timing.",
+            "usage": [
+              "Read in combination with navamsa for marriage and long-term partnership potential.",
+              "Used for kuta (compatibility point) analysis in Vedic synastry.",
+              "Dasha timing system operates from this base chart."
+            ]
+          },
+          "interaction_with_other_charts": {
+            "derived_from": [],
+            "feeds_into": [
+              "navamsa_chart",
+              "other_divisional_charts"
+            ],
+            "overlays_with": [
+              "navamsa_chart"
+            ],
+            "timing_with": [
+              "transit_chart"
+            ],
+            "supports": [],
+            "alternative_to": [
+              "natal_chart"
+            ]
+          }
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:masterastrologycharttypes-txt"
+      ]
+    },
+    {
+      "record_id": "usr_87c733d5fc44e9b246fe",
+      "source_id": "openastro:user-upload:masterastrologycharttypes-txt",
+      "source_sha256": "c42998ea1fb2d9be0819023e49ab36642964d4f89832ac1e7bd369f428b3633f",
+      "source_path": "data/sources/2026-08-user-uploads/raw/MasterAstrologyChartTypes.txt",
+      "record_type": "chart_type_proposal",
+      "subject_path": "chart_type:navamsa_chart",
+      "raw_text": "The most important divisional (varga) chart in Jyotiṣa, linked to marriage, dharma, spiritual attainment, and the deeper strength and unfolding of the natal chart's promise.",
+      "normalized_text": "The most important divisional (varga) chart in Jyotiṣa, linked to marriage, dharma, spiritual attainment, and the deeper strength and unfolding of the natal chart's promise.",
+      "tradition_scope": [
+        "vedic_/_jyotiṣa"
+      ],
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "limitations": [
+        "Candidate chart-type metadata requires reconciliation with the configured canonical chart-type registry before implementation."
+      ],
+      "extensions": {
+        "source_chart_type": {
+          "id": "navamsa_chart",
+          "label": "Navāṁśa Chart (D-9)",
+          "system": "Vedic / Jyotiṣa",
+          "category": "Divisional – Marriage / Spiritual",
+          "dimension": "Individual",
+          "relationship_scope": "Marriage / Dharma",
+          "time_basis": "Derived (ninth division of each sign; 3°20' per navamsa)",
+          "reference_frame": "Geocentric, Sidereal",
+          "core_purpose": "The most important divisional (varga) chart in Jyotiṣa, linked to marriage, dharma, spiritual attainment, and the deeper strength and unfolding of the natal chart's promise.",
+          "interpretive_focus": {
+            "marital_karma": "Shows spouse indicators, quality of long-term partnership, and karmic themes around marriage. 7th navamsa house and its lord are primary.",
+            "dharma": "Indicates spiritual path, integrity in commitments, and the soul's deeper orientation.",
+            "natal_confirmation": "Planets strong in both rasi and navamsa deliver results most fully; weak in one shows modification of natal promise.",
+            "atmakaraka": "The atmakaraka planet's navamsa (navamsa Lagna lord analysis) reveals the soul's deepest purpose."
+          },
+          "role_in_relationship_dynamics": {
+            "function": "Central varga for assessing marriage and deep partnerships in Jyotiṣa; always read alongside the rasi chart.",
+            "usage": [
+              "Compare navamsa 7th house between two partners for deep compatibility.",
+              "Read navamsa Venus and 7th lord for the quality and fate of marriage.",
+              "Used to time marriage via dasha–antardasha activation of navamsa indicators."
+            ]
+          },
+          "interaction_with_other_charts": {
+            "derived_from": [
+              "vedic_rasi_chart"
+            ],
+            "feeds_into": [],
+            "overlays_with": [
+              "vedic_rasi_chart",
+              "other_divisional_charts"
+            ],
+            "timing_with": [
+              "transit_chart"
+            ],
+            "supports": [
+              "vedic_rasi_chart"
+            ],
+            "alternative_to": []
+          }
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:masterastrologycharttypes-txt"
+      ]
+    },
+    {
+      "record_id": "usr_db1d23f67425bee282d5",
+      "source_id": "openastro:user-upload:masterastrologycharttypes-txt",
+      "source_sha256": "c42998ea1fb2d9be0819023e49ab36642964d4f89832ac1e7bd369f428b3633f",
+      "source_path": "data/sources/2026-08-user-uploads/raw/MasterAstrologyChartTypes.txt",
+      "record_type": "chart_type_proposal",
+      "subject_path": "chart_type:other_divisional_charts",
+      "raw_text": "Set of additional varga (divisional) charts beyond D-1 and D-9, each isolating a specific life domain for focused examination.",
+      "normalized_text": "Set of additional varga (divisional) charts beyond D-1 and D-9, each isolating a specific life domain for focused examination.",
+      "tradition_scope": [
+        "vedic_/_jyotiṣa"
+      ],
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "limitations": [
+        "Candidate chart-type metadata requires reconciliation with the configured canonical chart-type registry before implementation."
+      ],
+      "extensions": {
+        "source_chart_type": {
+          "id": "other_divisional_charts",
+          "label": "Other Vedic Divisional Charts (Vargas)",
+          "system": "Vedic / Jyotiṣa",
+          "category": "Divisional",
+          "dimension": "Individual",
+          "relationship_scope": "Specific Domains",
+          "time_basis": "Derived from rasi chart",
+          "reference_frame": "Geocentric, Sidereal",
+          "core_purpose": "Set of additional varga (divisional) charts beyond D-1 and D-9, each isolating a specific life domain for focused examination.",
+          "divisional_chart_details": {
+            "D2_hora": "Hora chart for wealth, material resources, and financial compatibility in partnership.",
+            "D3_drekkana": "Drekkana for siblings, co-operative ventures, and short-term courage.",
+            "D4_chaturthamsa": "Chaturthamsa for home, property, and domestic life of the partnership.",
+            "D7_saptamsa": "Saptamsa for children, progeny, and fertility themes.",
+            "D10_dasamsa": "Dasamsa for career and public status of the couple.",
+            "D12_dwadasamsa": "Dwadasamsa for ancestral karma, lineage, and inherited patterns affecting relationships.",
+            "D16_shodasamsa": "Shodasamsa for vehicles, comfort, and luxury within the partnership.",
+            "D20_vimshamsa": "Vimshamsa for spiritual practices and religious life of the couple.",
+            "D24_chaturvimshamsa": "Chaturvimshamsa for education, learning, and intellectual compatibility.",
+            "D27_bhamsa": "Bhamsa for strength and vitality, physical compatibility.",
+            "D30_trimsamsa": "Trimsamsa for adversities, misfortune, and challenges affecting relationships.",
+            "D40_khavedamsa": "Khavedamsa for maternal lineage and auspicious or inauspicious effects.",
+            "D45_akshavedamsa": "Akshavedamsa for paternal lineage karma.",
+            "D60_shastyamsa": "Shastyamsa for the subtlest karmic roots; highest resolution varga chart for deep past-life patterns."
+          },
+          "role_in_relationship_dynamics": {
+            "function": "Provide targeted nuance about specific relationship-relevant subdomains within a Vedic analytical context.",
+            "usage": [
+              "D-7 used to assess children and fertility themes in partnerships.",
+              "D-12 used to trace inherited family karmas affecting the couple.",
+              "D-30 used to assess adversities that may test the marriage.",
+              "D-60 used for the deepest past-life karmic reading of the relationship."
+            ]
+          },
+          "interaction_with_other_charts": {
+            "derived_from": [
+              "vedic_rasi_chart"
+            ],
+            "feeds_into": [],
+            "overlays_with": [
+              "vedic_rasi_chart",
+              "navamsa_chart"
+            ],
+            "timing_with": [
+              "transit_chart"
+            ],
+            "supports": [
+              "vedic_rasi_chart",
+              "navamsa_chart"
+            ],
+            "alternative_to": []
+          }
+        }
+      },
+      "source_ids": [
+        "openastro:user-upload:masterastrologycharttypes-txt"
+      ]
+    }
+  ],
+  "canonical_registry_boundary": "No chart type is added to the canonical registry or calculation catalog by this ingestion. The source taxonomy requires entity, input, output, methodology, and adapter review."
+}

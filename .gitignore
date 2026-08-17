@@ -1,0 +1,14 @@
+# Python and Node build caches
+__pycache__/
+*.py[cod]
+node_modules/
+
+# Locally preserved user-source bodies: represented in committed provenance inventories, not published in raw form.
+data/sources/2026-08-user-uploads/raw/
+data/sources/2026-08-user-uploads/derived-pdf-text/
+
+# Local work artifacts
+.DS_Store
+
+# Locally preserved raw synastry research inputs; normalized inventories retain their provenance and hashes.
+data/sources/2026-08-synastry-research/raw/

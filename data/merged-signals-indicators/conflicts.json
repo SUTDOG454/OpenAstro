@@ -1,0 +1,1562 @@
+{
+  "schema_version": "1.0.0",
+  "conflicts": [
+    {
+      "conflict_id": "conflict:indicator:economic_technical_rsi",
+      "canonical_type": "indicator",
+      "canonical_id": "economic.technical.rsi",
+      "status": "conflicted",
+      "source_ids": [
+        "attached-framework-04",
+        "attached-framework-05",
+        "attached-framework-06",
+        "attached-framework-07",
+        "attached-framework-08"
+      ],
+      "variants": [
+        {
+          "source_ids": [
+            "attached-framework-04"
+          ],
+          "raw_value": {
+            "overbought": 70,
+            "oversold": 30,
+            "period": 14
+          },
+          "normalized_value": {
+            "name": "rsi",
+            "category": "technical",
+            "definition": {
+              "overbought": 70,
+              "oversold": 30,
+              "period": 14
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-05"
+          ],
+          "raw_value": {
+            "overbought": 70,
+            "oversold": 30,
+            "period": 14,
+            "formula": "100 - 100/(1 + avgGain/avgLoss)"
+          },
+          "normalized_value": {
+            "name": "rsi",
+            "category": "technical",
+            "definition": {
+              "overbought": 70,
+              "oversold": 30,
+              "period": 14,
+              "formula": "100 - 100/(1 + avgGain/avgLoss)"
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-06"
+          ],
+          "raw_value": {
+            "overbought": 70,
+            "oversold": 30,
+            "period": 14,
+            "formula": "100 - 100/(1 + avgGain/avgLoss)"
+          },
+          "normalized_value": {
+            "name": "rsi",
+            "category": "technical",
+            "definition": {
+              "overbought": 70,
+              "oversold": 30,
+              "period": 14,
+              "formula": "100 - 100/(1 + avgGain/avgLoss)"
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-07"
+          ],
+          "raw_value": {
+            "overbought": 70,
+            "oversold": 30,
+            "period": 14,
+            "formula": "100 - 100/(1 + avgGain/avgLoss)"
+          },
+          "normalized_value": {
+            "name": "rsi",
+            "category": "technical",
+            "definition": {
+              "overbought": 70,
+              "oversold": 30,
+              "period": 14,
+              "formula": "100 - 100/(1 + avgGain/avgLoss)"
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-08"
+          ],
+          "raw_value": {
+            "overbought": 70,
+            "oversold": 30,
+            "period": 14
+          },
+          "normalized_value": {
+            "name": "rsi",
+            "category": "technical",
+            "definition": {
+              "overbought": 70,
+              "oversold": 30,
+              "period": 14
+            }
+          }
+        }
+      ],
+      "resolution": "preserve all variants; pending review"
+    },
+    {
+      "conflict_id": "conflict:indicator:economic_technical_macd",
+      "canonical_type": "indicator",
+      "canonical_id": "economic.technical.macd",
+      "status": "conflicted",
+      "source_ids": [
+        "attached-framework-04",
+        "attached-framework-05",
+        "attached-framework-06",
+        "attached-framework-07",
+        "attached-framework-08"
+      ],
+      "variants": [
+        {
+          "source_ids": [
+            "attached-framework-04"
+          ],
+          "raw_value": {
+            "fast": 12,
+            "slow": 26,
+            "signal": 9
+          },
+          "normalized_value": {
+            "name": "macd",
+            "category": "technical",
+            "definition": {
+              "fast": 12,
+              "slow": 26,
+              "signal": 9
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-05"
+          ],
+          "raw_value": {
+            "fast": 12,
+            "slow": 26,
+            "signal": 9,
+            "formula": "12-day EMA - 26-day EMA"
+          },
+          "normalized_value": {
+            "name": "macd",
+            "category": "technical",
+            "definition": {
+              "fast": 12,
+              "slow": 26,
+              "signal": 9,
+              "formula": "12-day EMA - 26-day EMA"
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-06"
+          ],
+          "raw_value": {
+            "fast": 12,
+            "slow": 26,
+            "signal": 9,
+            "formula": "12-day EMA - 26-day EMA"
+          },
+          "normalized_value": {
+            "name": "macd",
+            "category": "technical",
+            "definition": {
+              "fast": 12,
+              "slow": 26,
+              "signal": 9,
+              "formula": "12-day EMA - 26-day EMA"
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-07"
+          ],
+          "raw_value": {
+            "fast": 12,
+            "slow": 26,
+            "signal": 9,
+            "formula": "12-day EMA - 26-day EMA"
+          },
+          "normalized_value": {
+            "name": "macd",
+            "category": "technical",
+            "definition": {
+              "fast": 12,
+              "slow": 26,
+              "signal": 9,
+              "formula": "12-day EMA - 26-day EMA"
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-08"
+          ],
+          "raw_value": {
+            "fast": 12,
+            "slow": 26,
+            "signal": 9
+          },
+          "normalized_value": {
+            "name": "macd",
+            "category": "technical",
+            "definition": {
+              "fast": 12,
+              "slow": 26,
+              "signal": 9
+            }
+          }
+        }
+      ],
+      "resolution": "preserve all variants; pending review"
+    },
+    {
+      "conflict_id": "conflict:indicator:economic_technical_bollinger",
+      "canonical_type": "indicator",
+      "canonical_id": "economic.technical.bollinger",
+      "status": "conflicted",
+      "source_ids": [
+        "attached-framework-04",
+        "attached-framework-05",
+        "attached-framework-06",
+        "attached-framework-07",
+        "attached-framework-08"
+      ],
+      "variants": [
+        {
+          "source_ids": [
+            "attached-framework-04"
+          ],
+          "raw_value": {
+            "period": 20,
+            "stdDev": 2
+          },
+          "normalized_value": {
+            "name": "bollinger",
+            "category": "technical",
+            "definition": {
+              "period": 20,
+              "stdDev": 2
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-05"
+          ],
+          "raw_value": {
+            "period": 20,
+            "stdDev": 2,
+            "formula": "SMA ± 2σ"
+          },
+          "normalized_value": {
+            "name": "bollinger",
+            "category": "technical",
+            "definition": {
+              "period": 20,
+              "stdDev": 2,
+              "formula": "SMA ± 2σ"
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-06"
+          ],
+          "raw_value": {
+            "period": 20,
+            "stdDev": 2,
+            "formula": "SMA ± 2σ"
+          },
+          "normalized_value": {
+            "name": "bollinger",
+            "category": "technical",
+            "definition": {
+              "period": 20,
+              "stdDev": 2,
+              "formula": "SMA ± 2σ"
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-07"
+          ],
+          "raw_value": {
+            "period": 20,
+            "stdDev": 2,
+            "formula": "SMA ± 2σ"
+          },
+          "normalized_value": {
+            "name": "bollinger",
+            "category": "technical",
+            "definition": {
+              "period": 20,
+              "stdDev": 2,
+              "formula": "SMA ± 2σ"
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-08"
+          ],
+          "raw_value": {
+            "period": 20,
+            "stdDev": 2
+          },
+          "normalized_value": {
+            "name": "bollinger",
+            "category": "technical",
+            "definition": {
+              "period": 20,
+              "stdDev": 2
+            }
+          }
+        }
+      ],
+      "resolution": "preserve all variants; pending review"
+    },
+    {
+      "conflict_id": "conflict:indicator:economic_technical_adx",
+      "canonical_type": "indicator",
+      "canonical_id": "economic.technical.adx",
+      "status": "conflicted",
+      "source_ids": [
+        "attached-framework-04",
+        "attached-framework-05",
+        "attached-framework-06",
+        "attached-framework-07",
+        "attached-framework-08"
+      ],
+      "variants": [
+        {
+          "source_ids": [
+            "attached-framework-04"
+          ],
+          "raw_value": {
+            "strong": 25,
+            "weak": 20,
+            "period": 14
+          },
+          "normalized_value": {
+            "name": "adx",
+            "category": "technical",
+            "definition": {
+              "strong": 25,
+              "weak": 20,
+              "period": 14
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-05"
+          ],
+          "raw_value": {
+            "strong": 25,
+            "weak": 20,
+            "period": 14,
+            "formula": "average directional index"
+          },
+          "normalized_value": {
+            "name": "adx",
+            "category": "technical",
+            "definition": {
+              "strong": 25,
+              "weak": 20,
+              "period": 14,
+              "formula": "average directional index"
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-06"
+          ],
+          "raw_value": {
+            "strong": 25,
+            "weak": 20,
+            "period": 14,
+            "formula": "average directional index"
+          },
+          "normalized_value": {
+            "name": "adx",
+            "category": "technical",
+            "definition": {
+              "strong": 25,
+              "weak": 20,
+              "period": 14,
+              "formula": "average directional index"
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-07"
+          ],
+          "raw_value": {
+            "strong": 25,
+            "weak": 20,
+            "period": 14,
+            "formula": "average directional index"
+          },
+          "normalized_value": {
+            "name": "adx",
+            "category": "technical",
+            "definition": {
+              "strong": 25,
+              "weak": 20,
+              "period": 14,
+              "formula": "average directional index"
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-08"
+          ],
+          "raw_value": {
+            "strong": 25,
+            "weak": 20,
+            "period": 14
+          },
+          "normalized_value": {
+            "name": "adx",
+            "category": "technical",
+            "definition": {
+              "strong": 25,
+              "weak": 20,
+              "period": 14
+            }
+          }
+        }
+      ],
+      "resolution": "preserve all variants; pending review"
+    },
+    {
+      "conflict_id": "conflict:indicator:economic_technical_volume",
+      "canonical_type": "indicator",
+      "canonical_id": "economic.technical.volume",
+      "status": "conflicted",
+      "source_ids": [
+        "attached-framework-04",
+        "attached-framework-05",
+        "attached-framework-06",
+        "attached-framework-07",
+        "attached-framework-08"
+      ],
+      "variants": [
+        {
+          "source_ids": [
+            "attached-framework-04"
+          ],
+          "raw_value": {
+            "confirmationThreshold": 1.5
+          },
+          "normalized_value": {
+            "name": "volume",
+            "category": "technical",
+            "definition": {
+              "confirmationThreshold": 1.5
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-05"
+          ],
+          "raw_value": {
+            "confirmationThreshold": 1.5,
+            "formula": "volume / 20-day average"
+          },
+          "normalized_value": {
+            "name": "volume",
+            "category": "technical",
+            "definition": {
+              "confirmationThreshold": 1.5,
+              "formula": "volume / 20-day average"
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-06"
+          ],
+          "raw_value": {
+            "confirmationThreshold": 1.5,
+            "formula": "volume / 20-day average"
+          },
+          "normalized_value": {
+            "name": "volume",
+            "category": "technical",
+            "definition": {
+              "confirmationThreshold": 1.5,
+              "formula": "volume / 20-day average"
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-07"
+          ],
+          "raw_value": {
+            "confirmationThreshold": 1.5,
+            "formula": "volume / 20-day average"
+          },
+          "normalized_value": {
+            "name": "volume",
+            "category": "technical",
+            "definition": {
+              "confirmationThreshold": 1.5,
+              "formula": "volume / 20-day average"
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-08"
+          ],
+          "raw_value": {
+            "confirmationThreshold": 1.5
+          },
+          "normalized_value": {
+            "name": "volume",
+            "category": "technical",
+            "definition": {
+              "confirmationThreshold": 1.5
+            }
+          }
+        }
+      ],
+      "resolution": "preserve all variants; pending review"
+    },
+    {
+      "conflict_id": "conflict:indicator:economic_macro_gdp",
+      "canonical_type": "indicator",
+      "canonical_id": "economic.macro.gdp",
+      "status": "conflicted",
+      "source_ids": [
+        "attached-framework-04",
+        "attached-framework-05",
+        "attached-framework-06",
+        "attached-framework-07",
+        "attached-framework-08"
+      ],
+      "variants": [
+        {
+          "source_ids": [
+            "attached-framework-04"
+          ],
+          "raw_value": {
+            "bullish": 0.025,
+            "bearish": 0.0
+          },
+          "normalized_value": {
+            "name": "gdp",
+            "category": "macro",
+            "definition": {
+              "bullish": 0.025,
+              "bearish": 0.0
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-05"
+          ],
+          "raw_value": {
+            "bullish": 0.025,
+            "bearish": 0.0,
+            "scoring": "if >= 2.5% → 25, else linear to 0"
+          },
+          "normalized_value": {
+            "name": "gdp",
+            "category": "macro",
+            "definition": {
+              "bullish": 0.025,
+              "bearish": 0.0,
+              "scoring": "if >= 2.5% → 25, else linear to 0"
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-06"
+          ],
+          "raw_value": {
+            "bullish": 0.025,
+            "bearish": 0.0,
+            "scoring": "if >= 2.5% then 25, else linear to 0"
+          },
+          "normalized_value": {
+            "name": "gdp",
+            "category": "macro",
+            "definition": {
+              "bullish": 0.025,
+              "bearish": 0.0,
+              "scoring": "if >= 2.5% then 25, else linear to 0"
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-07"
+          ],
+          "raw_value": {
+            "bullish": 0.025,
+            "bearish": 0.0,
+            "scoring": "if >= 2.5% → 25, else linear to 0"
+          },
+          "normalized_value": {
+            "name": "gdp",
+            "category": "macro",
+            "definition": {
+              "bullish": 0.025,
+              "bearish": 0.0,
+              "scoring": "if >= 2.5% → 25, else linear to 0"
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-08"
+          ],
+          "raw_value": {
+            "bullish": 0.025,
+            "bearish": 0.0
+          },
+          "normalized_value": {
+            "name": "gdp",
+            "category": "macro",
+            "definition": {
+              "bullish": 0.025,
+              "bearish": 0.0
+            }
+          }
+        }
+      ],
+      "resolution": "preserve all variants; pending review"
+    },
+    {
+      "conflict_id": "conflict:indicator:economic_macro_inflation",
+      "canonical_type": "indicator",
+      "canonical_id": "economic.macro.inflation",
+      "status": "conflicted",
+      "source_ids": [
+        "attached-framework-04",
+        "attached-framework-05",
+        "attached-framework-06",
+        "attached-framework-07",
+        "attached-framework-08"
+      ],
+      "variants": [
+        {
+          "source_ids": [
+            "attached-framework-04"
+          ],
+          "raw_value": {
+            "targetMin": 0.01,
+            "targetMax": 0.03,
+            "warning": 0.04
+          },
+          "normalized_value": {
+            "name": "inflation",
+            "category": "macro",
+            "definition": {
+              "targetMin": 0.01,
+              "targetMax": 0.03,
+              "warning": 0.04
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-05"
+          ],
+          "raw_value": {
+            "targetMin": 0.01,
+            "targetMax": 0.03,
+            "warning": 0.04,
+            "scoring": "if 1-3% → 25, else diminishing"
+          },
+          "normalized_value": {
+            "name": "inflation",
+            "category": "macro",
+            "definition": {
+              "targetMin": 0.01,
+              "targetMax": 0.03,
+              "warning": 0.04,
+              "scoring": "if 1-3% → 25, else diminishing"
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-06"
+          ],
+          "raw_value": {
+            "targetMin": 0.01,
+            "targetMax": 0.03,
+            "warning": 0.04,
+            "scoring": "if 1-3% then 25, else diminishing"
+          },
+          "normalized_value": {
+            "name": "inflation",
+            "category": "macro",
+            "definition": {
+              "targetMin": 0.01,
+              "targetMax": 0.03,
+              "warning": 0.04,
+              "scoring": "if 1-3% then 25, else diminishing"
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-07"
+          ],
+          "raw_value": {
+            "targetMin": 0.01,
+            "targetMax": 0.03,
+            "warning": 0.04,
+            "scoring": "if 1-3% → 25, else diminishing"
+          },
+          "normalized_value": {
+            "name": "inflation",
+            "category": "macro",
+            "definition": {
+              "targetMin": 0.01,
+              "targetMax": 0.03,
+              "warning": 0.04,
+              "scoring": "if 1-3% → 25, else diminishing"
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-08"
+          ],
+          "raw_value": {
+            "targetMin": 0.01,
+            "targetMax": 0.03,
+            "warning": 0.04
+          },
+          "normalized_value": {
+            "name": "inflation",
+            "category": "macro",
+            "definition": {
+              "targetMin": 0.01,
+              "targetMax": 0.03,
+              "warning": 0.04
+            }
+          }
+        }
+      ],
+      "resolution": "preserve all variants; pending review"
+    },
+    {
+      "conflict_id": "conflict:indicator:economic_macro_unemployment",
+      "canonical_type": "indicator",
+      "canonical_id": "economic.macro.unemployment",
+      "status": "conflicted",
+      "source_ids": [
+        "attached-framework-04",
+        "attached-framework-05",
+        "attached-framework-06",
+        "attached-framework-07",
+        "attached-framework-08"
+      ],
+      "variants": [
+        {
+          "source_ids": [
+            "attached-framework-04"
+          ],
+          "raw_value": {
+            "bullish": 0.05,
+            "bearish": 0.07
+          },
+          "normalized_value": {
+            "name": "unemployment",
+            "category": "macro",
+            "definition": {
+              "bullish": 0.05,
+              "bearish": 0.07
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-05"
+          ],
+          "raw_value": {
+            "bullish": 0.05,
+            "bearish": 0.07,
+            "scoring": "if < 5% → 25, else diminishing"
+          },
+          "normalized_value": {
+            "name": "unemployment",
+            "category": "macro",
+            "definition": {
+              "bullish": 0.05,
+              "bearish": 0.07,
+              "scoring": "if < 5% → 25, else diminishing"
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-06"
+          ],
+          "raw_value": {
+            "bullish": 0.05,
+            "bearish": 0.07,
+            "scoring": "if < 5% then 25, else diminishing"
+          },
+          "normalized_value": {
+            "name": "unemployment",
+            "category": "macro",
+            "definition": {
+              "bullish": 0.05,
+              "bearish": 0.07,
+              "scoring": "if < 5% then 25, else diminishing"
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-07"
+          ],
+          "raw_value": {
+            "bullish": 0.05,
+            "bearish": 0.07,
+            "scoring": "if < 5% → 25, else diminishing"
+          },
+          "normalized_value": {
+            "name": "unemployment",
+            "category": "macro",
+            "definition": {
+              "bullish": 0.05,
+              "bearish": 0.07,
+              "scoring": "if < 5% → 25, else diminishing"
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-08"
+          ],
+          "raw_value": {
+            "bullish": 0.05,
+            "bearish": 0.07
+          },
+          "normalized_value": {
+            "name": "unemployment",
+            "category": "macro",
+            "definition": {
+              "bullish": 0.05,
+              "bearish": 0.07
+            }
+          }
+        }
+      ],
+      "resolution": "preserve all variants; pending review"
+    },
+    {
+      "conflict_id": "conflict:indicator:economic_macro_interest",
+      "canonical_type": "indicator",
+      "canonical_id": "economic.macro.interest",
+      "status": "conflicted",
+      "source_ids": [
+        "attached-framework-04",
+        "attached-framework-05",
+        "attached-framework-06",
+        "attached-framework-07",
+        "attached-framework-08"
+      ],
+      "variants": [
+        {
+          "source_ids": [
+            "attached-framework-04"
+          ],
+          "raw_value": {
+            "bullish": 0.02,
+            "bearish": 0.04
+          },
+          "normalized_value": {
+            "name": "interest",
+            "category": "macro",
+            "definition": {
+              "bullish": 0.02,
+              "bearish": 0.04
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-05"
+          ],
+          "raw_value": {
+            "bullish": 0.02,
+            "bearish": 0.04,
+            "scoring": "if < 2% → 25, else diminishing"
+          },
+          "normalized_value": {
+            "name": "interest",
+            "category": "macro",
+            "definition": {
+              "bullish": 0.02,
+              "bearish": 0.04,
+              "scoring": "if < 2% → 25, else diminishing"
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-06"
+          ],
+          "raw_value": {
+            "bullish": 0.02,
+            "bearish": 0.04,
+            "scoring": "if < 2% then 25, else diminishing"
+          },
+          "normalized_value": {
+            "name": "interest",
+            "category": "macro",
+            "definition": {
+              "bullish": 0.02,
+              "bearish": 0.04,
+              "scoring": "if < 2% then 25, else diminishing"
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-07"
+          ],
+          "raw_value": {
+            "bullish": 0.02,
+            "bearish": 0.04,
+            "scoring": "if < 2% → 25, else diminishing"
+          },
+          "normalized_value": {
+            "name": "interest",
+            "category": "macro",
+            "definition": {
+              "bullish": 0.02,
+              "bearish": 0.04,
+              "scoring": "if < 2% → 25, else diminishing"
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-08"
+          ],
+          "raw_value": {
+            "bullish": 0.02,
+            "bearish": 0.04
+          },
+          "normalized_value": {
+            "name": "interest",
+            "category": "macro",
+            "definition": {
+              "bullish": 0.02,
+              "bearish": 0.04
+            }
+          }
+        }
+      ],
+      "resolution": "preserve all variants; pending review"
+    },
+    {
+      "conflict_id": "conflict:indicator:economic_breadth_percentabove200ma",
+      "canonical_type": "indicator",
+      "canonical_id": "economic.breadth.percentabove200ma",
+      "status": "conflicted",
+      "source_ids": [
+        "attached-framework-04",
+        "attached-framework-05",
+        "attached-framework-06",
+        "attached-framework-07",
+        "attached-framework-08"
+      ],
+      "variants": [
+        {
+          "source_ids": [
+            "attached-framework-04"
+          ],
+          "raw_value": {
+            "oversold": 20,
+            "overbought": 80
+          },
+          "normalized_value": {
+            "name": "percentAbove200MA",
+            "category": "breadth",
+            "definition": {
+              "oversold": 20,
+              "overbought": 80
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-05"
+          ],
+          "raw_value": {
+            "oversold": 20,
+            "overbought": 80,
+            "signal": "< 20% = capitulation buy"
+          },
+          "normalized_value": {
+            "name": "percentAbove200MA",
+            "category": "breadth",
+            "definition": {
+              "oversold": 20,
+              "overbought": 80,
+              "signal": "< 20% = capitulation buy"
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-06"
+          ],
+          "raw_value": {
+            "oversold": 20,
+            "overbought": 80,
+            "signal": "< 20% = capitulation buy"
+          },
+          "normalized_value": {
+            "name": "percentAbove200MA",
+            "category": "breadth",
+            "definition": {
+              "oversold": 20,
+              "overbought": 80,
+              "signal": "< 20% = capitulation buy"
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-07"
+          ],
+          "raw_value": {
+            "oversold": 20,
+            "overbought": 80,
+            "signal": "< 20% = capitulation buy"
+          },
+          "normalized_value": {
+            "name": "percentAbove200MA",
+            "category": "breadth",
+            "definition": {
+              "oversold": 20,
+              "overbought": 80,
+              "signal": "< 20% = capitulation buy"
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-08"
+          ],
+          "raw_value": {
+            "oversold": 20,
+            "overbought": 80
+          },
+          "normalized_value": {
+            "name": "percentAbove200MA",
+            "category": "breadth",
+            "definition": {
+              "oversold": 20,
+              "overbought": 80
+            }
+          }
+        }
+      ],
+      "resolution": "preserve all variants; pending review"
+    },
+    {
+      "conflict_id": "conflict:indicator:economic_breadth_trin",
+      "canonical_type": "indicator",
+      "canonical_id": "economic.breadth.trin",
+      "status": "conflicted",
+      "source_ids": [
+        "attached-framework-04",
+        "attached-framework-05",
+        "attached-framework-06",
+        "attached-framework-07",
+        "attached-framework-08"
+      ],
+      "variants": [
+        {
+          "source_ids": [
+            "attached-framework-04"
+          ],
+          "raw_value": {
+            "bullish": 0.7,
+            "bearish": 1.0
+          },
+          "normalized_value": {
+            "name": "trin",
+            "category": "breadth",
+            "definition": {
+              "bullish": 0.7,
+              "bearish": 1.0
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-05"
+          ],
+          "raw_value": {
+            "bullish": 0.7,
+            "bearish": 1.0,
+            "formula": "(Adv/Decl) / (AdvVol/DeclVol)"
+          },
+          "normalized_value": {
+            "name": "trin",
+            "category": "breadth",
+            "definition": {
+              "bullish": 0.7,
+              "bearish": 1.0,
+              "formula": "(Adv/Decl) / (AdvVol/DeclVol)"
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-06"
+          ],
+          "raw_value": {
+            "bullish": 0.7,
+            "bearish": 1.0,
+            "formula": "(Adv/Decl) / (AdvVol/DeclVol)"
+          },
+          "normalized_value": {
+            "name": "trin",
+            "category": "breadth",
+            "definition": {
+              "bullish": 0.7,
+              "bearish": 1.0,
+              "formula": "(Adv/Decl) / (AdvVol/DeclVol)"
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-07"
+          ],
+          "raw_value": {
+            "bullish": 0.7,
+            "bearish": 1.0,
+            "formula": "(Adv/Decl) / (AdvVol/DeclVol)"
+          },
+          "normalized_value": {
+            "name": "trin",
+            "category": "breadth",
+            "definition": {
+              "bullish": 0.7,
+              "bearish": 1.0,
+              "formula": "(Adv/Decl) / (AdvVol/DeclVol)"
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-08"
+          ],
+          "raw_value": {
+            "bullish": 0.7,
+            "bearish": 1.0
+          },
+          "normalized_value": {
+            "name": "trin",
+            "category": "breadth",
+            "definition": {
+              "bullish": 0.7,
+              "bearish": 1.0
+            }
+          }
+        }
+      ],
+      "resolution": "preserve all variants; pending review"
+    },
+    {
+      "conflict_id": "conflict:indicator:economic_sentiment_vix",
+      "canonical_type": "indicator",
+      "canonical_id": "economic.sentiment.vix",
+      "status": "conflicted",
+      "source_ids": [
+        "attached-framework-04",
+        "attached-framework-05",
+        "attached-framework-06",
+        "attached-framework-07",
+        "attached-framework-08"
+      ],
+      "variants": [
+        {
+          "source_ids": [
+            "attached-framework-04"
+          ],
+          "raw_value": {
+            "fear": 30,
+            "complacency": 15
+          },
+          "normalized_value": {
+            "name": "vix",
+            "category": "sentiment",
+            "definition": {
+              "fear": 30,
+              "complacency": 15
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-05"
+          ],
+          "raw_value": {
+            "fear": 30,
+            "complacency": 15,
+            "formula": "implied volatility"
+          },
+          "normalized_value": {
+            "name": "vix",
+            "category": "sentiment",
+            "definition": {
+              "fear": 30,
+              "complacency": 15,
+              "formula": "implied volatility"
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-06"
+          ],
+          "raw_value": {
+            "fear": 30,
+            "complacency": 15,
+            "formula": "implied volatility"
+          },
+          "normalized_value": {
+            "name": "vix",
+            "category": "sentiment",
+            "definition": {
+              "fear": 30,
+              "complacency": 15,
+              "formula": "implied volatility"
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-07"
+          ],
+          "raw_value": {
+            "fear": 30,
+            "complacency": 15,
+            "formula": "implied volatility"
+          },
+          "normalized_value": {
+            "name": "vix",
+            "category": "sentiment",
+            "definition": {
+              "fear": 30,
+              "complacency": 15,
+              "formula": "implied volatility"
+            }
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-08"
+          ],
+          "raw_value": {
+            "fear": 30,
+            "complacency": 15
+          },
+          "normalized_value": {
+            "name": "vix",
+            "category": "sentiment",
+            "definition": {
+              "fear": 30,
+              "complacency": 15
+            }
+          }
+        }
+      ],
+      "resolution": "preserve all variants; pending review"
+    },
+    {
+      "conflict_id": "conflict:indicator:economic_company_research_regulatory",
+      "canonical_type": "indicator",
+      "canonical_id": "economic.company_research.regulatory",
+      "status": "conflicted",
+      "source_ids": [
+        "attached-framework-04",
+        "attached-framework-05",
+        "attached-framework-06",
+        "attached-framework-07",
+        "attached-framework-08"
+      ],
+      "variants": [
+        {
+          "source_ids": [
+            "attached-framework-04"
+          ],
+          "raw_value": {
+            "formula": "1 - normalize(pendingApprovals + violations*5, 0, 20)"
+          },
+          "normalized_value": {
+            "name": "regulatory",
+            "category": "companyResearch",
+            "formula": "1 - normalize(pendingApprovals + violations*5, 0, 20)"
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-05"
+          ],
+          "raw_value": {
+            "formula": "1 - normalize(pendingApprovals + complianceViolations * 5, 0, 20)"
+          },
+          "normalized_value": {
+            "name": "regulatory",
+            "category": "companyResearch",
+            "formula": "1 - normalize(pendingApprovals + complianceViolations * 5, 0, 20)"
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-06"
+          ],
+          "raw_value": {
+            "formula": "1 - normalize(pendingApprovals + complianceViolations * 5, 0, 20)"
+          },
+          "normalized_value": {
+            "name": "regulatory",
+            "category": "companyResearch",
+            "formula": "1 - normalize(pendingApprovals + complianceViolations * 5, 0, 20)"
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-07"
+          ],
+          "raw_value": {
+            "formula": "1 - normalize(pendingApprovals + complianceViolations * 5, 0, 20)"
+          },
+          "normalized_value": {
+            "name": "regulatory",
+            "category": "companyResearch",
+            "formula": "1 - normalize(pendingApprovals + complianceViolations * 5, 0, 20)"
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-08"
+          ],
+          "raw_value": {
+            "formula": "1 - normalize(pendingApprovals + violations*5, 0, 20)"
+          },
+          "normalized_value": {
+            "name": "regulatory",
+            "category": "companyResearch",
+            "formula": "1 - normalize(pendingApprovals + violations*5, 0, 20)"
+          }
+        }
+      ],
+      "resolution": "preserve all variants; pending review"
+    },
+    {
+      "conflict_id": "conflict:indicator:economic_company_research_sentiment",
+      "canonical_type": "indicator",
+      "canonical_id": "economic.company_research.sentiment",
+      "status": "conflicted",
+      "source_ids": [
+        "attached-framework-04",
+        "attached-framework-05",
+        "attached-framework-06",
+        "attached-framework-07",
+        "attached-framework-08"
+      ],
+      "variants": [
+        {
+          "source_ids": [
+            "attached-framework-04"
+          ],
+          "raw_value": {
+            "formula": "consensusScore(analystConsensus) * 0.3 + normalize(surprisePercent, -10, 10) * 0.2 + normalize(instOwnershipPct, 0.2, 0.9) * 0.2 + (1 - normalize(shortRatio, 0, 5)) * 0.3"
+          },
+          "normalized_value": {
+            "name": "sentiment",
+            "category": "companyResearch",
+            "formula": "consensusScore(analystConsensus) * 0.3 + normalize(surprisePercent, -10, 10) * 0.2 + normalize(instOwnershipPct, 0.2, 0.9) * 0.2 + (1 - normalize(shortRatio, 0, 5)) * 0.3"
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-05"
+          ],
+          "raw_value": {
+            "formula": "consensusScore(analystConsensus) * 0.3 + normalize(earningsSurprisePercent, -10, 10) * 0.2 + normalize(institutionalOwnershipPct, 0.2, 0.9) * 0.2 + (1 - normalize(shortRatio, 0, 5)) * 0.3"
+          },
+          "normalized_value": {
+            "name": "sentiment",
+            "category": "companyResearch",
+            "formula": "consensusScore(analystConsensus) * 0.3 + normalize(earningsSurprisePercent, -10, 10) * 0.2 + normalize(institutionalOwnershipPct, 0.2, 0.9) * 0.2 + (1 - normalize(shortRatio, 0, 5)) * 0.3"
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-06"
+          ],
+          "raw_value": {
+            "formula": "consensusScore(analystConsensus) * 0.3 + normalize(earningsSurprisePercent, -10, 10) * 0.2 + normalize(institutionalOwnershipPct, 0.2, 0.9) * 0.2 + (1 - normalize(shortRatio, 0, 5)) * 0.3"
+          },
+          "normalized_value": {
+            "name": "sentiment",
+            "category": "companyResearch",
+            "formula": "consensusScore(analystConsensus) * 0.3 + normalize(earningsSurprisePercent, -10, 10) * 0.2 + normalize(institutionalOwnershipPct, 0.2, 0.9) * 0.2 + (1 - normalize(shortRatio, 0, 5)) * 0.3"
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-07"
+          ],
+          "raw_value": {
+            "formula": "consensusScore(analystConsensus) * 0.3 + normalize(earningsSurprisePercent, -10, 10) * 0.2 + normalize(institutionalOwnershipPct, 0.2, 0.9) * 0.2 + (1 - normalize(shortRatio, 0, 5)) * 0.3"
+          },
+          "normalized_value": {
+            "name": "sentiment",
+            "category": "companyResearch",
+            "formula": "consensusScore(analystConsensus) * 0.3 + normalize(earningsSurprisePercent, -10, 10) * 0.2 + normalize(institutionalOwnershipPct, 0.2, 0.9) * 0.2 + (1 - normalize(shortRatio, 0, 5)) * 0.3"
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-08"
+          ],
+          "raw_value": {
+            "formula": "consensusScore(analystConsensus) * 0.3 + normalize(surprisePercent, -10, 10) * 0.2 + normalize(instOwnershipPct, 0.2, 0.9) * 0.2 + (1 - normalize(shortRatio, 0, 5)) * 0.3"
+          },
+          "normalized_value": {
+            "name": "sentiment",
+            "category": "companyResearch",
+            "formula": "consensusScore(analystConsensus) * 0.3 + normalize(surprisePercent, -10, 10) * 0.2 + normalize(instOwnershipPct, 0.2, 0.9) * 0.2 + (1 - normalize(shortRatio, 0, 5)) * 0.3"
+          }
+        }
+      ],
+      "resolution": "preserve all variants; pending review"
+    },
+    {
+      "conflict_id": "conflict:indicator:economic_company_research_astro",
+      "canonical_type": "indicator",
+      "canonical_id": "economic.company_research.astro",
+      "status": "conflicted",
+      "source_ids": [
+        "attached-framework-04",
+        "attached-framework-05",
+        "attached-framework-06",
+        "attached-framework-07",
+        "attached-framework-08"
+      ],
+      "variants": [
+        {
+          "source_ids": [
+            "attached-framework-04"
+          ],
+          "raw_value": {
+            "formula": "deriveSq9Signal(companyAgeDegrees).confidence * 0.5 + deriveSq9Signal(ipoDegrees).confidence * 0.5"
+          },
+          "normalized_value": {
+            "name": "astro",
+            "category": "companyResearch",
+            "formula": "deriveSq9Signal(companyAgeDegrees).confidence * 0.5 + deriveSq9Signal(ipoDegrees).confidence * 0.5"
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-05"
+          ],
+          "raw_value": {
+            "formula": "(deriveSq9Signal(companyAgeDegrees).confidence * 0.5 + deriveSq9Signal(ipoDegrees).confidence * 0.5)"
+          },
+          "normalized_value": {
+            "name": "astro",
+            "category": "companyResearch",
+            "formula": "(deriveSq9Signal(companyAgeDegrees).confidence * 0.5 + deriveSq9Signal(ipoDegrees).confidence * 0.5)"
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-06"
+          ],
+          "raw_value": {
+            "formula": "(deriveSq9Signal(companyAgeDegrees).confidence * 0.5 + deriveSq9Signal(ipoDegrees).confidence * 0.5)"
+          },
+          "normalized_value": {
+            "name": "astro",
+            "category": "companyResearch",
+            "formula": "(deriveSq9Signal(companyAgeDegrees).confidence * 0.5 + deriveSq9Signal(ipoDegrees).confidence * 0.5)"
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-07"
+          ],
+          "raw_value": {
+            "formula": "(deriveSq9Signal(companyAgeDegrees).confidence * 0.5 + deriveSq9Signal(ipoDegrees).confidence * 0.5)"
+          },
+          "normalized_value": {
+            "name": "astro",
+            "category": "companyResearch",
+            "formula": "(deriveSq9Signal(companyAgeDegrees).confidence * 0.5 + deriveSq9Signal(ipoDegrees).confidence * 0.5)"
+          }
+        },
+        {
+          "source_ids": [
+            "attached-framework-08"
+          ],
+          "raw_value": {
+            "formula": "deriveSq9Signal(companyAgeDegrees).confidence * 0.5 + deriveSq9Signal(ipoDegrees).confidence * 0.5"
+          },
+          "normalized_value": {
+            "name": "astro",
+            "category": "companyResearch",
+            "formula": "deriveSq9Signal(companyAgeDegrees).confidence * 0.5 + deriveSq9Signal(ipoDegrees).confidence * 0.5"
+          }
+        }
+      ],
+      "resolution": "preserve all variants; pending review"
+    }
+  ]
+}

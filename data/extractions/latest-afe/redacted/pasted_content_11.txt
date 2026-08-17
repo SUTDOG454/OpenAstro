@@ -1,0 +1,306 @@
+{
+  "meta": {
+    "title": "Sexual Issues Associated with the 12 Archetypes and Select Asteroids/Planetoids",
+    "notes": "These associations may apply when these archetypes are a part of the sexual signature of the chart. The information is offered to help individuals identify the archetypal "frequency" to which certain sexual issues may correspond and is not a comprehensive characterization of the sexual dimensions of the archetypes. Based on the work of Jeffrey Wolf Green (zodiac), Demetra George (asteroids), and ongoing research by Jason Holley, and is under continuous development.[file:1]"
+  },
+  "zodiac_archetypes": [
+    {
+      "name": "Aries",
+      "number": 1,
+      "ruler": "Mars",
+      "sexual_issues": [
+        "passion / fire",
+        "begins/ends quickly",
+        "body obsession",
+        "narcissism",
+        "domineering",
+        "eroticized rage",
+        "direct/strong come-on",
+        "sexualized violence",
+        "animal magnetism",
+        "Marlboro man",
+        "impulsiveness",
+        "desires intense stimulation",
+        "wants fireworks",
+        "orgasm-oriented"
+      ]
+    },
+    {
+      "name": "Taurus",
+      "number": 2,
+      "ruler": "Venus",
+      "sexual_issues": [
+        "sensation oriented",
+        "body aware",
+        "masturbation",
+        "sensuality",
+        "isolation",
+        "possessiveness",
+        "stagnancy",
+        "‘in a rut’",
+        "role stereotypes",
+        "boundary containment",
+        "money for sex",
+        "vicarious",
+        "alone when together",
+        "‘meat and potatoes’"
+      ]
+    },
+    {
+      "name": "Gemini",
+      "number": 3,
+      "ruler": "Mercury",
+      "sexual_issues": [
+        "bisexuality",
+        "polyamory",
+        "toys and devices",
+        "sibling incest",
+        "‘try anything once’",
+        "deception",
+        "foreplay oriented",
+        "‘metrosexual’",
+        "hermaphroditic",
+        "can’t stop thinking",
+        "frozen organs",
+        "dryness",
+        "games / keep it light",
+        "fetish objects"
+      ]
+    },
+    {
+      "name": "Cancer",
+      "number": 4,
+      "ruler": "Moon",
+      "sexual_issues": [
+        "nurturing/caring",
+        "orality",
+        "breasts",
+        "seeking security",
+        "parental incest",
+        "wants mothering",
+        "enmeshment",
+        "creates dependencies",
+        "sex to process emotion",
+        "sex and food",
+        "give to get",
+        "need satiation",
+        "warmth",
+        "wants to feel safe",
+        "needs familiarity"
+      ]
+    },
+    {
+      "name": "Leo",
+      "number": 5,
+      "ruler": "Sun",
+      "sexual_issues": [
+        "play",
+        "self-expression",
+        "exhibitionism",
+        "validation/approval",
+        "adonis complex",
+        "trapped in mirror",
+        "worship",
+        "trophies, conquests",
+        "narcissism",
+        "penis/vagina",
+        "phallocentrism",
+        "role play",
+        "performance oriented",
+        "body display",
+        "children"
+      ]
+    },
+    {
+      "name": "Virgo",
+      "number": 6,
+      "ruler": "Mercury",
+      "sexual_issues": [
+        "purification",
+        "technical proficiency",
+        "guilt/atonement",
+        "sadomasochism",
+        "never good enough",
+        "lack",
+        "barrenness",
+        "perfect pictures",
+        "obsessive compulsive",
+        "slavery/service",
+        "sexual anorexia",
+        "eroticize pain",
+        "body dysmorphic",
+        "dryness"
+      ]
+    },
+    {
+      "name": "Libra",
+      "number": 7,
+      "ruler": "Venus",
+      "sexual_issues": [
+        "multiple partners",
+        "‘don juans’",
+        "compare/contrast",
+        "beauty obsession",
+        "give partner what partner wants",
+        "graceful",
+        "date rape",
+        "“can’t say no”",
+        "focus on partner’s orgasm",
+        "environment just right",
+        "same-sex love",
+        "wants it pretty"
+      ]
+    },
+    {
+      "name": "Scorpio",
+      "number": 8,
+      "ruler": "Pluto",
+      "sexual_issues": [
+        "merger",
+        "wants intensity/depth",
+        "expects betrayal",
+        "power exchange",
+        "violation/rape",
+        "manipulation",
+        "deception",
+        "prostitution",
+        "compulsions/obsessions",
+        "boundary problems",
+        "distrust/suspicion",
+        "expect betrayal",
+        "eroticize fear",
+        "femmes fatales"
+      ]
+    },
+    {
+      "name": "Sagittarius",
+      "number": 9,
+      "ruler": "Jupiter",
+      "sexual_issues": [
+        "wants freedom",
+        "cosmology of sex",
+        "everything has a meaning",
+        "compensation",
+        "religious material",
+        "exotic is erotic",
+        "adventurous",
+        "bigger is better",
+        "more is better",
+        "teacher role",
+        "outdoors",
+        "like to be natural"
+      ]
+    },
+    {
+      "name": "Capricorn",
+      "number": 10,
+      "ruler": "Saturn",
+      "sexual_issues": [
+        "appropriateness",
+        "daddy/daddy’s girl",
+        "daddy/son dynamics",
+        "eroticized shame",
+        "anus",
+        "judgment/standards",
+        "protocols",
+        "concealment",
+        "stoicism",
+        "bondage/discipline",
+        "repression",
+        "submerged anger",
+        "in control, repressed",
+        "desire to lose control"
+      ]
+    },
+    {
+      "name": "Aquarius",
+      "number": 11,
+      "ruler": "Uranus",
+      "sexual_issues": [
+        "sexual liberation",
+        "experimentation",
+        "mental / conceptual",
+        "“kink” / odd",
+        "groups",
+        "internet/media",
+        "cameras / filming",
+        "voyeurism/pornography",
+        "traumatized",
+        "disembodied",
+        "in shock / absent",
+        "detachment/clinical",
+        "‘friends with benefits’",
+        "rebellion"
+      ]
+    },
+    {
+      "name": "Pisces",
+      "number": 12,
+      "ruler": "Neptune",
+      "sexual_issues": [
+        "sacred sex",
+        "ritualized sex",
+        "role play",
+        "confusion",
+        "escape/dissociation",
+        "idealization/deification",
+        "atonement",
+        "sadomasochism",
+        "“rescue me”",
+        "victimization",
+        "fantasy",
+        "“purple haze”",
+        "hiding/shyness",
+        "sex with drugs"
+      ]
+    }
+  ],
+  "asteroids_planetoids": [
+    {
+      "name": "Chiron",
+      "sexual_issues": [
+        "deformities",
+        "sexual healing",
+        "sexual mentorship"
+      ]
+    },
+    {
+      "name": "Eros",
+      "sexual_issues": [
+        "“flow” of sexual energy",
+        "male homosexuality"
+      ]
+    },
+    {
+      "name": "Ceres",
+      "sexual_issues": [
+        "loss of innocence",
+        "grief/loss related to sex (e.g. death, abortions)"
+      ]
+    },
+    {
+      "name": "Pallas",
+      "sexual_issues": [
+        "transvestism",
+        "gender bending",
+        "covert incest"
+      ]
+    },
+    {
+      "name": "Vesta",
+      "sexual_issues": [
+        "prostitution",
+        "sacred sexuality",
+        "celibacy"
+      ]
+    },
+    {
+      "name": "Juno",
+      "sexual_issues": [
+        "fidelity and betrayal",
+        "intimate treason",
+        "sexual rage"
+      ]
+    }
+  ]
+}

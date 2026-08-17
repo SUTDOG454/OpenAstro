@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "batch_id": "2026-08-user-uploads-and-referenced-tasks",
+  "retrieval_method": "session-reference MCP visible-task replay",
+  "records": [
+    {
+      "source_id": "referenced-task:hVGbM9A8ReKExMPNmS4DQa",
+      "title": "Extracting Text Files to JSON",
+      "access_scope": "owned",
+      "reviewed_artifacts": ["visible task conversation", "artifact listing"],
+      "integration_role": "provenance context for previously extracted text-to-JSON materials",
+      "observed_context": "Task shows prior extraction of multiple pasted text attachments and a large artifact set. Current raw upload files are preserved independently rather than assuming task artifacts are authoritative.",
+      "status": "source_context_only",
+      "limitations": ["Task artifacts were not treated as duplicate canonical sources without a retained source file and hash in the current repository."]
+    },
+    {
+      "source_id": "referenced-task:bE7XK2bZQxwJ27tcqauA9x",
+      "title": "Astrology Chart Analysis Website Using Provided Source",
+      "access_scope": "owned",
+      "reviewed_artifacts": ["visible latest task conversation"],
+      "integration_role": "implementation-context reference",
+      "observed_context": "Task describes a chart-analysis application with chart calculation, source-framework loading, provenance-sensitive uploads, and interpretation UI features.",
+      "status": "source_context_only",
+      "limitations": ["Website implementation claims are not used as evidence for calculation accuracy or interpretive validity."]
+    },
+    {
+      "source_id": "referenced-task:k8uiNy9tJvLtcPBwUudZfz",
+      "title": "Astrodash Manus Space URL",
+      "access_scope": "owned",
+      "reviewed_artifacts": ["visible latest task conversation", "user-supplied Astrodash export in current batch"],
+      "integration_role": "dashboard and privacy-bound chart-example context",
+      "observed_context": "Task includes application code and dashboard features; current batch includes a dashboard export containing personally identifying birth-chart material.",
+      "status": "privacy_restricted_context",
+      "limitations": ["Personal chart placements and derived descriptions are retained as source material only and are excluded from generalized corpus records."]
+    },
+    {
+      "source_id": "referenced-task:mmcQKKdetYYvNW4dEAsgsH",
+      "title": "Astrology Compendium expanded",
+      "access_scope": "owned",
+      "reviewed_artifacts": ["visible latest task conversation"],
+      "integration_role": "prior compendium and implementation-context reference",
+      "observed_context": "Task is a multi-segment prior compendium workflow. Its visible latest segment establishes that it was a separate implementation context rather than a substitute for current source hashes.",
+      "status": "source_context_only",
+      "limitations": ["No un-hashed prior task output is silently promoted into the current canonical corpus."]
+    },
+    {
+      "source_id": "referenced-task:D75PQwZLeHq6xHGDTB5cCd",
+      "title": "Solar Arcs Delineation Methodology Framework Overview",
+      "access_scope": "owned",
+      "reviewed_artifacts": ["visible task conversation"],
+      "integration_role": "methodology-proposal provenance",
+      "observed_context": "Task supplied a Solar Arcs methodology proposal including an arc rule, orbital tolerance, weighting, and confirmation assumptions.",
+      "status": "methodology_proposal_pending_review",
+      "limitations": ["Weights, orb policy, probability-style multipliers, and confirmation boosts remain methodology-bound and are not treated as computed truth, empirical probability, or a calculation adapter."]
+    },
+    {
+      "source_id": "referenced-task:gw4yP30qoqPeIhTA3L9cO0",
+      "title": "Detailed Delineation Framework from Esoteric Astrology PDF",
+      "access_scope": "owned",
+      "reviewed_artifacts": ["visible task conversation", "user-supplied esoteric_astro.txt in current batch"],
+      "integration_role": "esoteric-corpus provenance",
+      "observed_context": "Task began with a supplied Bepin Behari esoteric astrology PDF. The current batch provides text extraction from that source for source-grounded retrieval.",
+      "status": "source_derived_esoteric_context",
+      "limitations": ["Esoteric interpretation remains retrieval-only and is never injected into Western, Vedic, or standard calculation engines."]
+    }
+  ]
+}

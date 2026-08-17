@@ -1,0 +1,261 @@
+{
+  "schema_version": "1.0.0",
+  "status": "expanded_with_review_gaps",
+  "chart_types": {
+    "natal": {
+      "status": "contracted",
+      "has_inputs": true,
+      "has_outputs": true,
+      "has_limitations": true
+    },
+    "relocated": {
+      "status": "pending_review",
+      "has_inputs": true,
+      "has_outputs": true,
+      "has_limitations": true
+    },
+    "synastry": {
+      "status": "contracted",
+      "has_inputs": true,
+      "has_outputs": true,
+      "has_limitations": true
+    },
+    "composite": {
+      "status": "pending_review",
+      "has_inputs": true,
+      "has_outputs": true,
+      "has_limitations": true
+    },
+    "davison": {
+      "status": "pending_review",
+      "has_inputs": true,
+      "has_outputs": true,
+      "has_limitations": true
+    },
+    "transit": {
+      "status": "contracted",
+      "has_inputs": true,
+      "has_outputs": true,
+      "has_limitations": true
+    },
+    "secondary_progression": {
+      "status": "contracted",
+      "has_inputs": true,
+      "has_outputs": true,
+      "has_limitations": true
+    },
+    "solar_arc": {
+      "status": "contracted",
+      "has_inputs": true,
+      "has_outputs": true,
+      "has_limitations": true
+    },
+    "solar_return": {
+      "status": "pending_review",
+      "has_inputs": true,
+      "has_outputs": true,
+      "has_limitations": true
+    },
+    "lunar_return": {
+      "status": "pending_review",
+      "has_inputs": true,
+      "has_outputs": true,
+      "has_limitations": true
+    },
+    "planetary_return": {
+      "status": "pending_review",
+      "has_inputs": true,
+      "has_outputs": true,
+      "has_limitations": true
+    },
+    "lunar_phase": {
+      "status": "contracted",
+      "has_inputs": true,
+      "has_outputs": true,
+      "has_limitations": true
+    },
+    "draconic": {
+      "status": "pending_review",
+      "has_inputs": true,
+      "has_outputs": true,
+      "has_limitations": true
+    },
+    "harmonic": {
+      "status": "pending_review",
+      "has_inputs": true,
+      "has_outputs": true,
+      "has_limitations": true
+    },
+    "declination_parallel": {
+      "status": "contracted",
+      "has_inputs": true,
+      "has_outputs": true,
+      "has_limitations": true
+    },
+    "electional": {
+      "status": "pending_review",
+      "has_inputs": true,
+      "has_outputs": true,
+      "has_limitations": true
+    },
+    "horary": {
+      "status": "pending_review",
+      "has_inputs": true,
+      "has_outputs": true,
+      "has_limitations": true
+    },
+    "mundane": {
+      "status": "pending_review",
+      "has_inputs": true,
+      "has_outputs": true,
+      "has_limitations": true
+    },
+    "heliocentric": {
+      "status": "pending_review",
+      "has_inputs": true,
+      "has_outputs": true,
+      "has_limitations": true
+    },
+    "topocentric": {
+      "status": "pending_review",
+      "has_inputs": true,
+      "has_outputs": true,
+      "has_limitations": true
+    },
+    "barycentric": {
+      "status": "pending_review",
+      "has_inputs": true,
+      "has_outputs": true,
+      "has_limitations": true
+    },
+    "planetocentric": {
+      "status": "pending_review",
+      "has_inputs": true,
+      "has_outputs": true,
+      "has_limitations": true
+    },
+    "sidereal": {
+      "status": "pending_review",
+      "has_inputs": true,
+      "has_outputs": true,
+      "has_limitations": true
+    },
+    "varga": {
+      "status": "pending_review",
+      "has_inputs": true,
+      "has_outputs": true,
+      "has_limitations": true
+    },
+    "divisional": {
+      "status": "pending_review",
+      "has_inputs": true,
+      "has_outputs": true,
+      "has_limitations": true
+    },
+    "arudha": {
+      "status": "pending_review",
+      "has_inputs": true,
+      "has_outputs": true,
+      "has_limitations": true
+    },
+    "persona": {
+      "status": "pending_review",
+      "has_inputs": true,
+      "has_outputs": true,
+      "has_limitations": true
+    },
+    "prenatal_syzygy": {
+      "status": "pending_review",
+      "has_inputs": true,
+      "has_outputs": true,
+      "has_limitations": true
+    },
+    "profection": {
+      "status": "pending_review",
+      "has_inputs": true,
+      "has_outputs": true,
+      "has_limitations": true
+    },
+    "firdaria": {
+      "status": "not_implemented",
+      "has_inputs": true,
+      "has_outputs": true,
+      "has_limitations": true
+    },
+    "zodiacal_releasing": {
+      "status": "not_implemented",
+      "has_inputs": true,
+      "has_outputs": true,
+      "has_limitations": true
+    },
+    "primary_direction": {
+      "status": "not_implemented",
+      "has_inputs": true,
+      "has_outputs": true,
+      "has_limitations": true
+    },
+    "fixed_star": {
+      "status": "contracted",
+      "has_inputs": true,
+      "has_outputs": true,
+      "has_limitations": true
+    },
+    "asteroid": {
+      "status": "contracted",
+      "has_inputs": true,
+      "has_outputs": true,
+      "has_limitations": true
+    },
+    "midpoint": {
+      "status": "contracted",
+      "has_inputs": true,
+      "has_outputs": true,
+      "has_limitations": true
+    },
+    "astrocartography": {
+      "status": "pending_review",
+      "has_inputs": true,
+      "has_outputs": true,
+      "has_limitations": true
+    },
+    "local_space": {
+      "status": "pending_review",
+      "has_inputs": true,
+      "has_outputs": true,
+      "has_limitations": true
+    },
+    "relocation": {
+      "status": "pending_review",
+      "has_inputs": true,
+      "has_outputs": true,
+      "has_limitations": true
+    }
+  },
+  "gaps": [
+    {
+      "id": "invalid-local-draft-json",
+      "status": "unavailable",
+      "details": "Multiple draft JSON files are malformed or truncated; raw files are preserved and not silently repaired."
+    },
+    {
+      "id": "financial-observations-not-acquired",
+      "status": "unavailable",
+      "details": "No live market data acquisition was requested for a specific ticker or date window."
+    },
+    {
+      "id": "content-gap-target-missing",
+      "status": "unavailable",
+      "details": "No target domain or competitor set was supplied."
+    },
+    {
+      "id": "firdaria-zodiacal-releasing-primary-direction",
+      "status": "not_implemented",
+      "details": "Methodology contracts are registered, but no deterministic adapters are claimed."
+    },
+    {
+      "id": "semantic-tradition-approval",
+      "status": "pending_review",
+      "details": "Strength, compatibility, financial, relationship, and event scores remain methodology-bound."
+    }
+  ]
+}

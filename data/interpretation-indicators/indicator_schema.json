@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0.0",
+  "record_type": "interpretation_indicator",
+  "purpose": "A source-grounded interpretation statement refactored into a retrieval and regression-test record.",
+  "required_fields": [
+    "indicator_id",
+    "source_id",
+    "source_path",
+    "source_sha256",
+    "record_type",
+    "subject_path",
+    "raw_text",
+    "normalized_text",
+    "keywords",
+    "unicode_symbols",
+    "evidence_class",
+    "status",
+    "limitations"
+  ],
+  "status_values": ["source_derived", "normalized", "computed", "methodology_bound", "research_exploratory", "pending_review", "unavailable", "conflicted"],
+  "evidence_boundary": {
+    "source_derived": "Text preserved or normalized from a supplied source.",
+    "computed": "A deterministic calculation output with explicit settings and engine metadata.",
+    "methodology_bound": "A score or rule defined by a named tradition or project methodology.",
+    "research_exploratory": "A hypothesis or association requiring time-aware validation.",
+    "interpretive_text": "Never treated as empirical, causal, medical, legal, psychological, or financial evidence."
+  },
+  "deduplication": {
+    "exact": "record_type + subject_path + normalized_text casefold",
+    "probable": "semantic similarity or shared keywords; preserve separate pending-review records",
+    "source_merge": "merge source_ids and source_paths only for exact duplicates"
+  },
+  "test_contract": {
+    "must_validate": ["required fields", "status vocabulary", "source hash", "stable ID", "non-empty normalized text"],
+    "must_not_assert": ["interpretive truth", "causality", "forecast accuracy", "cross-tradition universality"]
+  }
+}

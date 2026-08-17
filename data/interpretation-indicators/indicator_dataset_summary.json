@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0.0",
+  "source_count": 133,
+  "record_count": 3011,
+  "record_types": {
+    "interpretation_text": 1938,
+    "interpretation_list": 172,
+    "interpretation_line": 859,
+    "interpretation_field": 42
+  },
+  "layer_counts": {
+    "interpretation_text": 2152,
+    "interpretation_lines": 859,
+    "keyword_sets": 172
+  },
+  "source_record_counts_top_20": [
+    [
+      "openastro:data/extractions/attached-framework-synthesis/normalized_records.json",
+      380
+    ],
+    [
+      "openastro:data/extractions/attached-framework-synthesis/package/astrology_master.json",
+      380
+    ],
+    [
+      "openastro:data/extractions/latest-afe/redacted/pasted_content_3.json",
+      271
+    ],
+    [
+      "openastro:data/delineations/microscopy-of-transiting-planets-simplified.json",
+      208
+    ],
+    [
+      "openastro:data/extractions/latest-afe/raw/pasted_content_3.txt",
+      170
+    ],
+    [
+      "openastro:data/extractions/latest-afe/redacted/pasted_content.json",
+      134
+    ],
+    [
+      "openastro:data/extractions/latest-afe/raw/pasted_content.txt",
+      122
+    ],
+    [
+      "openastro:data/extractions/latest-afe/raw/pasted_content_2.txt",
+      122
+    ],
+    [
+      "openastro:data/frameworks/astrological-framework-v1.json",
+      88
+    ],
+    [
+      "openastro:data/unified/unified_astrology_master.json",
+      82
+    ],
+    [
+      "openastro:data/extractions/latest-afe/normalized_records.json",
+      77
+    ],
+    [
+      "openastro:data/unified/latest_afe_integration.json",
+      77
+    ],
+    [
+      "openastro:data/frameworks/additions.json",
+      72
+    ],
+    [
+      "openastro:data/merged-signals-indicators/normalized_records.json",
+      59
+    ],
+    [
+      "openastro:data/merged-signals-indicators/signal_indicator_master.json",
+      59
+    ],
+    [
+      "openastro:data/extractions/attached-framework-synthesis/raw/03-asto-framework.json",
+      58
+    ],
+    [
+      "openastro:data/drafts/master-relationship-astrology-compendium.json",
+      57
+    ],
+    [
+      "openastro:data/drafts/biseptile-interpretation.json",
+      54
+    ],
+    [
+      "openastro:data/extractions/latest-afe/raw/pasted_content_4.txt",
+      43
+    ],
+    [
+      "openastro:data/extractions/attached-framework-synthesis/raw/06-economic-market-normalized.json",
+      40
+    ]
+  ],
+  "unicode_symbol_count": 14,
+  "dedup_group_count": 3326,
+  "status": "source_derived_testing_dataset",
+  "warnings": [
+    "Interpretive text is not empirical evidence.",
+    "Malformed JSON sources were preserved and line-scanned conservatively.",
+    "Probable semantic duplicates were not auto-merged."
+  ]
+}

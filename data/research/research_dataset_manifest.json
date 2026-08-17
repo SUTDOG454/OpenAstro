@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.1.0",
+  "dataset_id": "openastro_research_methods_and_indicator_definitions",
+  "status": "configuration_and_method_records_only",
+  "generated_at": "2026-08-17T08:04:58.341810+00:00",
+  "source_refs": [
+    "data/unified/unified_astrology_master.json",
+    "data/unified/latest_afe_integration.json",
+    "data/unified/research_contract.json",
+    "data/interpretation-indicators/normalized_interpretation_indicators.json"
+  ],
+  "evidence_boundary": {
+    "financial_and_market_materials": "methodology_bound_research_only",
+    "default_promotion_status": "not_eligible_without_validated_experiment",
+    "promotion_rule": "Financial or market material may be registered as a scoped research signal or indicator only after a separately versioned, reproducible, leakage-safe experiment meets its pre-registered acceptance criteria and completes independent review. Promotion does not create trading advice, a causal claim, or a guaranteed forecast.",
+    "prohibited_uses": [
+      "trading instructions",
+      "position sizing",
+      "personal financial advice",
+      "guaranteed forecasts",
+      "causal claims from symbolic associations"
+    ],
+    "non_claims": [
+      "No untested association is a validated signal.",
+      "A statistically reported association is not proof of a causal mechanism.",
+      "A promoted research signal is not a buy, sell, hold, allocation, or execution instruction."
+    ]
+  },
+  "observations_acquired": false,
+  "labels_acquired": false,
+  "actual_observation_data_status": "not_acquired",
+  "actual_label_data_status": "not_acquired",
+  "execution_status": "not_executed",
+  "walk_forward_validation_status": "not_executed_requires_observations_and_labels",
+  "blocking_conditions": [
+    "No registered experiment record with actual population, target, windows, and decision rule.",
+    "No approved source decision records or resolved rights for actual observations.",
+    "No raw observation artifacts, hashes, or normalized time-indexed dataset.",
+    "No independently constructed labels or frozen dataset manifest.",
+    "No chronological split manifest, fold logs, baseline results, or final holdout evaluation."
+  ],
+  "feature_cutoff_rule": "Every astrology or market feature must be available no later than the row feature cutoff.",
+  "split_strategy": "walk_forward_or_purged_time_split",
+  "baseline_requirements": [
+    "buy_and_hold_or_naive_market_baseline",
+    "seasonal_or_regime_baseline_when_applicable",
+    "feature_ablated_baseline_when_a_candidate_uses_astrological_or_sentiment_features"
+  ],
+  "uncertainty_requirements": [
+    "sample_size",
+    "missingness",
+    "confidence_intervals_or_bootstrap",
+    "regime_sensitivity",
+    "negative_results",
+    "fold_level_metric_dispersion",
+    "data_revision_and_provider_drift"
+  ],
+  "prohibited_uses": [
+    "trading instructions",
+    "position sizing",
+    "personal financial advice",
+    "guaranteed forecasts",
+    "causal claims from symbolic associations"
+  ],
+  "missingness_policy": "Record unavailable values explicitly with reason codes; do not impute without a declared method fitted only inside each training fold.",
+  "source_rights": "pending_review",
+  "artifact_refs": {
+    "training_testing_methods": "data/research/training_testing_methods.json",
+    "observation_acquisition_plan": "data/research/observation_acquisition_plan.json",
+    "temporal_leakage_controls": "data/research/temporal_leakage_controls.json",
+    "walk_forward_validation_plan": "data/research/walk_forward_validation_plan.json",
+    "signal_indicator_promotion_policy": "data/research/signal_indicator_promotion_policy.json"
+  },
+  "validation_requirements_before_execution": [
+    "observations_acquired is true",
+    "labels_acquired is true",
+    "dataset manifest, data card, feature dictionary, label dictionary, and source inventory are frozen and hashed",
+    "every row passes the feature-cutoff validator or has a recorded exclusion",
+    "historical observation window and final holdout dates are pre-registered",
+    "baseline definitions and acceptance criteria are pre-registered",
+    "rights status is resolved for all included sources"
+  ]
+}

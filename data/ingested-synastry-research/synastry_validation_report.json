@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "status": "passed_with_review_warnings",
+  "checks": {
+    "all_sources_hashed": true,
+    "all_records_reference_sources": true,
+    "all_uploaded_code_not_executed": true,
+    "mock_and_template_not_promoted": true,
+    "reported_statistics_not_promoted": true
+  },
+  "warnings": [
+    "All source rights and data-use permissions remain pending review.",
+    "Reported significance, effect-size, correlation, and scoring outputs were not independently recomputed.",
+    "Observed-looking cohorts are small and lack documented cohort construction, birth-data provenance, outcome coding, and control design.",
+    "No source table was accepted as a production training, testing, or prediction dataset."
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "schema_version": "1.0.0",
+  "policy": "exact normalized duplicates merge source links; semantic conflicts remain separate",
+  "groups": []
+}
