@@ -23,7 +23,7 @@ OpenAstro is an open-source collection of astrological frameworks, definitions, 
 
 ## Data conventions
 
-Use lowercase kebab-case filenames and explicit extensions. Validated JSON belongs in the appropriate `data/` category. Preserve unfinished, malformed, or placeholder-bearing material under `data/drafts/` rather than presenting it as production-ready JSON. The guide in [`docs/repository-data-map.md`](docs/repository-data-map.md) records the current status of preserved draft files.
+Use lowercase kebab-case filenames and explicit extensions for data, documentation, and assets. React component source files use PascalCase, Python tools use snake_case, and `README.md` retains its conventional uppercase name. Validated JSON belongs in the appropriate `data/` category. Preserve unfinished, malformed, or placeholder-bearing material under `data/drafts/` rather than presenting it as production-ready JSON. The guide in [`docs/repository-data-map.md`](docs/repository-data-map.md) records the current status of preserved draft files.
 
 ## Utilities
 
