@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "package": "unified-astrology-expansion",
-  "generated_at": "2026-08-17T08:25:44.429381+00:00",
+  "generated_at": "2026-08-17T08:47:24.392062+00:00",
   "status": "expanded_with_isolated_esoteric_and_research_layer",
   "canonical_registry_boundary": {
     "entity_registry": "/home/ubuntu/skills/astrology-data-unifi/references/entity_registry.json",
@@ -6205,7 +6205,8 @@
     "unicode_symbol_registry": "data/unified/symbol_registry.json",
     "esoteric_namespace_isolation": "TypeScript retrieval-only namespace; no Western, Vedic, or standard calculation engine calls.",
     "research_layer": "Expanded research contracts under data/research define acquisition gates, feature cutoff and temporal-leakage controls, walk-forward execution requirements, required execution logs, and review-gated research signal or indicator promotion. The active layer contains no observations, labels, or executed validation results.",
-    "user_corpus_integration": "The uploaded and referenced-task corpus is preserved under data/sources and data/ingested-user-corpus. Integration is artifact-link based: source-derived text, methodology-bound research proposals, private content, sensitive content, static code metadata, and canonical registries remain distinct."
+    "user_corpus_integration": "The uploaded and referenced-task corpus is preserved under data/sources and data/ingested-user-corpus. Integration is artifact-link based: source-derived text, methodology-bound research proposals, private content, sensitive content, static code metadata, and canonical registries remain distinct.",
+    "synastry_research_layer": "The new synastry ingestion attaches source table profiles, static-code metadata, reported-claim warnings, and discrepancy records. It does not authorize compatibility or relationship predictions, modify canonical calculation rules, or promote reported results into training evidence."
   },
   "latest_afe_integration": {
     "schema_version": "1.0.0",
@@ -8655,6 +8656,19 @@
       "backtests_executed": false,
       "promotion_status": "not_eligible_without_registered_experiment_and_review",
       "policy": "These materials do not change the active research-layer execution status. Financial and market material remains research-only and non-advisory, with no validated performance, causal claim, prediction, position sizing, or trade instruction."
+    },
+    "synastry_candidate_material": {
+      "status": "pending_review_research_material",
+      "refs": {
+        "source_inventory": "data/ingested-synastry-research/synastry_source_inventory.json",
+        "statistical_claim_register": "data/ingested-synastry-research/synastry_statistical_claim_register.json",
+        "validation": "data/ingested-synastry-research/synastry_validation_report.json"
+      },
+      "observations_acquired": false,
+      "labels_acquired": false,
+      "backtests_executed": false,
+      "model_training_authorized": false,
+      "policy": "Synastry source tables are not active model data. Source-reported statistical outputs are unverified pending recomputation; templates/mocks are methodology examples; uploaded code remains static-inspection-only."
     }
   },
   "user_corpus_integration": {
@@ -8692,5 +8706,39 @@
       "Esoteric source material is retrieval-only and cannot enter Western, Vedic, or standard calculation engines."
     ],
     "canonical_registry_boundary": "This integration attaches source artifacts and pending-review proposals. It does not modify astrology-data-unifi canonical registries, formulas, or calculation catalogs."
+  },
+  "synastry_research_layer": {
+    "status": "source_ingested_with_research_boundaries",
+    "evidence_class": "source_derived_and_methodology_bound",
+    "source_inventory_ref": "data/ingested-synastry-research/synastry_source_inventory.json",
+    "normalized_records_ref": "data/ingested-synastry-research/synastry_normalized_records.json",
+    "statistical_claim_register_ref": "data/ingested-synastry-research/synastry_statistical_claim_register.json",
+    "discrepancy_register_ref": "data/ingested-synastry-research/synastry_discrepancy_register.json",
+    "validation_ref": "data/ingested-synastry-research/synastry_validation_report.json",
+    "summary_ref": "data/ingested-synastry-research/synastry_research_summary.json",
+    "counts": {
+      "sources": 29,
+      "records": 29,
+      "reported_statistical_claims": 11,
+      "small_cohort_candidates": 5,
+      "unexecuted_code_templates": 5
+    },
+    "methodology_and_training_boundary": {
+      "observations_acquired": false,
+      "labels_acquired": false,
+      "model_training_authorized": false,
+      "statistical_claims_independently_recomputed": false,
+      "source_reported_scores_adopted": false,
+      "uploaded_code_executed": false,
+      "policy": "Templates, mocks, source-reported statistical outputs, small named-pair cohorts, and unexecuted scoring code remain pending-review research materials. They cannot be used as empirical replication, deployed compatibility scoring, model training, outcome prediction, or personal decision support without a separately registered, rights-resolved, leakage-safe study and independent review."
+    },
+    "canonical_registry_boundary": "No source row, aspect weight, orb rule, harmonic rule, compatibility score, statistical claim, or code template is added to the canonical entity registry, calculation catalog, or standard delineation engine by this integration.",
+    "boundaries": [
+      "Templates, mocks, examples, and source-reported result tables are not empirical replication evidence.",
+      "Uploaded scoring code was statically inspected only and was not executed or adopted.",
+      "Small named-pair cohorts are research candidates only; they are not representative training or validation data.",
+      "No relationship outcome prediction, compatibility score, or personal decision support is produced by this ingestion.",
+      "No statistical claim is promoted without frozen raw inputs, provenance, pre-registration, appropriate controls, and independent review."
+    ]
   }
 }

@@ -1,0 +1,265 @@
+{
+  "schema_version": "1.0.0",
+  "claims": [
+    {
+      "claim_id": "claim_534e09378f37ba0649d6",
+      "source_id": "openastro:synastry-upload:celebrity-effect-sizes-ci-report-csv",
+      "record_id": "syn_table_534e09378f37ba0649d6",
+      "claim_type": "source_reported_statistical_output",
+      "status": "unverified_pending_recalculation",
+      "evidence_class": "source_derived",
+      "reported_table_columns": [
+        "feature",
+        "mean_long",
+        "mean_short",
+        "mean_diff",
+        "cohens_d",
+        "ci_low",
+        "ci_high",
+        "welch_p"
+      ],
+      "reported_row_count": 5,
+      "limitations": [
+        "No independent recomputation or multiple-testing review was performed.",
+        "Reported p-values, effect sizes, confidence intervals, correlations, and score summaries are not validation evidence until raw cohort lineage and analysis code are frozen and independently rerun."
+      ]
+    },
+    {
+      "claim_id": "claim_ffb49c4eabac9f1725a1",
+      "source_id": "openastro:synastry-upload:celebrity-significance-report-csv",
+      "record_id": "syn_table_ffb49c4eabac9f1725a1",
+      "claim_type": "source_reported_statistical_output",
+      "status": "unverified_pending_recalculation",
+      "evidence_class": "source_derived",
+      "reported_table_columns": [
+        "feature",
+        "pearson_r",
+        "p_value",
+        "abs_r",
+        "cohens_d_long_short",
+        "bonferroni_p",
+        "significance",
+        "bonferroni_significance"
+      ],
+      "reported_row_count": 5,
+      "limitations": [
+        "No independent recomputation or multiple-testing review was performed.",
+        "Reported p-values, effect sizes, confidence intervals, correlations, and score summaries are not validation evidence until raw cohort lineage and analysis code are frozen and independently rerun."
+      ]
+    },
+    {
+      "claim_id": "claim_86e59091784b8d5d64a4",
+      "source_id": "openastro:synastry-upload:celebrity-synastry-correlation-matrix-csv",
+      "record_id": "syn_table_86e59091784b8d5d64a4",
+      "claim_type": "source_reported_statistical_output",
+      "status": "unverified_pending_recalculation",
+      "evidence_class": "source_derived",
+      "reported_table_columns": [
+        "",
+        "promise_score",
+        "timing_score",
+        "mean_weight",
+        "volatility_score",
+        "vol_adj_score",
+        "marriage_years"
+      ],
+      "reported_row_count": 6,
+      "limitations": [
+        "No independent recomputation or multiple-testing review was performed.",
+        "Reported p-values, effect sizes, confidence intervals, correlations, and score summaries are not validation evidence until raw cohort lineage and analysis code are frozen and independently rerun."
+      ]
+    },
+    {
+      "claim_id": "claim_1ac775f558bf75361388",
+      "source_id": "openastro:synastry-upload:celebrity-synastry-test-results-csv",
+      "record_id": "syn_table_1ac775f558bf75361388",
+      "claim_type": "source_reported_statistical_output",
+      "status": "unverified_pending_recalculation",
+      "evidence_class": "source_derived",
+      "reported_table_columns": [
+        "pair_name",
+        "promise_score",
+        "timing_score",
+        "mean_weight",
+        "volatility_score",
+        "vol_adj_score",
+        "marriage_success_label"
+      ],
+      "reported_row_count": 5,
+      "limitations": [
+        "No independent recomputation or multiple-testing review was performed.",
+        "Reported p-values, effect sizes, confidence intervals, correlations, and score summaries are not validation evidence until raw cohort lineage and analysis code are frozen and independently rerun."
+      ]
+    },
+    {
+      "claim_id": "claim_79626a08f0b6809d03b1",
+      "source_id": "openastro:synastry-upload:lowest-harmonic-support-csv",
+      "record_id": "syn_table_79626a08f0b6809d03b1",
+      "claim_type": "source_reported_statistical_output",
+      "status": "unverified_pending_recalculation",
+      "evidence_class": "source_derived",
+      "reported_table_columns": [
+        "chart_id",
+        "pair_id",
+        "promise_score",
+        "timing_score",
+        "volatility_score",
+        "harmonic_support",
+        "mean_weight",
+        "marriage_duration_years",
+        "success"
+      ],
+      "reported_row_count": 5,
+      "limitations": [
+        "No independent recomputation or multiple-testing review was performed.",
+        "Reported p-values, effect sizes, confidence intervals, correlations, and score summaries are not validation evidence until raw cohort lineage and analysis code are frozen and independently rerun."
+      ]
+    },
+    {
+      "claim_id": "claim_6e887497dfeb8031f6cf",
+      "source_id": "openastro:synastry-upload:pair-summary-csv",
+      "record_id": "syn_table_6e887497dfeb8031f6cf",
+      "claim_type": "source_reported_statistical_output",
+      "status": "unverified_pending_recalculation",
+      "evidence_class": "source_derived",
+      "reported_table_columns": [
+        "chart_id",
+        "pair_id",
+        "max_score",
+        "mean_score",
+        "median_score",
+        "row_count",
+        "tight_orb_mean",
+        "strong_rows",
+        "weight_sum",
+        "promise_mean",
+        "timing_mean",
+        "harmonic_support_sum",
+        "volatility_mean",
+        "strong_ratio"
+      ],
+      "reported_row_count": 25,
+      "limitations": [
+        "No independent recomputation or multiple-testing review was performed.",
+        "Reported p-values, effect sizes, confidence intervals, correlations, and score summaries are not validation evidence until raw cohort lineage and analysis code are frozen and independently rerun."
+      ]
+    },
+    {
+      "claim_id": "claim_3f6098d7bc63e4d2ec62",
+      "source_id": "openastro:synastry-upload:pair-summary-agg-csv",
+      "record_id": "syn_table_3f6098d7bc63e4d2ec62",
+      "claim_type": "source_reported_statistical_output",
+      "status": "unverified_pending_recalculation",
+      "evidence_class": "source_derived",
+      "reported_table_columns": [
+        "chart_id",
+        "pair_id",
+        "promise_mean",
+        "timing_mean",
+        "volatility_mean",
+        "avg_weight",
+        "max_weight",
+        "harmonic_support"
+      ],
+      "reported_row_count": 25,
+      "limitations": [
+        "No independent recomputation or multiple-testing review was performed.",
+        "Reported p-values, effect sizes, confidence intervals, correlations, and score summaries are not validation evidence until raw cohort lineage and analysis code are frozen and independently rerun."
+      ]
+    },
+    {
+      "claim_id": "claim_7ac4b72e19c3a9466093",
+      "source_id": "openastro:synastry-upload:pair-summary-duration-csv",
+      "record_id": "syn_table_7ac4b72e19c3a9466093",
+      "claim_type": "source_reported_statistical_output",
+      "status": "unverified_pending_recalculation",
+      "evidence_class": "source_derived",
+      "reported_table_columns": [
+        "chart_id",
+        "pair_id",
+        "promise_score",
+        "timing_score",
+        "volatility_score",
+        "harmonic_support",
+        "mean_weight",
+        "marriage_duration_years",
+        "success"
+      ],
+      "reported_row_count": 25,
+      "limitations": [
+        "No independent recomputation or multiple-testing review was performed.",
+        "Reported p-values, effect sizes, confidence intervals, correlations, and score summaries are not validation evidence until raw cohort lineage and analysis code are frozen and independently rerun."
+      ]
+    },
+    {
+      "claim_id": "claim_7c2b6514bef8c521e023",
+      "source_id": "openastro:synastry-upload:pair-summary-duration-binary-csv",
+      "record_id": "syn_table_7c2b6514bef8c521e023",
+      "claim_type": "source_reported_statistical_output",
+      "status": "unverified_pending_recalculation",
+      "evidence_class": "source_derived",
+      "reported_table_columns": [
+        "chart_id",
+        "pair_id",
+        "promise_score",
+        "timing_score",
+        "volatility_score",
+        "harmonic_support",
+        "mean_weight",
+        "marriage_duration_years",
+        "divorce_rate",
+        "sun_moon_synastry",
+        "short_marriage",
+        "long_marriage"
+      ],
+      "reported_row_count": 25,
+      "limitations": [
+        "No independent recomputation or multiple-testing review was performed.",
+        "Reported p-values, effect sizes, confidence intervals, correlations, and score summaries are not validation evidence until raw cohort lineage and analysis code are frozen and independently rerun."
+      ]
+    },
+    {
+      "claim_id": "claim_0bcd9e1183f05399e89e",
+      "source_id": "openastro:synastry-upload:rodden-aa-vs-a-score-summary-csv",
+      "record_id": "syn_table_0bcd9e1183f05399e89e",
+      "claim_type": "source_reported_statistical_output",
+      "status": "unverified_pending_recalculation",
+      "evidence_class": "source_derived",
+      "reported_table_columns": [
+        "rodden_rating",
+        "count",
+        "mean",
+        "median",
+        "std"
+      ],
+      "reported_row_count": 2,
+      "limitations": [
+        "No independent recomputation or multiple-testing review was performed.",
+        "Reported p-values, effect sizes, confidence intervals, correlations, and score summaries are not validation evidence until raw cohort lineage and analysis code are frozen and independently rerun."
+      ]
+    },
+    {
+      "claim_id": "claim_39b70073f93ee0162a02",
+      "source_id": "openastro:synastry-upload:top5-harmonic-support-csv",
+      "record_id": "syn_table_39b70073f93ee0162a02",
+      "claim_type": "source_reported_statistical_output",
+      "status": "unverified_pending_recalculation",
+      "evidence_class": "source_derived",
+      "reported_table_columns": [
+        "chart_id",
+        "pair_id",
+        "promise_mean",
+        "timing_mean",
+        "volatility_mean",
+        "avg_weight",
+        "max_weight",
+        "harmonic_support"
+      ],
+      "reported_row_count": 5,
+      "limitations": [
+        "No independent recomputation or multiple-testing review was performed.",
+        "Reported p-values, effect sizes, confidence intervals, correlations, and score summaries are not validation evidence until raw cohort lineage and analysis code are frozen and independently rerun."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "status": "integrated_with_research_boundaries",
+  "master_ref": "data/unified/unified_astrology_master.json",
+  "artifact_hashes": {
+    "data/ingested-synastry-research/synastry_source_inventory.json": "788159dd7dcabb71b90f8a381f7d32e6035c5938616285ef6ba1018afd318173",
+    "data/ingested-synastry-research/synastry_normalized_records.json": "f9b46a7c4ee0138e5ddc2703b73d685662a766f468e841d2206576bc51fa5eb4",
+    "data/ingested-synastry-research/synastry_statistical_claim_register.json": "89243531bd85d78e17cfe089f533af8e2ebfc4b4d19be365a44000e740fa3961",
+    "data/ingested-synastry-research/synastry_discrepancy_register.json": "5493f65eef5a05d6e6956616ee9893939892136e17115d83da0f6567f35f80b2",
+    "data/ingested-synastry-research/synastry_validation_report.json": "d32f313a11e8908e9d168210bad01a343a6403c855779e3ce0af4476d00ab940"
+  },
+  "checks": {
+    "validation_passed_with_warnings": true,
+    "source_count_matches": true,
+    "unexecuted_code_remains_unexecuted": true,
+    "reported_claims_remain_unverified": true,
+    "cohort_provenance_gaps_visible": true,
+    "no_active_observations_or_labels": true
+  }
+}

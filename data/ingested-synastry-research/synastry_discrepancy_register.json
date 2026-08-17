@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "discrepancy_id": "small-sample-astro-databank-scorer-template-csv",
+      "source_id": "openastro:synastry-upload:astro-databank-scorer-template-csv",
+      "status": "pending_review",
+      "detail": "Table has 4 rows. It may be useful as a fixture or exploratory source table but is not sufficient by itself for generalizable model training or confirmatory validation."
+    },
+    {
+      "discrepancy_id": "small-sample-astro-workflow-plan-csv",
+      "source_id": "openastro:synastry-upload:astro-workflow-plan-csv",
+      "status": "pending_review",
+      "detail": "Table has 5 rows. It may be useful as a fixture or exploratory source table but is not sufficient by itself for generalizable model training or confirmatory validation."
+    },
+    {
+      "discrepancy_id": "small-sample-astroinvestigators-weighting-examples-csv",
+      "source_id": "openastro:synastry-upload:astroinvestigators-weighting-examples-csv",
+      "status": "pending_review",
+      "detail": "Table has 6 rows. It may be useful as a fixture or exploratory source table but is not sufficient by itself for generalizable model training or confirmatory validation."
+    },
+    {
+      "discrepancy_id": "small-sample-celebrity-effect-sizes-ci-report-csv",
+      "source_id": "openastro:synastry-upload:celebrity-effect-sizes-ci-report-csv",
+      "status": "pending_review",
+      "detail": "Table has 5 rows. It may be useful as a fixture or exploratory source table but is not sufficient by itself for generalizable model training or confirmatory validation."
+    },
+    {
+      "discrepancy_id": "small-sample-celebrity-significance-report-csv",
+      "source_id": "openastro:synastry-upload:celebrity-significance-report-csv",
+      "status": "pending_review",
+      "detail": "Table has 5 rows. It may be useful as a fixture or exploratory source table but is not sufficient by itself for generalizable model training or confirmatory validation."
+    },
+    {
+      "discrepancy_id": "small-sample-celebrity-statistical-tests-csv",
+      "source_id": "openastro:synastry-upload:celebrity-statistical-tests-csv",
+      "status": "pending_review",
+      "detail": "Table has 5 rows. It may be useful as a fixture or exploratory source table but is not sufficient by itself for generalizable model training or confirmatory validation."
+    },
+    {
+      "discrepancy_id": "cohort-provenance-celebrity-synastry-25-csv",
+      "source_id": "openastro:synastry-upload:celebrity-synastry-25-csv",
+      "status": "pending_review",
+      "detail": "Cohort use is blocked until sampling frame, inclusion/exclusion criteria, relationship-outcome coding, birth-data source/Rodden ratings, consent or public-data basis, duplicate policy, and missingness policy are documented."
+    },
+    {
+      "discrepancy_id": "small-sample-celebrity-synastry-correlation-matrix-csv",
+      "source_id": "openastro:synastry-upload:celebrity-synastry-correlation-matrix-csv",
+      "status": "pending_review",
+      "detail": "Table has 6 rows. It may be useful as a fixture or exploratory source table but is not sufficient by itself for generalizable model training or confirmatory validation."
+    },
+    {
+      "discrepancy_id": "small-sample-celebrity-synastry-scored-mock-csv",
+      "source_id": "openastro:synastry-upload:celebrity-synastry-scored-mock-csv",
+      "status": "pending_review",
+      "detail": "Table has 15 rows. It may be useful as a fixture or exploratory source table but is not sufficient by itself for generalizable model training or confirmatory validation."
+    },
+    {
+      "discrepancy_id": "small-sample-celebrity-synastry-scored-template-csv",
+      "source_id": "openastro:synastry-upload:celebrity-synastry-scored-template-csv",
+      "status": "pending_review",
+      "detail": "Table has 15 rows. It may be useful as a fixture or exploratory source table but is not sufficient by itself for generalizable model training or confirmatory validation."
+    },
+    {
+      "discrepancy_id": "small-sample-celebrity-synastry-test-results-csv",
+      "source_id": "openastro:synastry-upload:celebrity-synastry-test-results-csv",
+      "status": "pending_review",
+      "detail": "Table has 5 rows. It may be useful as a fixture or exploratory source table but is not sufficient by itself for generalizable model training or confirmatory validation."
+    },
+    {
+      "discrepancy_id": "cohort-provenance-celebrity-synastry-with-overlays-csv",
+      "source_id": "openastro:synastry-upload:celebrity-synastry-with-overlays-csv",
+      "status": "pending_review",
+      "detail": "Cohort use is blocked until sampling frame, inclusion/exclusion criteria, relationship-outcome coding, birth-data source/Rodden ratings, consent or public-data basis, duplicate policy, and missingness policy are documented."
+    },
+    {
+      "discrepancy_id": "small-sample-celebrity-synastry-with-overlays-csv",
+      "source_id": "openastro:synastry-upload:celebrity-synastry-with-overlays-csv",
+      "status": "pending_review",
+      "detail": "Table has 15 rows. It may be useful as a fixture or exploratory source table but is not sufficient by itself for generalizable model training or confirmatory validation."
+    },
+    {
+      "discrepancy_id": "small-sample-harmonic-synastry-notes-csv",
+      "source_id": "openastro:synastry-upload:harmonic-synastry-notes-csv",
+      "status": "pending_review",
+      "detail": "Table has 4 rows. It may be useful as a fixture or exploratory source table but is not sufficient by itself for generalizable model training or confirmatory validation."
+    },
+    {
+      "discrepancy_id": "small-sample-lowest-harmonic-support-csv",
+      "source_id": "openastro:synastry-upload:lowest-harmonic-support-csv",
+      "status": "pending_review",
+      "detail": "Table has 5 rows. It may be useful as a fixture or exploratory source table but is not sufficient by itself for generalizable model training or confirmatory validation."
+    },
+    {
+      "discrepancy_id": "cohort-provenance-obama-obama-synastry-test-csv",
+      "source_id": "openastro:synastry-upload:obama-obama-synastry-test-csv",
+      "status": "pending_review",
+      "detail": "Cohort use is blocked until sampling frame, inclusion/exclusion criteria, relationship-outcome coding, birth-data source/Rodden ratings, consent or public-data basis, duplicate policy, and missingness policy are documented."
+    },
+    {
+      "discrepancy_id": "small-sample-obama-obama-synastry-test-csv",
+      "source_id": "openastro:synastry-upload:obama-obama-synastry-test-csv",
+      "status": "pending_review",
+      "detail": "Table has 1 rows. It may be useful as a fixture or exploratory source table but is not sufficient by itself for generalizable model training or confirmatory validation."
+    },
+    {
+      "discrepancy_id": "small-sample-pair-summary-csv",
+      "source_id": "openastro:synastry-upload:pair-summary-csv",
+      "status": "pending_review",
+      "detail": "Table has 25 rows. It may be useful as a fixture or exploratory source table but is not sufficient by itself for generalizable model training or confirmatory validation."
+    },
+    {
+      "discrepancy_id": "small-sample-pair-summary-agg-csv",
+      "source_id": "openastro:synastry-upload:pair-summary-agg-csv",
+      "status": "pending_review",
+      "detail": "Table has 25 rows. It may be useful as a fixture or exploratory source table but is not sufficient by itself for generalizable model training or confirmatory validation."
+    },
+    {
+      "discrepancy_id": "small-sample-pair-summary-duration-csv",
+      "source_id": "openastro:synastry-upload:pair-summary-duration-csv",
+      "status": "pending_review",
+      "detail": "Table has 25 rows. It may be useful as a fixture or exploratory source table but is not sufficient by itself for generalizable model training or confirmatory validation."
+    },
+    {
+      "discrepancy_id": "small-sample-pair-summary-duration-binary-csv",
+      "source_id": "openastro:synastry-upload:pair-summary-duration-binary-csv",
+      "status": "pending_review",
+      "detail": "Table has 25 rows. It may be useful as a fixture or exploratory source table but is not sufficient by itself for generalizable model training or confirmatory validation."
+    },
+    {
+      "discrepancy_id": "small-sample-rodden-aa-vs-a-score-summary-csv",
+      "source_id": "openastro:synastry-upload:rodden-aa-vs-a-score-summary-csv",
+      "status": "pending_review",
+      "detail": "Table has 2 rows. It may be useful as a fixture or exploratory source table but is not sufficient by itself for generalizable model training or confirmatory validation."
+    },
+    {
+      "discrepancy_id": "small-sample-sample-score-tests-csv",
+      "source_id": "openastro:synastry-upload:sample-score-tests-csv",
+      "status": "pending_review",
+      "detail": "Table has 3 rows. It may be useful as a fixture or exploratory source table but is not sufficient by itself for generalizable model training or confirmatory validation."
+    },
+    {
+      "discrepancy_id": "cohort-provenance-scored-25-couple-dataset-csv",
+      "source_id": "openastro:synastry-upload:scored-25-couple-dataset-csv",
+      "status": "pending_review",
+      "detail": "Cohort use is blocked until sampling frame, inclusion/exclusion criteria, relationship-outcome coding, birth-data source/Rodden ratings, consent or public-data basis, duplicate policy, and missingness policy are documented."
+    },
+    {
+      "discrepancy_id": "small-sample-scored-25-couple-dataset-csv",
+      "source_id": "openastro:synastry-upload:scored-25-couple-dataset-csv",
+      "status": "pending_review",
+      "detail": "Table has 25 rows. It may be useful as a fixture or exploratory source table but is not sufficient by itself for generalizable model training or confirmatory validation."
+    },
+    {
+      "discrepancy_id": "cohort-provenance-scored-25-couple-dataset-volatility-csv",
+      "source_id": "openastro:synastry-upload:scored-25-couple-dataset-volatility-csv",
+      "status": "pending_review",
+      "detail": "Cohort use is blocked until sampling frame, inclusion/exclusion criteria, relationship-outcome coding, birth-data source/Rodden ratings, consent or public-data basis, duplicate policy, and missingness policy are documented."
+    },
+    {
+      "discrepancy_id": "small-sample-scored-25-couple-dataset-volatility-csv",
+      "source_id": "openastro:synastry-upload:scored-25-couple-dataset-volatility-csv",
+      "status": "pending_review",
+      "detail": "Table has 25 rows. It may be useful as a fixture or exploratory source table but is not sufficient by itself for generalizable model training or confirmatory validation."
+    },
+    {
+      "discrepancy_id": "small-sample-top5-harmonic-support-csv",
+      "source_id": "openastro:synastry-upload:top5-harmonic-support-csv",
+      "status": "pending_review",
+      "detail": "Table has 5 rows. It may be useful as a fixture or exploratory source table but is not sufficient by itself for generalizable model training or confirmatory validation."
+    }
+  ]
+}

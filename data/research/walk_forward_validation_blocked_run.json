@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "wf-readiness-20260817T083924Z",
+  "run_type": "walk_forward_pre_execution_gate",
+  "is_walk_forward_validation_result": false,
+  "execution_status": "blocked_pre_execution",
+  "run_started_at": "2026-08-17T08:39:24.922263+00:00",
+  "run_finished_at": "2026-08-17T08:39:24.922311+00:00",
+  "experiment_id": null,
+  "dataset_manifest_hash": "bb20996deb58d14721023dbbd8e8783867d33b16183abbb0bfa5d2fdda3760cc",
+  "walk_forward_plan_hash": "b522df0022ac90e0f251d804b8ec624e37fc651ea59821b503190b64a2254f6b",
+  "candidate_material_hash": "95fd44b499e7baa561fd1da071257471ce5d568d9308ff6077908c924262b84b",
+  "source_inventory_hash": null,
+  "feature_dictionary_hash": null,
+  "label_dictionary_hash": null,
+  "split_manifest_hash": null,
+  "code_version": "local_contract_gate_only",
+  "environment_lock_or_dependency_versions": "not_applicable_no_model_execution",
+  "random_seed": null,
+  "observation_count_before_exclusions": 0,
+  "observation_count_after_exclusions": 0,
+  "exclusion_reasons": [
+    "No eligible observations were acquired; no rows were admitted to validation."
+  ],
+  "missingness_summary": {
+    "status": "not_computed_no_eligible_observation_dataset"
+  },
+  "leakage_audit_summary": {
+    "status": "not_run_no_rows",
+    "feature_cutoff_audit": "not_run",
+    "outcome_separation_audit": "not_run",
+    "purge_embargo_audit": "not_run",
+    "final_holdout_audit": "not_run"
+  },
+  "folds": [],
+  "baseline_results": {
+    "status": "not_run"
+  },
+  "candidate_results": {
+    "status": "not_run"
+  },
+  "uncertainty_method": "not_run",
+  "regime_results": {
+    "status": "not_run"
+  },
+  "negative_or_null_results": {
+    "status": "not_applicable_validation_not_executed"
+  },
+  "blockers": [
+    {
+      "gate": "observations_acquired",
+      "status": "blocked",
+      "detail": "No approved, normalized observation dataset is registered."
+    },
+    {
+      "gate": "labels_acquired",
+      "status": "blocked",
+      "detail": "No independently constructed, frozen label dataset is registered."
+    },
+    {
+      "gate": "source_rights",
+      "status": "blocked",
+      "detail": "Source rights are not resolved for all included observations."
+    },
+    {
+      "gate": "execution_status",
+      "status": "blocked",
+      "detail": "Manifest execution status is 'not_executed', not 'ready_for_execution'."
+    },
+    {
+      "gate": "walk_forward_plan_status",
+      "status": "blocked",
+      "detail": "Plan status is 'not_executed_requires_observations_and_labels'; it is a methodology contract rather than an executable split manifest."
+    },
+    {
+      "gate": "candidate_dataset_lineage",
+      "status": "blocked",
+      "detail": "Supplied OHLCV-like candidate is 'unverified_candidate_not_acquired'; instrument, provider, rights, adjustment basis, timezone, availability timestamps, and outcome labels are not established."
+    }
+  ],
+  "required_next_step_ids": [
+    "wf-01",
+    "wf-02",
+    "wf-03",
+    "wf-04",
+    "wf-05",
+    "wf-06"
+  ],
+  "limitations": [
+    "This is a pre-execution gate record, not a backtest, fold log, model result, or performance report.",
+    "No synthetic observations, labels, folds, metrics, baselines, or statistical claims were created.",
+    "Financial and market materials remain methodology-bound and research-only."
+  ],
+  "prohibited_use_notice": "This record is not a trading instruction, position-sizing rule, personal financial recommendation, guaranteed forecast, or causal claim."
+}
