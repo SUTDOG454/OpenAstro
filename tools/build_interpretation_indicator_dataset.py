@@ -8,7 +8,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 import sys
 
-ROOT = Path('/home/ubuntu/openastro_worktree')
+ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'data/interpretation-indicators'
 
 sys.path.insert(0, str(ROOT / 'tools'))

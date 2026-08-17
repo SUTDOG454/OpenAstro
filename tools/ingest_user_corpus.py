@@ -9,7 +9,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-ROOT = Path('/home/ubuntu/openastro_worktree')
+ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / 'data/sources/2026-08-user-uploads/raw'
 PDF_TEXT = ROOT / 'data/sources/2026-08-user-uploads/derived-pdf-text'
 REFERENCED_TASKS = ROOT / 'data/sources/2026-08-user-uploads/referenced_task_inventory.json'

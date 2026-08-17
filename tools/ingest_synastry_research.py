@@ -9,7 +9,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-ROOT = Path('/home/ubuntu/openastro_worktree')
+ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / 'data/sources/2026-08-synastry-research/raw'
 OUT = ROOT / 'data/ingested-synastry-research'
 
