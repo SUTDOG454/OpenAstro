@@ -31,7 +31,7 @@ II. Advanced Weighting Algorithm: The "Modifier" Logic
 I have formalized the logic for the Modifier Schema in the master-jimmy_dataset.json.
 Formula Example: > If the Natal Sun has a base strength of 8.5, but the Progressed Moon is in a "Balsamic" phase (Modifier 0.7), and the Solar Return Sun is in the 12th House (Modifier 0.6), the resulting Cumulative Strength for a 2026 launch would be:
 (A signal that the "Hero Phase" is currently restricted).
-III. Unified JSON Structure: recursive_strength_protocol.json
+III. Unified JSON Structure: `data/methodologies/recursive-strength-protocol.json`
 This structure allows the engine to cross-reference multiple chart types and apply the modifiers in order.
 {
   "recursive_strength_protocol": {
