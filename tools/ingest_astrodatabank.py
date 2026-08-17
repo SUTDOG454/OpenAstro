@@ -155,12 +155,13 @@ def json_records(path: Path) -> Iterable[tuple[dict[str, Any], str]]:
 
 
 def input_paths(input_path: Path) -> list[Path]:
-    if input_path.is_file():
+    supported_suffixes = {".json", ".db", ".sqlite", ".sqlite3"}
+    if input_path.is_file() and input_path.suffix.lower() in supported_suffixes:
         return [input_path]
     if input_path.is_dir():
         files = sorted(
             path for path in input_path.rglob("*")
-            if path.is_file() and path.suffix.lower() in {".json", ".db", ".sqlite", ".sqlite3"}
+            if path.is_file() and path.suffix.lower() in supported_suffixes
         )
         if files:
             return files
