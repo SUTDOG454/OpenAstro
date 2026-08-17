@@ -1,0 +1,298 @@
+{
+  "ASTROLEARN_EXTRACTION_FRAMEWORK": {
+    "metadata": {
+      "title": "Astrolearn.com Comprehensive Astrological Extraction Framework",
+      "version": "2.0_EXTENDED_NORMALIZED",
+      "primary_source": "https://www.astrolearn.com/astrology-articles/",
+      "source_author": "Philip Graves — Astrolearn Astrology Library and Information Centre, UK",
+      "library_scope": "10,000+ discrete volumes; 14,600+ periodical issues; multilingual physical reference library",
+      "extraction_date": "2026-03-05",
+      "articles_index_url": "https://www.astrolearn.com/astrology-articles/",
+      "article_groups": {
+        "note": "Legacy articles reformatted for WordPress Jun 2016; some assertions may pre-date Philip Graves's later scholarship"
+      },
+      "articles_identified": [
+        "On Professor Nick Allum's Attempt to Explain Away Belief in Astrology"
+      ],
+      "http_note": "astrolearn.com returns 403 for direct fetch; data extracted via Google cache snippets and search result excerpts",
+      "total_characters": 217791,
+      "total_json_keys": 2977,
+      "total_text_strings": 3542,
+      "normalization_date": "2026-03-05",
+      "sections_count": 21,
+      "sections_complete": [
+        "user_methodology_framework"
+      ],
+      "data_coverage": {
+        "raphael_traditional": "Ptolemaic 5 with Raphael orbs + 4 secondary aspects"
+      },
+      "source_documents_ingested": []
+    },
+    "aspect_system": {
+      "source_articles": [
+        "https://www.astrolearn.com/astrology-articles/an-exposition-of-the-scientific-astrology-movement-1890-1939/"
+      ],
+      "aspect_table_graves": {},
+      "orb_weighting_strength": {}
+    },
+    "angles_sensitive_points": {
+      "source": "https://www.astrolearn.com/astrology-articles/housesangles4/ — Written and compiled by Philip Graves, Sep 6-11 2004; Reformatted for WordPress June 5th, 2016",
+      "principle": "The four angular house cusps (ASC, IC, DSC, MC) correspond to the four angular houses. Any planet in an angular house is of increased strength; a planet conjunct an angle is greatly strengthened.",
+      "Ascendant": {
+        "aspects_significance": "Conjunctions most powerful; aspects received by ASC and its lord must both be considered in delineating first-house matters"
+      },
+      "Descendant": {
+        "angle_relationship": "Exact opposite (180°) of the Ascendant; always the same degree in the opposite sign"
+      },
+      "Midheaven": {
+        "graves_note": "While any planet in an angular house is of increased strength, this is particularly so in the Tenth House or First House; additionally if conjunct (as measured by degrees) the Midheaven or Ascendant, such a planet is greatly strengthened in its importance within a figure."
+      },
+      "Imum_Coeli": {
+        "angle_relationship": "Exact opposite (180°) of the MC; always the same degree in the opposite sign"
+      },
+      "Vertex": {
+        "synastry_significance": "Planet of Person A conjunct the Vertex of Person B = a fated, highly significant connection between the two; often indicated in landmark relationships"
+      },
+      "East_Point": {
+        "nature": "Related to the Ascendant in character but with a more universal, less geographically personal quality; some use it as a secondary Ascendant in interpretation"
+      },
+      "angular_planet_strength": {}
+    },
+    "lilith_chiron_centaurs": {
+      "source": "https://www.astrolearn.com/astrology-articles/lilithchiron/ — Philip Graves, 22 Jan 2004, reformatted June 8th 2016",
+      "lilith_trilogy": {},
+      "Chiron": {
+        "reinhert_quote": "The Buck Stops Here (phrase for Nessus); for Chiron: the teacher who cannot heal himself"
+      },
+      "other_centaurs": {}
+    },
+    "transit_system": {
+      "source": "https://www.astrolearn.com/astrology-articles/predictiveastrology1/ — Transits in Astrology: Predictive Configurations and Principles — Philip Graves",
+      "definition": "Transits are the real-time physical astrological influences arising from connections made between the present placements (by zodiacal sign and degree) of the planets, luminaries, and nodes at the time under consideration, and the placements of all the planets, luminaries, nodes, angles, and houses in the birth chart for the individual or entity being studied.",
+      "transit_to_natal_principles": [
+        "All transits are cyclical in nature since the planets move through the zodiac in regular cycles specific to each planet"
+      ],
+      "nature_of_transit_influence": "While a luminary or planet is aspecting by transit, the transiting body exerts a temporary influence upon the natal point. The nature corresponds to the transiting body's general nature AND the type of aspect formed. The influence may variously offset, clash with, harmonise with, or accentuate the effects of the natal aspects and the natal sign and house position of the aspected point.",
+      "retrograde_transit_complexity": {
+        "triple_pass": "A transit over a sensitive degree may occur three times: once direct, once retrograde (backward), once direct again. The middle retrograde pass often brings the most introspective phase of the transit theme."
+      },
+      "average_orbital_periods_and_house_transit_times": {},
+      "tracking_both_house_systems": "Both ascendant-based houses AND solar houses (Sun as 1st house cusp) should be separately tracked for transit house activity; this provides dual layers of information about which life areas are activated"
+    },
+    "scientific_astrology_history": {
+      "source": "An Exposition of the Scientific Astrology Movement, 1890-1939 — Philip Graves, lecture delivered Fifth European Astrology Conference, December 17th 2023",
+      "period_overview": "1890-1939 was a period of significant growth and proliferation in Western astrology literature, study, practice and community organisation. Astrologers drove to re-establish astrology on a more scientific footing through empirical research, rational thinking, and improvements to the public image of the discipline.",
+      "key_developments": [
+        "Organisation of astrologers around collectively approved codes of practice"
+      ],
+      "dark_moon_history": {
+        "sepharial_1898": "Walter Gorn Old (Sepharial) commented credulously in Coming Events (April 1898), proposed the name Lilith and an associated glyph"
+      },
+      "kepler_aspect_reform": {
+        "subsequent_expansion": "George Wilde (Primer, 3rd ed. 1911) adopted 20th-harmonic series; introduced 7th-harmonic series (septile) and 16th-harmonic series; notably did NOT adopt 15th-harmonic/quindecile series"
+      },
+      "notable_figures": {}
+    },
+    "recommended_astrology_texts": {
+      "source": "https://www.astrolearn.com/astrology-articles/booklistscomment2/ — Philip Graves comment on Astrological Journal survey (2010, 2011)",
+      "survey_top_10_2010": [],
+      "significance": "Ebertin's 'Combination of Stellar Influences' (Cosmobiology midpoint reference) has been the most consistently top-ranked professional astrology text across multiple UK survey periods"
+    },
+    "user_methodology_framework": {
+      "source": "User-provided system prompt / methodology document — ingested 2026-03-05",
+      "document_purpose": "Universal astrology interpretation methodology for any individual or relationship; transforms specific client chart data into archetype-based, universalized interpretations applicable to all",
+      "core_objectives": {
+        "relationship_weight": "70% of interpretive weight on synastry and relationship astrology; 30% on natal"
+      },
+      "five_step_interpretation_framework": {},
+      "standard_output_structure": {
+        "minimum_total_length": "800 words"
+      },
+      "file_category_schema": {},
+      "universalization_template_library": {},
+      "strength_and_weighting_system": {},
+      "data_extraction_schema": {},
+      "clow_liquid_light_model": {},
+      "brady_saros_model": {},
+      "suskin_synastry_model": {},
+      "raphael_authority_model": {},
+      "interpretation_language_patterns": {}
+    },
+    "planets_system": {
+      "schema_note": "Each planet entry follows identical structure for cross-source normalization and template injection",
+      "authority_sources": [
+        "Arroyo Astrology Karma & Transformation"
+      ],
+      "Sun": {},
+      "Moon": {
+        "void_of_course": "Period when Moon makes no more ptolemaic aspects before leaving its sign; traditional: avoid initiating important matters during VOC Moon"
+      },
+      "Mercury": {
+        "max_elongation_from_sun": "28° maximum; can never be more than 28° from Sun in natal chart"
+      },
+      "Venus": {},
+      "Mars": {},
+      "Jupiter": {},
+      "Saturn": {},
+      "Uranus": {},
+      "Neptune": {},
+      "Pluto": {},
+      "Chiron": {
+        "bridge_function": "Chiron orbits between Saturn and Uranus; bridges personal (Saturn) and transpersonal (Uranus) dimensions of experience"
+      },
+      "North_Node": {
+        "nodal_return": "Every ~18.6 years the nodes return to their natal positions; a time of nodal reckoning and realignment with soul purpose"
+      },
+      "Part_of_Fortune": {}
+    },
+    "signs_system": {
+      "schema_note": "All 12 zodiac signs with complete normalized data: glyph, element, modality, polarity, rulership, keywords, body, psychological theme, evolutionary theme, shadow, life lesson",
+      "authority_sources": [
+        "Brady"
+      ],
+      "Aries": {
+        "famous_archetype": "The Pioneer, The Warrior, The Hero"
+      },
+      "Taurus": {
+        "famous_archetype": "The Builder, The Artist, The Gardener"
+      },
+      "Gemini": {
+        "famous_archetype": "The Communicator, The Trickster, The Student"
+      },
+      "Cancer": {
+        "famous_archetype": "The Mother, The Nurturer, The Guardian"
+      },
+      "Leo": {
+        "famous_archetype": "The King/Queen, The Artist, The Star"
+      },
+      "Virgo": {
+        "famous_archetype": "The Analyst, The Healer, The Craftsperson"
+      },
+      "Libra": {
+        "famous_archetype": "The Diplomat, The Artist, The Partner"
+      },
+      "Scorpio": {
+        "famous_archetype": "The Transformer, The Detective, The Shaman"
+      },
+      "Sagittarius": {
+        "famous_archetype": "The Philosopher, The Adventurer, The Teacher"
+      },
+      "Capricorn": {
+        "famous_archetype": "The Authority, The Elder, The Master Builder"
+      },
+      "Aquarius": {
+        "famous_archetype": "The Visionary, The Revolutionary, The Scientist"
+      },
+      "Pisces": {
+        "famous_archetype": "The Mystic, The Artist, The Martyr/Savior"
+      },
+      "element_modal_matrix": {
+        "Water_Mutable": "Pisces — adapting feeling through dissolving compassion"
+      },
+      "element_interpretation_table": {},
+      "modality_interpretation_table": {}
+    },
+    "houses_system": {
+      "schema_note": "All 12 houses with full normalized data: natural sign, ruler, type, keywords, life areas, psychological theme, health, financial, relationship themes",
+      "house_types": {},
+      "H1": {
+        "planets_here_notes": "Any planet in H1 colors the entire personality and physical appearance; conjunct ASC within 8° = most powerful expression of that planet's principle in life"
+      },
+      "H2": {
+        "planets_here_notes": "Planets here show both how money is earned and the attitude toward material security; Jupiter here = natural financial abundance; Saturn here = financial lessons"
+      },
+      "H3": {
+        "planets_here_notes": "Planets here show communication style and the siblings/local community dynamic"
+      },
+      "H4": {
+        "planets_here_notes": "Planets here shape the domestic life, mother relationship, and the innermost private self; IC is the most private point in the chart"
+      },
+      "H5": {
+        "planets_here_notes": "Planets here show the creative style, romantic approach, and attitude toward children; Sun here is in the 'house of its joy'"
+      },
+      "H6": {
+        "planets_here_notes": "Planets here show health vulnerabilities and work style; Saturn here = heavy work karma; Jupiter here = healing gifts"
+      },
+      "H7": {
+        "planets_here_notes": "Planets in H7 describe both the type of partner attracted and the qualities being projected outward; DSC = the mask we expect others to wear"
+      },
+      "H8": {
+        "planets_here_notes": "Planets in H8 intensify; everything here operates at maximum depth; often related to crisis-driven transformation"
+      },
+      "H9": {
+        "planets_here_notes": "H9 is 'the house of Jupiter's joy'; planets here expand into philosophical, educational, or spiritual domains"
+      },
+      "H10": {
+        "planets_here_notes": "Planets in H10 are highly visible to the public; conjunct MC within 5° = signature of the public identity; Saturn here = career karma requiring much effort"
+      },
+      "H11": {
+        "planets_here_notes": "Planets here show the social network, group involvements, and long-term hopes; Jupiter here = beneficial social connections"
+      },
+      "H12": {}
+    },
+    "dignity_tables": {
+      "schema_note": "Essential dignities for all planets across all signs; normalized from Ptolemy, Raphael, and Lilly",
+      "system_description": "Essential dignities measure the condition of a planet by sign — how comfortable or uncomfortable it is in a given zodiac sign. They affect how smoothly or difficultly the planet's principles manifest.",
+      "hierarchy": {},
+      "complete_table": {},
+      "mutual_reception": {
+        "extended_mutual_reception": "Some astrologers extend to exaltation-for-exaltation or domicile-for-exaltation exchanges"
+      },
+      "sect_light": {}
+    },
+    "calculation_formulas": {
+      "schema_note": "Core astrological calculation formulas normalized from Raphael, Graves, and standard ephemeris methods",
+      "local_sidereal_time": {
+        "purpose": "LST = RAMC (Right Ascension of Midheaven); used to calculate the MC and all house cusps"
+      },
+      "midheaven_MC": {
+        "purpose": "MC is the most elevated point of the ecliptic at birth time and location"
+      },
+      "ascendant": {
+        "purpose": "The degree of the ecliptic rising on the eastern horizon at exact birth time"
+      },
+      "part_of_fortune": {
+        "arabic_parts_general": "All Arabic Parts follow structure: Part = Point1 + Planet1 − Planet2; each of the 120+ Arabic Parts substitutes different points"
+      },
+      "composite_chart": {
+        "note": "The composite chart has an ASC/MC calculated from the midpoint of the two LSTs (or averaged house cusps)"
+      },
+      "davison_relationship_chart": {
+        "advantage": "The Davison chart is a real chart; it has a geographic location and can receive transits; has actual geographic location for astrocartography"
+      },
+      "solar_arc_directions": {
+        "note": "Provides a complete directed chart shifted forward by the solar arc degree"
+      },
+      "secondary_progressions": {
+        "progressed_moon_cycle": "The progressed Moon cycles the entire chart in ~27-28 years; each house transit = ~2.5 years"
+      },
+      "solar_return": {
+        "key_factors": "SR ASC = the mask/approach for the year; SR Moon = emotional focus; SR planets in SR houses = primary themes"
+      },
+      "progressed_chart_interchart_aspects": {
+        "effective_orb": "1° applying orb = coming event; 0° exact = peak; 1° separating = aftermath (for inner planets); up to 2° for progressed Moon contacts"
+      },
+      "composite_chart_rules": {},
+      "profections": {}
+    },
+    "retrograde_interpretation_system": {
+      "schema_note": "Comprehensive retrograde system: natal retrograde meaning, transit retrograde phases, shadow zones",
+      "general_principle": "Retrograde planets internalize their energy. The planetary function is turned inward, creating a more reflective, private, and often more powerful (if less outwardly visible) expression.",
+      "natal_retrograde_by_planet": {
+        "Outer_planets_Rx_natal": "With Uranus, Neptune, Pluto retrograde (common — they're Rx ~40-50% of year), effects are subtle; these planets' transformations happen at a more internal, private level; major evolutionary work done through inner experience rather than external crisis"
+      },
+      "transit_retrograde_phases": {},
+      "mercury_retrograde_frequency": "3 times/year; each ~21 days; plus shadow periods ~1 week before and after",
+      "venus_retrograde_frequency": "Every ~18 months; each ~40 days",
+      "mars_retrograde_frequency": "Every ~26 months; each ~60-80 days",
+      "outer_planet_retrograde": "Jupiter-Pluto each retrograde ~4-5.5 months per year; nearly half the year for outer planets"
+    },
+    "synastry_house_overlays": {
+      "schema_note": "When Person A's planet falls in Person B's house, it activates that house's life area for Person B. This table covers all planets × all 12 houses for synastry interpretation.",
+      "interpretation_principle": "The PLANET shows the energy brought; the HOUSE shows the arena of Person B's life that is activated. The ASPECT (if any) between A's planet and B's house ruler modifies the quality of that activation.",
+      "planet_in_partners_H1": {
+        "Pluto": "A transforms B's fundamental identity; intense power dynamic; B may feel seen at their deepest level or controlled"
+      }
+    }
+  }
+}

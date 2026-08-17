@@ -32,3 +32,15 @@ The normalization scripts are documented in [`tools/README.md`](tools/README.md)
 ## Contribution guidance
 
 Keep prose in Markdown, data in valid JSON, UI examples in `components/`, and assets in `assets/`. Before moving or deleting an asset, check for in-repository references and validate JSON with `jq empty <file>` where applicable.
+
+
+## Optional DeepSeek utility
+
+`deepseek_client.py` and `examples/deepseek_example.py` provide an optional HTTP client example. They require a `DEEPSEEK_API_KEY` supplied through the environment or a repository secret; keys must never be committed to the repository.
+
+```bash
+export DEEPSEEK_API_KEY="your_key_here"
+python examples/deepseek_example.py
+```
+
+The optional client should be reviewed for provider compatibility, data-handling requirements, and dependency policy before use with non-public information.
