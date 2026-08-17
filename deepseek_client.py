@@ -2,9 +2,14 @@ import os
 from typing import Any, Dict, Optional
 
 import requests
-from dotenv import load_dotenv
 
-load_dotenv()  # optional: loads .env in working dir
+try:
+    from dotenv import load_dotenv
+except ImportError:  # Optional convenience dependency; environment variables remain sufficient.
+    def load_dotenv() -> bool:
+        return False
+
+load_dotenv()  # Optional: loads .env in the working directory when python-dotenv is installed.
 
 API_URL = os.getenv("DEEPSEEK_API_URL", "https://api.deepseek.ai/v1/search")
 
