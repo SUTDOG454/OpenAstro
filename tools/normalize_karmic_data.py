@@ -2,11 +2,11 @@ import json
 import os
 
 def normalize_and_merge():
-    repo_root = "/home/ubuntu/OpenAstro"
-    definitions_path = os.path.join(repo_root, "mfw/definitions/")
+    repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    definitions_path = os.path.join(repo_root, "mfw", "definitions")
     glossary_file = os.path.join(definitions_path, "karmic_glossary.json")
     methodology_file = os.path.join(definitions_path, "karmic_methodology.json")
-    framework_file = os.path.join(repo_root, "unified_delineation_framework.json")
+    framework_file = os.path.join(repo_root, "data", "frameworks", "unified-delineation-framework.json")
     
     with open(glossary_file, 'r') as f:
         glossary = json.load(f)
