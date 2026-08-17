@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0.0",
+  "status": "source_ingested_with_review_boundaries",
+  "generated_at": "2026-08-17T08:25:44.263625+00:00",
+  "source_count": 29,
+  "normalized_record_count": 1785,
+  "quarantined_source_count": 2,
+  "discrepancy_count": 4,
+  "record_type_counts": {
+    "aspect_taxonomy_reference": 10,
+    "glossary_definition": 493,
+    "financial_framework_metadata": 1,
+    "financial_technique_proposal": 38,
+    "economic_cycle_reference": 1,
+    "financial_cycle_source_proposal": 3,
+    "fixed_star_source_reference": 15,
+    "unverified_ohlcv_dataset_profile": 1,
+    "chart_type_proposal": 25,
+    "unvalidated_signal_candidate": 1050,
+    "unexecuted_code_metadata": 4,
+    "pdf_source_heading": 2,
+    "esoteric_source_heading": 61,
+    "source_knowledge_heading": 22,
+    "source_heading": 59
+  },
+  "tradition_scope_counts": {
+    "western_historical": 10,
+    "mixed_historical_reference": 493,
+    "financial_astrology": 44,
+    "western_fixed_star": 15,
+    "esoteric": 76,
+    "western": 18,
+    "western_(advanced_/_innovative)": 1,
+    "western_(hellenistic_/_medieval-derived)": 1,
+    "western_(paranatellonta)": 1,
+    "western_(karmic_/_lunar_nodes)": 1,
+    "vedic_/_jyotiṣa": 3,
+    "source_unspecified": 1050,
+    "implementation_reference": 4,
+    "mixed_source_reference": 83,
+    "vedic": 61
+  },
+  "top_source_record_counts": [
+    [
+      "openastro:user-upload:signals-pdf",
+      1050
+    ],
+    [
+      "openastro:user-upload:astrological-glossary-txt",
+      493
+    ],
+    [
+      "openastro:user-upload:esoteric-astro-txt",
+      61
+    ],
+    [
+      "openastro:user-upload:https-www-genspark-6648907462284373701-md",
+      59
+    ],
+    [
+      "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      40
+    ],
+    [
+      "openastro:user-upload:masterastrologycharttypes-txt",
+      25
+    ],
+    [
+      "openastro:user-upload:extracted-knowledge-txt",
+      22
+    ],
+    [
+      "openastro:user-upload:fixed-stars-1-txt",
+      15
+    ],
+    [
+      "openastro:user-upload:astrological-aspects-txt",
+      10
+    ],
+    [
+      "openastro:user-upload:financialastrologyplanetarycycles-detailedexploration-txt",
+      3
+    ],
+    [
+      "openastro:user-upload:astrodash-4m7y4aef-manus-space-pdf",
+      2
+    ],
+    [
+      "openastro:user-upload:historicaldata-1785490203238-csv",
+      1
+    ],
+    [
+      "openastro:user-upload:afe-quantreo-pipeline-2-py",
+      1
+    ],
+    [
+      "openastro:user-upload:antiscion-synastry-2-jsx-1-txt",
+      1
+    ],
+    [
+      "openastro:user-upload:astro-intelligence-ui-html",
+      1
+    ],
+    [
+      "openastro:user-upload:backtest-validation-guardrails-prevent-look-ahead-bias-state-leakage-and-research-live-divergence-py",
+      1
+    ]
+  ],
+  "high_level_boundaries": [
+    "Uploaded code is statically inspected only and never executed.",
+    "Personalized chart material is private context and excluded from generalized corpus records.",
+    "Sensitive sexual or medical-psychological interpretive material is quarantined from general delineation and training.",
+    "Financial or market material remains methodology-bound, research-only, and ineligible as a validated signal without the existing promotion gate.",
+    "Esoteric source material is retrieval-only and cannot enter Western, Vedic, or standard calculation engines."
+  ]
+}

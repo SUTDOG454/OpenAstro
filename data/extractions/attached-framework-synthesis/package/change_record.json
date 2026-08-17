@@ -1,0 +1,86 @@
+{
+  "request": {
+    "workflows": [
+      "openastro-release-data-pipeline",
+      "astrology-framework-synthesis",
+      "astrology-ingestion-implementation",
+      "astrology-engine"
+    ],
+    "scope": "Ingest and synthesize eleven attached artifacts with provenance and review boundaries."
+  },
+  "files_added": [
+    "astrology_master.json",
+    "astrology_report.md",
+    "calculations.json",
+    "change_record.json",
+    "coverage_gap_register.json",
+    "definitions.json",
+    "discrepancy.json",
+    "manifest.json",
+    "methodology_registry.json",
+    "normalized_records.json",
+    "validation_report.json"
+  ],
+  "implementation_status": "local_only_not_committed_or_pushed",
+  "tests": [
+    "python3 /home/ubuntu/inventory_attached_framework_synthesis.py",
+    "python3 /home/ubuntu/analyze_attached_framework_sources.py",
+    "python3 /home/ubuntu/skills/astrology-ingestion-implementation/scripts/validate_ingestion_package.py"
+  ],
+  "recommendations": [
+    "Review conflicting economic schemas before selecting a canonical candidate.",
+    "Obtain licenses or URLs for named external references.",
+    "Require consent-gated retrieval for sensitive content.",
+    "Add explicit calculation settings before promoting formulas."
+  ],
+  "decisions": [
+    "preserve duplicate economic sources",
+    "quarantine malformed sensitive JSON",
+    "do not promote production-ready claims",
+    "retain canonical registry ownership in astrology-data-unifi"
+  ],
+  "unresolved_issues": [
+    {
+      "id": "gap:ephemeris-calculation-settings",
+      "layer": "calculations",
+      "status": "unavailable",
+      "details": "Attached formulas do not include complete datetime, timezone, coordinates, zodiac, house system, precision, or ephemeris metadata."
+    },
+    {
+      "id": "gap:source-licenses",
+      "layer": "sources",
+      "status": "pending_review",
+      "details": "No source URLs or licenses were supplied for the attached texts."
+    },
+    {
+      "id": "gap:external-reference-verification",
+      "layer": "research",
+      "status": "pending_review",
+      "details": "Named bibliography and data providers require independent retrieval and license review."
+    },
+    {
+      "id": "gap:complete-asteroid-schema",
+      "layer": "entities",
+      "status": "pending_review",
+      "details": "Asteroid keyword content is source-derived and not automatically registered in the canonical entity registry."
+    },
+    {
+      "id": "gap:financial-research-protocol",
+      "layer": "research",
+      "status": "pending_review",
+      "details": "Economic and market modules lack hypothesis cards, chronology, baselines, uncertainty, and leakage controls."
+    },
+    {
+      "id": "gap:sensitive-content-consent",
+      "layer": "delineations",
+      "status": "pending_review",
+      "details": "Sensitive sexual-archetype content requires explicit consent and default exclusion."
+    },
+    {
+      "id": "gap:chart-source-data",
+      "layer": "calculations",
+      "status": "unavailable",
+      "details": "The chart synthesis has no complete source chart, birth data, or calculation request."
+    }
+  ]
+}

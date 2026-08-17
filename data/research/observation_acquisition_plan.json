@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.1.0",
+  "status": "not_started_no_observations_acquired",
+  "evidence_class": "methodology_bound",
+  "contract_source": "data/unified/research_contract.json#observation_acquisition_contract",
+  "evidence_boundary": {
+    "financial_and_market_materials": "methodology_bound_research_only",
+    "default_promotion_status": "not_eligible_without_validated_experiment",
+    "promotion_rule": "Financial or market material may be registered as a scoped research signal or indicator only after a separately versioned, reproducible, leakage-safe experiment meets its pre-registered acceptance criteria and completes independent review. Promotion does not create trading advice, a causal claim, or a guaranteed forecast.",
+    "prohibited_uses": [
+      "trading instructions",
+      "position sizing",
+      "personal financial advice",
+      "guaranteed forecasts",
+      "causal claims from symbolic associations"
+    ],
+    "non_claims": [
+      "No untested association is a validated signal.",
+      "A statistically reported association is not proof of a causal mechanism.",
+      "A promoted research signal is not a buy, sell, hold, allocation, or execution instruction."
+    ]
+  },
+  "contract": {
+    "status": "not_started_no_observations_acquired",
+    "purpose": "Define a reproducible, rights-aware path for collecting actual time-indexed observations without implying that data has been acquired or that an association has been validated.",
+    "preconditions": [
+      {
+        "step_id": "acq-01-register-hypothesis",
+        "requirement": "Create a versioned experiment record before any feature engineering or model selection.",
+        "required_fields": [
+          "research_question",
+          "null_hypothesis",
+          "population",
+          "unit_of_analysis",
+          "observation_window",
+          "feature_cutoff_definition",
+          "target_definition",
+          "target_window",
+          "candidate_feature_families",
+          "exclusions",
+          "baseline",
+          "metric",
+          "split_strategy",
+          "decision_rule",
+          "prohibited_uses"
+        ],
+        "failure_mode": "Block acquisition for an unregistered or outcome-shaped hypothesis."
+      },
+      {
+        "step_id": "acq-02-resolve-universe",
+        "requirement": "Define the asset or instrument universe, exchange, listing status, currency, historical membership rule, and exclusions before data retrieval.",
+        "required_fields": [
+          "universe_id",
+          "instrument_identifiers",
+          "exchange_or_market",
+          "currency",
+          "historical_membership_policy",
+          "delisting_and_corporate_action_policy",
+          "timezone",
+          "trading_calendar"
+        ],
+        "failure_mode": "Do not substitute a present-day universe for a historical universe without recording survivorship limitations."
+      },
+      {
+        "step_id": "acq-03-select-source-and-rights",
+        "requirement": "Create a source decision record for each provider and dataset before ingestion.",
+        "required_fields": [
+          "source_id",
+          "provider_name",
+          "dataset_or_endpoint",
+          "locator",
+          "license_or_terms_reference",
+          "permitted_research_use",
+          "retrieval_timestamp",
+          "coverage_window",
+          "frequency",
+          "timezone",
+          "adjustment_basis",
+          "revision_policy",
+          "rights_status"
+        ],
+        "failure_mode": "Exclude data with unresolved rights, unverifiable timing, or unknown adjustment basis."
+      },
+      {
+        "step_id": "acq-04-preserve-raw-inputs",
+        "requirement": "Store immutable raw files or responses and create a content hash before normalization.",
+        "required_fields": [
+          "raw_artifact_path",
+          "sha256",
+          "parser_version",
+          "retrieval_timestamp",
+          "source_id",
+          "row_count",
+          "schema_snapshot"
+        ],
+        "failure_mode": "No normalized dataset is accepted if its raw input or hash is absent."
+      },
+      {
+        "step_id": "acq-05-normalize-and-profile",
+        "requirement": "Normalize only representation-level fields, preserve source values, and profile duplicates, missingness, timestamp gaps, adjustments, and schema drift.",
+        "required_fields": [
+          "normalized_dataset_id",
+          "raw_to_normalized_mapping",
+          "duplicate_policy",
+          "missingness_profile",
+          "timestamp_coverage",
+          "schema_drift_report",
+          "data_quality_warnings"
+        ],
+        "failure_mode": "Reject silent deduplication, undocumented imputation, or missing availability timestamps."
+      },
+      {
+        "step_id": "acq-06-compute-astrology-features",
+        "requirement": "Compute astrology features only from an explicit deterministic calculation request and preserve engine, ephemeris, settings, and input time interpretation.",
+        "required_fields": [
+          "feature_family_id",
+          "calculation_engine",
+          "engine_version",
+          "ephemeris_or_data_version",
+          "coordinate_frame",
+          "zodiac_mode",
+          "house_system_if_applicable",
+          "ayanamsa_if_applicable",
+          "aspect_and_orb_policy_if_applicable",
+          "calculation_timestamp_policy"
+        ],
+        "failure_mode": "Mark unavailable rather than approximating an unsupported calculation or blending traditions."
+      },
+      {
+        "step_id": "acq-07-construct-labels",
+        "requirement": "Construct outcome labels independently from candidate feature families and only after the row feature cutoff plus a declared censor gap.",
+        "required_fields": [
+          "label_id",
+          "label_definition",
+          "outcome_source_id",
+          "outcome_window_start",
+          "outcome_window_end",
+          "censor_gap",
+          "threshold_or_coding_rule",
+          "label_version",
+          "ambiguity_handling"
+        ],
+        "failure_mode": "Reject labels that start at or before the cutoff, use revised future information, or restate the candidate feature."
+      },
+      {
+        "step_id": "acq-08-freeze-dataset",
+        "requirement": "Generate a dataset manifest, data card, feature dictionary, label dictionary, source inventory, and validation report before the first split is materialized.",
+        "required_fields": [
+          "dataset_manifest_hash",
+          "data_card_path",
+          "feature_dictionary_path",
+          "label_dictionary_path",
+          "source_inventory_path",
+          "validation_report_path",
+          "frozen_at"
+        ],
+        "failure_mode": "Do not tune or evaluate against an unfrozen, unversioned dataset."
+      }
+    ],
+    "observation_row_contract": {
+      "row_grain": "explicitly declared temporal unit such as asset_day, asset_week, event, or event_asset",
+      "required_fields": [
+        "row_id",
+        "entity_id",
+        "observation_timestamp",
+        "feature_cutoff",
+        "availability_timezone",
+        "feature_set_version",
+        "source_ids",
+        "outcome_window_start",
+        "outcome_window_end",
+        "label_version",
+        "data_quality_status"
+      ],
+      "forbidden_fields_before_outcome": [
+        "future_close",
+        "future_return",
+        "future_earnings_revision",
+        "post_event_news_summary",
+        "revised_label_not_available_at_cutoff"
+      ],
+      "missingness_policy": "Represent unavailable values explicitly with a reason code; no imputation may occur until a fold-local imputation method is declared and logged."
+    }
+  }
+}

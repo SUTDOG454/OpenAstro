@@ -1,0 +1,471 @@
+{
+  "system": {
+    "version": "5.0.0",
+    "name": "Economic & Market Timing System",
+    "description": "Fully integrated decision-support system combining macroeconomic indicators, technical analysis, market research, company fundamentals, C-level executive profiling, and Sq9 (Gann Square of Nine) cycle timing.",
+    "timestamp": "2025-07-01T00:00:00.000Z"
+  },
+  "config": {
+    "globalDefaults": {
+      "hurdleRate": 0.06,
+      "riskFreeRate": 0.03,
+      "targetInflationMin": 0.01,
+      "targetInflationMax": 0.03,
+      "targetGDP": 0.025,
+      "maxGearing": 1.2,
+      "maxFixedCostRatio": 0.6
+    },
+    "cache": {
+      "enabled": true,
+      "redisUrl": "redis://localhost:6379",
+      "defaultTTL": 3600,
+      "companyTTL": 86400
+    },
+    "api": {
+      "rateLimit": 100,
+      "rateWindow": 60
+    }
+  },
+  "modules": {
+    "sq9": {
+      "id": "sq9",
+      "name": "Gann Square of Nine",
+      "kind": "vibration",
+      "status": "active",
+      "registryWeight": 0.12,
+      "schema": {
+        "type": "object",
+        "required": [
+          "level",
+          "degree",
+          "role",
+          "event",
+          "weight"
+        ],
+        "properties": {
+          "level": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "degree": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 360
+          },
+          "role": {
+            "type": "string",
+            "enum": [
+              "core",
+              "tension",
+              "peak",
+              "challenge",
+              "opposition",
+              "decline",
+              "bottom",
+              "recovery"
+            ]
+          },
+          "event": {
+            "type": "string"
+          },
+          "weight": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          }
+        }
+      },
+      "levelMapping": [
+        {
+          "level": 1,
+          "degree": 0,
+          "role": "core",
+          "event": "First contact",
+          "weight": 0.15
+        },
+        {
+          "level": 9,
+          "degree": 45,
+          "role": "tension",
+          "event": "Building attraction",
+          "weight": 0.12
+        },
+        {
+          "level": 25,
+          "degree": 90,
+          "role": "peak",
+          "event": "Commitment",
+          "weight": 0.18
+        },
+        {
+          "level": 49,
+          "degree": 135,
+          "role": "challenge",
+          "event": "Tests",
+          "weight": 0.1
+        },
+        {
+          "level": 81,
+          "degree": 180,
+          "role": "opposition",
+          "event": "Crisis / break",
+          "weight": 0.14
+        },
+        {
+          "level": 121,
+          "degree": 225,
+          "role": "decline",
+          "event": "Separation risk",
+          "weight": 0.09
+        },
+        {
+          "level": 169,
+          "degree": 270,
+          "role": "bottom",
+          "event": "Renewal",
+          "weight": 0.11
+        },
+        {
+          "level": 225,
+          "degree": 315,
+          "role": "recovery",
+          "event": "Stabilization",
+          "weight": 0.11
+        }
+      ],
+      "scoringRules": {
+        "normalizeDegree": "deg % 360, if negative add 360",
+        "nearestLevel": "minimize circular distance to defined levels",
+        "confidence": "clamp(rawConfidence * (1 - distance/45), 0, 1)",
+        "contribution": "levelWeight * confidence * registryWeight"
+      }
+    },
+    "marketResearch": {
+      "id": "market_research",
+      "name": "Market Research & Intelligence",
+      "kind": "research",
+      "status": "active",
+      "registryWeight": 0.1,
+      "weights": {
+        "consumerConfidence": 0.2,
+        "brandHealth": 0.15,
+        "competitiveIntensity": 0.2,
+        "marketAttractiveness": 0.15,
+        "productPipeline": 0.1,
+        "sentimentPolarity": 0.1,
+        "pricingPressure": 0.05,
+        "shareOfVoice": 0.05
+      },
+      "scoringRules": {
+        "consumerConfidence": "surveyResponse / 100",
+        "sentimentPolarity": "(avgSentiment + 1) / 2",
+        "pricingPressure": "normalize(avgCompetitorPrice / ourPrice, 0.5, 1.5)",
+        "marketAttractiveness": "normalize(growthRate, 0, 0.2)",
+        "shareOfVoice": "ourAdSpend / (totalAdSpend + ourAdSpend)"
+      }
+    },
+    "companyResearch": {
+      "id": "company_research",
+      "name": "Company Research & Fundamentals",
+      "kind": "fundamental",
+      "status": "active",
+      "registryWeight": 0.1,
+      "categories": {
+        "maturity": {
+          "weight": 0.09
+        },
+        "financial": {
+          "weight": 0.18
+        },
+        "leadership": {
+          "weight": 0.12
+        },
+        "pipeline": {
+          "weight": 0.09
+        },
+        "regulatory": {
+          "weight": 0.08
+        },
+        "insider": {
+          "weight": 0.12
+        },
+        "sentiment": {
+          "weight": 0.14
+        },
+        "astro": {
+          "weight": 0.08
+        },
+        "cLevel": {
+          "weight": 0.1
+        }
+      },
+      "scoringRules": {
+        "maturity": "normalize(companyAgeYears, 5, 50) * 0.5 + normalize(ipoYears, 3, 20) * 0.5",
+        "financial": "normalize(profitMargin, 0, 0.3) * 0.35 + normalize(1/(1+debtEquity), 0, 1) * 0.30 + normalize(cashFlowToRevenue, 0, 0.3) * 0.20 + normalize(revenueGrowth, 0, 0.2) * 0.15",
+        "leadership": "normalize(avgTenure, 2, 15)",
+        "pipeline": "normalize(patentCount, 0, 500) * 0.4 + normalize(rndRatio, 0, 0.2) * 0.6",
+        "regulatory": "1 - normalize(pendingApprovals + violations*5, 0, 20)",
+        "insider": "normalize(netInsiderBuying, -5000000, 10000000)",
+        "sentiment": "consensusScore(analystConsensus) * 0.3 + normalize(surprisePercent, -10, 10) * 0.2 + normalize(instOwnershipPct, 0.2, 0.9) * 0.2 + (1 - normalize(shortRatio, 0, 5)) * 0.3",
+        "astro": "deriveSq9Signal(companyAgeDegrees).confidence * 0.5 + deriveSq9Signal(ipoDegrees).confidence * 0.5",
+        "cLevel": "normalize(avgCTenure, 1, 20)"
+      }
+    },
+    "omti": {
+      "id": "omti",
+      "name": "Overall Market Timing Index",
+      "status": "active",
+      "weights": {
+        "macro": 0.16,
+        "market": 0.12,
+        "demand": 0.08,
+        "profitability": 0.16,
+        "competition": 0.08,
+        "lifecycle": 0.08,
+        "risk": 0.08,
+        "sq9": 0.04,
+        "marketResearch": 0.1,
+        "companyResearch": 0.1
+      },
+      "scoringRules": {
+        "macro": "scoreGDP() + scoreInflation() + scoreInterest() + scoreUnemployment()",
+        "market": "scoreHHI() + scoreLerner() + scoreEntryBarriers()",
+        "profitability": "scoreIRRSpread() + scoreNetMargin()",
+        "competition": "scoreHHITrend() + scoreLernerTrend() + scoreEntryRate()",
+        "lifecycle": "{introduction:80, growth:100, maturity:60, decline:20, stabilisation:40}[stage]",
+        "risk": "scoreGearing() + scoreFixedCosts() + scoreVolatility()"
+      },
+      "adjustments": {
+        "companyResearch": {
+          "profitability": "clamp(profitability + (companyFinancial - 0.5) * 30, 0, 100)",
+          "risk": "clamp(risk + ((1 - companyRegulatory) * 0.6 + (1 - companyMaturity) * 0.4 - 0.5) * 25, 0, 100)",
+          "demand": "clamp(demand + (companySentiment - 0.5) * 20, 0, 100)"
+        },
+        "marketResearch": {
+          "demand": "clamp(demand + (marketConsumerConfidence - 0.5) * 15, 0, 100)",
+          "competition": "clamp(competition + (1 - marketCompetitiveIntensity - 0.5) * 15, 0, 100)"
+        }
+      }
+    }
+  },
+  "executiveEngine": {
+    "cLevelRoles": [
+      "CEO",
+      "CFO",
+      "COO",
+      "CTO",
+      "CMO",
+      "CIO",
+      "CHRO",
+      "General Counsel"
+    ],
+    "detectionRule": "title.toUpperCase().includes('CEO') || title.includes('Chief')",
+    "weighting": {
+      "CEO": 1.5,
+      "CFO": 1.2,
+      "defaultCLevel": 1.1,
+      "nonCLevel": 1.0
+    },
+    "cycleFormula": "clamp(((tenureYears / 15) * 0.6 + deriveSq9Signal(ageDegrees).confidence * 0.4) * weight / 1.5, 0, 1)",
+    "signalThresholds": {
+      "high": 0.7,
+      "medium": 0.4,
+      "low": 0.0
+    }
+  },
+  "indicators": {
+    "technical": {
+      "rsi": {
+        "overbought": 70,
+        "oversold": 30,
+        "period": 14
+      },
+      "macd": {
+        "fast": 12,
+        "slow": 26,
+        "signal": 9
+      },
+      "bollinger": {
+        "period": 20,
+        "stdDev": 2
+      },
+      "adx": {
+        "strong": 25,
+        "weak": 20,
+        "period": 14
+      },
+      "volume": {
+        "confirmationThreshold": 1.5
+      }
+    },
+    "macro": {
+      "gdp": {
+        "bullish": 0.025,
+        "bearish": 0.0
+      },
+      "inflation": {
+        "targetMin": 0.01,
+        "targetMax": 0.03,
+        "warning": 0.04
+      },
+      "unemployment": {
+        "bullish": 0.05,
+        "bearish": 0.07
+      },
+      "interest": {
+        "bullish": 0.02,
+        "bearish": 0.04
+      }
+    },
+    "breadth": {
+      "percentAbove200MA": {
+        "oversold": 20,
+        "overbought": 80
+      },
+      "trin": {
+        "bullish": 0.7,
+        "bearish": 1.0
+      }
+    },
+    "sentiment": {
+      "aaiiBullish": {
+        "contrarianSell": 50,
+        "contrarianBuy": 30
+      },
+      "aaiiBearish": {
+        "contrarianBuy": 40,
+        "contrarianSell": 25
+      },
+      "vix": {
+        "fear": 30,
+        "complacency": 15
+      }
+    }
+  },
+  "integrationMatrix": {
+    "layers": [
+      "macro",
+      "market",
+      "demand",
+      "profitability",
+      "competition",
+      "lifecycle",
+      "risk",
+      "sq9",
+      "marketResearch",
+      "companyResearch"
+    ],
+    "weights": [
+      0.16,
+      0.12,
+      0.08,
+      0.16,
+      0.08,
+      0.08,
+      0.08,
+      0.04,
+      0.1,
+      0.1
+    ],
+    "signalFlow": "Data -> Indicators -> Sub-Scores -> Adjustments -> Weighted Sum -> OMTI -> Recommendation",
+    "recommendationMap": {
+      "80-100": "AGGRESSIVE INVESTMENT",
+      "60-79": "INVEST WITH PRUDENCE",
+      "45-59": "HOLD / CAUTION",
+      "30-44": "PREPARE EXIT",
+      "0-29": "IMMEDIATE EXIT"
+    }
+  },
+  "deployment": {
+    "docker": {
+      "services": [
+        "api",
+        "ml",
+        "execution",
+        "postgres",
+        "redis",
+        "kafka",
+        "dashboard"
+      ],
+      "ports": {
+        "api": 5001,
+        "ml": 5002,
+        "execution": 5003,
+        "dashboard": 8050,
+        "postgres": 5432,
+        "redis": 6379
+      }
+    },
+    "kubernetes": {
+      "replicas": {
+        "api": 3,
+        "ml": 2,
+        "execution": 1
+      },
+      "hpa": {
+        "minReplicas": 3,
+        "maxReplicas": 10,
+        "cpuTarget": 70
+      }
+    },
+    "monitoring": {
+      "prometheus": {
+        "port": 9090,
+        "metrics": [
+          "api_requests_total",
+          "api_latency_seconds",
+          "omti_score",
+          "model_accuracy",
+          "trades_total"
+        ]
+      },
+      "grafana": {
+        "port": 3000,
+        "dashboards": [
+          "Market Timing Overview",
+          "OMTI Components",
+          "Trading Performance",
+          "ML Health"
+        ]
+      }
+    },
+    "logging": {
+      "level": "INFO",
+      "format": "json",
+      "outputs": [
+        "stdout",
+        "elasticsearch"
+      ]
+    }
+  },
+  "testing": {
+    "coverage": {
+      "threshold": 85
+    },
+    "types": [
+      "unit",
+      "integration",
+      "performance",
+      "regression",
+      "e2e"
+    ],
+    "tools": [
+      "pytest",
+      "pytest-cov",
+      "locust",
+      "pytest-benchmark",
+      "deepdiff"
+    ]
+  },
+  "references": {
+    "sources": [
+      "Tisdell (Aquaculture Economics)",
+      "UNIT-3 (Market Structures)",
+      "Xue (Economic Trends)",
+      "Summer School Lecture (Industrial Organization)",
+      "Market_Structures_April_18_2018 (SCP, Bounds, Conduct Parameter)",
+      "Schumpeter (Innovation)",
+      "AAII, CBOE, FRED Data"
+    ]
+  }
+}

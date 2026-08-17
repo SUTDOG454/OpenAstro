@@ -1,0 +1,344 @@
+[
+  {
+    "name": "1388 Aphrodite",
+    "keywords": "Divine love, beauty, attraction, magnetic charm, sacred romance",
+    "sign_keywords": {
+      "Aries": "Bold, fiery love; attraction through courage and action. Gift: magnetic, passionate charm. Challenge: impulsive, competitive romance.",
+      "Taurus": "Sensual, earthly love; attraction through beauty and stability. Gift: enduring, luxurious charm. Challenge: possessive, materialistic love.",
+      "Gemini": "Playful, intellectual love; attraction through wit and words. Gift: charming, versatile magnetism. Challenge: scattered, non-committal romance.",
+      "Cancer": "Nurturing, emotional love; attraction through care and security. Gift: protective, soulful charm. Challenge: enmeshed, overly attached love.",
+      "Leo": "Radiant, dramatic love; attraction through creativity and warmth. Gift: inspiring, confident magnetism. Challenge: ego-involved, prideful romance.",
+      "Virgo": "Pure, service-oriented love; attraction through helpfulness and refinement. Gift: devoted, purifying charm. Challenge: critical, perfectionist love.",
+      "Libra": "Harmonious, aesthetic love; attraction through beauty and partnership. Gift: graceful, balanced magnetism. Challenge: codependent, indecisive romance.",
+      "Scorpio": "Intense, transformative love; attraction through depth and power. Gift: magnetic, soul-penetrating charm. Challenge: obsessive, controlling love.",
+      "Sagittarius": "Expansive, philosophical love; attraction through freedom and truth. Gift: liberating, adventurous magnetism. Challenge: restless, non-committal romance.",
+      "Capricorn": "Structured, ambitious love; attraction through status and discipline. Gift: enduring, authoritative charm. Challenge: cold, rigid love.",
+      "Aquarius": "Innovative, humanitarian love; attraction through ideals and uniqueness. Gift: progressive, freeing magnetism. Challenge: detached, impersonal romance.",
+      "Pisces": "Mystical, dissolving love; attraction through spirituality and compassion. Gift: transcendent, enchanting charm. Challenge: escapist, boundaryless love."
+    },
+    "house_keywords": {
+      "1": "Magnetic identity; beauty as self.",
+      "2": "Love of value; attraction through worth.",
+      "3": "Verbal charm; romantic communication.",
+      "4": "Home love; family romance.",
+      "5": "Romantic love; creative attraction.",
+      "6": "Service love; devoted charm.",
+      "7": "Partnership love; marriage magnetism.",
+      "8": "Deep love; soul attraction.",
+      "9": "Philosophical love; travel romance.",
+      "10": "Public love; reputation charm.",
+      "11": "Social love; group attraction.",
+      "12": "Spiritual love; hidden romance."
+    },
+    "aspect_keywords": {
+      "conjunction": "Intense, magnetic attraction; love at first sight.",
+      "opposition": "Love projected; mirror attraction.",
+      "trine": "Effortless charm; natural beauty.",
+      "square": "Love tensions; attraction with friction.",
+      "sextile": "Opportunity for romance; charming connections.",
+      "Midpoint": "Activation of beauty and attraction themes."
+    },
+    "chart_type_keywords": {
+      "Synastry": "Where one partner magnetically attracts the other.",
+      "Composite": "The relationship is beautiful, romantic, and charming.",
+      "Transit": "Period of heightened attraction and romance.",
+      "Horary": "Indicates a strongly positive romantic outcome."
+    }
+  },
+  {
+    "name": "409 Aspasia",
+    "keywords": "Intellectual companionship, wise partnership, mentoring love, equal council",
+    "sign_keywords": {
+      "Aries": "Bold, intellectual partnership; wise through action. Gift: courageous, honest counsel. Challenge: competitive, know-it-all dynamics.",
+      "Taurus": "Steady, wise partnership; counsel through value and stability. Gift: enduring, practical wisdom. Challenge: stubborn, resistant counsel.",
+      "Gemini": "Versatile, intellectual partnership; wise through communication. Gift: clever, adaptable counsel. Challenge: scattered, manipulative advice.",
+      "Cancer": "Nurturing, wise partnership; counsel through emotion and care. Gift: protective, soulful wisdom. Challenge: enmeshed, biased counsel.",
+      "Leo": "Dramatic, wise partnership; counsel through creativity and pride. Gift: radiant, inspiring advice. Challenge: ego-involved, patronizing counsel.",
+      "Virgo": "Service-oriented, wise partnership; counsel through health and detail. Gift: precise, practical wisdom. Challenge: critical, perfectionist advice.",
+      "Libra": "Balanced, wise partnership; counsel through fairness and harmony. Gift: graceful, diplomatic wisdom. Challenge: indecisive, codependent counsel.",
+      "Scorpio": "Intense, wise partnership; counsel through shadow and power. Gift: profound, transformative wisdom. Challenge: controlling, obsessive advice.",
+      "Sagittarius": "Expansive, wise partnership; counsel through truth and adventure. Gift: liberating, philosophical wisdom. Challenge: dogmatic, restless advice.",
+      "Capricorn": "Structured, wise partnership; counsel through legacy and discipline. Gift: mature, authoritative wisdom. Challenge: cold, rigid advice.",
+      "Aquarius": "Innovative, wise partnership; counsel through ideals and freedom. Gift: progressive, humanitarian wisdom. Challenge: detached, impersonal advice.",
+      "Pisces": "Mystical, wise partnership; counsel through compassion and transcendence. Gift: soul-level, empathetic wisdom. Challenge: escapist, vague advice."
+    },
+    "house_keywords": {
+      "1": "Identity counsel; wise self.",
+      "2": "Value counsel; financial wisdom.",
+      "3": "Communication counsel; wise words.",
+      "4": "Family counsel; home wisdom.",
+      "5": "Creative counsel; romantic wisdom.",
+      "6": "Service counsel; health wisdom.",
+      "7": "Partnership counsel; marriage wisdom.",
+      "8": "Deep counsel; psychological wisdom.",
+      "9": "Belief counsel; philosophical wisdom.",
+      "10": "Career counsel; professional wisdom.",
+      "11": "Community counsel; group wisdom.",
+      "12": "Spiritual counsel; soul wisdom."
+    }
+  },
+  {
+    "name": "147 Klotho",
+    "keywords": "Spinner of the thread, beginnings, genesis, fated starts, initiation",
+    "sign_keywords": {
+      "Aries": "Bold, initiatory beginnings; fated starts through action. Gift: courageous new chapters. Challenge: impulsive, premature starts.",
+      "Taurus": "Steady, grounded beginnings; fated starts through value. Gift: enduring new foundations. Challenge: stubborn, slow starts.",
+      "Gemini": "Quick, versatile beginnings; fated starts through communication. Gift: clever, adaptable initiations. Challenge: scattered, non-committal starts.",
+      "Cancer": "Emotional, nurturing beginnings; fated starts through family. Gift: protective, soulful initiations. Challenge: enmeshed, overly cautious starts.",
+      "Leo": "Dramatic, heart-centered beginnings; fated starts through creativity. Gift: radiant, inspiring initiations. Challenge: ego-involved, prideful starts.",
+      "Virgo": "Service-oriented beginnings; fated starts through health and detail. Gift: practical, purifying initiations. Challenge: critical, perfectionist starts.",
+      "Libra": "Balanced, relational beginnings; fated starts through partnership. Gift: graceful, fair initiations. Challenge: indecisive, codependent starts.",
+      "Scorpio": "Intense, transformative beginnings; fated starts through shadow and power. Gift: profound, alchemical initiations. Challenge: obsessive, controlling starts.",
+      "Sagittarius": "Expansive, philosophical beginnings; fated starts through truth and adventure. Gift: liberating, visionary initiations. Challenge: dogmatic, restless starts.",
+      "Capricorn": "Structured, ambitious beginnings; fated starts through legacy. Gift: enduring, authoritative initiations. Challenge: cold, rigid starts.",
+      "Aquarius": "Innovative, humanitarian beginnings; fated starts through ideals. Gift: progressive, freeing initiations. Challenge: detached, impersonal starts.",
+      "Pisces": "Mystical, dissolving beginnings; fated starts through spirituality. Gift: transcendent, soulful initiations. Challenge: escapist, boundaryless starts."
+    },
+    "house_keywords": {
+      "1": "Fated identity start.",
+      "2": "Fated financial start.",
+      "3": "Fated communication start.",
+      "4": "Fated home start.",
+      "5": "Fated romantic start.",
+      "6": "Fated health start.",
+      "7": "Fated partnership start.",
+      "8": "Fated transformation start.",
+      "9": "Fated belief start.",
+      "10": "Fated career start.",
+      "11": "Fated community start.",
+      "12": "Fated spiritual start."
+    },
+    "aspect_keywords": {
+      "conjunction": "Fated new beginning; initiation inevitable.",
+      "opposition": "Beginnings through others; projected starts.",
+      "trine": "Easy, natural beginnings; grace of start.",
+      "square": "Challenging start; friction at initiation.",
+      "sextile": "Opportunity for new beginning; helpful start.",
+      "Midpoint": "Activation of genesis themes; a fresh chapter begins."
+    }
+  },
+  {
+    "name": "53 Kalypso",
+    "keywords": "Mysticism, hidden knowledge, seductive wisdom, occult power, enchanting",
+    "sign_keywords": {
+      "Aries": "Bold, mystical knowledge; occult through action. Gift: powerful, initiatory magic. Challenge: impulsive, aggressive occultism.",
+      "Taurus": "Steady, earthy mysticism; occult through nature and value. Gift: grounded, practical magic. Challenge: possessive, materialistic occult.",
+      "Gemini": "Versatile, intellectual mysticism; occult through communication. Gift: clever, adaptive magical knowledge. Challenge: scattered, manipulative occult.",
+      "Cancer": "Emotional, nurturing mysticism; occult through family and care. Gift: protective, soulful magic. Challenge: enmeshed, emotional occult.",
+      "Leo": "Dramatic, heart-centered mysticism; occult through creativity. Gift: radiant, inspiring magic. Challenge: ego-involved, prideful occult.",
+      "Virgo": "Service-oriented mysticism; occult through health and detail. Gift: purifying, practical magic. Challenge: critical, perfectionist occult.",
+      "Libra": "Harmonious, balanced mysticism; occult through partnership. Gift: graceful, diplomatic magic. Challenge: codependent, indecisive occult.",
+      "Scorpio": "Intense, transformative mysticism; occult through shadow and power. Gift: profound, alchemical magic. Challenge: obsessive, controlling occult.",
+      "Sagittarius": "Expansive, philosophical mysticism; occult through truth and adventure. Gift: liberating, visionary magic. Challenge: dogmatic, restless occult.",
+      "Capricorn": "Structured, ambitious mysticism; occult through legacy and discipline. Gift: enduring, authoritative magic. Challenge: cold, rigid occult.",
+      "Aquarius": "Innovative, humanitarian mysticism; occult through ideals and progress. Gift: progressive, freeing magic. Challenge: detached, impersonal occult.",
+      "Pisces": "Mystical, dissolving occultism; magic through transcendence and compassion. Gift: transcendent, soul-level enchantment. Challenge: escapist, boundaryless occult."
+    },
+    "house_keywords": {
+      "1": "Mystical identity; hidden self.",
+      "2": "Hidden value; occult wealth.",
+      "3": "Occult communication; hidden messages.",
+      "4": "Family mysticism; ancestral magic.",
+      "5": "Creative occult; magical romance.",
+      "6": "Service occult; hidden healing.",
+      "7": "Partnership mysticism; occult marriage.",
+      "8": "Deep occult; shadow magic.",
+      "9": "Belief occult; mystical wisdom.",
+      "10": "Career occult; hidden power.",
+      "11": "Community mysticism; occult groups.",
+      "12": "Soul occult; deepest magic."
+    }
+  },
+  {
+    "name": "62 Erato",
+    "keywords": "Muse of love poetry, erotic writing, romantic expression, lyrical passion",
+    "sign_keywords": {
+      "Aries": "Fiery, passionate poetry; words as action. Gift: bold, inspiring romantic expression. Challenge: impulsive, harsh words.",
+      "Taurus": "Sensual, earthy poetry; words as beauty. Gift: enduring, luxurious romantic expression. Challenge: possessive, materialistic words.",
+      "Gemini": "Playful, intellectual poetry; words as wit. Gift: clever, versatile romantic expression. Challenge: scattered, superficial words.",
+      "Cancer": "Emotional, nurturing poetry; words as care. Gift: soulful, protective romantic expression. Challenge: enmeshed, overly emotional words.",
+      "Leo": "Dramatic, heart-centered poetry; words as creativity. Gift: radiant, inspiring romantic expression. Challenge: ego-involved, prideful words.",
+      "Virgo": "Service-oriented poetry; words as healing. Gift: purifying, practical romantic expression. Challenge: critical, perfectionist words.",
+      "Libra": "Harmonious, aesthetic poetry; words as beauty. Gift: graceful, balanced romantic expression. Challenge: indecisive, codependent words.",
+      "Scorpio": "Intense, transformative poetry; words as shadow. Gift: profound, penetrating romantic expression. Challenge: obsessive, manipulative words.",
+      "Sagittarius": "Expansive, philosophical poetry; words as truth. Gift: liberating, visionary romantic expression. Challenge: dogmatic, restless words.",
+      "Capricorn": "Structured, ambitious poetry; words as legacy. Gift: enduring, authoritative romantic expression. Challenge: cold, rigid words.",
+      "Aquarius": "Innovative, progressive poetry; words as freedom. Gift: original, humanitarian romantic expression. Challenge: detached, impersonal words.",
+      "Pisces": "Mystical, dissolving poetry; words as transcendence. Gift: soul-level, enchanting romantic expression. Challenge: escapist, boundaryless words."
+    },
+    "house_keywords": {
+      "1": "Poetic identity; self-expression.",
+      "2": "Poetic value; words of worth.",
+      "3": "Poetic communication; writing.",
+      "4": "Poetic home; family words.",
+      "5": "Poetic romance; creative writing.",
+      "6": "Poetic service; writing to heal.",
+      "7": "Poetic partnership; love letters.",
+      "8": "Poetic depth; transformative writing.",
+      "9": "Poetic philosophy; learned words.",
+      "10": "Poetic career; public writing.",
+      "11": "Poetic community; group words.",
+      "12": "Poetic soul; hidden writing."
+    }
+  },
+  {
+    "name": "33 Polyhymnia",
+    "keywords": "Muse of sacred hymns, devotional music, spiritual art, prayerful expression",
+    "sign_keywords": {
+      "Aries": "Bold, devotional music; songs of action. Gift: courageous, inspiring hymns. Challenge: impulsive, aggressive music.",
+      "Taurus": "Steady, grounded hymns; music of nature. Gift: enduring, soulful devotional art. Challenge: stubborn, possessive music.",
+      "Gemini": "Versatile, intellectual hymns; music of words. Gift: clever, adaptive devotional expression. Challenge: scattered, superficial music.",
+      "Cancer": "Emotional, nurturing hymns; music of the heart. Gift: protective, soulful devotional art. Challenge: enmeshed, overly emotional music.",
+      "Leo": "Dramatic, heart-centered hymns; music of creativity. Gift: radiant, inspiring devotional expression. Challenge: ego-involved, prideful music.",
+      "Virgo": "Service-oriented hymns; music of healing. Gift: purifying, practical devotional art. Challenge: critical, perfectionist music.",
+      "Libra": "Harmonious, aesthetic hymns; music of beauty. Gift: graceful, balanced devotional expression. Challenge: indecisive, codependent music.",
+      "Scorpio": "Intense, transformative hymns; music of depth. Gift: profound, alchemical devotional art. Challenge: obsessive, controlling music.",
+      "Sagittarius": "Expansive, philosophical hymns; music of truth. Gift: liberating, visionary devotional expression. Challenge: dogmatic, restless music.",
+      "Capricorn": "Structured, ambitious hymns; music of legacy. Gift: enduring, authoritative devotional art. Challenge: cold, rigid music.",
+      "Aquarius": "Innovative, humanitarian hymns; music of freedom. Gift: progressive, freeing devotional expression. Challenge: detached, impersonal music.",
+      "Pisces": "Mystical, dissolving hymns; music of transcendence. Gift: soul-level, enchanting devotional art. Challenge: escapist, boundaryless music."
+    },
+    "house_keywords": {
+      "1": "Devotional identity; sacred self.",
+      "2": "Devotional value; sacred worth.",
+      "3": "Devotional communication; sacred words.",
+      "4": "Devotional home; sacred family.",
+      "5": "Devotional creativity; sacred art.",
+      "6": "Devotional service; sacred health.",
+      "7": "Devotional partnership; sacred marriage.",
+      "8": "Devotional depth; sacred transformation.",
+      "9": "Devotional belief; sacred wisdom.",
+      "10": "Devotional career; sacred work.",
+      "11": "Devotional community; sacred groups.",
+      "12": "Devotional soul; sacred silence."
+    }
+  },
+  {
+    "name": "81 Terpsichore",
+    "keywords": "Muse of dance, rhythmic expression, joyful movement, choreography",
+    "sign_keywords": {
+      "Aries": "Fiery, bold dance; movement as action. Gift: courageous, energetic expression. Challenge: impulsive, chaotic movement.",
+      "Taurus": "Sensual, earthy dance; movement as beauty. Gift: steady, graceful rhythmic expression. Challenge: stubborn, heavy movement.",
+      "Gemini": "Playful, intellectual dance; movement as communication. Gift: versatile, witty rhythmic expression. Challenge: scattered, unfocused movement.",
+      "Cancer": "Emotional, nurturing dance; movement as care. Gift: protective, soulful rhythmic expression. Challenge: enmeshed, overly emotional movement.",
+      "Leo": "Dramatic, heart-centered dance; movement as creativity. Gift: radiant, inspiring rhythmic expression. Challenge: ego-involved, prideful movement.",
+      "Virgo": "Service-oriented dance; movement as healing. Gift: purifying, practical rhythmic expression. Challenge: critical, perfectionist movement.",
+      "Libra": "Harmonious, aesthetic dance; movement as beauty. Gift: graceful, balanced rhythmic expression. Challenge: indecisive, codependent movement.",
+      "Scorpio": "Intense, transformative dance; movement as depth. Gift: profound, alchemical rhythmic expression. Challenge: obsessive, controlling movement.",
+      "Sagittarius": "Expansive, philosophical dance; movement as truth. Gift: liberating, visionary rhythmic expression. Challenge: dogmatic, restless movement.",
+      "Capricorn": "Structured, ambitious dance; movement as legacy. Gift: enduring, authoritative rhythmic expression. Challenge: cold, rigid movement.",
+      "Aquarius": "Innovative, progressive dance; movement as freedom. Gift: original, humanitarian rhythmic expression. Challenge: detached, impersonal movement.",
+      "Pisces": "Mystical, dissolving dance; movement as transcendence. Gift: soul-level, enchanting rhythmic expression. Challenge: escapist, boundaryless movement."
+    },
+    "house_keywords": {
+      "1": "Dance of self; identity movement.",
+      "2": "Dance of value; worth movement.",
+      "3": "Dance of words; communication movement.",
+      "4": "Dance of home; family movement.",
+      "5": "Dance of creativity; joyful movement.",
+      "6": "Dance of service; health movement.",
+      "7": "Dance of partnership; relational movement.",
+      "8": "Dance of depth; transformative movement.",
+      "9": "Dance of wisdom; philosophical movement.",
+      "10": "Dance of career; public movement.",
+      "11": "Dance of community; group movement.",
+      "12": "Dance of soul; hidden movement."
+    }
+  },
+  {
+    "name": "23 Thalia",
+    "keywords": "Muse of comedy, light writing, joyful creativity, satire, pastoral poetry",
+    "sign_keywords": {
+      "Aries": "Bold, witty comedy; humor as action. Gift: courageous, joyful expression. Challenge: impulsive, biting sarcasm.",
+      "Taurus": "Steady, earthy comedy; humor as value. Gift: grounded, warm joyful expression. Challenge: stubborn, heavy comedy.",
+      "Gemini": "Versatile, clever comedy; humor as wit. Gift: adaptable, brilliant joyful expression. Challenge: scattered, superficial humor.",
+      "Cancer": "Emotional, nurturing comedy; humor as care. Gift: soulful, protective joyful expression. Challenge: enmeshed, overly emotional comedy.",
+      "Leo": "Dramatic, heart-centered comedy; humor as creativity. Gift: radiant, inspiring joyful expression. Challenge: ego-involved, prideful humor.",
+      "Virgo": "Service-oriented comedy; humor as healing. Gift: practical, purifying joyful expression. Challenge: critical, perfectionist comedy.",
+      "Libra": "Harmonious, aesthetic comedy; humor as beauty. Gift: graceful, balanced joyful expression. Challenge: indecisive, codependent comedy.",
+      "Scorpio": "Intense, transformative comedy; humor as depth. Gift: profound, alchemical joyful expression. Challenge: obsessive, biting humor.",
+      "Sagittarius": "Expansive, philosophical comedy; humor as truth. Gift: liberating, visionary joyful expression. Challenge: dogmatic, restless comedy.",
+      "Capricorn": "Structured, ambitious comedy; humor as legacy. Gift: enduring, authoritative joyful expression. Challenge: cold, rigid comedy.",
+      "Aquarius": "Innovative, progressive comedy; humor as freedom. Gift: original, humanitarian joyful expression. Challenge: detached, impersonal humor.",
+      "Pisces": "Mystical, dissolving comedy; humor as transcendence. Gift: soul-level, enchanting joyful expression. Challenge: escapist, boundaryless comedy."
+    },
+    "house_keywords": {
+      "1": "Joyful self; comedic identity.",
+      "2": "Joyful value; comedic worth.",
+      "3": "Joyful words; comedic writing.",
+      "4": "Joyful home; comedic family.",
+      "5": "Joyful creativity; comedic art.",
+      "6": "Joyful service; comedic health.",
+      "7": "Joyful partnership; comedic marriage.",
+      "8": "Joyful depth; transformative comedy.",
+      "9": "Joyful wisdom; philosophical comedy.",
+      "10": "Joyful career; public comedy.",
+      "11": "Joyful community; group comedy.",
+      "12": "Joyful soul; hidden comedy."
+    }
+  },
+  {
+    "name": "30 Urania",
+    "keywords": "Muse of astronomy, science, mathematics, celestial learning, universal wisdom",
+    "sign_keywords": {
+      "Aries": "Bold, pioneering science; learning through action. Gift: courageous, initiatory wisdom. Challenge: impulsive, over-reach in learning.",
+      "Taurus": "Steady, grounded science; learning through value and nature. Gift: enduring, practical wisdom. Challenge: stubborn, rigid learning.",
+      "Gemini": "Versatile, intellectual science; learning through communication. Gift: clever, adaptive wisdom. Challenge: scattered, superficial learning.",
+      "Cancer": "Emotional, nurturing science; learning through family and care. Gift: intuitive, protective wisdom. Challenge: enmeshed, overly emotional learning.",
+      "Leo": "Dramatic, heart-centered science; learning through creativity. Gift: radiant, inspiring wisdom. Challenge: ego-involved, prideful learning.",
+      "Virgo": "Service-oriented science; learning through health and detail. Gift: purifying, practical wisdom. Challenge: critical, perfectionist learning.",
+      "Libra": "Harmonious, balanced science; learning through partnership. Gift: graceful, fair wisdom. Challenge: indecisive, codependent learning.",
+      "Scorpio": "Intense, transformative science; learning through shadow and depth. Gift: profound, penetrating wisdom. Challenge: obsessive, controlling learning.",
+      "Sagittarius": "Expansive, philosophical science; learning through truth and adventure. Gift: liberating, visionary wisdom. Challenge: dogmatic, restless learning.",
+      "Capricorn": "Structured, ambitious science; learning through legacy and discipline. Gift: enduring, authoritative wisdom. Challenge: cold, rigid learning.",
+      "Aquarius": "Innovative, progressive science; learning through ideals and freedom. Gift: original, humanitarian wisdom. Challenge: detached, impersonal learning.",
+      "Pisces": "Mystical, dissolving science; learning through transcendence and compassion. Gift: soul-level, intuitive wisdom. Challenge: escapist, boundaryless learning."
+    },
+    "house_keywords": {
+      "1": "Scientific self; wisdom identity.",
+      "2": "Scientific value; knowledge worth.",
+      "3": "Scientific communication; learning words.",
+      "4": "Scientific home; family wisdom.",
+      "5": "Scientific creativity; inventive art.",
+      "6": "Scientific service; health learning.",
+      "7": "Scientific partnership; shared wisdom.",
+      "8": "Scientific depth; transformative learning.",
+      "9": "Scientific wisdom; philosophical learning.",
+      "10": "Scientific career; academic work.",
+      "11": "Scientific community; group wisdom.",
+      "12": "Scientific soul; cosmic learning."
+    }
+  },
+  {
+    "name": "13 Egeria",
+    "keywords": "Counsel, financial advice, practical wisdom, lawful guidance, constitutional knowledge",
+    "sign_keywords": {
+      "Aries": "Bold, practical advice; counsel through action. Gift: courageous, decisive wisdom. Challenge: impulsive, reckless advice.",
+      "Taurus": "Steady, financial advice; counsel through value. Gift: enduring, practical wisdom. Challenge: stubborn, overly cautious advice.",
+      "Gemini": "Versatile, communicative advice; counsel through words. Gift: clever, adaptable wisdom. Challenge: scattered, manipulative advice.",
+      "Cancer": "Nurturing, protective advice; counsel through care. Gift: soulful, protective wisdom. Challenge: enmeshed, biased advice.",
+      "Leo": "Dramatic, creative advice; counsel through leadership. Gift: radiant, inspiring wisdom. Challenge: ego-involved, patronizing advice.",
+      "Virgo": "Service-oriented, practical advice; counsel through health and detail. Gift: precise, purifying wisdom. Challenge: critical, perfectionist advice.",
+      "Libra": "Balanced, fair advice; counsel through partnership. Gift: graceful, diplomatic wisdom. Challenge: indecisive, codependent advice.",
+      "Scorpio": "Intense, transformative advice; counsel through depth. Gift: profound, penetrating wisdom. Challenge: controlling, manipulative advice.",
+      "Sagittarius": "Expansive, philosophical advice; counsel through truth. Gift: liberating, visionary wisdom. Challenge: dogmatic, restless advice.",
+      "Capricorn": "Structured, ambitious advice; counsel through legacy. Gift: mature, authoritative wisdom. Challenge: cold, rigid advice.",
+      "Aquarius": "Innovative, progressive advice; counsel through ideals. Gift: original, humanitarian wisdom. Challenge: detached, impersonal advice.",
+      "Pisces": "Mystical, compassionate advice; counsel through spirituality. Gift: soul-level, empathetic wisdom. Challenge: escapist, vague advice."
+    },
+    "house_keywords": {
+      "1": "Identity counsel; wise self.",
+      "2": "Financial counsel; wise money.",
+      "3": "Communication counsel; wise words.",
+      "4": "Family counsel; home wisdom.",
+      "5": "Creative counsel; romance wisdom.",
+      "6": "Health counsel; service wisdom.",
+      "7": "Partnership counsel; marriage wisdom.",
+      "8": "Deep counsel; transformative wisdom.",
+      "9": "Belief counsel; philosophical wisdom.",
+      "10": "Career counsel; professional wisdom.",
+      "11": "Community counsel; group wisdom.",
+      "12": "Spiritual counsel; soul wisdom."
+    }
+  }
+]

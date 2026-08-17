@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "source_count": 12,
+  "normalized_record_count": 82,
+  "dedup_group_count": 50,
+  "source_stems": [
+    "pasted_content",
+    "pasted_content_10",
+    "pasted_content_2",
+    "pasted_content_3",
+    "pasted_content_4",
+    "pasted_content_5",
+    "pasted_content_6",
+    "pasted_content_7",
+    "pasted_content_8",
+    "pasted_content_9"
+  ],
+  "warnings": [
+    "AFE attachment configs contain placeholder-looking credentials; values were redacted and no external API calls were made.",
+    "Inline midpoint axis includes literal ellipsis and remains provisional.",
+    "Source scoring formulas and interpretations are methodology-bound, not empirical facts."
+  ]
+}

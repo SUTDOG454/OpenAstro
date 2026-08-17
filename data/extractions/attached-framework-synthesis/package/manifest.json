@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0.0",
+  "package_status": "passed_with_review_gaps",
+  "files": [
+    {
+      "path": "astrology_master.json",
+      "bytes": 469736,
+      "sha256": "556e2009181a5257c9ee085542016aaf391ba9906835972e729a7818650fd5dd"
+    },
+    {
+      "path": "astrology_report.md",
+      "bytes": 3408,
+      "sha256": "9983c6f4e7b77d09b09442d9db80eea9537408a1095c71abe0298081819e6100"
+    },
+    {
+      "path": "calculations.json",
+      "bytes": 1437,
+      "sha256": "9ee58b61098bb3b7139602ca5f5c82971902f4502b66b8b3bca33493b29812a0"
+    },
+    {
+      "path": "change_record.json",
+      "bytes": 2582,
+      "sha256": "425de6b7e33561b194e9fc1e4a681b354294ce9c40d96feb6046970d541a0004"
+    },
+    {
+      "path": "coverage_gap_register.json",
+      "bytes": 1686,
+      "sha256": "1849a3b9daab9525594cd5c873363a781f4824325a84a1ebb3f7c0816ebaf01a"
+    },
+    {
+      "path": "definitions.json",
+      "bytes": 2434,
+      "sha256": "8943025ae83b5d38a34ed8c7fb19ce8adfe8a4e7acb1f7e0cb5cc4db2fc3304a"
+    },
+    {
+      "path": "discrepancy.json",
+      "bytes": 1454,
+      "sha256": "b6c8ba933273fdebcd9af0fa017ef40843d5e33f491c28f31e9ccf6992552446"
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 1500,
+      "sha256": "082881df89884110bf3e3a660c1f44d34e299680d3d499184e26d35eb67a886d"
+    },
+    {
+      "path": "methodology_registry.json",
+      "bytes": 2110,
+      "sha256": "f01cb73ed7457cdc9c2dffbb6b3954669cd2c8798efb0a9dd94e9a8d7dd861d4"
+    },
+    {
+      "path": "normalized_records.json",
+      "bytes": 459566,
+      "sha256": "b35bb7709ba9d8fa2c99a19bdf3d1a74d7d6d0c5c30a5e7bb0bd6270bf31c343"
+    },
+    {
+      "path": "validation_report.json",
+      "bytes": 2086,
+      "sha256": "3a5023f0a828afcb52425c263e7892099c1ecef8943545565aa33775bf632635"
+    },
+    {
+      "path": "validation_report.json",
+      "bytes": 2086,
+      "sha256": "3a5023f0a828afcb52425c263e7892099c1ecef8943545565aa33775bf632635"
+    }
+  ]
+}

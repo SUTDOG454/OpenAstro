@@ -1,0 +1,548 @@
+{
+  "schema_version": "1.0.0",
+  "sources": [
+    {
+      "source_id": "openastro:user-upload:astrological-synthesis-report-md",
+      "source_path": "data/sources/2026-08-user-uploads/raw/ASTROLOGICAL_SYNTHESIS_REPORT.md",
+      "filename": "ASTROLOGICAL_SYNTHESIS_REPORT.md",
+      "sha256": "0cfa736d1f32d2b86c04b4bab92b65cb12bda85d9da91d9f17120f14d5837b64",
+      "size_bytes": 50203,
+      "category": "sensitive_interpretive_material",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review",
+        "sensitive_adult_interpretive_content",
+        "quarantined_from_general_delineation"
+      ],
+      "parser": "quarantine_metadata_only",
+      "raw_preservation": "staged_copy"
+    },
+    {
+      "source_id": "openastro:user-upload:astrologicaldelineationandinterpretationmethodology-knowledge-txt",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologicalDelineationandInterpretationMethodology-knowledge.txt",
+      "filename": "AstrologicalDelineationandInterpretationMethodology-knowledge.txt",
+      "sha256": "8b508dd49d5a6c1c05b1d1b6939dae72618cd0d38fa0bfbd7c07258b801edf5c",
+      "size_bytes": 341,
+      "category": "astrology_source_material",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review"
+      ],
+      "parser": "text",
+      "raw_preservation": "staged_copy"
+    },
+    {
+      "source_id": "openastro:user-upload:astrological-aspects-txt",
+      "source_path": "data/sources/2026-08-user-uploads/raw/Astrological_Aspects.txt",
+      "filename": "Astrological_Aspects.txt",
+      "sha256": "d8835081a7891cd52ff6ce76a5218ff2e499e7d7df0326f83181405af37d46e8",
+      "size_bytes": 258114,
+      "category": "aspect_interpretation_reference",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review"
+      ],
+      "parser": "text",
+      "raw_preservation": "staged_copy"
+    },
+    {
+      "source_id": "openastro:user-upload:astrological-glossary-txt",
+      "source_path": "data/sources/2026-08-user-uploads/raw/Astrological_Glossary.txt",
+      "filename": "Astrological_Glossary.txt",
+      "sha256": "a669111b1588c153a0a13270eecdcebde64fcc0828a3280a31e38b5f8dd364b3",
+      "size_bytes": 84585,
+      "category": "terminology_reference",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review"
+      ],
+      "parser": "text",
+      "raw_preservation": "staged_copy"
+    },
+    {
+      "source_id": "openastro:user-upload:astrologypredictionandfinancialtimingsystem-txt",
+      "source_path": "data/sources/2026-08-user-uploads/raw/AstrologyPredictionandFinancialTimingSystem.txt",
+      "filename": "AstrologyPredictionandFinancialTimingSystem.txt",
+      "sha256": "92b22390fb16599f24dc7f95b985c12869bbb4dde528c80104dda93a72a7f63a",
+      "size_bytes": 31228,
+      "category": "financial_or_market_research_material",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review",
+        "financial_research_only",
+        "not_a_validated_signal",
+        "non_advisory"
+      ],
+      "parser": "utf8_bom_removed",
+      "raw_preservation": "staged_copy"
+    },
+    {
+      "source_id": "openastro:user-upload:astrology-nakshatra-txt",
+      "source_path": "data/sources/2026-08-user-uploads/raw/Astrology_Nakshatra.txt",
+      "filename": "Astrology_Nakshatra.txt",
+      "sha256": "52aa2df44da90dd611b967723b64249b9c6e6c5ccd118e26e3da89f735fc8cbc",
+      "size_bytes": 1609,
+      "category": "sparse_presentation_extract",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review"
+      ],
+      "parser": "text",
+      "raw_preservation": "staged_copy"
+    },
+    {
+      "source_id": "openastro:user-upload:astrology-ontology-enriched-and-expanded-framewor-1-pdf",
+      "source_path": "data/sources/2026-08-user-uploads/raw/Astrology_Ontology__Enriched_and_Expanded_Framewor(1).pdf",
+      "filename": "Astrology_Ontology__Enriched_and_Expanded_Framewor(1).pdf",
+      "sha256": "8b73919bb0696ec850547bbeb2ff65c64c038854ae38e64f2c173a72f5b62776",
+      "size_bytes": 103849,
+      "category": "astrology_source_material",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review"
+      ],
+      "parser": "pdftotext_layout",
+      "raw_preservation": "staged_copy",
+      "derived_text_path": "data/sources/2026-08-user-uploads/derived-pdf-text/Astrology_Ontology__Enriched_and_Expanded_Framewor(1).txt"
+    },
+    {
+      "source_id": "openastro:user-upload:chart-interpretation-arroyo-txt",
+      "source_path": "data/sources/2026-08-user-uploads/raw/Chart_Interpretation_Arroyo.txt",
+      "filename": "Chart_Interpretation_Arroyo.txt",
+      "sha256": "6e104f713a921059672a761a8dfa19121835716b50435caabb0ab6c029722b10",
+      "size_bytes": 93,
+      "category": "near_empty_extract",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review"
+      ],
+      "parser": "text",
+      "raw_preservation": "staged_copy"
+    },
+    {
+      "source_id": "openastro:user-upload:financialastrologyplanetarycycles-detailedexploration-txt",
+      "source_path": "data/sources/2026-08-user-uploads/raw/FinancialAstrologyPlanetaryCycles_DetailedExploration.txt",
+      "filename": "FinancialAstrologyPlanetaryCycles_DetailedExploration.txt",
+      "sha256": "1b05c1a7a360bec0fd60b980d45376a2e7e7348793287b37a45a7743c09fae30",
+      "size_bytes": 5013,
+      "category": "financial_or_market_research_material",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review",
+        "financial_research_only",
+        "not_a_validated_signal",
+        "non_advisory"
+      ],
+      "parser": "fenced_json",
+      "raw_preservation": "staged_copy"
+    },
+    {
+      "source_id": "openastro:user-upload:fixed-stars-1-txt",
+      "source_path": "data/sources/2026-08-user-uploads/raw/Fixed_Stars_1.txt",
+      "filename": "Fixed_Stars_1.txt",
+      "sha256": "c6db36968ac0b8e29e015c60fcfb051b41ab6d9b58bf12c9d15b0c728c7d9122",
+      "size_bytes": 45658,
+      "category": "fixed_star_interpretation_reference",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review"
+      ],
+      "parser": "text",
+      "raw_preservation": "staged_copy"
+    },
+    {
+      "source_id": "openastro:user-upload:historicaldata-1785490203238-csv",
+      "source_path": "data/sources/2026-08-user-uploads/raw/HistoricalData_1785490203238.csv",
+      "filename": "HistoricalData_1785490203238.csv",
+      "sha256": "694868593351dcf4af75a96d53737ed79006cc3ea8478df399db57cc56981c90",
+      "size_bytes": 1824,
+      "category": "financial_or_market_research_material",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review",
+        "financial_research_only",
+        "not_a_validated_signal",
+        "non_advisory"
+      ],
+      "parser": "csv_dict_reader",
+      "raw_preservation": "staged_copy"
+    },
+    {
+      "source_id": "openastro:user-upload:masterastrologycharttypes-txt",
+      "source_path": "data/sources/2026-08-user-uploads/raw/MasterAstrologyChartTypes.txt",
+      "filename": "MasterAstrologyChartTypes.txt",
+      "sha256": "c42998ea1fb2d9be0819023e49ab36642964d4f89832ac1e7bd369f428b3633f",
+      "size_bytes": 65412,
+      "category": "chart_type_reference",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review"
+      ],
+      "parser": "utf8_bom_removed",
+      "raw_preservation": "staged_copy"
+    },
+    {
+      "source_id": "openastro:user-upload:signals-pdf",
+      "source_path": "data/sources/2026-08-user-uploads/raw/Signals.pdf",
+      "filename": "Signals.pdf",
+      "sha256": "5f355429be6e57db3a32581c632c4d1e455ee91151edc9e3ce1b82f7917a82b6",
+      "size_bytes": 2405188,
+      "category": "astrology_source_material",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review"
+      ],
+      "parser": "pdftotext_layout",
+      "raw_preservation": "staged_copy",
+      "derived_text_path": "data/sources/2026-08-user-uploads/derived-pdf-text/Signals.txt"
+    },
+    {
+      "source_id": "openastro:user-upload:uarosv6datacharts-txt",
+      "source_path": "data/sources/2026-08-user-uploads/raw/UAROSv6datacharts.txt",
+      "filename": "UAROSv6datacharts.txt",
+      "sha256": "5192a5b768e3b65125ece785cc8ef4953f5bd03aaf3b602d285e76dc545a9224",
+      "size_bytes": 823083,
+      "category": "sensitive_interpretive_material",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review",
+        "sensitive_adult_interpretive_content",
+        "quarantined_from_general_delineation"
+      ],
+      "parser": "quarantine_metadata_only",
+      "raw_preservation": "staged_copy"
+    },
+    {
+      "source_id": "openastro:user-upload:afe-quantreo-pipeline-2-py",
+      "source_path": "data/sources/2026-08-user-uploads/raw/afe_quantreo_pipeline-2.py",
+      "filename": "afe_quantreo_pipeline-2.py",
+      "sha256": "1c5664f2ebf3104011fca56aae3721ba6e79dacdcb7944e62ce0fcabf5b1e150",
+      "size_bytes": 32276,
+      "category": "untrusted_code_or_ui",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review",
+        "do_not_execute",
+        "static_inspection_only",
+        "financial_research_only",
+        "not_a_validated_signal",
+        "non_advisory"
+      ],
+      "parser": "static_code_inspection",
+      "raw_preservation": "staged_copy"
+    },
+    {
+      "source_id": "openastro:user-upload:antiscion-synastry-2-jsx-1-txt",
+      "source_path": "data/sources/2026-08-user-uploads/raw/antiscion_synastry-2.jsx(1).txt",
+      "filename": "antiscion_synastry-2.jsx(1).txt",
+      "sha256": "b346545831e48a8e32af9375280eeb8e6e508122a3f622c715510f6fc0fa886e",
+      "size_bytes": 80176,
+      "category": "untrusted_code_or_ui",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review",
+        "do_not_execute",
+        "static_inspection_only",
+        "personal_data_or_personalized_chart",
+        "private_context_not_for_general_corpus"
+      ],
+      "parser": "static_code_inspection",
+      "raw_preservation": "staged_copy"
+    },
+    {
+      "source_id": "openastro:user-upload:astro-intelligence-ui-html",
+      "source_path": "data/sources/2026-08-user-uploads/raw/astro_intelligence_ui.html",
+      "filename": "astro_intelligence_ui.html",
+      "sha256": "36edaffab454034066fc2e5ac4b0aabf82294fa6cf4ffbff6c087a8e21645880",
+      "size_bytes": 50935,
+      "category": "untrusted_code_or_ui",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review",
+        "do_not_execute",
+        "static_inspection_only"
+      ],
+      "parser": "static_code_inspection",
+      "raw_preservation": "staged_copy"
+    },
+    {
+      "source_id": "openastro:user-upload:astrodash-4m7y4aef-manus-md",
+      "source_path": "data/sources/2026-08-user-uploads/raw/astrodash-4m7y4aef.manus.md",
+      "filename": "astrodash-4m7y4aef.manus.md",
+      "sha256": "67c99be0925dcd5e8b2d2714d5da2a2e363c9222b9511a22ceb7dd47f0c6eef1",
+      "size_bytes": 1490,
+      "category": "private_chart_or_personalized_output",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review",
+        "personal_data_or_personalized_chart",
+        "private_context_not_for_general_corpus"
+      ],
+      "parser": "privacy_metadata_only",
+      "raw_preservation": "staged_copy"
+    },
+    {
+      "source_id": "openastro:user-upload:astrodash-4m7y4aef-manus-space-pdf",
+      "source_path": "data/sources/2026-08-user-uploads/raw/astrodash-4m7y4aef.manus.space_.pdf",
+      "filename": "astrodash-4m7y4aef.manus.space_.pdf",
+      "sha256": "e8a25bc118f5ebf04eaa726c681a74600692f6afa12161168a53b02591d15124",
+      "size_bytes": 49912,
+      "category": "private_chart_or_personalized_output",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review",
+        "personal_data_or_personalized_chart",
+        "private_context_not_for_general_corpus"
+      ],
+      "parser": "pdftotext_layout",
+      "raw_preservation": "staged_copy",
+      "derived_text_path": "data/sources/2026-08-user-uploads/derived-pdf-text/astrodash-4m7y4aef.manus.space_.txt"
+    },
+    {
+      "source_id": "openastro:user-upload:backtest-validation-guardrails-prevent-look-ahead-bias-state-leakage-and-research-live-divergence-py",
+      "source_path": "data/sources/2026-08-user-uploads/raw/backtest-validation-guardrails-prevent-look-ahead-bias-state-leakage-and-research-live-divergence.py",
+      "filename": "backtest-validation-guardrails-prevent-look-ahead-bias-state-leakage-and-research-live-divergence.py",
+      "sha256": "4d4de169acd4eea96a244bb519f001c85f1c1dd98cfa81b3caad429d3cd60882",
+      "size_bytes": 52455,
+      "category": "untrusted_code_or_ui",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review",
+        "do_not_execute",
+        "static_inspection_only",
+        "financial_research_only",
+        "not_a_validated_signal",
+        "non_advisory"
+      ],
+      "parser": "static_code_inspection",
+      "raw_preservation": "staged_copy"
+    },
+    {
+      "source_id": "openastro:user-upload:esoteric-astro-txt",
+      "source_path": "data/sources/2026-08-user-uploads/raw/esoteric_astro.txt",
+      "filename": "esoteric_astro.txt",
+      "sha256": "72f4f0a296b786300c935176cf8ac41ca6fedcc5ae1201a00454ccfa5ad9103e",
+      "size_bytes": 594022,
+      "category": "esoteric_astrology_source",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review",
+        "esoteric_retrieval_only",
+        "not_for_standard_calculation_engine"
+      ],
+      "parser": "text",
+      "raw_preservation": "staged_copy"
+    },
+    {
+      "source_id": "openastro:user-upload:extracted-knowledge-txt",
+      "source_path": "data/sources/2026-08-user-uploads/raw/extracted_knowledge.txt",
+      "filename": "extracted_knowledge.txt",
+      "sha256": "4b009da8538743645ee135543df4d07d7741f1d79aeb535fda7d54fc9c673fbb",
+      "size_bytes": 18890,
+      "category": "astrology_source_material",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review"
+      ],
+      "parser": "text",
+      "raw_preservation": "staged_copy"
+    },
+    {
+      "source_id": "openastro:user-upload:https-www-genspark-6648907462284373701-md",
+      "source_path": "data/sources/2026-08-user-uploads/raw/https___www.genspark_6648907462284373701.md",
+      "filename": "https___www.genspark_6648907462284373701.md",
+      "sha256": "8f33fd037cada5f2f23f80e2121945dd99beac056ac627a32cf487394650e0e8",
+      "size_bytes": 263231,
+      "category": "astrology_source_material",
+      "trust_status": "untrusted_user_supplied_data",
+      "rights_status": "source_rights_pending_review",
+      "flags": [
+        "user_supplied",
+        "untrusted_data",
+        "source_rights_pending_review"
+      ],
+      "parser": "fenced_json",
+      "raw_preservation": "staged_copy"
+    },
+    {
+      "source_id": "referenced-task:hVGbM9A8ReKExMPNmS4DQa",
+      "source_path": "data/sources/2026-08-user-uploads/referenced_task_inventory.json",
+      "filename": "Extracting Text Files to JSON",
+      "sha256": "a25b30174e4ec9d90d0ce2d15783fa743227d921adb117a6cdc155da7c73f93e",
+      "size_bytes": 4452,
+      "category": "referenced_task_context",
+      "trust_status": "untrusted_referenced_task_context",
+      "rights_status": "task_access_scope_owned_but_external_source_rights_not_verified",
+      "flags": [
+        "referenced_task_context_only",
+        "source_context_only"
+      ],
+      "parser": "manual_provenance_inventory",
+      "raw_preservation": "referenced_task_inventory",
+      "limitations": [
+        "Task artifacts were not treated as duplicate canonical sources without a retained source file and hash in the current repository."
+      ]
+    },
+    {
+      "source_id": "referenced-task:bE7XK2bZQxwJ27tcqauA9x",
+      "source_path": "data/sources/2026-08-user-uploads/referenced_task_inventory.json",
+      "filename": "Astrology Chart Analysis Website Using Provided Source",
+      "sha256": "a25b30174e4ec9d90d0ce2d15783fa743227d921adb117a6cdc155da7c73f93e",
+      "size_bytes": 4452,
+      "category": "referenced_task_context",
+      "trust_status": "untrusted_referenced_task_context",
+      "rights_status": "task_access_scope_owned_but_external_source_rights_not_verified",
+      "flags": [
+        "referenced_task_context_only",
+        "source_context_only"
+      ],
+      "parser": "manual_provenance_inventory",
+      "raw_preservation": "referenced_task_inventory",
+      "limitations": [
+        "Website implementation claims are not used as evidence for calculation accuracy or interpretive validity."
+      ]
+    },
+    {
+      "source_id": "referenced-task:k8uiNy9tJvLtcPBwUudZfz",
+      "source_path": "data/sources/2026-08-user-uploads/referenced_task_inventory.json",
+      "filename": "Astrodash Manus Space URL",
+      "sha256": "a25b30174e4ec9d90d0ce2d15783fa743227d921adb117a6cdc155da7c73f93e",
+      "size_bytes": 4452,
+      "category": "referenced_task_context",
+      "trust_status": "untrusted_referenced_task_context",
+      "rights_status": "task_access_scope_owned_but_external_source_rights_not_verified",
+      "flags": [
+        "referenced_task_context_only",
+        "privacy_restricted_context"
+      ],
+      "parser": "manual_provenance_inventory",
+      "raw_preservation": "referenced_task_inventory",
+      "limitations": [
+        "Personal chart placements and derived descriptions are retained as source material only and are excluded from generalized corpus records."
+      ]
+    },
+    {
+      "source_id": "referenced-task:mmcQKKdetYYvNW4dEAsgsH",
+      "source_path": "data/sources/2026-08-user-uploads/referenced_task_inventory.json",
+      "filename": "Astrology Compendium expanded",
+      "sha256": "a25b30174e4ec9d90d0ce2d15783fa743227d921adb117a6cdc155da7c73f93e",
+      "size_bytes": 4452,
+      "category": "referenced_task_context",
+      "trust_status": "untrusted_referenced_task_context",
+      "rights_status": "task_access_scope_owned_but_external_source_rights_not_verified",
+      "flags": [
+        "referenced_task_context_only",
+        "source_context_only"
+      ],
+      "parser": "manual_provenance_inventory",
+      "raw_preservation": "referenced_task_inventory",
+      "limitations": [
+        "No un-hashed prior task output is silently promoted into the current canonical corpus."
+      ]
+    },
+    {
+      "source_id": "referenced-task:D75PQwZLeHq6xHGDTB5cCd",
+      "source_path": "data/sources/2026-08-user-uploads/referenced_task_inventory.json",
+      "filename": "Solar Arcs Delineation Methodology Framework Overview",
+      "sha256": "a25b30174e4ec9d90d0ce2d15783fa743227d921adb117a6cdc155da7c73f93e",
+      "size_bytes": 4452,
+      "category": "referenced_task_context",
+      "trust_status": "untrusted_referenced_task_context",
+      "rights_status": "task_access_scope_owned_but_external_source_rights_not_verified",
+      "flags": [
+        "referenced_task_context_only",
+        "methodology_proposal_pending_review"
+      ],
+      "parser": "manual_provenance_inventory",
+      "raw_preservation": "referenced_task_inventory",
+      "limitations": [
+        "Weights, orb policy, probability-style multipliers, and confirmation boosts remain methodology-bound and are not treated as computed truth, empirical probability, or a calculation adapter."
+      ]
+    },
+    {
+      "source_id": "referenced-task:gw4yP30qoqPeIhTA3L9cO0",
+      "source_path": "data/sources/2026-08-user-uploads/referenced_task_inventory.json",
+      "filename": "Detailed Delineation Framework from Esoteric Astrology PDF",
+      "sha256": "a25b30174e4ec9d90d0ce2d15783fa743227d921adb117a6cdc155da7c73f93e",
+      "size_bytes": 4452,
+      "category": "referenced_task_context",
+      "trust_status": "untrusted_referenced_task_context",
+      "rights_status": "task_access_scope_owned_but_external_source_rights_not_verified",
+      "flags": [
+        "referenced_task_context_only",
+        "source_derived_esoteric_context"
+      ],
+      "parser": "manual_provenance_inventory",
+      "raw_preservation": "referenced_task_inventory",
+      "limitations": [
+        "Esoteric interpretation remains retrieval-only and is never injected into Western, Vedic, or standard calculation engines."
+      ]
+    }
+  ]
+}

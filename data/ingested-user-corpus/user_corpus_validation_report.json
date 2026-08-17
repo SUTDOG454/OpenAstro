@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "status": "passed_with_review_warnings",
+  "checks": {
+    "raw_source_directory_exists": true,
+    "referenced_task_inventory_exists": true,
+    "sources_have_hashes": true,
+    "records_reference_known_sources": true,
+    "record_required_fields_present": true,
+    "code_execution_prohibited": true,
+    "sensitive_content_quarantined": true,
+    "financial_records_not_promoted": true
+  },
+  "errors": [],
+  "warnings": [
+    "All source rights remain pending review unless separately documented.",
+    "No uploaded calculation code was executed or adopted.",
+    "No chart position or predictive timing value was calculated from uploaded source material.",
+    "The supplied OHLCV-like CSV is not an active research dataset because identity, rights, adjustment, timezone, and availability lineage are missing."
+  ]
+}

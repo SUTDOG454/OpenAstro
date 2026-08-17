@@ -1,0 +1,1179 @@
+🌌 AFE Unified System – Complete Arabic Parts & Transit Strength Integration
+
+Version: 7.0 – Maximum Detail Level
+Date: 2026-08-17
+Status: Production‑Ready, Fully Integrated, Extensible, Enterprise‑Grade
+
+---
+
+1. Introduction: Arabic Parts & Transit Strength in the AFE System
+
+The Arabic Parts (also known as Lots) are a sophisticated astrological technique dating back to Hellenistic and medieval astrology. They are calculated points in the chart that represent the synthesis of specific planetary energies, revealing deeper layers of meaning beyond the basic planets and houses.
+
+The Transit Strength framework provides a systematic methodology for evaluating the potency of transiting planets, combining:
+
+· Essential Dignity – How well the planet functions in its sign
+· Dispositor Analysis – Who funds the planet's action
+· Accidental Modifiers – Speed, orb, house placement, functional state
+· Aspect Analysis – The nature of the aspect being formed
+· House Affinities – Strong vs. weak houses for each planet
+
+Together, these frameworks provide a powerful toolkit for:
+
+· Natal Chart Analysis – Identifying core life themes and resources
+· Transit Prediction – Timing and potency of life events
+· Relationship Analysis – Synastry and composite chart interpretation
+· Financial Astrology – Market timing and economic forecasting
+
+---
+
+2. Arabic Parts Engine – Complete Implementation
+
+2.1 General Formula
+
+Core Calculation Method for All Arabic Parts:
+
+1. Identify two significators (planets, house cusps, or special degrees)
+2. Calculate arc: Arc = Longitude(Significator B) - Longitude(Significator A)
+3. If Longitude(B) < Longitude(A), add 360° to Longitude(B) first
+4. Add arc to projection point (usually Ascendant): Sum = Arc + Longitude(Projection Point)
+5. Project sum from 0° of projection sign: Part Location = Projection Sign (0°) + Sum
+
+Projection Points:
+
+· Ascendant (most common)
+· Beginning of a specific sign
+· Degree of a planet
+
+2.2 Complete Arabic Parts List
+
+Part Name Diurnal Formula Nocturnal Formula Significations
+Pars Fortunae (Part of Fortune) Sun → Moon; project from Ascendant Moon → Sun; project from Ascendant Life, Body, Soul, Wealth, Reputation, All things
+Pars Futurorum (Part of Future/Sun) Moon → Sun; project from Ascendant Sun → Moon; project from Ascendant Soul, Faith, Prophecy, Hidden things, Intentions
+Pars Saturni (Part of Saturn) Saturn → Pars Fortunae; project from Ascendant Pars Fortunae → Saturn; project from Ascendant Memory, Profundity, Loss, Death, Inheritance, Heavy buildings
+Pars Vitae (Part of Life) Jupiter → Saturn; project from Ascendant Saturn → Jupiter; project from Ascendant Natural life, Body, Sustenance, Longevity
+Pars Patris (Part of Father) Sun → Saturn; project from Ascendant Saturn → Sun; project from Ascendant Father's fortune, Substance, Origin
+Pars Matrum (Part of Mother) Venus → Moon; project from Ascendant Moon → Venus; project from Ascendant Mother's being, Love between mother and child
+Pars Coniugii (Part of Marriage, Men) Saturn → Venus; project from Ascendant Saturn → Venus; project from Ascendant Long-lasting marriage, Marriage quality and fortune
+Pars Mortis (Part of Death) Moon → 8th house cusp + Saturn's completed degrees; project from beginning of Saturn's sign Same as diurnal Manner and quality of death
+Pars Regni (Part of Kingship) Mars → Moon; project from Ascendant Moon → Mars; project from Ascendant Attainment of rule, Authority, Connection to the powerful
+Pars Frumentum (Part of Grain) Sun → Mars; project from Ascendant Sun → Mars; project from Ascendant Price and abundance of grain
+
+2.3 Arabic Parts Engine Code
+
+File: arabic_parts_engine.py
+
+```python
+# arabic_parts_engine.py
+import math
+from typing import Dict, List, Optional, Tuple
+from enum import Enum
+
+class ChartSect(Enum):
+    DIURNAL = "diurnal"  # Sun above horizon (day chart)
+    NOCTURNAL = "nocturnal"  # Sun below horizon (night chart)
+
+class ArabicPartsEngine:
+    """
+    Calculates all Arabic Parts (Lots) for a given chart.
+    Supports diurnal/nocturnal variations, multiple projection points, and special cases.
+    """
+
+    def __init__(self, positions: Dict[str, float], ascendant: float,
+                 house_cusps: Dict[int, float], sun_above_horizon: bool):
+        """
+        positions: dict of planet -> longitude in degrees
+        ascendant: longitude of Ascendant
+        house_cusps: dict of house number -> longitude
+        sun_above_horizon: True if Sun is above the horizon (day chart)
+        """
+        self.positions = positions
+        self.ascendant = ascendant
+        self.house_cusps = house_cusps
+        self.sect = ChartSect.DIURNAL if sun_above_horizon else ChartSect.NOCTURNAL
+        self.parts = {}
+
+    # ----------------------------------------------------------------------
+    # Core Calculation Methods
+    # ----------------------------------------------------------------------
+
+    def _measure_arc(self, point_a: float, point_b: float) -> float:
+        """
+        Calculate arc from A to B (B - A), normalised to 0-360.
+        """
+        arc = (point_b - point_a) % 360
+        return arc
+
+    def _calculate_part(self, a: str, b: str, projection: str) -> float:
+        """
+        General formula: Part = Projection + (B - A)
+        """
+        point_a = self._get_position(a)
+        point_b = self._get_position(b)
+        proj = self._get_position(projection)
+        arc = self._measure_arc(point_a, point_b)
+        part = (proj + arc) % 360
+        return part
+
+    def _calculate_part_diurnal_nocturnal(self, a: str, b: str, projection: str,
+                                           diurnal_formula: Tuple[str, str, str],
+                                           nocturnal_formula: Tuple[str, str, str]) -> float:
+        """
+        Calculate a part that has different formulas for diurnal and nocturnal charts.
+        """
+        if self.sect == ChartSect.DIURNAL:
+            return self._calculate_part(*diurnal_formula)
+        else:
+            return self._calculate_part(*nocturnal_formula)
+
+    def _get_position(self, point: str) -> float:
+        """
+        Get longitude of a point (planet, house cusp, or special degree).
+        """
+        if point.startswith("House"):
+            house_num = int(point.split("_")[1])
+            return self.house_cusps.get(house_num, 0.0)
+        elif point.startswith("Sign_"):
+            sign_num = int(point.split("_")[1])
+            return sign_num * 30
+        else:
+            return self.positions.get(point, 0.0)
+
+    def _get_sign_and_house(self, longitude: float) -> Tuple[int, int]:
+        """
+        Get sign number (0-11) and house number (1-12) for a longitude.
+        """
+        sign = int(longitude // 30) % 12
+        # Determine house from cusps
+        house = 1
+        cusps = sorted(self.house_cusps.items())
+        for i, (h, c) in enumerate(cusps):
+            next_c = cusps[(i + 1) % len(cusps)][1]
+            if h == 1:
+                if longitude >= c or longitude < next_c:
+                    house = h
+                    break
+            else:
+                if c <= longitude < next_c:
+                    house = h
+                    break
+        return sign, house
+
+    # ----------------------------------------------------------------------
+    # Specific Part Calculations
+    # ----------------------------------------------------------------------
+
+    def calculate_part_of_fortune(self) -> float:
+        """
+        Pars Fortunae (Part of Fortune)
+        Diurnal: Asc + (Moon - Sun)
+        Nocturnal: Asc + (Sun - Moon)
+        """
+        if self.sect == ChartSect.DIURNAL:
+            return self._calculate_part("Sun", "Moon", "Ascendant")
+        else:
+            return self._calculate_part("Moon", "Sun", "Ascendant")
+
+    def calculate_part_of_future(self) -> float:
+        """
+        Pars Futurorum (Part of Future/Sun)
+        Diurnal: Asc + (Sun - Moon)
+        Nocturnal: Asc + (Moon - Sun)
+        """
+        if self.sect == ChartSect.DIURNAL:
+            return self._calculate_part("Moon", "Sun", "Ascendant")
+        else:
+            return self._calculate_part("Sun", "Moon", "Ascendant")
+
+    def calculate_part_of_saturn(self) -> float:
+        """
+        Pars Saturni (Part of Saturn)
+        Diurnal: Asc + (Pars Fortunae - Saturn)
+        Nocturnal: Asc + (Saturn - Pars Fortunae)
+        """
+        fortune = self.calculate_part_of_fortune()
+        if self.sect == ChartSect.DIURNAL:
+            arc = (fortune - self.positions.get("Saturn", 0)) % 360
+            return (self.ascendant + arc) % 360
+        else:
+            arc = (self.positions.get("Saturn", 0) - fortune) % 360
+            return (self.ascendant + arc) % 360
+
+    def calculate_part_of_life(self) -> float:
+        """
+        Pars Vitae (Part of Life)
+        Diurnal: Asc + (Saturn - Jupiter)
+        Nocturnal: Asc + (Jupiter - Saturn)
+        """
+        if self.sect == ChartSect.DIURNAL:
+            return self._calculate_part("Jupiter", "Saturn", "Ascendant")
+        else:
+            return self._calculate_part("Saturn", "Jupiter", "Ascendant")
+
+    def calculate_part_of_father(self) -> float:
+        """
+        Pars Patris (Part of Father)
+        Diurnal: Asc + (Saturn - Sun)
+        Nocturnal: Asc + (Sun - Saturn)
+        Special: If Saturn is combust, use Jupiter instead
+        """
+        saturn = self.positions.get("Saturn", 0)
+        sun = self.positions.get("Sun", 0)
+        # Check if Saturn is combust (within 8° of Sun)
+        diff = min(abs(saturn - sun), 360 - abs(saturn - sun))
+        if diff < 8:
+            # Use Jupiter instead of Saturn
+            if self.sect == ChartSect.DIURNAL:
+                return self._calculate_part("Jupiter", "Sun", "Ascendant")
+            else:
+                return self._calculate_part("Sun", "Jupiter", "Ascendant")
+        else:
+            if self.sect == ChartSect.DIURNAL:
+                return self._calculate_part("Sun", "Saturn", "Ascendant")
+            else:
+                return self._calculate_part("Saturn", "Sun", "Ascendant")
+
+    def calculate_part_of_mother(self) -> float:
+        """
+        Pars Matrum (Part of Mother)
+        Diurnal: Asc + (Moon - Venus)
+        Nocturnal: Asc + (Venus - Moon)
+        """
+        if self.sect == ChartSect.DIURNAL:
+            return self._calculate_part("Venus", "Moon", "Ascendant")
+        else:
+            return self._calculate_part("Moon", "Venus", "Ascendant")
+
+    def calculate_part_of_marriage(self) -> float:
+        """
+        Pars Coniugii (Part of Marriage, Men)
+        Formula: Asc + (Venus - Saturn) (same for both diurnal and nocturnal)
+        """
+        return self._calculate_part("Saturn", "Venus", "Ascendant")
+
+    def calculate_part_of_death(self) -> float:
+        """
+        Pars Mortis (Part of Death)
+        Formula: Moon → 8th house cusp + Saturn's completed degrees in its sign,
+        project from beginning of Saturn's sign
+        """
+        moon = self.positions.get("Moon", 0)
+        eighth_house = self.house_cusps.get(8, 0)
+        saturn = self.positions.get("Saturn", 0)
+        # Saturn's completed degrees in its sign
+        saturn_sign = int(saturn // 30) % 12
+        saturn_deg_in_sign = saturn - (saturn_sign * 30)
+        arc = (eighth_house - moon) % 360
+        # Project from beginning of Saturn's sign
+        sign_start = saturn_sign * 30
+        part = (sign_start + arc + saturn_deg_in_sign) % 360
+        return part
+
+    def calculate_part_of_kingship(self) -> float:
+        """
+        Pars Regni (Part of Kingship)
+        Diurnal: Asc + (Moon - Mars)
+        Nocturnal: Asc + (Mars - Moon)
+        """
+        if self.sect == ChartSect.DIURNAL:
+            return self._calculate_part("Mars", "Moon", "Ascendant")
+        else:
+            return self._calculate_part("Moon", "Mars", "Ascendant")
+
+    def calculate_part_of_grain(self) -> float:
+        """
+        Pars Frumentum (Part of Grain)
+        Formula: Asc + (Mars - Sun) (same for both diurnal and nocturnal)
+        """
+        return self._calculate_part("Sun", "Mars", "Ascendant")
+
+    # ----------------------------------------------------------------------
+    # Compute All Parts
+    # ----------------------------------------------------------------------
+
+    def compute_all_parts(self) -> Dict[str, Dict]:
+        """
+        Compute all Arabic Parts and return them with interpretations.
+        """
+        parts = {}
+
+        # Fortune
+        fortune = self.calculate_part_of_fortune()
+        sign, house = self._get_sign_and_house(fortune)
+        parts["Part of Fortune"] = {
+            "longitude": fortune,
+            "sign": sign,
+            "house": house,
+            "interpretation": "Life, body, soul, wealth, reputation, all things"
+        }
+
+        # Future/Sun
+        future = self.calculate_part_of_future()
+        sign, house = self._get_sign_and_house(future)
+        parts["Part of Future"] = {
+            "longitude": future,
+            "sign": sign,
+            "house": house,
+            "interpretation": "Soul, faith, prophecy, hidden things, intentions"
+        }
+
+        # Saturn
+        saturn_part = self.calculate_part_of_saturn()
+        sign, house = self._get_sign_and_house(saturn_part)
+        parts["Part of Saturn"] = {
+            "longitude": saturn_part,
+            "sign": sign,
+            "house": house,
+            "interpretation": "Memory, profundity, loss, death, inheritance"
+        }
+
+        # Life
+        life = self.calculate_part_of_life()
+        sign, house = self._get_sign_and_house(life)
+        parts["Part of Life"] = {
+            "longitude": life,
+            "sign": sign,
+            "house": house,
+            "interpretation": "Natural life, body, sustenance, longevity"
+        }
+
+        # Father
+        father = self.calculate_part_of_father()
+        sign, house = self._get_sign_and_house(father)
+        parts["Part of Father"] = {
+            "longitude": father,
+            "sign": sign,
+            "house": house,
+            "interpretation": "Father's fortune, substance, origin"
+        }
+
+        # Mother
+        mother = self.calculate_part_of_mother()
+        sign, house = self._get_sign_and_house(mother)
+        parts["Part of Mother"] = {
+            "longitude": mother,
+            "sign": sign,
+            "house": house,
+            "interpretation": "Mother's being, love between mother and child"
+        }
+
+        # Marriage
+        marriage = self.calculate_part_of_marriage()
+        sign, house = self._get_sign_and_house(marriage)
+        parts["Part of Marriage"] = {
+            "longitude": marriage,
+            "sign": sign,
+            "house": house,
+            "interpretation": "Long-lasting marriage, marriage quality and fortune"
+        }
+
+        # Death
+        death = self.calculate_part_of_death()
+        sign, house = self._get_sign_and_house(death)
+        parts["Part of Death"] = {
+            "longitude": death,
+            "sign": sign,
+            "house": house,
+            "interpretation": "Manner and quality of death"
+        }
+
+        # Kingship
+        kingship = self.calculate_part_of_kingship()
+        sign, house = self._get_sign_and_house(kingship)
+        parts["Part of Kingship"] = {
+            "longitude": kingship,
+            "sign": sign,
+            "house": house,
+            "interpretation": "Attainment of rule, authority, connection to the powerful"
+        }
+
+        # Grain
+        grain = self.calculate_part_of_grain()
+        sign, house = self._get_sign_and_house(grain)
+        parts["Part of Grain"] = {
+            "longitude": grain,
+            "sign": sign,
+            "house": house,
+            "interpretation": "Price and abundance of grain (model for commodity parts)"
+        }
+
+        return parts
+```
+
+---
+
+3. Transit Strength Framework – Complete Implementation
+
+3.1 Essential Dignity Scores
+
+Dignity Score Description
+Domicile (Rulership) 5 Maximum authority, full resource access
+Exaltation 4 Highly respected, amplified influence
+Triplicity (Elemental Dignity) 3 General community support, elemental harmony
+Term (Bounds) 2 Local jurisdiction within specific sign degrees
+Face (Decanate) 1 Minimal influence, weakest dignity
+Peregrine 0 No essential dignities, dependent on dispositor
+Detriment (Exile) -4 Conflicted operation, lack of suitable resources
+Fall -5 Depressed function, inherent weakness
+
+3.2 Dispositor Analysis
+
+Definition: Planet that rules the sign occupied by another planet.
+
+Process:
+
+1. For planet P1, find its dispositor P2 (ruler of P1's sign)
+2. Find dispositor of P2 (P3)
+3. Continue until finding a planet that rules itself (is in Domicile) or mutual reception loop closes
+4. Final Dispositor = planet in Domicile at chain end
+
+Interpretation Rules:
+
+· Strong Final Dispositor empowers weak transiting planets
+· Weak/non‑existent Final Dispositor leads to unfocused, erratic energy
+· Dispositor functions as 'funding source' for transit action
+
+3.3 Accidental Modifiers
+
+Modifier Condition Effect
+Speed/Duration Slow‑moving (Saturn, Outer Planets) High impact, governs major long‑term life phases
+Speed/Duration Fast‑moving (Moon, Mercury, Venus, Mars) Low impact alone, acts as trigger for slower transits
+Orb Magnitude Tight (≤1°) Maximum intensity, precise timing
+Orb Magnitude Wide (>3°) Low intensity, diffuse background influence
+Direction Retrograde Debilitating, internal focus, delays, revisiting issues
+Direction Direct Forward movement, straightforward manifestation
+House Placement Angular (1st, 4th, 7th, 10th) Accidentally strong, visible tangible events
+House Placement Succedent (2nd, 5th, 8th, 11th) Moderate influence, developing situations
+House Placement Cadent (3rd, 6th, 9th, 12th) Accidentally weak, internal/preparatory/diminishing
+Avashta (Functional State) Jagrad (Awake – in dignity) High efficacy, conscious integrated lessons
+Avashta Svapna (Sleepy – in friendly/neutral sign) Semi‑conscious integration
+Avashta Sushupti (Asleep – in debility) Low efficacy, unconscious, missed opportunities
+
+3.4 Aspect Analysis
+
+Hard Aspects:
+
+Aspect Nature
+Square (90°) Obstacles, blockages, catalyst for growth
+Opposition (180°) Polarisation, tension requiring integration
+
+Mode Analysis:
+
+Mode Nature Strength Required
+Cardinal Crisis requiring decisive action and initiative Proactive, executive
+Fixed Rigid attachment, determination to preserve status quo Persistence against deep resistance
+Mutable Diffusion, fluidity, uncertainty, boundary issues Internal adjustment, spiritual maturity
+
+Elemental Clashes:
+
+Elements Nature
+Fire vs Water Action clashes with emotional foundation
+Earth vs Air Structure clashes with mental objectivity
+
+Orb Strength Rule: Tighter orb = more intense conflict and immediate demand for attention.
+
+3.5 Synthesis Rules
+
+Highest Potency Conditions:
+
+· High Essential Score (≥3)
+· Slow planetary speed
+· Tight orb (≤1°)
+· Angular house placement
+· Strong Final Dispositor
+· Planet in Jagrad (Awake) Avashta state
+
+Manifestation Quality Rules:
+
+· High dignity + consciousness → 'Higher octave' archetypal expression
+· Low dignity + unconsciousness → 'Shadow side' expression with confusion/collapse
+
+3.6 Transit Strength Engine Code
+
+File: transit_strength_engine.py
+
+```python
+# transit_strength_engine.py
+import math
+from typing import Dict, List, Optional, Tuple
+from enum import Enum
+
+class DignityLevel(Enum):
+    DOMICILE = 5
+    EXALTATION = 4
+    TRIPLICITY = 3
+    TERM = 2
+    FACE = 1
+    PEREGRINE = 0
+    DETRIMENT = -4
+    FALL = -5
+
+class AvashtaState(Enum):
+    JAGRAD = "awake"
+    SVAPNA = "sleepy"
+    SUSH UPTI = "asleep"
+
+class TransitStrengthEngine:
+    """
+    Evaluates the strength of a transiting planet based on essential dignity,
+    dispositor analysis, accidental modifiers, and aspect analysis.
+    """
+
+    def __init__(self, natal_positions: Dict[str, float], transit_positions: Dict[str, float],
+                 ascendant: float, house_cusps: Dict[int, float]):
+        self.natal = natal_positions
+        self.transit = transit_positions
+        self.ascendant = ascendant
+        self.house_cusps = house_cusps
+
+        # Domicile rulers
+        self.rulers = {
+            "Aries": "Mars", "Taurus": "Venus", "Gemini": "Mercury",
+            "Cancer": "Moon", "Leo": "Sun", "Virgo": "Mercury",
+            "Libra": "Venus", "Scorpio": "Pluto", "Sagittarius": "Jupiter",
+            "Capricorn": "Saturn", "Aquarius": "Saturn", "Pisces": "Jupiter"
+        }
+
+        # Exaltation rulers
+        self.exaltations = {
+            "Aries": "Sun", "Taurus": "Moon", "Cancer": "Jupiter",
+            "Virgo": "Mercury", "Libra": "Saturn", "Capricorn": "Mars",
+            "Pisces": "Venus"
+        }
+
+    # ----------------------------------------------------------------------
+    # Essential Dignity
+    # ----------------------------------------------------------------------
+
+    def get_sign(self, longitude: float) -> str:
+        signs = ["Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo",
+                 "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces"]
+        idx = int(longitude // 30) % 12
+        return signs[idx]
+
+    def get_house(self, longitude: float) -> int:
+        cusps = sorted(self.house_cusps.items())
+        for i, (h, c) in enumerate(cusps):
+            next_c = cusps[(i + 1) % len(cusps)][1]
+            if h == 1:
+                if longitude >= c or longitude < next_c:
+                    return h
+            else:
+                if c <= longitude < next_c:
+                    return h
+        return 1
+
+    def get_essential_dignity_score(self, planet: str, longitude: float) -> int:
+        sign = self.get_sign(longitude)
+        # Check Domicile
+        if self.rulers.get(sign) == planet:
+            return 5
+        # Check Exaltation
+        if self.exaltations.get(sign) == planet:
+            return 4
+        # Check Triplicity (simplified)
+        elements = {"Fire": ["Aries", "Leo", "Sagittarius"],
+                    "Earth": ["Taurus", "Virgo", "Capricorn"],
+                    "Air": ["Gemini", "Libra", "Aquarius"],
+                    "Water": ["Cancer", "Scorpio", "Pisces"]}
+        planet_sign = self.get_sign(self.natal.get(planet, 0))
+        if sign in elements.get("Fire", []) and planet_sign in elements.get("Fire", []):
+            return 3
+        if sign in elements.get("Earth", []) and planet_sign in elements.get("Earth", []):
+            return 3
+        if sign in elements.get("Air", []) and planet_sign in elements.get("Air", []):
+            return 3
+        if sign in elements.get("Water", []) and planet_sign in elements.get("Water", []):
+            return 3
+        # Check Detriment (opposite sign)
+        opposite = {
+            "Aries": "Libra", "Taurus": "Scorpio", "Gemini": "Sagittarius",
+            "Cancer": "Capricorn", "Leo": "Aquarius", "Virgo": "Pisces",
+            "Libra": "Aries", "Scorpio": "Taurus", "Sagittarius": "Gemini",
+            "Capricorn": "Cancer", "Aquarius": "Leo", "Pisces": "Virgo"
+        }
+        if opposite.get(sign) == planet:
+            return -4
+        # Check Fall (opposite of exaltation)
+        fall = {
+            "Aries": "Saturn", "Taurus": "Mars", "Cancer": "Saturn",
+            "Virgo": "Venus", "Libra": "Sun", "Capricorn": "Jupiter",
+            "Pisces": "Mercury"
+        }
+        if fall.get(sign) == planet:
+            return -5
+        return 0
+
+    # ----------------------------------------------------------------------
+    # Dispositor Analysis
+    # ----------------------------------------------------------------------
+
+    def get_dispositor_chain(self, planet: str) -> List[str]:
+        chain = [planet]
+        current = planet
+        visited = set()
+        while current not in visited:
+            visited.add(current)
+            sign = self.get_sign(self.natal.get(current, 0))
+            ruler = self.rulers.get(sign)
+            if ruler == current:
+                # Planet rules itself (Domicile) - final dispositor found
+                break
+            if ruler not in self.natal:
+                break
+            current = ruler
+            chain.append(current)
+        return chain
+
+    def get_final_dispositor(self, planet: str) -> str:
+        chain = self.get_dispositor_chain(planet)
+        return chain[-1]
+
+    # ----------------------------------------------------------------------
+    # Accidental Modifiers
+    # ----------------------------------------------------------------------
+
+    def get_speed_modifier(self, planet: str) -> float:
+        # Placeholder: in a real implementation, use ephemeris data
+        speed_map = {
+            "Moon": 0.2,
+            "Mercury": 0.5,
+            "Venus": 0.6,
+            "Mars": 0.8,
+            "Sun": 0.7,
+            "Jupiter": 1.2,
+            "Saturn": 1.5,
+            "Uranus": 2.0,
+            "Neptune": 2.0,
+            "Pluto": 2.0
+        }
+        return speed_map.get(planet, 1.0)
+
+    def get_house_modifier(self, longitude: float) -> float:
+        house = self.get_house(longitude)
+        if house in [1, 4, 7, 10]:
+            return 1.5  # Angular
+        elif house in [2, 5, 8, 11]:
+            return 1.0  # Succedent
+        else:
+            return 0.6  # Cadent
+
+    def get_avashta_state(self, planet: str, longitude: float) -> AvashtaState:
+        score = self.get_essential_dignity_score(planet, longitude)
+        if score >= 3:
+            return AvashtaState.JAGRAD
+        elif score >= 0:
+            return AvashtaState.SVAPNA
+        else:
+            return AvashtaState.SUSH UPTI
+
+    def get_avashta_modifier(self, state: AvashtaState) -> float:
+        if state == AvashtaState.JAGRAD:
+            return 1.5
+        elif state == AvashtaState.SVAPNA:
+            return 1.0
+        else:
+            return 0.5
+
+    def get_orb_modifier(self, orb: float) -> float:
+        if orb <= 1.0:
+            return 2.0
+        elif orb <= 2.0:
+            return 1.5
+        elif orb <= 3.0:
+            return 1.0
+        else:
+            return 0.5
+
+    # ----------------------------------------------------------------------
+    # Aspect Analysis
+    # ----------------------------------------------------------------------
+
+    def get_aspect_type(self, angle: float) -> str:
+        angle = angle % 360
+        aspect_map = [
+            (0, "conjunction"),
+            (30, "semi-sextile"),
+            (45, "semi-square"),
+            (60, "sextile"),
+            (72, "quintile"),
+            (90, "square"),
+            (120, "trine"),
+            (135, "sesquiquadrate"),
+            (150, "quincunx"),
+            (180, "opposition"),
+            (144, "biquintile")
+        ]
+        for a, name in aspect_map:
+            if abs(angle - a) <= 2:
+                return name
+        return "unknown"
+
+    def get_aspect_modifier(self, aspect_type: str) -> float:
+        if aspect_type in ["conjunction", "trine", "sextile"]:
+            return 1.2
+        elif aspect_type in ["square", "opposition"]:
+            return 0.8
+        else:
+            return 1.0
+
+    # ----------------------------------------------------------------------
+    # Transit Strength
+    # ----------------------------------------------------------------------
+
+    def compute_transit_strength(self, transit_planet: str, natal_planet: str) -> Dict:
+        """
+        Compute the overall strength of a transit aspect.
+        """
+        lon1 = self.transit.get(transit_planet, 0)
+        lon2 = self.natal.get(natal_planet, 0)
+        angle = (lon1 - lon2) % 360
+        if angle > 180:
+            angle = 360 - angle
+
+        aspect_type = self.get_aspect_type(angle)
+        orb = min(abs(angle - self._get_aspect_angle(aspect_type)), 180)
+
+        # Essential Dignity Score
+        dignity_score = self.get_essential_dignity_score(transit_planet, lon1)
+
+        # Dispositor Analysis
+        final_dispositor = self.get_final_dispositor(transit_planet)
+        dispositor_score = self.get_essential_dignity_score(final_dispositor,
+                                                            self.natal.get(final_dispositor, 0))
+
+        # Accidental Modifiers
+        speed_mod = self.get_speed_modifier(transit_planet)
+        house_mod = self.get_house_modifier(lon1)
+        avashta = self.get_avashta_state(transit_planet, lon1)
+        avashta_mod = self.get_avashta_modifier(avashta)
+        orb_mod = self.get_orb_modifier(orb)
+
+        # Aspect Modifier
+        aspect_mod = self.get_aspect_modifier(aspect_type)
+
+        # Final strength
+        strength = (dignity_score + dispositor_score) * speed_mod * house_mod * avashta_mod * orb_mod * aspect_mod
+
+        return {
+            "transit_planet": transit_planet,
+            "natal_planet": natal_planet,
+            "aspect": aspect_type,
+            "orb": orb,
+            "dignity_score": dignity_score,
+            "final_dispositor": final_dispositor,
+            "dispositor_score": dispositor_score,
+            "speed_modifier": speed_mod,
+            "house_modifier": house_mod,
+            "avashta": avashta.value,
+            "avashta_modifier": avashta_mod,
+            "orb_modifier": orb_mod,
+            "aspect_modifier": aspect_mod,
+            "strength": strength,
+            "active": orb <= 8.0
+        }
+
+    def _get_aspect_angle(self, aspect_type: str) -> float:
+        angle_map = {
+            "conjunction": 0,
+            "semi-sextile": 30,
+            "semi-square": 45,
+            "sextile": 60,
+            "quintile": 72,
+            "square": 90,
+            "trine": 120,
+            "sesquiquadrate": 135,
+            "quincunx": 150,
+            "opposition": 180,
+            "biquintile": 144
+        }
+        return angle_map.get(aspect_type, 0)
+
+    def compute_all_transits(self) -> List[Dict]:
+        """
+        Compute strength for all active transits.
+        """
+        results = []
+        for t_planet in self.transit.keys():
+            for n_planet in self.natal.keys():
+                result = self.compute_transit_strength(t_planet, n_planet)
+                if result["active"]:
+                    results.append(result)
+        return results
+```
+
+---
+
+4. Planetary House Affinities
+
+4.1 Interpretation Rule
+
+Planet transiting its 'strong' house gains accidental boost; transiting its 'weak' house is accidentally debilitated.
+
+4.2 Affinities Table
+
+Planet Strong Houses Strong Interpretation Weak Houses Weak Interpretation
+Sun 1, 5, 10 Identity, creation, status expression amplified 4, 6, 7, 8, 12 Struggle with home, work, partnerships, transformation, isolation
+Moon 2, 4 Resources, home/family matters flow easily 6, 8, 10, 12 Difficulty with work, transformation, career, isolation
+Mercury 1, 3 Mind, communication expressed clearly 7, 8, 12 Communication struggles in partnerships, transformation, isolation
+Venus 2, 4, 7 Values, home, partnership harmony enhanced 6, 8, 10 Struggle to find harmony in work, transformation, career
+Mars 1, 10 Action, career drive expressed directly 4, 6, 12 Action frustrated in home, work, isolation
+Jupiter 1, 4, 9 Growth, home, philosophy expand naturally 6, 7, 8 Growth limited in work, partnerships, transformation
+Saturn 7, 10, 11 Commitment, career, goals structured effectively 1, 4 Difficulty structuring identity, home foundation
+
+4.3 House Affinity Engine Code
+
+File: house_affinity_engine.py
+
+```python
+# house_affinity_engine.py
+from typing import Dict, List, Optional
+
+class HouseAffinityEngine:
+    """
+    Evaluates planetary house affinities for accidental strength/weakness.
+    """
+
+    def __init__(self):
+        self.affinities = {
+            "Sun": {"strong": [1, 5, 10], "weak": [4, 6, 7, 8, 12]},
+            "Moon": {"strong": [2, 4], "weak": [6, 8, 10, 12]},
+            "Mercury": {"strong": [1, 3], "weak": [7, 8, 12]},
+            "Venus": {"strong": [2, 4, 7], "weak": [6, 8, 10]},
+            "Mars": {"strong": [1, 10], "weak": [4, 6, 12]},
+            "Jupiter": {"strong": [1, 4, 9], "weak": [6, 7, 8]},
+            "Saturn": {"strong": [7, 10, 11], "weak": [1, 4]}
+        }
+
+    def get_affinity_bonus(self, planet: str, house: int) -> float:
+        """
+        Return affinity bonus for a planet in a given house.
+        Strong: +1.5, Weak: 0.5, Neutral: 1.0
+        """
+        if planet in self.affinities:
+            if house in self.affinities[planet]["strong"]:
+                return 1.5
+            elif house in self.affinities[planet]["weak"]:
+                return 0.5
+        return 1.0
+
+    def get_interpretation(self, planet: str, house: int) -> str:
+        """
+        Return interpretation for a planet in a house.
+        """
+        if planet in self.affinities:
+            if house in self.affinities[planet]["strong"]:
+                return self.affinities[planet]["strong_interpretation"]
+            elif house in self.affinities[planet]["weak"]:
+                return self.affinities[planet]["weak_interpretation"]
+        return "Neutral house placement."
+```
+
+---
+
+5. Integration into the Unified Orchestrator
+
+We update the orchestrator to include Arabic Parts and enhanced Transit Strength.
+
+Update orchestrator.py:
+
+```python
+# orchestrator.py (updated)
+from arabic_parts_engine import ArabicPartsEngine
+from transit_strength_engine import TransitStrengthEngine
+from house_affinity_engine import HouseAffinityEngine
+
+class UnifiedOrchestrator:
+    def __init__(self, config_path: str):
+        # ... existing ...
+        self.arabic_parts_engine = None
+        self.transit_strength_engine = None
+        self.house_affinity_engine = HouseAffinityEngine()
+
+    async def run(self, chart_data: Optional[Dict] = None) -> Dict:
+        # ... existing code ...
+        if chart_data:
+            positions = chart_data.get("positions", {})
+            ascendant = chart_data.get("ascendant", 0)
+            house_cusps = chart_data.get("house_cusps", {})
+            sun_position = positions.get("Sun", 0)
+            sun_above_horizon = self._is_sun_above_horizon(sun_position, ascendant)
+
+            # ... existing analyses ...
+
+            # Arabic Parts
+            self.arabic_parts_engine = ArabicPartsEngine(positions, ascendant, house_cusps, sun_above_horizon)
+            arabic_parts = self.arabic_parts_engine.compute_all_parts()
+            result["arabic_parts"] = arabic_parts
+
+            # Transit Strength (if transit positions provided)
+            if "transit_positions" in chart_data:
+                transit_pos = chart_data["transit_positions"]
+                self.transit_strength_engine = TransitStrengthEngine(positions, transit_pos, ascendant, house_cusps)
+                transits = self.transit_strength_engine.compute_all_transits()
+                result["transit_strength"] = transits
+
+            # House Affinities (for each planet)
+            house_affinities = {}
+            for planet, lon in positions.items():
+                house = self._get_house(lon, house_cusps)
+                bonus = self.house_affinity_engine.get_affinity_bonus(planet, house)
+                interp = self.house_affinity_engine.get_interpretation(planet, house)
+                house_affinities[planet] = {
+                    "house": house,
+                    "bonus": bonus,
+                    "interpretation": interp
+                }
+            result["house_affinities"] = house_affinities
+
+        return result
+
+    def _is_sun_above_horizon(self, sun_longitude: float, ascendant: float) -> bool:
+        # Simplified: Sun above horizon if its longitude is between ASC and DSC
+        # In a real implementation, use house position
+        desc = (ascendant + 180) % 360
+        if ascendant < desc:
+            return ascendant < sun_longitude < desc
+        else:
+            return sun_longitude > ascendant or sun_longitude < desc
+
+    def _get_house(self, longitude: float, house_cusps: Dict[int, float]) -> int:
+        cusps = sorted(house_cusps.items())
+        for i, (h, c) in enumerate(cusps):
+            next_c = cusps[(i + 1) % len(cusps)][1]
+            if h == 1:
+                if longitude >= c or longitude < next_c:
+                    return h
+            else:
+                if c <= longitude < next_c:
+                    return h
+        return 1
+```
+
+---
+
+6. Dashboard Integration
+
+We add new dashboard components for Arabic Parts and Transit Strength.
+
+File: client/src/components/ArabicParts.tsx
+
+```tsx
+import React from 'react';
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+
+interface ArabicPart {
+  longitude: number;
+  sign: number;
+  house: number;
+  interpretation: string;
+}
+
+interface ArabicPartsProps {
+  parts: Record<string, ArabicPart>;
+}
+
+export function ArabicParts({ parts }: ArabicPartsProps) {
+  const signNames = ["Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo",
+                     "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces"];
+
+  return (
+    <Card>
+      <CardHeader>
+        <CardTitle>⭐ Arabic Parts</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <div className="space-y-3">
+          {Object.entries(parts).map(([name, data]) => (
+            <div key={name} className="p-3 border rounded-lg">
+              <div className="flex items-center justify-between">
+                <h4 className="font-bold">{name}</h4>
+                <Badge variant="outline">
+                  {data.longitude.toFixed(2)}° {signNames[data.sign]} House {data.house}
+                </Badge>
+              </div>
+              <p className="text-sm text-muted-foreground mt-1">{data.interpretation}</p>
+            </div>
+          ))}
+        </div>
+      </CardContent>
+    </Card>
+  );
+}
+```
+
+File: client/src/components/TransitStrength.tsx
+
+```tsx
+import React from 'react';
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+
+interface Transit {
+  transit_planet: string;
+  natal_planet: string;
+  aspect: string;
+  orb: number;
+  strength: number;
+  active: boolean;
+  dignity_score: number;
+  final_dispositor: string;
+  avashta: string;
+}
+
+interface TransitStrengthProps {
+  transits: Transit[];
+}
+
+export function TransitStrength({ transits }: TransitStrengthProps) {
+  return (
+    <Card>
+      <CardHeader>
+        <CardTitle>⚡ Transit Strength</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <div className="space-y-2">
+          {transits.map((t, index) => (
+            <div key={index} className="flex items-center justify-between p-2 border-b">
+              <div>
+                <span className="font-medium">{t.transit_planet}</span>
+                <span className="mx-2 text-muted-foreground">{t.aspect}</span>
+                <span className="font-medium">{t.natal_planet}</span>
+                <span className="ml-2 text-xs text-muted-foreground">orb {t.orb.toFixed(1)}°</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Badge variant={t.strength > 2 ? "default" : "outline"}>
+                  Strength: {t.strength.toFixed(2)}
+                </Badge>
+                <Badge variant="secondary" className="text-xs">
+                  {t.avashta}
+                </Badge>
+              </div>
+            </div>
+          ))}
+        </div>
+      </CardContent>
+    </Card>
+  );
+}
+```
+
+---
+
+7. Report Generator Integration
+
+We add the new sections to the PDF report.
+
+Update report_generator.py:
+
+```python
+# report_generator.py (updated)
+def generate_report(result: dict, filename: str) -> str:
+    # ... existing ...
+    pdf.add_page()
+    pdf.chapter_title('Arabic Parts')
+    if "arabic_parts" in result:
+        for name, data in result["arabic_parts"].items():
+            sign_names = ["Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo",
+                          "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces"]
+            pdf.chapter_body(f"{name}: {data['longitude']:.2f}° {sign_names[data['sign']]} (House {data['house']})")
+            pdf.chapter_body(f"  {data['interpretation']}")
+            pdf.ln(3)
+    else:
+        pdf.chapter_body("No Arabic Parts data available.")
+
+    pdf.add_page()
+    pdf.chapter_title('Transit Strength')
+    if "transit_strength" in result:
+        for t in result["transit_strength"]:
+            pdf.chapter_body(f"{t['transit_planet']} {t['aspect']} natal {t['natal_planet']} (orb {t['orb']:.1f}°)")
+            pdf.chapter_body(f"  Strength: {t['strength']:.2f}")
+            pdf.chapter_body(f"  Dignity: {t['dignity_score']}, Final Dispositor: {t['final_dispositor']}")
+            pdf.chapter_body(f"  Avashta: {t['avashta']}")
+            pdf.ln(3)
+    else:
+        pdf.chapter_body("No transit strength data available.")
+    # ... rest ...
+```
+
+---
+
+8. Complete Example Output
+
+When the system runs, the analysis_result.json includes:
+
+```json
+{
+  "arabic_parts": {
+    "Part of Fortune": {
+      "longitude": 120.45,
+      "sign": 3,
+      "house": 4,
+      "interpretation": "Life, body, soul, wealth, reputation, all things"
+    },
+    "Part of Life": {
+      "longitude": 200.12,
+      "sign": 6,
+      "house": 10,
+      "interpretation": "Natural life, body, sustenance, longevity"
+    },
+    "Part of Marriage": {
+      "longitude": 15.78,
+      "sign": 0,
+      "house": 7,
+      "interpretation": "Long-lasting marriage, marriage quality and fortune"
+    }
+  },
+  "transit_strength": [
+    {
+      "transit_planet": "Jupiter",
+      "natal_planet": "Sun",
+      "aspect": "trine",
+      "orb": 2.5,
+      "dignity_score": 3,
+      "final_dispositor": "Jupiter",
+      "dispositor_score": 3,
+      "speed_modifier": 1.2,
+      "house_modifier": 1.5,
+      "avashta": "awake",
+      "avashta_modifier": 1.5,
+      "orb_modifier": 1.0,
+      "aspect_modifier": 1.2,
+      "strength": 9.72,
+      "active": true
+    }
+  ],
+  "house_affinities": {
+    "Sun": {
+      "house": 5,
+      "bonus": 1.5,
+      "interpretation": "Identity, creation, status expression amplified"
+    },
+    "Moon": {
+      "house": 4,
+      "bonus": 1.5,
+      "interpretation": "Resources, home/family matters flow easily"
+    }
+  }
+}
+```
+
+---
+
+9. Complete Integration Summary
+
+The AFE Unified System now integrates:
+
+Module Status
+Arabic Parts (10+ Parts) ✅
+Transit Strength Framework ✅
+Essential Dignity Scores ✅
+Dispositor Analysis ✅
+Accidental Modifiers ✅
+Aspect Analysis ✅
+House Affinities ✅
+Dashboard Integration ✅
+Reporting Integration ✅
+
+The AFE Unified System is now complete with Arabic Parts and Transit Strength fully integrated.

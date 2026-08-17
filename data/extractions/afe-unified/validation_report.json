@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "status": "passed_with_review_gaps",
+  "checks": {
+    "attachment_preservation": {"status": "passed", "evidence": "4 raw files preserved; midpoint A/B hashes match"},
+    "arabic_parts_unit_tests": {"status": "passed", "count": 3},
+    "midpoint_resource_unit_tests": {"status": "passed", "count": 3},
+    "transit_strength_unit_tests": {"status": "passed", "count": 3},
+    "attachment_provenance_test": {"status": "passed", "count": 1},
+    "existing_python_tests": {"status": "passed", "count": 6},
+    "python_test_discovery_total": {"status": "passed", "count": 16},
+    "vitest": {"status": "passed", "test_files": 3, "tests": 16},
+    "typescript_typecheck": {"status": "passed", "command": "npm run typecheck"}
+  },
+  "nonblocking_tool_note": "The first Vitest invocation included the unsupported Jest flag --runInBand; the corrected Vitest invocation passed.",
+  "review_gaps": [
+    "The complete midpoint JSON referenced by the attachments was not supplied.",
+    "Transit speed modifiers are source-derived placeholders until ephemeris speed inputs are connected.",
+    "Interpretations, scores, and production-ready claims remain methodology-bound or unverified.",
+    "Rights and redistribution status for the user-provided attachments remain pending review."
+  ]
+}

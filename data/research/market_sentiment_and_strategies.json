@@ -1,0 +1,2722 @@
+{
+  "schema_version": "1.1.0",
+  "classification": "source_derived_strategy_text_not_validated_performance",
+  "evidence_boundary": {
+    "financial_and_market_materials": "methodology_bound_research_only",
+    "default_promotion_status": "not_eligible_without_validated_experiment",
+    "promotion_rule": "Financial or market material may be registered as a scoped research signal or indicator only after a separately versioned, reproducible, leakage-safe experiment meets its pre-registered acceptance criteria and completes independent review. Promotion does not create trading advice, a causal claim, or a guaranteed forecast.",
+    "prohibited_uses": [
+      "trading instructions",
+      "position sizing",
+      "personal financial advice",
+      "guaranteed forecasts",
+      "causal claims from symbolic associations"
+    ],
+    "non_claims": [
+      "No untested association is a validated signal.",
+      "A statistically reported association is not proof of a causal mechanism.",
+      "A promoted research signal is not a buy, sell, hold, allocation, or execution instruction."
+    ]
+  },
+  "records": [
+    {
+      "record_id": "indicator_498ee894ab8d5627369e",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "framework",
+      "text": "An enriched, comprehensive guide for interpreting Anti-Vertex contacts in synastry, incorporating esoteric principles, Hellenistic (Dorothean) traditional techniques, and detailed delineation protocols.",
+      "keywords": [
+        "enriched",
+        "comprehensive",
+        "guide",
+        "interpreting",
+        "anti-vertex",
+        "contacts",
+        "synastry",
+        "incorporating",
+        "esoteric",
+        "principles",
+        "hellenistic",
+        "dorothean",
+        "traditional",
+        "techniques",
+        "detailed",
+        "delineation",
+        "protocols"
+      ],
+      "source_ids": [
+        "openastro:data/delineations/anti-vertex-synastry-delineation-framework.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_98f8533ae552fccb1141",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "line:5",
+      "text": "\"purpose\": \"A single normalized framework for promise analysis, timing activation, somatic interpretation, relationship pressure, Chiron healing, and collective-paradigm synthesis.\",",
+      "keywords": [
+        "purpose",
+        "single",
+        "normalized",
+        "framework",
+        "promise",
+        "analysis",
+        "timing",
+        "activation",
+        "somatic",
+        "interpretation",
+        "relationship",
+        "pressure",
+        "chiron",
+        "healing",
+        "collective-paradigm",
+        "synthesis"
+      ],
+      "source_ids": [
+        "openastro:data/drafts/astrological-methodology-module-3.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_832afb6062219dc63160",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "line:121",
+      "text": "\"integration\": \"Best approached with spiritual patience, journaling synchronicities, and trusting that meaning will emerge in its own time.\",",
+      "keywords": [
+        "integration",
+        "best",
+        "approached",
+        "spiritual",
+        "patience",
+        "journaling",
+        "synchronicities",
+        "trusting",
+        "meaning",
+        "emerge",
+        "time"
+      ],
+      "source_ids": [
+        "openastro:data/drafts/biseptile-interpretation.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_43de04ec785ef5e2566d",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "line:469",
+      "text": "\"interpretation_method\": \"PLANET1 becomes the focal point, manifestation, or living embodiment of the blended energies of PLANET2 and PLANET3\",",
+      "keywords": [
+        "interpretation_method",
+        "planet1",
+        "becomes",
+        "focal",
+        "point",
+        "manifestation",
+        "living",
+        "embodiment",
+        "blended",
+        "energies",
+        "planet2",
+        "planet3"
+      ],
+      "source_ids": [
+        "openastro:data/drafts/biseptile-interpretation.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_516f1bfa186d262b563d",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "line:852",
+      "text": "\"interpretation_method\": {",
+      "keywords": [
+        "interpretation_method"
+      ],
+      "source_ids": [
+        "openastro:data/drafts/biseptile-interpretation.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_3f2cc4ef0ac86a78b0aa",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "line:7",
+      "text": "\"description\": \"Exhaustive technical reference of Western astrology chart types, mathematical formulas, geometric patterns, and specialized systems. Contains every calculation method, dependency relationship, and interpretive rule synthesized from extensive astrological research and analysis.\",",
+      "keywords": [
+        "description",
+        "exhaustive",
+        "technical",
+        "reference",
+        "western",
+        "astrology",
+        "chart",
+        "types",
+        "mathematical",
+        "formulas",
+        "geometric",
+        "patterns",
+        "specialized",
+        "systems",
+        "contains",
+        "every",
+        "calculation",
+        "method",
+        "dependency",
+        "relationship",
+        "interpretive",
+        "rule",
+        "synthesized",
+        "extensive"
+      ],
+      "source_ids": [
+        "openastro:data/drafts/chart-types.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_ca06f417a99a5994740c",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "line:84",
+      "text": "\"cons\": [\"Esoteric and abstract interpretation\", \"Difficult to integrate with tangible reality of natal chart\", \"Less standardized interpretive framework\"],",
+      "keywords": [
+        "cons",
+        "esoteric",
+        "abstract",
+        "interpretation",
+        "difficult",
+        "integrate",
+        "tangible",
+        "reality",
+        "natal",
+        "chart",
+        "less",
+        "standardized",
+        "interpretive",
+        "framework"
+      ],
+      "source_ids": [
+        "openastro:data/drafts/chart-types.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_fc71e37202812eaa3442",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "line:205",
+      "text": "\"interpretation_approaches\": {",
+      "keywords": [
+        "interpretation_approaches"
+      ],
+      "source_ids": [
+        "openastro:data/drafts/chart-types.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_42c59aa21184a37f65f4",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "line:275",
+      "text": "\"interpretation_approach\": {",
+      "keywords": [
+        "interpretation_approach"
+      ],
+      "source_ids": [
+        "openastro:data/drafts/chart-types.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_b20af2db0e1244b0d543",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "line:315",
+      "text": "\"interpretation_approach\": {",
+      "keywords": [
+        "interpretation_approach"
+      ],
+      "source_ids": [
+        "openastro:data/drafts/chart-types.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_f6b242501f0a8864b5ce",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "line:363",
+      "text": "\"interpretation_approach\": {",
+      "keywords": [
+        "interpretation_approach"
+      ],
+      "source_ids": [
+        "openastro:data/drafts/chart-types.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_753c06341d27bccb5dbd",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "line:406",
+      "text": "\"category_description\": \"Charts and techniques for forecasting themes, activating natal potentials, and timing events through celestial cycles and symbolic progression methods.\",",
+      "keywords": [
+        "category_description",
+        "charts",
+        "techniques",
+        "forecasting",
+        "themes",
+        "activating",
+        "natal",
+        "potentials",
+        "timing",
+        "events",
+        "celestial",
+        "cycles",
+        "symbolic",
+        "progression",
+        "methods"
+      ],
+      "source_ids": [
+        "openastro:data/drafts/chart-types.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_18b2fbfedeef1ab0a3cf",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "line:466",
+      "text": "\"cons\": [\"Very slow-moving (major changes infrequent)\", \"Complex to interpret in relation to natal chart\", \"Different progression methods exist (secondary, tertiary, etc.)\"],",
+      "keywords": [
+        "cons",
+        "very",
+        "slow-moving",
+        "major",
+        "changes",
+        "infrequent",
+        "complex",
+        "interpret",
+        "relation",
+        "natal",
+        "chart",
+        "different",
+        "progression",
+        "methods",
+        "exist",
+        "secondary",
+        "tertiary"
+      ],
+      "source_ids": [
+        "openastro:data/drafts/chart-types.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_89e778c3e8532f293a13",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "progressed_planets.0.interpretation.combined",
+      "text": "Identity tied to joint finances, inheritance, or deep personal change. A slow, determined approach to letting go and rebuilding. Likely major financial or emotional turning point.",
+      "keywords": [
+        "identity",
+        "tied",
+        "joint",
+        "finances",
+        "inheritance",
+        "deep",
+        "personal",
+        "change",
+        "slow",
+        "determined",
+        "approach",
+        "letting",
+        "rebuilding",
+        "likely",
+        "major",
+        "financial",
+        "emotional",
+        "turning",
+        "point"
+      ],
+      "source_ids": [
+        "openastro:data/drafts/master-relationship-astrology-compendium.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_edafde7826ecd81131f9",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "progressed_planets.8.interpretation.combined",
+      "text": "Financial confusion or idealistic spending on travel, education, or charity. May have unrealistic expectations about income. Alternatively, a spiritual or artistic approach to earning money. Values become hazy.",
+      "keywords": [
+        "financial",
+        "confusion",
+        "idealistic",
+        "spending",
+        "travel",
+        "education",
+        "charity",
+        "unrealistic",
+        "expectations",
+        "about",
+        "income",
+        "alternatively",
+        "spiritual",
+        "artistic",
+        "approach",
+        "earning",
+        "money",
+        "values",
+        "become",
+        "hazy"
+      ],
+      "source_ids": [
+        "openastro:data/drafts/master-relationship-astrology-compendium.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_dd9b3e0b0d711d7d9f21",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "line:72",
+      "text": "\"Sun = Saturn/Pluto\": \"Contending with difficulties and hardships in life. The desire to master the odds. Gaining experience through overcoming obstacles. Single-mindedness. Notable accomplishments through dedication and commitment to specific goals. Inflexibility; taking a hard-line approach. An uncompromising nature. Fanaticism. Significant loss or separation. Days without progress. Hindered physical development. The man who is slowly separated.\\n\\nIt is likely that in early adulthood you departed from some of the traditional career options available to you, and you chose a lifestyle and path of your own. You frequently forego opportunities for material advancement in favor of a life that is meaningful and personally rewarding. You demand a great deal from yourself and are not easily satisfied with your accomplishments. Do not take your accomplishments for granted; it is likely you have made more progress than you give yourself credit for.\\n\\nDays without progress. Hindered physical development. The man who is slowly separated. Physical toil and over-exertion, sparing no pains in one's work; threat of loss; enforced change; separation; potential ill-health.\",",
+      "keywords": [
+        "saturn",
+        "pluto",
+        "contending",
+        "difficulties",
+        "hardships",
+        "life",
+        "desire",
+        "master",
+        "odds",
+        "gaining",
+        "experience",
+        "overcoming",
+        "obstacles",
+        "single-mindedness",
+        "notable",
+        "accomplishments",
+        "dedication",
+        "commitment",
+        "specific",
+        "goals",
+        "inflexibility",
+        "taking",
+        "hard-line",
+        "approach"
+      ],
+      "source_ids": [
+        "openastro:data/drafts/sun-moon-mp.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_d879ffa6c5626f5e3ac7",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "line:136",
+      "text": "\"Moon = Venus/Saturn\": \"Periodic loneliness. Coming to terms with the necessity to take responsibility for personal needs. Difficulty achieving and sustaining emotional satisfaction in life. Unfulfilled physical and sexual desires. The inability to express intimate feelings and affections easily. Testing experiences in love and sex. Emotional loss. Separative influences. Living apart or estranged from another.\\n\\nYou are loyal to the ones you love. You dislike pretentiousness and glamour, and you are very responsible and dedicated to your family members and loved ones. Sometimes you are quiet or even shy, but do not be so quiet that you fail to show people that you care about them. Others may misinterpret your quietness as coldness.\\n\\nEmotional separations in the family can happen now due to not getting the nurturing one needs. It can cause inhibitions, created by emotional deprivation in early life. This also relates to a period of difficulty due to separations in the love life. There's usually a feeling of being lonely and separated from the ones we care about. One also could work in interior decorating or the home, and/or there may be a need to help a family member financially now.\\n\\nTo make a loving woman feel sad. Forsaken women. Emotional depression caused by unsatisfied love, inhibitions, an un#Part of Fortunete disposition or difficult circumstances in all matters of love-expression. A woman living separated from her husband or living a lonely life.\",",
+      "keywords": [
+        "moon",
+        "venus",
+        "saturn",
+        "periodic",
+        "loneliness",
+        "coming",
+        "terms",
+        "necessity",
+        "take",
+        "responsibility",
+        "personal",
+        "needs",
+        "difficulty",
+        "achieving",
+        "sustaining",
+        "emotional",
+        "satisfaction",
+        "life",
+        "unfulfilled",
+        "physical",
+        "sexual",
+        "desires",
+        "inability",
+        "express"
+      ],
+      "source_ids": [
+        "openastro:data/drafts/sun-moon-mp.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_9fc4d4c6a4502db5ed5e",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "line:13",
+      "text": "The implementation does **not** claim that the attachments are production-ready. The complete midpoint JSON referenced by the documents was not supplied, so the sample fixture is explicitly incomplete. Transit speed modifiers are source-derived placeholders until actual ephemeris speed inputs are provided. Interpretations and scoring are methodology-bound and must not be treated as verified financial forecasts or causal evidence. No code from the attachments was executed.",
+      "keywords": [
+        "implementation",
+        "does",
+        "claim",
+        "attachments",
+        "production-ready",
+        "complete",
+        "midpoint",
+        "json",
+        "referenced",
+        "documents",
+        "supplied",
+        "sample",
+        "fixture",
+        "explicitly",
+        "incomplete",
+        "transit",
+        "speed",
+        "modifiers",
+        "source-derived",
+        "placeholders",
+        "until",
+        "actual",
+        "ephemeris",
+        "inputs"
+      ],
+      "source_ids": [
+        "openastro:data/extractions/afe-unified/README.md"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_5807b6f0706003385dab",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "line:11",
+      "text": "The Midpoint Resource framework provides a comprehensive, activation‐based interpretation system for all major planetary midpoint axes. When one partner's planet activates the other's midpoint axis, it triggers specific relational dynamics that can be positive, challenging, or transformative.",
+      "keywords": [
+        "midpoint",
+        "resource",
+        "framework",
+        "provides",
+        "comprehensive",
+        "activation",
+        "based",
+        "interpretation",
+        "system",
+        "major",
+        "planetary",
+        "axes",
+        "partner's",
+        "planet",
+        "activates",
+        "other's",
+        "axis",
+        "triggers",
+        "specific",
+        "relational",
+        "dynamics",
+        "positive",
+        "challenging",
+        "transformative"
+      ],
+      "source_ids": [
+        "openastro:data/extractions/afe-unified/raw/afe-midpoint-resource-v7-a.txt",
+        "openastro:data/extractions/afe-unified/raw/afe-midpoint-resource-v7-b.txt"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_cb9ebeb2102e846c5b22",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "line:34",
+      "text": "A file can belong to multiple classes. Filenames and extensions provide discovery signals, not semantic authority. The package therefore preserves all records, retains probable duplicates, and leaves license, privacy, factuality, methodology, and promotion decisions pending review. Binary documents and large datasets are indexed by hash and path rather than copied into this package a second time.",
+      "keywords": [
+        "file",
+        "belong",
+        "multiple",
+        "classes",
+        "filenames",
+        "extensions",
+        "provide",
+        "discovery",
+        "signals",
+        "semantic",
+        "authority",
+        "package",
+        "therefore",
+        "preserves",
+        "records",
+        "retains",
+        "probable",
+        "duplicates",
+        "leaves",
+        "license",
+        "privacy",
+        "factuality",
+        "methodology",
+        "promotion"
+      ],
+      "source_ids": [
+        "openastro:data/extractions/all-sources/all_sources_report.md"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_7a2520488e1e25702158",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "line:38",
+      "text": "Separate source-derived signals from computed indicators, methodology-bound scores, and research hypotheses.",
+      "keywords": [
+        "separate",
+        "source-derived",
+        "signals",
+        "computed",
+        "indicators",
+        "methodology-bound",
+        "scores",
+        "research",
+        "hypotheses"
+      ],
+      "source_ids": [
+        "openastro:data/extractions/all-sources/all_sources_report.md"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_3783d23af8653fdb4936",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "records.113.raw_value.1.system",
+      "text": "Complete integrated decision-support system combining macroeconomics, technical analysis, industrial organization, market research, company fundamentals, C-level executive profiling, Sq9 cycle timing, aquaculture economics, pricing strategies, sustainability, competitive strategy, and innovation theory.",
+      "keywords": [
+        "complete",
+        "integrated",
+        "decision-support",
+        "system",
+        "combining",
+        "macroeconomics",
+        "technical",
+        "analysis",
+        "industrial",
+        "organization",
+        "market",
+        "research",
+        "company",
+        "fundamentals",
+        "c-level",
+        "executive",
+        "profiling",
+        "cycle",
+        "timing",
+        "aquaculture",
+        "economics",
+        "pricing",
+        "strategies",
+        "sustainability"
+      ],
+      "source_ids": [
+        "openastro:data/extractions/attached-framework-synthesis/normalized_records.json",
+        "openastro:data/extractions/attached-framework-synthesis/package/normalized_records.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_f654217bc2d765e20cbd",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "records.113.raw_value.1.modules.industrialOrganization.boundsApproach",
+      "text": "Sutton's bounds approach: identifies strong mechanisms that bound market outcomes across industries without full specification. Entry is endogenous; equilibrium must satisfy stability and viability.",
+      "keywords": [
+        "sutton's",
+        "bounds",
+        "approach",
+        "identifies",
+        "strong",
+        "mechanisms",
+        "bound",
+        "market",
+        "outcomes",
+        "across",
+        "industries",
+        "without",
+        "full",
+        "specification",
+        "entry",
+        "endogenous",
+        "equilibrium",
+        "must",
+        "satisfy",
+        "stability",
+        "viability"
+      ],
+      "source_ids": [
+        "openastro:data/extractions/attached-framework-synthesis/normalized_records.json",
+        "openastro:data/extractions/attached-framework-synthesis/package/normalized_records.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_94e4136a4e4b8005f85e",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "records.113.raw_value.2.system",
+      "text": "Complete integrated decision-support system combining macroeconomics, technical analysis, industrial organization, market research, company fundamentals, executive profiling, Sq9 timing, aquaculture economics, pricing, sustainability, competitive strategy, and innovation theory.",
+      "keywords": [
+        "complete",
+        "integrated",
+        "decision-support",
+        "system",
+        "combining",
+        "macroeconomics",
+        "technical",
+        "analysis",
+        "industrial",
+        "organization",
+        "market",
+        "research",
+        "company",
+        "fundamentals",
+        "executive",
+        "profiling",
+        "timing",
+        "aquaculture",
+        "economics",
+        "pricing",
+        "sustainability",
+        "competitive",
+        "strategy",
+        "innovation"
+      ],
+      "source_ids": [
+        "openastro:data/extractions/attached-framework-synthesis/normalized_records.json",
+        "openastro:data/extractions/attached-framework-synthesis/package/normalized_records.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_80a341481aef2c1b93d0",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "records.113.raw_value.2.modules.industrialOrganization.boundsApproach",
+      "text": "Sutton's bounds approach identifies mechanisms that bound market outcomes across industries without full specification.",
+      "keywords": [
+        "sutton's",
+        "bounds",
+        "approach",
+        "identifies",
+        "mechanisms",
+        "bound",
+        "market",
+        "outcomes",
+        "across",
+        "industries",
+        "without",
+        "full",
+        "specification"
+      ],
+      "source_ids": [
+        "openastro:data/extractions/attached-framework-synthesis/normalized_records.json",
+        "openastro:data/extractions/attached-framework-synthesis/package/normalized_records.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_f15c432d2c5f0e7f3650",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "records.113.normalized_value.1.system",
+      "text": "Complete integrated decision-support system combining macroeconomics, technical analysis, industrial organization, market research, company fundamentals, C-level executive profiling, Sq9 cycle timing, aquaculture economics, pricing strategies, sustainability, competitive strategy, and innovation theory.",
+      "keywords": [
+        "complete",
+        "integrated",
+        "decision-support",
+        "system",
+        "combining",
+        "macroeconomics",
+        "technical",
+        "analysis",
+        "industrial",
+        "organization",
+        "market",
+        "research",
+        "company",
+        "fundamentals",
+        "c-level",
+        "executive",
+        "profiling",
+        "cycle",
+        "timing",
+        "aquaculture",
+        "economics",
+        "pricing",
+        "strategies",
+        "sustainability"
+      ],
+      "source_ids": [
+        "openastro:data/extractions/attached-framework-synthesis/normalized_records.json",
+        "openastro:data/extractions/attached-framework-synthesis/package/normalized_records.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_6d6e7e5e6dde953b8625",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "records.113.normalized_value.1.modules.industrialOrganization.boundsApproach",
+      "text": "Sutton's bounds approach: identifies strong mechanisms that bound market outcomes across industries without full specification. Entry is endogenous; equilibrium must satisfy stability and viability.",
+      "keywords": [
+        "sutton's",
+        "bounds",
+        "approach",
+        "identifies",
+        "strong",
+        "mechanisms",
+        "bound",
+        "market",
+        "outcomes",
+        "across",
+        "industries",
+        "without",
+        "full",
+        "specification",
+        "entry",
+        "endogenous",
+        "equilibrium",
+        "must",
+        "satisfy",
+        "stability",
+        "viability"
+      ],
+      "source_ids": [
+        "openastro:data/extractions/attached-framework-synthesis/normalized_records.json",
+        "openastro:data/extractions/attached-framework-synthesis/package/normalized_records.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_530419e3e41d74dbb1bb",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "records.113.normalized_value.2.system",
+      "text": "Complete integrated decision-support system combining macroeconomics, technical analysis, industrial organization, market research, company fundamentals, executive profiling, Sq9 timing, aquaculture economics, pricing, sustainability, competitive strategy, and innovation theory.",
+      "keywords": [
+        "complete",
+        "integrated",
+        "decision-support",
+        "system",
+        "combining",
+        "macroeconomics",
+        "technical",
+        "analysis",
+        "industrial",
+        "organization",
+        "market",
+        "research",
+        "company",
+        "fundamentals",
+        "executive",
+        "profiling",
+        "timing",
+        "aquaculture",
+        "economics",
+        "pricing",
+        "sustainability",
+        "competitive",
+        "strategy",
+        "innovation"
+      ],
+      "source_ids": [
+        "openastro:data/extractions/attached-framework-synthesis/normalized_records.json",
+        "openastro:data/extractions/attached-framework-synthesis/package/normalized_records.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_b7dbf519bf39b0dfc62d",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "records.113.normalized_value.2.modules.industrialOrganization.boundsApproach",
+      "text": "Sutton's bounds approach identifies mechanisms that bound market outcomes across industries without full specification.",
+      "keywords": [
+        "sutton's",
+        "bounds",
+        "approach",
+        "identifies",
+        "mechanisms",
+        "bound",
+        "market",
+        "outcomes",
+        "across",
+        "industries",
+        "without",
+        "full",
+        "specification"
+      ],
+      "source_ids": [
+        "openastro:data/extractions/attached-framework-synthesis/normalized_records.json",
+        "openastro:data/extractions/attached-framework-synthesis/package/normalized_records.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_8ea791c0183f0d51a400",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "normalized_records.113.raw_value.1.system",
+      "text": "Complete integrated decision-support system combining macroeconomics, technical analysis, industrial organization, market research, company fundamentals, C-level executive profiling, Sq9 cycle timing, aquaculture economics, pricing strategies, sustainability, competitive strategy, and innovation theory.",
+      "keywords": [
+        "complete",
+        "integrated",
+        "decision-support",
+        "system",
+        "combining",
+        "macroeconomics",
+        "technical",
+        "analysis",
+        "industrial",
+        "organization",
+        "market",
+        "research",
+        "company",
+        "fundamentals",
+        "c-level",
+        "executive",
+        "profiling",
+        "cycle",
+        "timing",
+        "aquaculture",
+        "economics",
+        "pricing",
+        "strategies",
+        "sustainability"
+      ],
+      "source_ids": [
+        "openastro:data/extractions/attached-framework-synthesis/package/astrology_master.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_d6b461253af3e4b7be80",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "normalized_records.113.raw_value.1.modules.industrialOrganization.boundsApproach",
+      "text": "Sutton's bounds approach: identifies strong mechanisms that bound market outcomes across industries without full specification. Entry is endogenous; equilibrium must satisfy stability and viability.",
+      "keywords": [
+        "sutton's",
+        "bounds",
+        "approach",
+        "identifies",
+        "strong",
+        "mechanisms",
+        "bound",
+        "market",
+        "outcomes",
+        "across",
+        "industries",
+        "without",
+        "full",
+        "specification",
+        "entry",
+        "endogenous",
+        "equilibrium",
+        "must",
+        "satisfy",
+        "stability",
+        "viability"
+      ],
+      "source_ids": [
+        "openastro:data/extractions/attached-framework-synthesis/package/astrology_master.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_54719cdeb25dbc6b331c",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "normalized_records.113.raw_value.2.system",
+      "text": "Complete integrated decision-support system combining macroeconomics, technical analysis, industrial organization, market research, company fundamentals, executive profiling, Sq9 timing, aquaculture economics, pricing, sustainability, competitive strategy, and innovation theory.",
+      "keywords": [
+        "complete",
+        "integrated",
+        "decision-support",
+        "system",
+        "combining",
+        "macroeconomics",
+        "technical",
+        "analysis",
+        "industrial",
+        "organization",
+        "market",
+        "research",
+        "company",
+        "fundamentals",
+        "executive",
+        "profiling",
+        "timing",
+        "aquaculture",
+        "economics",
+        "pricing",
+        "sustainability",
+        "competitive",
+        "strategy",
+        "innovation"
+      ],
+      "source_ids": [
+        "openastro:data/extractions/attached-framework-synthesis/package/astrology_master.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_fa2b6c18301467034594",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "normalized_records.113.raw_value.2.modules.industrialOrganization.boundsApproach",
+      "text": "Sutton's bounds approach identifies mechanisms that bound market outcomes across industries without full specification.",
+      "keywords": [
+        "sutton's",
+        "bounds",
+        "approach",
+        "identifies",
+        "mechanisms",
+        "bound",
+        "market",
+        "outcomes",
+        "across",
+        "industries",
+        "without",
+        "full",
+        "specification"
+      ],
+      "source_ids": [
+        "openastro:data/extractions/attached-framework-synthesis/package/astrology_master.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_267fcba702a83c4974f3",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "normalized_records.113.normalized_value.1.system",
+      "text": "Complete integrated decision-support system combining macroeconomics, technical analysis, industrial organization, market research, company fundamentals, C-level executive profiling, Sq9 cycle timing, aquaculture economics, pricing strategies, sustainability, competitive strategy, and innovation theory.",
+      "keywords": [
+        "complete",
+        "integrated",
+        "decision-support",
+        "system",
+        "combining",
+        "macroeconomics",
+        "technical",
+        "analysis",
+        "industrial",
+        "organization",
+        "market",
+        "research",
+        "company",
+        "fundamentals",
+        "c-level",
+        "executive",
+        "profiling",
+        "cycle",
+        "timing",
+        "aquaculture",
+        "economics",
+        "pricing",
+        "strategies",
+        "sustainability"
+      ],
+      "source_ids": [
+        "openastro:data/extractions/attached-framework-synthesis/package/astrology_master.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_bed0cc77c6503c217562",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "normalized_records.113.normalized_value.1.modules.industrialOrganization.boundsApproach",
+      "text": "Sutton's bounds approach: identifies strong mechanisms that bound market outcomes across industries without full specification. Entry is endogenous; equilibrium must satisfy stability and viability.",
+      "keywords": [
+        "sutton's",
+        "bounds",
+        "approach",
+        "identifies",
+        "strong",
+        "mechanisms",
+        "bound",
+        "market",
+        "outcomes",
+        "across",
+        "industries",
+        "without",
+        "full",
+        "specification",
+        "entry",
+        "endogenous",
+        "equilibrium",
+        "must",
+        "satisfy",
+        "stability",
+        "viability"
+      ],
+      "source_ids": [
+        "openastro:data/extractions/attached-framework-synthesis/package/astrology_master.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_d333df27a09fbaa8fa74",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "normalized_records.113.normalized_value.2.system",
+      "text": "Complete integrated decision-support system combining macroeconomics, technical analysis, industrial organization, market research, company fundamentals, executive profiling, Sq9 timing, aquaculture economics, pricing, sustainability, competitive strategy, and innovation theory.",
+      "keywords": [
+        "complete",
+        "integrated",
+        "decision-support",
+        "system",
+        "combining",
+        "macroeconomics",
+        "technical",
+        "analysis",
+        "industrial",
+        "organization",
+        "market",
+        "research",
+        "company",
+        "fundamentals",
+        "executive",
+        "profiling",
+        "timing",
+        "aquaculture",
+        "economics",
+        "pricing",
+        "sustainability",
+        "competitive",
+        "strategy",
+        "innovation"
+      ],
+      "source_ids": [
+        "openastro:data/extractions/attached-framework-synthesis/package/astrology_master.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_1f382f4ca113513fc7e0",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "normalized_records.113.normalized_value.2.modules.industrialOrganization.boundsApproach",
+      "text": "Sutton's bounds approach identifies mechanisms that bound market outcomes across industries without full specification.",
+      "keywords": [
+        "sutton's",
+        "bounds",
+        "approach",
+        "identifies",
+        "mechanisms",
+        "bound",
+        "market",
+        "outcomes",
+        "across",
+        "industries",
+        "without",
+        "full",
+        "specification"
+      ],
+      "source_ids": [
+        "openastro:data/extractions/attached-framework-synthesis/package/astrology_master.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_5bb9e8bdee73569987e3",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "line:5",
+      "text": "This package preserves and maps eleven user-provided artifacts spanning house definitions, ASTO framework metadata, chart synthesis prose, Arabic Parts, transit-strength methodology, economic and market timing configurations, asteroid keyword interpretations, and sensitive sexual-archetype material. The sources are treated as untrusted, source-derived material. No embedded code or deployment instructions were executed.",
+      "keywords": [
+        "package",
+        "preserves",
+        "maps",
+        "eleven",
+        "user-provided",
+        "artifacts",
+        "spanning",
+        "house",
+        "definitions",
+        "asto",
+        "framework",
+        "metadata",
+        "chart",
+        "synthesis",
+        "prose",
+        "arabic",
+        "parts",
+        "transit-strength",
+        "methodology",
+        "economic",
+        "market",
+        "timing",
+        "configurations",
+        "asteroid"
+      ],
+      "source_ids": [
+        "openastro:data/extractions/attached-framework-synthesis/package/astrology_report.md"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_5b286cb7af165614b56a",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "line:20",
+      "text": "The ASTO source declares 19 chart types, 7 explicit calculations, 15 signals, and a repeated-confirmation weighting model. The house framework contains 12 house definitions. The Arabic Parts source contains 10 part formulas and a transit-strength methodology with dignity scores, aspects, accidental modifiers, and planetary house affinities. The asteroid source is retained as source-derived interpretation content and is not automatically promoted into the canonical entity registry.",
+      "keywords": [
+        "asto",
+        "source",
+        "declares",
+        "chart",
+        "types",
+        "explicit",
+        "calculations",
+        "signals",
+        "repeated-confirmation",
+        "weighting",
+        "model",
+        "house",
+        "framework",
+        "contains",
+        "definitions",
+        "arabic",
+        "parts",
+        "part",
+        "formulas",
+        "transit-strength",
+        "methodology",
+        "dignity",
+        "scores",
+        "aspects"
+      ],
+      "source_ids": [
+        "openastro:data/extractions/attached-framework-synthesis/package/astrology_report.md"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_a4289e5708b9b93aa9da",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "metadata",
+      "text": "Complete integrated decision-support system combining macroeconomics, technical analysis, industrial organization, market research, company fundamentals, executive profiling, Sq9 timing, aquaculture economics, pricing, sustainability, competitive strategy, and innovation theory.",
+      "keywords": [
+        "complete",
+        "integrated",
+        "decision-support",
+        "system",
+        "combining",
+        "macroeconomics",
+        "technical",
+        "analysis",
+        "industrial",
+        "organization",
+        "market",
+        "research",
+        "company",
+        "fundamentals",
+        "executive",
+        "profiling",
+        "timing",
+        "aquaculture",
+        "economics",
+        "pricing",
+        "sustainability",
+        "competitive",
+        "strategy",
+        "innovation"
+      ],
+      "source_ids": [
+        "openastro:data/extractions/attached-framework-synthesis/raw/06-economic-market-normalized.json",
+        "openastro:data/extractions/latest-afe/redacted/pasted_content_6.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_887df492b3ad1b145541",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "modules.industrialOrganization.boundsApproach",
+      "text": "Sutton's bounds approach identifies mechanisms that bound market outcomes across industries without full specification.",
+      "keywords": [
+        "sutton's",
+        "bounds",
+        "approach",
+        "identifies",
+        "mechanisms",
+        "bound",
+        "market",
+        "outcomes",
+        "across",
+        "industries",
+        "without",
+        "full",
+        "specification"
+      ],
+      "source_ids": [
+        "openastro:data/extractions/attached-framework-synthesis/raw/06-economic-market-normalized.json",
+        "openastro:data/extractions/latest-afe/redacted/pasted_content_6.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_f8a9d47e66273e324bcc",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "arabic_parts.general_formula",
+      "text": "Core calculation method for all Arabic Parts",
+      "keywords": [
+        "core",
+        "calculation",
+        "method",
+        "arabic",
+        "parts"
+      ],
+      "source_ids": [
+        "openastro:data/extractions/attached-framework-synthesis/raw/10-arabic-parts-transit.json",
+        "openastro:data/extractions/latest-afe/redacted/pasted_content_10.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_62da75bcc7894cd8f78d",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "sources.5.metadata",
+      "text": "Complete integrated decision-support system combining macroeconomics, technical analysis, industrial organization, market research, company fundamentals, executive profiling, Sq9 timing, aquaculture economics, pricing, sustainability, competitive strategy, and innovation theory.",
+      "keywords": [
+        "complete",
+        "integrated",
+        "decision-support",
+        "system",
+        "combining",
+        "macroeconomics",
+        "technical",
+        "analysis",
+        "industrial",
+        "organization",
+        "market",
+        "research",
+        "company",
+        "fundamentals",
+        "executive",
+        "profiling",
+        "timing",
+        "aquaculture",
+        "economics",
+        "pricing",
+        "sustainability",
+        "competitive",
+        "strategy",
+        "innovation"
+      ],
+      "source_ids": [
+        "openastro:data/extractions/attached-framework-synthesis/source_analysis.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_d55d33e97ef89df0f181",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "line:844",
+      "text": "\"interpretation\": \"Rules sex and sexual desire. Shows what turns you on and your approach to sexual relationships.\"",
+      "keywords": [
+        "interpretation",
+        "rules",
+        "sexual",
+        "desire",
+        "shows",
+        "what",
+        "turns",
+        "your",
+        "approach",
+        "relationships"
+      ],
+      "source_ids": [
+        "openastro:data/extractions/latest-afe/raw/pasted_content.txt"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_da5bd7d7d5e53d3af6b9",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "line:897",
+      "text": "\"keywords\": \"Wisdom, strategy, creative intelligence, communication\",",
+      "keywords": [
+        "keywords",
+        "wisdom",
+        "strategy",
+        "creative",
+        "intelligence",
+        "communication"
+      ],
+      "source_ids": [
+        "openastro:data/extractions/latest-afe/raw/pasted_content.txt"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_7b6b48b22db1b39a9710",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "line:845",
+      "text": "\"interpretation\": \"Rules sex and sexual desire. Shows what turns you on and your approach to sexual relationships.\"",
+      "keywords": [
+        "interpretation",
+        "rules",
+        "sexual",
+        "desire",
+        "shows",
+        "what",
+        "turns",
+        "your",
+        "approach",
+        "relationships"
+      ],
+      "source_ids": [
+        "openastro:data/extractions/latest-afe/raw/pasted_content_2.txt"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_c7e424955bc01c9cf422",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "line:898",
+      "text": "\"keywords\": \"Wisdom, strategy, creative intelligence, communication\",",
+      "keywords": [
+        "keywords",
+        "wisdom",
+        "strategy",
+        "creative",
+        "intelligence",
+        "communication"
+      ],
+      "source_ids": [
+        "openastro:data/extractions/latest-afe/raw/pasted_content_2.txt"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_b7c444bd2096f95e2692",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "line:273",
+      "text": "\"financial_interpretation\": \"Innovative trading strategies; unique market patterns; outsized returns from unconventional approaches.\"",
+      "keywords": [
+        "financial_interpretation",
+        "innovative",
+        "trading",
+        "strategies",
+        "unique",
+        "market",
+        "patterns",
+        "outsized",
+        "returns",
+        "unconventional",
+        "approaches"
+      ],
+      "source_ids": [
+        "openastro:data/extractions/latest-afe/raw/pasted_content_3.txt"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_b97234ad889c952d30ed",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "line:1198",
+      "text": "\"financial_interpretation\": \"The relationship's 'trading style'; shared market philosophy; joint investment approach.\"",
+      "keywords": [
+        "financial_interpretation",
+        "relationship's",
+        "'trading",
+        "style'",
+        "shared",
+        "market",
+        "philosophy",
+        "joint",
+        "investment",
+        "approach"
+      ],
+      "source_ids": [
+        "openastro:data/extractions/latest-afe/raw/pasted_content_3.txt"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_55236c6bb1e3c000bae2",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "data.asteroid_definitions.1",
+      "text": "Rules sex and sexual desire. Shows what turns you on and your approach to sexual relationships.",
+      "keywords": [
+        "rules",
+        "sexual",
+        "desire",
+        "shows",
+        "what",
+        "turns",
+        "your",
+        "approach",
+        "relationships"
+      ],
+      "source_ids": [
+        "openastro:data/extractions/latest-afe/redacted/pasted_content.json",
+        "openastro:data/extractions/latest-afe/redacted/pasted_content_2.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_9d52e7a51cf4e276ffc4",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "data.asteroid_definitions.10",
+      "text": "Wisdom, strategy, creative intelligence, communication",
+      "keywords": [
+        "wisdom",
+        "strategy",
+        "creative",
+        "intelligence",
+        "communication"
+      ],
+      "source_ids": [
+        "openastro:data/extractions/latest-afe/redacted/pasted_content.json",
+        "openastro:data/extractions/latest-afe/redacted/pasted_content_2.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_34d78e7dd8a641bed611",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "data.delineation_signals.14",
+      "text": "Venus in Virgo (fall): critical approach to love, desires perfection, may be overly analytical in relationships.",
+      "keywords": [
+        "venus",
+        "virgo",
+        "fall",
+        "critical",
+        "approach",
+        "love",
+        "desires",
+        "perfection",
+        "overly",
+        "analytical",
+        "relationships"
+      ],
+      "source_ids": [
+        "openastro:data/extractions/latest-afe/redacted/pasted_content.json",
+        "openastro:data/extractions/latest-afe/redacted/pasted_content_2.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_744c3e3075fc73cffcaf",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "harmonics.harmonic_meanings.H5_72_quintile",
+      "text": "Innovative trading strategies; unique market patterns; outsized returns from unconventional approaches.",
+      "keywords": [
+        "innovative",
+        "trading",
+        "strategies",
+        "unique",
+        "market",
+        "patterns",
+        "outsized",
+        "returns",
+        "unconventional",
+        "approaches"
+      ],
+      "source_ids": [
+        "openastro:data/extractions/latest-afe/redacted/pasted_content_3.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_ec48e34b1c572b4c7a50",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "harmonics.advanced_applications.composite_harmonics",
+      "text": "The relationship's 'trading style'; shared market philosophy; joint investment approach.",
+      "keywords": [
+        "relationship's",
+        "'trading",
+        "style'",
+        "shared",
+        "market",
+        "philosophy",
+        "joint",
+        "investment",
+        "approach"
+      ],
+      "source_ids": [
+        "openastro:data/extractions/latest-afe/redacted/pasted_content_3.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_b89314f6084707bd05b1",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "line:21",
+      "text": "The selected file is a **source extract** for relationship-aspect data. It is not promoted to `data/charts/`, a framework, a delineation, or a validated interpretation schema. The original dataset also publishes randomized-control artifacts; those were not copied because this ingestion targets the real-chart artifact and avoids mixing controls with observed records.",
+      "keywords": [
+        "selected",
+        "file",
+        "source",
+        "extract",
+        "relationship-aspect",
+        "data",
+        "promoted",
+        "charts",
+        "framework",
+        "delineation",
+        "validated",
+        "interpretation",
+        "schema",
+        "original",
+        "dataset",
+        "publishes",
+        "randomized-control",
+        "artifacts",
+        "those",
+        "were",
+        "copied",
+        "because",
+        "ingestion",
+        "targets"
+      ],
+      "source_ids": [
+        "openastro:data/extractions/open-astrology-datasets/README.md"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_c0c7d9a7e553f793b755",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "additions.thema_mundi",
+      "text": "By comparing any nativity to the Thema Mundi, one can see which planets are 'at home' and which are 'in exile.' The more planets in their own domiciles, the closer the native approaches the ideal divine pattern.",
+      "keywords": [
+        "comparing",
+        "nativity",
+        "thema",
+        "mundi",
+        "planets",
+        "home'",
+        "exile",
+        "more",
+        "domiciles",
+        "closer",
+        "native",
+        "approaches",
+        "ideal",
+        "divine",
+        "pattern"
+      ],
+      "source_ids": [
+        "openastro:data/frameworks/additions.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_12ccdefd43d1562a8002",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "additions.historical_charts_more.0",
+      "text": "Sun, Mercury, Saturn in Capricorn – disciplined, methodical mind, interest in structure and laws. Moon in Gemini in 9th house (philosophy, travel) – love of learning and travel. Jupiter in Gemini – expansive intellect. Mars in Virgo – precise, analytical. Saturn conjunct Sun – life of hard work and recognition.",
+      "keywords": [
+        "mercury",
+        "saturn",
+        "capricorn",
+        "disciplined",
+        "methodical",
+        "mind",
+        "interest",
+        "structure",
+        "laws",
+        "moon",
+        "gemini",
+        "house",
+        "philosophy",
+        "travel",
+        "love",
+        "learning",
+        "jupiter",
+        "expansive",
+        "intellect",
+        "mars",
+        "virgo",
+        "precise",
+        "analytical",
+        "conjunct"
+      ],
+      "source_ids": [
+        "openastro:data/frameworks/additions.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_eef4bab76dabeeadbfca",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "astrological_framework",
+      "text": "A comprehensive astrological delineation and interpretation framework, expanded for natal, relational, predictive, health, and vocational analysis. Structured for easy reference and application.",
+      "keywords": [
+        "comprehensive",
+        "astrological",
+        "delineation",
+        "interpretation",
+        "framework",
+        "expanded",
+        "natal",
+        "relational",
+        "predictive",
+        "health",
+        "vocational",
+        "analysis",
+        "structured",
+        "easy",
+        "reference",
+        "application"
+      ],
+      "source_ids": [
+        "openastro:data/frameworks/astrological-framework-v1.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_447e05ba0a883d49421d",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "master_astrological_reference",
+      "text": "Exhaustive, self-contained consolidation of astrological chart construction, astronomical/astrological calculations, house systems, strength-weighting methods, predictive timing systems, eclipse activation logic, and integrated synthesis workflow into one normalized machine-readable JSON.",
+      "keywords": [
+        "exhaustive",
+        "self-contained",
+        "consolidation",
+        "astrological",
+        "chart",
+        "construction",
+        "astronomical",
+        "calculations",
+        "house",
+        "systems",
+        "strength-weighting",
+        "methods",
+        "predictive",
+        "timing",
+        "eclipse",
+        "activation",
+        "logic",
+        "integrated",
+        "synthesis",
+        "workflow",
+        "normalized",
+        "machine-readable",
+        "json"
+      ],
+      "source_ids": [
+        "openastro:data/frameworks/master-astrological-reference.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_95f1f02fe28ab15dca7e",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "astrological_delineation_framework.metadata",
+      "text": "Unified delineation framework consolidating astrological delineations and interpretations.",
+      "keywords": [
+        "unified",
+        "delineation",
+        "framework",
+        "consolidating",
+        "astrological",
+        "delineations",
+        "interpretations"
+      ],
+      "source_ids": [
+        "openastro:data/frameworks/unified-delineation-framework.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_468cc4639f8475b5049c",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "line:5",
+      "text": "Source artifacts are cataloged without executing embedded code. Astrological interpretations and market/company scoring rules remain source-derived or methodology-bound. They are not empirical forecasts, investment advice, or causal claims.",
+      "keywords": [
+        "source",
+        "artifacts",
+        "cataloged",
+        "without",
+        "executing",
+        "embedded",
+        "code",
+        "astrological",
+        "interpretations",
+        "market",
+        "company",
+        "scoring",
+        "rules",
+        "remain",
+        "source-derived",
+        "methodology-bound",
+        "they",
+        "empirical",
+        "forecasts",
+        "investment",
+        "advice",
+        "causal",
+        "claims"
+      ],
+      "source_ids": [
+        "openastro:data/merged-signals-indicators/README.md"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_44fb04adb55b78bb05ce",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "interpretation.description",
+      "text": "A source-grounded symbolic or methodology-bound meaning.",
+      "keywords": [
+        "source-grounded",
+        "symbolic",
+        "methodology-bound",
+        "meaning"
+      ],
+      "source_ids": [
+        "openastro:data/unified/delineation_ontology.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_1bd301855b3998f18349",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "interpretation",
+      "text": "A source-grounded symbolic or methodology-bound meaning.",
+      "keywords": [
+        "source-grounded",
+        "symbolic",
+        "methodology-bound",
+        "meaning"
+      ],
+      "source_ids": [
+        "openastro:data/unified/delineation_ontology.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_99bc8481711bd7565aa9",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "line:9",
+      "text": "Source-derived definitions, deterministic astronomy, methodology-bound scores, exploratory financial associations, and interpretive prose remain separate. No new astronomical positions or market observations were calculated in this build.",
+      "keywords": [
+        "source-derived",
+        "definitions",
+        "deterministic",
+        "astronomy",
+        "methodology-bound",
+        "scores",
+        "exploratory",
+        "financial",
+        "associations",
+        "interpretive",
+        "prose",
+        "remain",
+        "separate",
+        "astronomical",
+        "positions",
+        "market",
+        "observations",
+        "were",
+        "calculated",
+        "build"
+      ],
+      "source_ids": [
+        "openastro:data/unified/expansion_report.md"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_511e680343c53825af7d",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "delineation_ontology.interpretation.description",
+      "text": "A source-grounded symbolic or methodology-bound meaning.",
+      "keywords": [
+        "source-grounded",
+        "symbolic",
+        "methodology-bound",
+        "meaning"
+      ],
+      "source_ids": [
+        "openastro:data/unified/unified_astrology_master.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_b99d9cbd6c38ebad5d7e",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "delineation_ontology.interpretation",
+      "text": "A source-grounded symbolic or methodology-bound meaning.",
+      "keywords": [
+        "source-grounded",
+        "symbolic",
+        "methodology-bound",
+        "meaning"
+      ],
+      "source_ids": [
+        "openastro:data/unified/unified_astrology_master.json"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_6f313c4ada594aa5971e",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "line:7",
+      "text": "The script writes to `data/extractions/astrodatabank/`. These records have `record_type: astrodatabank-profile-source-extract` and `review_status: source-extract-unreviewed`. They are **not** automatically promoted to `data/charts/`, frameworks, interpretations, or other validated schemas.",
+      "keywords": [
+        "script",
+        "writes",
+        "data",
+        "extractions",
+        "astrodatabank",
+        "these",
+        "records",
+        "record_type",
+        "astrodatabank-profile-source-extract",
+        "review_status",
+        "source-extract-unreviewed",
+        "they",
+        "automatically",
+        "promoted",
+        "charts",
+        "frameworks",
+        "interpretations",
+        "other",
+        "validated",
+        "schemas"
+      ],
+      "source_ids": [
+        "openastro:docs/astrodatabank-ingestion.md"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_1a7d5c3216ffc6ea4acf",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "line:62",
+      "text": "2) Interpretation Protocol",
+      "keywords": [
+        "interpretation",
+        "protocol"
+      ],
+      "source_ids": [
+        "openastro:docs/chart-delineation-methodology.md"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_ceb9aeb6a8ad75d39145",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "line:200",
+      "text": "Keep natal themes as baseline.",
+      "keywords": [
+        "keep",
+        "natal",
+        "themes",
+        "baseline"
+      ],
+      "source_ids": [
+        "openastro:docs/chart-delineation-methodology.md"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_291c483145cf0b1064c4",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "line:280",
+      "text": "This methodology turns astrology interpretation into a transparent, auditable, and client-centered process while preserving symbolic depth.",
+      "keywords": [
+        "methodology",
+        "turns",
+        "astrology",
+        "interpretation",
+        "transparent",
+        "auditable",
+        "client-centered",
+        "process",
+        "while",
+        "preserving",
+        "symbolic",
+        "depth"
+      ],
+      "source_ids": [
+        "openastro:docs/chart-delineation-methodology.md"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    },
+    {
+      "record_id": "indicator_833fa500d3774e3bc4e3",
+      "category": "source_strategy_or_method_text",
+      "subject_path": "line:9",
+      "text": "| Frameworks | `data/frameworks/` | Unified references and delineation frameworks that parse as JSON. |",
+      "keywords": [
+        "frameworks",
+        "data",
+        "unified",
+        "references",
+        "delineation",
+        "parse",
+        "json"
+      ],
+      "source_ids": [
+        "openastro:docs/repository-data-map.md"
+      ],
+      "status": "source_derived",
+      "evidence_class": "source_derived",
+      "research_classification": "source_material_not_validated_strategy",
+      "promotion_status": "not_eligible_without_validated_experiment",
+      "prohibited_uses": [
+        "treating prose as validated performance",
+        "trading instructions",
+        "position sizing",
+        "personal financial advice",
+        "guaranteed forecasts",
+        "causal claims from symbolic associations"
+      ]
+    }
+  ]
+}

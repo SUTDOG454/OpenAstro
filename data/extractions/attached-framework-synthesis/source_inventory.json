@@ -1,0 +1,238 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-08-17T06:30:49.196949+00:00",
+  "source_count": 11,
+  "status": "inventory_complete_with_review_warnings",
+  "sources": [
+    {
+      "source_id": "attached-framework-01",
+      "path": "data/extractions/attached-framework-synthesis/raw/01-house-framework.json",
+      "filename": "01-house-framework.json",
+      "media_type": "text/plain",
+      "bytes": 24227,
+      "sha256": "e78025d5116d68ad38ac1ab3be0d17f7015636842f45a7c8b99420aa6e23db7f",
+      "source_order": 1,
+      "classes": [
+        "framework",
+        "house_definitions"
+      ],
+      "parse_status": "parsed_json",
+      "json_type": "dict",
+      "sensitive_content": false,
+      "execution_status": "not_executed",
+      "rights_status": "user_provided_pending_review",
+      "warnings": []
+    },
+    {
+      "source_id": "attached-framework-02",
+      "path": "data/extractions/attached-framework-synthesis/raw/02-chart-synthesis.md",
+      "filename": "02-chart-synthesis.md",
+      "media_type": "text/plain",
+      "bytes": 34581,
+      "sha256": "e9a7c6069c05cd10960c72a133ef0df23bd89f09220d8713f43a0de09ce8bf05",
+      "source_order": 2,
+      "classes": [
+        "chart_synthesis",
+        "interpretive_prose"
+      ],
+      "parse_status": "markdown_or_plain_text",
+      "json_type": null,
+      "sensitive_content": false,
+      "execution_status": "not_executed",
+      "rights_status": "user_provided_pending_review",
+      "warnings": []
+    },
+    {
+      "source_id": "attached-framework-03",
+      "path": "data/extractions/attached-framework-synthesis/raw/03-asto-framework.json",
+      "filename": "03-asto-framework.json",
+      "media_type": "text/plain",
+      "bytes": 14449,
+      "sha256": "5a5a6374c568f80ffea5c3e8fcb737a1e28615205e91acc8003ab2b59a07ca51",
+      "source_order": 3,
+      "classes": [
+        "calculations",
+        "framework",
+        "registry",
+        "signals"
+      ],
+      "parse_status": "parsed_json",
+      "json_type": "dict",
+      "sensitive_content": false,
+      "execution_status": "not_executed",
+      "rights_status": "user_provided_pending_review",
+      "warnings": []
+    },
+    {
+      "source_id": "attached-framework-04",
+      "path": "data/extractions/attached-framework-synthesis/raw/04-economic-market-system.json",
+      "filename": "04-economic-market-system.json",
+      "media_type": "text/plain",
+      "bytes": 10302,
+      "sha256": "ded8928407c3c9703c990a62604f162ecebfe15e1f24b5717be49d9c6cd345c1",
+      "source_order": 4,
+      "classes": [
+        "company_research",
+        "economic_market_framework",
+        "indicators",
+        "testing"
+      ],
+      "parse_status": "parsed_json",
+      "json_type": "dict",
+      "sensitive_content": false,
+      "execution_status": "not_executed",
+      "rights_status": "user_provided_pending_review",
+      "warnings": [
+        "economic_system_claims_are_source_assertions_pending_validation"
+      ]
+    },
+    {
+      "source_id": "attached-framework-05",
+      "path": "data/extractions/attached-framework-synthesis/raw/05-economic-market-expanded.json5",
+      "filename": "05-economic-market-expanded.json5",
+      "media_type": "text/plain",
+      "bytes": 37289,
+      "sha256": "9bf0b92ae84227f47a63088d2a0a3157a77f13a3c9aab430fa88d58b46fb1166",
+      "source_order": 5,
+      "classes": [
+        "company_research",
+        "economic_market_framework",
+        "indicators",
+        "testing"
+      ],
+      "parse_status": "parsed_json",
+      "json_type": "dict",
+      "sensitive_content": false,
+      "execution_status": "not_executed",
+      "rights_status": "user_provided_pending_review",
+      "warnings": [
+        "economic_system_claims_are_source_assertions_pending_validation"
+      ]
+    },
+    {
+      "source_id": "attached-framework-06",
+      "path": "data/extractions/attached-framework-synthesis/raw/06-economic-market-normalized.json",
+      "filename": "06-economic-market-normalized.json",
+      "media_type": "text/plain",
+      "bytes": 37053,
+      "sha256": "d9235036ee2e143044ef58000aa56b33d259f5f995a7c2a439e81fc4762cbfd2",
+      "source_order": 6,
+      "classes": [
+        "company_research",
+        "economic_market_framework",
+        "indicators",
+        "testing"
+      ],
+      "parse_status": "parsed_json",
+      "json_type": "dict",
+      "sensitive_content": false,
+      "execution_status": "not_executed",
+      "rights_status": "user_provided_pending_review",
+      "warnings": []
+    },
+    {
+      "source_id": "attached-framework-07",
+      "path": "data/extractions/attached-framework-synthesis/raw/07-economic-market-governance.json",
+      "filename": "07-economic-market-governance.json",
+      "media_type": "text/plain",
+      "bytes": 18653,
+      "sha256": "4d76a42a6a3a2268ca5a709b4fd979487146d656284a388b8732e75e89c6c8fe",
+      "source_order": 7,
+      "classes": [
+        "company_research",
+        "economic_market_framework",
+        "indicators",
+        "testing"
+      ],
+      "parse_status": "parsed_json",
+      "json_type": "dict",
+      "sensitive_content": false,
+      "execution_status": "not_executed",
+      "rights_status": "user_provided_pending_review",
+      "warnings": [
+        "economic_system_claims_are_source_assertions_pending_validation"
+      ]
+    },
+    {
+      "source_id": "attached-framework-08",
+      "path": "data/extractions/attached-framework-synthesis/raw/08-economic-market-compact.json",
+      "filename": "08-economic-market-compact.json",
+      "media_type": "text/plain",
+      "bytes": 10314,
+      "sha256": "7e8ca4e1f8f2761d1e920aa843b18a545c81e2147315b2155e495e82026d46d6",
+      "source_order": 8,
+      "classes": [
+        "company_research",
+        "economic_market_framework",
+        "indicators",
+        "testing"
+      ],
+      "parse_status": "parsed_json",
+      "json_type": "dict",
+      "sensitive_content": false,
+      "execution_status": "not_executed",
+      "rights_status": "user_provided_pending_review",
+      "warnings": [
+        "economic_system_claims_are_source_assertions_pending_validation"
+      ]
+    },
+    {
+      "source_id": "attached-framework-09",
+      "path": "data/extractions/attached-framework-synthesis/raw/09-asteroid-keywords.json",
+      "filename": "09-asteroid-keywords.json",
+      "media_type": "text/plain",
+      "bytes": 27594,
+      "sha256": "f8d2e720e63492193970cf12d39b02de1af17254410f93713ddf77d4490a7f68",
+      "source_order": 9,
+      "classes": [
+        "asteroid_interpretation"
+      ],
+      "parse_status": "parsed_json",
+      "json_type": "list",
+      "sensitive_content": false,
+      "execution_status": "not_executed",
+      "rights_status": "user_provided_pending_review",
+      "warnings": []
+    },
+    {
+      "source_id": "attached-framework-10",
+      "path": "data/extractions/attached-framework-synthesis/raw/10-arabic-parts-transit.json",
+      "filename": "10-arabic-parts-transit.json",
+      "media_type": "text/plain",
+      "bytes": 15216,
+      "sha256": "c690973c5633c8b2cbe916507b7e2a8194bac8b439fd1b96f0106138766f9f69",
+      "source_order": 10,
+      "classes": [
+        "calculations",
+        "methodology",
+        "transit_strength"
+      ],
+      "parse_status": "parsed_json",
+      "json_type": "dict",
+      "sensitive_content": false,
+      "execution_status": "not_executed",
+      "rights_status": "user_provided_pending_review",
+      "warnings": []
+    },
+    {
+      "source_id": "attached-framework-11",
+      "path": "data/extractions/attached-framework-synthesis/raw/11-sensitive-sexual-archetypes.json",
+      "filename": "11-sensitive-sexual-archetypes.json",
+      "media_type": "text/plain",
+      "bytes": 7313,
+      "sha256": "c450798349f14c6749d32bc68d02a1bfca411b9caf212fd8dda16a088a28ada9",
+      "source_order": 11,
+      "classes": [
+        "sensitive_interpretive_content"
+      ],
+      "parse_status": "json_parse_failed",
+      "json_type": null,
+      "sensitive_content": true,
+      "execution_status": "not_executed",
+      "rights_status": "user_provided_pending_review",
+      "warnings": [
+        "json_parse_warning:Expecting ',' delimiter"
+      ]
+    }
+  ]
+}

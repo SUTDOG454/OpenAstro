@@ -1,0 +1,56 @@
+{
+  "request": {
+    "scope": "Expand and merge delineation ontology, signals, indicators, calculations, formulas, chart methods, and research safeguards."
+  },
+  "files_added": [
+    "change_record.json",
+    "coverage_gap_register.json",
+    "delineation_ontology.json",
+    "discrepancy.json",
+    "expansion_report.md",
+    "formula_registry.json",
+    "framework_registry.json",
+    "integration_map.json",
+    "manifest.json",
+    "research_contract.json",
+    "unified_astrology_master.json",
+    "validation_report.json"
+  ],
+  "tests": [
+    "python3 tools/build_unified_astrology_package.py",
+    "python3 tests/test_unified_expansion.py"
+  ],
+  "recommendations": [
+    "Review malformed draft JSON before semantic promotion.",
+    "Add explicit ephemeris fixtures for pending chart methods.",
+    "Provide a target domain and competitor set for content-gap analysis.",
+    "Acquire real market observations with licensed sources before financial research."
+  ],
+  "unresolved_issues": [
+    {
+      "id": "invalid-local-draft-json",
+      "status": "unavailable",
+      "details": "Multiple draft JSON files are malformed or truncated; raw files are preserved and not silently repaired."
+    },
+    {
+      "id": "financial-observations-not-acquired",
+      "status": "unavailable",
+      "details": "No live market data acquisition was requested for a specific ticker or date window."
+    },
+    {
+      "id": "content-gap-target-missing",
+      "status": "unavailable",
+      "details": "No target domain or competitor set was supplied."
+    },
+    {
+      "id": "firdaria-zodiacal-releasing-primary-direction",
+      "status": "not_implemented",
+      "details": "Methodology contracts are registered, but no deterministic adapters are claimed."
+    },
+    {
+      "id": "semantic-tradition-approval",
+      "status": "pending_review",
+      "details": "Strength, compatibility, financial, relationship, and event scores remain methodology-bound."
+    }
+  ]
+}

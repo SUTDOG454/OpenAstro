@@ -1,0 +1,488 @@
+{
+  "metadata": {
+    "framework_name": "ASTO (Astrological System & Trading Operations) Fully Expanded & Injected Framework",
+    "version": "12.0-Master+Unified",
+    "synthesis_date": "2026-07-29",
+    "system_status": "PRODUCTION_READY_FULLY_INTEGRATED",
+    "truth_criterion": "Repeated confirmation across multiple independent layers is the core logic of truth."
+  },
+  "delineation_rules": {
+    "ordering": [
+      "exact degree contact",
+      "angularity",
+      "dignity and sect",
+      "house placement",
+      "aspect pattern",
+      "midpoint confirmation",
+      "harmonic resonance",
+      "fixed star contact",
+      "timing activation"
+    ],
+    "priority_principle": "Tighter, more angular, and more independently repeated testimony outranks isolated symbolism.",
+    "evidence_standard": "A signal becomes authoritative when independently echoed by at least two layers, and strongest when echoed by three or more."
+  },
+  "ontology": {
+    "signs": {
+      "Aries": "Pioneering, energetic, impulsive",
+      "Taurus": "Stable, sensual, persistent",
+      "Gemini": "Communicative, adaptable, intellectual",
+      "Cancer": "Nurturing, emotional, protective",
+      "Leo": "Regal, creative, confident",
+      "Virgo": "Analytical, practical, service-oriented",
+      "Libra": "Balanced, diplomatic, just",
+      "Scorpio": "Intense, transformative, mysterious",
+      "Sagittarius": "Adventurous, philosophical, optimistic",
+      "Capricorn": "Disciplined, ambitious, responsible",
+      "Aquarius": "Innovative, humanitarian, independent",
+      "Pisces": "Compassionate, artistic, spiritual"
+    },
+    "planets": {
+      "Sun": "Spirit",
+      "Moon": "Psyche",
+      "Mercury": "Communication",
+      "Venus": "Love",
+      "Mars": "Action",
+      "Jupiter": "Expansion",
+      "Saturn": "Discipline",
+      "Uranus": "Innovation",
+      "Neptune": "Spirituality",
+      "Pluto": "Transformation",
+      "North Node": "Materialization",
+      "South Node": "Liberation"
+    },
+    "houses": {
+      "Placidus": "Most common unequal house system",
+      "Whole Sign": "Whole-sign house system",
+      "Equal": "30-degree houses from Ascendant"
+    },
+    "aspects": {
+      "Conjunction": "0 degrees",
+      "Sextile": "60 degrees",
+      "Square": "90 degrees",
+      "Trine": "120 degrees",
+      "Opposition": "180 degrees",
+      "Quincunx": "150 degrees"
+    },
+    "terms": {
+      "Cazimi": "Within 30 arcminutes of Sun",
+      "Combust": "Within 31 arcminutes to 3 degrees of Sun",
+      "Applying": "Faster body moving toward exact aspect",
+      "Separating": "Faster body moving away from exact aspect",
+      "Anaretic Degree": "29th degree of a sign"
+    }
+  },
+  "chart_types": [
+    {
+      "id": "natal_chart",
+      "label": "Natal Chart",
+      "category": "Radix",
+      "core_purpose": "Maps core personality, life themes, needs, and karma for one person."
+    },
+    {
+      "id": "draconic_chart",
+      "label": "Draconic Chart",
+      "category": "Soul Blueprint",
+      "core_purpose": "Recalibrates the chart to the North Node at 0 Aries to emphasize soul purpose and karmic patterning."
+    },
+    {
+      "id": "persona_chart",
+      "label": "Persona Chart",
+      "category": "Derived Natal",
+      "core_purpose": "Explores ego masks, sub-personalities, and shadow expressions of each natal planet."
+    },
+    {
+      "id": "harmonic_chart",
+      "label": "Harmonic Chart",
+      "category": "Mathematical",
+      "core_purpose": "Reveals resonance patterns, talent structures, and hidden tensions through harmonic multiplication."
+    },
+    {
+      "id": "synastry_chart",
+      "label": "Synastry Chart",
+      "category": "Relationship",
+      "core_purpose": "Compares two natal charts to analyze relational chemistry and challenge."
+    },
+    {
+      "id": "composite_chart",
+      "label": "Composite Chart",
+      "category": "Relationship",
+      "core_purpose": "Midpoint chart for relationship identity and shared life arc."
+    },
+    {
+      "id": "davison_chart",
+      "label": "Davison Chart",
+      "category": "Relationship",
+      "core_purpose": "Time-space midpoint relationship chart."
+    },
+    {
+      "id": "transit_chart",
+      "label": "Transit Chart",
+      "category": "Forecasting",
+      "core_purpose": "Current sky overlay on natal and progressed positions."
+    },
+    {
+      "id": "secondary_progressions",
+      "label": "Secondary Progressions",
+      "category": "Forecasting",
+      "core_purpose": "Symbolic day-for-year progression for inner development timing."
+    },
+    {
+      "id": "solar_arc",
+      "label": "Solar Arc Directions",
+      "category": "Forecasting",
+      "core_purpose": "Chart moved at the Sun’s rate to time external events."
+    },
+    {
+      "id": "solar_return",
+      "label": "Solar Return",
+      "category": "Forecasting",
+      "core_purpose": "Annual birthday chart for yearly themes."
+    },
+    {
+      "id": "lunar_return",
+      "label": "Lunar Return",
+      "category": "Forecasting",
+      "core_purpose": "Monthly emotional cycle chart."
+    },
+    {
+      "id": "profection",
+      "label": "Profection Chart",
+      "category": "Forecasting",
+      "core_purpose": "Annual time-lord system cycling through houses."
+    },
+    {
+      "id": "horary",
+      "label": "Horary Chart",
+      "category": "Event/Question",
+      "core_purpose": "Question chart cast for the moment a question is understood."
+    },
+    {
+      "id": "electional",
+      "label": "Electional Chart",
+      "category": "Event/Question",
+      "core_purpose": "Chooses auspicious timing for planned action."
+    },
+    {
+      "id": "locational",
+      "label": "Locational Astrology",
+      "category": "Spatial",
+      "core_purpose": "Astrocartography, relocation, and local space analysis."
+    },
+    {
+      "id": "arabic_parts",
+      "label": "Arabic Parts",
+      "category": "Analytical Enhancement",
+      "core_purpose": "Derived lots for material, spiritual, relational, and karmic topics."
+    },
+    {
+      "id": "fixed_stars",
+      "label": "Fixed Star Analysis",
+      "category": "Stellar",
+      "core_purpose": "Planetary contacts with fixed stars and paran contacts."
+    },
+    {
+      "id": "asteroid_chart",
+      "label": "Asteroid Chart",
+      "category": "Supplementary Bodies",
+      "core_purpose": "Minor bodies for refined psychological and mythic signatures."
+    }
+  ],
+  "calculations": [
+    {
+      "name": "draconic_longitude",
+      "formula": "(natal longitude - north node arc) mod 360",
+      "purpose": "Soul recalibration"
+    },
+    {
+      "name": "harmonic_position",
+      "formula": "(natal longitude * n) mod 360",
+      "purpose": "Harmonic resonance chart"
+    },
+    {
+      "name": "composite_midpoint",
+      "formula": "(longitudeA + longitudeB) / 2",
+      "purpose": "Relationship midpoint chart"
+    },
+    {
+      "name": "davison_midpoint",
+      "formula": "Julian day midpoint plus averaged coordinates",
+      "purpose": "Time-space relationship chart"
+    },
+    {
+      "name": "solar_arc",
+      "formula": "progressed sun - natal sun applied to all points",
+      "purpose": "Directioning system"
+    },
+    {
+      "name": "part_of_fortune_day",
+      "formula": "Asc + Moon - Sun",
+      "purpose": "Day formula for material fortune"
+    },
+    {
+      "name": "part_of_fortune_night",
+      "formula": "Asc + Sun - Moon",
+      "purpose": "Night formula for material fortune"
+    }
+  ],
+  "timing": [
+    {
+      "tier": "Tier 1 Life-Changing",
+      "orb_tolerance": 1.0,
+      "window": "6 months before to 3 months after",
+      "examples": [
+        "outer-planet conjunctions to angles or luminaries",
+        "Saturn return exact",
+        "nodal axis crossings",
+        "eclipse on personal planet",
+        "progressed Moon changing signs"
+      ]
+    },
+    {
+      "tier": "Tier 2 Major Development",
+      "orb_tolerance": 2.0,
+      "window": "3 months before to 2 months after",
+      "examples": [
+        "Jupiter-Saturn aspects to personal planets",
+        "Chiron to Sun/Moon/Ascendant",
+        "Uranus/Neptune/Pluto to personal planets",
+        "progressed Sun changing signs"
+      ]
+    }
+  ],
+  "weighting": {
+    "priority_factors": [
+      "orb precision",
+      "angularity",
+      "dignity and sect",
+      "house emphasis",
+      "repeated confirmation across methods",
+      "fixed-star contact",
+      "harmonic repetition"
+    ],
+    "truth_criterion": "Repeated confirmation across multiple independent layers is the core logic of truth.",
+    "amplification_rule": "A signal becomes authoritative when independently echoed by at least two layers and strongest when echoed by three or more.",
+    "dampening_rule": "Weak or wide-orb factors are retained only as secondary evidence unless repeated elsewhere."
+  },
+  "strength_scoring": {
+    "base_scale": "0-10",
+    "modifiers": [
+      "essential dignity",
+      "accidental dignity",
+      "aspect precision",
+      "nodal alignment",
+      "angularity",
+      "repeated harmonic or midpoint reinforcement"
+    ]
+  },
+  "specialized_modules": {
+    "asteroids": {
+      "atropos": {
+        "id": 337,
+        "title": "Atropos Asteroid 273 The Fate Cutter",
+        "strength_score": 9.1,
+        "cycle_years": 27,
+        "double_cycle_years": 54,
+        "keywords": [
+          "atropos",
+          "asteroid 273",
+          "moirai",
+          "fates",
+          "endings",
+          "closure",
+          "cord cutting",
+          "release"
+        ],
+        "function": "Closure, endings, karmic completion, and decisive release."
+      }
+    },
+    "fixed_stars": {
+      "regulus": "success, leadership",
+      "spica": "brilliance, protection",
+      "antares": "intensity, passion",
+      "algol": "intensity, volatility"
+    },
+    "magi": {
+      "principles": [
+        "geo and helio validation",
+        "hard aspects prioritized",
+        "Chiron and Nodes emphasized"
+      ]
+    },
+    "uranian": {
+      "principles": [
+        "90-dial",
+        "planetary pictures",
+        "hard aspects only"
+      ]
+    }
+  },
+  "interpretation_rules": [
+    "Normalize all symbols before synthesis.",
+    "Merge house, aspect, dignity, midpoint, harmonic, and fixed-star evidence.",
+    "Prefer repeated confirmation over isolated symbolism.",
+    "Treat exactness and angularity as top-level priority markers.",
+    "Preserve both technical precision and human-readable synthesis."
+  ],
+  "signal_model": {
+    "evidence_layers": [
+      "natal",
+      "dignity",
+      "angularity",
+      "midpoint",
+      "harmonic",
+      "fixed_star",
+      "timing",
+      "asteroid"
+    ],
+    "acceptance_rule": "Authoritative signals require multiple independent confirmations; single-layer signals remain provisional.",
+    "synthesis_rule": "When a theme repeats across several layers, merge the evidence into one coherent interpretive statement."
+  },
+  "signals": [
+    {
+      "signal": "Sun trine North Node",
+      "theme": "identity naturally supports life purpose",
+      "layers": [
+        "natal",
+        "timing"
+      ],
+      "priority": "high"
+    },
+    {
+      "signal": "Mercury square Saturn",
+      "theme": "disciplined but difficult communication; mastery through effort",
+      "layers": [
+        "natal",
+        "harmonic"
+      ],
+      "priority": "high"
+    },
+    {
+      "signal": "Moon conjunct Neptune",
+      "theme": "mystical sensitivity, dreams, porous boundaries",
+      "layers": [
+        "natal",
+        "harmonic"
+      ],
+      "priority": "high"
+    },
+    {
+      "signal": "Moon square Uranus",
+      "theme": "emotional volatility and sudden insight",
+      "layers": [
+        "natal",
+        "harmonic"
+      ],
+      "priority": "high"
+    },
+    {
+      "signal": "Venus sextile Pluto",
+      "theme": "transformative love and aesthetic depth",
+      "layers": [
+        "natal",
+        "harmonic"
+      ],
+      "priority": "high"
+    },
+    {
+      "signal": "Jupiter in Pisces",
+      "theme": "domicile strength and final dispositor emphasis",
+      "layers": [
+        "dignity",
+        "natal"
+      ],
+      "priority": "high"
+    },
+    {
+      "signal": "Pluto-Sun tight contact",
+      "theme": "life path charged with truth-seeking and transformation",
+      "layers": [
+        "natal",
+        "fixed_star"
+      ],
+      "priority": "high"
+    },
+    {
+      "signal": "Spica-Uranus",
+      "theme": "brilliance, gifts, protection",
+      "layers": [
+        "fixed_star",
+        "natal"
+      ],
+      "priority": "medium-high"
+    },
+    {
+      "signal": "Antares-Moon",
+      "theme": "intensity and emotional power",
+      "layers": [
+        "fixed_star",
+        "natal"
+      ],
+      "priority": "medium-high"
+    },
+    {
+      "signal": "Mercury-Uranus-MC harmonic cluster",
+      "theme": "innovative communication and public vocation",
+      "layers": [
+        "harmonic",
+        "angularity"
+      ],
+      "priority": "very high"
+    },
+    {
+      "signal": "Sun-Mercury-Jupiter harmonic cluster",
+      "theme": "teacher-philosopher identity",
+      "layers": [
+        "harmonic",
+        "natal"
+      ],
+      "priority": "very high"
+    },
+    {
+      "signal": "Sun-Venus-Chiron harmonic cluster",
+      "theme": "wounded-healer identity fused with love and selfhood",
+      "layers": [
+        "harmonic",
+        "asteroid"
+      ],
+      "priority": "very high"
+    },
+    {
+      "signal": "Moon-Jupiter-Neptune harmonic cluster",
+      "theme": "emotional wisdom and mystical sensitivity",
+      "layers": [
+        "harmonic",
+        "natal"
+      ],
+      "priority": "very high"
+    },
+    {
+      "signal": "Atropos return",
+      "theme": "27-year karmic ending checkpoint",
+      "layers": [
+        "asteroid",
+        "timing"
+      ],
+      "priority": "high"
+    },
+    {
+      "signal": "Atropos double cycle",
+      "theme": "54-year intensified completion cycle",
+      "layers": [
+        "asteroid",
+        "timing"
+      ],
+      "priority": "medium-high"
+    }
+  ],
+  "examples": [
+    {
+      "name": "Jimmy natal synthesis",
+      "summary": "A sample full-stack interpretation combining aspects, houses, dignity, fixed stars, midpoints, harmonics, and karmic themes."
+    }
+  ],
+  "exports": {
+    "markdown_spec": "unified_astrological_spec.md",
+    "json_master": "unified_master_export.json",
+    "signals_json": "signals.json"
+  }
+}

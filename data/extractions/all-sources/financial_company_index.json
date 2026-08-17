@@ -1,0 +1,1979 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-08-17T06:13:49.957961+00:00",
+  "status": "source_index_unreviewed",
+  "record_count": 91,
+  "records": [
+    {
+      "source_id": "openastro_worktree:data/extractions/company-research/finance-query/src/adapters/fmp/quote/company.rs",
+      "root": "openastro_worktree",
+      "path": "/home/ubuntu/openastro_worktree/data/extractions/company-research/finance-query/src/adapters/fmp/quote/company.rs",
+      "relative_path": "data/extractions/company-research/finance-query/src/adapters/fmp/quote/company.rs",
+      "filename": "company.rs",
+      "extension": ".rs",
+      "media_type": "application/rls-services+xml",
+      "bytes": 14771,
+      "binary": false,
+      "sha256": "fb689ecd34d51a0e92a6c7bdef244b5a3e6acd4aa4e3444931597f3a95b0a306",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "probable_duplicate",
+      "duplicate_group": [
+        "openastro_worktree:data/extractions/company-research/finance-query/src/adapters/fmp/quote/company.rs",
+        "repository_sources:finance-query/src/adapters/fmp/quote/company.rs"
+      ]
+    },
+    {
+      "source_id": "openastro_worktree:data/extractions/company-research/finance-query/src/models/fundamentals/financial_data.rs",
+      "root": "openastro_worktree",
+      "path": "/home/ubuntu/openastro_worktree/data/extractions/company-research/finance-query/src/models/fundamentals/financial_data.rs",
+      "relative_path": "data/extractions/company-research/finance-query/src/models/fundamentals/financial_data.rs",
+      "filename": "financial_data.rs",
+      "extension": ".rs",
+      "media_type": "application/rls-services+xml",
+      "bytes": 6805,
+      "binary": false,
+      "sha256": "01f94354f3369185a7b67a3cef5a29415e2772bc022a1346db58c38026d516ee",
+      "classes": [
+        "code_or_schema",
+        "dataset",
+        "financial_or_company_research",
+        "test_or_validation"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "probable_duplicate",
+      "duplicate_group": [
+        "openastro_worktree:data/extractions/company-research/finance-query/src/models/fundamentals/financial_data.rs",
+        "repository_sources:finance-query/src/models/fundamentals/financial_data.rs"
+      ]
+    },
+    {
+      "source_id": "openastro_worktree:data/extractions/company-research/finance-query/src/models/discovery/search/research.rs",
+      "root": "openastro_worktree",
+      "path": "/home/ubuntu/openastro_worktree/data/extractions/company-research/finance-query/src/models/discovery/search/research.rs",
+      "relative_path": "data/extractions/company-research/finance-query/src/models/discovery/search/research.rs",
+      "filename": "research.rs",
+      "extension": ".rs",
+      "media_type": "application/rls-services+xml",
+      "bytes": 2212,
+      "binary": false,
+      "sha256": "f0625511165a7db462944df6e2b5e2145208e300508dabe9f099f387ad732630",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "probable_duplicate",
+      "duplicate_group": [
+        "openastro_worktree:data/extractions/company-research/finance-query/src/models/discovery/search/research.rs",
+        "repository_sources:finance-query/src/models/discovery/search/research.rs"
+      ]
+    },
+    {
+      "source_id": "openastro_worktree:data/extractions/company-research/user-provided/economic-market-timing-system.txt",
+      "root": "openastro_worktree",
+      "path": "/home/ubuntu/openastro_worktree/data/extractions/company-research/user-provided/economic-market-timing-system.txt",
+      "relative_path": "data/extractions/company-research/user-provided/economic-market-timing-system.txt",
+      "filename": "economic-market-timing-system.txt",
+      "extension": ".txt",
+      "media_type": "text/plain",
+      "bytes": 4615,
+      "binary": false,
+      "sha256": "34b38b4f6ad61b78733d98f90dc44847e3837975ecb0c763d2c3233d8db2e3ee",
+      "classes": [
+        "dataset",
+        "document_or_methodology",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "openastro_worktree:tests/test_company_research_extractions.py",
+      "root": "openastro_worktree",
+      "path": "/home/ubuntu/openastro_worktree/tests/test_company_research_extractions.py",
+      "relative_path": "tests/test_company_research_extractions.py",
+      "filename": "test_company_research_extractions.py",
+      "extension": ".py",
+      "media_type": "text/x-python",
+      "bytes": 2046,
+      "binary": false,
+      "sha256": "060141d68466fa64b899a0fcabbd17678dc02ae3c38c4c861789831e3d4fda7a",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research",
+        "test_or_validation"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "openastro_worktree:client/src/lib/astro/company_research/company_research.executive.ts",
+      "root": "openastro_worktree",
+      "path": "/home/ubuntu/openastro_worktree/client/src/lib/astro/company_research/company_research.executive.ts",
+      "relative_path": "client/src/lib/astro/company_research/company_research.executive.ts",
+      "filename": "company_research.executive.ts",
+      "extension": ".ts",
+      "media_type": "text/vnd.trolltech.linguist",
+      "bytes": 2687,
+      "binary": false,
+      "sha256": "eba8490566a362f8f9b3d2776dd890b26b704b27bb360ed6a97f6a421aefb828",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "openastro_worktree:client/src/lib/astro/company_research/__tests__/executive.test.ts",
+      "root": "openastro_worktree",
+      "path": "/home/ubuntu/openastro_worktree/client/src/lib/astro/company_research/__tests__/executive.test.ts",
+      "relative_path": "client/src/lib/astro/company_research/__tests__/executive.test.ts",
+      "filename": "executive.test.ts",
+      "extension": ".ts",
+      "media_type": "text/vnd.trolltech.linguist",
+      "bytes": 2163,
+      "binary": false,
+      "sha256": "26759a94f0506f4e464d891540cbc0dfd48210d5d2332d6f827399c8ca0da6b4",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research",
+        "test_or_validation"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:Astro_INtelligence/astrology_research_notes.md",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/Astro_INtelligence/astrology_research_notes.md",
+      "relative_path": "Astro_INtelligence/astrology_research_notes.md",
+      "filename": "astrology_research_notes.md",
+      "extension": ".md",
+      "media_type": "text/markdown",
+      "bytes": 7954,
+      "binary": false,
+      "sha256": "778bacc9239180f96ff4e2f2af0dfbbab37e3442d7bb8a011fee273873d03ef3",
+      "classes": [
+        "document_or_methodology",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:ML-Finance/ML_fro_Finance.pdf",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/ML-Finance/ML_fro_Finance.pdf",
+      "relative_path": "ML-Finance/ML_fro_Finance.pdf",
+      "filename": "ML_fro_Finance.pdf",
+      "extension": ".pdf",
+      "media_type": "application/pdf",
+      "bytes": 540890,
+      "binary": true,
+      "sha256": "b663c602cc2eb8511603706e0a7601b9d51d00fa1206e0fdc8a5074ebcdd843b",
+      "classes": [
+        "document_or_methodology",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:ML-Finance/machine-learning-for-finance-in-python_01_preparing-data-and-a-linear-model.ipynb",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/ML-Finance/machine-learning-for-finance-in-python_01_preparing-data-and-a-linear-model.ipynb",
+      "relative_path": "ML-Finance/machine-learning-for-finance-in-python_01_preparing-data-and-a-linear-model.ipynb",
+      "filename": "machine-learning-for-finance-in-python_01_preparing-data-and-a-linear-model.ipynb",
+      "extension": ".ipynb",
+      "media_type": "application/octet-stream",
+      "bytes": 489191,
+      "binary": false,
+      "sha256": "1e1f97d154d1394708d467a8913d2fcf0c736c07a76df247217c64cb2525ffe1",
+      "classes": [
+        "dataset",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/.github/workflows/finance-query-cli-release.yml",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/.github/workflows/finance-query-cli-release.yml",
+      "relative_path": "finance-query/.github/workflows/finance-query-cli-release.yml",
+      "filename": "finance-query-cli-release.yml",
+      "extension": ".yml",
+      "media_type": "application/yaml",
+      "bytes": 13171,
+      "binary": false,
+      "sha256": "99613c180701725f917492cebc3b927baa24fb2dafa0bf0082a655e875944334",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/benches/finance.rs",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/benches/finance.rs",
+      "relative_path": "finance-query/benches/finance.rs",
+      "filename": "finance.rs",
+      "extension": ".rs",
+      "media_type": "application/rls-services+xml",
+      "bytes": 4392,
+      "binary": false,
+      "sha256": "3ce5f77dc893bb296b01a599f4d9a0bbf11b64e4ddd4a2359df12f2594f51728",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/benches/fixtures/market_summary.json",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/benches/fixtures/market_summary.json",
+      "relative_path": "finance-query/benches/fixtures/market_summary.json",
+      "filename": "market_summary.json",
+      "extension": ".json",
+      "media_type": "application/json",
+      "bytes": 6090,
+      "binary": false,
+      "sha256": "7f3fe2610e01052fae89188d1efcb6edad10e6f81044a2655bffe3c8fdc82062",
+      "classes": [
+        "dataset",
+        "dataset_or_structured_data",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/docs/library/finance.md",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/docs/library/finance.md",
+      "relative_path": "finance-query/docs/library/finance.md",
+      "filename": "finance.md",
+      "extension": ".md",
+      "media_type": "text/markdown",
+      "bytes": 12032,
+      "binary": false,
+      "sha256": "4527fbd149a94a07090a0f45d52249c82149b05590a3ab13054fe1370f1c0483",
+      "classes": [
+        "document_or_methodology",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/finance-query-cli/src/commands/earnings.rs",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/finance-query-cli/src/commands/earnings.rs",
+      "relative_path": "finance-query/finance-query-cli/src/commands/earnings.rs",
+      "filename": "earnings.rs",
+      "extension": ".rs",
+      "media_type": "application/rls-services+xml",
+      "bytes": 9591,
+      "binary": false,
+      "sha256": "51468059735cb243ba19d9575905638904bae2760669bfbc5bae57daa1383718",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/finance-query-cli/src/commands/financials.rs",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/finance-query-cli/src/commands/financials.rs",
+      "relative_path": "finance-query/finance-query-cli/src/commands/financials.rs",
+      "filename": "financials.rs",
+      "extension": ".rs",
+      "media_type": "application/rls-services+xml",
+      "bytes": 13111,
+      "binary": false,
+      "sha256": "1234eaade0eda6a5850b0dc71da84714c3c29910f59d12f3120f0ae0d86b8a5c",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research",
+        "test_or_validation"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/finance-query-cli/src/commands/market.rs",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/finance-query-cli/src/commands/market.rs",
+      "relative_path": "finance-query/finance-query-cli/src/commands/market.rs",
+      "filename": "market.rs",
+      "extension": ".rs",
+      "media_type": "application/rls-services+xml",
+      "bytes": 3284,
+      "binary": false,
+      "sha256": "12e089fe75619bc58e929ddb47e30faa840ec296c2146fb22cfb59bb5fcabf31",
+      "classes": [
+        "code_or_schema",
+        "dataset",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/finance-query-mcp/src/tools/financials.rs",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/finance-query-mcp/src/tools/financials.rs",
+      "relative_path": "finance-query/finance-query-mcp/src/tools/financials.rs",
+      "filename": "financials.rs",
+      "extension": ".rs",
+      "media_type": "application/rls-services+xml",
+      "bytes": 1729,
+      "binary": false,
+      "sha256": "b6f202430ab99584cb7c46ffda05b945ebd568488534f7e415dec352b5a3dbde",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research",
+        "test_or_validation"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/finance-query-mcp/src/tools/market.rs",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/finance-query-mcp/src/tools/market.rs",
+      "relative_path": "finance-query/finance-query-mcp/src/tools/market.rs",
+      "filename": "market.rs",
+      "extension": ".rs",
+      "media_type": "application/rls-services+xml",
+      "bytes": 3542,
+      "binary": false,
+      "sha256": "ebf2369827201d0e8c0020614a9cc2eba5d5e38f65e3f48dc0fbbc78792b0362",
+      "classes": [
+        "code_or_schema",
+        "dataset",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/fuzz/fuzz_targets/fuzz_financials.rs",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/fuzz/fuzz_targets/fuzz_financials.rs",
+      "relative_path": "finance-query/fuzz/fuzz_targets/fuzz_financials.rs",
+      "filename": "fuzz_financials.rs",
+      "extension": ".rs",
+      "media_type": "application/rls-services+xml",
+      "bytes": 525,
+      "binary": false,
+      "sha256": "f7178f06d3c727d25e4ceda1dee28e41fcaadc37537cab81d7bd965ea23f1dd7",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research",
+        "test_or_validation"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/monitoring/grafana/provisioning/dashboards/finance-query-v2.json",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/monitoring/grafana/provisioning/dashboards/finance-query-v2.json",
+      "relative_path": "finance-query/monitoring/grafana/provisioning/dashboards/finance-query-v2.json",
+      "filename": "finance-query-v2.json",
+      "extension": ".json",
+      "media_type": "application/json",
+      "bytes": 19959,
+      "binary": false,
+      "sha256": "0bde5c6f7486898e26458d9419adbf21e6f6dfb841edd5d1a40ca5efbef7bb81",
+      "classes": [
+        "dataset_or_structured_data",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/monitoring/prometheus/alerts/finance-query.yml",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/monitoring/prometheus/alerts/finance-query.yml",
+      "relative_path": "finance-query/monitoring/prometheus/alerts/finance-query.yml",
+      "filename": "finance-query.yml",
+      "extension": ".yml",
+      "media_type": "application/yaml",
+      "bytes": 1438,
+      "binary": false,
+      "sha256": "137ae3e2be0578ccfde4c85ceca04e8bad974d5c68edb6fc8fa0e243b3ce57e7",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/server/src/graphql/types/market.rs",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/server/src/graphql/types/market.rs",
+      "relative_path": "finance-query/server/src/graphql/types/market.rs",
+      "filename": "market.rs",
+      "extension": ".rs",
+      "media_type": "application/rls-services+xml",
+      "bytes": 1452,
+      "binary": false,
+      "sha256": "f0bb52bcc902d2b76ae4cf1c501a935cbe2f6556a393723ce74920796084e644",
+      "classes": [
+        "code_or_schema",
+        "dataset",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/server/src/services/financials.rs",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/server/src/services/financials.rs",
+      "relative_path": "finance-query/server/src/services/financials.rs",
+      "filename": "financials.rs",
+      "extension": ".rs",
+      "media_type": "application/rls-services+xml",
+      "bytes": 1909,
+      "binary": false,
+      "sha256": "81f47f5c75e2033c4b551ebdd0438f9bcb8e21d4976244806afef16b0e97f869",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research",
+        "test_or_validation"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/server/src/services/market.rs",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/server/src/services/market.rs",
+      "relative_path": "finance-query/server/src/services/market.rs",
+      "filename": "market.rs",
+      "extension": ".rs",
+      "media_type": "application/rls-services+xml",
+      "bytes": 4247,
+      "binary": false,
+      "sha256": "f38a6104d7c619e861b339b93a93f8728b94fce655108f91afa0cb05e26d7096",
+      "classes": [
+        "code_or_schema",
+        "dataset",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/src/finance.rs",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/src/finance.rs",
+      "relative_path": "finance-query/src/finance.rs",
+      "filename": "finance.rs",
+      "extension": ".rs",
+      "media_type": "application/rls-services+xml",
+      "bytes": 27657,
+      "binary": false,
+      "sha256": "3a18505a2bc1f9324b0a8e1f7e08f4b33192921d3f7ed13287625a7866ab329e",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/src/adapters/fmp/market/market_performance.rs",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/src/adapters/fmp/market/market_performance.rs",
+      "relative_path": "finance-query/src/adapters/fmp/market/market_performance.rs",
+      "filename": "market_performance.rs",
+      "extension": ".rs",
+      "media_type": "application/rls-services+xml",
+      "bytes": 8006,
+      "binary": false,
+      "sha256": "bfa1e8a3413e2642e831acd0f91920f763dbfee806244f2eb8e8039f3d5644d5",
+      "classes": [
+        "code_or_schema",
+        "dataset",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/src/adapters/fmp/quote/company.rs",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/src/adapters/fmp/quote/company.rs",
+      "relative_path": "finance-query/src/adapters/fmp/quote/company.rs",
+      "filename": "company.rs",
+      "extension": ".rs",
+      "media_type": "application/rls-services+xml",
+      "bytes": 14771,
+      "binary": false,
+      "sha256": "fb689ecd34d51a0e92a6c7bdef244b5a3e6acd4aa4e3444931597f3a95b0a306",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "probable_duplicate",
+      "duplicate_group": [
+        "openastro_worktree:data/extractions/company-research/finance-query/src/adapters/fmp/quote/company.rs",
+        "repository_sources:finance-query/src/adapters/fmp/quote/company.rs"
+      ]
+    },
+    {
+      "source_id": "repository_sources:finance-query/src/adapters/yahoo/market/market_summary.rs",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/src/adapters/yahoo/market/market_summary.rs",
+      "relative_path": "finance-query/src/adapters/yahoo/market/market_summary.rs",
+      "filename": "market_summary.rs",
+      "extension": ".rs",
+      "media_type": "application/rls-services+xml",
+      "bytes": 1009,
+      "binary": false,
+      "sha256": "0a8e582717abc073380c27633f9ed9da7101028f3c0aabc3cb13b27f96b635d8",
+      "classes": [
+        "code_or_schema",
+        "dataset",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/src/domains/filings.rs",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/src/domains/filings.rs",
+      "relative_path": "finance-query/src/domains/filings.rs",
+      "filename": "filings.rs",
+      "extension": ".rs",
+      "media_type": "application/rls-services+xml",
+      "bytes": 728,
+      "binary": false,
+      "sha256": "58ff5d1c2423e7f5b0bd5c99ea3ba21765cfd7e097c2cca3348160140113168b",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/src/models/corporate/earnings.rs",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/src/models/corporate/earnings.rs",
+      "relative_path": "finance-query/src/models/corporate/earnings.rs",
+      "filename": "earnings.rs",
+      "extension": ".rs",
+      "media_type": "application/rls-services+xml",
+      "bytes": 3774,
+      "binary": false,
+      "sha256": "f5242fff208d74dffe3cf706298fe955c2d74871fb9dc2be4488379096fc2a9a",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "probable_duplicate",
+      "duplicate_group": [
+        "repository_sources:finance-query/src/models/corporate/earnings.rs",
+        "repository_sources:finance-query/src/models/quote/earnings.rs"
+      ]
+    },
+    {
+      "source_id": "repository_sources:finance-query/src/models/corporate/earnings_history.rs",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/src/models/corporate/earnings_history.rs",
+      "relative_path": "finance-query/src/models/corporate/earnings_history.rs",
+      "filename": "earnings_history.rs",
+      "extension": ".rs",
+      "media_type": "application/rls-services+xml",
+      "bytes": 1584,
+      "binary": false,
+      "sha256": "5e4c60b3c94b2f831ffad80349534fa31316ce4571d8e38daeba98bcf153e611",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "probable_duplicate",
+      "duplicate_group": [
+        "repository_sources:finance-query/src/models/corporate/earnings_history.rs",
+        "repository_sources:finance-query/src/models/quote/earnings_history.rs"
+      ]
+    },
+    {
+      "source_id": "repository_sources:finance-query/src/models/corporate/earnings_trend.rs",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/src/models/corporate/earnings_trend.rs",
+      "relative_path": "finance-query/src/models/corporate/earnings_trend.rs",
+      "filename": "earnings_trend.rs",
+      "extension": ".rs",
+      "media_type": "application/rls-services+xml",
+      "bytes": 4913,
+      "binary": false,
+      "sha256": "415688122a4de7acf960146cb2b429c6aa4a43c232f04e1616758de7b3e66d3b",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "probable_duplicate",
+      "duplicate_group": [
+        "repository_sources:finance-query/src/models/corporate/earnings_trend.rs",
+        "repository_sources:finance-query/src/models/quote/earnings_trend.rs"
+      ]
+    },
+    {
+      "source_id": "repository_sources:finance-query/src/models/corporate/sec_filings.rs",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/src/models/corporate/sec_filings.rs",
+      "relative_path": "finance-query/src/models/corporate/sec_filings.rs",
+      "filename": "sec_filings.rs",
+      "extension": ".rs",
+      "media_type": "application/rls-services+xml",
+      "bytes": 1652,
+      "binary": false,
+      "sha256": "09acd50852d87c5ea44375053a9c8602dfb67ca0e45a32beed97c5afb04bbdfd",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "probable_duplicate",
+      "duplicate_group": [
+        "repository_sources:finance-query/src/models/corporate/sec_filings.rs",
+        "repository_sources:finance-query/src/models/quote/sec_filings.rs"
+      ]
+    },
+    {
+      "source_id": "repository_sources:finance-query/src/models/discovery/search/research.rs",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/src/models/discovery/search/research.rs",
+      "relative_path": "finance-query/src/models/discovery/search/research.rs",
+      "filename": "research.rs",
+      "extension": ".rs",
+      "media_type": "application/rls-services+xml",
+      "bytes": 2212,
+      "binary": false,
+      "sha256": "f0625511165a7db462944df6e2b5e2145208e300508dabe9f099f387ad732630",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "probable_duplicate",
+      "duplicate_group": [
+        "openastro_worktree:data/extractions/company-research/finance-query/src/models/discovery/search/research.rs",
+        "repository_sources:finance-query/src/models/discovery/search/research.rs"
+      ]
+    },
+    {
+      "source_id": "repository_sources:finance-query/src/models/filings/company_facts.rs",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/src/models/filings/company_facts.rs",
+      "relative_path": "finance-query/src/models/filings/company_facts.rs",
+      "filename": "company_facts.rs",
+      "extension": ".rs",
+      "media_type": "application/rls-services+xml",
+      "bytes": 12400,
+      "binary": false,
+      "sha256": "485019ed0b4f02dbc6f6ce5b6c1f0e3a8f26bd5627d1168a10871ed76d9f2d49",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/src/models/filings/filing_index.rs",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/src/models/filings/filing_index.rs",
+      "relative_path": "finance-query/src/models/filings/filing_index.rs",
+      "filename": "filing_index.rs",
+      "extension": ".rs",
+      "media_type": "application/rls-services+xml",
+      "bytes": 1136,
+      "binary": false,
+      "sha256": "c0332545d1742d2733288074c095f34d438ae153819f52a58e8c8ccd706d86a1",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/src/models/fundamentals/financial_data.rs",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/src/models/fundamentals/financial_data.rs",
+      "relative_path": "finance-query/src/models/fundamentals/financial_data.rs",
+      "filename": "financial_data.rs",
+      "extension": ".rs",
+      "media_type": "application/rls-services+xml",
+      "bytes": 6805,
+      "binary": false,
+      "sha256": "01f94354f3369185a7b67a3cef5a29415e2772bc022a1346db58c38026d516ee",
+      "classes": [
+        "code_or_schema",
+        "dataset",
+        "financial_or_company_research",
+        "test_or_validation"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "probable_duplicate",
+      "duplicate_group": [
+        "openastro_worktree:data/extractions/company-research/finance-query/src/models/fundamentals/financial_data.rs",
+        "repository_sources:finance-query/src/models/fundamentals/financial_data.rs"
+      ]
+    },
+    {
+      "source_id": "repository_sources:finance-query/src/models/quote/earnings.rs",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/src/models/quote/earnings.rs",
+      "relative_path": "finance-query/src/models/quote/earnings.rs",
+      "filename": "earnings.rs",
+      "extension": ".rs",
+      "media_type": "application/rls-services+xml",
+      "bytes": 3774,
+      "binary": false,
+      "sha256": "f5242fff208d74dffe3cf706298fe955c2d74871fb9dc2be4488379096fc2a9a",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "probable_duplicate",
+      "duplicate_group": [
+        "repository_sources:finance-query/src/models/corporate/earnings.rs",
+        "repository_sources:finance-query/src/models/quote/earnings.rs"
+      ]
+    },
+    {
+      "source_id": "repository_sources:finance-query/src/models/quote/earnings_history.rs",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/src/models/quote/earnings_history.rs",
+      "relative_path": "finance-query/src/models/quote/earnings_history.rs",
+      "filename": "earnings_history.rs",
+      "extension": ".rs",
+      "media_type": "application/rls-services+xml",
+      "bytes": 1584,
+      "binary": false,
+      "sha256": "5e4c60b3c94b2f831ffad80349534fa31316ce4571d8e38daeba98bcf153e611",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "probable_duplicate",
+      "duplicate_group": [
+        "repository_sources:finance-query/src/models/corporate/earnings_history.rs",
+        "repository_sources:finance-query/src/models/quote/earnings_history.rs"
+      ]
+    },
+    {
+      "source_id": "repository_sources:finance-query/src/models/quote/earnings_trend.rs",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/src/models/quote/earnings_trend.rs",
+      "relative_path": "finance-query/src/models/quote/earnings_trend.rs",
+      "filename": "earnings_trend.rs",
+      "extension": ".rs",
+      "media_type": "application/rls-services+xml",
+      "bytes": 4913,
+      "binary": false,
+      "sha256": "415688122a4de7acf960146cb2b429c6aa4a43c232f04e1616758de7b3e66d3b",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "probable_duplicate",
+      "duplicate_group": [
+        "repository_sources:finance-query/src/models/corporate/earnings_trend.rs",
+        "repository_sources:finance-query/src/models/quote/earnings_trend.rs"
+      ]
+    },
+    {
+      "source_id": "repository_sources:finance-query/src/models/quote/financial_data.rs",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/src/models/quote/financial_data.rs",
+      "relative_path": "finance-query/src/models/quote/financial_data.rs",
+      "filename": "financial_data.rs",
+      "extension": ".rs",
+      "media_type": "application/rls-services+xml",
+      "bytes": 5646,
+      "binary": false,
+      "sha256": "208342e995830a26e508765e40b88e63d04a7a80f35ec76d69f9dcc8122143f0",
+      "classes": [
+        "code_or_schema",
+        "dataset",
+        "financial_or_company_research",
+        "test_or_validation"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/src/models/quote/sec_filings.rs",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/src/models/quote/sec_filings.rs",
+      "relative_path": "finance-query/src/models/quote/sec_filings.rs",
+      "filename": "sec_filings.rs",
+      "extension": ".rs",
+      "media_type": "application/rls-services+xml",
+      "bytes": 1652,
+      "binary": false,
+      "sha256": "09acd50852d87c5ea44375053a9c8602dfb67ca0e45a32beed97c5afb04bbdfd",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "probable_duplicate",
+      "duplicate_group": [
+        "repository_sources:finance-query/src/models/corporate/sec_filings.rs",
+        "repository_sources:finance-query/src/models/quote/sec_filings.rs"
+      ]
+    },
+    {
+      "source_id": "repository_sources:finance-query/src/scrapers/yahoo_earnings.rs",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/src/scrapers/yahoo_earnings.rs",
+      "relative_path": "finance-query/src/scrapers/yahoo_earnings.rs",
+      "filename": "yahoo_earnings.rs",
+      "extension": ".rs",
+      "media_type": "application/rls-services+xml",
+      "bytes": 8940,
+      "binary": false,
+      "sha256": "bc8de8fa9b7457600ef95503a07db74b2216bc27406f32671ee9fb45bdc719d5",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/tests/doc_finance.rs",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/tests/doc_finance.rs",
+      "relative_path": "finance-query/tests/doc_finance.rs",
+      "filename": "doc_finance.rs",
+      "extension": ".rs",
+      "media_type": "application/rls-services+xml",
+      "bytes": 17783,
+      "binary": false,
+      "sha256": "e4720d39c492bb6e9487b404fec0829e74081c9a8b525a478e3c9c2239c1e1f2",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/v1/docs/api/earnings_transcript.md",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/v1/docs/api/earnings_transcript.md",
+      "relative_path": "finance-query/v1/docs/api/earnings_transcript.md",
+      "filename": "earnings_transcript.md",
+      "extension": ".md",
+      "media_type": "text/markdown",
+      "bytes": 3851,
+      "binary": false,
+      "sha256": "88c16767b759d12814e80e8ba03dcaff4037b1709347f0cac7839cc1b04a6a2f",
+      "classes": [
+        "document_or_methodology",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/v1/docs/api/financials.md",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/v1/docs/api/financials.md",
+      "relative_path": "finance-query/v1/docs/api/financials.md",
+      "filename": "financials.md",
+      "extension": ".md",
+      "media_type": "text/markdown",
+      "bytes": 3419,
+      "binary": false,
+      "sha256": "5e0c8b1280b55787f8a3d610490068663122d04525ad1ce9d281f18ca14750cf",
+      "classes": [
+        "document_or_methodology",
+        "financial_or_company_research",
+        "test_or_validation"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/v1/docs/websockets/market.md",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/v1/docs/websockets/market.md",
+      "relative_path": "finance-query/v1/docs/websockets/market.md",
+      "filename": "market.md",
+      "extension": ".md",
+      "media_type": "text/markdown",
+      "bytes": 6904,
+      "binary": false,
+      "sha256": "093aad7113de08b0a3ec7525cae672b8bcfece95a04efaf79b56a8c1415f15c9",
+      "classes": [
+        "dataset",
+        "document_or_methodology",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/v1/src/models/earnings_transcript.py",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/v1/src/models/earnings_transcript.py",
+      "relative_path": "finance-query/v1/src/models/earnings_transcript.py",
+      "filename": "earnings_transcript.py",
+      "extension": ".py",
+      "media_type": "text/x-python",
+      "bytes": 2195,
+      "binary": false,
+      "sha256": "885af54ea55ef53917173ba142a6d8ef0ef93e8b776d2dac455439f8dd405775",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/v1/src/models/financials.py",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/v1/src/models/financials.py",
+      "relative_path": "finance-query/v1/src/models/financials.py",
+      "filename": "financials.py",
+      "extension": ".py",
+      "media_type": "text/x-python",
+      "bytes": 832,
+      "binary": false,
+      "sha256": "d5e1a13711879653373a31e03900c801b714161084d8511a06209bf7a3f9f327",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research",
+        "test_or_validation"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/v1/src/models/marketmover.py",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/v1/src/models/marketmover.py",
+      "relative_path": "finance-query/v1/src/models/marketmover.py",
+      "filename": "marketmover.py",
+      "extension": ".py",
+      "media_type": "text/x-python",
+      "bytes": 834,
+      "binary": false,
+      "sha256": "bf63a0ad303d01b41ed043b237fcf7e79f9df66085299a49c5829be59bf0f6b6",
+      "classes": [
+        "code_or_schema",
+        "dataset",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/v1/src/routes/earnings_transcript.py",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/v1/src/routes/earnings_transcript.py",
+      "relative_path": "finance-query/v1/src/routes/earnings_transcript.py",
+      "filename": "earnings_transcript.py",
+      "extension": ".py",
+      "media_type": "text/x-python",
+      "bytes": 6164,
+      "binary": false,
+      "sha256": "e6591d0207bec7b26df3d515d329cff247f0038dabb3488a7b5622a8a43cb156",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/v1/src/routes/finance_news.py",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/v1/src/routes/finance_news.py",
+      "relative_path": "finance-query/v1/src/routes/finance_news.py",
+      "filename": "finance_news.py",
+      "extension": ".py",
+      "media_type": "text/x-python",
+      "bytes": 1444,
+      "binary": false,
+      "sha256": "a962e5ee3b456878a722da15f2a7f92ed5c480696ae7490bac1f4927c6e2b6ac",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/v1/src/routes/financials.py",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/v1/src/routes/financials.py",
+      "relative_path": "finance-query/v1/src/routes/financials.py",
+      "filename": "financials.py",
+      "extension": ".py",
+      "media_type": "text/x-python",
+      "bytes": 3334,
+      "binary": false,
+      "sha256": "952914baf4d6034c7c17128453c5792692425fa6545e8a7c0efa2be1a4c1a4fb",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research",
+        "test_or_validation"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/v1/src/services/earnings_transcript/get_earnings_transcript.py",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/v1/src/services/earnings_transcript/get_earnings_transcript.py",
+      "relative_path": "finance-query/v1/src/services/earnings_transcript/get_earnings_transcript.py",
+      "filename": "get_earnings_transcript.py",
+      "extension": ".py",
+      "media_type": "text/x-python",
+      "bytes": 7593,
+      "binary": false,
+      "sha256": "84e148c0dcc9c7c6b90f183ed2dc4ffb3b669f92b4b1795b26214611d7c82685",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/v1/src/services/financials/get_financials.py",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/v1/src/services/financials/get_financials.py",
+      "relative_path": "finance-query/v1/src/services/financials/get_financials.py",
+      "filename": "get_financials.py",
+      "extension": ".py",
+      "media_type": "text/x-python",
+      "bytes": 4937,
+      "binary": false,
+      "sha256": "ea4d71c7e1475db17a7a7a66403d097628a38d18542ec310111958b4bd4d763d",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research",
+        "test_or_validation"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/v1/src/utils/market.py",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/v1/src/utils/market.py",
+      "relative_path": "finance-query/v1/src/utils/market.py",
+      "filename": "market.py",
+      "extension": ".py",
+      "media_type": "text/x-python",
+      "bytes": 6616,
+      "binary": false,
+      "sha256": "cee2c53f4893717565d64a04ef39faf57697507afacf74db8afbd2a9fa455701",
+      "classes": [
+        "code_or_schema",
+        "dataset",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/v1/src/utils/yahoo_financials_constants.py",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/v1/src/utils/yahoo_financials_constants.py",
+      "relative_path": "finance-query/v1/src/utils/yahoo_financials_constants.py",
+      "filename": "yahoo_financials_constants.py",
+      "extension": ".py",
+      "media_type": "text/x-python",
+      "bytes": 4527,
+      "binary": false,
+      "sha256": "3e7a169886566ca1dca192094b1ca5df61e3aabacfe69cb14e26907750ca43cc",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research",
+        "test_or_validation"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/v1/tests/services/earnings_transcript/test_get_earnings_transcript.py",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/v1/tests/services/earnings_transcript/test_get_earnings_transcript.py",
+      "relative_path": "finance-query/v1/tests/services/earnings_transcript/test_get_earnings_transcript.py",
+      "filename": "test_get_earnings_transcript.py",
+      "extension": ".py",
+      "media_type": "text/x-python",
+      "bytes": 15537,
+      "binary": false,
+      "sha256": "b3604690b0ab0218fefb4b62a1e235e4ae45613a1e43d6d9cc7aa054d7815f7d",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research",
+        "test_or_validation"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/v1/tests/services/earnings_transcript/test_route_earnings_transcript.py",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/v1/tests/services/earnings_transcript/test_route_earnings_transcript.py",
+      "relative_path": "finance-query/v1/tests/services/earnings_transcript/test_route_earnings_transcript.py",
+      "filename": "test_route_earnings_transcript.py",
+      "extension": ".py",
+      "media_type": "text/x-python",
+      "bytes": 414,
+      "binary": false,
+      "sha256": "80b4ac44f63aea1118294a147ed40f7f2523ddbab994ac6812ed851f75273cf6",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research",
+        "test_or_validation"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/v1/tests/services/financials/test_get_financials.py",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/v1/tests/services/financials/test_get_financials.py",
+      "relative_path": "finance-query/v1/tests/services/financials/test_get_financials.py",
+      "filename": "test_get_financials.py",
+      "extension": ".py",
+      "media_type": "text/x-python",
+      "bytes": 12211,
+      "binary": false,
+      "sha256": "dbbf7fcbf491a134406d6b72c0e955507c61724fb5437ba509edb2f44d5dfde0",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research",
+        "test_or_validation"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/v1/tests/services/financials/test_route_financials.py",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/v1/tests/services/financials/test_route_financials.py",
+      "relative_path": "finance-query/v1/tests/services/financials/test_route_financials.py",
+      "filename": "test_route_financials.py",
+      "extension": ".py",
+      "media_type": "text/x-python",
+      "bytes": 7120,
+      "binary": false,
+      "sha256": "1e01479ebc45b2d1399ed6883443d7d096b4f5f6c4f3ca950b96cfa3c001bd07",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research",
+        "test_or_validation"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:finance-query/v1/tests/utils/clients/test_finance_client.py",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/finance-query/v1/tests/utils/clients/test_finance_client.py",
+      "relative_path": "finance-query/v1/tests/utils/clients/test_finance_client.py",
+      "filename": "test_finance_client.py",
+      "extension": ".py",
+      "media_type": "text/x-python",
+      "bytes": 9400,
+      "binary": false,
+      "sha256": "8818e7b0865974d3d9add2649610e3e2e4d55359feae74547243e0d4b87c8319",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research",
+        "test_or_validation"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:trading-signals/packages/exchange/src/broker/MarketDataSource.ts",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/trading-signals/packages/exchange/src/broker/MarketDataSource.ts",
+      "relative_path": "trading-signals/packages/exchange/src/broker/MarketDataSource.ts",
+      "filename": "MarketDataSource.ts",
+      "extension": ".ts",
+      "media_type": "text/vnd.trolltech.linguist",
+      "bytes": 1037,
+      "binary": false,
+      "sha256": "922f11f6117afb01b83be610bc0bf73412ba393934624660944cc07ccd23d8b3",
+      "classes": [
+        "code_or_schema",
+        "dataset",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:trading-signals/packages/exchange/src/broker/alpaca/AlpacaMarketData.ts",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/trading-signals/packages/exchange/src/broker/alpaca/AlpacaMarketData.ts",
+      "relative_path": "trading-signals/packages/exchange/src/broker/alpaca/AlpacaMarketData.ts",
+      "filename": "AlpacaMarketData.ts",
+      "extension": ".ts",
+      "media_type": "text/vnd.trolltech.linguist",
+      "bytes": 7156,
+      "binary": false,
+      "sha256": "5033a0debd60cc0fcce641300d88656f9811c3487dc41987d64da583d7df1dfa",
+      "classes": [
+        "code_or_schema",
+        "dataset",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:trading-signals/packages/exchange/src/broker/alpaca/getAlpacaMarketData.ts",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/trading-signals/packages/exchange/src/broker/alpaca/getAlpacaMarketData.ts",
+      "relative_path": "trading-signals/packages/exchange/src/broker/alpaca/getAlpacaMarketData.ts",
+      "filename": "getAlpacaMarketData.ts",
+      "extension": ".ts",
+      "media_type": "text/vnd.trolltech.linguist",
+      "bytes": 423,
+      "binary": false,
+      "sha256": "cb7c834b64068d879205745cb905f36ad7061917f655353042f28fb8fdb7c6d7",
+      "classes": [
+        "code_or_schema",
+        "dataset",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:trading-signals/packages/exchange/src/util/isEarningsDay.test.ts",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/trading-signals/packages/exchange/src/util/isEarningsDay.test.ts",
+      "relative_path": "trading-signals/packages/exchange/src/util/isEarningsDay.test.ts",
+      "filename": "isEarningsDay.test.ts",
+      "extension": ".ts",
+      "media_type": "text/vnd.trolltech.linguist",
+      "bytes": 3336,
+      "binary": false,
+      "sha256": "e387148f44049b2d1ed84f34e85ff8c5c68fdced3769fe30ede2d8f1d7fe07a4",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research",
+        "test_or_validation"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:trading-signals/packages/exchange/src/util/isEarningsDay.ts",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/trading-signals/packages/exchange/src/util/isEarningsDay.ts",
+      "relative_path": "trading-signals/packages/exchange/src/util/isEarningsDay.ts",
+      "filename": "isEarningsDay.ts",
+      "extension": ".ts",
+      "media_type": "text/vnd.trolltech.linguist",
+      "bytes": 1447,
+      "binary": false,
+      "sha256": "ba63e7eda29ae8ef518530f1173d5eb78829e14ae0bcf5aa4300e7ac793613d9",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:trading-signals/packages/trading-signals-docs/components/MarketClock.tsx",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/trading-signals/packages/trading-signals-docs/components/MarketClock.tsx",
+      "relative_path": "trading-signals/packages/trading-signals-docs/components/MarketClock.tsx",
+      "filename": "MarketClock.tsx",
+      "extension": ".tsx",
+      "media_type": "application/octet-stream",
+      "bytes": 1929,
+      "binary": false,
+      "sha256": "fbd8fb22f30d211e3f5be224d3a7689eaefa930e32d97c5b78a779b0bfcd7210",
+      "classes": [
+        "code_or_schema",
+        "dataset",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:trading-signals/packages/trading-strategies/src/strategy/MarketType.ts",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/trading-signals/packages/trading-strategies/src/strategy/MarketType.ts",
+      "relative_path": "trading-signals/packages/trading-strategies/src/strategy/MarketType.ts",
+      "filename": "MarketType.ts",
+      "extension": ".ts",
+      "media_type": "text/vnd.trolltech.linguist",
+      "bytes": 854,
+      "binary": false,
+      "sha256": "54122c645c54ab1369047938ce2b12ce8b3dd4af9ea02c43611a0f2702d5e26e",
+      "classes": [
+        "code_or_schema",
+        "dataset",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:astro44/astro_financial_framework_complete.json",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/astro44/astro_financial_framework_complete.json",
+      "relative_path": "astro44/astro_financial_framework_complete.json",
+      "filename": "astro_financial_framework_complete.json",
+      "extension": ".json",
+      "media_type": "application/json",
+      "bytes": 130,
+      "binary": false,
+      "sha256": "db1b080125d07a0003f84bd72e461f6a29c182517f071dc98a7fc96b14ccd3b9",
+      "classes": [
+        "dataset_or_structured_data",
+        "financial_or_company_research",
+        "framework_or_method",
+        "test_or_validation"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:astro44/market_data_may25_2026-3 - Copy.json",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/astro44/market_data_may25_2026-3 - Copy.json",
+      "relative_path": "astro44/market_data_may25_2026-3 - Copy.json",
+      "filename": "market_data_may25_2026-3 - Copy.json",
+      "extension": ".json",
+      "media_type": "application/json",
+      "bytes": 130,
+      "binary": false,
+      "sha256": "d1763844994d8b7cd80d90827a8f9a4345a06f59543edca8ded9086acdb06249",
+      "classes": [
+        "dataset",
+        "dataset_or_structured_data",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "probable_duplicate",
+      "duplicate_group": [
+        "repository_sources:astro44/market_data_may25_2026-3 - Copy.json",
+        "repository_sources:astro44/market_data_may25_2026-3.json"
+      ]
+    },
+    {
+      "source_id": "repository_sources:astro44/market_data_may25_2026-3.json",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/astro44/market_data_may25_2026-3.json",
+      "relative_path": "astro44/market_data_may25_2026-3.json",
+      "filename": "market_data_may25_2026-3.json",
+      "extension": ".json",
+      "media_type": "application/json",
+      "bytes": 130,
+      "binary": false,
+      "sha256": "d1763844994d8b7cd80d90827a8f9a4345a06f59543edca8ded9086acdb06249",
+      "classes": [
+        "dataset",
+        "dataset_or_structured_data",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "probable_duplicate",
+      "duplicate_group": [
+        "repository_sources:astro44/market_data_may25_2026-3 - Copy.json",
+        "repository_sources:astro44/market_data_may25_2026-3.json"
+      ]
+    },
+    {
+      "source_id": "repository_sources:astro44/market_data_v3_may25_2026-4 - Copy.json",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/astro44/market_data_v3_may25_2026-4 - Copy.json",
+      "relative_path": "astro44/market_data_v3_may25_2026-4 - Copy.json",
+      "filename": "market_data_v3_may25_2026-4 - Copy.json",
+      "extension": ".json",
+      "media_type": "application/json",
+      "bytes": 130,
+      "binary": false,
+      "sha256": "35b45e26fc877e2c9e2a4b8824143f76fdab9489c178acebd5c1c83bb3663e78",
+      "classes": [
+        "dataset",
+        "dataset_or_structured_data",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "probable_duplicate",
+      "duplicate_group": [
+        "repository_sources:astro44/market_data_v3_may25_2026-4 - Copy.json",
+        "repository_sources:astro44/market_data_v3_may25_2026-4.json"
+      ]
+    },
+    {
+      "source_id": "repository_sources:astro44/market_data_v3_may25_2026-4.json",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/astro44/market_data_v3_may25_2026-4.json",
+      "relative_path": "astro44/market_data_v3_may25_2026-4.json",
+      "filename": "market_data_v3_may25_2026-4.json",
+      "extension": ".json",
+      "media_type": "application/json",
+      "bytes": 130,
+      "binary": false,
+      "sha256": "35b45e26fc877e2c9e2a4b8824143f76fdab9489c178acebd5c1c83bb3663e78",
+      "classes": [
+        "dataset",
+        "dataset_or_structured_data",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "probable_duplicate",
+      "duplicate_group": [
+        "repository_sources:astro44/market_data_v3_may25_2026-4 - Copy.json",
+        "repository_sources:astro44/market_data_v3_may25_2026-4.json"
+      ]
+    },
+    {
+      "source_id": "repository_sources:financial-astrology-stats/moon_study/sheer_lunacy_evaluation.R",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/financial-astrology-stats/moon_study/sheer_lunacy_evaluation.R",
+      "relative_path": "financial-astrology-stats/moon_study/sheer_lunacy_evaluation.R",
+      "filename": "sheer_lunacy_evaluation.R",
+      "extension": ".r",
+      "media_type": "application/octet-stream",
+      "bytes": 3118,
+      "binary": false,
+      "sha256": "2558f177d326c180f7c930bd1307362a77414e863ba48bd0f800f235e466a2ce",
+      "classes": [
+        "code_or_schema",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:ASTROLOGY-BOOKS-DATABASE/#Articles/SaptarishisFacebookResearchGroupTechnique2BW.pdf",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/ASTROLOGY-BOOKS-DATABASE/#Articles/SaptarishisFacebookResearchGroupTechnique2BW.pdf",
+      "relative_path": "ASTROLOGY-BOOKS-DATABASE/#Articles/SaptarishisFacebookResearchGroupTechnique2BW.pdf",
+      "filename": "SaptarishisFacebookResearchGroupTechnique2BW.pdf",
+      "extension": ".pdf",
+      "media_type": "application/pdf",
+      "bytes": 2212843,
+      "binary": true,
+      "sha256": "cb7c47bcc58725de1fcea213c9210d11d7a67faf051f43b7590639df51abafad",
+      "classes": [
+        "document_or_methodology",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:ASTROLOGY-BOOKS-DATABASE/#Articles/YashodharMehtasResearchinAstrologyBW.pdf",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/ASTROLOGY-BOOKS-DATABASE/#Articles/YashodharMehtasResearchinAstrologyBW.pdf",
+      "relative_path": "ASTROLOGY-BOOKS-DATABASE/#Articles/YashodharMehtasResearchinAstrologyBW.pdf",
+      "filename": "YashodharMehtasResearchinAstrologyBW.pdf",
+      "extension": ".pdf",
+      "media_type": "application/pdf",
+      "bytes": 847113,
+      "binary": true,
+      "sha256": "b75d20da919806f278731bb130223b89c7d7426865719d7f25776cf3afe18014",
+      "classes": [
+        "document_or_methodology",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:ASTROLOGY-BOOKS-DATABASE/Nadi jyotish/K.P reader-2-fundamental-principles-of-astro.pdf",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/ASTROLOGY-BOOKS-DATABASE/Nadi jyotish/K.P reader-2-fundamental-principles-of-astro.pdf",
+      "relative_path": "ASTROLOGY-BOOKS-DATABASE/Nadi jyotish/K.P reader-2-fundamental-principles-of-astro.pdf",
+      "filename": "K.P reader-2-fundamental-principles-of-astro.pdf",
+      "extension": ".pdf",
+      "media_type": "application/pdf",
+      "bytes": 61000087,
+      "binary": false,
+      "sha256": "bcf3bced8b848734a38c509b9579d014b29664d1a238145385a19411689e9cb8",
+      "classes": [
+        "document_or_methodology",
+        "financial_or_company_research",
+        "test_or_validation"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "repository_sources:ASTROLOGY-BOOKS-DATABASE/Nadi jyotish/NADI ASTROLOGICAL RESEARCHES GROUP-II.pdf",
+      "root": "repository_sources",
+      "path": "/home/ubuntu/repo_sources/ASTROLOGY-BOOKS-DATABASE/Nadi jyotish/NADI ASTROLOGICAL RESEARCHES GROUP-II.pdf",
+      "relative_path": "ASTROLOGY-BOOKS-DATABASE/Nadi jyotish/NADI ASTROLOGICAL RESEARCHES GROUP-II.pdf",
+      "filename": "NADI ASTROLOGICAL RESEARCHES GROUP-II.pdf",
+      "extension": ".pdf",
+      "media_type": "application/pdf",
+      "bytes": 11574341,
+      "binary": true,
+      "sha256": "33ac15b23ec36da13b0e87a69fe8369cd7cd32611236819091baf5109cd2ac66",
+      "classes": [
+        "document_or_methodology",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "referenced_task_artifacts:KKjz2XYhrEjZS2TzfUN342/mundane_markets.md",
+      "root": "referenced_task_artifacts",
+      "path": "/home/ubuntu/astrology_synthesis/raw/KKjz2XYhrEjZS2TzfUN342/mundane_markets.md",
+      "relative_path": "KKjz2XYhrEjZS2TzfUN342/mundane_markets.md",
+      "filename": "mundane_markets.md",
+      "extension": ".md",
+      "media_type": "text/markdown",
+      "bytes": 12655,
+      "binary": false,
+      "sha256": "4ce49467704c7f8c37cc2e650edbd7da2eaa493f6e26530062f711237e7bb8f3",
+      "classes": [
+        "dataset",
+        "document_or_methodology",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "referenced_task_artifacts:KKjz2XYhrEjZS2TzfUN342/financial_signals.json",
+      "root": "referenced_task_artifacts",
+      "path": "/home/ubuntu/astrology_synthesis/raw/KKjz2XYhrEjZS2TzfUN342/financial_signals.json",
+      "relative_path": "KKjz2XYhrEjZS2TzfUN342/financial_signals.json",
+      "filename": "financial_signals.json",
+      "extension": ".json",
+      "media_type": "application/json",
+      "bytes": 34214,
+      "binary": false,
+      "sha256": "96ecf05c01734e79e15e7ce649fa7141a4c1997cb3925c5df05ec5f653a75bc6",
+      "classes": [
+        "dataset_or_structured_data",
+        "financial_or_company_research",
+        "signal_or_indicator",
+        "test_or_validation"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "referenced_task_artifacts:PrepgipZTwwKnux5z4dvaj/market_data_v3_may25_2026-4.json",
+      "root": "referenced_task_artifacts",
+      "path": "/home/ubuntu/astrology_synthesis/raw/PrepgipZTwwKnux5z4dvaj/market_data_v3_may25_2026-4.json",
+      "relative_path": "PrepgipZTwwKnux5z4dvaj/market_data_v3_may25_2026-4.json",
+      "filename": "market_data_v3_may25_2026-4.json",
+      "extension": ".json",
+      "media_type": "application/json",
+      "bytes": 83895,
+      "binary": false,
+      "sha256": "b88a56e1f0cb65ab171fb5e4550e2dad93ad552e7e25d6aa87af24475f4f4b87",
+      "classes": [
+        "dataset",
+        "dataset_or_structured_data",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "probable_duplicate",
+      "duplicate_group": [
+        "referenced_task_artifacts:PrepgipZTwwKnux5z4dvaj/market_data_v3_may25_2026-4.json",
+        "referenced_task_artifacts:k8uiNy9tJvLtcPBwUudZfz/market_data_v3_may25_2026-4.json"
+      ]
+    },
+    {
+      "source_id": "referenced_task_artifacts:HqwI8oBDkoZoydhozSJsxB/ml_evaluation.json",
+      "root": "referenced_task_artifacts",
+      "path": "/home/ubuntu/astrology_synthesis/raw/HqwI8oBDkoZoydhozSJsxB/ml_evaluation.json",
+      "relative_path": "HqwI8oBDkoZoydhozSJsxB/ml_evaluation.json",
+      "filename": "ml_evaluation.json",
+      "extension": ".json",
+      "media_type": "application/json",
+      "bytes": 3903,
+      "binary": false,
+      "sha256": "dee5ce32344e2cc198c0e6855c0161aa5705aecd54a88ce44efe1bd6711b3bce",
+      "classes": [
+        "dataset_or_structured_data",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "probable_duplicate",
+      "duplicate_group": [
+        "referenced_task_artifacts:HqwI8oBDkoZoydhozSJsxB/ml_evaluation.json",
+        "referenced_task_artifacts:k8uiNy9tJvLtcPBwUudZfz/ml_evaluation.json"
+      ]
+    },
+    {
+      "source_id": "referenced_task_artifacts:bE7XK2bZQxwJ27tcqauA9x/research_ml_protocol.md",
+      "root": "referenced_task_artifacts",
+      "path": "/home/ubuntu/astrology_synthesis/raw/bE7XK2bZQxwJ27tcqauA9x/research_ml_protocol.md",
+      "relative_path": "bE7XK2bZQxwJ27tcqauA9x/research_ml_protocol.md",
+      "filename": "research_ml_protocol.md",
+      "extension": ".md",
+      "media_type": "text/markdown",
+      "bytes": 4814,
+      "binary": false,
+      "sha256": "8bb7573323205730da8ec9e8f01ce59bc28c5500a6614db4f9614a8b0bc91340",
+      "classes": [
+        "document_or_methodology",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "referenced_task_artifacts:k8uiNy9tJvLtcPBwUudZfz/astrology_research_synthesis.md",
+      "root": "referenced_task_artifacts",
+      "path": "/home/ubuntu/astrology_synthesis/raw/k8uiNy9tJvLtcPBwUudZfz/astrology_research_synthesis.md",
+      "relative_path": "k8uiNy9tJvLtcPBwUudZfz/astrology_research_synthesis.md",
+      "filename": "astrology_research_synthesis.md",
+      "extension": ".md",
+      "media_type": "text/markdown",
+      "bytes": 5036,
+      "binary": false,
+      "sha256": "eaa9623a5e89afc2c40fab74fe34ef82c5ace21b3f742f2dac770ceb496a6292",
+      "classes": [
+        "document_or_methodology",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "referenced_task_artifacts:k8uiNy9tJvLtcPBwUudZfz/ml_evaluation.json",
+      "root": "referenced_task_artifacts",
+      "path": "/home/ubuntu/astrology_synthesis/raw/k8uiNy9tJvLtcPBwUudZfz/ml_evaluation.json",
+      "relative_path": "k8uiNy9tJvLtcPBwUudZfz/ml_evaluation.json",
+      "filename": "ml_evaluation.json",
+      "extension": ".json",
+      "media_type": "application/json",
+      "bytes": 3903,
+      "binary": false,
+      "sha256": "dee5ce32344e2cc198c0e6855c0161aa5705aecd54a88ce44efe1bd6711b3bce",
+      "classes": [
+        "dataset_or_structured_data",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "probable_duplicate",
+      "duplicate_group": [
+        "referenced_task_artifacts:HqwI8oBDkoZoydhozSJsxB/ml_evaluation.json",
+        "referenced_task_artifacts:k8uiNy9tJvLtcPBwUudZfz/ml_evaluation.json"
+      ]
+    },
+    {
+      "source_id": "referenced_task_artifacts:k8uiNy9tJvLtcPBwUudZfz/market_data_v3_may25_2026-4.json",
+      "root": "referenced_task_artifacts",
+      "path": "/home/ubuntu/astrology_synthesis/raw/k8uiNy9tJvLtcPBwUudZfz/market_data_v3_may25_2026-4.json",
+      "relative_path": "k8uiNy9tJvLtcPBwUudZfz/market_data_v3_may25_2026-4.json",
+      "filename": "market_data_v3_may25_2026-4.json",
+      "extension": ".json",
+      "media_type": "application/json",
+      "bytes": 83895,
+      "binary": false,
+      "sha256": "b88a56e1f0cb65ab171fb5e4550e2dad93ad552e7e25d6aa87af24475f4f4b87",
+      "classes": [
+        "dataset",
+        "dataset_or_structured_data",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "probable_duplicate",
+      "duplicate_group": [
+        "referenced_task_artifacts:PrepgipZTwwKnux5z4dvaj/market_data_v3_may25_2026-4.json",
+        "referenced_task_artifacts:k8uiNy9tJvLtcPBwUudZfz/market_data_v3_may25_2026-4.json"
+      ]
+    },
+    {
+      "source_id": "referenced_task_artifacts:mmcQKKdetYYvNW4dEAsgsH/Financial_BusinessAstrologySystem.json",
+      "root": "referenced_task_artifacts",
+      "path": "/home/ubuntu/astrology_synthesis/raw/mmcQKKdetYYvNW4dEAsgsH/Financial_BusinessAstrologySystem.json",
+      "relative_path": "mmcQKKdetYYvNW4dEAsgsH/Financial_BusinessAstrologySystem.json",
+      "filename": "Financial_BusinessAstrologySystem.json",
+      "extension": ".json",
+      "media_type": "application/json",
+      "bytes": 22717,
+      "binary": false,
+      "sha256": "04fe2b0fb2f71f4f335e5b10f9037eb22405b97f1ca9fed2c45cdb360987019d",
+      "classes": [
+        "dataset_or_structured_data",
+        "financial_or_company_research",
+        "test_or_validation"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "distinct"
+    },
+    {
+      "source_id": "referenced_task_artifacts:mmcQKKdetYYvNW4dEAsgsH/market_movers_dataset_report.md",
+      "root": "referenced_task_artifacts",
+      "path": "/home/ubuntu/astrology_synthesis/raw/mmcQKKdetYYvNW4dEAsgsH/market_movers_dataset_report.md",
+      "relative_path": "mmcQKKdetYYvNW4dEAsgsH/market_movers_dataset_report.md",
+      "filename": "market_movers_dataset_report.md",
+      "extension": ".md",
+      "media_type": "text/markdown",
+      "bytes": 14814,
+      "binary": false,
+      "sha256": "830ec0fbb89e1d62ef791ac1d3f69b827bf79e6d372c0ef8fb00fdccc8cf651e",
+      "classes": [
+        "dataset",
+        "document_or_methodology",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "probable_duplicate",
+      "duplicate_group": [
+        "referenced_task_artifacts:mmcQKKdetYYvNW4dEAsgsH/market_movers_dataset_report.md",
+        "referenced_task_artifacts:D75PQwZLeHq6xHGDTB5cCd/market_movers_dataset_report.md"
+      ]
+    },
+    {
+      "source_id": "referenced_task_artifacts:D75PQwZLeHq6xHGDTB5cCd/market_movers_dataset_report.md",
+      "root": "referenced_task_artifacts",
+      "path": "/home/ubuntu/astrology_synthesis/raw/D75PQwZLeHq6xHGDTB5cCd/market_movers_dataset_report.md",
+      "relative_path": "D75PQwZLeHq6xHGDTB5cCd/market_movers_dataset_report.md",
+      "filename": "market_movers_dataset_report.md",
+      "extension": ".md",
+      "media_type": "text/markdown",
+      "bytes": 14814,
+      "binary": false,
+      "sha256": "830ec0fbb89e1d62ef791ac1d3f69b827bf79e6d372c0ef8fb00fdccc8cf651e",
+      "classes": [
+        "dataset",
+        "document_or_methodology",
+        "financial_or_company_research"
+      ],
+      "status": "source_preserved",
+      "execution": "not_executed",
+      "rights_status": "pending_review",
+      "duplicate_status": "probable_duplicate",
+      "duplicate_group": [
+        "referenced_task_artifacts:mmcQKKdetYYvNW4dEAsgsH/market_movers_dataset_report.md",
+        "referenced_task_artifacts:D75PQwZLeHq6xHGDTB5cCd/market_movers_dataset_report.md"
+      ]
+    }
+  ],
+  "provenance": "Derived from all_sources_inventory.json; raw files remain at their recorded source paths."
+}

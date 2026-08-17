@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "source_id": "openastro:user-upload:astrological-synthesis-report-md",
+      "source_path": "data/sources/2026-08-user-uploads/raw/ASTROLOGICAL_SYNTHESIS_REPORT.md",
+      "classification": "sensitive_adult_interpretive_content",
+      "status": "quarantined_from_general_delineation",
+      "reason": "Contains explicit sexual, psychological, medical, or consent-related interpretive claims that must not be generalized, diagnosed, scored, or automatically retrieved.",
+      "permitted_processing": [
+        "raw preservation",
+        "provenance inventory",
+        "non-interpretive structural metadata"
+      ],
+      "prohibited_processing": [
+        "general delineation",
+        "diagnosis",
+        "risk scoring",
+        "sexual preference inference",
+        "automated aspect-to-sexuality mapping",
+        "model training without separately approved rights and ethics review"
+      ]
+    },
+    {
+      "source_id": "openastro:user-upload:uarosv6datacharts-txt",
+      "source_path": "data/sources/2026-08-user-uploads/raw/UAROSv6datacharts.txt",
+      "classification": "sensitive_adult_interpretive_content",
+      "status": "quarantined_from_general_delineation",
+      "reason": "Contains explicit sexual, psychological, medical, or consent-related interpretive claims that must not be generalized, diagnosed, scored, or automatically retrieved.",
+      "permitted_processing": [
+        "raw preservation",
+        "provenance inventory",
+        "non-interpretive structural metadata"
+      ],
+      "prohibited_processing": [
+        "general delineation",
+        "diagnosis",
+        "risk scoring",
+        "sexual preference inference",
+        "automated aspect-to-sexuality mapping",
+        "model training without separately approved rights and ethics review"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0.0",
+  "formulas": [
+    {
+      "id": "planetary_position",
+      "formula": "provider/ephemeris-defined planetary position",
+      "source_ids": [
+        "canonical:calculations.json"
+      ],
+      "status": "contracted"
+    },
+    {
+      "id": "house_cusps",
+      "formula": "house-system-specific cusp calculation",
+      "source_ids": [
+        "canonical:calculations.json"
+      ],
+      "status": "contracted"
+    },
+    {
+      "id": "aspects",
+      "formula": "angular separation versus aspect profile and orb policy",
+      "source_ids": [
+        "canonical:calculations.json"
+      ],
+      "status": "contracted"
+    },
+    {
+      "id": "declination_aspects",
+      "formula": "declination equality/negation within explicit orb",
+      "source_ids": [
+        "canonical:calculations.json"
+      ],
+      "status": "contracted"
+    },
+    {
+      "id": "arabic_parts",
+      "formula": "Ascendant plus/minus source points modulo 360 using explicit sect rule",
+      "source_ids": [
+        "canonical:calculations.json",
+        "openastro_worktree:data/frameworks/additions.json"
+      ],
+      "status": "methodology_bound"
+    },
+    {
+      "id": "antiscia",
+      "formula": "explicit reflection about configured axis",
+      "source_ids": [
+        "canonical:calculations.json",
+        "openastro_worktree:data/frameworks/additions.json"
+      ],
+      "status": "methodology_bound"
+    },
+    {
+      "id": "midpoints",
+      "formula": "circular midpoint with direct/indirect/dial mode",
+      "source_ids": [
+        "canonical:calculations.json"
+      ],
+      "status": "contracted"
+    },
+    {
+      "id": "draconic",
+      "formula": "(natal_longitude - selected_node_longitude) mod 360",
+      "source_ids": [
+        "openastro_worktree:data/drafts/chart-types.json"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "id": "harmonic",
+      "formula": "(natal_longitude * harmonic_number) mod 360",
+      "source_ids": [
+        "openastro_worktree:data/drafts/chart-types.json"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "id": "aspect_strength",
+      "formula": "(base_weight * modifier) / (orb + 1)",
+      "source_ids": [
+        "openastro_worktree:data/frameworks/unified-delineation-framework.json"
+      ],
+      "status": "methodology_bound"
+    },
+    {
+      "id": "recursive_strength",
+      "formula": "chain-weighted methodology with natal cap and exact-midpoint bonus",
+      "source_ids": [
+        "openastro_worktree:data/methodologies/recursive-strength-protocol.json"
+      ],
+      "status": "methodology_bound"
+    },
+    {
+      "id": "one_ephemeris_day_per_year",
+      "formula": "secondary progression mapping",
+      "source_ids": [
+        "canonical:calculations.json",
+        "openastro_worktree:data/drafts/chart-types.json"
+      ],
+      "status": "contracted"
+    },
+    {
+      "id": "solar_arc",
+      "formula": "progressed Sun displacement applied to natal points",
+      "source_ids": [
+        "canonical:calculations.json",
+        "openastro_worktree:data/drafts/chart-types.json"
+      ],
+      "status": "contracted"
+    },
+    {
+      "id": "harmonic_position",
+      "formula": "(natal_longitude * harmonic_number) mod 360",
+      "purpose": null,
+      "source_ids": [
+        "user_upload:pasted_content_3.txt"
+      ],
+      "status": "methodology_bound",
+      "limitations": [
+        "Source-derived formula; semantic adoption requires methodology review and regression fixture."
+      ]
+    },
+    {
+      "id": "draconic_longitude",
+      "formula": "(natal longitude - north node arc) mod 360",
+      "purpose": "Soul recalibration",
+      "source_ids": [
+        "user_upload:pasted_content_4.txt"
+      ],
+      "status": "pending_review",
+      "limitations": [
+        "Source-derived formula; semantic adoption requires methodology review and regression fixture."
+      ]
+    },
+    {
+      "id": "composite_midpoint",
+      "formula": "(longitudeA + longitudeB) / 2",
+      "purpose": "Relationship midpoint chart",
+      "source_ids": [
+        "user_upload:pasted_content_4.txt"
+      ],
+      "status": "pending_review",
+      "limitations": [
+        "Source-derived formula; semantic adoption requires methodology review and regression fixture."
+      ]
+    },
+    {
+      "id": "davison_midpoint",
+      "formula": "Julian day midpoint plus averaged coordinates",
+      "purpose": "Time-space relationship chart",
+      "source_ids": [
+        "user_upload:pasted_content_4.txt"
+      ],
+      "status": "pending_review",
+      "limitations": [
+        "Source-derived formula; semantic adoption requires methodology review and regression fixture."
+      ]
+    },
+    {
+      "id": "part_of_fortune_day",
+      "formula": "Asc + Moon - Sun",
+      "purpose": "Day formula for material fortune",
+      "source_ids": [
+        "user_upload:pasted_content_4.txt"
+      ],
+      "status": "pending_review",
+      "limitations": [
+        "Source-derived formula; semantic adoption requires methodology review and regression fixture."
+      ]
+    },
+    {
+      "id": "part_of_fortune_night",
+      "formula": "Asc + Sun - Moon",
+      "purpose": "Night formula for material fortune",
+      "source_ids": [
+        "user_upload:pasted_content_4.txt"
+      ],
+      "status": "pending_review",
+      "limitations": [
+        "Source-derived formula; semantic adoption requires methodology review and regression fixture."
+      ]
+    }
+  ]
+}

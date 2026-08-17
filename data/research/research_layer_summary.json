@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.1.0",
+  "generated_at": "2026-08-17T08:04:58.341810+00:00",
+  "economic_indicator_count": 50,
+  "method_count": 12,
+  "strategy_or_sentiment_text_count": 71,
+  "contract_artifact_count": 5,
+  "observations_acquired": false,
+  "labels_acquired": false,
+  "execution_status": "not_executed",
+  "walk_forward_validation_status": "not_executed_requires_observations_and_labels",
+  "status": "configuration_and_method_records_only",
+  "evidence_boundary": {
+    "financial_and_market_materials": "methodology_bound_research_only",
+    "default_promotion_status": "not_eligible_without_validated_experiment",
+    "promotion_rule": "Financial or market material may be registered as a scoped research signal or indicator only after a separately versioned, reproducible, leakage-safe experiment meets its pre-registered acceptance criteria and completes independent review. Promotion does not create trading advice, a causal claim, or a guaranteed forecast.",
+    "prohibited_uses": [
+      "trading instructions",
+      "position sizing",
+      "personal financial advice",
+      "guaranteed forecasts",
+      "causal claims from symbolic associations"
+    ],
+    "non_claims": [
+      "No untested association is a validated signal.",
+      "A statistically reported association is not proof of a causal mechanism.",
+      "A promoted research signal is not a buy, sell, hold, allocation, or execution instruction."
+    ]
+  },
+  "execution_readiness": {
+    "ready_to_acquire_observations": false,
+    "ready_to_run_walk_forward_validation": false,
+    "reason": "Contracts are complete, but no approved actual-data experiment package, observation dataset, labels, or frozen split manifest exists."
+  },
+  "limitations": [
+    "No market API calls or synthetic observations were used to generate this layer.",
+    "The artifacts define research methods, acquisition gates, and validation requirements; they do not report validated strategies, forecasts, or performance.",
+    "Financial and market materials remain methodology-bound and research-only unless separately promoted through the documented review gate."
+  ]
+}

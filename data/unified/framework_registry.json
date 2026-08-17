@@ -1,0 +1,648 @@
+{
+  "schema_version": "1.0.0",
+  "canonical_authorities": {
+    "entities": "/home/ubuntu/skills/astrology-data-unifi/references/entity_registry.json",
+    "calculations": "/home/ubuntu/skills/astrology-data-unifi/references/calculations.json",
+    "orchestration": "unified-astrology-engine"
+  },
+  "chart_type_count": 38,
+  "chart_type_contracts": {
+    "natal": {
+      "inputs": [
+        "datetime",
+        "timezone",
+        "latitude",
+        "longitude",
+        "zodiac",
+        "house_system",
+        "ephemeris"
+      ],
+      "outputs": [
+        "planetary_positions",
+        "houses",
+        "angles",
+        "aspects"
+      ],
+      "method": "geocentric natal chart",
+      "status": "contracted",
+      "limitations": [
+        "Requires explicit timezone, coordinates, zodiac, house system, ephemeris engine/version, precision, and tradition settings before computed use."
+      ]
+    },
+    "relocated": {
+      "inputs": [
+        "natal_chart",
+        "target_latitude",
+        "target_longitude",
+        "datetime",
+        "house_system"
+      ],
+      "outputs": [
+        "relocated_angles",
+        "relocated_houses"
+      ],
+      "method": "recompute houses and angles at target location while preserving natal time basis",
+      "status": "pending_review",
+      "limitations": [
+        "Requires explicit timezone, coordinates, zodiac, house system, ephemeris engine/version, precision, and tradition settings before computed use."
+      ]
+    },
+    "synastry": {
+      "inputs": [
+        "chart_a",
+        "chart_b",
+        "aspect_profile",
+        "orb_policy"
+      ],
+      "outputs": [
+        "cross_chart_aspects",
+        "house_overlays"
+      ],
+      "method": "pairwise comparison of two calculated charts",
+      "status": "contracted",
+      "limitations": [
+        "Requires explicit timezone, coordinates, zodiac, house system, ephemeris engine/version, precision, and tradition settings before computed use."
+      ]
+    },
+    "composite": {
+      "inputs": [
+        "chart_a",
+        "chart_b",
+        "midpoint_policy"
+      ],
+      "outputs": [
+        "midpoint_chart"
+      ],
+      "method": "circular midpoint chart",
+      "status": "pending_review",
+      "limitations": [
+        "Requires explicit timezone, coordinates, zodiac, house system, ephemeris engine/version, precision, and tradition settings before computed use."
+      ]
+    },
+    "davison": {
+      "inputs": [
+        "chart_a",
+        "chart_b",
+        "datetime_policy",
+        "location_policy"
+      ],
+      "outputs": [
+        "relationship_chart"
+      ],
+      "method": "relationship chart using a documented midpoint event policy",
+      "status": "pending_review",
+      "limitations": [
+        "Requires explicit timezone, coordinates, zodiac, house system, ephemeris engine/version, precision, and tradition settings before computed use."
+      ]
+    },
+    "transit": {
+      "inputs": [
+        "natal_chart",
+        "target_datetime",
+        "orb_policy"
+      ],
+      "outputs": [
+        "transit_hits",
+        "exactitude"
+      ],
+      "method": "time-aligned transit comparison",
+      "status": "contracted",
+      "limitations": [
+        "Requires explicit timezone, coordinates, zodiac, house system, ephemeris engine/version, precision, and tradition settings before computed use."
+      ]
+    },
+    "secondary_progression": {
+      "inputs": [
+        "birth_datetime",
+        "age_years",
+        "latitude",
+        "longitude"
+      ],
+      "outputs": [
+        "progressed_positions",
+        "progressed_houses"
+      ],
+      "method": "one ephemeris day per year",
+      "status": "contracted",
+      "limitations": [
+        "Requires explicit timezone, coordinates, zodiac, house system, ephemeris engine/version, precision, and tradition settings before computed use."
+      ]
+    },
+    "solar_arc": {
+      "inputs": [
+        "natal_chart",
+        "target_datetime"
+      ],
+      "outputs": [
+        "directed_positions"
+      ],
+      "method": "progressed Sun displacement applied to chart points",
+      "status": "contracted",
+      "limitations": [
+        "Requires explicit timezone, coordinates, zodiac, house system, ephemeris engine/version, precision, and tradition settings before computed use."
+      ]
+    },
+    "solar_return": {
+      "inputs": [
+        "natal_sun_longitude",
+        "target_year",
+        "location",
+        "house_system"
+      ],
+      "outputs": [
+        "return_chart"
+      ],
+      "method": "search exact Sun return with explicit ephemeris settings",
+      "status": "pending_review",
+      "limitations": [
+        "Requires explicit timezone, coordinates, zodiac, house system, ephemeris engine/version, precision, and tradition settings before computed use."
+      ]
+    },
+    "lunar_return": {
+      "inputs": [
+        "natal_moon_longitude",
+        "target_window",
+        "location",
+        "house_system"
+      ],
+      "outputs": [
+        "return_chart"
+      ],
+      "method": "search exact Moon return with explicit ephemeris settings",
+      "status": "pending_review",
+      "limitations": [
+        "Requires explicit timezone, coordinates, zodiac, house system, ephemeris engine/version, precision, and tradition settings before computed use."
+      ]
+    },
+    "planetary_return": {
+      "inputs": [
+        "natal_planet_longitude",
+        "planet",
+        "target_window",
+        "location"
+      ],
+      "outputs": [
+        "return_chart"
+      ],
+      "method": "search exact planetary return",
+      "status": "pending_review",
+      "limitations": [
+        "Requires explicit timezone, coordinates, zodiac, house system, ephemeris engine/version, precision, and tradition settings before computed use."
+      ]
+    },
+    "lunar_phase": {
+      "inputs": [
+        "datetime",
+        "zodiac",
+        "coordinate_frame"
+      ],
+      "outputs": [
+        "elongation",
+        "phase_angle"
+      ],
+      "method": "Sun-Moon angular separation",
+      "status": "contracted",
+      "limitations": [
+        "Requires explicit timezone, coordinates, zodiac, house system, ephemeris engine/version, precision, and tradition settings before computed use."
+      ]
+    },
+    "draconic": {
+      "inputs": [
+        "natal_chart",
+        "node_mode"
+      ],
+      "outputs": [
+        "draconic_positions"
+      ],
+      "method": "subtract selected node longitude modulo 360",
+      "status": "pending_review",
+      "limitations": [
+        "Requires explicit timezone, coordinates, zodiac, house system, ephemeris engine/version, precision, and tradition settings before computed use."
+      ]
+    },
+    "harmonic": {
+      "inputs": [
+        "natal_chart",
+        "harmonic_number"
+      ],
+      "outputs": [
+        "harmonic_positions"
+      ],
+      "method": "multiply longitudes by harmonic number modulo 360",
+      "status": "pending_review",
+      "limitations": [
+        "Requires explicit timezone, coordinates, zodiac, house system, ephemeris engine/version, precision, and tradition settings before computed use."
+      ]
+    },
+    "declination_parallel": {
+      "inputs": [
+        "point_declinations",
+        "orb"
+      ],
+      "outputs": [
+        "parallel",
+        "contraparallel"
+      ],
+      "method": "declination comparison",
+      "status": "contracted",
+      "limitations": [
+        "Requires explicit timezone, coordinates, zodiac, house system, ephemeris engine/version, precision, and tradition settings before computed use."
+      ]
+    },
+    "electional": {
+      "inputs": [
+        "candidate_window",
+        "constraints",
+        "zodiac",
+        "house_system"
+      ],
+      "outputs": [
+        "candidate_times",
+        "constraint_report"
+      ],
+      "method": "constraint evaluation over explicit time window",
+      "status": "pending_review",
+      "limitations": [
+        "Requires explicit timezone, coordinates, zodiac, house system, ephemeris engine/version, precision, and tradition settings before computed use."
+      ]
+    },
+    "horary": {
+      "inputs": [
+        "question_datetime",
+        "location",
+        "house_system",
+        "question_text"
+      ],
+      "outputs": [
+        "horary_chart",
+        "testimony_records"
+      ],
+      "method": "question-time chart with tradition-specific rules",
+      "status": "pending_review",
+      "limitations": [
+        "Requires explicit timezone, coordinates, zodiac, house system, ephemeris engine/version, precision, and tradition settings before computed use."
+      ]
+    },
+    "mundane": {
+      "inputs": [
+        "event_datetime",
+        "location",
+        "house_system",
+        "event_type"
+      ],
+      "outputs": [
+        "mundane_chart",
+        "event_factors"
+      ],
+      "method": "event chart with documented mundane method",
+      "status": "pending_review",
+      "limitations": [
+        "Requires explicit timezone, coordinates, zodiac, house system, ephemeris engine/version, precision, and tradition settings before computed use."
+      ]
+    },
+    "heliocentric": {
+      "inputs": [
+        "datetime",
+        "zodiac",
+        "ephemeris"
+      ],
+      "outputs": [
+        "heliocentric_positions"
+      ],
+      "method": "heliocentric planetary positions",
+      "status": "pending_review",
+      "limitations": [
+        "Requires explicit timezone, coordinates, zodiac, house system, ephemeris engine/version, precision, and tradition settings before computed use."
+      ]
+    },
+    "topocentric": {
+      "inputs": [
+        "datetime",
+        "latitude",
+        "longitude",
+        "zodiac",
+        "house_system"
+      ],
+      "outputs": [
+        "topocentric_positions",
+        "houses"
+      ],
+      "method": "topocentric coordinate frame",
+      "status": "pending_review",
+      "limitations": [
+        "Requires explicit timezone, coordinates, zodiac, house system, ephemeris engine/version, precision, and tradition settings before computed use."
+      ]
+    },
+    "barycentric": {
+      "inputs": [
+        "datetime",
+        "zodiac",
+        "ephemeris"
+      ],
+      "outputs": [
+        "barycentric_positions"
+      ],
+      "method": "barycentric positions",
+      "status": "pending_review",
+      "limitations": [
+        "Requires explicit timezone, coordinates, zodiac, house system, ephemeris engine/version, precision, and tradition settings before computed use."
+      ]
+    },
+    "planetocentric": {
+      "inputs": [
+        "datetime",
+        "origin_body",
+        "zodiac",
+        "ephemeris"
+      ],
+      "outputs": [
+        "planetocentric_positions"
+      ],
+      "method": "planet-centered positions",
+      "status": "pending_review",
+      "limitations": [
+        "Requires explicit timezone, coordinates, zodiac, house system, ephemeris engine/version, precision, and tradition settings before computed use."
+      ]
+    },
+    "sidereal": {
+      "inputs": [
+        "datetime",
+        "ayanamsa",
+        "zodiac",
+        "house_system"
+      ],
+      "outputs": [
+        "sidereal_positions",
+        "houses"
+      ],
+      "method": "sidereal zodiac with explicit ayanamsa",
+      "status": "pending_review",
+      "limitations": [
+        "Requires explicit timezone, coordinates, zodiac, house system, ephemeris engine/version, precision, and tradition settings before computed use."
+      ]
+    },
+    "varga": {
+      "inputs": [
+        "natal_chart",
+        "division",
+        "tradition"
+      ],
+      "outputs": [
+        "divisional_positions"
+      ],
+      "method": "tradition-specific divisional mapping",
+      "status": "pending_review",
+      "limitations": [
+        "Requires explicit timezone, coordinates, zodiac, house system, ephemeris engine/version, precision, and tradition settings before computed use."
+      ]
+    },
+    "divisional": {
+      "inputs": [
+        "natal_chart",
+        "division",
+        "tradition"
+      ],
+      "outputs": [
+        "divisional_chart"
+      ],
+      "method": "tradition-specific divisional chart",
+      "status": "pending_review",
+      "limitations": [
+        "Requires explicit timezone, coordinates, zodiac, house system, ephemeris engine/version, precision, and tradition settings before computed use."
+      ]
+    },
+    "arudha": {
+      "inputs": [
+        "natal_chart",
+        "house_rulerships",
+        "tradition"
+      ],
+      "outputs": [
+        "arudha_points"
+      ],
+      "method": "tradition-specific arudha calculation",
+      "status": "pending_review",
+      "limitations": [
+        "Requires explicit timezone, coordinates, zodiac, house system, ephemeris engine/version, precision, and tradition settings before computed use."
+      ]
+    },
+    "persona": {
+      "inputs": [
+        "natal_chart",
+        "planet",
+        "ephemeris",
+        "birth_location"
+      ],
+      "outputs": [
+        "persona_chart"
+      ],
+      "method": "first post-birth Sun conjunction search",
+      "status": "pending_review",
+      "limitations": [
+        "Requires explicit timezone, coordinates, zodiac, house system, ephemeris engine/version, precision, and tradition settings before computed use."
+      ]
+    },
+    "prenatal_syzygy": {
+      "inputs": [
+        "birth_datetime",
+        "ephemeris",
+        "location"
+      ],
+      "outputs": [
+        "prenatal_syzygy"
+      ],
+      "method": "search prior lunation with explicit ephemeris settings",
+      "status": "pending_review",
+      "limitations": [
+        "Requires explicit timezone, coordinates, zodiac, house system, ephemeris engine/version, precision, and tradition settings before computed use."
+      ]
+    },
+    "profection": {
+      "inputs": [
+        "natal_chart",
+        "age_years",
+        "house_system"
+      ],
+      "outputs": [
+        "annual_ascendant",
+        "time_lord"
+      ],
+      "method": "one-house-per-year annual profection",
+      "status": "pending_review",
+      "limitations": [
+        "Requires explicit timezone, coordinates, zodiac, house system, ephemeris engine/version, precision, and tradition settings before computed use."
+      ]
+    },
+    "firdaria": {
+      "inputs": [
+        "birth_datetime",
+        "day_night_rule",
+        "planetary_sequence"
+      ],
+      "outputs": [
+        "major_periods",
+        "subperiods"
+      ],
+      "method": "sect-specific fixed period sequence",
+      "status": "not_implemented",
+      "limitations": [
+        "Requires explicit timezone, coordinates, zodiac, house system, ephemeris engine/version, precision, and tradition settings before computed use."
+      ]
+    },
+    "zodiacal_releasing": {
+      "inputs": [
+        "natal_lot",
+        "sect",
+        "period_lengths",
+        "birth_datetime"
+      ],
+      "outputs": [
+        "periods",
+        "peak_periods"
+      ],
+      "method": "tradition-specific releasing sequence",
+      "status": "not_implemented",
+      "limitations": [
+        "Requires explicit timezone, coordinates, zodiac, house system, ephemeris engine/version, precision, and tradition settings before computed use."
+      ]
+    },
+    "primary_direction": {
+      "inputs": [
+        "natal_chart",
+        "target_age",
+        "promissor",
+        "significator",
+        "arc_method"
+      ],
+      "outputs": [
+        "directed_arc"
+      ],
+      "method": "tradition-specific primary direction",
+      "status": "not_implemented",
+      "limitations": [
+        "Requires explicit timezone, coordinates, zodiac, house system, ephemeris engine/version, precision, and tradition settings before computed use."
+      ]
+    },
+    "fixed_star": {
+      "inputs": [
+        "star_name",
+        "datetime",
+        "ephemeris_data_path"
+      ],
+      "outputs": [
+        "longitude",
+        "latitude",
+        "speed_longitude"
+      ],
+      "method": "fixed-star ephemeris lookup",
+      "status": "contracted",
+      "limitations": [
+        "Requires explicit timezone, coordinates, zodiac, house system, ephemeris engine/version, precision, and tradition settings before computed use."
+      ]
+    },
+    "asteroid": {
+      "inputs": [
+        "minor_planet_number",
+        "datetime",
+        "ephemeris_data_path"
+      ],
+      "outputs": [
+        "longitude",
+        "latitude",
+        "speed_longitude"
+      ],
+      "method": "minor-planet ephemeris lookup",
+      "status": "contracted",
+      "limitations": [
+        "Requires explicit timezone, coordinates, zodiac, house system, ephemeris engine/version, precision, and tradition settings before computed use."
+      ]
+    },
+    "midpoint": {
+      "inputs": [
+        "point_longitudes",
+        "mode"
+      ],
+      "outputs": [
+        "midpoint_longitude"
+      ],
+      "method": "circular midpoint engine",
+      "status": "contracted",
+      "limitations": [
+        "Requires explicit timezone, coordinates, zodiac, house system, ephemeris engine/version, precision, and tradition settings before computed use."
+      ]
+    },
+    "astrocartography": {
+      "inputs": [
+        "natal_chart",
+        "geographic_grid",
+        "planet_or_point"
+      ],
+      "outputs": [
+        "angular_lines"
+      ],
+      "method": "geographic projection of angularity",
+      "status": "pending_review",
+      "limitations": [
+        "Requires explicit timezone, coordinates, zodiac, house system, ephemeris engine/version, precision, and tradition settings before computed use."
+      ]
+    },
+    "local_space": {
+      "inputs": [
+        "natal_chart",
+        "location",
+        "azimuth_policy"
+      ],
+      "outputs": [
+        "azimuth_lines"
+      ],
+      "method": "local-space directional projection",
+      "status": "pending_review",
+      "limitations": [
+        "Requires explicit timezone, coordinates, zodiac, house system, ephemeris engine/version, precision, and tradition settings before computed use."
+      ]
+    },
+    "relocation": {
+      "inputs": [
+        "natal_chart",
+        "target_location",
+        "house_system"
+      ],
+      "outputs": [
+        "relocated_angles",
+        "relocated_houses"
+      ],
+      "method": "relocated chart recalculation",
+      "status": "pending_review",
+      "limitations": [
+        "Requires explicit timezone, coordinates, zodiac, house system, ephemeris engine/version, precision, and tradition settings before computed use."
+      ]
+    }
+  },
+  "frameworks": [
+    {
+      "id": "unified_delineation_framework",
+      "path": "data/frameworks/unified-delineation-framework.json",
+      "status": "source_derived"
+    },
+    {
+      "id": "chart_types_manual",
+      "path": "data/drafts/chart-types.json",
+      "status": "source_derived_but_local_json_invalid"
+    },
+    {
+      "id": "astrological_framework_v1",
+      "path": "data/frameworks/astrological-framework-v1.json",
+      "status": "source_derived"
+    },
+    {
+      "id": "recursive_strength_protocol",
+      "path": "data/methodologies/recursive-strength-protocol.json",
+      "status": "methodology_bound"
+    },
+    {
+      "id": "merged_signals_indicators",
+      "path": "data/merged-signals-indicators/signal_indicator_master.json",
+      "status": "merged_with_conflicts_preserved"
+    }
+  ]
+}

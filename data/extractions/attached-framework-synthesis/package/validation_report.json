@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0.0",
+  "status": "passed_with_review_gaps",
+  "checks": {
+    "raw_source_count": 11,
+    "raw_hashes_recorded": true,
+    "parsed_source_count": 9,
+    "plain_text_source_count": 1,
+    "malformed_json_preserved": true,
+    "duplicate_decision_recorded": true,
+    "sensitive_content_quarantined": true,
+    "package_json_files_parseable": true,
+    "canonical_registry_boundary_recorded": true
+  },
+  "warnings": [
+    {
+      "id": "gap:ephemeris-calculation-settings",
+      "layer": "calculations",
+      "status": "unavailable",
+      "details": "Attached formulas do not include complete datetime, timezone, coordinates, zodiac, house system, precision, or ephemeris metadata."
+    },
+    {
+      "id": "gap:source-licenses",
+      "layer": "sources",
+      "status": "pending_review",
+      "details": "No source URLs or licenses were supplied for the attached texts."
+    },
+    {
+      "id": "gap:external-reference-verification",
+      "layer": "research",
+      "status": "pending_review",
+      "details": "Named bibliography and data providers require independent retrieval and license review."
+    },
+    {
+      "id": "gap:complete-asteroid-schema",
+      "layer": "entities",
+      "status": "pending_review",
+      "details": "Asteroid keyword content is source-derived and not automatically registered in the canonical entity registry."
+    },
+    {
+      "id": "gap:financial-research-protocol",
+      "layer": "research",
+      "status": "pending_review",
+      "details": "Economic and market modules lack hypothesis cards, chronology, baselines, uncertainty, and leakage controls."
+    },
+    {
+      "id": "gap:sensitive-content-consent",
+      "layer": "delineations",
+      "status": "pending_review",
+      "details": "Sensitive sexual-archetype content requires explicit consent and default exclusion."
+    },
+    {
+      "id": "gap:chart-source-data",
+      "layer": "calculations",
+      "status": "unavailable",
+      "details": "The chart synthesis has no complete source chart, birth data, or calculation request."
+    }
+  ]
+}

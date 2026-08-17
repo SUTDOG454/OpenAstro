@@ -1,0 +1,949 @@
+🌌 AFE Unified System – Complete Implementation & Deployment
+
+Version: 7.0 – Maximum Detail Level
+Date: 2026-08-17
+Status: Production‑Ready, Fully Integrated, Extensible, Enterprise‑Grade
+
+---
+
+1. Executive Summary
+
+The AFE (Astrological Financial Engine) Unified System is a comprehensive, production‑ready platform that integrates:
+
+· Financial Data Ingestion – 18+ sources (FRED, Yahoo Finance, FMP, Alpha Vantage, IEX, NewsAPI, Twitter, Skyfield, etc.)
+· Astrological Core – PlanetDignityEngine, progression house, midpoint engine, Magi, mundane, fixed stars, eclipses, Chiron/Node midpoint, asteroids, persona charts, transit strength
+· Machine Learning – XGBoost benefit scorer, LSTM forecasting, online SGD, GPT‑4 narrative
+· OMTI – 11‑layer Overall Market Timing Index with astrological timing
+· Portfolio & Archetype Mapping – Archetype‑based asset allocation
+· Dashboard & Reporting – React + tRPC dashboard, PDF/HTML reports, WebSocket updates
+· Deployment – Docker, Kubernetes, Prometheus, Grafana, CI/CD
+
+This document is the definitive reference for the AFE Unified System v7.0, containing all specifications, algorithms, formulas, code, and integration details.
+
+---
+
+2. Complete System Architecture
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                         AFE UNIFIED SYSTEM v7.0                          │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│  ┌─────────────────────────────────────────────────────────────────────┐   │
+│  │                         DATA INGESTION LAYER                        │   │
+│  │  ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐ │   │
+│  │  │   FRED   │ │ Yahoo   │ │   FMP    │ │  Alpha   │ │   IEX    │ │   │
+│  │  │  Macro   │ │ Finance  │ │Fundamental│ │ Vantage  │ │ Insider  │ │   │
+│  │  └──────────┘ └──────────┘ └──────────┘ └──────────┘ └──────────┘ │   │
+│  │  ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐ │   │
+│  │  │  NewsAPI │ │ Twitter  │ │ Econ.    │ │  Yield   │ │   VIX    │ │   │
+│  │  │ Sentiment│ │ Sentiment│ │ Surprise │ │  Curve   │ │          │ │   │
+│  │  └──────────┘ └──────────┘ └──────────┘ └──────────┘ └──────────┘ │   │
+│  │  ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐ │   │
+│  │  │ Industry │ │ Skyfield │ │Delineation│ │ Zodiac   │ │Asteroid  │ │   │
+│  │  │ Reports  │ │Ephemeris │ │  Signals │ │Archetypes│ │Defs.    │ │   │
+│  │  └──────────┘ └──────────┘ └──────────┘ └──────────┘ └──────────┘ │   │
+│  └─────────────────────────────────────────────────────────────────────┘   │
+│                                    │                                       │
+│                                    ▼                                       │
+│  ┌─────────────────────────────────────────────────────────────────────┐   │
+│  │                    NORMALISATION & DEDUPLICATION                    │   │
+│  │  - Field Mapping  - Unit Conversion  - Timestamp Alignment          │   │
+│  │  - Weighted Synthesis  - Conflict Resolution                       │   │
+│  └─────────────────────────────────────────────────────────────────────┘   │
+│                                    │                                       │
+│                                    ▼                                       │
+│  ┌─────────────────────────────────────────────────────────────────────┐   │
+│  │                         ENRICHMENT LAYER                           │   │
+│  │  - Derived Features (macro_composite, zscore_504, etc.)           │   │
+│  │  - External Metadata (SIC codes)                                  │   │
+│  │  - ML Features (autoencoder)                                      │   │
+│  │  - Confidence Scoring                                             │   │
+│  └─────────────────────────────────────────────────────────────────────┘   │
+│                                    │                                       │
+│                                    ▼                                       │
+│  ┌─────────────────────────────────────────────────────────────────────┐   │
+│  │                       ASTROLOGICAL CORE ENGINE                     │   │
+│  │  ┌────────────────────────────────────────────────────────────────┐ │   │
+│  │  │  PlanetDignityEngine  │  Progression House  │  Midpoint Engine │ │   │
+│  │  ├────────────────────────────────────────────────────────────────┤ │   │
+│  │  │  Magi Engine          │  Mundane Engine     │  Sq9 Engine      │ │   │
+│  │  ├────────────────────────────────────────────────────────────────┤ │   │
+│  │  │  Fixed Star Engine    │  Eclipse Engine     │  Chiron/Node     │ │   │
+│  │  ├────────────────────────────────────────────────────────────────┤ │   │
+│  │  │  Asteroid Engine      │  Persona Engine     │  Transit Strength│ │   │
+│  │  └────────────────────────────────────────────────────────────────┘ │   │
+│  └─────────────────────────────────────────────────────────────────────┘   │
+│                                    │                                       │
+│                                    ▼                                       │
+│  ┌─────────────────────────────────────────────────────────────────────┐   │
+│  │                         OMTI ENGINE                                │   │
+│  │  11 Layers: macro, market, demand, profitability, competition,     │   │
+│  │  lifecycle, risk, sq9, market_research, company_research,         │   │
+│  │  astro_timing                                                     │   │
+│  └─────────────────────────────────────────────────────────────────────┘   │
+│                                    │                                       │
+│                                    ▼                                       │
+│  ┌─────────────────────────────────────────────────────────────────────┐   │
+│  │                     ML & AI ENGINE                                 │   │
+│  │  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐             │   │
+│  │  │  XGBoost     │  │    LSTM      │  │    SGD      │             │   │
+│  │  │ Benefit      │  │  Forecasting │  │   Online    │             │   │
+│  │  │ Scorer       │  │              │  │   Learning  │             │   │
+│  │  └──────────────┘  └──────────────┘  └──────────────┘             │   │
+│  │  ┌──────────────┐  ┌──────────────┐                               │   │
+│  │  │    GPT-4     │  │  Ensemble    │                               │   │
+│  │  │   Narrative  │  │   Models     │                               │   │
+│  │  └──────────────┘  └──────────────┘                               │   │
+│  └─────────────────────────────────────────────────────────────────────┘   │
+│                                    │                                       │
+│                                    ▼                                       │
+│  ┌─────────────────────────────────────────────────────────────────────┐   │
+│  │                    PORTFOLIO & ALLOCATION                          │   │
+│  │  - Archetype Mapping  - Asset Allocation  - Optimised Modifiers   │   │
+│  └─────────────────────────────────────────────────────────────────────┘   │
+│                                    │                                       │
+│                                    ▼                                       │
+│  ┌─────────────────────────────────────────────────────────────────────┐   │
+│  │                    DASHBOARD & REPORTING                           │   │
+│  │  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐             │   │
+│  │  │    React     │  │   PDF/HTML   │  │  WebSocket  │             │   │
+│  │  │  Dashboard   │  │   Reports    │  │   Updates   │             │   │
+│  │  └──────────────┘  └──────────────┘  └──────────────┘             │   │
+│  └─────────────────────────────────────────────────────────────────────┘   │
+│                                    │                                       │
+│                                    ▼                                       │
+│  ┌─────────────────────────────────────────────────────────────────────┐   │
+│  │                    DEPLOYMENT & MONITORING                         │   │
+│  │  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐             │   │
+│  │  │    Docker    │  │  Kubernetes  │  │ Prometheus/  │             │   │
+│  │  │  Compose     │  │     HPA      │  │   Grafana   │             │   │
+│  │  └──────────────┘  └──────────────┘  └──────────────┘             │   │
+│  └─────────────────────────────────────────────────────────────────────┘   │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+3. Complete Module Specifications
+
+3.1 Data Ingestion Module
+
+Sources (18):
+
+Source Type Frequency Key Fields
+FRED Macro API Daily GDP, CPI, Fed Funds, Unemployment, Consumer Sentiment
+Yahoo Finance API Realtime Price, Volume, Volatility
+FMP Fundamentals API Weekly Net margin, Gearing, IRR, Revenue
+Alpha Vantage Technical API Daily RSI, MACD, Bollinger Bands
+IEX Insider API Daily Insider buys/sells
+NewsAPI Sentiment API Hourly Sentiment polarity, news volume
+Twitter Sentiment API Hourly Social sentiment
+Economic Surprise API Daily GDP surprise
+FMP Factors API Daily Fama‑French factors
+Yield Curve API Daily 10y/2y yields, spread
+VIX API Daily VIX close
+Industry Reports File Quarterly HHI, Lerner index, entry barriers
+Skyfield Ephemeris Local Daily Planetary longitudes
+Delineation Signals File Monthly sig_251–274
+Zodiac Archetypes File Static 12 archetypes
+Asteroid Definitions File Static 10 deity asteroids
+AstralTwelve Dataset File Static Signs, houses, planets, aspects
+Magi Data File Static Super aspects, Magical Triangles
+
+API Keys: All stored as environment variables (.env file).
+
+3.2 Normalisation Module
+
+Field Mappings (Complete):
+
+Raw Field Canonical Field
+gdp_qoq macro.gdp_growth
+cpi_yoy macro.cpi_inflation
+fed_funds macro.fed_funds_rate
+unemp_rate macro.unemployment
+consumer_sentiment macro.consumer_sentiment
+adj_close market.price
+volatility risk.volatility_annual
+net_margin profitability.net_margin
+gearing risk.gearing
+fixed_cost_ratio risk.fixed_cost
+irr profitability.irr
+revenue company_research.revenue
+rsi technical.rsi_14
+macd technical.macd
+macd_signal technical.macd_signal
+macd_hist technical.macd_hist
+bb_upper technical.bb_upper
+bb_middle technical.bb_middle
+bb_lower technical.bb_lower
+insider_buys company_research.insider_buys
+insider_sells company_research.insider_sells
+sentiment_polarity company_research.sentiment
+social_sentiment market_research.social_sentiment
+gdp_surprise macro.gdp_surprise
+smb factor.smb
+hml factor.hml
+mom factor.mom
+yield_10y macro.yield_10y
+yield_2y macro.yield_2y
+spread macro.yield_spread
+vix_close market.vix
+hhi market_structure.hhi
+lerner_index market_structure.lerner
+entry_barriers market_structure.entry_barrier_score
+entry_rate competition.entry_rate
+lifecycle_stage lifecycle.stage
+sun_longitude astro.sun
+moon_longitude astro.moon
+mercury_longitude astro.mercury
+venus_longitude astro.venus
+mars_longitude astro.mars
+jupiter_longitude astro.jupiter
+saturn_longitude astro.saturn
+uranus_longitude astro.uranus
+neptune_longitude astro.neptune
+pluto_longitude astro.pluto
+chiron_longitude astro.chiron
+north_node_longitude astro.north_node
+
+Unit Conversions:
+
+Field Conversion Factor
+macro.gdp_growth percent → decimal 0.01
+macro.cpi_inflation percent → decimal 0.01
+macro.fed_funds_rate percent → decimal 0.01
+macro.unemployment percent → decimal 0.01
+profitability.net_margin percent → decimal 0.01
+competition.entry_rate percent → decimal 0.01
+macro.yield_spread percent → decimal 0.01
+
+Timestamp Alignment: UTC, daily frequency (D), forward‑fill.
+
+3.3 Deduplication Module
+
+Composite Key: (symbol, date, source_id)
+
+Synthesis Strategies:
+
+Data Type Strategy
+Numeric Weighted average with time decay (weight = source_weight × exp(−λ × age_days))
+Categorical Mode with recency
+String Most recent
+
+Source Weights (Complete):
+
+Source Weight
+fred_macro 0.95
+yfinance_equity 0.85
+fmp_fundamentals 0.80
+alpha_vantage_technical 0.75
+iex_insider 0.70
+news_sentiment 0.65
+social_sentiment 0.55
+economic_surprise 0.75
+fmp_factors 0.70
+yield_curve 0.80
+vix 0.85
+industry_reports 0.70
+skyfield_ephemeris 0.90
+delineation_signals 0.70
+zodiac_archetypes 1.00
+asteroid_definitions 1.00
+astraltwelve_dataset 1.00
+magi_data 1.00
+
+Conflict Threshold: 20% of mean.
+
+3.4 Enrichment Module
+
+Derived Features (Complete):
+
+Feature Formula Target
+macro_composite (gdp_score*0.20 + cpi_score*0.20 + fed_score*0.20 + unemp_score*0.20 + sentiment_score*0.20) macro.composite
+profitability_spread profitability.irr - macro.fed_funds_rate profitability.spread
+risk_adjusted_gearing risk.gearing * risk.volatility_annual risk.adj_gearing
+zscore_504 (market.price - rolling_mean(market.price, 504)) / rolling_std(market.price, 504) market.zscore_504
+zscore_252 (market.price - rolling_mean(market.price, 252)) / rolling_std(market.price, 252) market.zscore_252
+insider_net_buy company_research.insider_buys - company_research.insider_sells company_research.insider_net
+sq9_cycle_position astro.sun % 360 sq9.cycle_position
+moon_phase astro.moon % 360 astro.moon_phase
+macro_gdp_surprise_score clamp((macro.gdp_surprise + 10) / 20, 0, 1) macro.gdp_surprise_score
+factor_composite factor.smb + factor.hml + factor.mom factor.composite
+tech_rsi_divergence (technical.rsi_14 - rolling_mean(technical.rsi_14, 14)) technical.rsi_divergence
+yield_curve_slope macro.yield_10y - macro.yield_2y macro.yield_slope
+vix_percentile (market.vix - rolling_min(market.vix, 252)) / (rolling_max(market.vix, 252) - rolling_min(market.vix, 252)) market.vix_percentile
+
+ML Features: Autoencoder at /models/feature_extractor.pkl; output ml_pc1…ml_pcN.
+
+Confidence Scoring: confidence = source_weight * 0.4 + coverage * 0.4 + age_factor * 0.2.
+
+3.5 Astrological Core Modules
+
+3.5.1 PlanetDignityEngine (TypeScript)
+
+Dignity Rules (Complete):
+
+Planet Domicile Exaltation Detriment Fall
+Sun Leo Aries Aquarius Libra
+Moon Cancer Taurus Capricorn Scorpio
+Mercury Gemini/Virgo Virgo Sagittarius/Pisces Pisces
+Venus Taurus/Libra Pisces Aries/Scorpio Virgo
+Mars Aries/Scorpio Capricorn Taurus/Libra Cancer
+Jupiter Sagittarius/Pisces Cancer Gemini/Virgo Capricorn
+Saturn Capricorn/Aquarius Libra Cancer/Leo Aries
+Uranus Aquarius Scorpio Leo Taurus
+Neptune Pisces Cancer Virgo Aquarius
+Pluto Scorpio Cancer Taurus Aquarius
+
+Aspect Orbs:
+
+Aspect Orb
+Conjunction 8°
+Sextile 4°
+Square 8°
+Trine 8°
+Opposition 8°
+Quincunx 2°
+
+Fixed Stars (15):
+
+Star Longitude (2000) Nature Keywords
+Algol 26° Taurus Saturn/Mars Violence, beheading, catastrophe
+Pleiades 0° Gemini Moon/Mars Accidents, blindness, feminine power
+Aldebaran 9° Gemini Mars/Venus Royal star, eloquence, honor, courage
+Capella 21° Gemini Mars/Mercury Inquisitiveness, powerful friends, wealth
+Sirius 14° Cancer Jupiter/Mars Fame, leadership, wealth, ambition
+Procyon 25° Cancer Mercury/Mars Wealth, fame, sudden success then disaster
+Regulus 0° Virgo Mars/Jupiter Royal star, nobility, power, sudden downfall
+Alkaid 27° Virgo Moon/Mercury/Saturn Death, mourning, war
+Spica 24° Libra Venus/Mars Wealth, fame, honor, artistic genius
+Arcturus 24° Libra Jupiter/Mars Riches, fame, popularity
+Alphecca 12° Scorpio Venus/Mercury Honor, dignity, artistic ability
+Antares 9° Sagittarius Mars/Jupiter Royal star, adventure, stubbornness
+Vega 15° Capricorn Venus/Mercury Luck, artistic talent, fleeting fame
+Fomalhaut 4° Pisces Venus/Mercury Royal star, fame, occult
+Achernar 15° Pisces Venus Religious/occult success, danger from water
+
+Asteroids (10 deity asteroids): Aphrodite, Aspasia, Klotho, Kalypso, Erato, Polyhymnia, Terpsichore, Thalia, Urania, Egeria.
+
+Delineation Signals (sig_251–274): 24 signals covering domicile, exaltation, detriment, fall, stellium, own house, chart ruler, synastry.
+
+3.5.2 Progression House Engine (Python)
+
+Calculation: Secondary progressions (1 day = 1 year). Progressed positions: natal longitude + age_years × mean_motion.
+
+House Interpretation (12 Houses):
+
+House Keyword Activation
+1 Self‑Image & Identity Personality focus; new self‑concept emerging
+2 Resources & Values Financial focus; value reassessment
+3 Communication & Learning Mental focus; learning phase
+4 Home & Foundation Domestic focus; root development
+5 Creativity & Romance Creative expression; romantic focus
+6 Work & Health Daily routine; health focus
+7 Relationships & Partnership Partnership focus; significant others
+8 Transformation & Shared Resources Intimacy focus; deep emotional work
+9 Philosophy & Higher Learning Expansion of worldview; education
+10 Career & Public Life Professional focus; public image
+11 Friendship & Community Social focus; community involvement
+12 Spirituality & Unconscious Introspective focus; spiritual development
+
+3.5.3 Midpoint Engine (Python)
+
+Calculation: mid = (lonA + lonB) / 2 (circular).
+
+78 Midpoints: Among Sun, Moon, Mercury, Venus, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto, Ascendant, Midheaven, North Node.
+
+Named Midpoints:
+
+Midpoint Nickname Effect
+Saturn/Chiron Heartbreak Midpoint Grief, loss, deep wounding
+Saturn/Jupiter Nuclear Midpoint Power struggles, expansion vs. restriction
+Mars/Saturn Athletic Midpoint Energy issues, discipline
+Sun/Jupiter Success Midpoint Success and optimism
+
+Activation Orb: 1°.
+
+3.5.4 Magi Engine (Python)
+
+Super Aspects: Conjunction (0°), Opposition (180°), Quincunx (150°) with orb ≤ 1°.
+
+Power: Conjunction 10, Opposition 9, Quincunx 8. Chiron conjunction = power 10.
+
+Magical Triangles: 3 planets connected by Super Aspects. Power = 10.
+
+Scoring: score = (num_super_aspects × 15) + (num_magical_triangles × 25) - (10 × num_non_super_squares).
+
+Financial Super Aspects: Jupiter‑Pluto (Super Success), Jupiter‑Chiron (Super Marriage), Venus‑Pluto (Super Passion), Chiron‑Pluto (Super Destiny).
+
+3.5.5 Mundane Engine (Python)
+
+Outer Planet Cycles (2026):
+
+Planet Sign Era
+Pluto Aquarius Tech Transformation (2024–2044)
+Neptune Aries Spiritual Warrior (2026–2039)
+Uranus Gemini AI/Communication Revolution (2026–2033)
+
+Ingress Charts: Aries (Mar 20), Cancer (Jun 21), Libra (Sep 22), Capricorn (Dec 21).
+
+Eclipses (2026):
+
+Date Type Degree Theme
+2026-02-17 Solar 28° Aquarius Release of collective ideals
+2026-03-03 Lunar 12° Virgo Critical analysis & health
+2026-08-12 Solar 20° Leo Reset of creative power
+2026-08-28 Lunar 4° Pisces Spiritual culmination
+
+Macro Regime: Bullish with caution (Pluto Aquarius, Uranus Gemini, Saturn‑Neptune conjunction).
+
+3.5.6 Sq9 Engine (Python)
+
+Level Mapping (8 levels):
+
+Level Degree Role Event Weight
+1 0 core First contact 0.15
+9 45 tension Building attraction 0.12
+25 90 peak Commitment 0.18
+49 135 challenge Tests 0.10
+81 180 opposition Crisis / break 0.14
+121 225 decline Separation risk 0.09
+169 270 bottom Renewal 0.11
+225 315 recovery Stabilization 0.11
+
+Confidence: confidence = max(0, 1 - distance / 45).
+
+Contribution: levelWeight × confidence × registryWeight (registryWeight = 0.04).
+
+3.5.7 Chiron/Node Midpoint Engine (Python)
+
+12 Activations: Sun, Moon, Mercury, Venus, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto, Ascendant, Midheaven.
+
+Delineations: Each planet has title, core meaning, keywords, positive expression, challenge, financial bullish/bearish/sector.
+
+Orb: 1°.
+
+3.5.8 Asteroid Engine (Python)
+
+Asteroids (90+): Relationship (Juno, Eros, Psyche, Amor, Aphrodite, Valentine, Cupido, Sappho, Union, Karma), Spiritual (Chiron, Ceres, Pallas, Vesta, Kaali, Shiva, Shakti), Mythological (Persephone, Proserpina, Medea, Circe, Medusa, Narcissus, Echo).
+
+Interpretations: Keywords + detailed meaning.
+
+Orb: 1°.
+
+3.5.9 Persona Chart Engine (Python)
+
+Personas: Sun, Moon, Ascendant, Descendant, MC, IC.
+
+Rotation: 30° each.
+
+Interpretation: Uses general interpretation engine to derive key themes.
+
+3.5.10 Transit Strength Engine (Python)
+
+Factors: Essential dignity + accidental strength + aspect support + timing factor.
+
+Timing Factors: Approaching (+1), Exact (+2), Separating (-1), Retrograde (-2), Direct (+1), Stationary (+2).
+
+Impact Levels: Low (Moon), Moderate (Sun, Mercury, Venus), High (Mars), Very High (Jupiter, Saturn), Extreme (Uranus, Neptune, Pluto).
+
+---
+
+3.6 OMTI (Overall Market Timing Index)
+
+11 Layers & Weights:
+
+Layer Weight Description
+macro 0.14 GDP, CPI, Fed Funds, Unemployment
+market 0.10 HHI, Lerner Index, Entry Barriers
+demand 0.07 Consumer confidence, sentiment
+profitability 0.14 IRR spread, net margin
+competition 0.07 HHI/Lerner trends, entry rate
+lifecycle 0.07 Product lifecycle stage
+risk 0.07 Gearing, fixed costs, volatility
+sq9 0.04 Gann Square of Nine alignment
+market_research 0.10 Brand health, competitive intensity
+company_research 0.10 Financials, leadership, insider activity
+astro_timing 0.10 Natal phase, transit activation, Sq9 compatibility
+
+Astro Timing Sub‑layer: Natal Phase (30%), Transit Activation (40%), Sq9 Compatibility (30%).
+
+Recommendation Spectrum:
+
+Range Recommendation
+80‑100 AGGRESSIVE INVESTMENT
+60‑79 INVEST WITH PRUDENCE
+45‑59 HOLD / CAUTION
+30‑44 PREPARE EXIT
+0‑29 IMMEDIATE EXIT
+
+Confidence Interval: Monte Carlo simulation (1000 iterations), bandwidth 0.08.
+
+3.7 ML & AI Module
+
+XGBoost Benefit Scorer: Features: correlation with OMTI, coverage, timeliness, source weight, volatility, skewness, non‑null count. Threshold: 0.25.
+
+LSTM Score Forecaster: Sequence length 10, architecture LSTM(64) → Dropout → LSTM(32) → Dense(2). Retrained daily.
+
+Online SGD: SGDRegressor and SGDClassifier with partial_fit.
+
+GPT‑4 Narrative: Custom prompt, temperature 0.7, max tokens 600.
+
+3.8 Portfolio & Archetype Mapping
+
+12 Archetypes & Asset Classes:
+
+Archetype Style Assets Modifier
+Warrior Aggressive Growth Tech Startups, Biotech, EM 1.2
+Lover Income & Stability Dividend Stocks, Bonds, REITs 0.8
+Communicator Flexible / Thematic Info Tech, Media, Crypto 1.0
+Mother Defensive & Consumer Utilities, Healthcare, Food 0.7
+King/Queen Growth & Innovation Blue‑chip Growth, AI, Luxury 1.1
+Healer Value & Quality Healthcare, Industrials, ESG 0.9
+Artist Balanced / SRI SRI ETFs, Diversified ETFs, Art 0.9
+Magician Alternative / Deep Value Private Equity, Distressed, Commodities 1.3
+Seeker Global / Diversified International Equities, Education, Travel 1.0
+Executive Value & Dividends Financials, Real Estate, Energy 0.8
+Revolutionary Disruptive Innovation Blockchain, Renewables, Tech 1.2
+Mystic Thematic / ESG / Biotech Biotech, Psychedelics, Water, AI 1.1
+
+3.9 Dashboard & Reporting
+
+React Dashboard: tRPC API, Recharts, WebSocket updates.
+
+PDF Report: Sections: OMTI, Magi, Progression, Midpoints, Fixed Stars, Eclipses, Chiron/Node, Asteroids, Persona Charts, Transit Strength, Portfolio, GPT‑4 Narrative.
+
+HTML Report: Interactive Plotly charts.
+
+3.10 Deployment & Monitoring
+
+Docker Compose: 8 services (api, frontend, postgres, redis, kafka, zookeeper, prometheus, grafana).
+
+Kubernetes: Replicas (api 3, ml 2, execution 1), HPA (min 3, max 10, CPU 70%).
+
+Prometheus Metrics: api_requests_total, api_latency_seconds, omti_score, model_accuracy, trades_total, indicator_values, sq9_confidence.
+
+Grafana Dashboards: Market Timing Overview, OMTI Components, Trading Performance, ML Health.
+
+---
+
+4. Complete Database Schema
+
+4.1 PostgreSQL Tables
+
+users:
+
+```sql
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    password_hash VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT NOW()
+);
+```
+
+charts:
+
+```sql
+CREATE TABLE charts (
+    id SERIAL PRIMARY KEY,
+    user_id INTEGER REFERENCES users(id),
+    name VARCHAR(100),
+    birth_date TIMESTAMP,
+    latitude FLOAT,
+    longitude FLOAT,
+    house_system VARCHAR(20) DEFAULT 'Placidus',
+    created_at TIMESTAMP DEFAULT NOW()
+);
+```
+
+chart_positions:
+
+```sql
+CREATE TABLE chart_positions (
+    id SERIAL PRIMARY KEY,
+    chart_id INTEGER REFERENCES charts(id),
+    planet VARCHAR(20),
+    longitude FLOAT,
+    sign VARCHAR(20),
+    house INTEGER
+);
+```
+
+omti_history:
+
+```sql
+CREATE TABLE omti_history (
+    id SERIAL PRIMARY KEY,
+    chart_id INTEGER REFERENCES charts(id),
+    timestamp TIMESTAMP DEFAULT NOW(),
+    omti_score FLOAT,
+    recommendation VARCHAR(50),
+    layers JSONB
+);
+```
+
+trades:
+
+```sql
+CREATE TABLE trades (
+    id SERIAL PRIMARY KEY,
+    user_id INTEGER REFERENCES users(id),
+    symbol VARCHAR(20),
+    entry_time TIMESTAMP,
+    exit_time TIMESTAMP,
+    entry_price FLOAT,
+    exit_price FLOAT,
+    quantity FLOAT,
+    pnl FLOAT,
+    pnl_pct FLOAT,
+    tags JSONB,
+    notes TEXT
+);
+```
+
+strategies:
+
+```sql
+CREATE TABLE strategies (
+    id SERIAL PRIMARY KEY,
+    user_id INTEGER REFERENCES users(id),
+    name VARCHAR(100),
+    rules JSONB,
+    created_at TIMESTAMP DEFAULT NOW()
+);
+```
+
+4.2 ClickHouse Tables
+
+omti_historical:
+
+```sql
+CREATE TABLE omti_historical (
+    chart_id UInt32,
+    date Date,
+    omti_score Float32,
+    recommendation String,
+    layers String,  -- JSON string
+    created_at DateTime DEFAULT now()
+) ENGINE = MergeTree() ORDER BY (chart_id, date);
+```
+
+transit_historical:
+
+```sql
+CREATE TABLE transit_historical (
+    chart_id UInt32,
+    date Date,
+    planet String,
+    longitude Float32,
+    created_at DateTime DEFAULT now()
+) ENGINE = MergeTree() ORDER BY (chart_id, date);
+```
+
+---
+
+5. Complete API Specifications
+
+5.1 tRPC Router (financial.ts)
+
+Procedure Input Output
+computeConfluence aspects[], baseKelly sub_scores, interpretation, position_sizing
+getConfluence symbol sub_scores, interpretation
+getBacktestComparison fast, slow win_rate, avg_return, sample_size
+generateReport symbol reportUrl
+getStrategyActions fast, slow actions[]
+getChironNodeMidpoint chart_id activations, report
+getAsteroidAnalysis chart_id analysis[]
+getPersonaCharts chart_id personas{}
+getTransitStrength chart_id transits[]
+computeOMTI layers{} omti_score, recommendation
+
+5.2 REST Endpoints (Flask)
+
+Endpoint Method Description
+/health GET Health check
+/confluence POST Compute confluence scores
+/report POST Generate report
+/backtest POST Run backtest
+/portfolio POST Portfolio allocation
+/analysis POST Full analysis
+
+5.3 WebSocket Endpoints
+
+Endpoint Description
+/ws Live score updates, alerts, strategy actions
+
+---
+
+6. Complete File Structure
+
+```
+afe_unified/
+├── config/
+│   ├── unified_config.json
+│   ├── delineation_signals.json
+│   ├── zodiac_archetypes.json
+│   ├── bodies_ontology.json
+│   ├── archetype_portfolio_map.json
+│   ├── eclipses_2026.json
+│   ├── astraltwelve_dataset.csv
+│   └── magi_data.json
+├── src/
+│   ├── __init__.py
+│   ├── ingestor.py
+│   ├── omti_engine.py
+│   ├── orchestrator.py
+│   ├── progression_house.py
+│   ├── midpoint_engine.py
+│   ├── magi_engine.py
+│   ├── mundane_engine.py
+│   ├── sq9_engine.py
+│   ├── fixed_star_engine.py
+│   ├── eclipse_engine.py
+│   ├── chiron_node_midpoint_engine.py
+│   ├── asteroid_engine.py
+│   ├── persona_chart_engine.py
+│   ├── transit_strength_engine.py
+│   ├── astraltwelve_loader.py
+│   ├── archetype_portfolio.py
+│   ├── benefit_scorer.py
+│   ├── lstm_model.py
+│   ├── gpt_narrative.py
+│   ├── bridge.py
+│   ├── report_generator.py
+│   ├── visualization.py
+│   ├── cli.py
+│   └── bridge_server.py
+├── astrodash-v2/
+│   ├── client/
+│   │   ├── src/
+│   │   │   ├── pages/
+│   │   │   │   └── ConfluenceDashboard.tsx
+│   │   │   ├── components/
+│   │   │   │   ├── ChironNodeMidpoint.tsx
+│   │   │   │   ├── AsteroidAnalysis.tsx
+│   │   │   │   └── EclipseImpact.tsx
+│   │   │   ├── hooks/
+│   │   │   │   └── useWebSocket.ts
+│   │   │   └── utils/
+│   │   │       └── trpc.ts
+│   │   └── package.json
+│   └── server/
+│       ├── routers/
+│       │   └── financial.ts
+│       ├── trpc.ts
+│       └── package.json
+├── docker/
+│   ├── Dockerfile.api
+│   ├── Dockerfile.frontend
+│   └── docker-compose.yml
+├── k8s/
+│   ├── deployment.yaml
+│   ├── service.yaml
+│   ├── hpa.yaml
+│   └── configmap.yaml
+├── prometheus/
+│   └── prometheus.yml
+├── grafana/
+│   └── dashboards/
+├── tests/
+│   ├── test_ingestor.py
+│   ├── test_omti.py
+│   ├── test_astrological.py
+│   └── test_integration.py
+├── requirements.txt
+├── package.json
+├── README.md
+└── .env.example
+```
+
+---
+
+7. Complete Deployment Instructions
+
+7.1 Environment Variables (.env)
+
+```env
+# API Keys
+FRED_API_KEY=your_fred_key
+ALPHA_VANTAGE_KEY=your_alpha_vantage_key
+NEWSAPI_KEY=your_newsapi_key
+TWITTER_BEARER=your_twitter_bearer
+FMP_KEY=your_fmp_key
+IEX_TOKEN=your_iex_token
+OPENAI_API_KEY=your_openai_key
+
+# Database
+DATABASE_URL=postgresql://astroos:astroos@postgres:5432/astroos
+CLICKHOUSE_HOST=clickhouse
+CLICKHOUSE_PORT=8123
+REDIS_URL=redis://redis:6379
+
+# Kafka
+KAFKA_BOOTSTRAP_SERVERS=kafka:9092
+
+# Application
+PYTHON_BRIDGE_HOST=0.0.0.0
+PYTHON_BRIDGE_PORT=5555
+JWT_SECRET=your_jwt_secret
+
+# Monitoring
+SLACK_WEBHOOK_URL=your_slack_webhook
+PAGERDUTY_SERVICE_KEY=your_pagerduty_key
+```
+
+7.2 Docker Build & Run
+
+```bash
+# Build all services
+docker-compose build
+
+# Start all services
+docker-compose up -d
+
+# Check status
+docker-compose ps
+
+# View logs
+docker-compose logs -f api
+```
+
+7.3 Kubernetes Deployment
+
+```bash
+# Apply secrets
+kubectl apply -f k8s/secrets.yaml
+
+# Apply configmap
+kubectl apply -f k8s/configmap.yaml
+
+# Apply deployments
+kubectl apply -f k8s/deployment.yaml
+
+# Apply services
+kubectl apply -f k8s/service.yaml
+
+# Apply HPA
+kubectl apply -f k8s/hpa.yaml
+```
+
+7.4 Run CLI
+
+```bash
+python -m src.cli --config config/unified_config.json --chart sample_chart.json --output result.json
+```
+
+---
+
+8. Complete Testing Strategy
+
+8.1 Unit Tests (tests/)
+
+Test File Coverage
+test_ingestor.py Data ingestion, normalisation, deduplication
+test_omti.py OMTI computation, layers, adjustments
+test_astrological.py PlanetDignityEngine, aspects, dignities
+test_integration.py End‑to‑end pipeline
+
+8.2 CI/CD Pipeline (GitHub Actions)
+
+```yaml
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test-python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install pytest pytest-cov
+      - name: Run Python tests
+        run: pytest tests/ --cov=src --cov-report=html
+
+  test-node:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - run: cd astrodash-v2 && pnpm install
+      - run: cd astrodash-v2 && pnpm test
+
+  build-docker:
+    needs: [test-python, test-node]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build Docker images
+        run: docker-compose build
+      - name: Push to registry
+        run: |
+          echo ${{ secrets.DOCKER_PASSWORD }} | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
+          docker-compose push
+```
+
+8.3 Performance Testing (Locust)
+
+```python
+# locustfile.py
+from locust import HttpUser, task, between
+
+class AFEUser(HttpUser):
+    wait_time = between(1, 5)
+
+    @task
+    def compute_confluence(self):
+        self.client.post("/confluence", json={"aspects": [...]})
+
+    @task
+    def generate_report(self):
+        self.client.post("/report", json={"symbol": "SPY"})
+```
+
+---
+
+9. Complete Summary
+
+The AFE Unified System v7.0 is a complete, production‑ready, enterprise‑grade platform that integrates:
+
+Module Status
+Data Ingestion (18 sources) ✅
+Normalisation & Deduplication ✅
+Enrichment (20+ features) ✅
+PlanetDignityEngine ✅
+Progression House ✅
+Midpoint Engine ✅
+Magi Engine ✅
+Mundane Engine ✅
+Sq9 Engine ✅
+Fixed Star Engine ✅
+Eclipse Engine ✅
+Chiron/Node Engine ✅
+Asteroid Engine (90+) ✅
+Persona Chart Engine ✅
+Transit Strength Engine ✅
+AstralTwelve Dataset ✅
+OMTI (11 layers) ✅
+ML & AI ✅
+Dashboard & Reporting ✅
+Deployment & Monitoring ✅
+Testing & CI/CD ✅
+
+All systems are fully integrated, documented, and ready for production deployment.

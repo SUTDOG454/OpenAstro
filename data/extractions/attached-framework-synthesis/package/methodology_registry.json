@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "methodologies": [
+    {
+      "id": "asto_repeated_confirmation",
+      "name": "Repeated confirmation across evidence layers",
+      "source_ids": [
+        "attached-framework-03"
+      ],
+      "status": "pending_review",
+      "scope": [
+        "interpretive_synthesis"
+      ],
+      "limitations": [
+        "Not an empirical truth criterion."
+      ]
+    },
+    {
+      "id": "arabic_parts_sect_formulas",
+      "name": "Arabic Parts sect-aware formulas",
+      "source_ids": [
+        "attached-framework-10"
+      ],
+      "status": "pending_review",
+      "scope": [
+        "arabic_parts"
+      ],
+      "settings_required": [
+        "day_night_rule",
+        "ascendant",
+        "planetary_longitudes",
+        "house_cusps"
+      ]
+    },
+    {
+      "id": "transit_strength_methodology",
+      "name": "Transit strength and house affinity scoring",
+      "source_ids": [
+        "attached-framework-10"
+      ],
+      "status": "pending_review",
+      "scope": [
+        "transits"
+      ],
+      "limitations": [
+        "Speed modifiers and interpretive effects require explicit approval and ephemeris inputs."
+      ]
+    },
+    {
+      "id": "economic_market_timing_candidate",
+      "name": "Economic and market timing configuration candidate",
+      "source_ids": [
+        "attached-framework-04",
+        "attached-framework-05",
+        "attached-framework-06",
+        "attached-framework-07",
+        "attached-framework-08"
+      ],
+      "status": "pending_review",
+      "scope": [
+        "research_only"
+      ],
+      "limitations": [
+        "Do not use for financial recommendations; conflicting versions remain unresolved."
+      ]
+    },
+    {
+      "id": "sensitive_sexual_archetype_interpretation",
+      "name": "Sensitive sexual-archetype source layer",
+      "source_ids": [
+        "attached-framework-11"
+      ],
+      "status": "pending_review",
+      "scope": [
+        "consent_gated_retrieval"
+      ],
+      "limitations": [
+        "Excluded by default; not a diagnosis or characterization of a person."
+      ]
+    }
+  ]
+}

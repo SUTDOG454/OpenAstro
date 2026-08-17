@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "id": "draft-json-invalid",
+      "status": "unavailable",
+      "source_paths": [
+        "data/drafts/astrological-methodology-module-1.json",
+        "data/drafts/astrological-methodology-module-2.json",
+        "data/drafts/astrological-methodology-module-3.json",
+        "data/drafts/biseptile-interpretation.json",
+        "data/drafts/chiron-compendium-unified.json",
+        "data/drafts/enriched-master-dataset-framework.json",
+        "data/drafts/master-astrology-chart-types.json",
+        "data/drafts/master-relationship-astrology-compendium.json",
+        "data/drafts/master-synastry-engine.json",
+        "data/drafts/progressions-calculation-system.json",
+        "data/drafts/sun-moon-mp.json"
+      ],
+      "resolution": "preserve raw; retain parse errors in coverage audit"
+    },
+    {
+      "id": "chart-type-count-mismatch",
+      "status": "conflicted",
+      "source_paths": [
+        "canonical entity_registry.json",
+        "data/drafts/chart-types.json"
+      ],
+      "values": {
+        "canonical_registry": 38,
+        "chart_types_manual_metadata": 52
+      },
+      "resolution": "preserve both; do not promote manual count automatically"
+    },
+    {
+      "id": "semantic-score-claims",
+      "status": "pending_review",
+      "source_paths": [
+        "data/frameworks/unified-delineation-framework.json",
+        "data/methodologies/recursive-strength-protocol.json"
+      ],
+      "resolution": "retain as methodology-bound; no empirical interpretation"
+    }
+  ]
+}

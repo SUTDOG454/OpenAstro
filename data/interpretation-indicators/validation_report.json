@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-08-17T07:17:41.017550+00:00",
+  "status": "passed_with_review_gaps",
+  "checks": {
+    "indicator_count": 3011,
+    "source_count": 133,
+    "all_indicator_records_have_source_hashes": true,
+    "all_indicator_records_have_required_text": true,
+    "all_indicator_statuses_are_known": true,
+    "symbol_registry_validated": true,
+    "master_references_indicator_dataset": true,
+    "tests_passed": true,
+    "source_code_not_executed": true
+  },
+  "auto_applied_recommendations": [
+    {
+      "id": "auto-add-indicator-schema",
+      "status": "auto_applied",
+      "safe": true,
+      "reason": "Adds a reversible schema and validator for interpretation indicators."
+    },
+    {
+      "id": "auto-add-keyword-index",
+      "status": "auto_applied",
+      "safe": true,
+      "reason": "Adds retrieval index without changing source meaning."
+    },
+    {
+      "id": "auto-add-unicode-symbol-registry",
+      "status": "auto_applied",
+      "safe": true,
+      "reason": "Can be generated from canonical aliases and source-observed symbols."
+    },
+    {
+      "id": "auto-add-provenance-links",
+      "status": "auto_applied",
+      "safe": true,
+      "reason": "Every extracted record carries source ID, path, and content hash."
+    }
+  ],
+  "review_gated_recommendations": [
+    {
+      "id": "semantic-tradition-review",
+      "status": "pending_review",
+      "safe": false,
+      "reason": "Combining Western, Hellenistic, Vedic, Magi, Uranian, financial, and user-defined meanings would be semantic drift."
+    },
+    {
+      "id": "repair-malformed-json",
+      "status": "pending_review",
+      "safe": false,
+      "reason": "Repair can alter source content; preserve raw and require bounded review."
+    },
+    {
+      "id": "implement-unavailable-calculations",
+      "status": "pending_review",
+      "safe": false,
+      "reason": "Requires explicit rules, engine settings, dependencies, and regression fixtures."
+    }
+  ],
+  "gaps": [
+    {
+      "id": "interpretation-evidence-is-not-empirical",
+      "status": "methodology_boundary",
+      "details": "All extracted interpretations are source-derived testing indicators, not validated causal or predictive evidence."
+    },
+    {
+      "id": "probable-duplicates",
+      "status": "review_required",
+      "details": "Exact normalized text duplicates were merged; semantic near-duplicates remain separate."
+    },
+    {
+      "id": "missing-client-consent-context",
+      "status": "unavailable",
+      "details": "No client-specific interpretation export was promoted into a client artifact."
+    },
+    {
+      "id": "missing-ephemeris-fixtures",
+      "status": "pending_review",
+      "details": "Indicators do not imply calculated positions; deterministic fixture generation remains a separate step."
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.1.0",
+  "status": "not_executed_requires_observations_and_labels",
+  "evidence_class": "methodology_bound",
+  "contract_source": "data/unified/research_contract.json#walk_forward_validation_contract",
+  "evidence_boundary": {
+    "financial_and_market_materials": "methodology_bound_research_only",
+    "default_promotion_status": "not_eligible_without_validated_experiment",
+    "promotion_rule": "Financial or market material may be registered as a scoped research signal or indicator only after a separately versioned, reproducible, leakage-safe experiment meets its pre-registered acceptance criteria and completes independent review. Promotion does not create trading advice, a causal claim, or a guaranteed forecast.",
+    "prohibited_uses": [
+      "trading instructions",
+      "position sizing",
+      "personal financial advice",
+      "guaranteed forecasts",
+      "causal claims from symbolic associations"
+    ],
+    "non_claims": [
+      "No untested association is a validated signal.",
+      "A statistically reported association is not proof of a causal mechanism.",
+      "A promoted research signal is not a buy, sell, hold, allocation, or execution instruction."
+    ]
+  },
+  "contract": {
+    "status": "not_executed_requires_observations_and_labels",
+    "purpose": "Specify the first leakage-safe temporal validation run; this is not an execution log and contains no performance result.",
+    "eligible_dataset_conditions": [
+      "observations_acquired is true",
+      "labels_acquired is true",
+      "dataset manifest, data card, feature dictionary, label dictionary, and source inventory are frozen and hashed",
+      "every row passes the feature-cutoff validator or has a recorded exclusion",
+      "historical observation window and final holdout dates are pre-registered",
+      "baseline definitions and acceptance criteria are pre-registered",
+      "rights status is resolved for all included sources"
+    ],
+    "default_split_design": {
+      "family": "expanding_window_walk_forward",
+      "alternative_family": "rolling_window_walk_forward",
+      "training_window": "Declared minimum historical duration; expand only forward in time for the expanding variant.",
+      "validation_window": "Contiguous future period with explicit start and end timestamps.",
+      "step_size": "Declared chronological increment, recorded in the split manifest.",
+      "purge_policy": "Remove train rows whose outcome windows overlap the validation period.",
+      "embargo_policy": "Apply a declared post-train/pre-validation temporal gap when outcome dependence or publication lag requires it.",
+      "final_holdout": "A later untouched chronological interval used exactly once after candidate selection."
+    },
+    "first_execution_steps": [
+      {
+        "step_id": "wf-01",
+        "action": "Approve or reject the frozen experiment record, hypothesis card, and source-rights inventory.",
+        "output": "approved_experiment_record.json or rejection record"
+      },
+      {
+        "step_id": "wf-02",
+        "action": "Acquire actual historical observations using the approved source decision records, preserve raw responses, and hash every artifact.",
+        "output": "raw source inventory and hashes"
+      },
+      {
+        "step_id": "wf-03",
+        "action": "Normalize the data, create availability timestamps, profile missingness and duplicates, and record all exclusions.",
+        "output": "normalized observation dataset and data-quality report"
+      },
+      {
+        "step_id": "wf-04",
+        "action": "Generate deterministic astrology features with explicit engine and tradition settings; preserve raw and transformed feature values.",
+        "output": "feature dictionary and calculation provenance"
+      },
+      {
+        "step_id": "wf-05",
+        "action": "Construct independently defined labels after the cutoff plus censor gap; validate target windows and label versioning.",
+        "output": "label dictionary and label validation report"
+      },
+      {
+        "step_id": "wf-06",
+        "action": "Freeze the dataset, calculate its manifest hash, run temporal-leakage validation, and stop if unresolved violations remain.",
+        "output": "frozen dataset manifest and leakage audit"
+      },
+      {
+        "step_id": "wf-07",
+        "action": "Materialize chronological folds with train, purge, embargo, validation, and final-holdout boundaries.",
+        "output": "split_manifest.json"
+      },
+      {
+        "step_id": "wf-08",
+        "action": "Fit the declared naive and feature-ablated baselines separately within each fold, then fit the pre-registered candidate using only training rows.",
+        "output": "fold-local model artifacts and baseline metrics"
+      },
+      {
+        "step_id": "wf-09",
+        "action": "Evaluate each fold without retuning on validation outcomes; report metrics, intervals, missingness, exclusions, regime context, and negative results.",
+        "output": "fold metrics and uncertainty report"
+      },
+      {
+        "step_id": "wf-10",
+        "action": "Aggregate fold-level outcomes according to the registered metric and decision rule; preserve failures and instability rather than selecting favorable windows.",
+        "output": "walk_forward_validation_log.json"
+      },
+      {
+        "step_id": "wf-11",
+        "action": "If and only if candidate selection is complete, evaluate the untouched final holdout once and create an experiment record and model card.",
+        "output": "final_holdout_evaluation.json, experiment_record.json, model_card.md"
+      },
+      {
+        "step_id": "wf-12",
+        "action": "Submit the completed package for independent review against the promotion-gate contract.",
+        "output": "promotion_review_record.json"
+      }
+    ],
+    "required_execution_log_fields": [
+      "run_id",
+      "experiment_id",
+      "dataset_manifest_hash",
+      "source_inventory_hash",
+      "feature_dictionary_hash",
+      "label_dictionary_hash",
+      "split_manifest_hash",
+      "code_version",
+      "environment_lock_or_dependency_versions",
+      "random_seed",
+      "run_started_at",
+      "run_finished_at",
+      "observation_count_before_exclusions",
+      "observation_count_after_exclusions",
+      "exclusion_reasons",
+      "missingness_summary",
+      "leakage_audit_summary",
+      "folds",
+      "baseline_results",
+      "candidate_results",
+      "uncertainty_method",
+      "regime_results",
+      "negative_or_null_results",
+      "limitations",
+      "prohibited_use_notice"
+    ],
+    "required_fold_log_fields": [
+      "fold_id",
+      "train_start",
+      "train_end",
+      "purge_start",
+      "purge_end",
+      "embargo_start",
+      "embargo_end",
+      "validation_start",
+      "validation_end",
+      "train_row_count",
+      "validation_row_count",
+      "purged_row_count",
+      "feature_cutoff_audit",
+      "preprocessing_fit_scope",
+      "baseline_metrics",
+      "candidate_metrics",
+      "metric_definition",
+      "uncertainty_interval",
+      "regime_tags",
+      "warnings"
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "status": "merged_with_conflicts_preserved",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 633,
+      "sha256": "66a4652d11ec1b1ac0bb4826ea79739bc13f8703650be661443858df6a1d79e8"
+    },
+    {
+      "path": "conflicts.json",
+      "bytes": 44118,
+      "sha256": "59ead3f152133a22b55ddce840f2215b7f5fb728edb8093c7533b9599897bc35"
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 873,
+      "sha256": "2730297f38bac76488d58ea1cba77f22d63675621a6975a9d506e910c6bee9d5"
+    },
+    {
+      "path": "normalized_records.json",
+      "bytes": 741598,
+      "sha256": "8e6f0ca9f78b26fea6f2d9258df30d903f210506d33d4573643f313f22ccdc32"
+    },
+    {
+      "path": "signal_indicator_master.json",
+      "bytes": 1338640,
+      "sha256": "49c54e500b8823166f420ae9e11e15ad26ae6351577fa3489903492af10daf78"
+    },
+    {
+      "path": "source_inventory.json",
+      "bytes": 486800,
+      "sha256": "6f8731bfefc546c1a52e21bba8e474cf020076a07121d52b037c544f84940618"
+    },
+    {
+      "path": "validation_report.json",
+      "bytes": 572,
+      "sha256": "2e8f738147f7f9b1423fbb249ff04b8648ebe0eb042fafb36c279ba550cff282"
+    }
+  ]
+}

@@ -1,0 +1,1254 @@
+{
+  "harmonics": {
+    "metadata": {
+      "title": "Comprehensive Harmonic Astrology Framework",
+      "version": "2.0",
+      "created": "2026-07-01",
+      "description": "Complete system for calculating, interpreting, and synthesizing harmonic aspects in natal, transit, synastry, and composite charts.",
+      "sources": [
+        "John Addey - Harmonics in Astrology",
+        "David Hamblin - Harmonic Astrology",
+        "Charles E.O. Carter - The Astrological Aspects",
+        "Reinhold Ebertin - Combination of Stellar Influences",
+        "Traditional harmonic theory from ancient Greek origins",
+        "Modern empirical research on harmonic sensitivity",
+        "Magi Astrology - Super Aspect Theory",
+        "Vedic Astrology - Divisional Charts"
+      ],
+      "integration_status": "Fully integrated into SUTDOG454 Unified Intelligence System v9.0"
+    },
+    "core_principles": {
+      "definition": "Harmonic astrology is based on dividing the 360° circle by whole numbers. Each harmonic (1 through 360+) represents a specific frequency or 'vibration' that filters planetary energies through a particular archetypal lens.",
+      "key_concepts": [
+        {
+          "concept": "Harmonic Chart",
+          "definition": "A chart calculated by multiplying each planet's longitude by a harmonic number (H) and reducing modulo 360°."
+        },
+        {
+          "concept": "Harmonic Aspect",
+          "definition": "When two planets in a harmonic chart fall within orb of conjunction, they form a harmonic aspect in the natal chart (e.g., H5 quintile = 72°)."
+        },
+        {
+          "concept": "Harmonic Sensitivity",
+          "definition": "Individuals have natural sensitivity to certain harmonics based on their natal chart patterns."
+        },
+        {
+          "concept": "Harmonic Series",
+          "definition": "Families of aspects derived from a common divisor (e.g., H4 series: 90°, 180°, 270°)."
+        },
+        {
+          "concept": "Harmonic Dominance",
+          "definition": "When a particular harmonic has significantly more aspects or higher weighted scores than others, it indicates the native's primary frequency."
+        }
+      ],
+      "hermetic_law": "As within, so without; harmonic frequencies reveal the inner structure of consciousness.",
+      "mathematical_basis": "Any two points separated by arc = 360°/H are in harmonic aspect of order H."
+    },
+    "calculation_methods": {
+      "harmonic_chart_calculation": {
+        "formula": "Harmonic_Planet_Position = (Natal_Planet_Position × H) mod 360",
+        "example": {
+          "natal_planet": "10° Aries (10°)",
+          "harmonic_H": 5,
+          "calculation": "10 × 5 = 50° → 20° Taurus",
+          "interpretation": "Aspects in the 5th harmonic chart become quintile aspects in the natal chart"
+        },
+        "steps": [
+          "Convert all planetary longitudes to decimal degrees (0-360).",
+          "Multiply each longitude by the harmonic number H.",
+          "If result ≥ 360°, subtract 360° repeatedly until result is between 0° and 360°.",
+          "Plot new positions on a 360° wheel (standard or 90° dial).",
+          "Identify conjunctions (≤ 1° orb) – these are the harmonic aspects."
+        ],
+        "python_code": {
+          "function": "def calculate_harmonic_chart(positions, H): return [(pos * H) % 360 for pos in positions]",
+          "example": "harmonic_5 = calculate_harmonic_chart([10, 45, 120], 5)  # [50, 225, 240]"
+        }
+      },
+      "aspect_to_harmonic_conversion": {
+        "formula": "H = 360° / aspect_angle",
+        "examples": {
+          "conjunction": "H1 (360°)",
+          "opposition": "H2 (180°)",
+          "trine": "H3 (120°)",
+          "square": "H4 (90°)",
+          "quintile": "H5 (72°)",
+          "sextile": "H6 (60°)",
+          "septile": "H7 (~51.4286°)",
+          "octile_semisquare": "H8 (45°)",
+          "novile": "H9 (40°)",
+          "decile": "H10 (36°)",
+          "undecile": "H11 (~32.7273°)",
+          "duodecile_semisextile": "H12 (30°)",
+          "tredecile": "H13 (~27.6923°)",
+          "quattordecile": "H14 (~25.7143°)",
+          "quindecile": "H15 (24°)",
+          "semioctile": "H16 (22.5°)",
+          "septendecile": "H17 (~21.1765°)",
+          "octodecile": "H18 (20°)",
+          "novendecile": "H19 (~18.9474°)",
+          "vigintile": "H20 (18°)"
+        },
+        "conversion_table": {
+          "H1": 360,
+          "H2": 180,
+          "H3": 120,
+          "H4": 90,
+          "H5": 72,
+          "H6": 60,
+          "H7": 51.428571,
+          "H8": 45,
+          "H9": 40,
+          "H10": 36,
+          "H11": 32.727273,
+          "H12": 30,
+          "H13": 27.692308,
+          "H14": 25.714286,
+          "H15": 24,
+          "H16": 22.5,
+          "H17": 21.176471,
+          "H18": 20,
+          "H19": 18.947368,
+          "H20": 18,
+          "H21": 17.142857,
+          "H22": 16.363636,
+          "H23": 15.652174,
+          "H24": 15,
+          "H25": 14.4,
+          "H30": 12,
+          "H36": 10,
+          "H40": 9,
+          "H45": 8,
+          "H60": 6,
+          "H72": 5,
+          "H90": 4,
+          "H120": 3,
+          "H180": 2,
+          "H360": 1
+        }
+      },
+      "orb_guidelines_by_harmonic": {
+        "H1_H2_H3_H4": {
+          "standard_orb": "5-8°",
+          "tight_orb": "3-5°",
+          "exact_orb": "0-1°",
+          "notes": "Major aspects; use wider orbs for luminaries and angles."
+        },
+        "H5_H6_H7_H8_H9_H10": {
+          "standard_orb": "2-3°",
+          "tight_orb": "1-2°",
+          "exact_orb": "0-1°",
+          "notes": "Minor aspects; require tighter orbs for reliability."
+        },
+        "H11_H12_H13_H14_H15_H16": {
+          "standard_orb": "1-2°",
+          "tight_orb": "0.5-1°",
+          "exact_orb": "0-0.5°",
+          "notes": "Very minor; often require exact orbs for significance."
+        },
+        "H17_plus": {
+          "standard_orb": "0.5-1°",
+          "tight_orb": "0.25-0.5°",
+          "exact_orb": "0-0.25°",
+          "notes": "Higher harmonics; require extreme precision; often only exact conjunctions matter."
+        }
+      },
+      "harmonic_weights": {
+        "H1": 1.0,
+        "H2": 0.95,
+        "H3": 0.9,
+        "H4": 0.85,
+        "H5": 0.8,
+        "H6": 0.75,
+        "H7": 0.7,
+        "H8": 0.65,
+        "H9": 0.6,
+        "H10": 0.55,
+        "H11": 0.5,
+        "H12": 0.45,
+        "H13": 0.4,
+        "H14": 0.35,
+        "H15": 0.3,
+        "H16": 0.25,
+        "H17-24": 0.2,
+        "H25-36": 0.15,
+        "H37-72": 0.1,
+        "H73+": 0.05
+      }
+    },
+    "harmonic_meanings": {
+      "H1_360_conjunction": {
+        "name": "The Monad – Unity",
+        "angle": "0° / 360°",
+        "keywords": [
+          "Identity",
+          "Fusion",
+          "Self",
+          "Essence",
+          "Focus",
+          "Integration",
+          "Beginning"
+        ],
+        "interpretation": "Conjunctions represent the pure expression of planetary energies merged into a single focus. This is the most powerful harmonic, representing the unity of being.",
+        "psychological": "The self as a unified whole; the point of identity around which all other energies orbit.",
+        "karmic": "Core soul purpose; the essential lesson of this incarnation.",
+        "tantric": "Shiva-Shakti union in the bindu; the seed of all manifestation.",
+        "delineation_template": "The [Planet A] and [Planet B] energies are fused. The native experiences these as a single drive. [Planet A] expresses through [Planet B] and vice versa. This is a core aspect of identity.",
+        "financial_interpretation": "Market sentiment is unified; clear trend direction; strong conviction trades."
+      },
+      "H2_180_opposition": {
+        "name": "The Dyad – Polarity",
+        "angle": "180°",
+        "keywords": [
+          "Balance",
+          "Tension",
+          "Relationship",
+          "Projection",
+          "Awareness",
+          "Duality",
+          "Integration"
+        ],
+        "interpretation": "Oppositions create dynamic tension between two poles. The native projects one side onto others and must integrate both through relationship and self-awareness.",
+        "psychological": "The shadow; the 'other' within; the need for conscious integration of opposites.",
+        "karmic": "Relationship karma; lessons learned through others; the mirror of the soul.",
+        "tantric": "Ida and pingala nadis; the polarity of Shiva-Shakti seeking union.",
+        "delineation_template": "The [Planet A] and [Planet B] energies are in polarity. The native experiences tension between these drives. [Planet A] is often projected onto others, while [Planet B] is claimed as self (or vice versa). Integration requires conscious relationship work.",
+        "financial_interpretation": "Market participants are polarised; range-bound trading; indecision; pending breakout."
+      },
+      "H3_120_trine": {
+        "name": "The Triad – Harmony",
+        "angle": "120°",
+        "keywords": [
+          "Flow",
+          "Talent",
+          "Creativity",
+          "Ease",
+          "Inspiration",
+          "Healing",
+          "Gift"
+        ],
+        "interpretation": "Trines represent innate talents and effortless flow. Energies work together harmoniously, but may lead to complacency if not consciously developed.",
+        "psychological": "Natural abilities; areas of life where the native feels 'blessed'; latent potential waiting to be activated.",
+        "karmic": "Past-life mastery; skills brought forward into this incarnation; karmic strengths.",
+        "tantric": "Effortless shakti flow; the triad of creation, preservation, and destruction.",
+        "delineation_template": "The [Planet A] and [Planet B] energies flow together with ease. The native has natural talent in the areas ruled by these planets. Effort is still required to develop this gift, but success comes more easily than with other aspects.",
+        "financial_interpretation": "Smooth upward or downward trend; momentum is with the market; easy profits for trend followers."
+      },
+      "H4_90_square": {
+        "name": "The Tetrad – Challenge",
+        "angle": "90°",
+        "keywords": [
+          "Tension",
+          "Growth",
+          "Crisis",
+          "Action",
+          "Friction",
+          "Development",
+          "Obstacle"
+        ],
+        "interpretation": "Squares create internal tension that drives action and growth. The native experiences conflict between the two planetary energies and must find constructive outlets.",
+        "psychological": "Internal conflicts; areas of frustration that become sources of strength when mastered; the crucible of character.",
+        "karmic": "Unresolved karma demanding action; lessons that require effort to master; initiatory challenges.",
+        "tantric": "Tapas (inner heat); the friction that generates spiritual transformation; the cross of matter.",
+        "delineation_template": "The [Planet A] and [Planet B] energies are in conflict. The native experiences tension, frustration, or internal struggle between these drives. With conscious effort, this friction can be transformed into powerful motivation and achievement.",
+        "financial_interpretation": "Strong resistance or support; battle between buyers and sellers; breakout expected after consolidation."
+      },
+      "H5_72_quintile": {
+        "name": "The Pentad – Creativity",
+        "angle": "72°",
+        "keywords": [
+          "Genius",
+          "Creativity",
+          "Innovation",
+          "Artistic",
+          "Unique",
+          "Visionary",
+          "Talent"
+        ],
+        "interpretation": "Quintiles indicate special creative gifts, artistic ability, and unique talents. They represent the golden proportion and are associated with genius.",
+        "psychological": "Creative potential; the ability to see things differently; a unique perspective on life.",
+        "karmic": "Gifts from past lives; skills that seem innate but are actually developed over many incarnations.",
+        "tantric": "The pentagram of manifestation; the creative power of the goddess; alchemical transformation.",
+        "delineation_template": "The [Planet A] and [Planet B] energies combine in a uniquely creative way. The native has a special talent or gift in the areas ruled by these planets. This ability may seem effortless, but it is the result of past-life development.",
+        "financial_interpretation": "Innovative trading strategies; unique market patterns; outsized returns from unconventional approaches."
+      },
+      "H6_60_sextile": {
+        "name": "The Hexad – Opportunity",
+        "angle": "60°",
+        "keywords": [
+          "Opportunity",
+          "Cooperation",
+          "Learning",
+          "Communication",
+          "Support",
+          "Growth",
+          "Harmony"
+        ],
+        "interpretation": "Sextiles represent opportunities for growth and cooperation. Unlike trines, they require conscious action to realize their potential.",
+        "psychological": "Supportive energies; areas where the native finds help and collaboration; latent possibilities awaiting initiative.",
+        "karmic": "Karmic opportunities; doors that open when the native takes action; supportive relationships.",
+        "tantric": "The hexagon of manifestation; balanced flow between energies.",
+        "delineation_template": "The [Planet A] and [Planet B] energies work well together when the native takes conscious action. Opportunities arise in the areas ruled by these planets, but they must be actively pursued.",
+        "financial_interpretation": "Market participants working together; cooperative trends; opportunities for arbitrage or pair trading."
+      },
+      "H7_51_4286_septile": {
+        "name": "The Heptad – Fate",
+        "angle": "51.428571°",
+        "keywords": [
+          "Fate",
+          "Destiny",
+          "Karma",
+          "Inspiration",
+          "Mystical",
+          "Visionary",
+          "Spiritual"
+        ],
+        "interpretation": "Septiles indicate fated, karmic, or destiny-driven experiences. They are associated with mystical experiences, divine intervention, and events that seem pre-ordained.",
+        "psychological": "Fated patterns; synchronistic events; experiences that feel 'meant to be'.",
+        "karmic": "Karmic destiny; relationships and events that are karmically driven; soul contracts.",
+        "tantric": "The seven chakras; the mystical journey; the wedding of heaven and earth.",
+        "delineation_template": "The [Planet A] and [Planet B] energies are connected through fate or destiny. Events in the areas ruled by these planets may seem pre-ordained or synchronistic. This is a karmic aspect.",
+        "financial_interpretation": "Major trend reversals at significant levels; market turning points that feel 'fated' or perfectly timed."
+      },
+      "H8_45_octile_semisquare": {
+        "name": "The Octad – Tension",
+        "angle": "45°",
+        "keywords": [
+          "Irritation",
+          "Friction",
+          "Minor tension",
+          "Annoyance",
+          "Adjustment",
+          "Awareness",
+          "Growth"
+        ],
+        "interpretation": "Semisquares create minor but persistent tension. They represent irritations that eventually force adjustment and growth.",
+        "psychological": "Petty annoyances; small frustrations that accumulate; areas requiring fine-tuning.",
+        "karmic": "Minor karmic debts; small lessons that must be learned through repeated experiences.",
+        "tantric": "Subtle energetic friction; minor blockages requiring adjustment.",
+        "delineation_template": "The [Planet A] and [Planet B] energies create minor friction. The native experiences small but persistent irritations in the areas ruled by these planets. These frustrations ultimately force positive adjustments.",
+        "financial_interpretation": "Small corrections; minor pullbacks; frequent but shallow retracements."
+      },
+      "H9_40_novile": {
+        "name": "The Ennead – Completion",
+        "angle": "40°",
+        "keywords": [
+          "Completion",
+          "Perfection",
+          "Refinement",
+          "Spiritual",
+          "Artistic",
+          "Culmination",
+          "Mastery"
+        ],
+        "interpretation": "Noviles represent refinement, completion, and spiritual perfection. They are associated with the nine-fold division of the zodiac and the concept of the Enneagram.",
+        "psychological": "The drive toward perfection; the ability to refine and complete; spiritual seeking.",
+        "karmic": "Karmic completion; closure of cycles; the fulfillment of destiny.",
+        "tantric": "The nine forms of the goddess; the completion of the spiritual journey.",
+        "delineation_template": "The [Planet A] and [Planet B] energies combine in a refining or perfecting way. The native has the ability to bring completion to the areas ruled by these planets. There is a spiritual dimension to these activities.",
+        "financial_interpretation": "Market cycles completing; long-term trends ending; major tops or bottoms forming."
+      },
+      "H10_36_decile": {
+        "name": "The Decad – Manifestation",
+        "angle": "36°",
+        "keywords": [
+          "Manifestation",
+          "Reality",
+          "Practical",
+          "Achievement",
+          "Structure",
+          "Form",
+          "Result"
+        ],
+        "interpretation": "Deciles represent the ability to manifest ideas into physical reality. They are associated with practical achievement and tangible results.",
+        "psychological": "The ability to make things happen; turning vision into reality; practical manifestation.",
+        "karmic": "Karmic manifestation; the ability to bring karmic potentials into physical form.",
+        "tantric": "The ten avatars; manifestation of the divine in matter.",
+        "delineation_template": "The [Planet A] and [Planet B] energies combine to produce tangible results. The native has the ability to manifest ideas in the areas ruled by these planets. This is a practical, achievement-oriented aspect.",
+        "financial_interpretation": "Profitable trades; realized gains; effective execution of strategies."
+      },
+      "H11_32_7273_undecile": {
+        "name": "The Hendecad – Breakthrough",
+        "angle": "32.727273°",
+        "keywords": [
+          "Breakthrough",
+          "Innovation",
+          "Change",
+          "Freedom",
+          "Revolution",
+          "Awakening",
+          "Transformation"
+        ],
+        "interpretation": "Undeciles represent breakthroughs, innovations, and sudden changes. They are associated with the 11th harmonic and the number 11, which has mystical significance.",
+        "psychological": "The ability to break through limitations; sudden insights; innovative thinking.",
+        "karmic": "Karmic breakthroughs; liberation from past patterns; sudden karmic shifts.",
+        "tantric": "The eleventh hour; sudden spiritual awakening.",
+        "delineation_template": "The [Planet A] and [Planet B] energies combine to produce breakthroughs or sudden changes. The native experiences innovations or unexpected developments in the areas ruled by these planets.",
+        "financial_interpretation": "Sudden breakouts; unexpected news catalysts; paradigm shifts in market structure."
+      },
+      "H12_30_duodecile_semisextile": {
+        "name": "The Dodecad – Potential",
+        "angle": "30°",
+        "keywords": [
+          "Potential",
+          "Seed",
+          "Opportunity",
+          "Growth",
+          "Development",
+          "Beginning",
+          "Promise"
+        ],
+        "interpretation": "Semisextiles represent latent potential and emerging possibilities. They are the seeds of future development.",
+        "psychological": "Unconscious potentials; seeds of future growth; hidden talents waiting to emerge.",
+        "karmic": "Karmic seeds; potentials that will develop in future incarnations or later in life.",
+        "tantric": "The twelve petals of the heart chakra; the potential for divine love.",
+        "delineation_template": "The [Planet A] and [Planet B] energies are connected in a way that suggests potential or possibility. The native has latent talents or opportunities in the areas ruled by these planets that may develop later in life.",
+        "financial_interpretation": "Early stage trends; emerging sectors; initial accumulation phase."
+      },
+      "H13_27_6923_tredecil": {
+        "name": "The Tridecad – Transformation",
+        "angle": "27.692308°",
+        "keywords": [
+          "Transformation",
+          "Death",
+          "Rebirth",
+          "Healing",
+          "Renewal",
+          "Release",
+          "Change"
+        ],
+        "interpretation": "Tredeciles represent transformation through death and rebirth. They are associated with the 13th harmonic, which has shamanic and initiatory significance.",
+        "psychological": "The death-rebirth cycle; transformative experiences; deep healing.",
+        "karmic": "Karmic transformation; the death of old patterns and rebirth of new ones.",
+        "tantric": "The thirteen chakras; the alchemical transformation of lead into gold.",
+        "delineation_template": "The [Planet A] and [Planet B] energies combine to produce transformation through death or release. The native experiences endings and new beginnings in the areas ruled by these planets. This is a healing aspect.",
+        "financial_interpretation": "Trend reversals; capitulation bottoms; major structural changes in markets."
+      },
+      "H14_25_7143_quattordecile": {
+        "name": "The Tetradecad – Integration",
+        "angle": "25.714286°",
+        "keywords": [
+          "Integration",
+          "Harmony",
+          "Balance",
+          "Alignment",
+          "Synthesis",
+          "Unity",
+          "Wholeness"
+        ],
+        "interpretation": "Quattordeciles represent the integration of opposites and the achievement of wholeness. They are associated with the 14th harmonic, which represents the alchemical marriage.",
+        "psychological": "The integration of shadow and light; psychological wholeness; alignment of conscious and unconscious.",
+        "karmic": "Karmic integration; the resolution of polarities; the achievement of balance.",
+        "tantric": "The fourteen worlds; the integration of all levels of existence.",
+        "delineation_template": "The [Planet A] and [Planet B] energies combine to produce integration or balance. The native is able to harmonize opposing forces in the areas ruled by these planets.",
+        "financial_interpretation": "Markets finding equilibrium; consolidation before next move; balanced buying and selling."
+      },
+      "H15_24_quindecile": {
+        "name": "The Pentadecad – Mastery",
+        "angle": "24°",
+        "keywords": [
+          "Mastery",
+          "Wisdom",
+          "Authority",
+          "Leadership",
+          "Teaching",
+          "Guidance",
+          "Experience"
+        ],
+        "interpretation": "Quindeciles represent mastery gained through experience. They are associated with the 15th harmonic, which combines the creative (5) and the transformative (3).",
+        "psychological": "The wise teacher; mastery through experience; authority in one's field.",
+        "karmic": "Karmic mastery; the ability to teach and guide others; leadership roles.",
+        "tantric": "The fifteen lunar days; the cycle of mastery.",
+        "delineation_template": "The [Planet A] and [Planet B] energies combine to produce mastery or wisdom. The native has achieved authority in the areas ruled by these planets through experience and practice.",
+        "financial_interpretation": "Market leadership; dominant trends; decisive breakouts from long-term patterns."
+      },
+      "H16_22_5_semioctile": {
+        "name": "The Hexadecad – Structure",
+        "angle": "22.5°",
+        "keywords": [
+          "Structure",
+          "Order",
+          "Organization",
+          "System",
+          "Detail",
+          "Precision",
+          "Form"
+        ],
+        "interpretation": "Semioctiles represent structure, order, and the organization of details. They are associated with the 16th harmonic, which is the square of the square.",
+        "psychological": "The need for order; attention to detail; the ability to systematize.",
+        "karmic": "Karmic structure; the need to organize one's life; the development of systems.",
+        "tantric": "The sixteen petals of the throat chakra; the power of sacred sound.",
+        "delineation_template": "The [Planet A] and [Planet B] energies combine to produce structure or order. The native has the ability to organize details and create systems in the areas ruled by these planets.",
+        "financial_interpretation": "Markets trading within well-defined channels; technical patterns completing; orderly moves."
+      },
+      "H17_21_1765_septendecile": {
+        "name": "The Septendecad – Revelation",
+        "angle": "21.176471°",
+        "keywords": [
+          "Revelation",
+          "Vision",
+          "Mystery",
+          "Insight",
+          "Occult",
+          "Hidden",
+          "Awakening"
+        ],
+        "interpretation": "Septendeciles represent mystical revelation and hidden knowledge. They are associated with the 17th harmonic, which has qabalistic and occult significance.",
+        "psychological": "Mystical experiences; insights into hidden truths; the revelation of the numinous.",
+        "karmic": "Karmic revelation; the uncovering of hidden patterns; the mystery of existence.",
+        "tantric": "The seventeen levels of consciousness; the revelation of the divine.",
+        "delineation_template": "The [Planet A] and [Planet B] energies combine to produce revelation or hidden insight. The native experiences mystical revelations or uncovers hidden truths in the areas ruled by these planets.",
+        "financial_interpretation": "Unexpected announcements; insider activity; hidden value being discovered."
+      },
+      "H18_20_octodecile": {
+        "name": "The Octodecad – Healing",
+        "angle": "20°",
+        "keywords": [
+          "Healing",
+          "Integration",
+          "Completion",
+          "Resolution",
+          "Peace",
+          "Wholeness",
+          "Release"
+        ],
+        "interpretation": "Octodeciles represent healing and the resolution of conflict. They are associated with the 18th harmonic, which combines the creative (9) and the dynamic (2).",
+        "psychological": "The healing of wounds; the resolution of inner conflict; the achievement of peace.",
+        "karmic": "Karmic healing; the resolution of karmic debts; the release of karma.",
+        "tantric": "The eighteen arms of the goddess; the power of healing.",
+        "delineation_template": "The [Planet A] and [Planet B] energies combine to produce healing or resolution. The native is able to heal wounds or resolve conflicts in the areas ruled by these planets.",
+        "financial_interpretation": "Market corrections completing; oversold conditions reversing; healing from previous losses."
+      },
+      "H19_18_9474_novendecile": {
+        "name": "The Novendecad – Illumination",
+        "angle": "18.947368°",
+        "keywords": [
+          "Illumination",
+          "Enlightenment",
+          "Wisdom",
+          "Clarity",
+          "Understanding",
+          "Light",
+          "Truth"
+        ],
+        "interpretation": "Novendeciles represent spiritual illumination and enlightenment. They are associated with the 19th harmonic, which has solar and lunar significance.",
+        "psychological": "Enlightenment experiences; deep understanding; the light of consciousness.",
+        "karmic": "Karmic illumination; the understanding of one's life purpose; spiritual enlightenment.",
+        "tantric": "The nineteen nadis; the illumination of the subtle body.",
+        "delineation_template": "The [Planet A] and [Planet B] energies combine to produce illumination or enlightenment. The native experiences moments of deep understanding or spiritual clarity in the areas ruled by these planets.",
+        "financial_interpretation": "Breakout from consolidation; sudden clarity in market direction; major trend confirmation."
+      },
+      "H20_18_vigintile": {
+        "name": "The Vigintile – Manifestation",
+        "angle": "18°",
+        "keywords": [
+          "Manifestation",
+          "Creation",
+          "Form",
+          "Reality",
+          "Expression",
+          "Tangible",
+          "Result"
+        ],
+        "interpretation": "Vigintiles represent the manifestation of spiritual energies into physical form. They are associated with the 20th harmonic, which combines the cycles of Sun and Moon.",
+        "psychological": "The ability to create; turning ideas into reality; practical manifestation.",
+        "karmic": "Karmic manifestation; the ability to bring karmic potentials into physical form.",
+        "tantric": "The twenty siddhis; the power of manifestation.",
+        "delineation_template": "The [Planet A] and [Planet B] energies combine to produce manifestation or creation. The native has the ability to turn ideas into tangible results in the areas ruled by these planets.",
+        "financial_interpretation": "Ideas becoming reality; trades working out; investment thesis confirmed."
+      },
+      "H21_17_1429_hemitriacontad": {
+        "name": "The Unvigintile – Synthesis",
+        "angle": "17.142857°",
+        "keywords": [
+          "Synthesis",
+          "Integration",
+          "Wholeness",
+          "Unity",
+          "Harmony",
+          "Balance",
+          "Completion"
+        ],
+        "interpretation": "Unvigintiles represent the synthesis of diverse elements into a unified whole. They are associated with the 21st harmonic, which has symbolic significance (3×7).",
+        "psychological": "The ability to integrate diverse aspects of self; psychological wholeness.",
+        "karmic": "Karmic synthesis; the integration of multiple karmic streams.",
+        "tantric": "The twenty-one taras; the synthesis of wisdom and compassion.",
+        "delineation_template": "The [Planet A] and [Planet B] energies combine to produce synthesis or integration. The native has the ability to bring together diverse elements in the areas ruled by these planets.",
+        "financial_interpretation": "Multiple market forces aligning; convergence of indicators; high-confidence setups."
+      },
+      "H22_16_3636_bivigintile": {
+        "name": "The Duovigintile – Alignment",
+        "angle": "16.363636°",
+        "keywords": [
+          "Alignment",
+          "Attunement",
+          "Harmony",
+          "Resonance",
+          "Frequency",
+          "Vibration",
+          "Flow"
+        ],
+        "interpretation": "Duovigintiles represent alignment with cosmic frequencies and the attunement of consciousness to higher levels.",
+        "psychological": "The ability to align with higher purposes; spiritual attunement; resonant frequencies.",
+        "karmic": "Karmic alignment; the attunement to one's dharma; the alignment of past and future.",
+        "tantric": "The twenty-two letters of the Hebrew alphabet; the alignment of sound and meaning.",
+        "delineation_template": "The [Planet A] and [Planet B] energies combine to produce alignment or attunement. The native is able to align with cosmic principles in the areas ruled by these planets.",
+        "financial_interpretation": "Trading system in perfect alignment with market; optimal execution conditions."
+      },
+      "H23_15_6522_trevigintile": {
+        "name": "The Tressvigintile – Transcendence",
+        "angle": "15.652174°",
+        "keywords": [
+          "Transcendence",
+          "Beyond",
+          "Surrender",
+          "Release",
+          "Freedom",
+          "Liberation",
+          "Nirvana"
+        ],
+        "interpretation": "Trevigintiles represent transcendence of limitations and the experience of liberation. They are associated with the 23rd harmonic, which has shamanic significance.",
+        "psychological": "The transcendence of ego; spiritual liberation; freedom from limitations.",
+        "karmic": "Karmic liberation; the release from the cycle of rebirth; spiritual freedom.",
+        "tantric": "The twenty-three mantras; the power of transcendent sound.",
+        "delineation_template": "The [Planet A] and [Planet B] energies combine to produce transcendence or liberation. The native experiences freedom from limitations in the areas ruled by these planets.",
+        "financial_interpretation": "Breaking free from trading constraints; overcoming psychological barriers; major breakout."
+      },
+      "H24_15_semiquintile": {
+        "name": "The Quadravigintile – Divine Order",
+        "angle": "15°",
+        "keywords": [
+          "Divine",
+          "Order",
+          "Perfection",
+          "Cosmic",
+          "Universal",
+          "Archetypal",
+          "Template"
+        ],
+        "interpretation": "Semiquintiles represent divine order and the archetypal patterns underlying reality. They are associated with the 24th harmonic, which has astronomical significance (the 24 hours).",
+        "psychological": "The recognition of archetypal patterns; cosmic order; universal laws.",
+        "karmic": "Karmic patterns; the recognition of cosmic order; the template of destiny.",
+        "tantric": "The twenty-four avatars; the divine order of manifestation.",
+        "delineation_template": "The [Planet A] and [Planet B] energies combine to produce divine order or archetypal patterns. The native recognizes universal laws operating in the areas ruled by these planets.",
+        "financial_interpretation": "Market obeying universal patterns; predictable cycles; harmonic trading opportunities."
+      }
+    },
+    "harmonic_series": {
+      "H1_series": {
+        "name": "The Monad Series",
+        "angles": [
+          0
+        ],
+        "description": "The series of unity and identity.",
+        "interpretation": "Represents the core self; the point of focus; the essence of being.",
+        "financial_interpretation": "Clear trend direction; single-minded market focus; decisive breakouts."
+      },
+      "H2_series": {
+        "name": "The Dyad Series",
+        "angles": [
+          0,
+          180
+        ],
+        "description": "The series of polarity and relationship.",
+        "interpretation": "Represents duality, opposition, and the need for integration through relationship.",
+        "financial_interpretation": "Bull/bear conflict; support/resistance levels; trend reversal zones."
+      },
+      "H3_series": {
+        "name": "The Triad Series",
+        "angles": [
+          0,
+          120,
+          240
+        ],
+        "description": "The series of harmony and creativity.",
+        "interpretation": "Represents flow, talent, and the creative principle.",
+        "financial_interpretation": "Smooth trending markets; momentum; sector rotations."
+      },
+      "H4_series": {
+        "name": "The Tetrad Series",
+        "angles": [
+          0,
+          90,
+          180,
+          270
+        ],
+        "description": "The series of structure and challenge.",
+        "interpretation": "Represents order, limitation, and the friction necessary for growth.",
+        "financial_interpretation": "Consolidation patterns; ranges; building tension before breakout."
+      },
+      "H5_series": {
+        "name": "The Pentad Series",
+        "angles": [
+          0,
+          72,
+          144,
+          216,
+          288
+        ],
+        "description": "The series of creativity and genius.",
+        "interpretation": "Represents artistic ability, unique perspective, and innovative thinking.",
+        "financial_interpretation": "Innovative strategies; out-of-the-box thinking; unique market patterns."
+      },
+      "H6_series": {
+        "name": "The Hexad Series",
+        "angles": [
+          0,
+          60,
+          120,
+          180,
+          240,
+          300
+        ],
+        "description": "The series of cooperation and opportunity.",
+        "interpretation": "Represents partnership, learning, and the ability to work with others.",
+        "financial_interpretation": "Market cooperation; correlated moves; arbitrage opportunities."
+      },
+      "H7_series": {
+        "name": "The Heptad Series",
+        "angles": "51.4286°, 102.8571°, 154.2857°, 205.7143°, 257.1429°, 308.5714° + 0°",
+        "description": "The series of fate and destiny.",
+        "interpretation": "Represents karmic events, synchronistic experiences, and mystical interventions.",
+        "financial_interpretation": "Major turning points; fated events; unexpected catalysts."
+      },
+      "H8_series": {
+        "name": "The Octad Series",
+        "angles": [
+          0,
+          45,
+          90,
+          135,
+          180,
+          225,
+          270,
+          315
+        ],
+        "description": "The series of tension and refinement.",
+        "interpretation": "Represents minor friction, adjustments, and the fine-tuning of personality.",
+        "financial_interpretation": "Micro-corrections; fine-tuning strategies; minor reversals."
+      },
+      "H9_series": {
+        "name": "The Ennead Series",
+        "angles": [
+          0,
+          40,
+          80,
+          120,
+          160,
+          200,
+          240,
+          280,
+          320
+        ],
+        "description": "The series of completion and spiritualization.",
+        "interpretation": "Represents the drive toward perfection, completion of cycles, and spiritual refinement.",
+        "financial_interpretation": "Market cycles completing; long-term trends ending; major tops/bottoms."
+      },
+      "H10_series": {
+        "name": "The Decad Series",
+        "angles": [
+          0,
+          36,
+          72,
+          108,
+          144,
+          180,
+          216,
+          252,
+          288,
+          324
+        ],
+        "description": "The series of manifestation and structure.",
+        "interpretation": "Represents the ability to manifest ideas, practical achievement, and tangible results.",
+        "financial_interpretation": "Profitable strategies; realized gains; effective execution."
+      },
+      "H11_series": {
+        "name": "The Hendecad Series",
+        "angles": "32.7273° increments",
+        "description": "The series of breakthrough and innovation.",
+        "interpretation": "Represents sudden changes, innovations, and liberation from old patterns.",
+        "financial_interpretation": "Sudden breakouts; paradigm shifts; unexpected catalysts."
+      },
+      "H12_series": {
+        "name": "The Dodecad Series",
+        "angles": [
+          0,
+          30,
+          60,
+          90,
+          120,
+          150,
+          180,
+          210,
+          240,
+          270,
+          300,
+          330
+        ],
+        "description": "The series of potential and seed patterns.",
+        "interpretation": "Represents latent possibilities, hidden talents, and the seeds of future development.",
+        "financial_interpretation": "Emerging trends; early accumulation; hidden opportunities."
+      },
+      "H13_series": {
+        "name": "The Tridecad Series",
+        "angles": "27.6923° increments",
+        "description": "The series of transformation and healing.",
+        "interpretation": "Represents death-rebirth experiences, deep healing, and shamanic transformation.",
+        "financial_interpretation": "Major reversals; capitulation; structural changes."
+      },
+      "H14_series": {
+        "name": "The Tetradecad Series",
+        "angles": "25.7143° increments",
+        "description": "The series of integration and balance.",
+        "interpretation": "Represents the integration of opposites, alchemical marriage, and wholeness.",
+        "financial_interpretation": "Markets finding equilibrium; consolidation; balanced participation."
+      },
+      "H15_series": {
+        "name": "The Pentadecad Series",
+        "angles": "24° increments",
+        "description": "The series of mastery and wisdom.",
+        "interpretation": "Represents authority, mastery through experience, and the ability to teach others.",
+        "financial_interpretation": "Market leadership; dominant trends; expert-level execution."
+      },
+      "H16_series": {
+        "name": "The Hexadecad Series",
+        "angles": "22.5° increments",
+        "description": "The series of structure and organization.",
+        "interpretation": "Represents attention to detail, systematic thinking, and the ordering of reality.",
+        "financial_interpretation": "Well-defined channels; systematic trading; precise execution."
+      },
+      "H17_series": {
+        "name": "The Septendecad Series",
+        "angles": "21.1765° increments",
+        "description": "The series of revelation and occult knowledge.",
+        "interpretation": "Represents mystical revelation, hidden truths, and esoteric wisdom.",
+        "financial_interpretation": "Unexpected announcements; hidden value; insider activity."
+      },
+      "H18_series": {
+        "name": "The Octodecad Series",
+        "angles": "20° increments",
+        "description": "The series of healing and resolution.",
+        "interpretation": "Represents the healing of wounds, resolution of conflict, and the achievement of peace.",
+        "financial_interpretation": "Corrections completing; oversold conditions reversing; recoveries."
+      },
+      "H19_series": {
+        "name": "The Novendecad Series",
+        "angles": "18.9474° increments",
+        "description": "The series of illumination and enlightenment.",
+        "interpretation": "Represents spiritual illumination, enlightenment experiences, and deep understanding.",
+        "financial_interpretation": "Breakout from consolidation; clarity in direction; trend confirmation."
+      },
+      "H20_series": {
+        "name": "The Vigintile Series",
+        "angles": "18° increments",
+        "description": "The series of manifestation and creation.",
+        "interpretation": "Represents the ability to create tangible results and turn ideas into reality.",
+        "financial_interpretation": "Ideas becoming reality; trades working out; investment thesis confirmed."
+      }
+    },
+    "harmonic_patterns": {
+      "grand_trine": {
+        "harmonic": "H3",
+        "description": "Three planets equally spaced at 120° intervals.",
+        "interpretation": "Represents profound creative talent and effortless flow. Often indicates a naturally gifted individual in the areas of the involved planets and houses.",
+        "financial_interpretation": "Strong, smooth trends; easy profits; momentum is with the trader."
+      },
+      "t_square": {
+        "harmonic": "H4",
+        "description": "Two planets in opposition, both square a third.",
+        "interpretation": "Represents dynamic tension that drives action. The focal planet (the one receiving two squares) indicates the area where the native can direct the energy productively.",
+        "financial_interpretation": "Strong resistance/support; building tension; breakout expected."
+      },
+      "grand_cross": {
+        "harmonic": "H4",
+        "description": "Four planets forming two oppositions and four squares.",
+        "interpretation": "Represents intense internal and external pressure. The native may feel torn in multiple directions, but can achieve great balance and strength if all energies are integrated.",
+        "financial_interpretation": "Extreme volatility; major indecision; significant breakout or breakdown imminent."
+      },
+      "yod": {
+        "harmonic": "H12 and H6",
+        "description": "Two planets in sextile (60°), both quincunx (150°) a third.",
+        "interpretation": "Represents a fated adjustment or turning point. The apex planet indicates where the native must make a significant change or accept a karmic challenge.",
+        "financial_interpretation": "Major turning point; forced adjustment; significant change in trend."
+      },
+      "grand_quintile": {
+        "harmonic": "H5",
+        "description": "Five planets equally spaced at 72° intervals.",
+        "interpretation": "Represents exceptional creative genius. Rare configuration indicating a person with extraordinary artistic or innovative abilities.",
+        "financial_interpretation": "Rare market pattern; unique trading opportunity; outsized returns."
+      },
+      "grand_sextile": {
+        "harmonic": "H6",
+        "description": "Six planets equally spaced at 60° intervals, often with oppositions.",
+        "interpretation": "Represents balanced opportunity and cooperative potential. Indicates a person who can work well with others and find win-win solutions.",
+        "financial_interpretation": "Highly correlated markets; arbitrage opportunities; cooperative trends."
+      },
+      "cradle": {
+        "harmonic": "H12 and H6",
+        "description": "Two oppositions connected by sextiles and trines, forming a closed loop.",
+        "interpretation": "Represents a protected, supportive environment. The native may have a fortunate life with many opportunities, but may also become complacent without challenge.",
+        "financial_interpretation": "Well-defined trading range; opportunities on both sides; systematic strategies work well."
+      }
+    },
+    "weighting_and_scoring": {
+      "aspect_strength_formula": "Strength = Orb_Score × Harmonic_Weight × Planetary_Weight × Angularity_Bonus",
+      "orb_score_table": [
+        {
+          "orb_range": [
+            0,
+            0.25
+          ],
+          "score": 10
+        },
+        {
+          "orb_range": [
+            0.25,
+            0.5
+          ],
+          "score": 9
+        },
+        {
+          "orb_range": [
+            0.5,
+            1
+          ],
+          "score": 8
+        },
+        {
+          "orb_range": [
+            1,
+            1.5
+          ],
+          "score": 7
+        },
+        {
+          "orb_range": [
+            1.5,
+            2
+          ],
+          "score": 6
+        },
+        {
+          "orb_range": [
+            2,
+            2.5
+          ],
+          "score": 5
+        },
+        {
+          "orb_range": [
+            2.5,
+            3
+          ],
+          "score": 4
+        },
+        {
+          "orb_range": [
+            3,
+            4
+          ],
+          "score": 3
+        },
+        {
+          "orb_range": [
+            4,
+            5
+          ],
+          "score": 2
+        },
+        {
+          "orb_range": [
+            5,
+            6
+          ],
+          "score": 1
+        },
+        {
+          "orb_range": [
+            6,
+            8
+          ],
+          "score": 0.5
+        }
+      ],
+      "planetary_weight_table": [
+        {
+          "planets": [
+            "Sun",
+            "Moon"
+          ],
+          "weight": 1.5
+        },
+        {
+          "planets": [
+            "Mercury",
+            "Venus",
+            "Mars"
+          ],
+          "weight": 1.2
+        },
+        {
+          "planets": [
+            "Jupiter",
+            "Saturn"
+          ],
+          "weight": 1.0
+        },
+        {
+          "planets": [
+            "Uranus",
+            "Neptune",
+            "Pluto"
+          ],
+          "weight": 0.8
+        },
+        {
+          "points": [
+            "Ascendant",
+            "Midheaven",
+            "North Node"
+          ],
+          "weight": 1.3
+        }
+      ],
+      "angularity_bonus": [
+        {
+          "houses": [
+            1,
+            4,
+            7,
+            10
+          ],
+          "bonus": 1.2
+        },
+        {
+          "houses": [
+            2,
+            5,
+            8,
+            11
+          ],
+          "bonus": 1.0
+        },
+        {
+          "houses": [
+            3,
+            6,
+            9,
+            12
+          ],
+          "bonus": 0.8
+        }
+      ],
+      "harmonic_weight_table": [
+        {
+          "harmonic": 1,
+          "weight": 1.0
+        },
+        {
+          "harmonic": 2,
+          "weight": 0.95
+        },
+        {
+          "harmonic": 3,
+          "weight": 0.9
+        },
+        {
+          "harmonic": 4,
+          "weight": 0.85
+        },
+        {
+          "harmonic": 5,
+          "weight": 0.8
+        },
+        {
+          "harmonic": 6,
+          "weight": 0.75
+        },
+        {
+          "harmonic": 7,
+          "weight": 0.7
+        },
+        {
+          "harmonic": 8,
+          "weight": 0.65
+        },
+        {
+          "harmonic": 9,
+          "weight": 0.6
+        },
+        {
+          "harmonic": 10,
+          "weight": 0.55
+        },
+        {
+          "harmonic": 11,
+          "weight": 0.5
+        },
+        {
+          "harmonic": 12,
+          "weight": 0.45
+        },
+        {
+          "harmonic": 13,
+          "weight": 0.4
+        },
+        {
+          "harmonic": 14,
+          "weight": 0.35
+        },
+        {
+          "harmonic": 15,
+          "weight": 0.3
+        },
+        {
+          "harmonic": 16,
+          "weight": 0.25
+        },
+        {
+          "harmonic_range": [
+            17,
+            24
+          ],
+          "weight": 0.2
+        },
+        {
+          "harmonic_range": [
+            25,
+            36
+          ],
+          "weight": 0.15
+        },
+        {
+          "harmonic_range": [
+            37,
+            72
+          ],
+          "weight": 0.1
+        },
+        {
+          "harmonic_range": [
+            73,
+            360
+          ],
+          "weight": 0.05
+        }
+      ]
+    },
+    "synthesis_and_reporting": {
+      "harmonic_profile_steps": [
+        {
+          "step": 1,
+          "title": "Calculate Harmonic Chart",
+          "description": "For each planet, compute position in the desired harmonic (H1 through H360)."
+        },
+        {
+          "step": 2,
+          "title": "Identify Conjunctions",
+          "description": "In the harmonic chart, identify conjunctions with ≤1° orb. Each conjunction corresponds to a harmonic aspect in the natal chart."
+        },
+        {
+          "step": 3,
+          "title": "Weight Each Aspect",
+          "description": "Calculate strength using the weighting and scoring system."
+        },
+        {
+          "step": 4,
+          "title": "Group by Harmonic Series",
+          "description": "Organize aspects by harmonic number (H1, H2, H3...) to see which harmonics dominate."
+        },
+        {
+          "step": 5,
+          "title": "Identify Dominant Harmonics",
+          "description": "Aspect harmonics with the highest total weighted scores indicate the individual's primary harmonic sensitivities."
+        },
+        {
+          "step": 6,
+          "title": "Interpret Based on Dominant Harmonics",
+          "description": "Use the harmonic meanings to understand the native's core psychological structure, talents, challenges, and life themes."
+        },
+        {
+          "step": 7,
+          "title": "Report Generation",
+          "description": "Create a narrative that integrates all harmonic findings into a coherent synthesis."
+        }
+      ],
+      "report_template": {
+        "introduction": "This analysis explores the harmonic structure of your birth chart. Harmonics reveal the subtle frequencies through which planetary energies express. Each harmonic represents a specific 'lens' that shapes how you perceive and interact with life.",
+        "dominant_harmonic_section": "Your strongest harmonic is H[H]. This indicates that [interpretation from harmonic_meanings]. You are naturally sensitive to [keywords] energies. This is expressed through [planets involved].\n\nIn practice, this means [practical implication].",
+        "aspect_highlights": "The most powerful harmonic aspects in your chart include:\n- [Aspect 1]: [interpretation]\n- [Aspect 2]: [interpretation]",
+        "harmonic_patterns": "Your chart contains the following harmonic patterns: [list patterns]. These indicate [interpretation].",
+        "challenge_areas": "You may experience [challenges] in the areas of [planets/houses] due to the [harmonic] energy. Growth comes through [advice].",
+        "gift_areas": "Your natural gifts lie in [areas]. You have [specific talents] that can be developed with conscious effort.",
+        "integration_advice": "To integrate your harmonic structure, focus on [specific practices or attitudes]. Working with [planets/houses] will be particularly beneficial.",
+        "conclusion": "Your harmonic profile reveals a unique frequency pattern. By understanding these subtle energies, you can align more consciously with your natural strengths and navigate challenges with greater awareness."
+      }
+    },
+    "advanced_applications": {
+      "synastry_harmonics": {
+        "method": "Calculate harmonic charts for both individuals, then overlay to see which harmonics have mutual conjunctions.",
+        "interpretation": "Shared harmonic sensitivities indicate areas of natural understanding and compatibility.",
+        "example": "If both partners have strong H5 harmonics, they may share creative genius and appreciate each other's artistic expression.",
+        "financial_interpretation": "Shared market timing; mutual understanding of trends; aligned risk tolerance."
+      },
+      "composite_harmonics": {
+        "method": "Calculate composite chart (midpoints of both charts), then compute harmonic of the composite.",
+        "interpretation": "The composite harmonic reveals the purpose and soul of the relationship.",
+        "example": "Composite with strong H7 indicates a karmic, fated relationship with a specific destiny to fulfill together.",
+        "financial_interpretation": "The relationship's 'trading style'; shared market philosophy; joint investment approach."
+      },
+      "transit_harmonics": {
+        "method": "Calculate transiting planets in harmonic charts and compare to natal harmonic charts.",
+        "interpretation": "Transits activate specific harmonics, bringing those frequencies into awareness during the transit period.",
+        "example": "Transiting Jupiter activating your H5 harmonic may bring creative opportunities and recognition for artistic work.",
+        "financial_interpretation": "Market timing for specific sectors; when certain trade setups are most favorable."
+      },
+      "progressed_harmonics": {
+        "method": "Apply the progression to each planet, then compute harmonic chart.",
+        "interpretation": "Progressed harmonics show the evolution of your harmonic sensitivity over time.",
+        "example": "A progressed harmonic shift from H4 to H3 indicates a transition from a period of challenge to a period of flow.",
+        "financial_interpretation": "Evolving trading style; changing market sensitivities; shifting risk appetite."
+      },
+      "harmonic_electional": {
+        "method": "For a given activity, select a time when the desired harmonic is strong in the chart.",
+        "interpretation": "Aligning actions with dominant harmonics increases success and harmony.",
+        "example": "Launch a creative project when H5 is strong; sign a partnership when H6 is strong.",
+        "financial_interpretation": "Optimal trade entry/exit times; aligning trades with harmonic market patterns."
+      },
+      "harmonic_financial_timing": {
+        "method": "Monitor harmonic transits for key sectors (H4=energy, H5=technology, H6=finance, H7=commodities).",
+        "interpretation": "When a harmonic is active, its corresponding sector tends to outperform.",
+        "example": "H5 active → technology sector leadership; H7 active → commodity price movements.",
+        "implementation": "Add harmonic sector mapping to OMTI for enhanced market timing."
+      }
+    },
+    "integration_notes": {
+      "with_midpoints": "Midpoints in harmonic charts are especially potent. They combine the sensitivity of midpoints with the refined frequency of the harmonic.",
+      "with_fixed_stars": "Fixed stars at harmonic angles create fated, karmic events. The harmonic determines the quality of the fate.",
+      "with_arabic_lunar_mansions": "The moon's mansion in a harmonic chart colors the emotional expression of that harmonic.",
+      "with_magi_astrology": "Magi super aspects (conjunction, opposition, quincunx) are the foundation of harmonic analysis; higher harmonics refine and detail the super aspect's expression.",
+      "with_kundalini_transits": "Harmonic activations during kundalini transits indicate the specific frequency of energy rising.",
+      "with_quantreo_kama": "Planetary KAMA windows align with harmonic frequencies; H20 (18°) corresponds to 20-day trading cycles.",
+      "with_gann_square_of_nine": "Square of Nine levels often correlate with harmonic aspects; H4 (90°) aligns with cardinal cross.",
+      "with_omti": "Harmonic dominance can be used as a factor in OMTI for sector timing; H5 dominance → overweight technology sectors."
+    },
+    "karmic_harmonic_activation": {
+      "description": "When certain harmonics are activated by transit, they trigger specific karmic patterns for resolution.",
+      "activation_methods": [
+        "Transiting planet exactly aspects natal harmonic conjunction",
+        "Progressed planet moves into harmonic aspect",
+        "Solar arc direction forms harmonic aspect",
+        "Eclipse activates a harmonic point"
+      ],
+      "timeline_of_activation": {
+        "H1": "Immediate, sudden karmic events",
+        "H2": "1-2 year karmic relationships",
+        "H3": "3-5 year creative cycles",
+        "H4": "7-year karmic challenges",
+        "H5": "12-year creative peaks",
+        "H6": "18-year opportunity windows",
+        "H7": "29-year fated events (Saturn return cycles)"
+      }
+    }
+  }
+}

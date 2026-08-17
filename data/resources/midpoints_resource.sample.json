@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "status": "source_derived_sample",
+  "evidence_class": "source_derived",
+  "source_attachment": "afe-midpoint-resource-v7-a.txt",
+  "limitations": [
+    "This fixture contains only sample interpretations printed in the attachment.",
+    "It is not the complete 60+ axis midpoint resource referenced by the attachment."
+  ],
+  "midpoints_resource": {
+    "sections": {
+      "Jupiter": {
+        "all_jupiter_midpoints": [
+          {
+            "axis": "Sun/Moon",
+            "interpretation": "Physical and emotional fulfilment. An essentially positive outlook. Optimism, confidence and resilience. An abundance of creative and procreative energy. Materialistic inclinations. Accumulating assets. Prosperity."
+          }
+        ]
+      },
+      "Saturn": {
+        "all_saturn_midpoints": [
+          {
+            "axis": "Venus/Mars",
+            "interpretation": "Frustrated or repressed passions. Challenges and difficulties within love life. Controlling influences within sexual relationships. A risk of disloyalty. Separative influences."
+          }
+        ]
+      },
+      "Uranus": {
+        "all_uranus_midpoints": [
+          {
+            "axis": "Sun/Moon",
+            "interpretation": "Thriving on change and stimulation. Rebellious traits. Tensions. Instability. Unpredictable behaviour. Agitation and irritability. Sudden departures or separations."
+          }
+        ]
+      }
+    }
+  }
+}

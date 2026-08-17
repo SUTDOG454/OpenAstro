@@ -1,0 +1,130 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-08-17T08:26:29.355278+00:00",
+  "bundle_path": "data/unified/openastro-user-corpus-integration-bundle.zip",
+  "bundle_sha256": "b66269d67c2a95687aaeccf9b66157e578afe26ed92cbf8e9320530f6f0d2863",
+  "bundle_size_bytes": 588387,
+  "file_count": 23,
+  "files": [
+    {
+      "path": "data/ingested-user-corpus/chart_type_proposals.json",
+      "sha256": "1df2fb2e293d4db685a206693165b51397ec5b2adafc4da5ca0ed7358a018851",
+      "size_bytes": 101299
+    },
+    {
+      "path": "data/ingested-user-corpus/esoteric_retrieval_records.json",
+      "sha256": "a133f7c59017b323573fc9f03ba380f9e447845b44d2bc2244033776914b51c0",
+      "size_bytes": 299927
+    },
+    {
+      "path": "data/ingested-user-corpus/financial_research_candidate_material.json",
+      "sha256": "95fd44b499e7baa561fd1da071257471ce5d568d9308ff6077908c924262b84b",
+      "size_bytes": 70405
+    },
+    {
+      "path": "data/ingested-user-corpus/normalized_user_corpus_records.json",
+      "sha256": "11d885805dbacddf1f7d53d4d41cf75cecb5e63905a620a69b1cb447c8880162",
+      "size_bytes": 2977950
+    },
+    {
+      "path": "data/ingested-user-corpus/sensitive_content_quarantine.json",
+      "sha256": "a553b3ce7cc1f933795e851bb40c9f350cc9d860dfd759e59b39ee1ff01ec9dd",
+      "size_bytes": 1871
+    },
+    {
+      "path": "data/ingested-user-corpus/source_definitions.json",
+      "sha256": "b9b39e3c9d8927d308c8e8f24f0b93310b17074c8b79bb86a5ae06a2fb9dba92",
+      "size_bytes": 578459
+    },
+    {
+      "path": "data/ingested-user-corpus/unexecuted_code_inventory.json",
+      "sha256": "205ec5ef156785782c5f0517dc337aafa9749014aaf344cc385d94ceb41dc5b8",
+      "size_bytes": 12250
+    },
+    {
+      "path": "data/ingested-user-corpus/unvalidated_signal_candidates.json",
+      "sha256": "b189d6c3c66e359af4653c7b6c4a1141d0e6b9f03fbb64f4b3eb8b314c48ffdd",
+      "size_bytes": 1602710
+    },
+    {
+      "path": "data/ingested-user-corpus/user-corpus-integration-report.md",
+      "sha256": "d0d77ce8e4aa8da845f5262c4134dfeeddc7d42ff9b75aa9356c6b6feaae4288",
+      "size_bytes": 7651
+    },
+    {
+      "path": "data/ingested-user-corpus/user_corpus_deduplication.json",
+      "sha256": "ceb4d3c380eaf4798c1eae446a1d5040063d70a7e7e8991727807330b87998e8",
+      "size_bytes": 146
+    },
+    {
+      "path": "data/ingested-user-corpus/user_corpus_discrepancies.json",
+      "sha256": "a6fc71803977b91bcd974d0e55b3021ec3743a4d8a67ac75cc1b04354dd0e021",
+      "size_bytes": 1335
+    },
+    {
+      "path": "data/ingested-user-corpus/user_corpus_integration_report.json",
+      "sha256": "f2bdac50a89fde179d584e09e3302af93f747e6f81185395bb77a6c8d94ec973",
+      "size_bytes": 2178
+    },
+    {
+      "path": "data/ingested-user-corpus/user_corpus_source_inventory.json",
+      "sha256": "70c6a7d63acd11e5c2082f7406361f2d5ff02608019865d137ac3fc0fa20db12",
+      "size_bytes": 23322
+    },
+    {
+      "path": "data/ingested-user-corpus/user_corpus_summary.json",
+      "sha256": "7fead30a1a5a31c27afa5b9a5a82ee084335b976d7e4813130a92e05b6ab2e7e",
+      "size_bytes": 3377
+    },
+    {
+      "path": "data/ingested-user-corpus/user_corpus_validation_report.json",
+      "sha256": "b154252214bdf3a41e5af334ad19cd9da1aed08d0959eaff1137a1bae316387f",
+      "size_bytes": 855
+    },
+    {
+      "path": "data/research/signal_indicator_promotion_policy.json",
+      "sha256": "13918277e87aa283233cae571d34db652d9a8135675490319b9a19b6d2797409",
+      "size_bytes": 2789
+    },
+    {
+      "path": "data/research/temporal_leakage_controls.json",
+      "sha256": "f43a29c2b40c447e4db04422255e1dd90f847e2fc333277a7fdb63376c17a4a2",
+      "size_bytes": 4604
+    },
+    {
+      "path": "data/sources/2026-08-user-uploads/referenced_task_inventory.json",
+      "sha256": "a25b30174e4ec9d90d0ce2d15783fa743227d921adb117a6cdc155da7c73f93e",
+      "size_bytes": 4452
+    },
+    {
+      "path": "data/unified/unified_astrology_master.json",
+      "sha256": "8ece9444a03430824c17c451fed2aeb6cfbb7e2a3e58a94836890677c5f2c52f",
+      "size_bytes": 361750
+    },
+    {
+      "path": "tests/test_user_corpus_integration.py",
+      "sha256": "389d724b16c71a6b4b7bab0a92640c65aa8c0db6d7be06a9cdf58af51b9b4b10",
+      "size_bytes": 6262
+    },
+    {
+      "path": "tools/ingest_user_corpus.py",
+      "sha256": "116ab37c548be96617f03f95dbf414545c455166bded005f8a5725925d15a519",
+      "size_bytes": 29806
+    },
+    {
+      "path": "tools/integrate_user_corpus.py",
+      "sha256": "df972be735196ad7b976c7bda8b1f07a75cbfd3c243afb2381ac1a7b598bce7e",
+      "size_bytes": 11012
+    },
+    {
+      "path": "tools/package_user_corpus_integration.py",
+      "sha256": "e511c183037a77d58795465b03986d48b0e175203f4f7ed675017e5747b7bc4d",
+      "size_bytes": 2630
+    }
+  ],
+  "exclusions": [
+    "Raw user-upload source bodies under data/sources/2026-08-user-uploads/raw/",
+    "Derived raw PDF text under data/sources/2026-08-user-uploads/derived-pdf-text/",
+    "Quarantined sensitive interpretive content and private personalized chart material are represented by metadata and hashes, not copied into this distributable bundle."
+  ]
+}

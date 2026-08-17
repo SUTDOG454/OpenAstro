@@ -1,0 +1,252 @@
+{
+  "schema_version": "1.0.0",
+  "status": "static_inspection_only",
+  "record_count": 4,
+  "records": [
+    {
+      "record_id": "usr_e130c957a7717ba510c4",
+      "source_id": "openastro:user-upload:afe-quantreo-pipeline-2-py",
+      "source_sha256": "1c5664f2ebf3104011fca56aae3721ba6e79dacdcb7944e62ce0fcabf5b1e150",
+      "source_path": "data/sources/2026-08-user-uploads/raw/afe_quantreo_pipeline-2.py",
+      "record_type": "unexecuted_code_metadata",
+      "subject_path": "static_api_surface",
+      "raw_text": "Static inspection identified 14 named symbols: AstroFeaturePipeline, __init__, _add_math_features, _anomaly_snapshot, _apply_zscore, _build_features, _format_afe_confluence, _planetary_correlation, _recommend_action, _stack_assets, _validate_ohlcv, build_planetary_df_from_astro_mcp, run, run_on_afe_tickers.",
+      "normalized_text": "Static inspection identified 14 named symbols: AstroFeaturePipeline, __init__, _add_math_features, _anomaly_snapshot, _apply_zscore, _build_features, _format_afe_confluence, _planetary_correlation, _recommend_action, _stack_assets, _validate_ohlcv, build_planetary_df_from_astro_mcp, run, run_on_afe_tickers.",
+      "tradition_scope": [
+        "implementation_reference"
+      ],
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "limitations": [
+        "Uploaded code was not executed, dependency-resolved, trusted, or adopted as a calculation engine."
+      ],
+      "extensions": {
+        "named_symbols": [
+          "AstroFeaturePipeline",
+          "__init__",
+          "_add_math_features",
+          "_anomaly_snapshot",
+          "_apply_zscore",
+          "_build_features",
+          "_format_afe_confluence",
+          "_planetary_correlation",
+          "_recommend_action",
+          "_stack_assets",
+          "_validate_ohlcv",
+          "build_planetary_df_from_astro_mcp",
+          "run",
+          "run_on_afe_tickers"
+        ],
+        "execution_policy": "do_not_execute"
+      },
+      "source_ids": [
+        "openastro:user-upload:afe-quantreo-pipeline-2-py"
+      ]
+    },
+    {
+      "record_id": "usr_6202b7a371729dc98009",
+      "source_id": "openastro:user-upload:antiscion-synastry-2-jsx-1-txt",
+      "source_sha256": "b346545831e48a8e32af9375280eeb8e6e508122a3f622c715510f6fc0fa886e",
+      "source_path": "data/sources/2026-08-user-uploads/raw/antiscion_synastry-2.jsx(1).txt",
+      "record_type": "unexecuted_code_metadata",
+      "subject_path": "static_api_surface",
+      "raw_text": "Static inspection identified 55 named symbols: Acc, CLUSTERS, CS, EXTRACT_PROMPT, G, INFLUENCE_LEVELS, INTERNAL_CONTACTS, MULTIPLIERS, PATTERNS, PA_ANTISCIA, SCORE_DEF, SIGN_BASE, SIGN_PAIRS, TABS, aToB, active, angleDiff, ant, antisciaLon, autoScore, bToA, c, ca, calcAntisciaContacts, contacts, contraLon, d, detectMutual, isMajor, isPersonal, isSunMoon, isVenusMars, locked, longToSign, majorBodies, match, mutual, orb, orbA, orbC, orbColor, orbPA, orbPCA, pAnt, pCa, pa_body_data, parsed, pb, personalBodies, raw, resp, run, scoreColor, scoreLabel, tier.",
+      "normalized_text": "Static inspection identified 55 named symbols: Acc, CLUSTERS, CS, EXTRACT_PROMPT, G, INFLUENCE_LEVELS, INTERNAL_CONTACTS, MULTIPLIERS, PATTERNS, PA_ANTISCIA, SCORE_DEF, SIGN_BASE, SIGN_PAIRS, TABS, aToB, active, angleDiff, ant, antisciaLon, autoScore, bToA, c, ca, calcAntisciaContacts, contacts, contraLon, d, detectMutual, isMajor, isPersonal, isSunMoon, isVenusMars, locked, longToSign, majorBodies, match, mutual, orb, orbA, orbC, orbColor, orbPA, orbPCA, pAnt, pCa, pa_body_data, parsed, pb, personalBodies, raw, resp, run, scoreColor, scoreLabel, tier.",
+      "tradition_scope": [
+        "implementation_reference"
+      ],
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "limitations": [
+        "Uploaded code was not executed, dependency-resolved, trusted, or adopted as a calculation engine."
+      ],
+      "extensions": {
+        "named_symbols": [
+          "Acc",
+          "CLUSTERS",
+          "CS",
+          "EXTRACT_PROMPT",
+          "G",
+          "INFLUENCE_LEVELS",
+          "INTERNAL_CONTACTS",
+          "MULTIPLIERS",
+          "PATTERNS",
+          "PA_ANTISCIA",
+          "SCORE_DEF",
+          "SIGN_BASE",
+          "SIGN_PAIRS",
+          "TABS",
+          "aToB",
+          "active",
+          "angleDiff",
+          "ant",
+          "antisciaLon",
+          "autoScore",
+          "bToA",
+          "c",
+          "ca",
+          "calcAntisciaContacts",
+          "contacts",
+          "contraLon",
+          "d",
+          "detectMutual",
+          "isMajor",
+          "isPersonal",
+          "isSunMoon",
+          "isVenusMars",
+          "locked",
+          "longToSign",
+          "majorBodies",
+          "match",
+          "mutual",
+          "orb",
+          "orbA",
+          "orbC",
+          "orbColor",
+          "orbPA",
+          "orbPCA",
+          "pAnt",
+          "pCa",
+          "pa_body_data",
+          "parsed",
+          "pb",
+          "personalBodies",
+          "raw",
+          "resp",
+          "run",
+          "scoreColor",
+          "scoreLabel",
+          "tier"
+        ],
+        "execution_policy": "do_not_execute"
+      },
+      "source_ids": [
+        "openastro:user-upload:antiscion-synastry-2-jsx-1-txt"
+      ]
+    },
+    {
+      "record_id": "usr_76d28efe8d3a4c71c3fd",
+      "source_id": "openastro:user-upload:astro-intelligence-ui-html",
+      "source_sha256": "36edaffab454034066fc2e5ac4b0aabf82294fa6cf4ffbff6c087a8e21645880",
+      "source_path": "data/sources/2026-08-user-uploads/raw/astro_intelligence_ui.html",
+      "record_type": "unexecuted_code_metadata",
+      "subject_path": "static_api_surface",
+      "raw_text": "Static inspection identified 7 named symbols: calculateSynastry, observer, observerOptions, resultsDiv, scrollToSection, section, switchTab.",
+      "normalized_text": "Static inspection identified 7 named symbols: calculateSynastry, observer, observerOptions, resultsDiv, scrollToSection, section, switchTab.",
+      "tradition_scope": [
+        "implementation_reference"
+      ],
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "limitations": [
+        "Uploaded code was not executed, dependency-resolved, trusted, or adopted as a calculation engine."
+      ],
+      "extensions": {
+        "named_symbols": [
+          "calculateSynastry",
+          "observer",
+          "observerOptions",
+          "resultsDiv",
+          "scrollToSection",
+          "section",
+          "switchTab"
+        ],
+        "execution_policy": "do_not_execute"
+      },
+      "source_ids": [
+        "openastro:user-upload:astro-intelligence-ui-html"
+      ]
+    },
+    {
+      "record_id": "usr_657a6cd7ecb4571c29ee",
+      "source_id": "openastro:user-upload:backtest-validation-guardrails-prevent-look-ahead-bias-state-leakage-and-research-live-divergence-py",
+      "source_sha256": "4d4de169acd4eea96a244bb519f001c85f1c1dd98cfa81b3caad429d3cd60882",
+      "source_path": "data/sources/2026-08-user-uploads/raw/backtest-validation-guardrails-prevent-look-ahead-bias-state-leakage-and-research-live-divergence.py",
+      "record_type": "unexecuted_code_metadata",
+      "subject_path": "static_api_surface",
+      "raw_text": "Static inspection identified 64 named symbols: ConsistencyTester, CrossValidationStateMonitor, FeatureMetadata, FeatureRegistry, FoldIsolatedTransformer, ImplementationRegistry, ImplementationSignature, LookaheadBiasDetector, LookaheadBiasError, LookaheadBiasWarning, ModelState, ResearchLiveDivergenceError, ResearchLiveDivergenceWarning, StateIsolationValidator, StateLeakageError, StateLeakageWarning, TemporalFeatureValidator, __enter__, __exit__, __init__, __post_init__, _capture_state, _extract_dependencies, _save_state, add_test_case, calculate_5day_ma, check_code, check_dataframe, check_divergence, check_feature_engineering, check_leakage, check_lookahead, copy, decorator, end_fold, fit, fit_transform, get_consistency_report, get_lookahead_report, get_report, get_state, isolate_state, live_ma, no_lookahead, register, register_live, register_research, research_ma, reset, run_live_test, run_research_test, set_context, start_fold, track_model, transform, validate_all, validate_backtest, validate_cross_validation, validate_dataframe, validate_edge_case, validate_feature_set, validate_production_parity, validate_test_case, wrapper.",
+      "normalized_text": "Static inspection identified 64 named symbols: ConsistencyTester, CrossValidationStateMonitor, FeatureMetadata, FeatureRegistry, FoldIsolatedTransformer, ImplementationRegistry, ImplementationSignature, LookaheadBiasDetector, LookaheadBiasError, LookaheadBiasWarning, ModelState, ResearchLiveDivergenceError, ResearchLiveDivergenceWarning, StateIsolationValidator, StateLeakageError, StateLeakageWarning, TemporalFeatureValidator, __enter__, __exit__, __init__, __post_init__, _capture_state, _extract_dependencies, _save_state, add_test_case, calculate_5day_ma, check_code, check_dataframe, check_divergence, check_feature_engineering, check_leakage, check_lookahead, copy, decorator, end_fold, fit, fit_transform, get_consistency_report, get_lookahead_report, get_report, get_state, isolate_state, live_ma, no_lookahead, register, register_live, register_research, research_ma, reset, run_live_test, run_research_test, set_context, start_fold, track_model, transform, validate_all, validate_backtest, validate_cross_validation, validate_dataframe, validate_edge_case, validate_feature_set, validate_production_parity, validate_test_case, wrapper.",
+      "tradition_scope": [
+        "implementation_reference"
+      ],
+      "evidence_class": "source_derived",
+      "status": "pending_review",
+      "limitations": [
+        "Uploaded code was not executed, dependency-resolved, trusted, or adopted as a calculation engine."
+      ],
+      "extensions": {
+        "named_symbols": [
+          "ConsistencyTester",
+          "CrossValidationStateMonitor",
+          "FeatureMetadata",
+          "FeatureRegistry",
+          "FoldIsolatedTransformer",
+          "ImplementationRegistry",
+          "ImplementationSignature",
+          "LookaheadBiasDetector",
+          "LookaheadBiasError",
+          "LookaheadBiasWarning",
+          "ModelState",
+          "ResearchLiveDivergenceError",
+          "ResearchLiveDivergenceWarning",
+          "StateIsolationValidator",
+          "StateLeakageError",
+          "StateLeakageWarning",
+          "TemporalFeatureValidator",
+          "__enter__",
+          "__exit__",
+          "__init__",
+          "__post_init__",
+          "_capture_state",
+          "_extract_dependencies",
+          "_save_state",
+          "add_test_case",
+          "calculate_5day_ma",
+          "check_code",
+          "check_dataframe",
+          "check_divergence",
+          "check_feature_engineering",
+          "check_leakage",
+          "check_lookahead",
+          "copy",
+          "decorator",
+          "end_fold",
+          "fit",
+          "fit_transform",
+          "get_consistency_report",
+          "get_lookahead_report",
+          "get_report",
+          "get_state",
+          "isolate_state",
+          "live_ma",
+          "no_lookahead",
+          "register",
+          "register_live",
+          "register_research",
+          "research_ma",
+          "reset",
+          "run_live_test",
+          "run_research_test",
+          "set_context",
+          "start_fold",
+          "track_model",
+          "transform",
+          "validate_all",
+          "validate_backtest",
+          "validate_cross_validation",
+          "validate_dataframe",
+          "validate_edge_case",
+          "validate_feature_set",
+          "validate_production_parity",
+          "validate_test_case",
+          "wrapper"
+        ],
+        "execution_policy": "do_not_execute"
+      },
+      "source_ids": [
+        "openastro:user-upload:backtest-validation-guardrails-prevent-look-ahead-bias-state-leakage-and-research-live-divergence-py"
+      ]
+    }
+  ],
+  "policy": "Uploaded code was preserved and statically inventoried. It was not executed, dependency-resolved, adopted, or treated as a trustworthy calculation engine."
+}

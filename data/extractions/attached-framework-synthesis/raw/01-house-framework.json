@@ -1,0 +1,490 @@
+{
+  "astrological_framework": {
+    "houses": {
+      "1st": {
+        "name": "House of Self, Rising Sign, Childhood",
+        "number": 1,
+        "element": "Fire",
+        "modality": "Cardinal",
+        "natural_ruler": "Aries",
+        "natural_ruler_planet": "Mars",
+        "joy": "Mercury",
+        "karmic_meanings": "Karma with yourself, self‑esteem, appearance, identity, childhood. Planets here under stress (square, opposition, inconjunct) indicate personality karma, character karma, identity karma. Saturn in 1st is most karmic – painful childhood, inner security problems.",
+        "hellenistic_names": [
+          "Horoskopos",
+          "Helm",
+          "Hour‑Marker",
+          "Ascendant"
+        ],
+        "hellenistic_significations": {
+          "valens": "Life, helm, body, spirit (pneuma). Relative to the place of siblings this is the Good Spirit and the place of friends. Relative to the place of parents it is the place of occupation. Relative to the place of the spouse it is the marriage‑bringer. Relative to the place of children it is the ninth."
+        },
+        "vedic_parashara": {
+          "name": "Tanu Bhava",
+          "meaning": "Body, appearance, complexion, nature, constitution, happiness, sorrow, birth, general well‑being."
+        },
+        "modern_psychological_keywords": [
+          "Self‑image",
+          "Persona",
+          "Initiative",
+          "Physical body",
+          "Early environment",
+          "First impressions"
+        ],
+        "fixed_star_correlations": [
+          {
+            "star": "Alpherg",
+            "effect": "When rising, gives artistic ability but also vanity; can indicate a person who is overly concerned with appearance."
+          },
+          {
+            "star": "Markab",
+            "effect": "On Ascendant, courage, assertiveness, but also impulsiveness; danger of accidents."
+          }
+        ],
+        "rulership_implications": "Mars rules this house naturally, so planets here express with Martian drive. Mercury joys here, making the native intellectually sharp and communicative about self."
+      },
+      "2nd": {
+        "name": "House of Money, Values, Self‑Worth",
+        "number": 2,
+        "element": "Earth",
+        "modality": "Fixed",
+        "natural_ruler": "Taurus",
+        "natural_ruler_planet": "Venus",
+        "joy": null,
+        "karmic_meanings": "Karma concerning money, value, self‑worth, love, materialism. Often appear agnostic, lacking spiritual appreciation.",
+        "hellenistic_names": [
+          "Gate of Hades",
+          "Shaded",
+          "Giving",
+          "Receiving",
+          "Sharing"
+        ],
+        "hellenistic_significations": {
+          "valens": "Livelihood, income from property. Relative to the place of siblings it is the Bad Spirit and the place of slaves and enemies and the cause of afflictions. Relative to the place of parents it is the Good Spirit and the place of friends. Relative to the place of children it concerns occupation and reputation. Relative to the place of the spouse it is the place of death."
+        },
+        "vedic_parashara": {
+          "name": "Dhana Bhava",
+          "meaning": "Wealth, family, speech, eyesight, learning, right eye (male), left eye (female), sustenance."
+        },
+        "modern_psychological_keywords": [
+          "Financial security",
+          "Self‑worth",
+          "Material possessions",
+          "Values system",
+          "Resource management"
+        ],
+        "fixed_star_correlations": [
+          {
+            "star": "Hamal",
+            "effect": "On 2nd cusp, sudden wealth followed by loss; impulsive spending."
+          }
+        ],
+        "rulership_implications": "Venus rules this house, so planets here color the approach to money and values with Venusian qualities: harmony, beauty, or indulgence."
+      },
+      "3rd": {
+        "name": "House of Mind, Communication, Siblings",
+        "number": 3,
+        "element": "Air",
+        "modality": "Mutable",
+        "natural_ruler": "Gemini",
+        "natural_ruler_planet": "Mercury",
+        "joy": "Moon",
+        "karmic_meanings": "Karma with the mind, psychological karma, mental instability. Communication problems with brothers, sisters, neighbors. Not heard correctly, or misinterpreting.",
+        "hellenistic_names": [
+          "Goddess",
+          "Queen",
+          "Place of the Moon"
+        ],
+        "hellenistic_significations": {
+          "valens": "Life of brothers. Relative to the place of parents, it concerns enemies and slaves. Relative to the place of the spouse it is the ninth place. Also the place of the Goddess and of the Queen."
+        },
+        "vedic_parashara": {
+          "name": "Sahaja Bhava",
+          "meaning": "Courage, siblings, ears, learning, valor, attendants, journeys, writing."
+        },
+        "modern_psychological_keywords": [
+          "Communication style",
+          "Siblings",
+          "Short trips",
+          "Mental agility",
+          "Neighborhood",
+          "Early education"
+        ],
+        "fixed_star_correlations": [
+          {
+            "star": "Betelgeuse",
+            "effect": "On 3rd cusp, brilliant but erratic communication; can indicate a famous writer or speaker who is also prone to scandal."
+          }
+        ],
+        "rulership_implications": "Mercury rules this house, making it naturally intellectual. The Moon joys here, giving emotional depth to communication and a strong connection to siblings."
+      },
+      "4th": {
+        "name": "House of Home, Mother, Roots, Past Lives",
+        "number": 4,
+        "element": "Water",
+        "modality": "Cardinal",
+        "natural_ruler": "Cancer",
+        "natural_ruler_planet": "Moon",
+        "joy": null,
+        "karmic_meanings": "Karma with mother, feelings, residence, security. Saturn is detriment in Cancer → emotional walls. Past‑life triggers; unexplained reactions.",
+        "hellenistic_names": [
+          "Subterraneous",
+          "Anti‑Midheaven",
+          "Imum Coeli"
+        ],
+        "hellenistic_significations": {
+          "valens": "Life of parents, mystical or secret matters, foundations, property, and discoveries. Relative to the place of siblings it concerns livelihood. Relative to the place of the spouse it concerns reputation and occupation."
+        },
+        "vedic_parashara": {
+          "name": "Sukha Bhava",
+          "meaning": "Mother, happiness, education, conveyances, houses, lands, hidden treasures, heart."
+        },
+        "modern_psychological_keywords": [
+          "Home",
+          "Family",
+          "Mother",
+          "Emotional foundation",
+          "Private life",
+          "Real estate",
+          "Heritage"
+        ],
+        "fixed_star_correlations": [
+          {
+            "star": "Procyon",
+            "effect": "On IC, fame in later life, but danger from dogs; can indicate a person who rises from humble beginnings."
+          }
+        ],
+        "rulership_implications": "Moon rules this house, making it deeply emotional and connected to the past. Planets here feel things intensely and are tied to family karma."
+      },
+      "5th": {
+        "name": "House of Creativity, Children, Romance, Speculation",
+        "number": 5,
+        "element": "Fire",
+        "modality": "Fixed",
+        "natural_ruler": "Leo",
+        "natural_ruler_planet": "Sun",
+        "joy": "Venus",
+        "karmic_meanings": "Karma with family, creative endeavor, power, authority. Father karma, children, pets, enterprises.",
+        "hellenistic_names": [
+          "Good Fortune",
+          "Place of Venus"
+        ],
+        "hellenistic_significations": {
+          "valens": "Life of children, and the place of Good Fortune. Relative to the place of siblings it is the place of bastard‑ and half‑siblings. Relative to the place of the spouse it is the Good Spirit."
+        },
+        "vedic_parashara": {
+          "name": "Putra Bhava",
+          "meaning": "Children, intelligence, knowledge, mantra, learning, speculation, creative arts."
+        },
+        "modern_psychological_keywords": [
+          "Creativity",
+          "Romance",
+          "Children",
+          "Risk‑taking",
+          "Self‑expression",
+          "Hobbies"
+        ],
+        "fixed_star_correlations": [
+          {
+            "star": "Regulus",
+            "effect": "On 5th cusp, royal honors through creative work, but danger of sudden downfall; indicates a person who will be remembered for their creative legacy."
+          }
+        ],
+        "rulership_implications": "Sun rules this house, so planets here shine and seek recognition. Venus joys here, bringing love and beauty to creative expression."
+      },
+      "6th": {
+        "name": "House of Work, Health, Service",
+        "number": 6,
+        "element": "Earth",
+        "modality": "Mutable",
+        "natural_ruler": "Virgo",
+        "natural_ruler_planet": "Mercury",
+        "joy": "Mars",
+        "karmic_meanings": "Major karma concerning work situations, health, service, judgment, analytical ability.",
+        "hellenistic_names": [
+          "Bad Fortune",
+          "Place of Mars"
+        ],
+        "hellenistic_significations": {
+          "valens": "Injuries, illness, and afflicting causes. Relative to the place of parents it concerns siblings. Relative to the place of siblings it concerns step‑parents and guardians. Relative to the place of the spouse it concerns enemies and slaves."
+        },
+        "vedic_parashara": {
+          "name": "Ripu Bhava / Shatru Bhava",
+          "meaning": "Enemies, disease, debts, service, daily work, maternal uncle, litigation."
+        },
+        "modern_psychological_keywords": [
+          "Daily work",
+          "Health",
+          "Service to others",
+          "Employees",
+          "Pets",
+          "Habits"
+        ],
+        "fixed_star_correlations": [
+          {
+            "star": "Sirius",
+            "effect": "On 6th cusp, health issues related to dogs or heat; can also indicate fame through service or healing work."
+          }
+        ],
+        "rulership_implications": "Mercury rules this house, making work and health matters analytical. Mars joys here, giving a competitive edge in work but also potential for accidents."
+      },
+      "7th": {
+        "name": "House of Partnerships, Marriage, Open Enemies",
+        "number": 7,
+        "element": "Air",
+        "modality": "Cardinal",
+        "natural_ruler": "Libra",
+        "natural_ruler_planet": "Venus",
+        "joy": null,
+        "karmic_meanings": "Lessons in love, relationships. Lack of balance between self and partners. Obsession to marry, divorce. Persecution complex.",
+        "hellenistic_names": [
+          "Setting",
+          "Descendant"
+        ],
+        "hellenistic_significations": {
+          "valens": "Marriage‑bringer of the nativity; concerning the life of the spouse. Relative to the place of siblings it concerns children and is the place of Good Fortune. Relative to the place of parents it concerns parents, foundations, property, discoveries, and mystical matters."
+        },
+        "vedic_parashara": {
+          "name": "Kalatra Bhava",
+          "meaning": "Spouse, business partner, trade, diplomacy, open enemies, litigation, foreign travel."
+        },
+        "modern_psychological_keywords": [
+          "Marriage",
+          "Partnerships",
+          "Contracts",
+          "One‑on‑one relationships",
+          "Open adversaries"
+        ],
+        "fixed_star_correlations": [
+          {
+            "star": "Spica",
+            "effect": "On Descendant, a blessed marriage; partner may be wealthy, artistic, or spiritually inclined."
+          },
+          {
+            "star": "Algol",
+            "effect": "On 7th cusp, extremely difficult relationships; danger of violence from partner; requires conscious choice of partner."
+          }
+        ],
+        "rulership_implications": "Venus rules this house, making relationships central to happiness. Planets here are drawn to partnerships and may define themselves through others."
+      },
+      "8th": {
+        "name": "House of Sex, Death, Transformation, Shared Resources",
+        "number": 8,
+        "element": "Water",
+        "modality": "Fixed",
+        "natural_ruler": "Scorpio",
+        "natural_ruler_planet": "Pluto (modern), Mars (traditional)",
+        "joy": null,
+        "karmic_meanings": "Major lesson in sensitivity, deep emotions, love, sex, intimacy, transformability. Emotions contracted, restricted. Celibacy, jealousy, obsessions with death.",
+        "hellenistic_names": [
+          "Idle",
+          "After‑Setting"
+        ],
+        "hellenistic_significations": {
+          "valens": "Death. Relative to the place of siblings it concerns injuries and sickness. Relative to the place of parents it concerns bastard children. Relative to the place of the spouse it concerns livelihood."
+        },
+        "vedic_parashara": {
+          "name": "Mrityu Bhava / Randhra Bhava",
+          "meaning": "Longevity, death, occult, inheritance, in‑laws, sexual union, hidden wealth."
+        },
+        "modern_psychological_keywords": [
+          "Sexuality",
+          "Death and rebirth",
+          "Joint finances",
+          "Psychological depth",
+          "Taboo",
+          "Crises"
+        ],
+        "fixed_star_correlations": [
+          {
+            "star": "Antares",
+            "effect": "On 8th cusp, intense sexual drive, potential for violence or sudden death; can also indicate profound shamanic abilities."
+          }
+        ],
+        "rulership_implications": "Pluto/Mars rule this house, so planets here express with intensity, passion, and a drive for transformation. Deep karmic themes of power and surrender play out here."
+      },
+      "9th": {
+        "name": "House of Philosophy, Travel, Higher Education, Religion",
+        "number": 9,
+        "element": "Fire",
+        "modality": "Mutable",
+        "natural_ruler": "Sagittarius",
+        "natural_ruler_planet": "Jupiter",
+        "joy": "Sun",
+        "karmic_meanings": "Karma concerning philosophy, freedom, religion, justice, travel. Contraction of happiness; moody, depressed.",
+        "hellenistic_names": [
+          "God",
+          "Place of the Sun"
+        ],
+        "hellenistic_significations": {
+          "valens": "Travel, God, king, divination, and oracular dealings. Relative to the place of siblings it is the marriage‑bringer. Relative to the place of parents it concerns injuries, sickness, and afflicting causes. Relative to the place of the spouse it concerns siblings. Relative to the place of livelihood it concerns death."
+        },
+        "vedic_parashara": {
+          "name": "Dharma Bhava / Bhagya Bhava",
+          "meaning": "Religion, philosophy, higher learning, guru, pilgrimage, fortune, righteousness, grandchildren."
+        },
+        "modern_psychological_keywords": [
+          "Higher education",
+          "Travel",
+          "Philosophy",
+          "Religion",
+          "Ethics",
+          "Long‑distance journeys"
+        ],
+        "fixed_star_correlations": [
+          {
+            "star": "Vega",
+            "effect": "On 9th cusp, artistic inspiration, fame through creative work, but may be fleeting; indicates a person who seeks truth through beauty."
+          }
+        ],
+        "rulership_implications": "Jupiter rules this house, so planets here expand through wisdom and exploration. The Sun joys here, bringing enlightenment and recognition through higher pursuits."
+      },
+      "10th": {
+        "name": "House of Career, Public Status, Authority",
+        "number": 10,
+        "element": "Earth",
+        "modality": "Cardinal",
+        "natural_ruler": "Capricorn",
+        "natural_ruler_planet": "Saturn",
+        "joy": null,
+        "karmic_meanings": "Karma with external aspects of life, career, authority, practicality, ambition.",
+        "hellenistic_names": [
+          "Midheaven",
+          "Peak"
+        ],
+        "hellenistic_significations": {
+          "valens": "Occupation and reputation. Relative to the place of the spouse it concerns foundations, property, mystical undertakings, and the place of parents."
+        },
+        "vedic_parashara": {
+          "name": "Karma Bhava",
+          "meaning": "Profession, honor, status, authority, father, fame, public image, achievements."
+        },
+        "modern_psychological_keywords": [
+          "Career",
+          "Reputation",
+          "Public image",
+          "Authority figures",
+          "Ambition",
+          "Life direction"
+        ],
+        "fixed_star_correlations": [
+          {
+            "star": "Arcturus",
+            "effect": "On Midheaven, fame and honor through hard work; can indicate a person who rises to prominence later in life."
+          }
+        ],
+        "rulership_implications": "Saturn rules this house, so career and status are built through discipline and effort. Planets here are ambitious and concerned with legacy."
+      },
+      "11th": {
+        "name": "House of Friends, Groups, Hopes, Wishes",
+        "number": 11,
+        "element": "Air",
+        "modality": "Fixed",
+        "natural_ruler": "Aquarius",
+        "natural_ruler_planet": "Uranus (modern), Saturn (traditional)",
+        "joy": "Jupiter",
+        "karmic_meanings": "Karma concerning groups, friends, goals, organization, direction in life. Humanity or lack thereof.",
+        "hellenistic_names": [
+          "Good Spirit",
+          "Place of Jupiter"
+        ],
+        "hellenistic_significations": {
+          "valens": "Good Spirit, friends, desires, and acquisition. Relative to the place of siblings it concerns God, king, divination, and oracular dealings. Relative to the place of parents it concerns death. Relative to the place of children it is the marriage‑bringer. Relative to the place of the spouse it concerns step‑children."
+        },
+        "vedic_parashara": {
+          "name": "Labha Bhava",
+          "meaning": "Gains, income, friends, elder sibling, wishes, social networks, hopes."
+        },
+        "modern_psychological_keywords": [
+          "Friends",
+          "Social networks",
+          "Group activities",
+          "Hopes and wishes",
+          "Humanitarianism",
+          "Community"
+        ],
+        "fixed_star_correlations": [
+          {
+            "star": "Fomalhaut",
+            "effect": "On 11th cusp, fortunate friendships, help from powerful people; can indicate a person whose friends are influential."
+          }
+        ],
+        "rulership_implications": "Uranus/Saturn rule this house, so friendships may be unconventional or carry responsibility. Jupiter joys here, bringing expansion through groups and the fulfillment of wishes."
+      },
+      "12th": {
+        "name": "House of the Unconscious, Self‑Undoing, Hidden Enemies, Institutions",
+        "number": 12,
+        "element": "Water",
+        "modality": "Mutable",
+        "natural_ruler": "Pisces",
+        "natural_ruler_planet": "Neptune (modern), Jupiter (traditional)",
+        "joy": "Saturn",
+        "karmic_meanings": "Karma with oneself; own worst enemy. Emotional, self‑destructive, hidden events. Karma with enemies, mankind, institutions, hospitals. Saturn in 12th: enemies who want to hurt you.",
+        "fate_signature": "Pluto in 12th = carrier of ancestral poison, psychotic episodes, secret karma (Renee R., Ruth). Saturn in 12th = imprisonment, chronic depression, hidden enemies (including the self).",
+        "fate_themes": "The collective unconscious; the ghosts of the ancestors; the place of dissolution and transcendence.",
+        "hellenistic_names": [
+          "Bad Spirit",
+          "Pre‑ascension",
+          "Place of Saturn"
+        ],
+        "hellenistic_significations": {
+          "valens": "Enemies, slaves, and afflicting causes. Relative to the place of siblings it concerns occupation and reputation. Relative to the place of parents it concerns travel, God, king. Relative to the place of children it concerns death. Relative to the place of the spouse it concerns injuries and sickness."
+        },
+        "vedic_parashara": {
+          "name": "Vyaya Bhava",
+          "meaning": "Losses, expenses, moksha (liberation), sleep, meditation, feet, left eye, foreign residence, hospitals, jails, monasteries."
+        },
+        "modern_psychological_keywords": [
+          "Unconscious",
+          "Shadow",
+          "Repression",
+          "Mysticism",
+          "Karmic debt",
+          "Self‑undoing",
+          "Institutions",
+          "Sacrifice",
+          "Solitude",
+          "Compassion"
+        ],
+        "pluto_in_12th_detailed": {
+          "natal": "Hidden depths, karmic patterns, need for transcendence. Compulsive escapism from pain. A life spent cleaning up one's spiritual closet. As always with Pluto, repulsion and attraction, obsessive and compulsive tendencies. This is a mission of spiritual cleansing.",
+          "transit": "Profound transformation and introspection. Buried emotions surface. Need for solitude and self‑examination. Heightened intuition and vivid dreams. Spiritual awakening. Release and healing. Endings and new beginnings. The veil between conscious and unconscious lifts, demanding acknowledgment and healing of past traumas and unresolved psychological wounds.",
+          "transit_events": [
+            "Unearthing past traumas",
+            "Intense psychological work (therapy, meditation)",
+            "Heightened intuition",
+            "Isolation and solitude",
+            "Release and healing",
+            "Spiritual awakening",
+            "Endings and new beginnings"
+          ],
+          "synastry": "Pluto person awakens hidden aspects in the 12th house person, catalyzing transformation and deep psychological healing. Intense, mysterious quality; hidden depths revealed. Can foster powerful spiritual connection but also bring challenges due to demanding psychological work. The relationship can have an intense, mysterious quality with secrets gradually revealed. May lead to shared experiences of profound personal growth and healing."
+        },
+        "fixed_star_correlations": [
+          {
+            "star": "Achernar",
+            "effect": "When culminating or on the 12th cusp, success in religious or occult matters, but danger from water; can indicate hidden spiritual gifts."
+          },
+          {
+            "star": "Deneb Algedi",
+            "effect": "Beneficial, charitable, but may involve secret sorrows or hidden enemies that ultimately prove helpful."
+          },
+          {
+            "star": "Algol",
+            "effect": "If on 12th cusp or with malefics in 12th, extreme danger from hidden enemies, violence, beheading; requires strong ethical grounding."
+          },
+          {
+            "star": "Scheat",
+            "effect": "On 12th cusp, danger of drowning, poisoning, or being confined against one's will; requires extreme caution."
+          }
+        ],
+        "additional_techniques": {
+          "zodiacal_releasing": "The 12th place is one of the ‘bad’ places (apoklima). In releasing from the Lot of Spirit, the 12th often indicates periods of withdrawal, institutionalisation, or spiritual retreat. If the releasing period reaches the 12th sign from the Lot, hidden enemies or karmic debts may surface.",
+          "terms_bounds": "Planets in the 12th are greatly affected by the bounds (terms) they occupy. If in the bounds of a malefic, the hidden enemy may be the native’s own psyche; if in the bounds of a benefic, the isolation may be voluntarily chosen for spiritual work.",
+          "profections": "When the profected Ascendant reaches the 12th sign from the natal Ascendant, the year brings themes of seclusion, hidden enemies, hospitalisation, or intense spiritual introspection."
+        },
+        "rulership_implications": "Neptune/Jupiter rule this house, so planets here can bring either spiritual transcendence or dissolution. Saturn joys here, making isolation and karmic burden a path to wisdom."
+      }
+    }
+  }
+}

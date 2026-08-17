@@ -1,0 +1,54 @@
+{
+  "status": "integrated_with_review_boundaries",
+  "master_ref": "data/unified/unified_astrology_master.json",
+  "artifacts": {
+    "source_inventory": {
+      "path": "data/ingested-user-corpus/user_corpus_source_inventory.json",
+      "sha256": "70c6a7d63acd11e5c2082f7406361f2d5ff02608019865d137ac3fc0fa20db12",
+      "size_bytes": 23322
+    },
+    "normalized_records": {
+      "path": "data/ingested-user-corpus/normalized_user_corpus_records.json",
+      "sha256": "11d885805dbacddf1f7d53d4d41cf75cecb5e63905a620a69b1cb447c8880162",
+      "size_bytes": 2977950
+    },
+    "validation": {
+      "path": "data/ingested-user-corpus/user_corpus_validation_report.json",
+      "sha256": "b154252214bdf3a41e5af334ad19cd9da1aed08d0959eaff1137a1bae316387f",
+      "size_bytes": 855
+    },
+    "esoteric_retrieval_records": {
+      "path": "data/ingested-user-corpus/esoteric_retrieval_records.json",
+      "sha256": "a133f7c59017b323573fc9f03ba380f9e447845b44d2bc2244033776914b51c0",
+      "size_bytes": 299927
+    },
+    "unvalidated_signal_candidates": {
+      "path": "data/ingested-user-corpus/unvalidated_signal_candidates.json",
+      "sha256": "b189d6c3c66e359af4653c7b6c4a1141d0e6b9f03fbb64f4b3eb8b314c48ffdd",
+      "size_bytes": 1602710
+    },
+    "chart_type_proposals": {
+      "path": "data/ingested-user-corpus/chart_type_proposals.json",
+      "sha256": "1df2fb2e293d4db685a206693165b51397ec5b2adafc4da5ca0ed7358a018851",
+      "size_bytes": 101299
+    },
+    "source_definitions": {
+      "path": "data/ingested-user-corpus/source_definitions.json",
+      "sha256": "b9b39e3c9d8927d308c8e8f24f0b93310b17074c8b79bb86a5ae06a2fb9dba92",
+      "size_bytes": 578459
+    },
+    "financial_candidate_material": {
+      "path": "data/ingested-user-corpus/financial_research_candidate_material.json",
+      "sha256": "95fd44b499e7baa561fd1da071257471ce5d568d9308ff6077908c924262b84b",
+      "size_bytes": 70405
+    }
+  },
+  "checks": {
+    "corpus_validation_passed": true,
+    "esoteric_isolated": true,
+    "research_observations_unchanged_false": true,
+    "research_labels_unchanged_false": true,
+    "quarantine_linked": true,
+    "discrepancies_linked": true
+  }
+}
